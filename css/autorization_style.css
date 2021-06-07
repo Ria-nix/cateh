@@ -98,7 +98,7 @@ input {
           align-items: center;
 }
 .wrap .text .logo_wrap {
-  width: 600px;
+  max-width: 600px;
   height: 400px;
   background: url("../icon/logo.png");
   -o-object-fit: contain;
