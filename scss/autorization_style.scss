@@ -1,13 +1,24 @@
 @import "cateh_style";
 
 .wrap{
-    margin: 0 auto;
+    display: grid;
     width: 1200px;
     height: 700px;
-    display: flex;
-    flex-direction: column;
-}
-.text{
-    width: 100%;
-    height: 100%;
+    background: $fon_white;
+    grid-template-columns: minmax(375px, 1400px);
+
+    .text{
+        width: 100%;
+        height: 100%;        
+        display: flex;
+        flex-direction: column;
+        // transform: translate(-50%, 50%);
+
+        .logo_wrap{
+            background: url("../icon/logo.png");
+            object-fit: contain;
+            max-width: 100%;
+            
+        }
+    }
 }

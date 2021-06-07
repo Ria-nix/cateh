@@ -1,8 +1,11 @@
 body {
   font-family: "Roboto", sans-serif;
-  color: #112742;
-  display: grid;
-  grid-template-columns: minmax(375px, 1400px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .non_acitve {
@@ -14,9 +17,10 @@ button {
   -webkit-box-shadow: 0px 4px 10px 0px rgba(17, 39, 66, 0.3);
           box-shadow: 0px 4px 10px 0px rgba(17, 39, 66, 0.3);
   border: 1px solid #FFCC00;
-  padding: 15px 10px;
+  padding: 8px 15px;
   font-weight: bold;
-  border-radius: 10px;
+  border-radius: 5px;
+  color: #112742;
 }
 
 .spacing {
