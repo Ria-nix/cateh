@@ -1,5 +1,7 @@
 body {
   font-family: "Roboto", sans-serif;
+  color: #112742;
+  background: #112742;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -8,33 +10,24 @@ body {
           justify-content: center;
 }
 
-.non_acitve {
-  color: #6c798a;
-}
-
-button {
+.button {
   background: #FFCC00;
   -webkit-box-shadow: 0px 4px 10px 0px rgba(17, 39, 66, 0.3);
           box-shadow: 0px 4px 10px 0px rgba(17, 39, 66, 0.3);
   border: 1px solid #FFCC00;
-  padding: 8px 15px;
+  padding: 8px 30px;
   font-weight: bold;
+  text-decoration: none;
   color: #112742;
-}
-
-input, button {
-  border-radius: 5px;
 }
 
 input {
   border: 1px solid #939393;
-  text-align: center;
-  width: 350px;
-  height: 30px;
+  background: #F1F1F1;
 }
 
 .spacing {
-  letter-spacing: 5;
+  letter-spacing: 0.13em;
 }
 
 .font_14 {
@@ -70,18 +63,26 @@ input {
   display: none;
 }
 
+.non_acitve {
+  color: #6c798a;
+}
+
+.border {
+  border-radius: 8px;
+}
+
 .wrap {
-  display: grid;
-  width: 1200px;
+  margin-top: 100px;
+  max-width: 1200px;
   height: 700px;
   background: #F5F5F5;
-  grid-template-columns: minmax(375px, 1400px);
-  -webkit-transform: translate(0, 0);
-          transform: translate(0, 0);
+  display: grid;
+  grid-template-columns: minmax(325px, 1400px);
 }
 .wrap .text {
-  width: 100%;
-  height: 100%;
+  margin: 10% auto;
+  width: 50%;
+  height: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -92,10 +93,21 @@ input {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .wrap .text .logo_wrap {
-  background-image: url(".../icon/logo.png");
+  width: 600px;
+  height: 400px;
+  background: url("../icon/logo.png");
   -o-object-fit: contain;
      object-fit: contain;
-  max-width: 100%;
+  margin-bottom: 80px;
+}
+.wrap .text input {
+  margin: 0px 0px 28px 0px;
+  text-align: center;
+  width: 380px;
+  height: 65px;
 }/*# sourceMappingURL=autorization_style.css.map */

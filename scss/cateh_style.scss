@@ -19,37 +19,30 @@ $dark_green: #B2E0AE;
 // BODY
 body{
     font-family: "Roboto", sans-serif;
+    color: $blue;
+    background: $blue;
     display: flex;
     justify-content: center;
 }
-.non_acitve{
-    color: $gray_blue;
-}
 
 // Buttons and inputs
-button{
+.button{
     background: $yellow;
     box-shadow: 0px 4px 10px 0px $but_shadow;
     border: 1px solid $yellow;
-    padding: 8px 15px;
+    padding: 8px 30px;
     font-weight: bold;
+    text-decoration: none;
     color: $blue;
 }
-
-input, button{
-    border-radius: 5px;
-}
-
 input{
     border: 1px solid $gray_border;
-    text-align: center;
-    width: 350px;
-    height: 30px;
+    background: $gray_full;
 }
 
 // Text
 .spacing{
-    letter-spacing: 5;
+    letter-spacing: 0.13em;
 }
 .font_14{
     font-size: 14px;
@@ -78,5 +71,12 @@ input{
 .none{
     display: none;
 }
+.non_acitve{
+    color: $gray_blue;
+}
+.border{
+    border-radius: 8px;
+}
+
 // Code for navigation panel
 

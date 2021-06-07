@@ -1,27 +1,36 @@
 @import "cateh_style";
 
 .wrap{
-    display: grid;
-    width: 1200px;
+    margin-top: 100px;
+    max-width: 1200px;
     height: 700px;
-    background: $fon_white;
-    grid-template-columns: minmax(375px, 1400px);
-    transform: translate(0, 0);
+    background: $fon_white;    
+    display: grid;
+    grid-template-columns: minmax(325px, 1400px);
 
     .text{
-        width: 100%;
-        height: 100%;        
+        margin: 10% auto;
+        width: 50%;
+        height: 50%;        
         display: flex;
         flex-direction: column;
         justify-content: center;
-        // background: pink;
-
-
+        align-items: center;
+    
         .logo_wrap{
-            background-image: url(".../icon/logo.png");
+            width: 600px;
+            height: 400px;
+            background: url("../icon/logo.png");
             object-fit: contain;
-            max-width: 100%;            
+            margin-bottom: 80px;       
         }
 
+        input{
+            margin: 0px 0px 28px 0px; 
+            text-align: center;
+            width: 380px;
+            height: 65px;
+        }
+    
     }
 }

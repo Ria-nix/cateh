@@ -1,5 +1,7 @@
 body {
   font-family: "Roboto", sans-serif;
+  color: #112742;
+  background: #112742;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -8,33 +10,24 @@ body {
           justify-content: center;
 }
 
-.non_acitve {
-  color: #6c798a;
-}
-
-button {
+.button {
   background: #FFCC00;
   -webkit-box-shadow: 0px 4px 10px 0px rgba(17, 39, 66, 0.3);
           box-shadow: 0px 4px 10px 0px rgba(17, 39, 66, 0.3);
   border: 1px solid #FFCC00;
-  padding: 8px 15px;
+  padding: 8px 30px;
   font-weight: bold;
+  text-decoration: none;
   color: #112742;
-}
-
-input, button {
-  border-radius: 5px;
 }
 
 input {
   border: 1px solid #939393;
-  text-align: center;
-  width: 350px;
-  height: 30px;
+  background: #F1F1F1;
 }
 
 .spacing {
-  letter-spacing: 5;
+  letter-spacing: 0.13em;
 }
 
 .font_14 {
@@ -68,4 +61,12 @@ input {
 
 .none {
   display: none;
+}
+
+.non_acitve {
+  color: #6c798a;
+}
+
+.border {
+  border-radius: 8px;
 }/*# sourceMappingURL=cateh_style.css.map */
