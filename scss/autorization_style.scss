@@ -1,24 +1,13 @@
 @import "cateh_style";
-body{
-    background: $yellow;
-}
+
 .wrap{
     margin: 0 auto;
     width: 1200px;
     height: 700px;
-    // background: $gray_blue;s
-    // position: relative;
-    // display: flex;
-}
-.wrap > div{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-}
-.skew{
-    transform: skew(-15deg);
-    background: $fon_white;
+    display: flex;
+    flex-direction: column;
 }
 .text{
-    
+    width: 100%;
+    height: 100%;
 }
