@@ -24,8 +24,9 @@ html{
 .non_acitve{
     color: $gray_blue;
 }
+
 // Buttons 
-.button{
+button{
     background: $yellow;
     box-shadow: 0px 4px 10px 0px $but_shadow;
 }
@@ -58,6 +59,8 @@ html{
     margin: 0;
     padding: 0;
 }
-
+.none{
+    display: none;
+}
 // Code for navigation panel
 
