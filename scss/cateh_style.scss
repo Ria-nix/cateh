@@ -1,4 +1,4 @@
-// Базовые цвета
+// Basics color
 $yellow: #FFCC00;
 $blue: #112742;
 $red: #E52828;
@@ -9,7 +9,7 @@ $gray_blue: #6c798a;
 $but_shadow: rgba(17, 39, 66, 0.3);
 $modalwindow_full: rgba(17, 39, 66, 0.45);
 
-//  Цвета для рейтинга 
+//  Colors for rating
 $light_red: #FF8E9B;
 $light_orange: #FFCDAA;
 $light_yellow: #FAEAAD;
@@ -24,13 +24,13 @@ html{
 .non_acitve{
     color: $gray_blue;
 }
-// Кнопки 
+// Buttons 
 .button{
     background: $yellow;
     box-shadow: 0px 4px 10px 0px $but_shadow;
 }
 
-// Текст
+// Text
 .spacing{
     letter-spacing: 5;
 }
@@ -53,9 +53,11 @@ html{
     font-size: 26px;
 }
 
-// Code
+// Code for all 
 *{
     margin: 0;
     padding: 0;
 }
+
+// Code for navigation panel
 

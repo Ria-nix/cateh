@@ -44,4 +44,11 @@ html {
 * {
   margin: 0;
   padding: 0;
-}/*# sourceMappingURL=cateh_style.css.map */
+}
+
+.wrap {
+  margin: 0 auto;
+  width: 1200px;
+  height: 600px;
+  background: #6c798a;
+}/*# sourceMappingURL=autorization_style.css.map */
