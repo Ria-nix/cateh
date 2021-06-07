@@ -6,19 +6,22 @@
     height: 700px;
     background: $fon_white;
     grid-template-columns: minmax(375px, 1400px);
+    transform: translate(0, 0);
 
     .text{
         width: 100%;
         height: 100%;        
         display: flex;
         flex-direction: column;
-        // transform: translate(-50%, 50%);
+        justify-content: center;
+        // background: pink;
+
 
         .logo_wrap{
-            background: url("../icon/logo.png");
+            background-image: url(".../icon/logo.png");
             object-fit: contain;
-            max-width: 100%;
-            
+            max-width: 100%;            
         }
+
     }
 }

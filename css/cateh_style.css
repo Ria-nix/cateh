@@ -19,8 +19,18 @@ button {
   border: 1px solid #FFCC00;
   padding: 8px 15px;
   font-weight: bold;
-  border-radius: 5px;
   color: #112742;
+}
+
+input, button {
+  border-radius: 5px;
+}
+
+input {
+  border: 1px solid #939393;
+  text-align: center;
+  width: 350px;
+  height: 30px;
 }
 
 .spacing {

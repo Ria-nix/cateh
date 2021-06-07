@@ -19,8 +19,18 @@ button {
   border: 1px solid #FFCC00;
   padding: 8px 15px;
   font-weight: bold;
-  border-radius: 5px;
   color: #112742;
+}
+
+input, button {
+  border-radius: 5px;
+}
+
+input {
+  border: 1px solid #939393;
+  text-align: center;
+  width: 350px;
+  height: 30px;
 }
 
 .spacing {
@@ -66,6 +76,8 @@ button {
   height: 700px;
   background: #F5F5F5;
   grid-template-columns: minmax(375px, 1400px);
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
 }
 .wrap .text {
   width: 100%;
@@ -77,9 +89,12 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .wrap .text .logo_wrap {
-  background: url("../icon/logo.png");
+  background-image: url(".../icon/logo.png");
   -o-object-fit: contain;
      object-fit: contain;
   max-width: 100%;
