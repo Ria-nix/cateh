@@ -80,9 +80,7 @@ input {
   grid-template-columns: minmax(325px, 1400px);
 }
 .wrap .text {
-  margin: 10% auto;
-  width: 50%;
-  height: 50%;
+  margin: 5% 5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -97,17 +95,20 @@ input {
       -ms-flex-align: center;
           align-items: center;
 }
+.wrap .text img {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 4rem;
+}
 .wrap .text .logo_wrap {
-  max-width: 600px;
-  height: 400px;
-  background: url("../icon/logo.png");
+  max-width: 650px;
+  height: 300px;
   -o-object-fit: contain;
      object-fit: contain;
-  margin-bottom: 80px;
 }
 .wrap .text input {
   margin: 0px 0px 28px 0px;
   text-align: center;
-  width: 380px;
+  max-width: 55%;
   height: 65px;
 }/*# sourceMappingURL=autorization_style.css.map */

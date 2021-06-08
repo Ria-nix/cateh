@@ -9,27 +9,28 @@
     grid-template-columns: minmax(325px, 1400px);
 
     .text{
-        margin: 10% auto;
-        width: 50%;
-        height: 50%;        
+        margin: 5% 5%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     
+        img{
+            width: 100%;
+            height: 100%;
+            margin-bottom: 4rem;   
+        }
+
         .logo_wrap{
-            max-width: 600px;
-            height: 400px;
-            background: url("../icon/logo.png");
-            // background: $yellow;
-            object-fit: contain;
-            margin-bottom: 80px;       
+            max-width: 650px;
+            height: 300px;
+            object-fit: contain;    
         }
 
         input{
             margin: 0px 0px 28px 0px; 
             text-align: center;
-            width: 380px;
+            max-width: 55%;
             height: 65px;
         }
     
