@@ -106,6 +106,10 @@ input {
   max-width: 650px;
   height: 200px;
   margin-bottom: 5rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 .wrap .text .logo_wrap img {
   width: 100%;
@@ -123,4 +127,8 @@ input {
   max-width: 65%;
   min-width: 80%;
   height: 40px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }/*# sourceMappingURL=autorization_style.css.map */

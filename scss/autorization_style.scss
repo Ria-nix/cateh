@@ -24,6 +24,7 @@
             max-width: 650px;
             height: 200px;           
             margin-bottom: 5rem;   
+            user-select: none; 
                         
             img{
                 width: 100%;
@@ -39,6 +40,7 @@
             max-width: 65%;
             min-width: 80%;
             height: 40px; 
+            user-select: none;       
         }
     
     }
