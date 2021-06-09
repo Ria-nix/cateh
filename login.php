@@ -1,8 +1,8 @@
 <?php
-if (!empty($_POST["email_OR_inn"]) and !empty($_POST["password"])) {
+if (!empty($_POST["login"]) and !empty($_POST["password"])) {
     include "helper.php";
 
-    $emailOrinnClient = $_POST['email_OR_inn'];
+    $emailOrinnClient = $_POST['login'];
     $passwordClient = $_POST['password'];
 
     $isINN = preg_match("/^\d{12}$/", $emailOrinnClient);

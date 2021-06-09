@@ -1,9 +1,10 @@
 let log = $("input[type='text']");
 let pass = $("input[type='text']");
 if(log.val() == '' || pass.val() == ''){
-    $('input').css('border-color','red');
+    $('input').toggleClass('red_auto');
 }
 else{
+    $('input').removeClass('red_auto');
     $('.button').click(function () {
         $.ajax({
             type: "POST",
@@ -11,10 +12,10 @@ else{
                 login: login.val(), 
                 password: pass.val()
             },
-            url: "http://localhost:90/login.php",
+            url: "/login.php",
             success: (msg) => {
                 //
-                
+
                 //
                 },
             error: (msg) => {
