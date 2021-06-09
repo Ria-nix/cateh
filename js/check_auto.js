@@ -1,14 +1,15 @@
-let log = $('#text');
-let pass = $("#pass");
+let log = $('#text'), pass = $("#pass");
 
 $('.button').click(function() { 
     //проверка на пустоту полей   
     if(log.val() == '' || pass.val() == ''){
+
         $('input').addClass('red_auto');
         $('p').removeClass('none');
         $('p').text('! Введите логин и пароль');
-    }
-    else{
+
+    }else
+    {
         $('input').removeClass('red_auto');
         $('p').addClass('none');
         
@@ -19,14 +20,18 @@ $('.button').click(function() {
                 email_OR_inn: log.val(), 
                 password: pass.val()
             },
-            url: "login.php",
+            url: "http://ithelpdeskdemo.xyz/login",
             success: (msg) => {
+                // console.log(msg);
+
                 let json = JSON.parse(msg);
+
                 // проверка на правильно введенные данные
-                if(json['action'] == 'success'){
-                    console.log('right'); 
+                if(json['action'] == 'success' && json['role'] == 'admin'){                    
                     $('input').removeClass('red_auto');
-                    $('p').addClass('none');                           
+                    $('p').addClass('none');   
+                    getTokenCookie(json);              
+                    console.log('right');           
                 }
                 else{
                     $('input').addClass('red_auto');
@@ -34,12 +39,16 @@ $('.button').click(function() {
                     $('p').text('! Неправильно введен логин или пароль');
                     console.log('wrong');
                 }
-
             },
             //нет ответа от php файла
             error: (msg) => {
-                alert("error");
+                console.log("error" + "/n"  + msg);
             }
         })
     }
 })
+
+function getTokenCookie(json){
+    let data = [json['token'], json['DBname']];
+    console.log(data);
+}
