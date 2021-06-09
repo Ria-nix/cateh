@@ -15,9 +15,9 @@
                 <div class="logo_wrap" onselectstart="return false" onmousedown="return false">
                     <img src="icon/logo.png" alt="" class="user_none_select">
                 </div>
-                <p class="none"></p>
-                <input type="text" class="spacing font_14 border user_none_select" placeholder="Введите логин">
-                <input type="password" class="spacing font_14 border user_none_select" placeholder="Введите  пароль">
+                <p class="none"> </p>
+                <input type="text" id='text' class="spacing font_14 border user_none_select" placeholder="Введите логин">
+                <input type="password" id='pass' class=" password spacing font_14 border user_none_select" placeholder="Введите  пароль">
                 <a href="#" class="button border user_none_select" onmousedown="return false">Войти</a>
             </div>
         </div>
