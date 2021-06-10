@@ -38,6 +38,8 @@ body{
 input{
     border: 1px solid $gray_border;
     background: $gray_full;
+    outline: none;
+    cursor: pointer;     /* delete focus around input*/
 }
 
 // Text

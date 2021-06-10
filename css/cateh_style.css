@@ -24,6 +24,9 @@ body {
 input {
   border: 1px solid #939393;
   background: #F1F1F1;
+  outline: none;
+  cursor: pointer;
+  /* delete focus around input*/
 }
 
 .spacing {

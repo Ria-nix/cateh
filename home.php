@@ -10,6 +10,8 @@
     <title>Главная: Системные администраторы</title>
 </head>
 <body>
-    <h1>hi</h1>    
+    <div class="wrap">
+        
+    </div>
 </body>
 </html>

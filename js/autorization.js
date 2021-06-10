@@ -3,14 +3,11 @@ let log = $('#text'), pass = $("#pass");
 $('.button').click(function() { 
     //проверка на пустоту полей   
     if(log.val() == '' || pass.val() == ''){
-
-        $('input').addClass('red_auto');
+        $('.spacing').addClass('red_auto');
         $('p').removeClass('none');
-        $('p').text('! Введите логин и пароль');
-
+        $('p').text('!!! Введите логин и пароль');
     }else
-    {
-        $('input').removeClass('red_auto');
+    {   $('.spacing').removeClass('red_auto');
         $('p').addClass('none');
         
         //отправление данных 
@@ -22,21 +19,19 @@ $('.button').click(function() {
             },
             url: "http://ithelpdeskdemo.xyz/login",
             success: (msg) => {
-                // console.log(msg);
-
                 let json = JSON.parse(msg);
 
                 // проверка на правильно введенные данные
                 if(json['action'] == 'success' && json['role'] == 'admin'){                    
-                    $('input').removeClass('red_auto');
-                    $('p').addClass('none');   
-                    getTokenCookie(json);              
-                    console.log('right');           
+                    $('.spacing').removeClass('red_auto');
+                    $('p').addClass('none');           
+                    console.log('right');   
+                    window.location.href = 'home.php';        
                 }
                 else{
-                    $('input').addClass('red_auto');
+                    $('.spacing').addClass('red_auto');
                     $('p').removeClass('none');
-                    $('p').text('! Неправильно введен логин или пароль');
+                    $('p').text('!!! Неправильно введен логин или пароль');
                     console.log('wrong');
                 }
             },
@@ -47,8 +42,3 @@ $('.button').click(function() {
         })
     }
 })
-
-function getTokenCookie(json){
-    let data = [json['token'], json['DBname']];
-    console.log(data);
-}

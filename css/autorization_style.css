@@ -24,6 +24,9 @@ body {
 input {
   border: 1px solid #939393;
   background: #F1F1F1;
+  outline: none;
+  cursor: pointer;
+  /* delete focus around input*/
 }
 
 .spacing {
@@ -75,8 +78,7 @@ input {
 
 .wrap {
   margin-top: 100px;
-  max-width: 1200px;
-  height: 700px;
+  height: 981px;
   background: #F5F5F5;
   display: grid;
   grid-template-columns: minmax(320px, 1400px);
@@ -119,14 +121,11 @@ input {
   -o-object-fit: contain;
      object-fit: contain;
 }
-.wrap .text input {
+.wrap .text .spacing {
   margin: 0px 0px 30px 0px;
   text-align: center;
-  width: 68%;
+  width: 65%;
   height: 40px;
-  padding: 20px auto;
-  outline: none;
-  /* delete focus around input*/
 }
 
 .red_auto {
@@ -135,8 +134,8 @@ input {
   border-color: rgba(229, 40, 40, 0.7);
 }
 
-@media (max-width: 981px) {
-  input {
-    min-width: 110%;
+@media (max-width: 1024px) {
+  .spacing {
+    min-width: 100%;
   }
 }/*# sourceMappingURL=autorization_style.css.map */
