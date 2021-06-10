@@ -21,22 +21,22 @@
                     <p class="font_18">Системные администраторы</p>
                 </span>
                 <span class="button">
-                    <img src="" alt="">
+                    <img src="icon/plus-solid.svg" alt="">
                 </span>
                 <span class="button">
-                    <img src="" alt="">
+                    <img src="icon/build.png" alt="">
                     <p class="font_18">Организации</p>
                 </span>
                 <span class="button">
-                    <img src="" alt="">
+                    <img src="icon/plus-solid.svg" alt="">
                 </span>
                 <span class="button">
-                    <img src="" alt="">
+                    <img src="icon/settings.svg" alt="">
                     <p class="font_18"></p>
                 </span>
                 <span class="button">                    
                     <p class="font_18">Выйти</p>
-                    <img src="" alt="">
+                    <img src="icon/exitdoor_87195.svg" alt="">
                 </span>
             </div>
         </div>
