@@ -16,7 +16,7 @@
                 <img src="icon/logo.png" alt="">
             </div>
             <div class="panel_buttons">
-                <!-- <span class="button">
+                <span class="button">
                     <img src="icon/Untitled.png" alt="">
                     <p class="font_18">Системные администраторы</p>
                 </span>
@@ -37,7 +37,7 @@
                 <span class="button">                    
                     <p class="font_18">Выйти</p>
                     <img src="" alt="">
-                </span> -->
+                </span>
             </div>
         </div>
         <div class="trow_up"></div>

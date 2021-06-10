@@ -64,8 +64,7 @@ body {
 input {
   border: 1px solid #939393;
   background: #F1F1F1;
-  outline: none;
-  /* delete focus around input*/
+  outline: none;  /* delete focus around input*/
 }
 
 .spacing {

@@ -18,7 +18,7 @@
                 <p class="none"> </p>
                 <input type="text" id='text' class="spacing font_14 border" placeholder="Введите логин">
                 <input type="password" id='pass' class=" password spacing font_14 border" placeholder="Введите  пароль">
-                <input type="submit" class="button border font_18" onmousedown="return false" value="Войти">
+                <button class="button border font_18" onmousedown="return false">Войти</button>
             </div>
         </div>
         <script src="js/autorization.js"></script>

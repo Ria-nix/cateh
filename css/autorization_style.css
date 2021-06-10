@@ -12,6 +12,7 @@ body {
   font-weight: bold;
   color: #112742;
   cursor: pointer;
+  padding: 8px 15px;
 }
 
 input {
