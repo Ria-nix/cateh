@@ -26,7 +26,7 @@ $('.button').click(function() {
                     $('.spacing').removeClass('red_auto');
                     $('p').addClass('none');           
                     console.log('right');   
-                    window.location.href = 'home.php';        
+                    window.location.href = 'main.php';        
                 }
                 else{
                     $('.spacing').addClass('red_auto');
