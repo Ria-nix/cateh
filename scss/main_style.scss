@@ -15,19 +15,38 @@ nav{
     background: $fon_white;
 
     .navigation{
-        height: 150px;
-        // border: 1px solid orange;
+        height: 130px;
     }
+
+    .trow_up{
+        margin: 4% 0px 1% 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+
+        .trow_item{
+            width: 150px;
+            @extend %flex_row;
+            justify-content: space-around;     
+            padding: 10px 15px;
+
+            img{
+                width: 15px;
+                height: 15px;
+            }
+         }
+    }
+
 }    
 
 .sidebar_wrap{
     width: 100%;
     @extend %grid;
-    border-top: 0.5px solid $gray_border;
+    border-top: 0.5px solid $line;
 
     div{
         height: 100px;
-        border: 1px solid blue;
+        // border: 1px solid blue;
     }
     .table_sysadmin{
         height: 200px;

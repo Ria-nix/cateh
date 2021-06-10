@@ -4,7 +4,7 @@ body {
   background: #F5F5F5;
 }
 
-.navigation .panel_buttons span, .navigation .panel_buttons, .navigation {
+nav .trow_up .trow_item, .navigation .panel_buttons span, .navigation .panel_buttons, .navigation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -20,7 +20,7 @@ body {
 .navigation .logo_wrap {
   width: 15%;
   height: 90%;
-  margin: 0px 5% 0px 0px;
+  margin: 0px 5% 0px 1%;
 }
 .navigation .logo_wrap img {
   width: 100%;
@@ -30,19 +30,50 @@ body {
 }
 .navigation .panel_buttons {
   width: 80%;
-  height: 120px;
+  height: 100%;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
 }
 .navigation .panel_buttons span {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 .navigation .panel_buttons span > img {
   -o-object-fit: contain;
      object-fit: contain;
+}
+.navigation .panel_buttons .main {
+  padding: 5px 10px;
+  margin: 0px 1% 0px 0px;
+}
+.navigation .panel_buttons .main img {
+  width: 45px;
+  height: 38px;
+}
+.navigation .panel_buttons .plus {
+  padding: 10px 10px;
+  margin: 0px 3.5% 0px 0px;
+}
+.navigation .panel_buttons .plus img {
+  width: 25px;
+  height: 25px;
+}
+.navigation .panel_buttons .settings {
+  padding: 5px 5px;
+  margin: 0px 1% 0px 0px;
+}
+.navigation .panel_buttons .settings img {
+  width: 36px;
+  height: 36px;
+}
+.navigation .panel_buttons .door {
+  width: 110px;
+  padding: 12px 10px;
+}
+.navigation .panel_buttons .door img {
+  width: 23px;
+  height: 23px;
 }
 
 .button {
@@ -60,26 +91,6 @@ input {
   background: #F1F1F1;
   outline: none;
   /* delete focus around input*/
-}
-
-.main {
-  width: 50px;
-  height: 50px;
-}
-
-.plus {
-  width: 30px;
-  height: 30px;
-}
-
-.settings {
-  width: 40px;
-  height: 40px;
-}
-
-.door {
-  width: 40px;
-  height: 40px;
 }
 
 .spacing {
@@ -126,12 +137,11 @@ input {
 }
 
 .border {
-  border-radius: 8px;
+  border-radius: 10px;
 }
 
-.w_40 {
-  width: 40px;
-  height: 40px;
+.opacity_none {
+  opacity: 0.6;
 }
 
 body {
@@ -151,16 +161,38 @@ nav {
   background: #F5F5F5;
 }
 nav .navigation {
-  height: 150px;
+  height: 130px;
+}
+nav .trow_up {
+  margin: 4% 0px 1% 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+nav .trow_up .trow_item {
+  width: 150px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 10px 15px;
+}
+nav .trow_up .trow_item img {
+  width: 15px;
+  height: 15px;
 }
 
 .sidebar_wrap {
   width: 100%;
-  border-top: 0.5px solid #939393;
+  border-top: 0.5px solid #B2B2B2;
 }
 .sidebar_wrap div {
   height: 100px;
-  border: 1px solid blue;
 }
 .sidebar_wrap .table_sysadmin {
   height: 200px;

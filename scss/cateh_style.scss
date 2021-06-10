@@ -9,6 +9,7 @@ $gray_blue: #6c798a;
 $but_shadow: rgba(17, 39, 66, 0.3);
 $modalwindow_full: rgba(17, 39, 66, 0.45);
 $fon_table: #EDEDED;
+$line: #B2B2B2;
 
 //  Colors for rating
 $light_red: #FF8E9B;
@@ -35,9 +36,8 @@ body{
 
     .logo_wrap{
         width: 15%;
-        height: 90%;    
-        // border: 1px solid red;     
-        margin: 0px 5% 0px 0px; 
+        height: 90%;       
+        margin: 0px 5% 0px 1%; 
                     
         img{
             width: 100%;
@@ -47,17 +47,52 @@ body{
     }
     .panel_buttons{
         width: 80%;
-        height: 120px;
+        height: 100%;
         @extend %flex_row;
         justify-content:flex-end;
-        // background: violet;
 
         span{         
-            @extend %flex_row;
-            align-items: center;        
+            @extend %flex_row;  
+            justify-content: space-around;     
         }
         span > img{
             object-fit: contain;
+        }
+        // SIZES FOR ALL BUTTONS
+        .main{
+            padding: 5px 10px;
+            margin: 0px 1% 0px 0px;
+
+            img{
+                width: 45px;
+                height: 38px;
+            }
+         }
+        .plus{
+          padding: 10px 10px;
+          margin: 0px 3.5% 0px 0px;
+            img{
+                width: 25px;
+                height: 25px;
+            }
+        }
+        .settings{
+            padding: 5px 5px;
+            margin: 0px 1% 0px 0px;
+
+            img{
+                width: 36px;
+                height: 36px;
+            }
+        }
+        .door{
+            width: 110px;
+            padding: 12px 10px;
+
+            img{
+                width: 23px;
+                height: 23px;
+            }
         }
     }
     
@@ -78,22 +113,7 @@ input{
     background: $gray_full;
     outline: none; /* delete focus around input*/
 }
-.sysadmin{
-    width: 50px;
-    height: 50px;
-}
-.plus{
-    width: 30px;
-    height: 30px;
-}
-.settings{
-    width: 40px;
-    height: 40px;
-}
-.door{
-    width: 40px;
-    height: 40px;
-}
+
 // Text
 .spacing{
     letter-spacing: 0.13em;
@@ -130,12 +150,11 @@ input{
     color: $gray_blue;
 }
 .border{
-    border-radius: 8px;
+    border-radius: 10px;
 }
 
-.w_40{
-    width: 40px;
-    height: 40px;
+.opacity_none{
+    opacity: 0.6;
 }
 // Code for navigation panel
 
