@@ -16,31 +16,36 @@
                 <img src="icon/logo.png" alt="">
             </div>
             <div class="panel_buttons">
-                <span class="button">
-                    <img src="icon/Untitled.png" alt="">
-                    <p class="font_18">Системные администраторы</p>
+                <span class="button border sysadmin">
+                    <img src="icon/Untitled.svg" alt="alt">
+                    <p class="font_16">Системные администраторы</p>
                 </span>
-                <span class="button">
-                    <img src="icon/plus-solid.svg" alt="">
+                <span class="button border plus">
+                    <img src="icon/plus-solid.svg" alt="alt">
                 </span>
-                <span class="button">
-                    <img src="icon/build.png" alt="">
-                    <p class="font_18">Организации</p>
+                <span class="button border">
+                    <img src="icon/build.svg" class="main" alt="alt">
+                    <p class="font_16">Организации</p>
                 </span>
-                <span class="button">
-                    <img src="icon/plus-solid.svg" alt="">
+                <span class="button border plus">
+                    <img src="icon/plus-solid.svg" alt="alt">
                 </span>
-                <span class="button">
-                    <img src="icon/settings.svg" alt="">
-                    <p class="font_18"></p>
+                <span class="button border">
+                    <img src="icon/settings.svg" class="settings" alt="alt">
+                    <p class="font_16"></p>
                 </span>
-                <span class="button">                    
-                    <p class="font_18">Выйти</p>
-                    <img src="icon/exitdoor_87195.svg" alt="">
+                <span class="button border">                    
+                    <p class="font_16">Выйти</p>
+                    <img src="icon/exitdoor_87195.svg" class="door" alt="alt">
                 </span>
             </div>
         </div>
-        <div class="trow_up"></div>
+        <hr>
+        <div class="trow_up">
+            <br>
+            <h1>HI</h1>
+            <br>
+        </div>
     </nav>
 
     <div class="sidebar_wrap">

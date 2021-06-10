@@ -13,7 +13,7 @@
         <div class="wrap border">
             <div class="text">
                 <div class="logo_wrap" onselectstart="return false" onmousedown="return false">
-                    <img src="icon/logo.png" alt="">
+                    <img src="icon/logo.png" alt="alt">
                 </div>
                 <p class="none"> </p>
                 <input type="text" id='text' class="spacing font_14 border" placeholder="Введите логин">

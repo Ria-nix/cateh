@@ -4,7 +4,7 @@ body {
   background: #F5F5F5;
 }
 
-.navigation .panel_buttons, .navigation {
+.navigation .panel_buttons span, .navigation .panel_buttons, .navigation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -17,15 +17,10 @@ body {
           align-items: center;
 }
 
-.navigation {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
 .navigation .logo_wrap {
-  width: 200px;
-  height: 150px;
-  border: 1px solid red;
+  width: 15%;
+  height: 90%;
+  margin: 0px 5% 0px 0px;
 }
 .navigation .logo_wrap img {
   width: 100%;
@@ -34,21 +29,18 @@ body {
      object-fit: contain;
 }
 .navigation .panel_buttons {
-  width: 90%;
+  width: 80%;
   height: 120px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  background: violet;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
-.navigation span {
-  width: 120px;
-  height: 120px;
-  padding: 8px 15px;
+.navigation .panel_buttons span {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-.navigation span > img {
-  width: 50px;
-  height: 50px;
+.navigation .panel_buttons span > img {
   -o-object-fit: contain;
      object-fit: contain;
 }
@@ -59,7 +51,6 @@ body {
           box-shadow: 0px 4px 10px 0px rgba(17, 39, 66, 0.3);
   border: 1px solid #FFCC00;
   font-weight: bold;
-  padding: 8px 15px;
   color: #112742;
   cursor: pointer;
 }
@@ -69,6 +60,26 @@ input {
   background: #F1F1F1;
   outline: none;
   /* delete focus around input*/
+}
+
+.main {
+  width: 50px;
+  height: 50px;
+}
+
+.plus {
+  width: 30px;
+  height: 30px;
+}
+
+.settings {
+  width: 40px;
+  height: 40px;
+}
+
+.door {
+  width: 40px;
+  height: 40px;
 }
 
 .spacing {
@@ -118,6 +129,11 @@ input {
   border-radius: 8px;
 }
 
+.w_40 {
+  width: 40px;
+  height: 40px;
+}
+
 body {
   background: #EDEDED;
 }
@@ -135,8 +151,7 @@ nav {
   background: #F5F5F5;
 }
 nav .navigation {
-  height: 100px;
-  border: 1px solid orange;
+  height: 150px;
 }
 
 .sidebar_wrap {

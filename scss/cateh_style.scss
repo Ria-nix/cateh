@@ -31,13 +31,13 @@ body{
     align-items: center;
 }
 .navigation{
-    justify-content: space-between;
     @extend %flex_row;
 
     .logo_wrap{
-        width: 200px;
-        height: 150px;    
-        border: 1px solid red;      
+        width: 15%;
+        height: 90%;    
+        // border: 1px solid red;     
+        margin: 0px 5% 0px 0px; 
                     
         img{
             width: 100%;
@@ -45,24 +45,22 @@ body{
             object-fit: contain;         
         }
     }
-
     .panel_buttons{
-        width: 90%;
+        width: 80%;
         height: 120px;
         @extend %flex_row;
-        justify-content: space-between;
-        background: violet;
+        justify-content:flex-end;
+        // background: violet;
+
+        span{         
+            @extend %flex_row;
+            align-items: center;        
+        }
+        span > img{
+            object-fit: contain;
+        }
     }
-    span{
-        width: 120px;
-        height: 120px;
-        padding: 8px 15px;
-    }
-    span > img{
-        width: 50px;
-        height: 50px;
-        object-fit: contain;
-    }
+    
 }
 
 
@@ -72,7 +70,6 @@ body{
     box-shadow: 0px 4px 10px 0px $but_shadow;
     border: 1px solid $yellow;
     font-weight: bold;
-    padding: 8px 15px;
     color: $blue;    
     cursor: pointer;     
 }
@@ -81,7 +78,22 @@ input{
     background: $gray_full;
     outline: none; /* delete focus around input*/
 }
-
+.sysadmin{
+    width: 50px;
+    height: 50px;
+}
+.plus{
+    width: 30px;
+    height: 30px;
+}
+.settings{
+    width: 40px;
+    height: 40px;
+}
+.door{
+    width: 40px;
+    height: 40px;
+}
 // Text
 .spacing{
     letter-spacing: 0.13em;
@@ -121,5 +133,9 @@ input{
     border-radius: 8px;
 }
 
+.w_40{
+    width: 40px;
+    height: 40px;
+}
 // Code for navigation panel
 
