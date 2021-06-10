@@ -8,6 +8,7 @@ $gray_full: #F1F1F1;
 $gray_blue: #6c798a;
 $but_shadow: rgba(17, 39, 66, 0.3);
 $modalwindow_full: rgba(17, 39, 66, 0.45);
+$fon_table: #EDEDED;
 
 //  Colors for rating
 $light_red: #FF8E9B;
@@ -21,25 +22,63 @@ body{
     font-family: "Roboto", sans-serif;
     color: $blue;
     background: $fon_white;
-    display: flex;
-    justify-content: center;
 }
+
+//NAVIGATION PANEL
+%flex_row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.navigation{
+    justify-content: space-between;
+    @extend %flex_row;
+
+    .logo_wrap{
+        width: 200px;
+        height: 150px;    
+        border: 1px solid red;      
+                    
+        img{
+            width: 100%;
+            height: 100%;   
+            object-fit: contain;         
+        }
+    }
+
+    .panel_buttons{
+        width: 90%;
+        height: 120px;
+        @extend %flex_row;
+        justify-content: space-between;
+        background: violet;
+    }
+    span{
+        width: 50px;
+        height: 30px;
+    }
+    span > img{
+        width: 10px;
+        height: 10px;
+        object-fit: contain;
+    }
+}
+
 
 // Buttons and inputs
 .button{
     background: $yellow;
     box-shadow: 0px 4px 10px 0px $but_shadow;
     border: 1px solid $yellow;
-    padding: 8px 30px;
     font-weight: bold;
-    text-decoration: none;
-    color: $blue;
+    padding: 8px 15px;
+    color: $blue;    
+    cursor: pointer;     
 }
 input{
     border: 1px solid $gray_border;
     background: $gray_full;
-    outline: none;
-    cursor: pointer;     /* delete focus around input*/
+    outline: none; /* delete focus around input*/
 }
 
 // Text
@@ -64,9 +103,7 @@ input{
 .font_26{
     font-size: 26px;
 }
-// .user_none_select{
-//     user-select: none;
-// }
+
 // Code for all 
 *{
     margin: 0;

@@ -1,2 +1,36 @@
 @import "cateh_style";
+body{
+    background: $fon_table;
+}
 
+%grid{
+    display: grid;
+    grid-template-columns: repeat(1, minmax(320px, 1500px));
+    justify-content: center;
+}
+
+nav{
+    width: 100%;
+    @extend %grid;
+    background: $fon_white;
+
+    .navigation{
+        height: 100px;
+        border: 1px solid orange;
+    }
+}
+    
+
+.sidebar_wrap{
+    width: 100%;
+    @extend %grid;
+    border-top: 0.5px solid $gray_border;
+
+    div{
+        height: 100px;
+        border: 1px solid blue;
+    }
+    .table_sysadmin{
+        height: 200px;
+    }
+}
