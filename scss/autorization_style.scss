@@ -1,4 +1,4 @@
-@import "cateh_style";
+@use "cateh_style" as *;
 
 body{    
     display: flex;

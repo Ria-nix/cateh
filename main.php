@@ -17,6 +17,34 @@
             <div class="logo_wrap" onselectstart="return false" onmousedown="return false">
                 <img src="icon/logo.png" alt="">
             </div>
+
+            <!-- TOOGLE BAR -->
+            <div class="toggle_bar none">
+                <span class="button border main">
+                    <img src="icon/Untitled.svg" alt="alt">
+                    <p class="font_18">Системные администраторы</p>
+                </span>
+                <span class="button border plus">
+                    <img src="icon/plus-solid.svg" alt="alt">
+                </span>
+                <span class="button border main">
+                    <img src="icon/build.svg" alt="alt">
+                    <p class="font_18">Организации</p>
+                </span>
+                <span class="button border plus">
+                    <img src="icon/plus-solid.svg" alt="alt">
+                </span>
+                <span class="button border settings">
+                    <img src="icon/settings.svg" alt="alt">
+                    <p class="font_18"></p>
+                </span>
+                <span class="button border door">                    
+                    <p class="font_18">Выйти</p>
+                    <img src="icon/exitdoor_87195.svg" alt="alt">
+                </span>
+            </div>
+
+            <!-- BUTTONS -->
             <div class="panel_buttons">
                 <span class="button border main">
                     <img src="icon/Untitled.svg" alt="alt">
@@ -45,16 +73,15 @@
         <hr>
         <!-- THE END OF NAVIGATION PANEL -->
         
-        <div class="trow_up">            
-            <span class="button border trow_item">
-                <img src="icon/close.svg" alt="alt">
-                <p class="font_18">Сбросить</p>
-            </span>
+        <div class="search">            
+            <p></p>
+            <input class type="text">
+            <button class="button border">Найти</button>
         </div>
     </nav>
 
     <!-- CONTENT -->
-    <div class="sidebar_wrap">
+    <div class="content_wrap">
         <div class="head_table">
         </div>
         <div class="table_sysadmin">
