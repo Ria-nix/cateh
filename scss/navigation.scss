@@ -4,6 +4,7 @@ nav{
     width: 100%;
     @extend %grid;
     background: $fon_white;
+    // position: fixed;
 
     nav > div{
         border: 1px solid red;
@@ -151,9 +152,6 @@ nav{
 
 // ********** MEDIA MIN 1163PX *************
 @media (min-width: 1163px) {
-    body{
-        background: $fon_table;
-    }
     .toggle_bar{
         display: none;
 
@@ -161,32 +159,22 @@ nav{
             display: none;
         }
     }
-    .panel_buttons{
-        position: static;
-    }
-    .logo_wrap{  
-        margin: 0px 5% 0px 1%; 
-    }
+    .panel_buttons{ position: static; }
+    .logo_wrap{  margin: 0px 5% 0px 1%; }
 }
 
 
 // ********** MEDIA MAX 1163PX *************
 @media (max-width: 1163px) {
-    body{
-        background: $fon_table;
-    }
     .panel_buttons{
         display: none;
         position: absolute;
         top: -9999px;
         left: -9999px;
     }
-    .toggle_bar{
-        display: block;
+    .toggle_bar{ display: block;
 
-        div{
-            display: block;
-        }
+        div{ display: block; }
     }
     .logo_wrap{
         min-width: 25%;
@@ -195,17 +183,20 @@ nav{
 }
  
 // ********** MEDIA 850PX *************
-@media (max-width: 850px) {
-    body{
-        background: $fon_table;
-    }
+@media (max-width: 850px) {    
     .logo_wrap{
         min-width: 35%;
         margin: 0px 53% 0px 1%; 
     }
 }
-// ********** MEDIA 610PX *************
-@media (max-width: 610px) {
+
+// ********** MEDIA MIN 610PX *************
+@media (min-width: 580px) {
+    body{ background: $fon_table; }
+}
+
+// ********** MEDIA MAX 610PX *************
+@media (max-width: 580px) {
     body{
         background: $blue;
     }

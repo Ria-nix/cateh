@@ -351,10 +351,6 @@ nav .search .button {
 }
 
 @media (min-width: 1163px) {
-  body {
-    background: #EDEDED;
-  }
-
   .toggle_bar {
     display: none;
   }
@@ -371,10 +367,6 @@ nav .search .button {
   }
 }
 @media (max-width: 1163px) {
-  body {
-    background: #EDEDED;
-  }
-
   .panel_buttons {
     display: none;
     position: absolute;
@@ -395,16 +387,17 @@ nav .search .button {
   }
 }
 @media (max-width: 850px) {
-  body {
-    background: #EDEDED;
-  }
-
   .logo_wrap {
     min-width: 35%;
     margin: 0px 53% 0px 1%;
   }
 }
-@media (max-width: 610px) {
+@media (min-width: 580px) {
+  body {
+    background: #EDEDED;
+  }
+}
+@media (max-width: 580px) {
   body {
     background: #112742;
   }
