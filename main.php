@@ -19,7 +19,7 @@
             </div>
 
             <!-- TOOGLE BAR -->
-            <div class="toggle_bar none">
+            <div class="toggle_bar">
                 <!-- <span class="button border main">
                     <img src="icon/Untitled.svg" alt="alt">
                     <p class="font_18">Системные администраторы</p>
@@ -70,13 +70,12 @@
                 </span>
             </div>
         </div>
-        <hr>
         <!-- THE END OF NAVIGATION PANEL -->
         
         <div class="search ">            
-            <!-- <p class="font_16 bold">Системные администраторы</p>
+            <p class="font_16 bold">Системные администраторы</p>
             <input class="border" type="text" placeholder="Введите имя или фамилию">
-            <button class="button border">Найти</button> -->
+            <button class="button border">Найти</button>
         </div>
     </nav>
 

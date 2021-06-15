@@ -4,7 +4,7 @@ body {
   background: #F5F5F5;
 }
 
-.navigation .panel_buttons span, .navigation .panel_buttons, .navigation {
+nav .navigation .panel_buttons span, nav .navigation .panel_buttons, nav .navigation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -17,65 +17,123 @@ body {
           align-items: center;
 }
 
-.navigation .logo_wrap {
+nav .search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(320px, 1500px));
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+nav {
+  width: 100%;
+  background: #F5F5F5;
+}
+nav .toggle_bar {
+  display: none;
+}
+nav .search > * {
+  display: none;
+}
+nav .navigation {
+  height: 130px;
+  margin: 0 2% 0 2%;
+  border-bottom: 1px solid #939393;
+}
+nav .navigation .logo_wrap {
   width: 15%;
   height: 90%;
   margin: 0px 5% 0px 1%;
 }
-.navigation .logo_wrap img {
+nav .navigation .logo_wrap img {
   width: 100%;
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
 }
-.navigation .panel_buttons {
+nav .navigation .panel_buttons {
   width: 80%;
   height: 100%;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
 }
-.navigation .panel_buttons span {
+nav .navigation .panel_buttons span {
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
-.navigation .panel_buttons span > img {
+nav .navigation .panel_buttons span > img {
   -o-object-fit: contain;
      object-fit: contain;
 }
-.navigation .panel_buttons .main {
+nav .navigation .panel_buttons .main {
   padding: 5px 10px;
   margin: 0px 1% 0px 0px;
 }
-.navigation .panel_buttons .main img {
+nav .navigation .panel_buttons .main img {
   width: 45px;
   height: 38px;
 }
-.navigation .panel_buttons .plus {
+nav .navigation .panel_buttons .plus {
   padding: 10px 10px;
   margin: 0px 3.5% 0px 0px;
 }
-.navigation .panel_buttons .plus img {
+nav .navigation .panel_buttons .plus img {
   width: 25px;
   height: 25px;
 }
-.navigation .panel_buttons .settings {
+nav .navigation .panel_buttons .settings {
   padding: 5px 5px;
   margin: 0px 1% 0px 0px;
 }
-.navigation .panel_buttons .settings img {
+nav .navigation .panel_buttons .settings img {
   width: 36px;
   height: 36px;
 }
-.navigation .panel_buttons .door {
+nav .navigation .panel_buttons .door {
   width: 110px;
   padding: 12px 10px;
 }
-.navigation .panel_buttons .door img {
+nav .navigation .panel_buttons .door img {
   width: 23px;
   height: 23px;
 }
+nav .search {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 1% 0 1% 0;
+}
+nav .search input {
+  max-width: 45%;
+}
 
+@media (max-width: 1124px) {
+  .panel_buttons > * {
+    display: none;
+  }
+
+  .toggle_bar {
+    display: block;
+  }
+
+  .search > * {
+    display: block;
+  }
+}
 .button {
   background: #FFCC00;
   -webkit-box-shadow: 0px 4px 10px 0px rgba(17, 39, 66, 0.3);

@@ -4,7 +4,7 @@ body {
   background: #F5F5F5;
 }
 
-.navigation .panel_buttons span, .navigation .panel_buttons, .navigation {
+nav .navigation .panel_buttons span, nav .navigation .panel_buttons, nav .navigation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -30,71 +30,12 @@ nav .search {
           align-items: center;
 }
 
-nav, .content_wrap {
+.content_wrap, nav {
   display: grid;
   grid-template-columns: repeat(1, minmax(320px, 1500px));
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-.navigation .logo_wrap {
-  width: 15%;
-  height: 90%;
-  margin: 0px 5% 0px 1%;
-}
-.navigation .logo_wrap img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-.navigation .panel_buttons {
-  width: 80%;
-  height: 100%;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-.navigation .panel_buttons span {
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-.navigation .panel_buttons span > img {
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-.navigation .panel_buttons .main {
-  padding: 5px 10px;
-  margin: 0px 1% 0px 0px;
-}
-.navigation .panel_buttons .main img {
-  width: 45px;
-  height: 38px;
-}
-.navigation .panel_buttons .plus {
-  padding: 10px 10px;
-  margin: 0px 3.5% 0px 0px;
-}
-.navigation .panel_buttons .plus img {
-  width: 25px;
-  height: 25px;
-}
-.navigation .panel_buttons .settings {
-  padding: 5px 5px;
-  margin: 0px 1% 0px 0px;
-}
-.navigation .panel_buttons .settings img {
-  width: 36px;
-  height: 36px;
-}
-.navigation .panel_buttons .door {
-  width: 110px;
-  padding: 12px 10px;
-}
-.navigation .panel_buttons .door img {
-  width: 23px;
-  height: 23px;
 }
 
 .button {
@@ -169,16 +110,78 @@ input {
   opacity: 0.6;
 }
 
-body {
-  background: #EDEDED;
-}
-
 nav {
   width: 100%;
   background: #F5F5F5;
 }
+nav .toggle_bar {
+  display: none;
+}
+nav .search > * {
+  display: none;
+}
 nav .navigation {
   height: 130px;
+  margin: 0 2% 0 2%;
+  border-bottom: 1px solid #939393;
+}
+nav .navigation .logo_wrap {
+  width: 15%;
+  height: 90%;
+  margin: 0px 5% 0px 1%;
+}
+nav .navigation .logo_wrap img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+nav .navigation .panel_buttons {
+  width: 80%;
+  height: 100%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+nav .navigation .panel_buttons span {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+nav .navigation .panel_buttons span > img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+nav .navigation .panel_buttons .main {
+  padding: 5px 10px;
+  margin: 0px 1% 0px 0px;
+}
+nav .navigation .panel_buttons .main img {
+  width: 45px;
+  height: 38px;
+}
+nav .navigation .panel_buttons .plus {
+  padding: 10px 10px;
+  margin: 0px 3.5% 0px 0px;
+}
+nav .navigation .panel_buttons .plus img {
+  width: 25px;
+  height: 25px;
+}
+nav .navigation .panel_buttons .settings {
+  padding: 5px 5px;
+  margin: 0px 1% 0px 0px;
+}
+nav .navigation .panel_buttons .settings img {
+  width: 36px;
+  height: 36px;
+}
+nav .navigation .panel_buttons .door {
+  width: 110px;
+  padding: 12px 10px;
+}
+nav .navigation .panel_buttons .door img {
+  width: 23px;
+  height: 23px;
 }
 nav .search {
   -webkit-box-pack: space-evenly;
@@ -188,6 +191,23 @@ nav .search {
 }
 nav .search input {
   max-width: 45%;
+}
+
+@media (max-width: 1124px) {
+  .panel_buttons > * {
+    display: none;
+  }
+
+  .toggle_bar {
+    display: block;
+  }
+
+  .search > * {
+    display: block;
+  }
+}
+body {
+  background: #EDEDED;
 }
 
 .content_wrap {
@@ -202,11 +222,15 @@ nav .search input {
 }
 
 @media (max-width: 1124px) {
-  .panel_buttons {
+  .panel_buttons > * {
     display: none;
   }
 
   .toggle_bar {
+    display: block;
+  }
+
+  .search > * {
     display: block;
   }
 }/*# sourceMappingURL=main_style.css.map */
