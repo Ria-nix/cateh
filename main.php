@@ -21,28 +21,36 @@
 
             <!-- TOOGLE BAR -->
             <div class="toggle_bar">
-                <span class="button border main">
-                    <img src="icon/Untitled.svg" alt="alt">
-                    <p class="font_18">Системные администраторы</p>
-                </span>
-                <span class="button border plus">
-                    <img src="icon/plus-solid.svg" alt="alt">
-                </span>
-                <span class="button border main">
-                    <img src="icon/build.svg" alt="alt">
-                    <p class="font_18">Организации</p>
-                </span>
-                <span class="button border plus">
-                    <img src="icon/plus-solid.svg" alt="alt">
-                </span>
-                <span class="button border settings">
-                    <img src="icon/settings.svg" alt="alt">
-                    <p class="font_18"></p>
-                </span>
-                <span class="button border door">                    
-                    <p class="font_18">Выйти</p>
-                    <img src="icon/exitdoor_87195.svg" alt="alt">
-                </span>
+
+                <div class="toggle_but border button">
+                    <span></span>
+                </div>
+
+                <div class="toggle_menu">
+                    <!-- <span class="button border main">
+                        <img src="icon/Untitled.svg" alt="alt">
+                        <p class="font_18">Системные администраторы</p>
+                    </span>
+                    <span class="button border plus">
+                        <img src="icon/plus-solid.svg" alt="alt">
+                    </span>
+                    <span class="button border main">
+                        <img src="icon/build.svg" alt="alt">
+                        <p class="font_18">Организации</p>
+                    </span>
+                    <span class="button border plus">
+                        <img src="icon/plus-solid.svg" alt="alt">
+                    </span>
+                    <span class="button border settings">
+                        <img src="icon/settings.svg" alt="alt">
+                        <p class="font_18"></p>
+                    </span>
+                    <span class="button border door">                    
+                        <p class="font_18">Выйти</p>
+                        <img src="icon/exitdoor_87195.svg" alt="alt">
+                    </span> -->
+                </div>
+              
             </div>
 
             <!-- BUTTONS -->
@@ -83,8 +91,10 @@
     <!-- CONTENT -->
     <div class="content_wrap">
         <div class="head_table">
+
         </div>
         <div class="table_sysadmin">
+
         </div>  
     </div>
 

@@ -113,16 +113,13 @@ nav {
   width: 100%;
   background: #F5F5F5;
 }
+nav nav > div {
+  border: 1px solid red;
+}
 nav .navigation {
   height: 130px;
   margin: 0 2% 0 2%;
   border-bottom: 1px solid #939393;
-}
-nav .navigation .toggle_bar {
-  width: 50px;
-  height: 50px;
-  display: none;
-  border: 1px solid violet;
 }
 nav .navigation .logo_wrap {
   max-width: 18%;
@@ -134,6 +131,43 @@ nav .navigation .logo_wrap img {
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
+}
+nav .navigation .toggle_bar {
+  width: 50px;
+  height: 50px;
+  margin: 0 0 0 50%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+nav .navigation .toggle_bar .toggle_but {
+  width: 50px;
+  height: 50px;
+  position: relative;
+}
+nav .navigation .toggle_bar .toggle_but span {
+  width: 30px;
+  height: 5px;
+  background: #112742;
+  position: absolute;
+  -webkit-transform: translate(30%, 400%);
+          transform: translate(30%, 400%);
+}
+nav .navigation .toggle_bar .toggle_but span:after, nav .navigation .toggle_bar .toggle_but span:before {
+  content: "";
+  width: 30px;
+  height: 5px;
+  background: #112742;
+  position: absolute;
+}
+nav .navigation .toggle_bar .toggle_but span:after {
+  top: 10px;
+}
+nav .navigation .toggle_bar .toggle_but span:before {
+  top: -10px;
+}
+nav .navigation .toggle_bar .toggle_menu {
+  display: none;
 }
 nav .navigation .panel_buttons {
   width: 80%;
@@ -188,7 +222,7 @@ nav .search {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  padding: 1% 0 1% 0;
+  margin: 1% 0 1% 0;
 }
 nav .search * {
   display: none;
@@ -207,8 +241,21 @@ nav .search .button {
   margin: 2% 0;
 }
 
+@media (min-width: 1190px) {
+  .toggle_bar {
+    display: none;
+  }
+  .toggle_bar div {
+    display: none;
+  }
+
+  .panel_buttons {
+    position: static;
+  }
+}
 @media (max-width: 1190px) {
   .panel_buttons {
+    display: none;
     position: absolute;
     top: -9999px;
     left: -9999px;
@@ -217,19 +264,25 @@ nav .search .button {
   .toggle_bar {
     display: block;
   }
-
+  .toggle_bar div {
+    display: block;
+  }
   .logo_wrap {
-    min-width: 20%;
+    min-width: 25%;
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 850px) {
   .logo_wrap {
-    min-width: 30%;
+    min-width: 35%;
   }
 }
 @media (max-width: 610px) {
   body {
     background-color: #112742;
+  }
+
+  .logo_wrap {
+    min-width: 50%;
   }
 
   .search p, .search input, .search button {
