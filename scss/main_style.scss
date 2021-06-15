@@ -1,5 +1,5 @@
-@import "cateh_style";
-@import "navigation";
+@import 'cateh_style';
+@import 'navigation';
 
 body{
     background: $fon_table;
@@ -21,14 +21,3 @@ body{
     }
 }
 
-@media (max-width: 1124px) {
-    .panel_buttons > *{
-        display: none;
-    }
-    .toggle_bar{
-        display: block;
-    }
-    .search > *{
-        display: block;
-    }
-}

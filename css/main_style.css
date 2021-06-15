@@ -1,7 +1,6 @@
 body {
   font-family: "Roboto", sans-serif;
   color: #112742;
-  background: #F5F5F5;
 }
 
 nav .navigation .panel_buttons span, nav .navigation .panel_buttons, nav .navigation {
@@ -114,21 +113,22 @@ nav {
   width: 100%;
   background: #F5F5F5;
 }
-nav .toggle_bar {
-  display: none;
-}
-nav .search > * {
-  display: none;
-}
 nav .navigation {
   height: 130px;
   margin: 0 2% 0 2%;
   border-bottom: 1px solid #939393;
 }
+nav .navigation .toggle_bar {
+  width: 50px;
+  height: 50px;
+  display: none;
+  border: 1px solid violet;
+}
 nav .navigation .logo_wrap {
-  width: 15%;
+  width: 20%;
   height: 90%;
   margin: 0px 5% 0px 1%;
+  border: 1px solid red;
 }
 nav .navigation .logo_wrap img {
   width: 100%;
@@ -142,6 +142,8 @@ nav .navigation .panel_buttons {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
 }
 nav .navigation .panel_buttons span {
   -ms-flex-pack: distribute;
@@ -189,20 +191,46 @@ nav .search {
           justify-content: space-evenly;
   padding: 1% 0 1% 0;
 }
+nav .search * {
+  display: none;
+}
+nav .search p {
+  margin: 2% 0;
+}
 nav .search input {
-  max-width: 45%;
+  text-align: center;
+  width: 75%;
+  height: 40px;
+  margin: 2% 0;
+}
+nav .search .button {
+  padding: 8px 20px;
+  margin: 2% 0;
 }
 
-@media (max-width: 1124px) {
-  .panel_buttons > * {
-    display: none;
+@media (max-width: 1190px) {
+  .panel_buttons {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
   }
 
   .toggle_bar {
     display: block;
   }
+}
+@media (max-width: 720px) {
+  .logo_wrap {
+    max-width: 50%;
+  }
+}
+@media (max-width: 590px) {
+  body {
+    background-color: #112742;
+    color: #E52828;
+  }
 
-  .search > * {
+  .search p, .search input, .search button {
     display: block;
   }
 }
@@ -219,18 +247,4 @@ body {
 }
 .content_wrap .table_sysadmin {
   height: 200px;
-}
-
-@media (max-width: 1124px) {
-  .panel_buttons > * {
-    display: none;
-  }
-
-  .toggle_bar {
-    display: block;
-  }
-
-  .search > * {
-    display: block;
-  }
 }/*# sourceMappingURL=main_style.css.map */

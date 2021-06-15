@@ -1,17 +1,7 @@
-
-// NAVIGATION PANEL
-
 nav{
     width: 100%;
     @extend %grid;
     background: $fon_white;
-
-    .toggle_bar{
-        display: none;
-    }
-    .search > *{
-        display: none;
-    }
 
     .navigation{
         @extend %flex_row;
@@ -19,10 +9,18 @@ nav{
         margin: 0 2% 0 2%;
         border-bottom: 1px solid $gray_border;
     
+        .toggle_bar{
+            width: 50px;
+            height: 50px;
+            display: none;
+            border: 1px solid violet;
+        }
+
         .logo_wrap{
-            width: 15%;
+            width: 20%;
             height: 90%;       
             margin: 0px 5% 0px 1%; 
+            border: 1px solid red;
                         
             img{
                 width: 100%;
@@ -30,12 +28,15 @@ nav{
                 object-fit: contain;         
             }
         }
+
+        // PANEL BUTTONS
         .panel_buttons{
             width: 80%;
             height: 100%;
             @extend %flex_row;
             justify-content:flex-end;
-    
+            flex-shrink: 1;
+            
             span{         
                 @extend %flex_row;  
                 justify-content: space-around;     
@@ -43,6 +44,8 @@ nav{
             span > img{
                 object-fit: contain;
             }
+
+
             // SIZES FOR ALL BUTTONS
             .main{
                 padding: 5px 10px;
@@ -79,8 +82,7 @@ nav{
                     height: 23px;
                 }
             }
-        }
-        
+        }        
     }
 
     .search{
@@ -88,21 +90,54 @@ nav{
         justify-content: space-evenly;
         padding: 1% 0 1% 0;
 
+        *{
+            display: none;
+        }
+        p{
+            margin: 2% 0;
+        }
         input{
-            max-width: 45%;
+            text-align: center;
+            width: 75%;
+            height: 40px;
+            margin: 2% 0;
+        }
+        .button{
+            padding: 8px 20px;
+            margin: 2% 0;
         }
     }
 
+
 }  
-// @MEDIA
-@media (max-width: 1124px) {
-    .panel_buttons > *{
-        display: none;
+
+
+// ************* @MEDIA *************
+@media (max-width: 1190px) {
+    .panel_buttons{
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
     }
     .toggle_bar{
         display: block;
     }
-    .search > *{
+   
+}
+
+@media (max-width: 720px) {
+    .logo_wrap{
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 590px) {
+    body{
+        background-color: $blue;
+        color: $red;
+    }
+    .search p, .search input, .search button{
         display: block;
     }
+    
 }
