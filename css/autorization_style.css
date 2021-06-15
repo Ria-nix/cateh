@@ -97,6 +97,10 @@ input {
   letter-spacing: 0.13em;
 }
 
+.bold {
+  font-weight: bold;
+}
+
 .font_14 {
   font-size: 14px;
 }

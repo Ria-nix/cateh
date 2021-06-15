@@ -1,12 +1,7 @@
 @use"cateh_style" as *;
+
 body{
     background: $fon_table;
-}
-
-%grid{
-    display: grid;
-    grid-template-columns: repeat(1, minmax(320px, 1500px));
-    justify-content: center;
 }
 
 nav{
@@ -19,11 +14,12 @@ nav{
     }
 
     .search{
-        margin: 4% 0px 1% 0px;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-
+        @extend %flex_column;
+        justify-content: space-evenly;
+        padding: 1% 0 1% 0;
+        input{
+            max-width: 45%;
+        }
     }
 
 }    
@@ -41,5 +37,14 @@ nav{
     }
     .table_sysadmin{
         height: 200px;
+    }
+}
+
+@media (max-width: 1124px) {
+    .panel_buttons{
+        display: none;
+    }
+    .toggle_bar{
+        display: block;
     }
 }

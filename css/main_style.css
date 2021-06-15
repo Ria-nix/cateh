@@ -4,7 +4,7 @@ body {
   background: #F5F5F5;
 }
 
-nav .trow_up .trow_item, .navigation .panel_buttons span, .navigation .panel_buttons, .navigation {
+.navigation .panel_buttons span, .navigation .panel_buttons, .navigation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -15,6 +15,27 @@ nav .trow_up .trow_item, .navigation .panel_buttons span, .navigation .panel_but
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+nav .search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav, .content_wrap {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(320px, 1500px));
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .navigation .logo_wrap {
@@ -97,6 +118,10 @@ input {
   letter-spacing: 0.13em;
 }
 
+.bold {
+  font-weight: bold;
+}
+
 .font_14 {
   font-size: 14px;
 }
@@ -148,14 +173,6 @@ body {
   background: #EDEDED;
 }
 
-.sidebar_wrap, nav {
-  display: grid;
-  grid-template-columns: repeat(1, minmax(320px, 1500px));
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 nav {
   width: 100%;
   background: #F5F5F5;
@@ -163,37 +180,33 @@ nav {
 nav .navigation {
   height: 130px;
 }
-nav .trow_up {
-  margin: 4% 0px 1% 0px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+nav .search {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 1% 0 1% 0;
 }
-nav .trow_up .trow_item {
-  width: 150px;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  padding: 10px 15px;
-}
-nav .trow_up .trow_item img {
-  width: 15px;
-  height: 15px;
+nav .search input {
+  max-width: 45%;
 }
 
-.sidebar_wrap {
+.content_wrap {
   width: 100%;
   border-top: 0.5px solid #B2B2B2;
 }
-.sidebar_wrap div {
+.content_wrap div {
   height: 100px;
 }
-.sidebar_wrap .table_sysadmin {
+.content_wrap .table_sysadmin {
   height: 200px;
+}
+
+@media (max-width: 1124px) {
+  .panel_buttons {
+    display: none;
+  }
+
+  .toggle_bar {
+    display: block;
+  }
 }/*# sourceMappingURL=main_style.css.map */
