@@ -1,13 +1,9 @@
 @import 'cateh_style';
 @import 'navigation';
 
-body{
-    background: $fon_table;
-}
 
 
 // *********** CONTENT ****************
-
 .content_wrap{
     width: 100%;
     @extend %grid;
