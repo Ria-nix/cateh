@@ -16,9 +16,7 @@
          
         <!-- NAVIGATION PANEL      -->
         <div class="navigation">
-            <!-- <div class="logo_wrap" onselectstart="return false" onmousedown="return false">
-                <img src="icon/logo.png" alt="">
-            </div> -->
+            
             <img src="icon/logo.png" class="logo" alt="logo">
 
             <!-- TOOGLE BUTTON -->
