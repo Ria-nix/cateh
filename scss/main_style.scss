@@ -3,6 +3,29 @@
 
 // for content use "::webkit-scrollbar" or just make the navigation panel "position: fixed;"
 
+.search{
+    @extend %flex_column;
+    justify-content: space-evenly;
+    margin: 1% 0 1% 0;
+
+    *{
+        display: none;
+    }
+    p{
+        margin: 2% 0;
+    }
+    input{
+        text-align: center;
+        width: 75%;
+        height: 40px;
+        margin: 2% 0;
+    }
+    .button{
+        padding: 8px 20px;
+        margin: 2% 0;
+    }
+}
+
 // *********** CONTENT ****************
 .content_wrap{
     width: 100%;
@@ -10,10 +33,13 @@
     border-top: 0.5px solid $line;
 
     div{
-        height: 100px;
+        height: 5.5rem;
+        border: 1px solid yellow;
     }
     .table_sysadmin{
-        height: 200px;
+        height: 42rem;
+        border: 1px solid red;
+
     }
 }
 

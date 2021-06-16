@@ -4,17 +4,19 @@ nav{
     width: 100%;
     @extend %grid;
     background: $fon_white;
-    // position: fixed;
 
-    nav > div{
-        border: 1px solid red;
-    }
+    nav > div{ border: 1px solid red; }
+
     .navigation{
         @extend %flex_row;
         height: 130px;
         margin: 0 2% 0 2%;
         border-bottom: 1px solid $gray_border;
 
+        .toggle_menu_fon{
+            left: -10px;
+            
+        }
         
         .logo_wrap{
             max-width: 18%;
@@ -28,11 +30,10 @@ nav{
         }
 
         // TOGGLE BUTTON AND MENU
-
         .toggle_bar{
             width: 50px;
             height: 50px;          
-            justify-content:flex-end;
+            justify-content: flex-end;
 
             .toggle_but{
                 width: 50px;
@@ -46,7 +47,7 @@ nav{
                     position: absolute;
                     transform: translate(30%, 400%);
                 }
-                span:after, span:before{
+                span:after, span:before, .close:after, .close:before{
                     content: "";
                     width: 30px;
                     height: 5px;
@@ -59,11 +60,20 @@ nav{
                 span:before{
                     top: -10px;
                 }
-            }
-
-            .toggle_menu{
-               display: none;
-            }
+                span.close{
+                    width: 0;
+                    height: 0;
+                }   
+                span.close:after{
+                    top: 10px;
+                    transform: translate(45deg);
+                }
+                span.close:before{
+                    top: -10px;
+                    transform: translate(-45deg);
+                }  
+            }      
+            
         }
 
         // PANEL BUTTONS
@@ -73,80 +83,54 @@ nav{
             @extend %flex_row;
             justify-content:flex-end;
             flex-shrink: 1;
-            
-            span{         
-                @extend %flex_row;  
-                justify-content: space-around;     
-            }
-            span > img{
-                object-fit: contain;
-            }
-
-
-            // SIZES FOR ALL BUTTONS
-            .main{
-                padding: 5px 10px;
-                margin: 0px 1% 0px 0px;
-    
-                img{
-                    width: 45px;
-                    height: 38px;
-                }
-             }
-            .plus{
-              padding: 10px 10px;
-              margin: 0px 3.5% 0px 0px;
-                img{
-                    width: 25px;
-                    height: 25px;
-                }
-            }
-            .settings{
-                padding: 5px 5px;
-                margin: 0px 1% 0px 0px;
-    
-                img{
-                    width: 36px;
-                    height: 36px;
-                }
-            }
-            .door{
-                width: 110px;
-                padding: 12px 10px;
-    
-                img{
-                    width: 23px;
-                    height: 23px;
-                }
-            }
-        }        
-    }
-
-    .search{
-        @extend %flex_column;
-        justify-content: space-evenly;
-        margin: 1% 0 1% 0;
-
-        *{
-            display: none;
+        }  
+        span{         
+            @extend %flex_row;  
+            justify-content: space-around;     
         }
-        p{
-            margin: 2% 0;
+        span > img{
+            object-fit: contain;
         }
-        input{
-            text-align: center;
-            width: 75%;
-            height: 40px;
-            margin: 2% 0;
-        }
-        .button{
-            padding: 8px 20px;
-            margin: 2% 0;
-        }
-    }
 
+        // SIZES FOR ALL BUTTONS
+        .main{
+            padding: 5px 10px;
+            margin: 0px 1% 0px 0px;
+
+            img{
+                width: 45px;
+                height: 38px;
+            }
+            }
+        .plus{
+            padding: 10px 10px;
+            margin: 0px 3.5% 0px 0px;
+            img{
+                width: 25px;
+                height: 25px;
+            }
+        }
+        .settings{
+            padding: 5px 5px;
+            margin: 0px 1% 0px 0px;
+
+            img{
+                width: 36px;
+                height: 36px;
+            }
+        }
+        .door{
+            width: 110px;
+            padding: 12px 10px;
+
+            img{
+                width: 23px;
+                height: 23px;
+            }
+        }
+                
+    }    
 }  
-
 
 // ************* @MEDIA *************
 
@@ -155,12 +139,13 @@ nav{
     .toggle_bar{
         display: none;
 
-        div{
-            display: none;
-        }
+        div{ display: none; }
+    }
+    .toggle_menu_fon{
+        display: none;
     }
     .panel_buttons{ position: static; }
-    .logo_wrap{  margin: 0px 5% 0px 1%; }
+    .logo_wrap{ margin: 0px 5% 0px 1%; }
 }
 
 
@@ -179,7 +164,15 @@ nav{
     .logo_wrap{
         min-width: 25%;
         margin: 0px 65% 0px 1%; 
-    }       
+    }    
+    .toggle_menu_fon{
+        display: grid;        
+        position: fixed;
+        height: 48.5rem;        
+        top: 150px;
+        justify-content: center;        
+        grid-template-columns: repeat(1, minmax(830px, 1163px));    
+    }   
 }
  
 // ********** MEDIA 850PX *************
@@ -188,18 +181,36 @@ nav{
         min-width: 35%;
         margin: 0px 53% 0px 1%; 
     }
+    .toggle_menu_fon{
+        height: 48.5rem;   
+        justify-content: flex-end;        
+        grid-template-columns: repeat(1, minmax(570px, 850px));    
+    }
 }
 
-// ********** MEDIA MIN 610PX *************
+// ********** MEDIA MIN 580PX *************
 @media (min-width: 580px) {
     body{ background: $fon_table; }
+    
+    .toggle_menu_fon{        
+        background: rgba($fon_white, 1);
+        
+        .toggle_menu{
+            margin: 30px auto;
+            min-height: 60px;
+            max-height: 150px;
+            @extend %flex_row;
+            justify-content: center;
+            flex-wrap: wrap;
+            width: 95%;
+            background: rgba($fon_white, 1);
+        }
+    }
 }
 
-// ********** MEDIA MAX 610PX *************
+// ********** MEDIA MAX 580PX *************
 @media (max-width: 580px) {
-    body{
-        background: $blue;
-    }
+    body{ background: $blue; }
     .logo_wrap{
         min-width: 50%;
         margin: 0px 27% 0px 3%; 
@@ -207,4 +218,19 @@ nav{
     .search p, .search input, .search button{
         display: block;
     }    
+    .toggle_menu_fon{
+        min-height: 58.1rem;    
+        top: 140px; 
+        justify-content: center;        
+        grid-template-columns: repeat(1, minmax(320px, 580px));  
+
+        .toggle_menu{
+            margin: 0 auto;
+            min-height: 100%;
+            @extend %flex_column;
+            justify-content: center;
+            width: 100%;
+            background: $fon_white;
+        }  
+    }
 }
