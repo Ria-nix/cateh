@@ -109,12 +109,6 @@ input {
   opacity: 0;
 }
 
-.flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .grid {
   display: grid;
 }
@@ -228,12 +222,6 @@ input {
 
 .opacity_none {
   opacity: 0;
-}
-
-.flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .grid {
@@ -428,6 +416,11 @@ nav .navigation .door img {
         -ms-flex-pack: end;
             justify-content: flex-end;
     grid-template-columns: repeat(1, minmax(570px, 850px));
+  }
+  .toggle_menu_fon .toggle_menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 @media (min-width: 580px) {

@@ -29,7 +29,7 @@
 
             <!-- TOOGLE MENU -->
             <div class="toggle_menu_fon none">
-                <div class="toggle_menu border none">
+                <div class="toggle_menu border">
                      <span class="button border main">
                         <img src="icon/Untitled.svg" alt="alt">
                         <p class="font_18">Системные администраторы</p>

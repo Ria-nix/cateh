@@ -185,7 +185,11 @@ nav{
     .toggle_menu_fon{
         height: 48.5rem;   
         justify-content: flex-end;        
-        grid-template-columns: repeat(1, minmax(570px, 850px));    
+        grid-template-columns: repeat(1, minmax(570px, 850px));   
+        
+        .toggle_menu{
+            display: flex;
+        } 
     }
 }
 
