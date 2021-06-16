@@ -168,16 +168,12 @@ nav{
         min-width: 25%;
         margin: 0px 65% 0px 1%; 
     }    
-    .toggle_menu_fon{
-        // display: grid;         // GRID  show buttons    
+    .toggle_menu_fon{        // GRID  show buttons    
         height: 48.5rem;        
         top: 150px;
         justify-content: center;     
         grid-template-columns: repeat(1, minmax(830px, 1163px));    
     } 
-    .toggle_menu{
-        // display: flex;      // FLEX  show buttons
-    }  
 }
  
 // ********** MEDIA 850PX *************
