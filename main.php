@@ -28,14 +28,15 @@
             </div>
 
             <!-- TOOGLE MENU -->
-            <div class="toggle_menu_fon">
-                <div class="toggle_menu border">
+            <div class="toggle_menu_fon none">
+                <div class="toggle_menu border none">
                      <span class="button border main">
                         <img src="icon/Untitled.svg" alt="alt">
                         <p class="font_18">Системные администраторы</p>
                     </span>
                     <span class="button border plus">
                         <img src="icon/plus-solid.svg" alt="alt">
+                        <p class="font_18 icon_none none">Добавить нового сис. админа</p>
                     </span>
                     <span class="button border main">
                         <img src="icon/build.svg" alt="alt">
@@ -43,10 +44,11 @@
                     </span>
                     <span class="button border plus">
                         <img src="icon/plus-solid.svg" alt="alt">
+                        <p class="font_18 icon_none none">Добавить новую организацию</p>
                     </span>
                     <span class="button border settings">
                         <img src="icon/settings.svg" alt="alt">
-                        <p class="font_18"></p>
+                        <p class="font_18 icon_none none">Настройки</p>
                     </span>
                     <span class="button border door">                    
                         <p class="font_18">Выйти</p>

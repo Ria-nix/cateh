@@ -15,7 +15,12 @@ nav{
 
         .toggle_menu_fon{
             left: -10px;
-            
+            position: fixed;
+
+            .toggle_menu{
+                display: flex;
+                align-items: center;
+            }
         }
         
         .logo_wrap{
@@ -141,9 +146,7 @@ nav{
 
         div{ display: none; }
     }
-    .toggle_menu_fon{
-        display: none;
-    }
+
     .panel_buttons{ position: static; }
     .logo_wrap{ margin: 0px 5% 0px 1%; }
 }
@@ -166,13 +169,15 @@ nav{
         margin: 0px 65% 0px 1%; 
     }    
     .toggle_menu_fon{
-        display: grid;        
-        position: fixed;
+        // display: grid;         // GRID  show buttons    
         height: 48.5rem;        
         top: 150px;
-        justify-content: center;        
+        justify-content: center;     
         grid-template-columns: repeat(1, minmax(830px, 1163px));    
-    }   
+    } 
+    .toggle_menu{
+        // display: flex;      // FLEX  show buttons
+    }  
 }
  
 // ********** MEDIA 850PX *************
@@ -193,13 +198,13 @@ nav{
     body{ background: $fon_table; }
     
     .toggle_menu_fon{        
-        background: rgba($fon_white, 1);
+        background: rgba($blue, 0.5);
         
         .toggle_menu{
             margin: 30px auto;
             min-height: 60px;
             max-height: 150px;
-            @extend %flex_row;
+            flex-direction: row;
             justify-content: center;
             flex-wrap: wrap;
             width: 95%;
@@ -211,6 +216,9 @@ nav{
 // ********** MEDIA MAX 580PX *************
 @media (max-width: 580px) {
     body{ background: $blue; }
+    .content_wrap{
+        // position: fixed;
+    }
     .logo_wrap{
         min-width: 50%;
         margin: 0px 27% 0px 3%; 
@@ -225,12 +233,26 @@ nav{
         grid-template-columns: repeat(1, minmax(320px, 580px));  
 
         .toggle_menu{
-            margin: 0 auto;
-            min-height: 100%;
-            @extend %flex_column;
-            justify-content: center;
+            padding: 50px 0 350px 0; 
+            min-height: 80%;
+            flex-direction: column;
+            justify-content: space-around;
             width: 100%;
             background: $fon_white;
+
+            span{
+                min-width: 300px;
+                height: 45px;
+                margin: 0 0 30px 0;
+
+                img{
+                    display: none;
+                }
+                .icon_none{
+                    display: block;
+                }
+            }
+            
         }  
     }
 }

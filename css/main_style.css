@@ -3,7 +3,7 @@ body {
   color: #112742;
 }
 
-nav .navigation span, nav .navigation .panel_buttons, nav .navigation .toggle_menu_fon .toggle_menu, nav .navigation {
+nav .navigation span, nav .navigation .panel_buttons, nav .navigation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -114,7 +114,7 @@ body {
   color: #112742;
 }
 
-nav .navigation span, nav .navigation .panel_buttons, nav .navigation .toggle_menu_fon .toggle_menu, nav .navigation {
+nav .navigation span, nav .navigation .panel_buttons, nav .navigation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -231,25 +231,18 @@ nav .navigation {
   height: 130px;
   margin: 0 2% 0 2%;
   border-bottom: 1px solid #939393;
-  position: relative;
 }
 nav .navigation .toggle_menu_fon {
-  background: rgba(17, 39, 66, 0.6);
-  position: fixed;
   left: -10px;
-  display: grid;
+  position: fixed;
 }
 nav .navigation .toggle_menu_fon .toggle_menu {
-  margin: 30px auto;
-  min-height: 60px;
-  max-height: 150px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  width: 95%;
-  background: whitesmoke;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 nav .navigation .logo_wrap {
   max-width: 18%;
@@ -421,6 +414,26 @@ nav .navigation .door img {
   body {
     background: #EDEDED;
   }
+
+  .toggle_menu_fon {
+    background: rgba(17, 39, 66, 0.5);
+  }
+  .toggle_menu_fon .toggle_menu {
+    margin: 30px auto;
+    min-height: 60px;
+    max-height: 150px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 95%;
+    background: whitesmoke;
+  }
 }
 @media (max-width: 580px) {
   body {
@@ -443,6 +456,29 @@ nav .navigation .door img {
         -ms-flex-pack: center;
             justify-content: center;
     grid-template-columns: repeat(1, minmax(320px, 580px));
+  }
+  .toggle_menu_fon .toggle_menu {
+    padding: 50px 0 350px 0;
+    min-height: 80%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 100%;
+    background: #F5F5F5;
+  }
+  .toggle_menu_fon .toggle_menu span {
+    min-width: 300px;
+    height: 45px;
+    margin: 0 0 30px 0;
+  }
+  .toggle_menu_fon .toggle_menu span img {
+    display: none;
+  }
+  .toggle_menu_fon .toggle_menu span .icon_none {
+    display: block;
   }
 }
 .search {
