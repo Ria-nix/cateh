@@ -27,19 +27,80 @@
 }
 
 // *********** CONTENT ****************
+
 .content_wrap{
     width: 100%;
     @extend %grid;
     border-top: 0.5px solid $line;
 
-    div{
-        height: 5.5rem;
+    .content_wrap > div{ margin: 0 2% 0 2%;}
+
+    //HEAD TABLE
+    .head_table{ 
         // border: 1px solid yellow;
+        @extend %flex_row;
+        height: 5rem;
+        border-bottom: 1px solid $blue;
+        
+        .head_name{
+            width: 90%;
+            height: 100%;
+            border: 1px solid violet;
+            @extend %flex_row;
+            justify-content: space-around;
+          
+
+        }
+        .empty{
+            width: 10%;
+            height: 100%;
+            // border: 1px solid blue;
+        }
     }
+
+  
+
+
+
+
+
+
+
+
+
+
+    // TABELE
     .table_sysadmin{
         height: 42rem;
         // border: 1px solid red;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        @extend %flex_column;
+        
+        .item_table{
+            width: 100%;
+            height: auto;
+            @extend %flex_row;
+            justify-content: space-around;
+            margin: 20px 0 0 0;
+            // border: 1px solid red;
 
+            .item_info{
+                width: 90%;
+                height: 50px;
+                background: $gray_full;
+                box-shadow: 0px 4px 10px 0px rgba($but_shadow, 0.15);
+            }
+    
+            .click{
+                padding:16px 8px;
+            }
+        }
+        
+    }
+
+    .table_sysadmin::-webkit-scrollbar{
+        width: 0;
     }
 }
 

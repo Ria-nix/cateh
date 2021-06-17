@@ -5,7 +5,7 @@ nav{
     @extend %grid;
     background: $fon_white;
 
-    // nav > div{ border: 1px solid red; }
+    nav > div{ border: 1px solid red; }
    
     .navigation{
         @extend %flex_row;
@@ -20,11 +20,12 @@ nav{
         .toggle_menu_fon{
             left: -10px;
             position: absolute;
+            
 
             .toggle_menu{
                 display: flex;
                 align-items: center;
-                overflow: scroll;
+                // overflow: scroll;
             }
         }
 
@@ -159,8 +160,8 @@ nav{
         div{ display: block; }
     }
     .toggle_menu_fon{        // GRID  show buttons    
-        height: 48.5rem;        
-        top: 150px;
+        height: 100%;        
+        top: 160px;
         justify-content: center;     
         grid-template-columns: repeat(1, minmax(830px, 1163px));    
     } 
@@ -170,8 +171,8 @@ nav{
 // ********** MEDIA 850PX *************
 @media (max-width: 850px) {    
     .toggle_menu_fon{
-        height: 48.5rem;   
-        top: 130px;
+        height: 100%;   
+        top: 160px;
         justify-content: flex-end;        
         grid-template-columns: repeat(1, minmax(570px, 850px));   
 
@@ -183,7 +184,7 @@ nav{
 @media (min-width: 580px) {
     body{ background: $fon_table; }
     
-    .toggle_menu_fon{ background: rgba($blue, 0.5);
+    .toggle_menu_fon{ background: rgba($blue, 0.8);
         
         .toggle_menu{
             margin: 30px auto;

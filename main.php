@@ -93,10 +93,19 @@
     <!-- CONTENT -->
     <div class="content_wrap">
         <div class="head_table">
-
+            <div class="head_name font_18">
+                <p>ФИО <span><img src="" alt="arrow"></span></p>
+                <p>Выполнено за месяц</p>
+                <p>Текущих заказов </p>
+                <p>Роль</p>
+            </div>
+            <div class="empty"></div>
         </div>
         <div class="table_sysadmin">
-                
+            <div class="item_table">
+                 <div class="item_info border "></div>
+              <button class="click button border font_16">Просмотреть</button>
+            </div>             
         </div>  
     </div>
 

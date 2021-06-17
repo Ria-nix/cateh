@@ -104,6 +104,9 @@ nav {
   width: 100%;
   background: #F5F5F5;
 }
+nav nav > div {
+  border: 1px solid red;
+}
 nav .navigation {
   height: 130px;
   margin: 0 2% 0 2%;
@@ -123,7 +126,6 @@ nav .navigation .toggle_menu_fon .toggle_menu {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  overflow: scroll;
 }
 nav .navigation .toggle_bar {
   -webkit-box-pack: end;
@@ -257,8 +259,8 @@ nav .navigation .door img {
   }
 
   .toggle_menu_fon {
-    height: 48.5rem;
-    top: 150px;
+    height: 100%;
+    top: 160px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -267,8 +269,8 @@ nav .navigation .door img {
 }
 @media (max-width: 850px) {
   .toggle_menu_fon {
-    height: 48.5rem;
-    top: 130px;
+    height: 100%;
+    top: 160px;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
@@ -286,7 +288,7 @@ nav .navigation .door img {
   }
 
   .toggle_menu_fon {
-    background: rgba(17, 39, 66, 0.5);
+    background: rgba(17, 39, 66, 0.8);
   }
   .toggle_menu_fon .toggle_menu {
     margin: 30px auto;
