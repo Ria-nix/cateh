@@ -507,12 +507,13 @@ nav .navigation .door img {
   margin: 2% 0;
 }
 
+.content_wrap > div {
+  margin: 0 2% 0 2%;
+}
+
 .content_wrap {
   width: 100%;
   border-top: 0.5px solid #B2B2B2;
-}
-.content_wrap .content_wrap > div {
-  margin: 0 2% 0 2%;
 }
 .content_wrap .head_table {
   height: 5rem;
@@ -521,9 +522,12 @@ nav .navigation .door img {
 .content_wrap .head_table .head_name {
   width: 90%;
   height: 100%;
-  border: 1px solid violet;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+.content_wrap .head_table .head_name p {
+  padding: 0 5% 0 0;
 }
 .content_wrap .head_table .head_name span {
   -webkit-transform: rotate(180deg);
@@ -541,19 +545,24 @@ nav .navigation .door img {
 .content_wrap .table_sysadmin .item_table {
   width: 100%;
   height: auto;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   margin: 20px 0 0 0;
 }
 .content_wrap .table_sysadmin .item_table .item_info {
-  width: 90%;
-  height: 60px;
+  margin-right: 20px;
+  width: 85%;
+  height: 65px;
   background: #F1F1F1;
   -webkit-box-shadow: 0px 4px 10px 0px rgba(17, 39, 66, 0.15);
           box-shadow: 0px 4px 10px 0px rgba(17, 39, 66, 0.15);
 }
 .content_wrap .table_sysadmin .item_table .click {
-  padding: 16px 8px;
+  padding: 16px 12px;
+}
+.content_wrap .table_sysadmin .item_table:last-child {
+  margin: 20px 0;
 }
 .content_wrap .table_sysadmin::-webkit-scrollbar {
   width: 0;
