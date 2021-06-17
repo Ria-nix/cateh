@@ -525,12 +525,16 @@ nav .navigation .door img {
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
+.content_wrap .head_table .head_name span {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
 .content_wrap .head_table .empty {
   width: 10%;
   height: 100%;
 }
 .content_wrap .table_sysadmin {
-  height: 42rem;
+  height: 47rem;
   overflow-y: scroll;
   overflow-x: hidden;
 }
@@ -543,7 +547,7 @@ nav .navigation .door img {
 }
 .content_wrap .table_sysadmin .item_table .item_info {
   width: 90%;
-  height: 50px;
+  height: 60px;
   background: #F1F1F1;
   -webkit-box-shadow: 0px 4px 10px 0px rgba(17, 39, 66, 0.15);
           box-shadow: 0px 4px 10px 0px rgba(17, 39, 66, 0.15);

@@ -1,19 +1,13 @@
 @import 'cateh_style';
 @import 'navigation';
 
-// for content use "::webkit-scrollbar" or just make the navigation panel "position: fixed;"
-
 .search{
     @extend %flex_column;
     justify-content: space-evenly;
     margin: 1% 0 1% 0;
 
-    *{
-        display: none;
-    }
-    p{
-        margin: 2% 0;
-    }
+    *{ display: none; }
+    p{ margin: 2% 0;  }
     input{
         text-align: center;
         width: 75%;
@@ -49,7 +43,9 @@
             @extend %flex_row;
             justify-content: space-around;
           
-
+            span{
+                transform: rotate(180deg);
+            }
         }
         .empty{
             width: 10%;
@@ -64,14 +60,9 @@
 
 
 
-
-
-
-
-
     // TABELE
     .table_sysadmin{
-        height: 42rem;
+        height: 47rem;
         // border: 1px solid red;
         overflow-y: scroll;
         overflow-x: hidden;
@@ -87,20 +78,16 @@
 
             .item_info{
                 width: 90%;
-                height: 50px;
+                height: 60px;
                 background: $gray_full;
                 box-shadow: 0px 4px 10px 0px rgba($but_shadow, 0.15);
             }
     
-            .click{
-                padding:16px 8px;
-            }
+            .click{ padding:16px 8px; }
         }
         
     }
 
-    .table_sysadmin::-webkit-scrollbar{
-        width: 0;
-    }
+    .table_sysadmin::-webkit-scrollbar{ width: 0; }
 }
 

@@ -29,28 +29,28 @@
             <div class="toggle_menu_fon none">
                 <div class="toggle_menu border">
                      <span class="button border main">
-                        <img src="icon/Untitled.svg" alt="alt">
+                        <!-- <img src="" alt="alt"> -->
                         <p class="font_18">Системные администраторы</p>
                     </span>
                     <span class="button border plus">
-                        <img src="icon/plus-solid.svg" alt="alt">
+                        <!-- <img src="icon/plus.svg" alt="alt"> -->
                         <p class="font_18 icon_none none">Добавить нового сис. админа</p>
                     </span>
                     <span class="button border main">
-                        <img src="icon/build.svg" alt="alt">
+                        <!-- <img src="icon/building.svg" alt="alt"> -->
                         <p class="font_18">Организации</p>
                     </span>
                     <span class="button border plus">
-                        <img src="icon/plus-solid.svg" alt="alt">
+                        <!-- <img src="icon/plus.svg" alt="alt"> -->
                         <p class="font_18 icon_none none">Добавить новую организацию</p>
                     </span>
                     <span class="button border settings">
-                        <img src="icon/settings.svg" alt="alt">
+                        <!-- <img src="icon/settings.svg" alt="alt"> -->
                         <p class="font_18 icon_none none">Настройки</p>
                     </span>
                     <span class="button border door">                    
                         <p class="font_18">Выйти</p>
-                        <img src="icon/exitdoor_87195.svg" alt="alt">
+                        <!-- <img src="icon/exitdoor.svg" alt="alt"> -->
                     </span>
                 </div>                   
             </div>
@@ -94,7 +94,7 @@
     <div class="content_wrap">
         <div class="head_table">
             <div class="head_name font_18">
-                <p>ФИО <span><img src="" alt="arrow"></span></p>
+                <p>ФИО <span><img src="icon/up_arrow.svg" alt="arrow"></span></p>
                 <p>Выполнено за месяц</p>
                 <p>Текущих заказов </p>
                 <p>Роль</p>
@@ -105,7 +105,56 @@
             <div class="item_table">
                  <div class="item_info border "></div>
               <button class="click button border font_16">Просмотреть</button>
-            </div>             
+            </div>     
+            <div class="item_table">
+                 <div class="item_info border "></div>
+              <button class="click button border font_16">Просмотреть</button>
+            </div>     
+            <div class="item_table">
+                 <div class="item_info border "></div>
+              <button class="click button border font_16">Просмотреть</button>
+            </div>     
+            <div class="item_table">
+                 <div class="item_info border "></div>
+              <button class="click button border font_16">Просмотреть</button>
+            </div>     
+            <div class="item_table">
+                 <div class="item_info border "></div>
+              <button class="click button border font_16">Просмотреть</button>
+            </div>     
+            <div class="item_table">
+                 <div class="item_info border "></div>
+              <button class="click button border font_16">Просмотреть</button>
+            </div>     
+            <div class="item_table">
+                 <div class="item_info border "></div>
+              <button class="click button border font_16">Просмотреть</button>
+            </div>  
+            <div class="item_table">
+                 <div class="item_info border "></div>
+              <button class="click button border font_16">Просмотреть</button>
+            </div>     
+            <div class="item_table">
+                 <div class="item_info border "></div>
+              <button class="click button border font_16">Просмотреть</button>
+            </div>     
+            <div class="item_table">
+                 <div class="item_info border "></div>
+              <button class="click button border font_16">Просмотреть</button>
+            </div>     
+            <div class="item_table">
+                 <div class="item_info border "></div>
+              <button class="click button border font_16">Просмотреть</button>
+            </div>     
+            <div class="item_table">
+                 <div class="item_info border "></div>
+              <button class="click button border font_16">Просмотреть</button>
+            </div>     
+            <div class="item_table">
+                 <div class="item_info border "></div>
+              <button class="click button border font_16">Просмотреть</button>
+            </div>        
+
         </div>  
     </div>
 
