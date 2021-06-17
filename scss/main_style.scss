@@ -1,6 +1,8 @@
 @import 'cateh_style';
 @import 'navigation';
 
+.spacing_special{ letter-spacing: 1px; }
+
 .search{
     @extend %flex_column;
     justify-content: space-evenly;
@@ -42,12 +44,8 @@
             @extend %flex_row;
             justify-content: space-evenly;
           
-            p{
-                padding: 0 5% 0 0;
-            }
-            span{
-                transform: rotate(180deg);
-            }
+            p{ padding: 0 5% 0 0; }
+            span{ transform: rotate(180deg); }
         }
         .empty{
             width: 10%;
@@ -55,12 +53,6 @@
             // border: 1px solid blue;
         }
     }
-
-  
-
-
-
-
 
     // TABELE
     .table_sysadmin{
@@ -84,17 +76,96 @@
                 height: 65px;
                 background: $gray_full;
                 box-shadow: 0px 4px 10px 0px rgba($but_shadow, 0.15);
+                @extend %flex_row;
+
+                p:first-child, p:last-child{
+                    margin: 0 5%; 
+                }
+                p:nth-child(2),  p:nth-child(3){
+                    margin: 0 12.5%;
+                }
             }
     
-            .click{ padding:16px 12px; }
+            .click{ padding:18px 12px; font-weight: initial;  }
         }
-
-        .item_table:last-child{
-            margin: 20px 0;
-        }
+        .item_table:last-child{ margin: 20px 0; }
         
     }
-
     .table_sysadmin::-webkit-scrollbar{ width: 0; }
+}
+
+
+
+// ************* @MEDIA *************
+
+// ********** MEDIA MAX 1163PX *************
+@media (max-width: 1163px) {
+    .panel_buttons{
+        display: none;
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+    .toggle_bar{ display: block;
+
+        div{ display: block; }
+    }
+    .toggle_menu_fon{        // GRID  show buttons    
+        height: 100%;        
+        top: 160px;
+        justify-content: center;     
+        grid-template-columns: repeat(1, minmax(830px, 1163px));    
+    } 
+    
+}
+ 
+// ********** MEDIA 850PX *************
+@media (max-width: 850px) {    
+    .toggle_menu_fon{
+        height: 100%;   
+        top: 160px;
+        justify-content: flex-end;        
+        grid-template-columns: repeat(1, minmax(570px, 850px));   
+
+        .toggle_menu{ display: flex; } 
+    }
+}
+
+// ********** MEDIA MAX 580PX *************
+@media (max-width: 580px) {
+    .navigation{
+        height: 50px;
+    }
+    body{ background: $blue; }
+    .content_wrap::-webkit-scrollbar{  overflow: hidden; }
+  
+    .search p, .search input, .search button{
+        display: block;
+    }    
+    .toggle_menu_fon{
+        min-height: 58.1rem;    
+        top: 140px; 
+        justify-content: center;        
+        grid-template-columns: repeat(1, minmax(320px, 580px));  
+
+        .toggle_menu{
+            padding: 50px 0 350px 0; 
+            min-height: 80%;
+            flex-direction: column;
+            justify-content: space-around;
+            width: 100%;
+            background: $fon_white;
+
+            span{
+                min-width: 300px;
+                height: 45px;
+                margin: 0 0 0 10px;
+
+                img{  display: none;   }
+                .icon_none{ display: block; }
+            }
+            
+        }  
+    }
 }
 

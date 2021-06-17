@@ -93,7 +93,7 @@
     <!-- CONTENT -->
     <div class="content_wrap">
         <div class="head_table">
-            <div class="head_name font_18">
+            <div class="head_name font_20 spacing_special">
                 <p>ФИО <span><img src="icon/up_arrow.svg" alt="arrow"></span></p>
                 <p>Выполнено за месяц</p>
                 <p>Текущих заказов </p>
@@ -103,7 +103,7 @@
         </div>
         <div class="table_sysadmin">
             <div class="item_table">
-                 <div class="item_info border ">
+                 <div class="item_info border font_20">
                      <p class="fio">Михаил Купринов</p>
                      <p class="complete_order">50</p>
                      <p class="current_order">50</p>
@@ -112,51 +112,111 @@
               <button class="click button border font_16">Просмотреть</button>
             </div>     
             <div class="item_table">
-                 <div class="item_info border "></div>
+            <div class="item_info border font_20">
+                     <p class="fio">Михаил Купринов</p>
+                     <p class="complete_order">50</p>
+                     <p class="current_order">50</p>
+                     <p class="role">Администратор</p>
+                 </div>
               <button class="click button border font_16">Просмотреть</button>
             </div>     
             <div class="item_table">
-                 <div class="item_info border "></div>
+                <div class="item_info border font_20">
+                    <p class="fio">Михаил Купринов</p>
+                    <p class="complete_order">50</p>
+                    <p class="current_order">50</p>
+                    <p class="role">Администратор</p>
+                </div>
               <button class="click button border font_16">Просмотреть</button>
             </div>     
             <div class="item_table">
-                 <div class="item_info border "></div>
+                <div class="item_info border font_20">
+                    <p class="fio">Михаил Купринов</p>
+                    <p class="complete_order">50</p>
+                    <p class="current_order">50</p>
+                    <p class="role">Администратор</p>
+                </div>
               <button class="click button border font_16">Просмотреть</button>
             </div>     
             <div class="item_table">
-                 <div class="item_info border "></div>
+                <div class="item_info border font_20">
+                    <p class="fio">Михаил Купринов</p>
+                    <p class="complete_order">50</p>
+                    <p class="current_order">50</p>
+                    <p class="role">Администратор</p>
+                </div>
               <button class="click button border font_16">Просмотреть</button>
             </div>     
             <div class="item_table">
-                 <div class="item_info border "></div>
+                <div class="item_info border font_20">
+                    <p class="fio">Михаил Купринов</p>
+                    <p class="complete_order">50</p>
+                    <p class="current_order">50</p>
+                    <p class="role">Администратор</p>
+                </div>
               <button class="click button border font_16">Просмотреть</button>
             </div>     
             <div class="item_table">
-                 <div class="item_info border "></div>
+                <div class="item_info border font_20">
+                    <p class="fio">Михаил Купринов</p>
+                    <p class="complete_order">50</p>
+                    <p class="current_order">50</p>
+                    <p class="role">Администратор</p>
+                </div>
               <button class="click button border font_16">Просмотреть</button>
             </div>  
             <div class="item_table">
-                 <div class="item_info border "></div>
+                <div class="item_info border font_20">
+                    <p class="fio">Михаил Купринов</p>
+                    <p class="complete_order">50</p>
+                    <p class="current_order">50</p>
+                    <p class="role">Администратор</p>
+                </div>
               <button class="click button border font_16">Просмотреть</button>
             </div>     
             <div class="item_table">
-                 <div class="item_info border "></div>
+                <div class="item_info border font_20">
+                    <p class="fio">Михаил Купринов</p>
+                    <p class="complete_order">50</p>
+                    <p class="current_order">50</p>
+                    <p class="role">Администратор</p>
+                </div>
               <button class="click button border font_16">Просмотреть</button>
             </div>     
             <div class="item_table">
-                 <div class="item_info border "></div>
+                <div class="item_info border font_20">
+                    <p class="fio">Михаил Купринов</p>
+                    <p class="complete_order">50</p>
+                    <p class="current_order">50</p>
+                    <p class="role">Администратор</p>
+                </div>
               <button class="click button border font_16">Просмотреть</button>
             </div>     
             <div class="item_table">
-                 <div class="item_info border "></div>
+                <div class="item_info border font_20">
+                    <p class="fio">Михаил Купринов</p>
+                    <p class="complete_order">50</p>
+                    <p class="current_order">50</p>
+                    <p class="role">Администратор</p>
+                </div>
               <button class="click button border font_16">Просмотреть</button>
             </div>     
             <div class="item_table">
-                 <div class="item_info border "></div>
+                <div class="item_info border font_20">
+                    <p class="fio">Михаил Купринов</p>
+                    <p class="complete_order">50</p>
+                    <p class="current_order">50</p>
+                    <p class="role">Администратор</p>
+                </div>
               <button class="click button border font_16">Просмотреть</button>
             </div>     
             <div class="item_table">
-                 <div class="item_info border "></div>
+                <div class="item_info border font_20">
+                    <p class="fio">Михаил Купринов</p>
+                    <p class="complete_order">50</p>
+                    <p class="current_order">50</p>
+                    <p class="role">Администратор</p>
+                </div>
               <button class="click button border font_16">Просмотреть</button>
             </div>        
 
