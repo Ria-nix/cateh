@@ -33,12 +33,11 @@
     //HEAD TABLE
     .head_table{ 
         // border: 1px solid yellow;
-        @extend %flex_row;
         height: 5rem;
         border-bottom: 1px solid $blue;
+
         
-        .head_name{
-            width: 90%;
+        .head_name{          
             height: 100%;
             // border: 1px solid violet;
             @extend %flex_row;
@@ -47,14 +46,11 @@
             p{ padding: 0 5% 0 0; }
             span{ transform: rotate(180deg); }
         }
-        .empty{
-            width: 10%;
-            height: 100%;
-            // border: 1px solid blue;
-        }
     }
+  
 
-    // TABELE
+
+    // TABLE WITH INFO
     .table_sysadmin{
         height: 47rem;
         // border: 1px solid red;
@@ -71,22 +67,32 @@
             // border: 1px solid red;
 
             .item_info{
-                margin-right: 20px;
-                width: 85%;
+                width: 100%;
                 height: 100%;
                 background: $gray_full;
                 box-shadow: 0px 4px 10px 0px rgba($but_shadow, 0.15);
                 @extend %flex_row;
+                justify-content: space-evenly;
 
-                p:first-child, p:last-child{
-                    margin: 0 5%; 
+                .main_fio{ margin: 1% 1.5% 1% 0; text-align: center;}
+
+                .info_items{
+                    width: 70%;
+                    height: 100%;
+                    // border: 1px solid blue;
+                    padding: 0 3%;
+                    @extend %flex_row;
+                    justify-content: space-between;
+
+                    p:nth-child(2){ padding: 0 0 0 12%; }
                 }
-                p:nth-child(2),  p:nth-child(3){
-                    margin: 0 12.5%;
-                }
+               
             }
     
-            .click{ padding:18px 12px; font-weight: initial;  }
+            .click{ 
+                padding:18px 12px;
+                font-weight: initial;  
+            }
         }
         .item_table:last-child{ margin: 20px 0; }
         
@@ -100,32 +106,54 @@
 
 // ********** MEDIA MIN 1163PX *************
 @media (min-width: 1163px) {
-    .item_table,  .head_name{
-        font-size: 18px;
+    .item_table,  .head_name{ font-size: 18px; }
+
+    .head_table{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .item_table button{ display: block; }
+    .item_info{ margin-right: 20px;  width: 85%; }
+
+    .head_name{
+        width: 80%;
+        margin: 0 0 0 5%;
     }
 }
 
 // ********** MEDIA MAX 1163PX *************
 @media (max-width: 1163px) {
-    .item_table{
-        font-size: 16px;
-    }
+    .item_table{font-size: 16px; }
+    
     
 }
  
 // ********** MEDIA 850PX *************
-@media (max-width: 850px) {    
-    .item_table{
-        font-size: 18px;
+@media (max-width: 850px) {  
+    .head_table{
+        width: 100%;
+        margin: 0;
+     }  
+    .item_table button{
+        display: none;
     }
-   
+    .item_info{
+        margin: 0;
+        width: 100%;
+    }
+    .head_name{
+        width: 100%;
+        margin: 0;
+    }
 }
 
 // ********** MEDIA MAX 580PX *************
 @media (max-width: 580px) {
-    .item_table{
-        font-size: 16px;
-    }
-  
+    .item_table{ font-size: 14px; }
+    .head_table{ display: none; }
+ 
 }
+
+
 
