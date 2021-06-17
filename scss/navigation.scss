@@ -160,8 +160,8 @@ nav{
         div{ display: block; }
     }
     .toggle_menu_fon{        // GRID  show buttons    
-        height: 100%;        
-        top: 160px;
+        height: 150%;        
+        top: 145px;
         justify-content: center;     
         grid-template-columns: repeat(1, minmax(830px, 1163px));    
     } 
@@ -171,8 +171,8 @@ nav{
 // ********** MEDIA 850PX *************
 @media (max-width: 850px) {    
     .toggle_menu_fon{
-        height: 100%;   
-        top: 160px;
+        height: 150%;   
+        top: 100px;
         justify-content: flex-end;        
         grid-template-columns: repeat(1, minmax(570px, 850px));   
 

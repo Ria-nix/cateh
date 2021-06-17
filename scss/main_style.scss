@@ -73,7 +73,7 @@
             .item_info{
                 margin-right: 20px;
                 width: 85%;
-                height: 65px;
+                height: 100%;
                 background: $gray_full;
                 box-shadow: 0px 4px 10px 0px rgba($but_shadow, 0.15);
                 @extend %flex_row;
@@ -98,74 +98,34 @@
 
 // ************* @MEDIA *************
 
+// ********** MEDIA MIN 1163PX *************
+@media (min-width: 1163px) {
+    .item_table,  .head_name{
+        font-size: 18px;
+    }
+}
+
 // ********** MEDIA MAX 1163PX *************
 @media (max-width: 1163px) {
-    .panel_buttons{
-        display: none;
-        position: absolute;
-        top: -9999px;
-        left: -9999px;
+    .item_table{
+        font-size: 16px;
     }
-    .toggle_bar{ display: block;
-
-        div{ display: block; }
-    }
-    .toggle_menu_fon{        // GRID  show buttons    
-        height: 100%;        
-        top: 160px;
-        justify-content: center;     
-        grid-template-columns: repeat(1, minmax(830px, 1163px));    
-    } 
     
 }
  
 // ********** MEDIA 850PX *************
 @media (max-width: 850px) {    
-    .toggle_menu_fon{
-        height: 100%;   
-        top: 160px;
-        justify-content: flex-end;        
-        grid-template-columns: repeat(1, minmax(570px, 850px));   
-
-        .toggle_menu{ display: flex; } 
+    .item_table{
+        font-size: 18px;
     }
+   
 }
 
 // ********** MEDIA MAX 580PX *************
 @media (max-width: 580px) {
-    .navigation{
-        height: 50px;
+    .item_table{
+        font-size: 16px;
     }
-    body{ background: $blue; }
-    .content_wrap::-webkit-scrollbar{  overflow: hidden; }
   
-    .search p, .search input, .search button{
-        display: block;
-    }    
-    .toggle_menu_fon{
-        min-height: 58.1rem;    
-        top: 140px; 
-        justify-content: center;        
-        grid-template-columns: repeat(1, minmax(320px, 580px));  
-
-        .toggle_menu{
-            padding: 50px 0 350px 0; 
-            min-height: 80%;
-            flex-direction: column;
-            justify-content: space-around;
-            width: 100%;
-            background: $fon_white;
-
-            span{
-                min-width: 300px;
-                height: 45px;
-                margin: 0 0 0 10px;
-
-                img{  display: none;   }
-                .icon_none{ display: block; }
-            }
-            
-        }  
-    }
 }
 

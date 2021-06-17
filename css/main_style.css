@@ -387,8 +387,8 @@ nav .navigation .door img {
   }
 
   .toggle_menu_fon {
-    height: 100%;
-    top: 160px;
+    height: 150%;
+    top: 145px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -397,8 +397,8 @@ nav .navigation .door img {
 }
 @media (max-width: 850px) {
   .toggle_menu_fon {
-    height: 100%;
-    top: 160px;
+    height: 150%;
+    top: 100px;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
@@ -557,7 +557,7 @@ nav .navigation .door img {
 .content_wrap .table_sysadmin .item_table .item_info {
   margin-right: 20px;
   width: 85%;
-  height: 65px;
+  height: 100%;
   background: #F1F1F1;
   -webkit-box-shadow: 0px 4px 10px 0px rgba(17, 39, 66, 0.15);
           box-shadow: 0px 4px 10px 0px rgba(17, 39, 66, 0.15);
@@ -579,91 +579,23 @@ nav .navigation .door img {
   width: 0;
 }
 
+@media (min-width: 1163px) {
+  .item_table, .head_name {
+    font-size: 18px;
+  }
+}
 @media (max-width: 1163px) {
-  .panel_buttons {
-    display: none;
-    position: absolute;
-    top: -9999px;
-    left: -9999px;
-  }
-
-  .toggle_bar {
-    display: block;
-  }
-  .toggle_bar div {
-    display: block;
-  }
-
-  .toggle_menu_fon {
-    height: 100%;
-    top: 160px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    grid-template-columns: repeat(1, minmax(830px, 1163px));
+  .item_table {
+    font-size: 16px;
   }
 }
 @media (max-width: 850px) {
-  .toggle_menu_fon {
-    height: 100%;
-    top: 160px;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    grid-template-columns: repeat(1, minmax(570px, 850px));
-  }
-  .toggle_menu_fon .toggle_menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+  .item_table {
+    font-size: 18px;
   }
 }
 @media (max-width: 580px) {
-  .navigation {
-    height: 50px;
-  }
-
-  body {
-    background: #112742;
-  }
-
-  .content_wrap::-webkit-scrollbar {
-    overflow: hidden;
-  }
-
-  .search p, .search input, .search button {
-    display: block;
-  }
-
-  .toggle_menu_fon {
-    min-height: 58.1rem;
-    top: 140px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    grid-template-columns: repeat(1, minmax(320px, 580px));
-  }
-  .toggle_menu_fon .toggle_menu {
-    padding: 50px 0 350px 0;
-    min-height: 80%;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    width: 100%;
-    background: #F5F5F5;
-  }
-  .toggle_menu_fon .toggle_menu span {
-    min-width: 300px;
-    height: 45px;
-    margin: 0 0 0 10px;
-  }
-  .toggle_menu_fon .toggle_menu span img {
-    display: none;
-  }
-  .toggle_menu_fon .toggle_menu span .icon_none {
-    display: block;
+  .item_table {
+    font-size: 16px;
   }
 }/*# sourceMappingURL=main_style.css.map */
