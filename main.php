@@ -109,7 +109,7 @@
                         <p>Текущих заказов </p>
                         <p>Роль</p>
                     </div>
-                    <div class="info_items">
+                    <div class="items">
                         <p class="complete_order">50</p>
                         <p class="current_order">50</p>
                         <p class="role">Администратор</p>
