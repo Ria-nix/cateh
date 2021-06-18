@@ -132,7 +132,7 @@
                         <p class="role">Администратор</p>
                     </div>
                 </div>
-              <button class="click button border font_16">Просмотреть</button>
+                <button class="click button border font_16">Просмотреть</button>
             </div>  
 
             <div class="item_table">

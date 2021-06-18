@@ -397,7 +397,7 @@ nav .navigation .door img {
 }
 @media (max-width: 850px) {
   .toggle_menu_fon {
-    width: 102%;
+    width: 104%;
     height: 97%;
     top: 100px;
     -webkit-box-pack: end;
@@ -452,6 +452,7 @@ nav .navigation .door img {
 
   .toggle_menu_fon {
     background: #F5F5F5;
+    width: 100%;
     max-height: 100%;
     top: 140px;
     -webkit-box-pack: center;
@@ -520,17 +521,21 @@ nav .navigation .door img {
   border-top: 0.5px solid #B2B2B2;
 }
 .content_wrap .head_table {
+  border: 1px solid yellow;
   height: 5rem;
   border-bottom: 1px solid #112742;
 }
 .content_wrap .head_table .head_name {
   height: 100%;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  border: 1px solid violet;
+}
+.content_wrap .head_table .head_name p {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+  text-align: center;
+  border: 1px solid pink;
 }
 .content_wrap .head_table .head_name span > img {
-  width: 30%;
-  height: 30%;
   -webkit-transform: translateY(3px);
           transform: translateY(3px);
   z-index: 0;
@@ -542,14 +547,14 @@ nav .navigation .door img {
   width: 100%;
   height: auto;
   margin: 20px 0 0 0;
+  border: 1px solid red;
 }
 .content_wrap .table_sysadmin .item_table .item_info {
   height: 100%;
   background: #F1F1F1;
   -webkit-box-shadow: 0px 4px 10px 0px rgba(17, 39, 66, 0.15);
           box-shadow: 0px 4px 10px 0px rgba(17, 39, 66, 0.15);
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  padding: 0 2%;
 }
 .content_wrap .table_sysadmin .item_table .item_info .main_fio {
   text-align: center;
@@ -557,12 +562,19 @@ nav .navigation .door img {
 }
 .content_wrap .table_sysadmin .item_table .item_info .items {
   height: 100%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  border: 1px solid blue;
+  width: 400px;
 }
-.content_wrap .table_sysadmin .item_table .item_info .items p:nth-child(2) {
-  padding: 0 0 0 12%;
+.content_wrap .table_sysadmin .item_table .item_info .items p {
+  text-align: center;
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+  border: 1px solid pink;
+}
+.content_wrap .table_sysadmin .item_table .item_info > * {
+  text-align: center;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
 }
 .content_wrap .table_sysadmin .item_table .click {
   padding: 18px 12px;
@@ -609,7 +621,7 @@ nav .navigation .door img {
   }
 
   .head_name {
-    width: 90%;
+    width: 89%;
   }
 
   .item_info {
@@ -617,7 +629,6 @@ nav .navigation .door img {
   }
 
   .items {
-    width: 65%;
     padding: 2% 0;
   }
 }
@@ -662,6 +673,7 @@ nav .navigation .door img {
   .item_info {
     width: 100%;
     padding: 2% 0;
+    margin: 0;
   }
 
   .head_name {

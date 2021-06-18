@@ -171,7 +171,7 @@ nav{
 // ********** MEDIA 850PX *************
 @media (max-width: 850px) {    
     .toggle_menu_fon{
-        width: 102%;
+        width: 104%;
         height: 97%;   
         top: 100px;
         justify-content: flex-end;        
@@ -208,6 +208,7 @@ nav{
     .search p, .search input, .search button{ display: block; }    
     .toggle_menu_fon{
         background: $fon_white;
+        width: 100%;
         max-height: 100%;    
         top: 140px; 
         justify-content: center;        

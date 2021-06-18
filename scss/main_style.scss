@@ -32,20 +32,22 @@
 
     //HEAD TABLE
     .head_table{ 
-        // border: 1px solid yellow;
+        border: 1px solid yellow;
         height: 5rem;
         border-bottom: 1px solid $blue;
 
         
         .head_name{          
             height: 100%;
-            // border: 1px solid violet;
+            border: 1px solid violet;
             @extend %flex_row;
-            justify-content: space-around;
-          
+            
+            p{
+                flex-basis: 25%;
+                text-align: center;
+                border: 1px solid pink;
+            }
             span > img{
-                width: 30%;
-                height: 30%;
                 transform: translateY(3px);
                 z-index: 0;
             }
@@ -65,18 +67,16 @@
             width: 100%;
             height: auto;
             @extend %flex_row;
-            margin: 20px 0 0 0;
-           
-            // border: 1px solid red;
+            margin: 20px 0 0 0;           
+            border: 1px solid red;
 
             .item_info{
                 height: 100%;             
                 background: $gray_full;
                 box-shadow: 0px 4px 10px 0px rgba($but_shadow, 0.15);
                 @extend %flex_row;
-                justify-content: space-around;
+                padding: 0 2%;
                
-
                 .main_fio{ 
                     text-align: center;
                     width: 180px;
@@ -84,13 +84,23 @@
 
                 .items{
                     height: 100%;
-                    // border: 1px solid blue;
-                    @extend %flex_row;
-                    justify-content: space-between;
+                    border: 1px solid blue;
+                    @extend %flex_row;                    
+                    width: 400px;
 
-                    p:nth-child(2){ padding: 0 0 0 12%; }
+                    p{ 
+                        text-align: center;
+                        flex-basis: 40%;
+                        border: 1px solid pink;
+                    }
                 }
                
+            }
+
+            .item_info > *{
+                text-align: center;
+                flex-basis: 50%;
+                // border: 1px solid pink;
             }
     
             .click{ 
@@ -129,13 +139,13 @@
         overflow-x: hidden;
     }
     .head_name{
-        width: 90%;
+        width: 89%;
     }
     .item_info{
         width: 100%;
     }
     .items{
-        width: 65%;
+       
         padding: 2% 0;
     }
 }
@@ -161,7 +171,6 @@
         margin: 0 2.5% 0 0;
     }
     
-
 }
  
 // ********** MEDIA 850PX *************
@@ -171,13 +180,11 @@
         width: 100%;
         justify-content: center;
      }  
-    .item_table button{
-        display: none;
-    }
+    .item_table button{ display: none; }
     .item_info{
         width: 100%;
         padding: 2% 0; 
-      
+        margin: 0;
     }
     .head_name{
         width: 95%;
@@ -191,9 +198,7 @@
         height: 28rem;
         border: 1px solid red;
     }
-    .table_sysadmin{
-        height: 100%
-    }
+    .table_sysadmin{ height: 100%; }
     .item_table{ font-size: 14px; }
     .head_table{ display: none; }
  
