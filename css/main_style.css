@@ -397,7 +397,8 @@ nav .navigation .door img {
 }
 @media (max-width: 850px) {
   .toggle_menu_fon {
-    height: 150%;
+    width: 102%;
+    height: 97%;
     top: 100px;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
@@ -408,6 +409,7 @@ nav .navigation .door img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    z-index: 100;
   }
 }
 @media (min-width: 580px) {
@@ -416,7 +418,7 @@ nav .navigation .door img {
   }
 
   .toggle_menu_fon {
-    background: rgba(17, 39, 66, 0.8);
+    background: rgba(17, 39, 66, 0.9);
   }
   .toggle_menu_fon .toggle_menu {
     margin: 30px auto;
@@ -444,16 +446,13 @@ nav .navigation .door img {
     background: #112742;
   }
 
-  .content_wrap::-webkit-scrollbar {
-    overflow: hidden;
-  }
-
   .search p, .search input, .search button {
     display: block;
   }
 
   .toggle_menu_fon {
-    min-height: 58.1rem;
+    background: #F5F5F5;
+    max-height: 100%;
     top: 140px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -461,21 +460,22 @@ nav .navigation .door img {
     grid-template-columns: repeat(1, minmax(320px, 580px));
   }
   .toggle_menu_fon .toggle_menu {
-    padding: 50px 0 350px 0;
-    min-height: 80%;
+    padding: 1% 0 4% 0;
+    height: 37rem;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
     width: 100%;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     background: #F5F5F5;
   }
   .toggle_menu_fon .toggle_menu span {
     min-width: 300px;
     height: 45px;
-    margin: 0 0 0 10px;
+    margin: 0 0 0 5%;
   }
   .toggle_menu_fon .toggle_menu span img {
     display: none;
@@ -525,21 +525,17 @@ nav .navigation .door img {
 }
 .content_wrap .head_table .head_name {
   height: 100%;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
-.content_wrap .head_table .head_name p {
-  padding: 0 5% 0 0;
-}
-.content_wrap .head_table .head_name span {
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+.content_wrap .head_table .head_name span > img {
+  width: 30%;
+  height: 30%;
+  -webkit-transform: translateY(3px);
+          transform: translateY(3px);
+  z-index: 0;
 }
 .content_wrap .table_sysadmin {
-  height: 47rem;
-  overflow-y: scroll;
-  overflow-x: hidden;
   padding: 0 10px 0 10px;
 }
 .content_wrap .table_sysadmin .item_table {
@@ -552,14 +548,15 @@ nav .navigation .door img {
   background: #F1F1F1;
   -webkit-box-shadow: 0px 4px 10px 0px rgba(17, 39, 66, 0.15);
           box-shadow: 0px 4px 10px 0px rgba(17, 39, 66, 0.15);
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 .content_wrap .table_sysadmin .item_table .item_info .main_fio {
-  margin: 1% 1.5% 1% 0;
   text-align: center;
+  width: 180px;
 }
 .content_wrap .table_sysadmin .item_table .item_info .items {
   height: 100%;
-  padding: 0 3%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -594,9 +591,6 @@ nav .navigation .door img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
 
   .item_table button {
@@ -608,32 +602,57 @@ nav .navigation .door img {
     width: 100%;
   }
 
+  .table_sysadmin {
+    height: 47rem;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+
   .head_name {
-    width: 80%;
-    margin: 0 0 0 5%;
+    width: 90%;
+  }
+
+  .item_info {
+    width: 100%;
   }
 
   .items {
-    width: 70%;
+    width: 65%;
+    padding: 2% 0;
   }
 }
 @media (max-width: 1163px) {
+  .head_name {
+    width: 80%;
+    margin: 0 50px 0 0;
+  }
+
   .item_table {
     font-size: 16px;
   }
 
   .items {
-    width: 60%;
+    width: 65%;
+  }
+
+  .table_sysadmin {
+    height: 47rem;
+    overflow-y: scroll;
+    overflow-x: hidden;
   }
 
   .item_info {
     width: 82%;
+    margin: 0 2.5% 0 0;
   }
 }
 @media (max-width: 850px) {
   .head_table {
+    font-size: 14px;
     width: 100%;
-    margin: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 
   .item_table button {
@@ -641,16 +660,25 @@ nav .navigation .door img {
   }
 
   .item_info {
-    margin: 0;
     width: 100%;
+    padding: 2% 0;
   }
 
   .head_name {
-    width: 100%;
-    margin: 0;
+    width: 95%;
+    margin: 0 20px 0 10px;
   }
 }
 @media (max-width: 580px) {
+  .content_wrap {
+    height: 28rem;
+    border: 1px solid red;
+  }
+
+  .table_sysadmin {
+    height: 100%;
+  }
+
   .item_table {
     font-size: 14px;
   }

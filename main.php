@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main_style.css">
+    <link rel="stylesheet" href="css/main_style.css">    
+    <link rel="shortcut icon" href="icon/favicon-16x16.png" type="image/x-icon">
     <script src="https://code.jquery.com/jquery-3.6.0.js"
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="crossorigin="anonymous"></script>
         
@@ -117,7 +118,336 @@
                 </div>
               <button class="click button border font_16">Просмотреть</button>
             </div>     
-            
+            <div class="item_table">
+                <div class="item_info border">
+                    <p class="main_fio">Михаил Анатольевич Май-Маевский</p>
+                    <div class="title none">
+                        <p>Выполнено за месяц</p>
+                        <p>Текущих заказов </p>
+                        <p>Роль</p>
+                    </div>
+                    <div class="items">
+                        <p class="complete_order">50</p>
+                        <p class="current_order">50</p>
+                        <p class="role">Администратор</p>
+                    </div>
+                </div>
+              <button class="click button border font_16">Просмотреть</button>
+            </div>  
+
+            <div class="item_table">
+                <div class="item_info border">
+                    <p class="main_fio">Михаил Анатольевич Май-Маевский</p>
+                    <div class="title none">
+                        <p>Выполнено за месяц</p>
+                        <p>Текущих заказов </p>
+                        <p>Роль</p>
+                    </div>
+                    <div class="items">
+                        <p class="complete_order">50</p>
+                        <p class="current_order">50</p>
+                        <p class="role">Администратор</p>
+                    </div>
+                </div>
+              <button class="click button border font_16">Просмотреть</button>
+            </div>  
+
+            <div class="item_table">
+                <div class="item_info border">
+                    <p class="main_fio">Михаил Анатольевич Май-Маевский</p>
+                    <div class="title none">
+                        <p>Выполнено за месяц</p>
+                        <p>Текущих заказов </p>
+                        <p>Роль</p>
+                    </div>
+                    <div class="items">
+                        <p class="complete_order">50</p>
+                        <p class="current_order">50</p>
+                        <p class="role">Администратор</p>
+                    </div>
+                </div>
+              <button class="click button border font_16">Просмотреть</button>
+            </div>  
+
+            <div class="item_table">
+                <div class="item_info border">
+                    <p class="main_fio">Михаил Анатольевич Май-Маевский</p>
+                    <div class="title none">
+                        <p>Выполнено за месяц</p>
+                        <p>Текущих заказов </p>
+                        <p>Роль</p>
+                    </div>
+                    <div class="items">
+                        <p class="complete_order">50</p>
+                        <p class="current_order">50</p>
+                        <p class="role">Администратор</p>
+                    </div>
+                </div>
+              <button class="click button border font_16">Просмотреть</button>
+            </div>  
+
+
+            <div class="item_table">
+                <div class="item_info border">
+                    <p class="main_fio">Михаил Анатольевич Май-Маевский</p>
+                    <div class="title none">
+                        <p>Выполнено за месяц</p>
+                        <p>Текущих заказов </p>
+                        <p>Роль</p>
+                    </div>
+                    <div class="items">
+                        <p class="complete_order">50</p>
+                        <p class="current_order">50</p>
+                        <p class="role">Администратор</p>
+                    </div>
+                </div>
+              <button class="click button border font_16">Просмотреть</button>
+            </div>  
+
+
+            <div class="item_table">
+                <div class="item_info border">
+                    <p class="main_fio">Михаил Анатольевич Май-Маевский</p>
+                    <div class="title none">
+                        <p>Выполнено за месяц</p>
+                        <p>Текущих заказов </p>
+                        <p>Роль</p>
+                    </div>
+                    <div class="items">
+                        <p class="complete_order">50</p>
+                        <p class="current_order">50</p>
+                        <p class="role">Администратор</p>
+                    </div>
+                </div>
+              <button class="click button border font_16">Просмотреть</button>
+            </div>  
+
+            <div class="item_table">
+                <div class="item_info border">
+                    <p class="main_fio">Михаил Анатольевич Май-Маевский</p>
+                    <div class="title none">
+                        <p>Выполнено за месяц</p>
+                        <p>Текущих заказов </p>
+                        <p>Роль</p>
+                    </div>
+                    <div class="items">
+                        <p class="complete_order">50</p>
+                        <p class="current_order">50</p>
+                        <p class="role">Администратор</p>
+                    </div>
+                </div>
+              <button class="click button border font_16">Просмотреть</button>
+            </div>  
+
+            <div class="item_table">
+                <div class="item_info border">
+                    <p class="main_fio">Михаил Анатольевич Май-Маевский</p>
+                    <div class="title none">
+                        <p>Выполнено за месяц</p>
+                        <p>Текущих заказов </p>
+                        <p>Роль</p>
+                    </div>
+                    <div class="items">
+                        <p class="complete_order">50</p>
+                        <p class="current_order">50</p>
+                        <p class="role">Администратор</p>
+                    </div>
+                </div>
+              <button class="click button border font_16">Просмотреть</button>
+            </div>  
+
+            <div class="item_table">
+                <div class="item_info border">
+                    <p class="main_fio">Михаил Анатольевич Май-Маевский</p>
+                    <div class="title none">
+                        <p>Выполнено за месяц</p>
+                        <p>Текущих заказов </p>
+                        <p>Роль</p>
+                    </div>
+                    <div class="items">
+                        <p class="complete_order">50</p>
+                        <p class="current_order">50</p>
+                        <p class="role">Администратор</p>
+                    </div>
+                </div>
+              <button class="click button border font_16">Просмотреть</button>
+            </div>  
+
+            <div class="item_table">
+                <div class="item_info border">
+                    <p class="main_fio">Михаил Анатольевич Май-Маевский</p>
+                    <div class="title none">
+                        <p>Выполнено за месяц</p>
+                        <p>Текущих заказов </p>
+                        <p>Роль</p>
+                    </div>
+                    <div class="items">
+                        <p class="complete_order">50</p>
+                        <p class="current_order">50</p>
+                        <p class="role">Администратор</p>
+                    </div>
+                </div>
+              <button class="click button border font_16">Просмотреть</button>
+            </div>  
+
+            <div class="item_table">
+                <div class="item_info border">
+                    <p class="main_fio">Михаил Анатольевич Май-Маевский</p>
+                    <div class="title none">
+                        <p>Выполнено за месяц</p>
+                        <p>Текущих заказов </p>
+                        <p>Роль</p>
+                    </div>
+                    <div class="items">
+                        <p class="complete_order">50</p>
+                        <p class="current_order">50</p>
+                        <p class="role">Администратор</p>
+                    </div>
+                </div>
+              <button class="click button border font_16">Просмотреть</button>
+            </div>  
+
+            <div class="item_table">
+                <div class="item_info border">
+                    <p class="main_fio">Михаил Анатольевич Май-Маевский</p>
+                    <div class="title none">
+                        <p>Выполнено за месяц</p>
+                        <p>Текущих заказов </p>
+                        <p>Роль</p>
+                    </div>
+                    <div class="items">
+                        <p class="complete_order">50</p>
+                        <p class="current_order">50</p>
+                        <p class="role">Администратор</p>
+                    </div>
+                </div>
+              <button class="click button border font_16">Просмотреть</button>
+            </div>  
+
+
+            <div class="item_table">
+                <div class="item_info border">
+                    <p class="main_fio">Михаил Анатольевич Май-Маевский</p>
+                    <div class="title none">
+                        <p>Выполнено за месяц</p>
+                        <p>Текущих заказов </p>
+                        <p>Роль</p>
+                    </div>
+                    <div class="items">
+                        <p class="complete_order">50</p>
+                        <p class="current_order">50</p>
+                        <p class="role">Администратор</p>
+                    </div>
+                </div>
+              <button class="click button border font_16">Просмотреть</button>
+            </div>  
+
+
+            <div class="item_table">
+                <div class="item_info border">
+                    <p class="main_fio">Михаил Анатольевич Май-Маевский</p>
+                    <div class="title none">
+                        <p>Выполнено за месяц</p>
+                        <p>Текущих заказов </p>
+                        <p>Роль</p>
+                    </div>
+                    <div class="items">
+                        <p class="complete_order">50</p>
+                        <p class="current_order">50</p>
+                        <p class="role">Администратор</p>
+                    </div>
+                </div>
+              <button class="click button border font_16">Просмотреть</button>
+            </div>  
+
+
+            <div class="item_table">
+                <div class="item_info border">
+                    <p class="main_fio">Михаил Анатольевич Май-Маевский</p>
+                    <div class="title none">
+                        <p>Выполнено за месяц</p>
+                        <p>Текущих заказов </p>
+                        <p>Роль</p>
+                    </div>
+                    <div class="items">
+                        <p class="complete_order">50</p>
+                        <p class="current_order">50</p>
+                        <p class="role">Администратор</p>
+                    </div>
+                </div>
+              <button class="click button border font_16">Просмотреть</button>
+            </div>  
+
+
+            <div class="item_table">
+                <div class="item_info border">
+                    <p class="main_fio">Михаил Анатольевич Май-Маевский</p>
+                    <div class="title none">
+                        <p>Выполнено за месяц</p>
+                        <p>Текущих заказов </p>
+                        <p>Роль</p>
+                    </div>
+                    <div class="items">
+                        <p class="complete_order">50</p>
+                        <p class="current_order">50</p>
+                        <p class="role">Администратор</p>
+                    </div>
+                </div>
+              <button class="click button border font_16">Просмотреть</button>
+            </div>  
+
+
+            <div class="item_table">
+                <div class="item_info border">
+                    <p class="main_fio">Михаил Анатольевич Май-Маевский</p>
+                    <div class="title none">
+                        <p>Выполнено за месяц</p>
+                        <p>Текущих заказов </p>
+                        <p>Роль</p>
+                    </div>
+                    <div class="items">
+                        <p class="complete_order">50</p>
+                        <p class="current_order">50</p>
+                        <p class="role">Администратор</p>
+                    </div>
+                </div>
+              <button class="click button border font_16">Просмотреть</button>
+            </div>  
+
+
+            <div class="item_table">
+                <div class="item_info border">
+                    <p class="main_fio">Михаил Анатольевич Май-Маевский</p>
+                    <div class="title none">
+                        <p>Выполнено за месяц</p>
+                        <p>Текущих заказов </p>
+                        <p>Роль</p>
+                    </div>
+                    <div class="items">
+                        <p class="complete_order">50</p>
+                        <p class="current_order">50</p>
+                        <p class="role">Администратор</p>
+                    </div>
+                </div>
+              <button class="click button border font_16">Просмотреть</button>
+            </div>  
+
+            <div class="item_table">
+                <div class="item_info border">
+                    <p class="main_fio">Михаил Анатольевич Май-Маевский</p>
+                    <div class="title none">
+                        <p>Выполнено за месяц</p>
+                        <p>Текущих заказов </p>
+                        <p>Роль</p>
+                    </div>
+                    <div class="items">
+                        <p class="complete_order">50</p>
+                        <p class="current_order">50</p>
+                        <p class="role">Администратор</p>
+                    </div>
+                </div>
+              <button class="click button border font_16">Просмотреть</button>
+            </div>  
 
         </div>  
     </div>

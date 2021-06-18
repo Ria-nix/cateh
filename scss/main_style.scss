@@ -9,7 +9,7 @@
     margin: 1% 0 1% 0;
 
     *{ display: none; }
-    p{ margin: 2% 0;  }
+    p{ margin: 2% 0; }
     input{
         text-align: center;
         width: 75%;
@@ -41,10 +41,15 @@
             height: 100%;
             // border: 1px solid violet;
             @extend %flex_row;
-            justify-content: space-evenly;
+            justify-content: space-around;
           
-            p{ padding: 0 5% 0 0; }
-            span{ transform: rotate(180deg); }
+            span > img{
+                width: 30%;
+                height: 30%;
+                transform: translateY(3px);
+                z-index: 0;
+            }
+            
         }
     }
   
@@ -52,33 +57,34 @@
 
     // TABLE WITH INFO
     .table_sysadmin{
-        height: 47rem;
-        // border: 1px solid red;
-        overflow-y: scroll;
-        overflow-x: hidden;
         padding: 0 10px 0 10px;
         @extend %flex_column;
+        // border: 1px solid orange;
         
         .item_table{
             width: 100%;
             height: auto;
             @extend %flex_row;
-            // justify-content: space-evenly;
             margin: 20px 0 0 0;
+           
             // border: 1px solid red;
 
             .item_info{
-                height: 100%;
+                height: 100%;             
                 background: $gray_full;
                 box-shadow: 0px 4px 10px 0px rgba($but_shadow, 0.15);
                 @extend %flex_row;
+                justify-content: space-around;
+               
 
-                .main_fio{ margin: 1% 1.5% 1% 0; text-align: center;}
+                .main_fio{ 
+                    text-align: center;
+                    width: 180px;
+                }
 
                 .items{
                     height: 100%;
                     // border: 1px solid blue;
-                    padding: 0 3%;
                     @extend %flex_row;
                     justify-content: space-between;
 
@@ -110,7 +116,6 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: center;
     }
     .item_table button{ display: block; }
     .item_info{ 
@@ -118,24 +123,42 @@
         width: 100%; 
     }
 
+    .table_sysadmin{   
+        height: 47rem;    
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
     .head_name{
-        width: 80%;
-        margin: 0 0 0 5%;
+        width: 90%;
+    }
+    .item_info{
+        width: 100%;
     }
     .items{
-        width: 70%;
+        width: 65%;
+        padding: 2% 0;
     }
 }
 
 // ********** MEDIA MAX 1163PX *************
 @media (max-width: 1163px) {
+    .head_name{
+        width: 80%;
+        margin: 0 50px 0 0;
+    }
     .item_table{font-size: 16px; }
     .items{
-        width: 60%;
+        width: 65%;
+    }
+    .table_sysadmin{
+        height: 47rem;        
+        overflow-y: scroll;
+        overflow-x: hidden;
     }
     
     .item_info{
         width: 82%;
+        margin: 0 2.5% 0 0;
     }
     
 
@@ -144,24 +167,33 @@
 // ********** MEDIA 850PX *************
 @media (max-width: 850px) {  
     .head_table{
+        font-size: 14px;
         width: 100%;
-        margin: 0;
+        justify-content: center;
      }  
     .item_table button{
         display: none;
     }
     .item_info{
-        margin: 0;
         width: 100%;
+        padding: 2% 0; 
+      
     }
     .head_name{
-        width: 100%;
-        margin: 0;
+        width: 95%;
+        margin: 0 20px 0 10px;
     }
 }
 
 // ********** MEDIA MAX 580PX *************
 @media (max-width: 580px) {
+    .content_wrap{
+        height: 28rem;
+        border: 1px solid red;
+    }
+    .table_sysadmin{
+        height: 100%
+    }
     .item_table{ font-size: 14px; }
     .head_table{ display: none; }
  
