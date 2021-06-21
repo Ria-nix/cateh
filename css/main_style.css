@@ -244,7 +244,6 @@ nav .navigation .logo {
   height: 50%;
 }
 nav .navigation .toggle_menu_fon {
-  left: -10px;
   position: absolute;
 }
 nav .navigation .toggle_menu_fon .toggle_menu {
@@ -419,6 +418,7 @@ nav .navigation .door img {
 
   .toggle_menu_fon {
     background: rgba(17, 39, 66, 0.9);
+    left: -10px;
   }
   .toggle_menu_fon .toggle_menu {
     margin: 30px auto;
@@ -451,6 +451,7 @@ nav .navigation .door img {
   }
 
   .toggle_menu_fon {
+    left: 0;
     background: #F5F5F5;
     width: 100%;
     max-height: 100%;
@@ -474,7 +475,7 @@ nav .navigation .door img {
     background: #F5F5F5;
   }
   .toggle_menu_fon .toggle_menu span {
-    min-width: 300px;
+    min-width: 290px;
     height: 45px;
     margin: 0 0 0 5%;
   }
@@ -521,6 +522,7 @@ nav .navigation .door img {
   border-top: 0.5px solid #B2B2B2;
 }
 .content_wrap .head_table {
+  border: 1px solid yellow;
   height: 5rem;
   border-bottom: 1px solid #112742;
 }
@@ -529,8 +531,13 @@ nav .navigation .door img {
   border: 1px solid violet;
 }
 .content_wrap .head_table .head_name p {
-  -ms-flex-preferred-size: 25%;
-      flex-basis: 25%;
+  -ms-flex-preferred-size: 1%;
+      flex-basis: 1%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-negative: 2;
+      flex-shrink: 2;
   text-align: center;
   border: 1px solid pink;
 }
@@ -546,10 +553,13 @@ nav .navigation .door img {
   width: 100%;
   height: auto;
   margin: 20px 0 0 0;
+  border: 1px solid red;
 }
 .content_wrap .table_sysadmin .item_table .item_info > * {
-  -ms-flex-preferred-size: 1%;
-      flex-basis: 1%;
+  -ms-flex-preferred-size: 70%;
+      flex-basis: 70%;
+  text-align: center;
+  border: 1px solid blue;
 }
 .content_wrap .table_sysadmin .item_table .item_info {
   height: 100%;
@@ -560,14 +570,6 @@ nav .navigation .door img {
 }
 .content_wrap .table_sysadmin .item_table .item_info .main_fio {
   text-align: center;
-}
-.content_wrap .table_sysadmin .item_table .item_info .role {
-  padding: 0 0 0 90px;
-}
-.content_wrap .table_sysadmin .item_table .item_info > * {
-  text-align: center;
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
 }
 .content_wrap .table_sysadmin .item_table .click {
   padding: 18px 12px;
@@ -600,7 +602,7 @@ nav .navigation .door img {
 
   .item_table button {
     display: block;
-    margin-left: 20px;
+    margin-left: 2rem;
   }
 
   .item_info {
@@ -614,7 +616,7 @@ nav .navigation .door img {
   }
 
   .head_name {
-    width: 89%;
+    width: 88%;
   }
 
   .item_info {
@@ -627,8 +629,7 @@ nav .navigation .door img {
 }
 @media (max-width: 1163px) {
   .head_name {
-    width: 83%;
-    margin: 0 50px 0 0;
+    width: 80%;
   }
 
   .item_table {
@@ -656,7 +657,6 @@ nav .navigation .door img {
 @media (max-width: 850px) {
   .head_table {
     font-size: 14px;
-    width: 100%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -666,21 +666,21 @@ nav .navigation .door img {
     display: none;
   }
 
-  .item_info {
+  .item_table {
     width: 100%;
-    padding: 2% 0;
-    margin: 0;
+  }
+
+  .item_info {
+    width: 50rem;
   }
 
   .head_name {
-    width: 95%;
-    margin: 0 20px 0 10px;
+    width: 100%;
   }
 }
 @media (max-width: 580px) {
   .content_wrap {
     height: 28rem;
-    border: 1px solid red;
   }
 
   .table_sysadmin {

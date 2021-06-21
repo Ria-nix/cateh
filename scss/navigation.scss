@@ -18,9 +18,7 @@ nav{
 
         // TOGGLE BUTTON AND MENU
         .toggle_menu_fon{
-            left: -10px;
             position: absolute;
-            
 
             .toggle_menu{
                 display: flex;
@@ -185,7 +183,7 @@ nav{
 @media (min-width: 580px) {
     body{ background: $fon_table; }
     
-    .toggle_menu_fon{ background: rgba($blue, 0.9);
+    .toggle_menu_fon{ background: rgba($blue, 0.9);   left: -10px;
         
         .toggle_menu{
             margin: 30px auto;
@@ -207,6 +205,7 @@ nav{
   
     .search p, .search input, .search button{ display: block; }    
     .toggle_menu_fon{
+        left: 0;
         background: $fon_white;
         width: 100%;
         max-height: 100%;    
@@ -223,7 +222,7 @@ nav{
             background: $fon_white;
 
             span{
-                min-width: 300px;
+                min-width: 290px;
                 height: 45px;
                 margin: 0 0 0 5%;
 
