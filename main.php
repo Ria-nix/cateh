@@ -110,11 +110,11 @@
                         <p>Текущих заказов </p>
                         <p>Роль</p>
                     </div>
-                    <div class="items">
+                    <!-- <div class="items"> -->
                         <p class="complete_order">50</p>
                         <p class="current_order">50</p>
                         <p class="role">Администратор</p>
-                    </div>
+                    <!-- </div> -->
                 </div>
               <button class="click button border font_16">Просмотреть</button>
             </div>     

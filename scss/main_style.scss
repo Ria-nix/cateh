@@ -32,7 +32,7 @@
 
     //HEAD TABLE
     .head_table{ 
-        border: 1px solid yellow;
+        // border: 1px solid yellow;
         height: 5rem;
         border-bottom: 1px solid $blue;
 
@@ -68,32 +68,38 @@
             height: auto;
             @extend %flex_row;
             margin: 20px 0 0 0;           
-            border: 1px solid red;
+            // border: 1px solid red;
 
+            .item_info > * {
+                flex-basis: 1%;
+                //  border: 1px solid red;
+            }
             .item_info{
                 height: 100%;             
                 background: $gray_full;
                 box-shadow: 0px 4px 10px 0px rgba($but_shadow, 0.15);
                 @extend %flex_row;
-                padding: 0 2%;
-               
+                padding: 1.5% 2%;
+                   
                 .main_fio{ 
                     text-align: center;
-                    width: 180px;
+                }
+                .role{
+                    padding: 0 0 0 90px;
                 }
 
-                .items{
-                    height: 100%;
-                    border: 1px solid blue;
-                    @extend %flex_row;                    
-                    width: 400px;
+                // .items{
+                //     height: 100%;
+                //     // border: 1px solid blue;
+                //     @extend %flex_row;                    
+                //     width: 400px;
 
-                    p{ 
-                        text-align: center;
-                        flex-basis: 40%;
-                        border: 1px solid pink;
-                    }
-                }
+                //     p{ 
+                //         text-align: center;
+                //         flex-basis: 40%;
+                //         // border: 1px solid pink;
+                //     }
+                // }
                
             }
 
@@ -127,14 +133,14 @@
         flex-direction: row;
         align-items: center;
     }
-    .item_table button{ display: block; }
+    .item_table button{ display: block; margin-left: 20px; }
     .item_info{ 
-        margin-right: 20px;  
+        // margin-right: 20px;  
         width: 100%; 
     }
 
     .table_sysadmin{   
-        height: 47rem;    
+        height: 46rem;    
         overflow-y: scroll;
         overflow-x: hidden;
     }
@@ -153,7 +159,7 @@
 // ********** MEDIA MAX 1163PX *************
 @media (max-width: 1163px) {
     .head_name{
-        width: 80%;
+        width: 83%;
         margin: 0 50px 0 0;
     }
     .item_table{font-size: 16px; }
@@ -165,10 +171,11 @@
         overflow-y: scroll;
         overflow-x: hidden;
     }
+    .item_table button{margin-left: 40px; }
     
     .item_info{
-        width: 82%;
-        margin: 0 2.5% 0 0;
+        width: 100%;
+        // margin: 0 2.5% 0 0;
     }
     
 }
