@@ -93,6 +93,8 @@
 
     <!-- CONTENT -->
     <div class="content_wrap">
+
+        <!-- HEAD TABLE -->
         <div class="head_table">
             <div class="head_name spacing_special">
                 <p>ФИО <span><img src="icon/up_arrow.svg" alt="arrow"></span></p>
@@ -101,20 +103,31 @@
                 <p>Роль</p>
             </div>
         </div>
+
+         <!-- TABLE -->
         <div class="table_sysadmin">
             <div class="item_table">
                 <div class="item_info border">
                     <p class="main_fio">Михаил Анатольевич Май-Маевский</p>
-                    <div class="title none">
-                        <p>Выполнено за месяц</p>
-                        <p>Текущих заказов </p>
-                        <p>Роль</p>
-                    </div>
-                    <!-- <div class="items"> -->
-                        <p class="complete_order">50</p>
-                        <p class="current_order">50</p>
-                        <p class="role">Администратор</p>
-                    <!-- </div> -->
+
+                     <!-- MOBILE VERSION TABLE -->
+                    <div class="mobile_version">
+                        <div class="mobile_title">
+                            <p>Выполнено за месяц</p>
+                            <p>Текущих заказов </p>
+                            <p class='role'>Роль</p>
+                        </div>
+                        <div class="mobile_info">
+                            <p class="complete_order">50</p>
+                            <p class="current_order">50</p>
+                            <p class="role">Администратор</p>
+                        </div>
+                    </div>     
+                      <!-- THE END OF MOBILE VERSION TABLE -->   
+
+                    <p class="mobile_none complete_order">50</p>
+                    <p class="mobile_none current_order">50</p>
+                    <p class="mobile_none role">Администратор</p>
                 </div>
               <button class="click button border font_16">Просмотреть</button>
             </div>     

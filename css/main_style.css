@@ -3,7 +3,7 @@ body {
   color: #112742;
 }
 
-.content_wrap .table_sysadmin .item_table .item_info, .content_wrap .table_sysadmin .item_table, .content_wrap .head_table .head_name, nav .navigation span, nav .navigation .panel_buttons, nav .navigation {
+.content_wrap .table_sysadmin .item_table, .content_wrap .head_table .head_name, nav .navigation span, nav .navigation .panel_buttons, nav .navigation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -118,7 +118,7 @@ body {
   color: #112742;
 }
 
-.content_wrap .table_sysadmin .item_table .item_info, .content_wrap .table_sysadmin .item_table, .content_wrap .head_table .head_name, nav .navigation span, nav .navigation .panel_buttons, nav .navigation {
+.content_wrap .table_sysadmin .item_table, .content_wrap .head_table .head_name, nav .navigation span, nav .navigation .panel_buttons, nav .navigation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -528,18 +528,12 @@ nav .navigation .door img {
 }
 .content_wrap .head_table .head_name {
   height: 100%;
-  border: 1px solid violet;
 }
 .content_wrap .head_table .head_name p {
-  -ms-flex-preferred-size: 1%;
-      flex-basis: 1%;
   -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  -ms-flex-negative: 2;
-      flex-shrink: 2;
+      -ms-flex: 1;
+          flex: 1;
   text-align: center;
-  border: 1px solid pink;
 }
 .content_wrap .head_table .head_name span > img {
   -webkit-transform: translateY(3px);
@@ -553,13 +547,12 @@ nav .navigation .door img {
   width: 100%;
   height: auto;
   margin: 20px 0 0 0;
-  border: 1px solid red;
 }
 .content_wrap .table_sysadmin .item_table .item_info > * {
-  -ms-flex-preferred-size: 70%;
-      flex-basis: 70%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   text-align: center;
-  border: 1px solid blue;
 }
 .content_wrap .table_sysadmin .item_table .item_info {
   height: 100%;
@@ -617,6 +610,7 @@ nav .navigation .door img {
 
   .head_name {
     width: 88%;
+    padding: 0 2%;
   }
 
   .item_info {
@@ -629,7 +623,8 @@ nav .navigation .door img {
 }
 @media (max-width: 1163px) {
   .head_name {
-    width: 80%;
+    width: 84%;
+    padding: 0 3%;
   }
 
   .item_table {
@@ -678,9 +673,99 @@ nav .navigation .door img {
     width: 100%;
   }
 }
+@media (min-width: 580px) {
+  .item_info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .mobile_version {
+    display: none;
+  }
+}
 @media (max-width: 580px) {
   .content_wrap {
     height: 28rem;
+  }
+
+  .item_info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .mobile_none {
+    display: none;
+  }
+
+  .mobile_version {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .mobile_version .mobile_title {
+    color: rgba(17, 39, 66, 0.85);
+    -ms-flex-preferred-size: 60%;
+        flex-basis: 60%;
+  }
+  .mobile_version .mobile_title p {
+    padding: 4% 0 0 3%;
+  }
+  .mobile_version .mobile_info {
+    -ms-flex-preferred-size: 40%;
+        flex-basis: 40%;
+  }
+  .mobile_version .mobile_info .complete_order, .mobile_version .mobile_info .current_order {
+    margin: 5% 0 3% 30%;
+  }
+
+  .mobile_version > div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 2% 0 0 0;
+    font-size: 15px;
+  }
+  .mobile_version > div .role {
+    padding: 4% 3%;
+  }
+
+  .main_fio {
+    justify-self: center;
+    font-weight: bold;
+    padding: 2% 0 0 0;
+    font-size: 16px;
   }
 
   .table_sysadmin {

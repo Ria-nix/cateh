@@ -39,18 +39,16 @@
         
         .head_name{          
             height: 100%;
-            border: 1px solid violet;
+            // border: 1px solid violet;
             @extend %flex_row;
             
+            
             p{
-                flex-basis: 1%;
-                flex-grow: 1;
-                flex-shrink: 2;
+                flex:1;
                 text-align: center;
-                border: 1px solid pink;
+                // border: 1px solid pink;
             }
-            span > img{
-                transform: translateY(3px);
+            span > img{ transform: translateY(3px);
                 z-index: 0;
             }
             
@@ -70,39 +68,20 @@
             height: auto;
             @extend %flex_row;
             margin: 20px 0 0 0;           
-            border: 1px solid red;
+            // border: 1px solid red;
 
             .item_info > * {
-                flex-basis: 70%;
+                flex:1;
                 text-align: center;
-                 border: 1px solid blue;
+                //  border: 1px solid blue;
             }
             .item_info{
                 height: 100%;             
                 background: $gray_full;
                 box-shadow: 0px 4px 10px 0px rgba($but_shadow, 0.15);
-                @extend %flex_row;
                 padding: 1.5% 2%;
                    
-                .main_fio{ 
-                    text-align: center;
-                }
-                // .role{
-                //     padding: 0 0 0 90px;
-                // }
-
-                // .items{
-                //     height: 100%;
-                //     // border: 1px solid blue;
-                //     @extend %flex_row;                    
-                //     width: 400px;
-
-                //     p{ 
-                //         text-align: center;
-                //         flex-basis: 40%;
-                //         // border: 1px solid pink;
-                //     }
-                // }
+                .main_fio{ text-align: center;}
                
             }
     
@@ -139,20 +118,22 @@
         overflow-y: scroll;
         overflow-x: hidden;
     }
-    .head_name{ width: 88%;  }
+    .head_name{ 
+        width: 88%;
+        padding:0 2%;
+      }
     .item_info{  width: 100%; }
     .items{  padding: 2% 0; }
 }
 
 // ********** MEDIA MAX 1163PX *************
 @media (max-width: 1163px) {
-    .head_name{
-        width: 80%;
-    }
+    .head_name{ 
+        width: 84%;
+        padding: 0 3%;
+      }
     .item_table{font-size: 16px; }
-    .items{
-        width: 65%;
-    }
+    .items{  width: 65%; }
     .table_sysadmin{
         height: 47rem;        
         overflow-y: scroll;
@@ -160,9 +141,7 @@
     }
     .item_table button{margin-left: 40px; }
     
-    .item_info{
-        width: 100%;
-    }
+    .item_info{  width: 100%;  }
     
 }
  
@@ -176,13 +155,19 @@
     .item_table{
         width: 100%;
     }
+    .item_info{  width: 50rem; }
+    .head_name{  width: 100%;  }
+}
+
+// ********** MEDIA MIN 580PX *************
+@media (min-width: 580px) {
     .item_info{
-        width: 50rem;
-        // padding: 2% 0; 
-        // margin: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
     }
-    .head_name{
-        width: 100%;
+    .mobile_version{
+        display: none;
     }
 }
 
@@ -192,10 +177,51 @@
         height: 28rem;
         // border: 1px solid red;
     }
-    .item_info > *{
-        // width: 100%;
-        // flex-basis: 2%;
+    .item_info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .mobile_none{ display: none; }
+    .mobile_version{
+        display: flex;
+        flex-direction: row;  
+        justify-content: space-around;   
 
+        .mobile_title{
+            color: rgba($blue, 0.85);
+            flex-basis: 60%;
+
+            p{ padding: 4% 0 0 3%;}
+            
+        }
+        .mobile_info{
+            flex-basis: 40% ;
+
+            .complete_order, .current_order{
+                margin: 5% 0 3% 30%;
+            }
+        }
+    }
+
+    .mobile_version > div{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 2% 0 0 0;
+        // border: 1px solid aqua;
+        font-size: 15px;
+
+        .role{
+            padding: 4% 3% ;
+        }
+    }
+    .main_fio{
+        justify-self: center;
+        font-weight: bold;
+        padding: 2% 0 0 0;
+        font-size: 16px;
     }
     .table_sysadmin{ height: 100%; }
     .item_table{ font-size: 14px; }
