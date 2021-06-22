@@ -287,6 +287,144 @@
                 </div>
               <button class="click button border font_16">Просмотреть</button>
             </div>   
+
+            <div class="item_table">
+                <div class="item_info border">
+                    <p class="main_fio">Михаил Анатольевич Май-Маевский</p>
+
+                     <!-- MOBILE VERSION TABLE -->
+                    <div class="mobile_version">
+                        <div class="mobile_title">
+                            <p>Выполнено за месяц</p>
+                            <p>Текущих заказов </p>
+                        </div>
+                        <div class="mobile_info">
+                            <p class="complete_order">50</p>
+                            <p class="current_order">50</p>
+                        </div>
+                    </div>     
+                      <!-- THE END OF MOBILE VERSION TABLE -->   
+
+                    <p class="mobile_none complete_order">50</p>
+                    <p class="mobile_none current_order">50</p>
+                </div>
+              <button class="click button border font_16">Просмотреть</button>
+            </div>   
+
+            <div class="item_table">
+                <div class="item_info border">
+                    <p class="main_fio">Михаил Анатольевич Май-Маевский</p>
+
+                     <!-- MOBILE VERSION TABLE -->
+                    <div class="mobile_version">
+                        <div class="mobile_title">
+                            <p>Выполнено за месяц</p>
+                            <p>Текущих заказов </p>
+                        </div>
+                        <div class="mobile_info">
+                            <p class="complete_order">50</p>
+                            <p class="current_order">50</p>
+                        </div>
+                    </div>     
+                      <!-- THE END OF MOBILE VERSION TABLE -->   
+
+                    <p class="mobile_none complete_order">50</p>
+                    <p class="mobile_none current_order">50</p>
+                </div>
+              <button class="click button border font_16">Просмотреть</button>
+            </div>   
+
+            <div class="item_table">
+                <div class="item_info border">
+                    <p class="main_fio">Михаил Анатольевич Май-Маевский</p>
+
+                     <!-- MOBILE VERSION TABLE -->
+                    <div class="mobile_version">
+                        <div class="mobile_title">
+                            <p>Выполнено за месяц</p>
+                            <p>Текущих заказов </p>
+                        </div>
+                        <div class="mobile_info">
+                            <p class="complete_order">50</p>
+                            <p class="current_order">50</p>
+                        </div>
+                    </div>     
+                      <!-- THE END OF MOBILE VERSION TABLE -->   
+
+                    <p class="mobile_none complete_order">50</p>
+                    <p class="mobile_none current_order">50</p>
+                </div>
+              <button class="click button border font_16">Просмотреть</button>
+            </div>   
+
+            <div class="item_table">
+                <div class="item_info border">
+                    <p class="main_fio">Михаил Анатольевич Май-Маевский</p>
+
+                     <!-- MOBILE VERSION TABLE -->
+                    <div class="mobile_version">
+                        <div class="mobile_title">
+                            <p>Выполнено за месяц</p>
+                            <p>Текущих заказов </p>
+                        </div>
+                        <div class="mobile_info">
+                            <p class="complete_order">50</p>
+                            <p class="current_order">50</p>
+                        </div>
+                    </div>     
+                      <!-- THE END OF MOBILE VERSION TABLE -->   
+
+                    <p class="mobile_none complete_order">50</p>
+                    <p class="mobile_none current_order">50</p>
+                </div>
+              <button class="click button border font_16">Просмотреть</button>
+            </div>   
+
+            <div class="item_table">
+                <div class="item_info border">
+                    <p class="main_fio">Михаил Анатольевич Май-Маевский</p>
+
+                     <!-- MOBILE VERSION TABLE -->
+                    <div class="mobile_version">
+                        <div class="mobile_title">
+                            <p>Выполнено за месяц</p>
+                            <p>Текущих заказов </p>
+                        </div>
+                        <div class="mobile_info">
+                            <p class="complete_order">50</p>
+                            <p class="current_order">50</p>
+                        </div>
+                    </div>     
+                      <!-- THE END OF MOBILE VERSION TABLE -->   
+
+                    <p class="mobile_none complete_order">50</p>
+                    <p class="mobile_none current_order">50</p>
+                </div>
+              <button class="click button border font_16">Просмотреть</button>
+            </div>   
+
+            <div class="item_table">
+                <div class="item_info border">
+                    <p class="main_fio">Михаил Анатольевич Май-Маевский</p>
+
+                     <!-- MOBILE VERSION TABLE -->
+                    <div class="mobile_version">
+                        <div class="mobile_title">
+                            <p>Выполнено за месяц</p>
+                            <p>Текущих заказов </p>
+                        </div>
+                        <div class="mobile_info">
+                            <p class="complete_order">50</p>
+                            <p class="current_order">50</p>
+                        </div>
+                    </div>     
+                      <!-- THE END OF MOBILE VERSION TABLE -->   
+
+                    <p class="mobile_none complete_order">50</p>
+                    <p class="mobile_none current_order">50</p>
+                </div>
+              <button class="click button border font_16">Просмотреть</button>
+            </div>   
             
 
 

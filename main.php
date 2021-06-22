@@ -8,7 +8,6 @@
     <link rel="shortcut icon" href="icon/favicon-16x16.png" type="image/x-icon">
     <script src="https://code.jquery.com/jquery-3.6.0.js"
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="crossorigin="anonymous"></script>
-        
     <title>Главная</title>
 </head>
 <body>
@@ -29,27 +28,27 @@
             <!-- TOOGLE MENU -->
             <div class="toggle_menu_fon none">
                 <div class="toggle_menu border">
-                     <span class="button border main">
+                     <span class="button border main admin">
                         <img src="icon/Untitled.svg" alt="alt">
                         <p class="font_18">Системные администраторы</p>
                     </span>
-                    <span class="button border plus">
+                    <span class="button border plus admin_plus">
                         <img src="icon/plus-solid.svg" alt="alt">
                         <p class="font_18 icon_none none">Добавить нового сис. админа</p>
                     </span>
-                    <span class="button border main">
+                    <span class="button border main organization">
                         <img src="icon/build.svg" alt="alt">
                         <p class="font_18">Организации</p>
                     </span>
-                    <span class="button border plus">
+                    <span class="button border plus organization_plus">
                         <img src="icon/plus-solid.svg" alt="alt">
                         <p class="font_18 icon_none none">Добавить новую организацию</p>
                     </span>
-                    <span class="button border settings">
+                    <span class="button border settings settings">
                         <img src="icon/settings.svg" alt="alt">
                         <p class="font_18 icon_none none">Настройки</p>
                     </span>
-                    <span class="button border door">                    
+                    <span class="button border door exit">                    
                         <p class="font_18">Выйти</p>
                         <img src="icon/exitdoor_87195.svg" alt="alt">
                     </span>
@@ -58,25 +57,25 @@
 
             <!-- BUTTONS -->
             <div class="panel_buttons">
-                <span class="button border main">
+                <span class="button border main admin">
                     <img src="icon/Untitled.svg" alt="alt">
                     <p class="font_18">Системные администраторы</p>
                 </span>
-                <span class="button border plus">
+                <span class="button border plus admin_plus">
                     <img src="icon/plus-solid.svg" alt="alt">
                 </span>
-                <span class="button border main">
+                <span class="button border main organization">
                     <img src="icon/build.svg" alt="alt">
                     <p class="font_18">Организации</p>
                 </span>
-                <span class="button border plus">
+                <span class="button border plus organization_plus">
                     <img src="icon/plus-solid.svg" alt="alt">
                 </span>
-                <span class="button border settings">
+                <span class="button border settings settings">
                     <img src="icon/settings.svg" alt="alt">
                     <p class="font_18"></p>
                 </span>
-                <span class="button border door">                    
+                <span class="button border door exit">                    
                     <p class="font_18">Выйти</p>
                     <img src="icon/exitdoor_87195.svg" alt="alt">
                 </span>
@@ -286,6 +285,137 @@
                     <p class="mobile_none role">Администратор</p>
                 </div>
               <button class="click button border font_16">Просмотреть</button>
+            </div> 
+
+            <div class="item_table">
+                <div class="item_info border">
+                    <p class="main_fio">Михаил Анатольевич Май-Маевский</p>
+
+                     <!-- MOBILE VERSION TABLE -->
+                    <div class="mobile_version">
+                        <div class="mobile_title">
+                            <p>Выполнено за месяц</p>
+                            <p>Текущих заказов </p>
+                            <p class='role'>Роль</p>
+                        </div>
+                        <div class="mobile_info">
+                            <p class="complete_order">50</p>
+                            <p class="current_order">50</p>
+                            <p class="role">Администратор</p>
+                        </div>
+                    </div>     
+                      <!-- THE END OF MOBILE VERSION TABLE -->   
+
+                    <p class="mobile_none complete_order">50</p>
+                    <p class="mobile_none current_order">50</p>
+                    <p class="mobile_none role">Администратор</p>
+                </div>
+              <button class="click button border font_16">Просмотреть</button>
+            </div> 
+
+            <div class="item_table">
+                <div class="item_info border">
+                    <p class="main_fio">Михаил Анатольевич Май-Маевский</p>
+
+                     <!-- MOBILE VERSION TABLE -->
+                    <div class="mobile_version">
+                        <div class="mobile_title">
+                            <p>Выполнено за месяц</p>
+                            <p>Текущих заказов </p>
+                            <p class='role'>Роль</p>
+                        </div>
+                        <div class="mobile_info">
+                            <p class="complete_order">50</p>
+                            <p class="current_order">50</p>
+                            <p class="role">Администратор</p>
+                        </div>
+                    </div>     
+                      <!-- THE END OF MOBILE VERSION TABLE -->   
+
+                    <p class="mobile_none complete_order">50</p>
+                    <p class="mobile_none current_order">50</p>
+                    <p class="mobile_none role">Администратор</p>
+                </div>
+              <button class="click button border font_16">Просмотреть</button>
+            </div> 
+
+
+            <div class="item_table">
+                <div class="item_info border">
+                    <p class="main_fio">Михаил Анатольевич Май-Маевский</p>
+
+                     <!-- MOBILE VERSION TABLE -->
+                    <div class="mobile_version">
+                        <div class="mobile_title">
+                            <p>Выполнено за месяц</p>
+                            <p>Текущих заказов </p>
+                            <p class='role'>Роль</p>
+                        </div>
+                        <div class="mobile_info">
+                            <p class="complete_order">50</p>
+                            <p class="current_order">50</p>
+                            <p class="role">Администратор</p>
+                        </div>
+                    </div>     
+                      <!-- THE END OF MOBILE VERSION TABLE -->   
+
+                    <p class="mobile_none complete_order">50</p>
+                    <p class="mobile_none current_order">50</p>
+                    <p class="mobile_none role">Администратор</p>
+                </div>
+              <button class="click button border font_16">Просмотреть</button>
+            </div> 
+
+            <div class="item_table">
+                <div class="item_info border">
+                    <p class="main_fio">Михаил Анатольевич Май-Маевский</p>
+
+                     <!-- MOBILE VERSION TABLE -->
+                    <div class="mobile_version">
+                        <div class="mobile_title">
+                            <p>Выполнено за месяц</p>
+                            <p>Текущих заказов </p>
+                            <p class='role'>Роль</p>
+                        </div>
+                        <div class="mobile_info">
+                            <p class="complete_order">50</p>
+                            <p class="current_order">50</p>
+                            <p class="role">Администратор</p>
+                        </div>
+                    </div>     
+                      <!-- THE END OF MOBILE VERSION TABLE -->   
+
+                    <p class="mobile_none complete_order">50</p>
+                    <p class="mobile_none current_order">50</p>
+                    <p class="mobile_none role">Администратор</p>
+                </div>
+              <button class="click button border font_16">Просмотреть</button>
+            </div> 
+
+            <div class="item_table">
+                <div class="item_info border">
+                    <p class="main_fio">Михаил Анатольевич Май-Маевский</p>
+
+                     <!-- MOBILE VERSION TABLE -->
+                    <div class="mobile_version">
+                        <div class="mobile_title">
+                            <p>Выполнено за месяц</p>
+                            <p>Текущих заказов </p>
+                            <p class='role'>Роль</p>
+                        </div>
+                        <div class="mobile_info">
+                            <p class="complete_order">50</p>
+                            <p class="current_order">50</p>
+                            <p class="role">Администратор</p>
+                        </div>
+                    </div>     
+                      <!-- THE END OF MOBILE VERSION TABLE -->   
+
+                    <p class="mobile_none complete_order">50</p>
+                    <p class="mobile_none current_order">50</p>
+                    <p class="mobile_none role">Администратор</p>
+                </div>
+              <button class="click button border font_16">Просмотреть</button>
             </div>   
 
             <div class="item_table">
@@ -324,6 +454,7 @@
 
 
     <script src="js/main.js"></script>
+    <script src="js/navigation.js"></script>
 </body>
 </html>
 

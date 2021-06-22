@@ -558,7 +558,7 @@ nav .navigation .door img {
   background: #F1F1F1;
   -webkit-box-shadow: 0px 4px 10px 0px rgba(17, 39, 66, 0.15);
           box-shadow: 0px 4px 10px 0px rgba(17, 39, 66, 0.15);
-  padding: 1.5% 2%;
+  padding: 1% 2%;
 }
 .content_wrap .table_sysadmin .item_table .item_info .main_fio {
   text-align: center;
@@ -566,6 +566,11 @@ nav .navigation .door img {
 .content_wrap .table_sysadmin .item_table .click {
   padding: 18px 12px;
   font-weight: initial;
+  color: rgba(17, 39, 66, 0.75);
+  letter-spacing: 0.5px;
+}
+.content_wrap .table_sysadmin .item_table .click:hover {
+  color: #112742;
 }
 .content_wrap .table_sysadmin .item_table:last-child {
   margin: 20px 0;
@@ -692,7 +697,7 @@ nav .navigation .door img {
 }
 @media (max-width: 580px) {
   .content_wrap {
-    height: 28rem;
+    height: 35rem;
   }
 
   .item_info {
@@ -722,7 +727,6 @@ nav .navigation .door img {
             flex-direction: row;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    padding: 0 1.5%;
   }
   .mobile_version .mobile_title {
     color: rgba(17, 39, 66, 0.85);

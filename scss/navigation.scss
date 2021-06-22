@@ -4,7 +4,6 @@ nav{
     width: 100%;
     @extend %grid;
     background: $fon_white;
-
     nav > div{ border: 1px solid red; }
    
     .navigation{
