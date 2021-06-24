@@ -24,7 +24,7 @@ for(let elem of $('.organization_plus')){
 
 for(let elem of $('.settings')){
     elem.addEventListener('click',function(){
-        window.location.href = '#';
+        window.location.href = 'settings.php';
     })
 }
 
