@@ -19,7 +19,7 @@ let arr = {
                     "sysadmin":[
                             {
                                 "id":"1",
-                                "name":"имя фамилия",
+                                "name":"новиков алексей",
                                 "phone":"номер телефона",
                                 "role":"0",
                                 "isActive":"1",
@@ -37,7 +37,7 @@ let arr = {
                             },
                             {
                                 "id":"2",
-                                "name":"имя фамилия",
+                                "name":"системник андрей",
                                 "phone":"номер телефона",
                                 "role":"0",
                                 "isActive":"0",
@@ -81,28 +81,16 @@ let arr = {
 
 
 function isEmployees(){
-    let element;
-    let element1;
-    let obj = [];
-    for(element of arr['employees']['sysadmin']){
-        obj.push(element);
-    }
-    for(element1 of arr['employees']['admin']){
-        obj.push(element1);
-    }
-    for(let elem of obj){
-        console.log(elem)
-        for(let key in elem){
-            console.log(key + ' = ' + elem[key]);
-            let text = ' <div class="item_table"> <div class="item_info border"> <p class="main_fio">'+$(elem['name'])+'</p> <div class="mobile_version"><div class="mobile_title"><p>Выполнено за месяц</p> <p>Текущих заказов </p><p class="role">Роль</p></div><div class="mobile_info"><p class="complete_order">50</p><p class="current_order">50</p><p class="role">Администратор</p></div></div> <p class="mobile_none complete_order">50</p><p class="mobile_none current_order">50</p><p class="mobile_none role">Администратор</p></div><button class="click button border font_16">Просмотреть</button></div>'
-            $(table_sysadmin).appendChild(text);
-
-
-
-
-
-
-        }
+    let element, element1, obj = [], text, key, elem;
+    for(element of arr['employees']['sysadmin']) obj.push(element);
+    for(element1 of arr['employees']['admin']) obj.push(element1);
+    for(elem of obj){
+        // console.log(elem)
+        for(key in elem){}
+        elem['role'] == '0' ? elem['role'] = 'Системный администратор' : elem['role'] = 'Администратор'; 
+        text = '<div class="item_table"><div class="item_info border"><p class="main_fio">'+elem['name']+'</p><div class="mobile_version"><div class="mobile_title"><p>Выполнено за месяц</p><p>Текущих заказов </p><p class="role">Роль</p></div><div class="mobile_info"><p class="complete_order">'+elem['completed']+'</p><p class="current_order">'+elem['accepted']+'</p><p class="role">'+elem['role']+'</p></div></div><p class="mobile_none complete_order">'+elem['completed']+'</p><p class="mobile_none current_order">'+elem['accepted']+'</p><p class="mobile_none role">'+elem['role']+'</p></div><button class="click button border font_16">Просмотреть</button></div>'
+        $("#table").append(text);
+        elem['isActive'] == '0' ? $('.item_info').css('background', '')
     }
     
 }
