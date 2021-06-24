@@ -84,11 +84,17 @@
 
     </nav>
     <div class="content_wrap">
-        <p class="font_22">Настройки</p>
+        <p class="font_24">Настройки</p>
         <div class="content_set">
-            <div class="name_organization"></div>
-            <div class="img_organization"></div>
-            <div class="save"></div>
+            <div class="name_organization">
+
+            </div>
+            <div class="img_organization">
+
+            </div>
+            <div class="save">
+                <button class="button border font_16">Сохранить</button>
+            </div>
         </div>
     </div>
 

@@ -4,4 +4,40 @@
 body{
     background: $fon_white;
 }
+.content_set > div{
+    // border: 1px solid blue;
+}
 
+.content_wrap{
+    @extend %grid;
+    text-align: center;
+
+    p{ padding: 2% 0%; }
+}
+.content_set{
+    // height: 15rem;
+    @extend %flex_column;
+
+    *{
+        width: 50%;
+        height: 10rem;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .save button{
+        width: 150px;
+        height: 38px;
+    }
+}
