@@ -52,6 +52,10 @@ body{
     color: $blue;    
     cursor: pointer;     
 }
+.button_gray{
+    background: $fon_white;
+    border: 1px solid $gray_border;
+}
 input{
     border: 1px solid $gray_border;
     background: $gray_full;

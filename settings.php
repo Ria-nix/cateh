@@ -87,10 +87,11 @@
         <p class="font_24">Настройки</p>
         <div class="content_set">
             <div class="name_organization">
-
+                <label for="name">Название организации</label><input type="text" id="name">
             </div>
             <div class="img_organization">
-
+                <img src="icon/logo.png" alt="logo">
+                <button>Загрузить</button>
             </div>
             <div class="save">
                 <button class="button border font_16">Сохранить</button>

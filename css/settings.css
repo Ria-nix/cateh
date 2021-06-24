@@ -490,6 +490,10 @@ body {
   background: #F5F5F5;
 }
 
+.content_set > div {
+  border: 1px solid blue;
+}
+
 .content_wrap {
   text-align: center;
 }
@@ -497,8 +501,12 @@ body {
   padding: 2% 0%;
 }
 
+.content_set > div {
+  padding: 2% 0%;
+  width: 55%;
+}
+
 .content_set * {
-  width: 50%;
   height: 10rem;
 }
 .content_set .save button {
