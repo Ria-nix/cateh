@@ -537,7 +537,8 @@ nav .navigation .door img {
 .content_wrap .head_table .head_name span > img {
   -webkit-transform: translateY(3px);
           transform: translateY(3px);
-  z-index: 0;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .content_wrap .table_sysadmin {
   padding: 0 10px 0 10px;

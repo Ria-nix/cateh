@@ -40,7 +40,7 @@
             
             p{ flex:1; text-align: center; }
             span > img{ transform: translateY(3px);
-                z-index: 0;
+                object-fit: contain;
             }
             
         }
@@ -62,8 +62,8 @@
                 text-align: center;
             }
             .item_info{
-                height: 100%;             
-                background: $gray_full;
+                height: 100%;    
+                background: $gray_full;                        
                 box-shadow: 0px 4px 10px 0px rgba($but_shadow, 0.15);
                 padding: 1% 2%;
                    
