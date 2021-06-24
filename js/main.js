@@ -5,12 +5,10 @@ $('.toggle_but').click(function(){
         $('.toggle_menu_fon').removeClass('none').addClass('grid');
         $('.toggle_but').addClass('close');
         button = true;
-        console.log('click')
     }
     else{
         $('.toggle_menu_fon').removeClass('grid').addClass('none');
         $('.toggle_but').removeClass('close');
         button = false;
-        console.log('click2')
     }    
 });
