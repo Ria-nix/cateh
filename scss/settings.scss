@@ -11,11 +11,11 @@ body{ background: $fon_white; }
 }
 .content_set > div{    
     width: 45%;
-    // border: 1px solid blue;
 }
 .content_set{ @extend %flex_column;
 
     .name_organization{   
+        width: 100%;
         justify-content: center;
 
         input{           
@@ -49,8 +49,6 @@ body{ background: $fon_white; }
 
 
 // ************* @MEDIA *************
-
-
 // ********** MEDIA MAX 1163PX *************
 @media (max-width: 1163px) {
     .content_set > div{  width: 65%; }    
@@ -68,9 +66,13 @@ body{ background: $fon_white; }
         display: flex;
         flex-direction: row;
 
+        label{
+            padding: 0 0 0 5%;
+        }
+
         input{
             width: 350px;            
-            margin: 0 0 0 5%;
+            // margin: 0 0 0 5%;
         }
     }
     .image{
@@ -90,7 +92,7 @@ body{ background: $fon_white; }
         align-items: center;
 
         input{
-            width: 90%;
+            width: 75%;
             margin: 0;
         }
         label{ padding: 2% 0; }

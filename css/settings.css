@@ -516,6 +516,7 @@ body {
 }
 
 .content_set .name_organization {
+  width: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -567,9 +568,11 @@ body {
         -ms-flex-direction: row;
             flex-direction: row;
   }
+  .name_organization label {
+    padding: 0 0 0 5%;
+  }
   .name_organization input {
     width: 350px;
-    margin: 0 0 0 5%;
   }
 
   .image {
@@ -603,7 +606,7 @@ body {
             align-items: center;
   }
   .name_organization input {
-    width: 90%;
+    width: 75%;
     margin: 0;
   }
   .name_organization label {

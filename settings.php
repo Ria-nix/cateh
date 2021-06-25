@@ -11,9 +11,7 @@
     <title>Настройки</title>
 </head>
 <body>
-    <?php 
-        include('main_menu.php');
-    ?>
+    <?php include('main_menu.php');?>
 
     </nav>
     <div class="content_wrap">
