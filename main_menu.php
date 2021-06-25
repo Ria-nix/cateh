@@ -68,3 +68,5 @@
         </span>
     </div>
 </div>
+
+<script src="js/navigation.js"></script>

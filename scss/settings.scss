@@ -1,12 +1,7 @@
 @import 'cateh_style';
 @import 'navigation';
 
-body{
-    background: $fon_white;
-}
-.content_set > div{
-    border: 1px solid blue;
-}
+body{ background: $fon_white; } 
 
 .content_wrap{
     @extend %grid;
@@ -14,29 +9,35 @@ body{
 
     p{ padding: 2% 0%; }
 }
-.content_set > div{
-    padding: 2% 0%;
-    width: 55%;
+.content_set > div{    
+    width: 45%;
+    // border: 1px solid blue;
 }
-.content_set{
-    // height: 15rem;
-    @extend %flex_column;
+.content_set{ @extend %flex_column;
 
-    *{
-        height: 10rem;
+    .name_organization{   
+        justify-content: center;
+
+        input{           
+            height: 35px;
+            text-align: center;
+        }
+        
     }
+    .img_organization{ 
+        border-bottom: 1px solid $gray_border;
 
+        .image{                    
+            border: 1px solid $blue;   
+            @extend %flex_row;       
 
-
-
-
-
-
-
-
-
-
-
+            img{
+                width: 100%;
+                object-fit: contain;
+            }
+        }
+        .button_gray{ padding: 6px 20px; }
+    }
 
 
     .save button{
@@ -44,3 +45,108 @@ body{
         height: 38px;
     }
 }
+
+
+
+// ************* @MEDIA *************
+
+
+// ********** MEDIA MAX 1163PX *************
+@media (max-width: 1163px) {
+    .content_set > div{  width: 65%; }    
+}
+ 
+// ********** MEDIA 850PX *************
+@media (max-width: 850px) {  
+    .content_set > div{ width: 80%;}
+}
+
+// ********** MEDIA MIN 620PX *************
+@media (min-width: 620px) {
+    .content_set > div{ padding: 1.5% 0%; }
+    .name_organization{   
+        display: flex;
+        flex-direction: row;
+
+        input{
+            width: 350px;            
+            margin: 0 0 0 5%;
+        }
+    }
+    .image{
+        height: 10rem;
+        margin: 0 5% 0 16%;
+    }
+    .save button{ margin: 0 0 0 70%; }
+}
+
+// ********** MEDIA MAX 620PX *************
+@media (max-width: 620px) {
+    .content_set > div{ padding: 2% 0%; }
+    .save button{ margin: 0; }
+    .name_organization{   
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        input{
+            width: 90%;
+            margin: 0;
+        }
+        label{ padding: 2% 0; }
+    }
+    br{ display: none; }
+ 
+}
+
+// ********** MEDIA MIN 390PX *************
+@media (min-width: 390px) {
+    .img_organization{
+       display: flex;
+       flex-direction: row;
+       align-items: center;
+
+        .image{ 
+            width: 150px;
+            height: 9.5rem;
+            margin: 0 5% 0 5%;
+            padding: 1% 1%;
+        }
+    }
+ 
+}
+
+
+// ********** MEDIA MAX 390PX *************
+@media (max-width: 390px) {
+    .content_set > div{ padding: 5% 0%;}
+    .save button{ margin: 0; }
+    .name_organization{   
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        input{
+            width: 90%;
+            margin: 0;
+        }
+        label{ padding: 2% 0; }
+    }
+    .img_organization{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .image{      
+        height: 8rem;
+        margin: 0 0 5% 0;
+        width: 200px;
+        height: 11rem;
+        padding: 2%;
+    }
+ 
+}
+
+
+
+

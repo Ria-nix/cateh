@@ -104,10 +104,7 @@
         </div>
 
          <!-- TABLE -->
-        <div class="table_sysadmin" id="table">
-            
-            
-        </div>  
+        <div class="table_sysadmin" id="table"></div>  
     </div>
 
 

@@ -12,19 +12,22 @@
 </head>
 <body>
     <?php 
-        include_once('main_menu.php');
+        include('main_menu.php');
     ?>
 
     </nav>
     <div class="content_wrap">
-        <p class="font_24">Настройки</p>
+        <p class="font_24 bold">Настройки</p>
         <div class="content_set">
             <div class="name_organization">
-                <label for="name">Название организации</label><input type="text" id="name">
+                <label for="name">Название <br> организации</label>
+                <input type="text" id="name" class="border">
             </div>
             <div class="img_organization">
-                <img src="icon/logo.png" alt="logo">
-                <button>Загрузить</button>
+                <div class="image border">
+                    <img src="icon/logo.png" alt="logo">
+                </div>                
+                <button class="button_gray border font_16">Загрузить</button>
             </div>
             <div class="save">
                 <button class="button border font_16">Сохранить</button>
@@ -40,7 +43,6 @@
 
 
 
-    <script src="js/settings.js"></script>
-    <script src="js/navigation.js"></script>
+    <script src="js/settings.js"></script>    
 </body>
 </html>
