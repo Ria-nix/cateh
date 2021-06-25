@@ -1,12 +1,37 @@
 @import 'cateh_style';
-
+body{
+    width: 100%;
+    height: 100%;
+    @extend %grid;
+}
 .question_window{
-    margin: 0 auto;
-    width: 100px;
-    height: 100px;
+    width: 100%;
+    height: 100%;
+    @extend %grid;
     background: $modalwindow_full;
-    // position: absolute;
-    // @extend %grid;
+    position: absolute;
+   
+    .window_wrap{
+        margin: 10% auto 0 auto;
+        height:22rem;
+        width: 45%;
+        background: $fon_white;
+        @extend %flex_column;
+        padding: 0.5% 1.5%;
+        justify-content: space-evenly;
+        text-align: center;
 
+        .buttons{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
 
+            button{
+                padding: 8px 16px;
+                margin: 3% 5%;
+            }
+        }
+    }
 }
