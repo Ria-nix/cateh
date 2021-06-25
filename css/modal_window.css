@@ -87,7 +87,8 @@ input {
 }
 
 .question_window {
-  width: 100%;
-  height: 100%;
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
   background: rgba(17, 39, 66, 0.45);
 }/*# sourceMappingURL=modal_window.css.map */
