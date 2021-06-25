@@ -11,12 +11,12 @@ body{ background: $fon_white; }
 }
 .content_set > div{    
     width: 45%;
+    // border: 1px solid red;
 }
 .content_set{ @extend %flex_column;
 
     .name_organization{   
-        width: 100%;
-        justify-content: center;
+        justify-content: flex-start;
 
         input{           
             height: 35px;
@@ -51,12 +51,16 @@ body{ background: $fon_white; }
 // ************* @MEDIA *************
 // ********** MEDIA MAX 1163PX *************
 @media (max-width: 1163px) {
-    .content_set > div{  width: 65%; }    
+    .content_set > div{  width: 65%; } 
+    input{ width: 100%; }   
 }
  
 // ********** MEDIA 850PX *************
 @media (max-width: 850px) {  
     .content_set > div{ width: 80%;}
+    // input{   
+    //     width: 400px;            
+    // }
 }
 
 // ********** MEDIA MIN 620PX *************
@@ -66,13 +70,11 @@ body{ background: $fon_white; }
         display: flex;
         flex-direction: row;
 
-        label{
-            padding: 0 0 0 5%;
-        }
+        label{ padding: 0 0 0 5%;}
 
         input{
             width: 350px;            
-            // margin: 0 0 0 5%;
+            margin: 0 0 0 5%;
         }
     }
     .image{
