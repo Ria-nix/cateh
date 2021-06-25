@@ -6,7 +6,7 @@ function transitionMenu(){
     
     for(let elem of $('.admin_plus')){
         elem.addEventListener('click',function(){
-            window.location.href = 'organizaiton.php'; })
+            window.location.href = '#'; })
     }
     
     for(let elem of $('.organization')){
@@ -16,7 +16,7 @@ function transitionMenu(){
     
     for(let elem of $('.organization_plus')){
         elem.addEventListener('click',function(){
-            window.location.href = '#'; })
+            window.location.href = 'add_organization.php'; })
     }
     
     for(let elem of $('.settings')){

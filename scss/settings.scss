@@ -9,24 +9,20 @@ body{ background: $fon_white; }
 
     p{ padding: 2% 0%; }
 }
-.content_set > div{    
-    width: 45%;
-    // border: 1px solid red;
-}
+.content_set > div{ width: 45%; }
 .content_set{ @extend %flex_column;
 
     .name_organization{ justify-content: flex-start;
-
+        label{ text-align: left; }
         input{           
             height: 35px;
             text-align: center;
             box-shadow: 0px 4px 10px 0px rgba($but_shadow, 0.15);
-        }
-        
+        }        
     }
+
     .img_organization{ 
         border-bottom: 1px solid $gray_border;
-
         .image{                    
             border: 1px solid $blue;   
             @extend %flex_row;       
@@ -38,7 +34,6 @@ body{ background: $fon_white; }
         }
         .button_gray{ padding: 6px 20px; }
     }
-
 
     .save button{
         width: 150px;
@@ -56,9 +51,6 @@ body{ background: $fon_white; }
 // ********** MEDIA 850PX *************
 @media (max-width: 850px) {  
     .content_set > div{ width: 80%;}
-    // input{   
-    //     width: 400px;            
-    // }
 }
 
 // ********** MEDIA MIN 620PX *************

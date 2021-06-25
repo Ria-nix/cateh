@@ -520,6 +520,9 @@ body {
       -ms-flex-pack: start;
           justify-content: flex-start;
 }
+.content_set .name_organization label {
+  text-align: left;
+}
 .content_set .name_organization input {
   height: 35px;
   text-align: center;

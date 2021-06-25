@@ -22,11 +22,11 @@
                 <input type="text" id="name" class="border">
             </div>
             <div class="name_organization">
-                <label for="name">Название <br> организации</label>
+                <label for="name">ИНН</label>
                 <input type="text" id="name" class="border">
             </div>
             <div class="name_organization">
-                <label for="name">Название <br> организации</label>
+                <label for="name">Адрес</label>
                 <input type="text" id="name" class="border">
                 <!-- <span><img src="icon/plus-solid.svg" alt="plus-solid"></span> -->
             </div>

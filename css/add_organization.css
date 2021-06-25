@@ -516,9 +516,12 @@ body {
 }
 
 .content_set .name_organization {
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.content_set .name_organization label {
+  text-align: left;
 }
 .content_set .name_organization input {
   height: 35px;
@@ -545,6 +548,15 @@ body {
   height: 38px;
 }
 
+@media (max-width: 1163px) {
+  .content_set > div {
+    width: 65%;
+  }
+
+  input {
+    width: 500px;
+  }
+}
 @media (max-width: 1163px) {
   .content_set > div {
     width: 65%;
