@@ -16,14 +16,6 @@ body {
           align-items: center;
 }
 
-.modal_window, body {
-  display: grid;
-  grid-template-columns: repeat(1, minmax(320px, 1500px));
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 .button {
   background: #FFCC00;
   -webkit-box-shadow: 0px 4px 10px 0px rgba(17, 39, 66, 0.3);
@@ -119,9 +111,8 @@ body {
   position: absolute;
 }
 .modal_window .window_wrap {
-  margin: 10% auto 0 auto;
+  margin: 15% auto 0 auto;
   height: 22rem;
-  width: 45%;
   background: #F5F5F5;
   padding: 0.5% 1.5%;
   -webkit-box-pack: space-evenly;
@@ -151,4 +142,25 @@ body {
 .modal_window .window_wrap button {
   padding: 8px 16px;
   margin: 3% 5%;
+}
+
+@media (max-width: 1180px) {
+  .window_wrap {
+    width: 55%;
+  }
+}
+@media (min-width: 850px) {
+  .window_wrap {
+    width: 36%;
+  }
+}
+@media (max-width: 670px) {
+  .window_wrap {
+    width: 75%;
+  }
+}
+@media (max-width: 530px) {
+  .window_wrap {
+    width: 85%;
+  }
 }/*# sourceMappingURL=modal_window.css.map */

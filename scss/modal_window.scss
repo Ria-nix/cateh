@@ -2,19 +2,16 @@
 body{
     width: 100%;
     height: 100%;
-    @extend %grid;
 }
 .modal_window{
     width: 100%;
     height: 100%;
-    @extend %grid;
     background: $modalwindow_full;
     position: absolute;
    
     .window_wrap{
-        margin: 10% auto 0 auto;
+        margin: 15% auto 0 auto;
         height:22rem;
-        width: 45%;
         background: $fon_white;
         @extend %flex_column;
         padding: 0.5% 1.5%;
@@ -41,22 +38,24 @@ body{
     }
 }
 
-// ********** MEDIA MAX 1163PX *************
-@media (max-width: 1163px) {
-  
-}
+
  
-// ********** MEDIA 850PX *************
-@media (max-width: 850px) {  
-    
+// ********** MEDIA MAX 1180px *************
+@media (max-width: 1180px) {  
+    .window_wrap{ width: 55%; }
 }
 
-// ********** MEDIA MIN 620PX *************
-@media (min-width: 620px) {
-   
+// ********** MEDIA MIN 850px *************
+@media (min-width: 850px) {
+    .window_wrap{ width: 36%; }
 }
 
-// ********** MEDIA MAX 620PX *************
-@media (max-width: 620px) {
-    
+// ********** MEDIA MAX 670px *************
+@media (max-width: 670px) {
+    .window_wrap{ width: 75%; }
+}
+
+// ********** MEDIA MAX 530px *************
+@media (max-width: 530px) {
+    .window_wrap{ width: 85%; }
 }
