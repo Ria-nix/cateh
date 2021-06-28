@@ -584,9 +584,12 @@ body {
           justify-content: flex-end;
   padding: 0 2% 0 0;
 }
-.content_set .fields_adress input {
+.content_set .fields_adress .cell input {
   width: 360px;
   margin: 13px 2%;
+}
+.content_set .fields_adress .cell .delete {
+  cursor: pointer;
 }
 
 @media (min-width: 1163px) {

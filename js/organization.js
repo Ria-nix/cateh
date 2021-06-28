@@ -80,9 +80,22 @@ function isEmployees(){
 isEmployees();
 
 $('#add_adress').click(function(){
-    let inputs = '<div class="cell"><input type="text"><img src="icon/close.svg" alt="plus_solid"></div>';
-    $('.fields_adress').append(inputs);
-    console.log('click')
+    if($('#adress').value == ''){ $('#adress').css('border', 'red'); }
+    else{
+        let inputs = '<div class="cell"><input type="text"><img class="delete" src="icon/close.svg" alt="plus_solid"></div>';
+        $('.fields_adress').append(inputs);
+        console.log('click')        
+    }
 })
+$('.delete').click(function(){
+    // let inputs = '<div class="cell"><input type="text"><img class="delete" src="icon/close.svg" alt="plus_solid"></div>';
+    
+    
+    
+    $('.cell').removeChild(list.childNodes[0]);
+    console.log('click2')
+})
+
+
 
 

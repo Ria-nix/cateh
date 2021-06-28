@@ -16,7 +16,6 @@
         include_once('modal windows/question_window.php');
     ?>
 
-    </nav>
     <div class="content_wrap">
         <p class="font_24 bold">Добавление организации</p>
         <div class="content_set">
