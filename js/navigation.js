@@ -1,4 +1,4 @@
-function transitionMenu(){
+(function transitionMenu(){
     for(let elem of $('.admin')){
         elem.addEventListener('click',function(){
             window.location.href = 'main.php';})
@@ -28,8 +28,8 @@ function transitionMenu(){
         elem.addEventListener('click',function(){
             window.location.href = '#'; })
     }
-}
-transitionMenu();
+}());
+
 
 
 function toggleButton(){
