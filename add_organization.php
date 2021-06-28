@@ -28,7 +28,6 @@
             <div class="name_organization">
                 <label for="name">Адрес</label>
                 <input type="text" id="name" class="border">
-                <!-- <span><img src="icon/plus-solid.svg" alt="plus-solid"></span> -->
             </div>
             <div class="img_organization">
                 <div class="image border">

@@ -12,7 +12,7 @@ body{ background: $fon_white; }
 .content_set > div{ width: 45%; }
 .content_set{ @extend %flex_column;
 
-    .name_organization{ justify-content: flex-start;
+    .name_organization{ justify-content: space-between;
         label{ text-align: left; }
         input{           
             height: 35px;
@@ -45,7 +45,7 @@ body{ background: $fon_white; }
 // ********** MEDIA MAX 1163PX *************
 @media (max-width: 1163px) {
     .content_set > div{  width: 65%; } 
-    input{ width: 100%; }   
+    input{ width: 150%; }   
 }
  
 // ********** MEDIA 850PX *************
@@ -63,8 +63,8 @@ body{ background: $fon_white; }
         label{ padding: 0 0 0 5%;}
 
         input{
-            width: 350px;            
-            margin: 0 0 0 5%;
+            width: 400px;            
+            margin: 0 10% 0 5%;
         }
     }
     .image{
