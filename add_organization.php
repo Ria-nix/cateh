@@ -11,7 +11,10 @@
     <title>Добавление организации</title>
 </head>
 <body>
-    <?php include('navigation.php');?>
+    <?php 
+        include_once('navigation.php');
+        include_once('question_window.php');
+    ?>
 
     </nav>
     <div class="content_wrap">
@@ -21,13 +24,17 @@
                 <label for="name">Название <br> организации</label>
                 <input type="text" id="name" class="border">
             </div>
-            <div class="name_organization">
+            <div class="inn_organization">
                 <label for="name">ИНН</label>
                 <input type="text" id="name" class="border">
             </div>
-            <div class="name_organization">
+            <div class="adress_organization">
                 <label for="name">Адрес</label>
                 <input type="text" id="name" class="border">
+                <span class="button_gray border">
+                    <img src="icon/plus-solid.svg" alt="plus_solid">
+                    <p class="add">Добавить</p>
+                </span>
             </div>
             <div class="img_organization">
                 <div class="image border">
@@ -36,7 +43,7 @@
                 <button class="button_gray border font_16">Загрузить</button>
             </div>
             <div class="save">
-                <button class="button border font_16">Добавить</button>
+                <button class="button border font_16" id="add_button">Добавить</button>
             </div>
         </div>
     </div>
@@ -49,6 +56,7 @@
 
 
 
-    <script src="js/settings.js"></script>    
+    <script src="js/navigation.js"></script>
+    <script src="js/modal_windows.js"></script>    
 </body>
 </html>

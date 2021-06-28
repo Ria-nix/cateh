@@ -41,6 +41,6 @@
 
 
 
-    <script src="js/settings.js"></script>    
+    <script src="js/navigation.js"></script> 
 </body>
 </html>

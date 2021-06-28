@@ -8,12 +8,12 @@
     <title>question</title>
 </head>
 <body>
-    <div class="modal_window">
+    <div class="modal_window none">
         <div class="window_wrap border">
             <img src="icon/question.svg" alt="question">
             <p class="font_18">Вы точно хотите добавить нового системного администратора?</p>
             <div class="buttons">
-                <button class="button border font_18">Отменить</button>
+                <button class="button border font_18 ">Отменить</button>
                 <button class="button border font_18">Добавить</button>
             </div>
         </div>
