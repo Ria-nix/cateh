@@ -2,7 +2,9 @@
 @import 'navigation';
 
 body{ background: $fon_white; } 
-
+.content_set > div{ 
+    // border: 1px solid red;
+}
 .content_wrap{
     @extend %grid;
     text-align: center;
@@ -40,8 +42,7 @@ body{ background: $fon_white; }
     }
     .adress_organization{
         justify-content: flex-end;
-        align-items: center;      
-        input{ width: 360px; }    
+        align-items: center;        
     }
     .save button{
         width: 150px;
@@ -64,7 +65,7 @@ body{ background: $fon_white; }
                 width: 360px;
                 margin: 13px 2%;
             }
-            .delete{ cursor: pointer; }
+            #delete{ cursor: pointer; }
         }
         
     }
@@ -115,7 +116,10 @@ body{ background: $fon_white; }
 
     .adress_organization{
         label{ margin-right: auto; }
-        input{ margin: 0 1% 0 5%; }
+        input{ 
+            width: 360px;
+            margin: 0 1% 0 5%;
+        }
     }
     .content_set span{
         width:35px;
@@ -125,6 +129,12 @@ body{ background: $fon_white; }
         p{ display: none; }
     }
 }
+
+.red_auto{
+    box-shadow: 0px 4px 10px 0px rgba($red, 0.5);
+    border-color: rgba($red,0.7);
+}
+.red_auto::placeholder{ color: red; }
 
 // ********** MEDIA MAX 620PX *************
 @media (max-width: 620px) {

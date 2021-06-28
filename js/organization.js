@@ -79,21 +79,28 @@ function isEmployees(){
 }
 isEmployees();
 
+//   *********** Verifieng on input where  ADD AUTHORIZATION ***********
+
 $('#add_adress').click(function(){
-    if($('#adress').value == ''){ $('#adress').css('border', 'red'); }
+    if($('#adress').val() == ''){ 
+        $('#adress').addClass('red_auto');
+        $('#adress').attr('placeholder','Введите первый адрес для добавления еще одного ');
+        console.log('stop'); 
+    }
     else{
-        let inputs = '<div class="cell"><input type="text"><img class="delete" src="icon/close.svg" alt="plus_solid"></div>';
+        let inputs = '<div class="cell"><input type="text"><img id="delete" src="icon/close.svg" alt="plus_solid"></div>';
         $('.fields_adress').append(inputs);
-        console.log('click')        
+        console.log('click'); 
+        $('#adress').removeClass('red_auto');
+        
     }
 })
-$('.delete').click(function(){
-    // let inputs = '<div class="cell"><input type="text"><img class="delete" src="icon/close.svg" alt="plus_solid"></div>';
-    
-    
-    
-    $('.cell').removeChild(list.childNodes[0]);
-    console.log('click2')
+
+
+
+$('#delete').click(function(){
+    $('.cell').remove();
+    console.log('click2');
 })
 
 

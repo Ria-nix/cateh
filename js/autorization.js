@@ -8,8 +8,8 @@ $('.button').click(function() {
         $('p').text('!!! Введите логин и пароль');
     }else
     {   $('.spacing').removeClass('red_auto');
-        $('p').addClass('none');
-        
+        $('p').addClass('none');    
+            
         //отправление данных 
         $.ajax({
             type: "POST",
