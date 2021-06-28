@@ -13,15 +13,15 @@ body{ background: $fon_white; }
     span{        
         display: flex;
         justify-content: center;
+        cursor: pointer;
     }
-    div{
-        label{ text-align: left; }
-        input{
-            height: 35px;
-            text-align: center;
-            box-shadow: 0px 4px 10px 0px rgba($but_shadow, 0.15);
-        }       
+    input{
+        height: 35px;
+        text-align: center;
+        box-shadow: 0px 4px 10px 0px rgba($but_shadow, 0.15);
+        border-radius: 10px;
     }
+    div label{ text-align: left; }               
     .name_organization, .inn_organization{ 
         justify-content: space-between;  
         align-items: center; 
@@ -40,11 +40,30 @@ body{ background: $fon_white; }
     }
     .adress_organization{
         justify-content: flex-end;
-        align-items: center;          
+        align-items: center;      
+        input{ width: 360px; }    
     }
     .save button{
         width: 150px;
         height: 38px;
+    }
+
+    .fields_adress{
+        height: auto;
+        padding: 0;
+        @extend %flex_column;
+
+        .cell{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding: 0 2% 0 0;
+        }
+        input{
+            width: 360px;
+            margin: 13px 2%;
+        }
     }
 }
 
@@ -53,7 +72,9 @@ body{ background: $fon_white; }
 // ********** MEDIA MAX 1163PX *************
 @media (min-width: 1163px) {
     
-.content_set > div{ width: 45%; }
+.content_set > div{ width: 45%; 
+    // border: 1px solid red;
+}
     .adress_organization{ width: 52%;}
 }
 
