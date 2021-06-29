@@ -718,7 +718,6 @@ body {
 }
 .content_set label {
   letter-spacing: 1px;
-  width: 25%;
 }
 .content_set .name_organization, .content_set .inn_organization {
   -webkit-box-pack: justify;
@@ -767,13 +766,10 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
   padding: 0 2% 0 0;
 }
 .content_set .fields_adress .cell input {
-  width: 75%;
+  width: 66.5%;
   margin: 13px 2%;
 }
 .content_set .fields_adress .cell img {
@@ -848,10 +844,17 @@ body {
   .name_organization label, .inn_organization label, .adress_organization label {
     padding: 0 0 0 5%;
     text-align: left;
+    width: 25%;
   }
   .name_organization input, .inn_organization input, .adress_organization input {
     width: 75%;
     margin: 0 0 0 5%;
+  }
+
+  .cell {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 
   .image {
@@ -867,7 +870,7 @@ body {
     margin-right: auto;
   }
   .adress_organization input {
-    width: 400px;
+    width: 70%;
     margin: 0 1% 0 5%;
   }
 

@@ -22,10 +22,7 @@ body{ background: $fon_white; }
         box-shadow: 0px 4px 10px 0px rgba($but_shadow, 0.15);
         border-radius: 10px;
     }
-    label{         
-        letter-spacing: 1px;
-        width: 25%;
-    }               
+    label{ letter-spacing: 1px; }               
     .name_organization, .inn_organization{ 
         justify-content: space-between;  
         align-items: center; 
@@ -60,11 +57,10 @@ body{ background: $fon_white; }
             width: 100%;
             display: flex;
             align-items: center;
-            justify-content: flex-end;
             padding: 0 2% 0 0;
 
             input{
-                width: 75%;
+                width: 66.5%;
                 margin: 13px 2%;
             }
             img{ cursor: pointer; }
@@ -105,13 +101,17 @@ body{ background: $fon_white; }
         display: flex;
         flex-direction: row;
 
-        label{ padding: 0 0 0 5%; text-align: left;}
-
+        label{ 
+            padding: 0 0 0 5%; 
+            text-align: left;
+            width: 25%;
+        }
         input{
             width: 75%;            
             margin: 0 0 0 5%;
         }
     }
+    .cell{ justify-content: center; }
     .image{
         height: 10rem;
         margin: 0 5% 0 16%;
@@ -121,7 +121,7 @@ body{ background: $fon_white; }
     .adress_organization{
         label{ margin-right: auto;  }
         input{ 
-            width: 400px;
+            width: 70%;
             margin: 0 1% 0 5%;
         }
     }
