@@ -14,7 +14,6 @@
         include_once('navigation.php');
         include_once('modal windows/question_window.php');
     ?>
-
     <div class="content_wrap">
         <p class="font_24 bold">Добавление организации</p>
         <div class="content_set">
@@ -46,8 +45,9 @@
             </div>
         </div>
     </div>
-    <script src="<?php  echo $navigation_panel ?>"></script>
     <script src="js/modal_windows.js"></script>    
-    <script src="js/organization.js"></script>    
+    <script src="js/organization.js"></script>
+    <script src="<?php  echo $navigation_panel ?>"></script>
+        
 </body>
 </html>

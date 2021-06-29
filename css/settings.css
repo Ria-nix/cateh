@@ -422,7 +422,6 @@ nav .navigation .door img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    z-index: 100;
   }
 }
 @media (min-width: 580px) {

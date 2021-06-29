@@ -12,8 +12,9 @@ body{ background: $fon_white; }
 .content_set{ @extend %flex_column;
     span{        
         display: flex;
-        justify-content: center;
-        cursor: pointer;
+        justify-content: center; 
+        align-items: center; 
+        cursor: pointer;      
     }
     input{
         height: 35px;
@@ -36,7 +37,7 @@ body{ background: $fon_white; }
                 object-fit: contain;
             }
         }
-        .button_gray{ padding: 6px 20px; }
+        .button_gray{ padding: 6px 20px; cursor: pointer; }
     }
     .adress_organization{
         justify-content: flex-end;
@@ -60,7 +61,7 @@ body{ background: $fon_white; }
             padding: 0 2% 0 0;
 
             input{
-                width: 360px;
+                width: 400px;
                 margin: 13px 2%;
             }
             #delete{ cursor: pointer; }
@@ -102,7 +103,7 @@ body{ background: $fon_white; }
         label{ padding: 0 0 0 5%;}
 
         input{
-            width: 400px;            
+            width: 440px;            
             margin: 0 0 0 5%;
         }
     }
@@ -115,7 +116,7 @@ body{ background: $fon_white; }
     .adress_organization{
         label{ margin-right: auto; }
         input{ 
-            width: 360px;
+            width: 400px;
             margin: 0 1% 0 5%;
         }
     }
