@@ -46,15 +46,6 @@
             </div>
         </div>
     </div>
-
-
-
-
-
-
-
-
-
     <script src="js/navigation.js"></script>
     <script src="js/modal_windows.js"></script>    
     <script src="js/organization.js"></script>    

@@ -1,7 +1,7 @@
 (function transitionMenu(){
     for(let elem of $('.admin')){
         elem.addEventListener('click',function(){
-            window.location.href = 'main.php';})
+            window.location.href = 'sysadmin.php';})
     }
     
     for(let elem of $('.admin_plus')){
@@ -11,7 +11,7 @@
     
     for(let elem of $('.organization')){
         elem.addEventListener('click',function(){
-            window.location.href = '#'; })
+            window.location.href = 'organization.php'; })
     }
     
     for(let elem of $('.organization_plus')){

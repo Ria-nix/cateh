@@ -1,3 +1,4 @@
+<?php  include('head_code.php'); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,9 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main_style.css">    
     <link rel="shortcut icon" href="icon/favicon-16x16.png" type="image/x-icon">
-    <script src="https://code.jquery.com/jquery-3.6.0.js"
-        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="crossorigin="anonymous"></script>
-    <title>Главная: Системные администраторы</title>
+    <?php echo $favicon, $jquery  ?>
+    <title><?php echo $sysadmin ?></title>
 </head>
 <body>
     <!-- HEADER -->
@@ -28,19 +28,19 @@
             <!-- TOOGLE MENU -->
             <div class="toggle_menu_fon none">
                 <div class="toggle_menu border">
-                     <span class="button border main">
+                     <span class="button border main admin">
                         <img src="icon/Untitled.svg" alt="alt">
                         <p class="font_18">Системные администраторы</p>
                     </span>
-                    <span class="button border plus">
+                    <span class="button border plus admin_plus">
                         <img src="icon/plus-solid.svg" alt="alt">
                         <p class="font_18 icon_none none">Добавить нового сис. админа</p>
                     </span>
-                    <span class="button border main">
+                    <span class="button border main organization">
                         <img src="icon/build.svg" alt="alt">
                         <p class="font_18">Организации</p>
                     </span>
-                    <span class="button border plus">
+                    <span class="button border plus organization_plus">
                         <img src="icon/plus-solid.svg" alt="alt">
                         <p class="font_18 icon_none none">Добавить новую организацию</p>
                     </span>
@@ -48,7 +48,7 @@
                         <img src="icon/settings.svg" alt="alt">
                         <p class="font_18 icon_none none">Настройки</p>
                     </span>
-                    <span class="button border door">                    
+                    <span class="button border door exit">                    
                         <p class="font_18">Выйти</p>
                         <img src="icon/exitdoor_87195.svg" alt="alt">
                     </span>
@@ -57,25 +57,25 @@
 
             <!-- BUTTONS -->
             <div class="panel_buttons">
-                <span class="button border main">
+                <span class="button border main admin">
                     <img src="icon/Untitled.svg" alt="alt">
                     <p class="font_18">Системные администраторы</p>
                 </span>
-                <span class="button border plus">
+                <span class="button border plus admin_plus">
                     <img src="icon/plus-solid.svg" alt="alt">
                 </span>
-                <span class="button border main">
+                <span class="button border main organization">
                     <img src="icon/build.svg" alt="alt">
                     <p class="font_18">Организации</p>
                 </span>
-                <span class="button border plus">
+                <span class="button border plus organization_plus">
                     <img src="icon/plus-solid.svg" alt="alt">
                 </span>
                 <span class="button border settings">
                     <img src="icon/settings.svg" alt="alt">
                     <p class="font_18"></p>
                 </span>
-                <span class="button border door">                    
+                <span class="button border door exit">                    
                     <p class="font_18">Выйти</p>
                     <img src="icon/exitdoor_87195.svg" alt="alt">
                 </span>
@@ -104,7 +104,7 @@
         </div>
 
          <!-- TABLE -->
-        <div class="table_sysadmin"></div>  
+        <div class="table_sysadmin" id="table"></div>  
     </div>
 
 
