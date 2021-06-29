@@ -80,42 +80,6 @@ isEmployees();
 
 //   *********** Verifieng on input where  ADD AUTHORIZATION ***********
 
-$('#add_adress').click(function(){
-    if($('#adress').val() == ''){ 
-        $('#adress').addClass('red_auto');
-        $('#adress').attr('placeholder','Введите первый адрес для добавления еще одного ');
-        console.log('stop'); 
-    }
-    else{
-        let inputs = '<div class="cell"><input type="text"><img id="delete" src="icon/close.svg" alt="close"></div>';
-        $('.fields_adress').append(inputs);        
-        // console.log('click'); 
-        $('#adress').removeClass('red_auto'); 
-        
-        
-        for(let wrap of $('.fields_adress').children()){
-            for(var cross  of $('.cell').children("#delete")){
-                cross.click(function(){
-                    // for(var elem of $('.fields_adress').children()){
-                        // $('.fields_adress').children('.cell').empty();  
-                    //     console.log('click2');
-                    // }      
-                })                
-            }
-            
-            console.log(wrap);
-            console.log(cross);
-            
-        }
-        
-    }
-})
-
-$('#adress').change(function(){
-    $('#adress').attr('placeholder','');
-    $('#adress').removeClass('red_auto');
-})
-
 
 
 

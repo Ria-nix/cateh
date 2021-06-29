@@ -775,7 +775,7 @@ body {
   width: 400px;
   margin: 13px 2%;
 }
-.content_set .fields_adress .cell #delete {
+.content_set .fields_adress .cell img {
   cursor: pointer;
 }
 
