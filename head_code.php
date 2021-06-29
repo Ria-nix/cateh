@@ -21,7 +21,8 @@
     $css_organizations = 'css/main_style.css';
     $css_add_sysadmin = 'css/';
 
-
+    //Script path of navigation panel
+    $navigation_panel = 'js/navigation.js';
 
 
 

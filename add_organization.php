@@ -46,7 +46,7 @@
             </div>
         </div>
     </div>
-    <script src="js/navigation.js"></script>
+    <script src="<?php  echo $navigation_panel ?>"></script>
     <script src="js/modal_windows.js"></script>    
     <script src="js/organization.js"></script>    
 </body>

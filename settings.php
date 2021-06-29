@@ -32,14 +32,6 @@
         </div>
     </div>
 
-
-
-
-
-
-
-
-
-    <script src="js/navigation.js"></script> 
+    <script src="<?php  echo $navigation_panel ?>"></script> 
 </body>
 </html>

@@ -110,7 +110,7 @@
 
 
     <script src="js/organization.js"></script>
-    <script src="js/navigation.js"></script>
+    <script src="<?php  echo $navigation_panel ?>"></script>
 </body>
 </html>
 

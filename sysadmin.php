@@ -110,7 +110,7 @@
 
 
     <script src="js/sysadmin.js"></script>
-    <script src="js/navigation.js"></script>
+    <script src="<?php  echo $navigation_panel ?>"></script>
 </body>
 </html>
 
