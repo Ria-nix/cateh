@@ -716,8 +716,9 @@ body {
           box-shadow: 0px 4px 10px 0px rgba(17, 39, 66, 0.15);
   border-radius: 10px;
 }
-.content_set div label {
-  text-align: left;
+.content_set label {
+  letter-spacing: 1px;
+  width: 25%;
 }
 .content_set .name_organization, .content_set .inn_organization {
   -webkit-box-pack: justify;
@@ -772,11 +773,35 @@ body {
   padding: 0 2% 0 0;
 }
 .content_set .fields_adress .cell input {
-  width: 400px;
+  width: 75%;
   margin: 13px 2%;
 }
 .content_set .fields_adress .cell img {
   cursor: pointer;
+}
+
+.red_auto {
+  border-color: rgba(229, 40, 40, 0.7);
+}
+
+.red_auto::-webkit-input-placeholder {
+  color: red;
+}
+
+.red_auto::-moz-placeholder {
+  color: red;
+}
+
+.red_auto:-ms-input-placeholder {
+  color: red;
+}
+
+.red_auto::-ms-input-placeholder {
+  color: red;
+}
+
+.red_auto::placeholder {
+  color: red;
 }
 
 @media (min-width: 1163px) {
@@ -822,9 +847,10 @@ body {
   }
   .name_organization label, .inn_organization label, .adress_organization label {
     padding: 0 0 0 5%;
+    text-align: left;
   }
   .name_organization input, .inn_organization input, .adress_organization input {
-    width: 440px;
+    width: 75%;
     margin: 0 0 0 5%;
   }
 
@@ -854,32 +880,6 @@ body {
     display: none;
   }
 }
-.red_auto {
-  -webkit-box-shadow: 0px 4px 10px 0px rgba(229, 40, 40, 0.5);
-          box-shadow: 0px 4px 10px 0px rgba(229, 40, 40, 0.5);
-  border-color: rgba(229, 40, 40, 0.7);
-}
-
-.red_auto::-webkit-input-placeholder {
-  color: red;
-}
-
-.red_auto::-moz-placeholder {
-  color: red;
-}
-
-.red_auto:-ms-input-placeholder {
-  color: red;
-}
-
-.red_auto::-ms-input-placeholder {
-  color: red;
-}
-
-.red_auto::placeholder {
-  color: red;
-}
-
 @media (max-width: 620px) {
   .content_set > div {
     padding: 2% 0%;
@@ -903,6 +903,7 @@ body {
   }
   .name_organization input, .inn_organization input, .adress_organization input {
     width: 75%;
+    text-align: center;
   }
   .name_organization label, .inn_organization label, .adress_organization label {
     padding: 2% 0;

@@ -22,7 +22,10 @@ body{ background: $fon_white; }
         box-shadow: 0px 4px 10px 0px rgba($but_shadow, 0.15);
         border-radius: 10px;
     }
-    div label{ text-align: left; }               
+    label{         
+        letter-spacing: 1px;
+        width: 25%;
+    }               
     .name_organization, .inn_organization{ 
         justify-content: space-between;  
         align-items: center; 
@@ -61,7 +64,7 @@ body{ background: $fon_white; }
             padding: 0 2% 0 0;
 
             input{
-                width: 400px;
+                width: 75%;
                 margin: 13px 2%;
             }
             img{ cursor: pointer; }
@@ -70,14 +73,16 @@ body{ background: $fon_white; }
     }
 }
 
+.red_auto{ border-color: rgba($red,0.7); }
+.red_auto::placeholder{ color: red; }
+
+
 // ************* @MEDIA *************
 
 // ********** MEDIA MAX 1163PX *************
 @media (min-width: 1163px) {
     
-.content_set > div{ width: 45%; 
-    // border: 1px solid red;
-}
+.content_set > div{ width: 45%; }
     .adress_organization{ width: 52%;}
 }
 
@@ -100,10 +105,10 @@ body{ background: $fon_white; }
         display: flex;
         flex-direction: row;
 
-        label{ padding: 0 0 0 5%;}
+        label{ padding: 0 0 0 5%; text-align: left;}
 
         input{
-            width: 440px;            
+            width: 75%;            
             margin: 0 0 0 5%;
         }
     }
@@ -114,7 +119,7 @@ body{ background: $fon_white; }
     .save button{ margin: 0 0 0 70%; }
 
     .adress_organization{
-        label{ margin-right: auto; }
+        label{ margin-right: auto;  }
         input{ 
             width: 400px;
             margin: 0 1% 0 5%;
@@ -129,11 +134,6 @@ body{ background: $fon_white; }
     }
 }
 
-.red_auto{
-    box-shadow: 0px 4px 10px 0px rgba($red, 0.5);
-    border-color: rgba($red,0.7);
-}
-.red_auto::placeholder{ color: red; }
 
 // ********** MEDIA MAX 620PX *************
 @media (max-width: 620px) {
@@ -144,7 +144,7 @@ body{ background: $fon_white; }
         flex-direction: column;
         align-items: center;
 
-        input{  width: 75%; }
+        input{  width: 75%; text-align: center; }
         label{ padding: 2% 0; }
     }
     br{ display: none; }
