@@ -1,3 +1,4 @@
+<?php  include('head_code.php'); ?>
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -8,7 +9,7 @@
     <link rel="stylesheet" href="css/autorization_style.css">
     <script src="https://code.jquery.com/jquery-3.6.0.js"
     integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="crossorigin="anonymous"></script>
-    <title>Авторизация</title>
+    <title><?php echo $authorization ?></title>
 </head>
 <body>
     <div class="wrap border">

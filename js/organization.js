@@ -81,7 +81,8 @@ isEmployees();
 
 //   *********** Verifieng on input where  ADD AUTHORIZATION ***********
 
-$('#add_adress').click(function(){
+
+$('#adress').change(function(){
     if($('#adress').val() == ''){ 
         $('#adress').addClass('red_auto');
         $('#adress').attr('placeholder','Введите первый адрес для добавления еще одного ');
@@ -91,12 +92,16 @@ $('#add_adress').click(function(){
         let inputs = '<div class="cell"><input type="text"><img id="delete" src="icon/close.svg" alt="plus_solid"></div>';
         $('.fields_adress').append(inputs);
         console.log('click'); 
-        $('#adress').removeClass('red_auto');
-        
+        $('#adress').removeClass('red_auto');        
     }
 })
 
-
+$('#add_adress').click(function(){
+    let inputs = '<div class="cell"><input type="text"><img id="delete" src="icon/close.svg" alt="plus_solid"></div>';
+    $('.fields_adress').append(inputs);
+    console.log('click'); 
+    $('#adress').removeClass('red_auto');
+})
 
 $('#delete').click(function(){
     $('.cell').remove();
