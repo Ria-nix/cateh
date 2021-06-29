@@ -80,7 +80,6 @@ isEmployees();
 
 //   *********** Verifieng on input where  ADD AUTHORIZATION ***********
 
-
 $('#adress').change(function(){
     if($('#adress').val() == ''){ 
         $('#adress').addClass('red_auto');
