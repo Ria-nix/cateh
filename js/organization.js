@@ -64,7 +64,6 @@ let arr = {
         }
     };
 
-
 function isEmployees(){
     let element, element1, obj = [], text, key, elem;
     for(element of arr['employees']['sysadmin']) obj.push(element);

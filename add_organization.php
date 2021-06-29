@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/add_organization.css">        
+    <link rel="stylesheet" href="<?php echo $css_add_organ ?>">        
     <?php echo $favicon, $jquery  ?>
     <title><?php echo $add_organ ?></title>
 </head>

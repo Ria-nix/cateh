@@ -5,7 +5,7 @@
     $favicon = '<link rel="shortcut icon" href="icon/favicon-16x16.png" type="image/x-icon">';
 
 // Titles of pages
-    $authorization = 'Авторизация';
+    $index = 'Авторизация';
     $settings = 'Настройки';
     $add_organ = 'Добавление организации';
     $sysadmin = 'Главная: Системные администраторы';
@@ -13,7 +13,12 @@
     $add_sysadmin = 'Добавление системного администратора';
 
 // CSS connection (path)
-
+$css_index = 'css/index_style.css';
+$css_settings = 'css/';
+$css_add_organ = 'css/add_organization.css';
+$css_sysadmin = 'css/';
+$css_organizations = 'css/';
+$css_add_sysadmin = 'css/';
 
 
 
