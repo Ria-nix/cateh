@@ -27,8 +27,8 @@
             </div>
             <div class="adress_organization">
                 <label for="adress">Адрес</label>
-                <input type="text" id="adress">
-                <span class="button_gray border" id="add_adress">
+                <input type="text" class="text_adress" id="adress">
+                <span class="button_gray border " id="add_adress">
                     <img src="icon/plus-solid.svg" alt="plus_solid">
                     <p class="add">Добавить</p>
                 </span>
