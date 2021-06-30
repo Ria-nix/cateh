@@ -21,6 +21,7 @@ body{ background: $fon_white; }
         text-align: center;
         box-shadow: 0px 4px 10px 0px rgba($but_shadow, 0.15);
         border-radius: 10px;
+        color: $blue;
     }
     label{ letter-spacing: 1px; }               
     .name_organization, .inn_organization{ 
