@@ -6,24 +6,26 @@ $('#add_adress').click(function(){
     }
     else{
         $('#adress').removeClass('red_auto'); 
+                    
         if(summ == 23){ inputs = ''; }
         else{
-            inputs = '<div class="cell"><input type="text" class="text_adress"><img src="icon/close.svg" alt="close"></div>';
-            $('.fields_adress').append(inputs);    
-            summ++; 
+            if($('.cell').last('.text_adress').val() == ''){
+                $('.text_adress').addClass('red_auto');
+                $('.text_adress').attr('placeholder','Введите адрес для добавления еще одного ');
+                console.log($('.cell').last('.text_adress').val());
+                
+            }
+            else{
+                inputs = '<div class="cell"><input type="text" class="text_adress"><img src="icon/close.svg" alt="close"></div>';
+                $('.fields_adress').append(inputs); 
+                $('.text_adress').removeClass('red_auto');   
+                summ++; 
 
-            for(var elem of $('.cell').children('img')){ }
-            elem.addEventListener('click', function(){ elem.parentElement.remove();  summ--});
-        }
-
-        // if($('.field_adress').last('.text_adress').val() == ''){
-        //     $('#adress').addClass('red_auto');
-        //     $('#adress').attr('placeholder','Введите адрес для добавления еще одного ');
-        // }
-        // else{
-                    
-            
-        // }
+                for(var elem of $('.cell').children('img')){ }
+                elem.addEventListener('click', function(){ elem.parentElement.remove();  summ--});
+            }
+        }     
+        console.log(summ);
         
     }
 })
@@ -31,5 +33,9 @@ $('#add_adress').click(function(){
 $('#adress').change(function(){
     $('#adress').attr('placeholder','');
     $('#adress').removeClass('red_auto');
-})
+});
+$('.text_adress').change(function(){
+    $('.text_adress').attr('placeholder','');
+    $('.text_adress').removeClass('red_auto');
+});
 
