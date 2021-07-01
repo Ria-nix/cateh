@@ -7,4 +7,4 @@
             <button class="button border font_18 add_info">Добавить</button>
         </div>
     </div>
-</div>`
+</div>

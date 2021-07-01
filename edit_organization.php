@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="<?php echo $css_add_organ ?>">        
     <?php echo $favicon, $jquery  ?>
-    <title><?php echo $add_organ ?></title>
+    <title><?php echo $edit_organ ?></title>
 </head>
 <body>
     <?php 
