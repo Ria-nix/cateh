@@ -46,6 +46,8 @@ body{ background: $fon_white; }
             overflow: hidden;
             position: absolute;
             opacity: 0;
+            width: 10px;
+            height: 10px;
         }
         .button_gray{ 
             padding: 6px 20px; 

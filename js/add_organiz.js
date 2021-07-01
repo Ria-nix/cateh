@@ -36,21 +36,22 @@ function addInput(){
     
 }
 
-// $('#input_file').on('change',function(ev){    
-//     var f = ev.target.files[0];
-//     var fr = new FileReader();
+$('#input_file').on('change',function(ev){    
+    var f = ev.target.files[0];
+    var fr = new FileReader();
     
-//     fr.onload = function(ev2) {
-//         console.log(ev2);
-//         $('.logo').attr('src', ev2.target.result);
-//     };
     
-//     fr.readAsDataURL(f);
+    fr.onload = function(ev2) {
+        console.log(ev2);
+        $('.logo').attr('src', ev2.target.result);
+    };
+    // console.log(f + " " + fr);
+    // fr.readAsDataURL(f);
 
-//     console.log($('#input_file').val());
-//     // $('.logo').attr('src') = $('#input_file').val();
+    console.log($('#input_file').val());
+    // $('.logo').attr('src') = $('#input_file').val();
     
-// })
+})
 
     
 

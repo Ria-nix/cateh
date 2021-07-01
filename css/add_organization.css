@@ -744,6 +744,8 @@ body {
   overflow: hidden;
   position: absolute;
   opacity: 0;
+  width: 10px;
+  height: 10px;
 }
 .content_set .img_organization .button_gray {
   padding: 6px 20px;
