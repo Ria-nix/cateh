@@ -38,7 +38,8 @@
                 <div class="image border">
                     <img src="icon/logo.png" alt="logo">
                 </div>                
-                <button class="button_gray border font_16">Загрузить</button>
+                <input type="file" id="input_file">
+                <label class="button_gray border font_16" for="input_file">Загрузить</label>
             </div>
             <div class="save">
                 <button class="button border font_16" id="add_button">Добавить</button>

@@ -739,6 +739,11 @@ body {
   -o-object-fit: contain;
      object-fit: contain;
 }
+.content_set .img_organization #input_file {
+  overflow: hidden;
+  position: absolute;
+  opacity: 0;
+}
 .content_set .img_organization .button_gray {
   padding: 6px 20px;
   cursor: pointer;

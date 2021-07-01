@@ -38,7 +38,15 @@ body{ background: $fon_white; }
                 object-fit: contain;
             }
         }
-        .button_gray{ padding: 6px 20px; cursor: pointer; }
+        #input_file{
+            overflow: hidden;
+            position: absolute;
+            opacity: 0;
+        }
+        .button_gray{ 
+            padding: 6px 20px; 
+            cursor: pointer; 
+        }
     }
     .adress_organization{
         justify-content: flex-end;
