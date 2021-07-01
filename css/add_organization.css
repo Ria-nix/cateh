@@ -806,6 +806,10 @@ body {
   color: red;
 }
 
+.scroll_none {
+  overflow: hidden;
+}
+
 @media (min-width: 1163px) {
   .content_set > div {
     width: 45%;

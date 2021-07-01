@@ -37,10 +37,10 @@ function addInput(){
 }
 
     if($('.button_gray').val() == 0){
-        console.log('none')
+        console.log('none');
     }
     else{
-        console.log($('#input_file').val())
+        console.log($('#input_file').val());
     }
 
 
