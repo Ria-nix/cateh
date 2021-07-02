@@ -631,6 +631,7 @@ body {
   height: 100%;
   background: rgba(17, 39, 66, 0.45);
   position: absolute;
+  top: 0;
 }
 .modal_window .window_wrap {
   margin: 15% auto 0 auto;

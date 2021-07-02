@@ -19,11 +19,11 @@
         <div class="content_set">
             <div class="name_organization">
                 <label for="name">Название <br> организации</label>
-                <input type="text" id="name">
+                <input type="text" id="name" class="">
             </div>
             <div class="inn_organization">
                 <label for="inn">ИНН</label>
-                <input type="text" id="inn">
+                <input type="text" id="inn" class="">
             </div>
             <div class="adress_organization">
                 <label for="adress">Адрес</label>
