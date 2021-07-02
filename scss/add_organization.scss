@@ -141,11 +141,7 @@ body{ background: $fon_white; }
             margin: 0 1% 0 5%;
         }
     }
-    .content_set span{
-        width:35px;
-        height: 35px;
-        padding: 0.8%;
-    }
+    .content_set span{ padding:1%; }
     .mobile_fields_adress{ display: none; }
     .fields_adress{  
         display: flex;
@@ -170,12 +166,9 @@ body{ background: $fon_white; }
     br{ display: none; }
 
     .content_set span{
-        width: 150px;
-        padding: 5px 10px;    
-        margin: 20px 0 0 0;    
-
-        img{ display: none; }
-        p{ display: inline; }
+        // width: 15rem;
+        padding: 10px 10px;    
+        margin: 20px 0 0 0;   
     } 
     .cell{ justify-content: center; }
     .mobile_fields_adress{    

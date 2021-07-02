@@ -888,9 +888,7 @@ body {
   }
 
   .content_set span {
-    width: 35px;
-    height: 35px;
-    padding: 0.8%;
+    padding: 1%;
   }
 
   .mobile_fields_adress {
@@ -944,15 +942,8 @@ body {
   }
 
   .content_set span {
-    width: 150px;
-    padding: 5px 10px;
+    padding: 10px 10px;
     margin: 20px 0 0 0;
-  }
-  .content_set span img {
-    display: none;
-  }
-  .content_set span p {
-    display: inline;
   }
 
   .cell {
