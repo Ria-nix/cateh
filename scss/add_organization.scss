@@ -10,7 +10,7 @@ body{ background: $fon_white; }
     @extend %grid;
     text-align: center;
 
-    p.font_24{ padding: 2% 0%; }
+    p.font_24{ padding: 3.5% 0 2% 0; }
 }
 .content_set{ @extend %flex_column;
     span{        
@@ -63,24 +63,25 @@ body{ background: $fon_white; }
         height: 38px;
     }
 
-    .fields_adress{
+    .fields_adress, .mobile_fields_adress{
         height: auto;
-        padding: 0;
-        @extend %flex_column;
+        padding: 0;          
+    }
+    .cell{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding: 0 2% 0 0;
 
-        .cell{
-            width: 100%;
-            display: flex;
-            align-items: center;
-            padding: 0 2% 0 0;
-
-            input{
-                width: 66.5%;
-                margin: 13px 2%;
-            }
-            img{ cursor: pointer; }
+        input{
+            width: 66.5%;
+            margin: 13px 2%;
         }
-        
+        img{ 
+            cursor: pointer; 
+            width: 20px; 
+            height: 20px;
+        }
     }
 }
 
@@ -144,8 +145,12 @@ body{ background: $fon_white; }
         width:35px;
         height: 35px;
         padding: 0.8%;
-
-        p{ display: none; }
+    }
+    .mobile_fields_adress{ display: none; }
+    .fields_adress{  
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
     }
 }
 
@@ -159,7 +164,7 @@ body{ background: $fon_white; }
         flex-direction: column;
         align-items: center;
 
-        input{  width: 75%; text-align: center; }
+        input{  width: 85%; text-align: center; }
         label{ padding: 2% 0; }
     }
     br{ display: none; }
@@ -171,9 +176,15 @@ body{ background: $fon_white; }
 
         img{ display: none; }
         p{ display: inline; }
-    }
- 
+    } 
     .cell{ justify-content: center; }
+    .mobile_fields_adress{    
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+    
+    .fields_adress{ display: none; }
 }
 
 // ********** MEDIA MIN 390PX *************
@@ -184,10 +195,10 @@ body{ background: $fon_white; }
        align-items: center;
 
         .image{ 
-            width: 150px;
-            height: 9.5rem;
+            width: 10rem;
+            height: 10rem;
             margin: 0 5% 0 5%;
-            padding: 1% 1%;
+            padding: 2.5%;
         }
     }
  
@@ -203,11 +214,8 @@ body{ background: $fon_white; }
         flex-direction: column;
         align-items: center;
 
-        input{
-            width: 90%;
-            margin: 0;
-        }
-        label{ padding: 2% 0; }
+        input{ margin: 0;  }
+        label{ padding: 3.2% 0; }
     }
     .img_organization{
         display: flex;

@@ -27,7 +27,9 @@ $('#add_adress').click(function(){
 
 function addInput(){ 
     inputs = '<div class="cell"><input type="text" class="text_adress"><img src="icon/close.svg" alt="close"></div>';
-    $('.fields_adress').append(inputs); 
+    
+        $('.mobile_fields_adress').append(inputs);
+        $('.fields_adress').append(inputs); 
     summ++;
 
     // remove the cell
@@ -36,17 +38,18 @@ function addInput(){
     
 }
 
+
+// ************ Image ************
 $('#input_file').on('change',function(ev){    
     var f = ev.target.files[0];
-    var fr = new FileReader();
-    
+    var fr = new FileReader();   
     
     fr.onload = function(ev2) {
         console.log(ev2);
         $('.logo').attr('src', ev2.target.result);
     };
     // console.log(f + " " + fr);
-    // fr.readAsDataURL(f);
+    fr.readAsDataURL(f);
 
     console.log($('#input_file').val());
     // $('.logo').attr('src') = $('#input_file').val();
@@ -54,20 +57,6 @@ $('#input_file').on('change',function(ev){
 })
 
     
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

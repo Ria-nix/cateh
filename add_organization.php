@@ -28,9 +28,9 @@
             <div class="adress_organization">
                 <label for="adress">Адрес</label>
                 <input type="text" id="adress" class="text_adress">
+                <div class="mobile_fields_adress"></div>
                 <span class="button_gray border" id="add_adress">
-                    <img src="icon/plus-solid.svg" alt="plus_solid">
-                    <p class="add">Добавить</p>
+                    <img src="icon/plus-solid.svg" alt="plus_solid"> 
                 </span>
             </div>
             <div class="fields_adress"></div>
