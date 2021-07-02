@@ -341,21 +341,18 @@ nav .navigation .door img {
   }
   .toggle_menu_fon .toggle_menu {
     padding: 1% 0 4% 0;
-    height: 37rem;
+    height: 50rem;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     width: 100%;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
     background: #F5F5F5;
   }
   .toggle_menu_fon .toggle_menu span {
     min-width: 290px;
     height: 45px;
-    margin: 0 0 0 5%;
+    margin: 6.5% 0 0 2%;
   }
   .toggle_menu_fon .toggle_menu span img {
     display: none;

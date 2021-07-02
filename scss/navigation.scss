@@ -213,16 +213,15 @@ nav{
 
         .toggle_menu{
             padding: 1% 0 4% 0; 
-            height: 37rem;
+            height: 50rem;
             flex-direction: column;
             width: 100%;
-            justify-content: space-evenly;
             background: $fon_white;
 
             span{
                 min-width: 290px;
                 height: 45px;
-                margin: 0 0 0 5%;
+                margin: 6.5% 0 0 2%;
 
                 img{  display: none;  }
                 .icon_none{ display: block; }
