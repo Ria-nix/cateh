@@ -990,10 +990,6 @@ body {
   }
 }
 @media (max-width: 390px) {
-  .content_set > div {
-    padding: 5% 0%;
-  }
-
   .save button {
     margin: 0;
   }
