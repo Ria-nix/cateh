@@ -11,7 +11,6 @@
 </head>
 <body>
     <?php include('navigation.php');?>
-
     </nav>
     <div class="content_wrap">
         <p class="font_24 bold">Настройки</p>
@@ -24,7 +23,10 @@
                 <div class="image border">
                     <img src="icon/logo.png" alt="logo">
                 </div>                
-                <button class="button_gray border font_16">Загрузить</button>
+                <div class="img_buttons">
+                    <button class="button_gray border font_16" id="download_file">Загрузить</button>
+                    <button class="button_gray border font_16" id="delete_img">Удалить</button>
+                </div>
             </div>
             <div class="save">
                 <button class="button border font_16">Сохранить</button>

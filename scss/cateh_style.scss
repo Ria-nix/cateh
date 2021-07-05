@@ -64,30 +64,14 @@ input{
 }
 
 // Text
-.spacing{
-    letter-spacing: 0.13em;
-}
-.bold{
-    font-weight: bold;
-}
-.font_14{
-    font-size: 14px;
-}
-.font_16{
-    font-size: 16px;
-}
-.font_18{
-    font-size: 18px;
-}
-.font_20{
-    font-size: 20px;
-}
-.font_24{
-    font-size: 24px;
-}
-.font_26{
-    font-size: 26px;
-}
+.spacing{ letter-spacing: 0.13em;}
+.bold{ font-weight: bold;}
+.font_14{ font-size: 14px;}
+.font_16{ font-size: 16px;}
+.font_18{ font-size: 18px;}
+.font_20{ font-size: 20px;}
+.font_24{ font-size: 24px;}
+.font_26{ font-size: 26px;}
 
 // Code for all 
 *{
@@ -95,21 +79,12 @@ input{
     padding: 0;
     box-sizing: border-box;
 }
-.none{
-    display: none;
-}
-.non_acitve{
-    color: $gray_blue;
-}
-.border{
-    border-radius: 10px;
-}
-.opacity_none{
-    opacity: 0;
-}
-.grid{
-    display: grid;
-}
+.scroll_none{  overflow: hidden; }
+.none{ display: none; }
+.non_acitve{ color: $gray_blue; }
+.border{ border-radius: 10px; }
+.opacity_none{ opacity: 0; }
+.grid{ display: grid; }
 
 
 

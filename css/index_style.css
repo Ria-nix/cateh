@@ -66,6 +66,10 @@ input {
           box-sizing: border-box;
 }
 
+.scroll_none {
+  overflow: hidden;
+}
+
 .none {
   display: none;
 }

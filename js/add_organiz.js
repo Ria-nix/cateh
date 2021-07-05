@@ -40,7 +40,7 @@ function addInput(){
 
 
 // ************ Image ************
-$('#input_file').on('change',function(ev){    
+$('#download_file').on('change',function(ev){    
     var f = ev.target.files[0];
     var fr = new FileReader();   
     
@@ -51,9 +51,8 @@ $('#input_file').on('change',function(ev){
     // console.log(f + " " + fr);
     fr.readAsDataURL(f);
 
-    console.log($('#input_file').val());
+    console.log($('#download_file').val());
     // $('.logo').attr('src') = $('#input_file').val();
-    
 })
 
     

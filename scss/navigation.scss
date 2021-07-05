@@ -17,7 +17,7 @@ nav{
 
         // TOGGLE BUTTON AND MENU
         .toggle_menu_fon{
-            position: absolute;
+            position: fixed;
 
             .toggle_menu{
                 display: flex;
@@ -157,7 +157,6 @@ nav{
     }
     .toggle_menu_fon{        // GRID  show buttons    
         height: 150%;        
-        top: 145px;
         justify-content: center;     
         grid-template-columns: repeat(1, minmax(830px, 1163px));
     } 
@@ -169,7 +168,6 @@ nav{
     .toggle_menu_fon{
         width: 104%;
         height: 97%;   
-        top: 100px;
         justify-content: flex-end;        
         grid-template-columns: repeat(1, minmax(570px, 850px));   
 
@@ -181,7 +179,10 @@ nav{
 @media (min-width: 580px) {
     body{ background: $fon_table; }
     
-    .toggle_menu_fon{ background: rgba($blue, 0.9);   left: -10px;
+    .toggle_menu_fon{ 
+        background: rgba($blue, 0.9);   
+        left: -10px;
+        top: 129px;
         
         .toggle_menu{
             margin: 30px auto;
@@ -206,14 +207,14 @@ nav{
         left: 0;
         background: $fon_white;
         width: 100%;
-        max-height: 100%;    
-        top: 140px; 
+        height: 100%;    
+        top: 135px; 
         justify-content: center;        
         grid-template-columns: repeat(1, minmax(320px, 580px));  
 
         .toggle_menu{
             padding: 1% 0 4% 0; 
-            height: 50rem;
+            height: 100%;
             flex-direction: column;
             width: 100%;
             background: $fon_white;

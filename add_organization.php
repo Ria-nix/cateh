@@ -10,10 +10,8 @@
     <title><?php echo $add_organ ?></title>
 </head>
 <body>
-    <?php 
-        include_once('navigation.php');
-        include_once('modal windows/question_window.php');
-    ?>
+    <?php include_once('navigation.php');?> </nav>
+    <?php include_once('modal windows/question_window.php'); ?>
     <div class="content_wrap">
         <p class="font_24 bold">Добавление организации</p>
         <div class="content_set">
@@ -39,7 +37,7 @@
                     <img class="logo" src="icon/logo.png" alt="logo">
                 </div>                
                 <input type="file" id="input_file">
-                <label class="button_gray border font_16" for="input_file">Загрузить</label>
+                <label class="button_gray border font_16" for="download_file">Загрузить</label>
             </div>
             <div class="save">
                 <button class="button border font_16" id="add_button">Добавить</button>
