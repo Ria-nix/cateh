@@ -2,16 +2,10 @@ var summ = 1, inputs;
 $('#add_adress').click(function(){
     let adresses = document.querySelectorAll(".text_adress");
     for(var elem of adresses){
-        if(elem.value == ''){ 
-            elem.classList.add('red_auto');
-            elem.setAttribute('placeholder','Введите адрес');    
-        }
+        if(elem.value == ''){ RedAuto(elem); }
     }
     elem.addEventListener('change', function(){
-        if(elem.value == ''){ 
-            elem.classList.add('red_auto');
-            elem.setAttribute('placeholder','Введите адрес');   
-        }
+        if(elem.value == ''){ RedAuto(elem); }
         else{
             elem.classList.remove('red_auto');             
             elem.setAttribute('placeholder',''); 
@@ -32,8 +26,10 @@ function addInput(){
     elem.addEventListener('click', function(){ elem.parentElement.remove();  summ--});    
 }
 
-
-
+function RedAuto(elem){
+    elem.classList.add('red_auto');
+    elem.setAttribute('placeholder','Введите адрес'); 
+}
 
 
 // ************ Image ************

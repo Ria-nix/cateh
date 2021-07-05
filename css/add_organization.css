@@ -956,7 +956,7 @@ body {
 
   .content_set span {
     padding: 10px 10px;
-    margin: 20px 0 0 0;
+    margin: 20px 0;
   }
 
   .cell {
@@ -984,6 +984,10 @@ body {
 
   .cell input {
     width: 80%;
+  }
+
+  .save {
+    margin: 5% 0;
   }
 }
 @media (min-width: 390px) {

@@ -1,40 +1,37 @@
 //Open the modal window
 $('#add_button').click(function(){ 
-    let adress_all = document.querySelectorAll(".add_info"); 
-    for(var none of adress_all){  
-        console.log(none.value);
-        if(none.value == ''){   
-            none.classList.add('red_auto');
-            none.setAttribute('placeholder','Введите номер');
-        } 
-        none.addEventListener('change', function(){
-            if(none.value == ''){   
-                none.classList.add('red_auto');
-                none.setAttribute('placeholder','Введите номер');
-            } 
-            else{
-                none.classList.remove('red_auto');
-                none.setAttribute('placeholder','');
-            }
-        });
+    let info = document.querySelectorAll(".add_info");
+    for(var item_info of info){  
+        console.log(item_info.value);
+        if(item_info.value == ''){ RedAuto(item_info); } 
     }
-    if(none.value == ''){console.log('none'); }
+    item_info.addEventListener('change', function(){
+        if(item_info.value == ''){ RedAuto(item_info); } 
+        else{
+            item_info.classList.remove('red_auto');
+            item_info.setAttribute('placeholder','');
+        }
+    });
+    if(item_info.value == ''){ console.log('none') }
     else{
+        item_info.classList.remove('red_auto');
+        item_info.setAttribute('placeholder','');
         $('.modal_window').removeClass('none');
-        console.log('right');
-    }
-
-
-     
+    } 
 });
 
+function RedAuto(item_info){
+    item_info.classList.add('red_auto');
+    item_info.setAttribute('placeholder','Введите адрес'); 
+}
+
 // Close the modal window
-$('.close').click(function(){ 
+$('.close_button').click(function(){ 
     $('.modal_window').addClass('none');
 });
 
-// The output of data on the server to Lera
-$('.add_info').click(function(){
+// The output of data on the server to Lera or Artemy
+$('.add_button').click(function(){
     // let adress_all = document.querySelectorAll(".text_adress"); 
     // for(let none of adress_all){  
     //     console.log(none.value);  

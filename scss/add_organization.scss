@@ -164,7 +164,7 @@ body{ background: $fon_white; }
 
     .content_set span{
         padding: 10px 10px;    
-        margin: 20px 0 0 0;   
+        margin: 20px 0;   
     } 
     .cell{ justify-content: center; }
     .mobile_fields_adress{    
@@ -175,6 +175,9 @@ body{ background: $fon_white; }
     
     .fields_adress{ display: none; }
     .cell input{ width: 80%;}
+    .save {
+        margin: 5% 0;
+    }
 }
 
 // ********** MEDIA MIN 390PX *************
