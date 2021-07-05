@@ -772,6 +772,9 @@ body {
   width: 150px;
   height: 38px;
 }
+.content_set .mobile_fields_adress {
+  width: 100%;
+}
 .content_set .fields_adress, .content_set .mobile_fields_adress {
   height: auto;
   padding: 0;
@@ -787,7 +790,7 @@ body {
   padding: 0 2% 0 0;
 }
 .content_set .cell input {
-  width: 66.5%;
+  width: 80%;
   margin: 13px 2%;
 }
 .content_set .cell img {

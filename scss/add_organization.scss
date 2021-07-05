@@ -62,7 +62,7 @@ body{ background: $fon_white; }
         width: 150px;
         height: 38px;
     }
-
+    .mobile_fields_adress{ width: 100%; }
     .fields_adress, .mobile_fields_adress{
         height: auto;
         padding: 0;          
@@ -74,7 +74,7 @@ body{ background: $fon_white; }
         padding: 0 2% 0 0;
 
         input{
-            width: 66.5%;
+            width: 80%;
             margin: 13px 2%;
         }
         img{ 

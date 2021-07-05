@@ -5,38 +5,35 @@ $('#add_adress').click(function(){
         if(elem.value == ''){ 
             elem.classList.add('red_auto');
             elem.setAttribute('placeholder','Введите адрес');    
-            console.log('add adress')          
         }
     }
     elem.addEventListener('change', function(){
         if(elem.value == ''){ 
             elem.classList.add('red_auto');
-            elem.setAttribute('placeholder','Введите адрес');    
-            console.log('add adress')          
+            elem.setAttribute('placeholder','Введите адрес');   
         }
         else{
             elem.classList.remove('red_auto');             
             elem.setAttribute('placeholder',''); 
         }
     })
-
     if(elem.value == ''){}
-    else{summ >= 5 ? inputs = '' : addInput(); }
-    
+    else{summ >= 5 ? inputs = '' : addInput(); }    
 });
 
 function addInput(){ 
     inputs = '<div class="cell"><input type="text" class="text_adress"><img src="icon/close.svg" alt="close"></div>';
     
-        $('.mobile_fields_adress').append(inputs);
-        $('.fields_adress').append(inputs); 
+    document.documentElement.scrollWidth <= 620 ? $('.mobile_fields_adress').append(inputs) : $('.fields_adress').append(inputs);      
     summ++;
 
     // remove the cell
     for(var elem of $('.cell').children('img')){ }
-    elem.addEventListener('click', function(){ elem.parentElement.remove();  summ--});
-    
+    elem.addEventListener('click', function(){ elem.parentElement.remove();  summ--});    
 }
+
+
+
 
 
 // ************ Image ************
@@ -48,11 +45,7 @@ $('#download_file').on('change',function(ev){
         console.log(ev2);
         $('.logo').attr('src', ev2.target.result);
     };
-    // console.log(f + " " + fr);
     fr.readAsDataURL(f);
-
-    console.log($('#download_file').val());
-    // $('.logo').attr('src') = $('#input_file').val();
 })
 
     
