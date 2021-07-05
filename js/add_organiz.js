@@ -22,7 +22,7 @@ $('#add_adress').click(function(){
 });
 
 function addInput(){ 
-    inputs = '<div class="cell"><input type="text" class="text_adress"><img src="icon/close.svg" alt="close"></div>';
+    inputs = '<div class="cell"><input type="text" class="text_adress add_info"><img src="icon/close.svg" alt="close"></div>';
     
     document.documentElement.scrollWidth <= 620 ? $('.mobile_fields_adress').append(inputs) : $('.fields_adress').append(inputs);      
     summ++;

@@ -73,10 +73,7 @@ body{ background: $fon_white; }
         align-items: center;
         padding: 0 2% 0 0;
 
-        input{
-            width: 80%;
-            margin: 13px 2%;
-        }
+        input{ margin: 13px 2%;}
         img{ 
             cursor: pointer; 
             width: 20px; 
@@ -147,6 +144,7 @@ body{ background: $fon_white; }
         flex-direction: column;
         align-items: center; 
     }
+    .cell input{ width: 66.5%;}
 }
 
 
@@ -165,7 +163,6 @@ body{ background: $fon_white; }
     br{ display: none; }
 
     .content_set span{
-        // width: 15rem;
         padding: 10px 10px;    
         margin: 20px 0 0 0;   
     } 
@@ -177,6 +174,7 @@ body{ background: $fon_white; }
     }
     
     .fields_adress{ display: none; }
+    .cell input{ width: 80%;}
 }
 
 // ********** MEDIA MIN 390PX *************

@@ -17,15 +17,15 @@
         <div class="content_set">
             <div class="name_organization">
                 <label for="name">Название <br> организации</label>
-                <input type="text" id="name" class="">
+                <input type="text" id="name" class="add_info">
             </div>
             <div class="inn_organization">
                 <label for="inn">ИНН</label>
-                <input type="text" id="inn" class="">
+                <input type="text" id="inn" class="add_info">
             </div>
             <div class="adress_organization">
                 <label for="adress">Адрес</label>
-                <input type="text" id="adress" class="text_adress">
+                <input type="text" id="adress" class="text_adress add_info">
                 <div class="mobile_fields_adress"></div>
                 <span class="button border" id="add_adress">
                     <img src="icon/plus-solid.svg" alt="plus_solid"> 

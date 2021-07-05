@@ -790,7 +790,6 @@ body {
   padding: 0 2% 0 0;
 }
 .content_set .cell input {
-  width: 80%;
   margin: 13px 2%;
 }
 .content_set .cell img {
@@ -917,6 +916,10 @@ body {
         -ms-flex-align: center;
             align-items: center;
   }
+
+  .cell input {
+    width: 66.5%;
+  }
 }
 @media (max-width: 620px) {
   .content_set > div {
@@ -977,6 +980,10 @@ body {
 
   .fields_adress {
     display: none;
+  }
+
+  .cell input {
+    width: 80%;
   }
 }
 @media (min-width: 390px) {
