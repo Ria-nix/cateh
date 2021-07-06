@@ -14,7 +14,7 @@
  <!-- THE END OF NAVIGATION PANEL -->        
     <div class="search">            
         <p class="font_18 bold">Организации</p>
-        <input class="border" type="text" placeholder="Введите имя или фамилию">
+        <input class="border" type="text" placeholder="Введите название организации">
         <button class="button border font_16">Найти</button>
     </div>
 </nav>
@@ -26,7 +26,7 @@
         <!-- HEAD TABLE -->
         <div class="head_table">
             <div class="head_name spacing_special">
-                <p>Название <span><img src="icon/up_arrow.svg" alt="arrow"></span></p>
+                <p>Название <span><img src="icon/up_arrow.svg" alt="arrow" id="arrow"></span></p>
                 <p>Выполнено за месяц</p>
                 <p>Текущих заказов </p>
             </div>

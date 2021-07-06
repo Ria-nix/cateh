@@ -1,6 +1,6 @@
 var summ = 1, inputs;
-$('#add_adress').click(function(){
-    let adresses = document.querySelectorAll(".text_adress");
+$('#add_address').click(function(){
+    let adresses = document.querySelectorAll(".text_address");
     for(var elem of adresses){
         if(elem.value == ''){ RedAuto(elem); }
     }
@@ -16,9 +16,9 @@ $('#add_adress').click(function(){
 });
 
 function addInput(){ 
-    inputs = '<div class="cell"><input type="text" class="text_adress add_info"><img src="icon/close.svg" alt="close"></div>';
+    inputs = '<div class="cell"><input type="text" class="text_address add_info"><img src="icon/close.svg" alt="close"></div>';
     
-    document.documentElement.scrollWidth <= 620 ? $('.mobile_fields_adress').append(inputs) : $('.fields_adress').append(inputs);      
+    document.documentElement.scrollWidth <= 620 ? $('.mobile_fields_address').append(inputs) : $('.fields_address').append(inputs);      
     summ++;
 
     // remove the cell

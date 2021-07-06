@@ -545,6 +545,8 @@ body {
 }
 .content_set .img_organization .button_gray {
   padding: 6px 20px;
+  letter-spacing: 1px;
+  color: #112742;
 }
 .content_set .save button {
   width: 150px;

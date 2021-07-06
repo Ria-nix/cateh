@@ -24,14 +24,14 @@
                 <input type="text" id="inn" class="add_info">
             </div>
             <div class="adress_organization">
-                <label for="adress">Адрес</label>
-                <input type="text" id="adress" class="text_adress add_info">
-                <div class="mobile_fields_adress"></div>
-                <span class="button border" id="add_adress">
+                <label for="address">Адрес</label>
+                <input type="text" id="address" class="text_address add_info">
+                <div class="mobile_fields_address"></div>
+                <span class="button border" id="add_address">
                     <img src="icon/plus-solid.svg" alt="plus_solid"> 
                 </span>
             </div>
-            <div class="fields_adress"></div>
+            <div class="fields_address"></div>
             <div class="img_organization">
                 <div class="image border">
                     <img class="logo" src="icon/logo.png" alt="logo">

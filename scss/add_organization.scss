@@ -23,15 +23,16 @@ body{ background: $fon_white; }
         height: 35px;
         text-align: center;
         box-shadow: 0px 4px 10px 0px rgba($but_shadow, 0.15);
-        border-radius: 10px;
-        color: $blue;
+        border-radius: 10px;        
     }
-    label{ letter-spacing: 1px; }               
+    label, button{ letter-spacing: 1px; color: $blue;}               
     .name_organization, .inn_organization{ 
         justify-content: space-between;  
         align-items: center; 
     }
-    .img_organization{ border-bottom: 1px solid $gray_border;
+    .img_organization{ 
+        border-bottom: 1px solid $gray_border;        
+
         .image{                    
             border: 1px solid $blue;   
             @extend %flex_row;       
@@ -62,8 +63,8 @@ body{ background: $fon_white; }
         width: 150px;
         height: 38px;
     }
-    .mobile_fields_adress{ width: 100%; }
-    .fields_adress, .mobile_fields_adress{
+    .mobile_fields_address{ width: 100%; }
+    .fields_address, .mobile_fields_address{
         height: auto;
         padding: 0;          
     }
@@ -138,8 +139,8 @@ body{ background: $fon_white; }
         }
     }
     .content_set span{ padding:1%; }
-    .mobile_fields_adress{ display: none; }
-    .fields_adress{  
+    .mobile_fields_address{ display: none; }
+    .fields_address{  
         display: flex;
         flex-direction: column;
         align-items: center; 
@@ -167,13 +168,13 @@ body{ background: $fon_white; }
         margin: 20px 0;   
     } 
     .cell{ justify-content: center; }
-    .mobile_fields_adress{    
+    .mobile_fields_address{    
         display: flex;
         flex-direction: column;
         align-items: center; 
     }
     
-    .fields_adress{ display: none; }
+    .fields_address{ display: none; }
     .cell input{ width: 80%;}
     .save {
         margin: 5% 0;

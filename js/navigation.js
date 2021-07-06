@@ -39,12 +39,14 @@
             $('.toggle_menu_fon').removeClass('none').addClass('grid');
             $('.toggle_but').addClass('close');
             $('body').addClass('scroll_none');
+            $('#arrow').addClass('opacity_none');
             button = true;
         }
         else{
             $('.toggle_menu_fon').removeClass('grid').addClass('none');
             $('.toggle_but').removeClass('close');
             $('body').removeClass('scroll_none');
+            $('#arrow').removeClass('opacity_none');
             button = false;
         }    
     });

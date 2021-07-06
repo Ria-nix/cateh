@@ -28,7 +28,7 @@
         <!-- HEAD TABLE -->
         <div class="head_table">
             <div class="head_name spacing_special">
-                <p>ФИО <span><img src="icon/up_arrow.svg" alt="arrow"></span></p>
+                <p>ФИО <span><img src="icon/up_arrow.svg" alt="arrow" id="arrow"></span></p>
                 <p>Выполнено за месяц</p>
                 <p>Текущих заказов </p>
                 <p>Роль</p>

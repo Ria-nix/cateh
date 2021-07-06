@@ -724,10 +724,10 @@ body {
   -webkit-box-shadow: 0px 4px 10px 0px rgba(17, 39, 66, 0.15);
           box-shadow: 0px 4px 10px 0px rgba(17, 39, 66, 0.15);
   border-radius: 10px;
-  color: #112742;
 }
-.content_set label {
+.content_set label, .content_set button {
   letter-spacing: 1px;
+  color: #112742;
 }
 .content_set .name_organization, .content_set .inn_organization {
   -webkit-box-pack: justify;
@@ -772,10 +772,10 @@ body {
   width: 150px;
   height: 38px;
 }
-.content_set .mobile_fields_adress {
+.content_set .mobile_fields_address {
   width: 100%;
 }
-.content_set .fields_adress, .content_set .mobile_fields_adress {
+.content_set .fields_address, .content_set .mobile_fields_address {
   height: auto;
   padding: 0;
 }
@@ -900,11 +900,11 @@ body {
     padding: 1%;
   }
 
-  .mobile_fields_adress {
+  .mobile_fields_address {
     display: none;
   }
 
-  .fields_adress {
+  .fields_address {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -965,7 +965,7 @@ body {
             justify-content: center;
   }
 
-  .mobile_fields_adress {
+  .mobile_fields_address {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -978,7 +978,7 @@ body {
             align-items: center;
   }
 
-  .fields_adress {
+  .fields_address {
     display: none;
   }
 
