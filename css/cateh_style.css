@@ -23,12 +23,14 @@ body {
 input {
   border: 1px solid #939393;
   background: #F1F1F1;
+  letter-spacing: 1px;
+  color: #112742;
   outline: none;
   /* delete focus around input*/
 }
 
 .spacing {
-  letter-spacing: 0.13em;
+  letter-spacing: 0.5px;
 }
 
 .bold {

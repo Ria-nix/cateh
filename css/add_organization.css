@@ -57,12 +57,14 @@ body {
 input {
   border: 1px solid #939393;
   background: #F1F1F1;
+  letter-spacing: 1px;
+  color: #112742;
   outline: none;
   /* delete focus around input*/
 }
 
 .spacing {
-  letter-spacing: 0.13em;
+  letter-spacing: 0.5px;
 }
 
 .bold {
@@ -183,12 +185,14 @@ body {
 input {
   border: 1px solid #939393;
   background: #F1F1F1;
+  letter-spacing: 1px;
+  color: #112742;
   outline: none;
   /* delete focus around input*/
 }
 
 .spacing {
-  letter-spacing: 0.13em;
+  letter-spacing: 0.5px;
 }
 
 .bold {
@@ -563,12 +567,14 @@ body {
 input {
   border: 1px solid #939393;
   background: #F1F1F1;
+  letter-spacing: 1px;
+  color: #112742;
   outline: none;
   /* delete focus around input*/
 }
 
 .spacing {
-  letter-spacing: 0.13em;
+  letter-spacing: 0.5px;
 }
 
 .bold {
@@ -749,6 +755,9 @@ body {
 }
 .content_set .img_organization .image {
   border: 1px solid #112742;
+  width: 11rem;
+  height: 11rem;
+  padding: 2%;
 }
 .content_set .img_organization .image img {
   width: 100%;
@@ -840,7 +849,7 @@ body {
 }
 @media (max-width: 1163px) {
   .content_set > div {
-    width: 65%;
+    width: 55%;
   }
 
   input {
@@ -849,7 +858,7 @@ body {
 }
 @media (max-width: 850px) {
   .content_set > div {
-    width: 80%;
+    width: 90%;
   }
 
   .adress_organization {
@@ -887,8 +896,7 @@ body {
   }
 
   .image {
-    height: 10rem;
-    margin: 0 5% 0 16%;
+    margin: 0 5% 5% 5%;
   }
 
   .save button {
@@ -900,7 +908,7 @@ body {
   }
   .adress_organization input {
     width: 70%;
-    margin: 0 1% 0 5%;
+    margin: 0 1.5% 0 5%;
   }
 
   .content_set span {
@@ -931,6 +939,12 @@ body {
   .img_buttons {
     -ms-flex-pack: distribute;
         justify-content: space-around;
+  }
+  .img_buttons button {
+    padding: 7px 20px;
+  }
+  .img_buttons #delete_img {
+    margin: 0 0 0 5%;
   }
 }
 @media (max-width: 540px) {
@@ -968,7 +982,7 @@ body {
 
   .content_set span {
     padding: 10px 10px;
-    margin: 20px 0;
+    margin: 20px 0 0 0;
   }
 
   .cell {
@@ -1011,26 +1025,21 @@ body {
         -ms-flex-align: center;
             align-items: center;
   }
-
-  .img_buttons {
+  .img_organization .img_buttons {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     margin: 1% 0 2% 0;
   }
-  .img_buttons #delete_img {
+  .img_organization .img_buttons #delete_img {
     margin: 0 0 0 5%;
   }
-  .img_buttons button {
+  .img_organization .img_buttons button, .img_organization .img_buttons label {
     padding: 8px 25px;
   }
-}
-@media (min-width: 390px) {
-  .img_organization .image {
-    width: 10rem;
-    height: 10rem;
-    margin: 0 5% 0 5%;
-    padding: 2.5%;
+
+  .image {
+    margin: 0 0 5% 0;
   }
 }
 @media (max-width: 390px) {
@@ -1050,18 +1059,7 @@ body {
         -ms-flex-align: center;
             align-items: center;
   }
-  .name_organization input, .inn_organization input, .adress_organization input {
-    margin: 0;
-  }
   .name_organization label, .inn_organization label, .adress_organization label {
     padding: 3.2% 0;
-  }
-
-  .image {
-    height: 8rem;
-    margin: 0 0 5% 0;
-    width: 200px;
-    height: 11rem;
-    padding: 2%;
   }
 }/*# sourceMappingURL=add_organization.css.map */
