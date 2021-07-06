@@ -31,11 +31,12 @@ body{ background: $fon_white; }
         align-items: center; 
     }
     .img_organization{ 
-        border-bottom: 1px solid $gray_border;        
-
+        border-bottom: 1px solid $gray_border;   
+        display: flex;
+        align-items: center;     
+        .img_buttons, .image{  @extend %flex_row; }
         .image{                    
             border: 1px solid $blue;   
-            @extend %flex_row;       
 
             img{
                 width: 100%;
@@ -107,8 +108,8 @@ body{ background: $fon_white; }
     .adress_organization{ width: 100%;}
 }
 
-// ********** MEDIA MIN 620PX *************
-@media (min-width: 620px) {
+// ********** MEDIA MIN 540PX *************
+@media (min-width: 541px) {
     .content_set > div{ padding: 1.5% 0%; }
     .name_organization, .inn_organization, .adress_organization{   
         display: flex;
@@ -146,11 +147,12 @@ body{ background: $fon_white; }
         align-items: center; 
     }
     .cell input{ width: 66.5%;}
+    .img_buttons{  justify-content: space-around;   }
 }
 
 
-// ********** MEDIA MAX 620PX *************
-@media (max-width: 620px) {
+// ********** MEDIA MAX 540PX *************
+@media (max-width: 540px) {
     .content_set > div{ padding: 2% 0%; }
     .save button{ margin: 0; }
     .name_organization, .inn_organization, .adress_organization{   
@@ -179,21 +181,26 @@ body{ background: $fon_white; }
     .save {
         margin: 5% 0;
     }
+    .img_organization{         
+        flex-direction: column;
+        align-items: center;
+    }
+    .img_buttons{ 
+        justify-content: center; 
+        margin: 1% 0 2% 0;
+
+        #delete_img{ margin: 0 0 0 5% ; }
+        button{ padding: 8px 25px; }
+    }
 }
 
 // ********** MEDIA MIN 390PX *************
 @media (min-width: 390px) {
-    .img_organization{
-       display: flex;
-       flex-direction: row;
-       align-items: center;
-
-        .image{ 
-            width: 10rem;
-            height: 10rem;
-            margin: 0 5% 0 5%;
-            padding: 2.5%;
-        }
+    .img_organization .image{ 
+        width: 10rem;
+        height: 10rem;
+        margin: 0 5% 0 5%;
+        padding: 2.5%;        
     }
  
 }
@@ -209,11 +216,6 @@ body{ background: $fon_white; }
 
         input{ margin: 0;  }
         label{ padding: 3.2% 0; }
-    }
-    .img_organization{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
     }
     .image{      
         height: 8rem;
