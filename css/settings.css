@@ -545,14 +545,9 @@ body {
      object-fit: contain;
 }
 .content_set .img_organization .button_gray {
-  padding: 6px 20px;
   letter-spacing: 1px;
   color: #112742;
   cursor: pointer;
-}
-.content_set .save button {
-  width: 150px;
-  height: 38px;
 }
 
 @media (max-width: 1163px) {
@@ -569,7 +564,7 @@ body {
     width: 80%;
   }
 }
-@media (min-width: 510px) {
+@media (min-width: 560px) {
   .img_organization {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -593,11 +588,23 @@ body {
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
+  .img_buttons button {
+    padding: 7px 20px;
+  }
   .img_buttons #delete_img {
     margin: 0 0 0 5%;
   }
+
+  .save button {
+    width: 150px;
+    height: 40px;
+  }
 }
-@media (max-width: 510px) {
+@media (max-width: 560px) {
+  .content_set label {
+    padding: 2% 0 5% 0;
+  }
+
   .img_organization {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -623,9 +630,18 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin: 1% 0 2% 0;
   }
   .img_buttons #delete_img {
     margin: 0 0 0 5%;
+  }
+  .img_buttons button {
+    padding: 8px 25px;
+  }
+
+  .save button {
+    width: 160px;
+    height: 45px;
   }
 }
 @media (min-width: 620px) {
@@ -641,9 +657,6 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-  }
-  .name_organization label {
-    padding: 0 0 0 5%;
   }
   .name_organization input {
     width: 400px;
@@ -684,9 +697,6 @@ body {
     width: 75%;
     margin: 0;
   }
-  .name_organization label {
-    padding: 2% 0;
-  }
 
   br {
     display: none;
@@ -716,9 +726,6 @@ body {
   .name_organization input {
     width: 100%;
     margin: 0;
-  }
-  .name_organization label {
-    padding: 2% 0;
   }
 
   .img_buttons {

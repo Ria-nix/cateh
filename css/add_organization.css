@@ -455,6 +455,7 @@ nav .navigation .door img {
         flex-wrap: wrap;
     width: 95%;
     background: whitesmoke;
+    padding: 0 15px;
   }
 }
 @media (max-width: 580px) {

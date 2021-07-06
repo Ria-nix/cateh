@@ -1,8 +1,7 @@
 @import 'cateh_style';
 @import 'navigation';
 
-body{ background: $fon_white; } 
-
+body{ background: $fon_white; }
 .content_wrap{
     @extend %grid;
     text-align: center;
@@ -20,7 +19,6 @@ body{ background: $fon_white; }
             box-shadow: 0px 4px 10px 0px rgba($but_shadow, 0.15);
         }        
     }
-
     .img_organization >div{ @extend %flex_row;}
     .img_organization{ 
         border-bottom: 1px solid $gray_border;
@@ -33,18 +31,11 @@ body{ background: $fon_white; }
                 object-fit: contain;
             }
         }   
-        .button_gray{ 
-            padding: 6px 20px; 
+        .button_gray{            
             letter-spacing: 1px; 
             color: $blue;
             cursor: pointer;
         }     
-    }
-
-
-    .save button{
-        width: 150px;
-        height: 38px;
     }
 }
 
@@ -60,8 +51,8 @@ body{ background: $fon_white; }
     .content_set > div{ width: 80%;}
 }
 
-// ********** MEDIA MIN 510PX *************
-@media (min-width: 510px) {
+// ********** MEDIA MIN 560PX *************
+@media (min-width: 560px) {
     .img_organization{
         display: flex;
         flex-direction: row;
@@ -74,14 +65,21 @@ body{ background: $fon_white; }
             padding: 1.5%;
         }
     }
-    .img_buttons{ justify-content: space-around; 
-        #delete_img{ margin: 0 0 0 5%; }
+    .img_buttons{ 
+        justify-content: space-around;    
+        button{ padding: 7px 20px; }
+        #delete_img{ margin: 0 0 0 5%; }       
+    }
+    .save button{
+        width: 150px;
+        height: 40px;
     }
 }
 
 
-// ********** MEDIA MAX 510PX *************
-@media (max-width: 510px) {
+// ********** MEDIA MAX 560PX *************
+@media (max-width: 560px) {
+    .content_set label{ padding: 2% 0 5% 0; }
     .img_organization{
         display: flex;
         flex-direction: column;
@@ -94,8 +92,16 @@ body{ background: $fon_white; }
         height: 11rem;
         padding: 2%;
     }
-    .img_buttons{ justify-content: center; 
-        #delete_img{ margin:0 0 0 5% ;}
+    .img_buttons{ 
+        justify-content: center; 
+        margin: 1% 0 2% 0;
+
+        #delete_img{ margin: 0 0 0 5% ; }
+        button{ padding: 8px 25px; }
+    }
+    .save button{
+        width: 160px;
+        height: 45px;
     }
 }
 
@@ -107,8 +113,6 @@ body{ background: $fon_white; }
         display: flex;
         flex-direction: row;
 
-        label{ padding: 0 0 0 5%;}
-
         input{
             width: 400px;            
             margin: 0 10% 0 5%;
@@ -118,7 +122,6 @@ body{ background: $fon_white; }
         height: 10rem;
         margin: 0 5% 0 16%;
     }
-
     .save button{ margin: 0 0 0 70%; }
 }
 
@@ -135,12 +138,9 @@ body{ background: $fon_white; }
             width: 75%;
             margin: 0;
         }
-        label{ padding: 2% 0; }
     }
-    br{ display: none; }
- 
+    br{ display: none; } 
 }
-
 
 // ********** MEDIA MAX 390PX *************
 @media (max-width: 390px) {
@@ -154,16 +154,10 @@ body{ background: $fon_white; }
         input{
             width: 100%;
             margin: 0;
-        }
-        label{ padding: 2% 0; }
+        }        
     }
    .img_buttons{    
         flex-wrap: wrap;       
         #delete_img{ margin: 5%;}
-    }
- 
+    } 
 }
-
-
-
-

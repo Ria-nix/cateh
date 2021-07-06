@@ -2,7 +2,7 @@
 $('#add_button').click(function(){ 
     let info = document.querySelectorAll(".add_info");
     for(var item_info of info){  
-        console.log(item_info.value);
+        // console.log(item_info.value);
         if(item_info.value == ''){ RedAuto(item_info); } 
     }
     item_info.addEventListener('change', function(){
