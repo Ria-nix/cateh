@@ -26,8 +26,9 @@ function addInput(){
 }
 
 function RedAuto(elem){
+    let text = elem.contains('text_address') ? 'Введите адрес' : 'Заполните поле' ; 
     elem.classList.add('red_auto');
-    elem.setAttribute('placeholder','Введите адрес'); 
+    elem.setAttribute('placeholder', text); 
 }
 
 
