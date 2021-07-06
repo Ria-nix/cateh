@@ -3,7 +3,7 @@
 
 <!-- NAVIGATION PANEL      -->
 <div class="navigation">            
-    <img src="icon/logo.png" class="logo" alt="logo">
+    <img src="icon/logo_server.svg" class="logo" alt="logo">
 
     <!-- TOOGLE BUTTON -->
     <div class="toggle_bar">

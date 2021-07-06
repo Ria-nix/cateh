@@ -24,7 +24,7 @@
                     <img src="icon/logo.png" alt="logo">
                 </div>                
                 <div class="img_buttons">
-                    <button class="button_gray border font_16" id="download_file">Загрузить</button>
+                    <button class="button_gray border font_16" id="download_img">Загрузить</button>
                     <button class="button_gray border font_16" id="delete_img">Удалить</button>
                 </div>
             </div>
@@ -33,7 +33,7 @@
             </div>
         </div>
     </div>
-
+    <script src="js/settings.js"></script>
     <script src="<?php  echo $navigation_panel ?>"></script> 
 </body>
 </html>
