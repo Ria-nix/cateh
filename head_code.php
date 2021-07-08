@@ -7,12 +7,14 @@
 
     // Titles of pages
     $index = 'Авторизация';    
-    $edit_organ = 'Редактирование организации';
     $sysadmin = 'Главная: Системные администраторы';
-    $organizations = 'Главная: Организации';
     $add_sysadmin = 'Добавление системного администратора';
+    $organizations = 'Главная: Организации';
+    $add_organ = 'Добавление организации';   
     $settings = 'Настройки';    
 
+    $edit_organ = 'Редактирование организации';
+    $edit_sysadmin = 'Редактирование системного администратора';
 
     // CSS connection (path)
     $css_index = 'css/index_style.css';
@@ -24,7 +26,5 @@
 
     //Script path of navigation panel
     $navigation_panel = 'js/navigation.js';
-
-
 
     ?>

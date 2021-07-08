@@ -726,7 +726,7 @@ body {
   cursor: pointer;
 }
 .content_set input {
-  height: 35px;
+  height: 40px;
   text-align: center;
   -webkit-box-shadow: 0px 4px 10px 0px rgba(17, 39, 66, 0.15);
           box-shadow: 0px 4px 10px 0px rgba(17, 39, 66, 0.15);
@@ -912,7 +912,7 @@ body {
   }
 
   .content_set span {
-    padding: 1%;
+    padding: 1.2%;
   }
 
   .mobile_fields_address {

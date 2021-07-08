@@ -6,7 +6,7 @@
     
     for(let elem of $('.admin_plus')){
         elem.addEventListener('click',function(){
-            window.location.href = '#'; })
+            window.location.href = 'add_sysadmin.php'; })
     }
     
     for(let elem of $('.organization')){

@@ -15,39 +15,68 @@
 
     <!-- CONTENT -->
     <div class="content_wrap">
-    <p class="font_24 bold">Добавление организации</p>
+
+        <p class="font_24 bold">Добавление системного администратора</p>
         <div class="content_set">
+
             <div class="name_organization">
-                <label for="name">Название <br> организации</label>
+                <label for="login">Логин</label>
+                <input type="text" id="login" class="add_info">
+            </div>
+
+            <div class="name_organization">
+                <label for="password">Пароль</label>
+                <input type="text" id="password" class="add_info">
+            </div>
+
+            <div class="name_organization">
+                <label for="name">Имя</label>
                 <input type="text" id="name" class="add_info">
             </div>
-            <div class="inn_organization">
-                <label for="inn">ИНН</label>
-                <input type="text" id="inn" class="add_info">
+
+            <div class="name_organization">
+                <label for="surname">Фамилия</label>
+                <input type="text" id="surname" class="add_info">
             </div>
+
+            <div class="inn_organization">
+                <label for="tel_number">Номер телефона</label>
+                <input type="text" id="tel_number" class="add_info">
+            </div>
+
             <div class="adress_organization">
-                <label for="address">Адрес</label>
+                <label for="address">Добавьте компетенцию</label>
                 <input type="text" id="address" class="text_address add_info">
+
                 <div class="mobile_fields_address"></div>
+
                 <span class="button border" id="add_address">
                     <img src="icon/plus-solid.svg" alt="plus_solid"> 
                 </span>
             </div>
+
             <div class="fields_address"></div>
+
             <div class="img_organization">
+
                 <div class="image border">
                     <img class="logo" src="icon/logo.png" alt="logo">
                 </div>                
+
                 <div class="img_buttons">
                     <input type="file" id="input_file">
                     <label class="button_gray border font_16" for="download_file">Загрузить</label>
                     <button class="button_gray border font_16" id="delete_img">Удалить</button>
                 </div>
+
             </div>
+
             <div class="save">
                 <button class="button border font_16" id="add_button">Добавить</button>
             </div>
+
         </div>
+
     </div>
 
     <script src="js/modal_windows.js"></script>    
