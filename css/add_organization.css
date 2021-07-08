@@ -63,6 +63,10 @@ input {
   /* delete focus around input*/
 }
 
+select {
+  outline: none;
+}
+
 .spacing {
   letter-spacing: 0.5px;
 }
@@ -189,6 +193,10 @@ input {
   color: #112742;
   outline: none;
   /* delete focus around input*/
+}
+
+select {
+  outline: none;
 }
 
 .spacing {
@@ -573,6 +581,10 @@ input {
   /* delete focus around input*/
 }
 
+select {
+  outline: none;
+}
+
 .spacing {
   letter-spacing: 0.5px;
 }
@@ -710,7 +722,7 @@ body {
   text-align: center;
 }
 .content_wrap p.font_24 {
-  padding: 3.5% 0 2% 0;
+  padding: 3.5% 4% 2% 4%;
 }
 
 .content_set span {

@@ -63,6 +63,10 @@ input {
   /* delete focus around input*/
 }
 
+select {
+  outline: none;
+}
+
 .spacing {
   letter-spacing: 0.5px;
 }
@@ -189,6 +193,10 @@ input {
   color: #112742;
   outline: none;
   /* delete focus around input*/
+}
+
+select {
+  outline: none;
 }
 
 .spacing {
@@ -573,6 +581,10 @@ input {
   /* delete focus around input*/
 }
 
+select {
+  outline: none;
+}
+
 .spacing {
   letter-spacing: 0.5px;
 }
@@ -839,7 +851,6 @@ body {
             flex-direction: row;
   }
   .main_fields label {
-    padding: 0 0 0 5%;
     text-align: left;
     width: 25%;
   }
@@ -854,14 +865,6 @@ body {
 
   .save button {
     margin: 0 0 0 70%;
-  }
-
-  .adress_organization label {
-    margin-right: auto;
-  }
-  .adress_organization input {
-    width: 70%;
-    margin: 0 0 0 5%;
   }
 
   .fields_address {
@@ -897,11 +900,7 @@ body {
     padding: 2% 0%;
   }
 
-  .save button {
-    margin: 0;
-  }
-
-  .name_organization, .inn_organization, .adress_organization {
+  .main_fields {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -913,11 +912,11 @@ body {
         -ms-flex-align: center;
             align-items: center;
   }
-  .name_organization input, .inn_organization input, .adress_organization input {
+  .main_fields input {
     width: 85%;
     text-align: center;
   }
-  .name_organization label, .inn_organization label, .adress_organization label {
+  .main_fields label {
     padding: 2% 0;
   }
 

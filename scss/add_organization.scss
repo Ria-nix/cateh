@@ -7,7 +7,7 @@ body{ background: $fon_white; }
     @extend %grid;
     text-align: center;
 
-    p.font_24{ padding: 3.5% 0 2% 0; }
+    p.font_24{ padding: 3.5% 4% 2% 4%; }
 }
 .content_set{ @extend %flex_column;
     span{        
@@ -121,10 +121,7 @@ body{ background: $fon_white; }
             text-align: left;
             width: 25%;
         }
-        input{
-            width: 75%;            
-            // margin: 0 0 0 5%;
-        }
+        input{ width: 75%; }
     }
     .cell{ justify-content: flex-end; }
     .image{ margin: 0 5% 5% 0; }
