@@ -21,16 +21,18 @@ body{ background: $fon_white; }
         justify-content: space-between;  
         align-items: center; 
     }
+    .field_choice select{
+        height: 40px;
+        width: 71%;
+    }
     .img_organization{ 
         border-bottom: 1px solid $gray_border;   
         display: flex;
         align-items: center;     
         .img_buttons, .image{  @extend %flex_row; }
         .image{                    
-            border: 1px solid $blue;
             width: 11rem;
-            height: 11rem;   
-            padding: 2%;
+            height: 11rem;  
 
             img{
                 width: 100%;
@@ -104,7 +106,7 @@ body{ background: $fon_white; }
             margin: 0 0 0 5%;
         }
     }
-    .image{ margin: 0 5% 5% 5%; }
+    .image{ margin: 0 5% 5% 0; box-shadow: 0 4px 10px 0 $but_shadow}
     .save button{ margin: 0 0 0 70%; }
     .fields_address{  
         display: flex;

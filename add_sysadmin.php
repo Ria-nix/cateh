@@ -47,7 +47,9 @@
             <div class="field_choice main_fields">
                 <label for="address">Добавьте компетенцию</label>
                 <!-- <input type="text" id="address" class="text_address add_info"> -->
-                <select name="choose_competence" id="collect_provice"></select>
+                <select name="choose_competence" id="collect_provice" class="border">
+                    <option value="placeholder_select" class="spacing" selected>Введите компетенцию</option>
+                </select>
             </div>
 
             <div class="field_competence"></div>
@@ -55,7 +57,7 @@
             <div class="img_organization">
 
                 <div class="image border">
-                    <img class="logo" src="icon/logo.png" alt="logo">
+                    <img class="logo border" src="icon/michael.jpg" alt="logo">
                 </div>                
 
                 <div class="img_buttons">
