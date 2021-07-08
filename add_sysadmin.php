@@ -5,17 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="<?php echo $css_add_organ ?>">        
+    <link rel="stylesheet" href="<?php echo $css_add_sysadmin ?>">
     <?php echo $favicon, $jquery  ?>
-    <title><?php echo $add_organ ?></title>
+    <title><?php echo $add_sysadmin ?></title>
 </head>
 <body>
-    <?php include_once('navigation.php');?></nav>
-    <?php include_once('modal windows/question_window.php'); ?>
-    
-     <!-- CONTENT -->
+<?php include_once('navigation.php');?></nav>
+<?php include_once('modal windows/question_window.php'); ?>
+
+    <!-- CONTENT -->
     <div class="content_wrap">
-        <p class="font_24 bold">Добавление организации</p>
+    <p class="font_24 bold">Добавление организации</p>
         <div class="content_set">
             <div class="name_organization">
                 <label for="name">Название <br> организации</label>
@@ -49,9 +49,12 @@
             </div>
         </div>
     </div>
+
     <script src="js/modal_windows.js"></script>    
     <script src="js/add_organiz.js"></script>
     <script src="<?php  echo $navigation_panel ?>"></script>
-        
 </body>
 </html>
+
+
+

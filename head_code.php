@@ -6,13 +6,13 @@
     $favicon = '<link rel="shortcut icon" href="icon/favicon-16x16.png" type="image/x-icon">';
 
     // Titles of pages
-    $index = 'Авторизация';
-    $settings = 'Настройки';
-    $add_organ = 'Добавление организации';
+    $index = 'Авторизация';    
     $edit_organ = 'Редактирование организации';
     $sysadmin = 'Главная: Системные администраторы';
     $organizations = 'Главная: Организации';
     $add_sysadmin = 'Добавление системного администратора';
+    $settings = 'Настройки';    
+
 
     // CSS connection (path)
     $css_index = 'css/index_style.css';
@@ -20,7 +20,7 @@
     $css_add_organ = 'css/add_organization.css';
     $css_sysadmin = 'css/main_style.css';
     $css_organizations = 'css/main_style.css';
-    $css_add_sysadmin = 'css/';
+    $css_add_sysadmin = 'css/add_sysadmin.css';
 
     //Script path of navigation panel
     $navigation_panel = 'js/navigation.js';
