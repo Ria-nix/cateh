@@ -47,12 +47,6 @@
             <div class="adress_organization">
                 <label for="address">Добавьте компетенцию</label>
                 <input type="text" id="address" class="text_address add_info">
-
-                <div class="mobile_fields_address"></div>
-
-                <span class="button border" id="add_address">
-                    <img src="icon/plus-solid.svg" alt="plus_solid"> 
-                </span>
             </div>
 
             <div class="fields_address"></div>
@@ -80,7 +74,7 @@
     </div>
 
     <script src="js/modal_windows.js"></script>    
-    <script src="js/add_organiz.js"></script>
+    <script src="js/add_sysadmin.js"></script>
     <script src="<?php  echo $navigation_panel ?>"></script>
 </body>
 </html>

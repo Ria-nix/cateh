@@ -713,20 +713,8 @@ body {
   padding: 3.5% 0 2% 0;
 }
 
-.content_set span {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  cursor: pointer;
-}
 .content_set input {
-  height: 35px;
+  height: 40px;
   text-align: center;
   -webkit-box-shadow: 0px 4px 10px 0px rgba(17, 39, 66, 0.15);
           box-shadow: 0px 4px 10px 0px rgba(17, 39, 66, 0.15);
@@ -791,27 +779,9 @@ body {
 .content_set .mobile_fields_address {
   width: 100%;
 }
-.content_set .fields_address, .content_set .mobile_fields_address {
+.content_set .fields_address {
   height: auto;
   padding: 0;
-}
-.content_set .cell {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 0 2% 0 0;
-}
-.content_set .cell input {
-  margin: 13px 2%;
-}
-.content_set .cell img {
-  cursor: pointer;
-  width: 20px;
-  height: 20px;
 }
 
 .red_auto {
@@ -889,12 +859,6 @@ body {
     margin: 0 0 0 5%;
   }
 
-  .cell {
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-  }
-
   .image {
     margin: 0 5% 5% 5%;
   }
@@ -905,18 +869,6 @@ body {
 
   .adress_organization label {
     margin-right: auto;
-  }
-  .adress_organization input {
-    width: 70%;
-    margin: 0 1.5% 0 5%;
-  }
-
-  .content_set span {
-    padding: 1%;
-  }
-
-  .mobile_fields_address {
-    display: none;
   }
 
   .fields_address {
@@ -974,42 +926,6 @@ body {
   }
   .name_organization label, .inn_organization label, .adress_organization label {
     padding: 2% 0;
-  }
-
-  br {
-    display: none;
-  }
-
-  .content_set span {
-    padding: 10px 10px;
-    margin: 20px 0 0 0;
-  }
-
-  .cell {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-
-  .mobile_fields_address {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-
-  .fields_address {
-    display: none;
-  }
-
-  .cell input {
-    width: 80%;
   }
 
   .save {
