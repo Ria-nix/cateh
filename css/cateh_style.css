@@ -29,6 +29,10 @@ input {
   /* delete focus around input*/
 }
 
+select {
+  outline: none;
+}
+
 .spacing {
   letter-spacing: 0.5px;
 }

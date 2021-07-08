@@ -710,7 +710,7 @@ body {
   text-align: center;
 }
 .content_wrap p.font_24 {
-  padding: 3.5% 0 2% 0;
+  padding: 3.5% 5% 2% 5%;
 }
 
 .content_set input {
@@ -724,7 +724,7 @@ body {
   letter-spacing: 1px;
   color: #112742;
 }
-.content_set .name_organization, .content_set .inn_organization {
+.content_set .main_fields {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -764,20 +764,9 @@ body {
   padding: 6px 20px;
   cursor: pointer;
 }
-.content_set .adress_organization {
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
 .content_set .save button {
   width: 150px;
   height: 38px;
-}
-.content_set .mobile_fields_address {
-  width: 100%;
 }
 .content_set .fields_address {
   height: auto;
@@ -813,7 +802,7 @@ body {
     width: 45%;
   }
 
-  .adress_organization {
+  .main_fields {
     width: 52%;
   }
 }
@@ -831,7 +820,7 @@ body {
     width: 90%;
   }
 
-  .adress_organization {
+  .main_fields {
     width: 100%;
   }
 }
@@ -840,7 +829,7 @@ body {
     padding: 1.5% 0%;
   }
 
-  .name_organization, .inn_organization, .adress_organization {
+  .main_fields {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -849,12 +838,12 @@ body {
         -ms-flex-direction: row;
             flex-direction: row;
   }
-  .name_organization label, .inn_organization label, .adress_organization label {
+  .main_fields label {
     padding: 0 0 0 5%;
     text-align: left;
     width: 25%;
   }
-  .name_organization input, .inn_organization input, .adress_organization input {
+  .main_fields input {
     width: 75%;
     margin: 0 0 0 5%;
   }
@@ -869,6 +858,10 @@ body {
 
   .adress_organization label {
     margin-right: auto;
+  }
+  .adress_organization input {
+    width: 70%;
+    margin: 0 0 0 5%;
   }
 
   .fields_address {
@@ -963,7 +956,7 @@ body {
     margin: 0;
   }
 
-  .name_organization, .inn_organization, .adress_organization {
+  .main_fields {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -975,7 +968,7 @@ body {
         -ms-flex-align: center;
             align-items: center;
   }
-  .name_organization label, .inn_organization label, .adress_organization label {
+  .main_fields label {
     padding: 3.2% 0;
   }
 }/*# sourceMappingURL=add_sysadmin.css.map */

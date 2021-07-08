@@ -19,37 +19,38 @@
         <p class="font_24 bold">Добавление системного администратора</p>
         <div class="content_set">
 
-            <div class="name_organization">
+            <div class="main_fields">
                 <label for="login">Логин</label>
                 <input type="text" id="login" class="add_info">
             </div>
 
-            <div class="name_organization">
+            <div class="main_fields">
                 <label for="password">Пароль</label>
                 <input type="text" id="password" class="add_info">
             </div>
 
-            <div class="name_organization">
+            <div class="main_fields">
                 <label for="name">Имя</label>
                 <input type="text" id="name" class="add_info">
             </div>
 
-            <div class="name_organization">
+            <div class="main_fields">
                 <label for="surname">Фамилия</label>
                 <input type="text" id="surname" class="add_info">
             </div>
 
-            <div class="inn_organization">
+            <div class="main_fields">
                 <label for="tel_number">Номер телефона</label>
                 <input type="text" id="tel_number" class="add_info">
             </div>
 
-            <div class="adress_organization">
+            <div class="field_choice main_fields">
                 <label for="address">Добавьте компетенцию</label>
-                <input type="text" id="address" class="text_address add_info">
+                <!-- <input type="text" id="address" class="text_address add_info"> -->
+                <select name="choose_competence" id="collect_provice"></select>
             </div>
 
-            <div class="fields_address"></div>
+            <div class="field_competence"></div>
 
             <div class="img_organization">
 

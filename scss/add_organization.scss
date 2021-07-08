@@ -2,9 +2,6 @@
 @import 'navigation';
 @import 'modal_window';
 
-// html{
-//     margin: 0 auto;
-// }
 body{ background: $fon_white; } 
 .content_wrap{
     @extend %grid;
@@ -114,29 +111,30 @@ body{ background: $fon_white; }
 // ********** MEDIA MIN 541PX *************
 @media (min-width: 541px) {
     .content_set > div{ padding: 1.5% 0%; }
-    .name_organization, .inn_organization, .adress_organization{   
+    .name_organization, .inn_organization,
+    .adress_organization{
         display: flex;
         flex-direction: row;
-
+    }
+    .name_organization, .inn_organization{          
         label{ 
-            padding: 0 0 0 5%; 
             text-align: left;
             width: 25%;
         }
         input{
             width: 75%;            
-            margin: 0 0 0 5%;
+            // margin: 0 0 0 5%;
         }
     }
     .cell{ justify-content: flex-end; }
-    .image{ margin: 0 5% 5% 5%; }
+    .image{ margin: 0 5% 5% 0; }
     .save button{ margin: 0 0 0 70%; }
 
     .adress_organization{
-        label{ margin-right: auto;  }
+        label{ margin-right: auto; }
         input{ 
-            width: 70%;
-            margin: 0 1.5% 0 5%;
+            width: 67.3%;
+            margin: 0 1.5% 0 0;
         }
     }
     .content_set span{ padding:1.2%; }

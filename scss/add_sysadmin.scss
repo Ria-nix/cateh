@@ -2,15 +2,12 @@
 @import 'navigation';
 @import 'modal_window';
 
-// html{
-//     margin: 0 auto;
-// }
 body{ background: $fon_white; } 
 .content_wrap{
     @extend %grid;
     text-align: center;
 
-    p.font_24{ padding: 3.5% 0 2% 0; }
+    p.font_24{ padding: 3.5% 5% 2% 5%; }
 }
 .content_set{ @extend %flex_column;
     input{
@@ -20,7 +17,7 @@ body{ background: $fon_white; }
         border-radius: 10px;        
     }
     label, button{ letter-spacing: 1px; color: $blue;}               
-    .name_organization, .inn_organization{ 
+    .main_fields{ 
         justify-content: space-between;  
         align-items: center; 
     }
@@ -53,15 +50,14 @@ body{ background: $fon_white; }
             cursor: pointer; 
         }
     }
-    .adress_organization{
-        justify-content: flex-end;
-        align-items: center;        
-    }
+    // .adress_organization{
+    //     justify-content: flex-end;
+    //     align-items: center;        
+    // }
     .save button{
         width: 150px;
         height: 38px;
     }
-    .mobile_fields_address{ width: 100%; }
     .fields_address{
         height: auto;
         padding: 0;          
@@ -77,7 +73,7 @@ body{ background: $fon_white; }
 @media (min-width: 1163px) {
     
 .content_set > div{ width: 45%; }
-    .adress_organization{ width: 52%;}
+.main_fields{ width: 52%;}
 }
 
 // ********** MEDIA MAX 1163PX *************
@@ -89,15 +85,15 @@ body{ background: $fon_white; }
 // ********** MEDIA MAX 850PX *************
 @media (max-width: 850px) {  
     .content_set > div{ width: 90%;}
-    .adress_organization{ width: 100%;}
+    .main_fields{ width: 100%;}
 }
 
 // ********** MEDIA MIN 541PX *************
 @media (min-width: 541px) {
     .content_set > div{ padding: 1.5% 0%; }
-    .name_organization, .inn_organization, .adress_organization{   
+    .main_fields{ 
         display: flex;
-        flex-direction: row;
+        flex-direction: row; 
 
         label{ 
             padding: 0 0 0 5%; 
@@ -112,7 +108,13 @@ body{ background: $fon_white; }
     .image{ margin: 0 5% 5% 5%; }
     .save button{ margin: 0 0 0 70%; }
 
-    .adress_organization label{ margin-right: auto;  }
+    .adress_organization{
+        label{ margin-right: auto;  }
+        input{ 
+            width: 70%;
+            margin: 0 0 0 5%;
+        }
+    }
     .fields_address{  
         display: flex;
         flex-direction: column;
@@ -157,7 +159,7 @@ body{ background: $fon_white; }
 // ********** MEDIA MAX 390PX *************
 @media (max-width: 390px) {
     .save button{ margin: 0; }
-    .name_organization, .inn_organization, .adress_organization{   
+    .main_fields{   
         display: flex;
         flex-direction: column;
         align-items: center;

@@ -870,7 +870,8 @@ body {
     padding: 1.5% 0%;
   }
 
-  .name_organization, .inn_organization, .adress_organization {
+  .name_organization, .inn_organization,
+.adress_organization {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -879,14 +880,13 @@ body {
         -ms-flex-direction: row;
             flex-direction: row;
   }
-  .name_organization label, .inn_organization label, .adress_organization label {
-    padding: 0 0 0 5%;
+
+  .name_organization label, .inn_organization label {
     text-align: left;
     width: 25%;
   }
-  .name_organization input, .inn_organization input, .adress_organization input {
+  .name_organization input, .inn_organization input {
     width: 75%;
-    margin: 0 0 0 5%;
   }
 
   .cell {
@@ -896,7 +896,7 @@ body {
   }
 
   .image {
-    margin: 0 5% 5% 5%;
+    margin: 0 5% 5% 0;
   }
 
   .save button {
@@ -907,8 +907,8 @@ body {
     margin-right: auto;
   }
   .adress_organization input {
-    width: 70%;
-    margin: 0 1.5% 0 5%;
+    width: 67.3%;
+    margin: 0 1.5% 0 0;
   }
 
   .content_set span {
