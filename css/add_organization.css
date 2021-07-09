@@ -69,9 +69,10 @@ select {
   -webkit-box-shadow: 0px 4px 10px 0px rgba(17, 39, 66, 0.15);
           box-shadow: 0px 4px 10px 0px rgba(17, 39, 66, 0.15);
   text-align: center;
-  -webkit-appearance: none;
   -moz-appearance: none;
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
+  color: #112742;
   outline: none;
 }
 
@@ -96,7 +97,7 @@ option {
 }
 
 .font_18 {
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 
 .font_20 {
@@ -213,9 +214,10 @@ select {
   -webkit-box-shadow: 0px 4px 10px 0px rgba(17, 39, 66, 0.15);
           box-shadow: 0px 4px 10px 0px rgba(17, 39, 66, 0.15);
   text-align: center;
-  -webkit-appearance: none;
   -moz-appearance: none;
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
+  color: #112742;
   outline: none;
 }
 
@@ -240,7 +242,7 @@ option {
 }
 
 .font_18 {
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 
 .font_20 {
@@ -611,9 +613,10 @@ select {
   -webkit-box-shadow: 0px 4px 10px 0px rgba(17, 39, 66, 0.15);
           box-shadow: 0px 4px 10px 0px rgba(17, 39, 66, 0.15);
   text-align: center;
-  -webkit-appearance: none;
   -moz-appearance: none;
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
+  color: #112742;
   outline: none;
 }
 
@@ -638,7 +641,7 @@ option {
 }
 
 .font_18 {
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 
 .font_20 {
@@ -755,6 +758,7 @@ body {
 }
 
 .content_wrap {
+  width: 100%;
   text-align: center;
 }
 .content_wrap p.font_24 {
@@ -793,7 +797,6 @@ body {
           align-items: center;
 }
 .content_set .img_organization {
-  border-bottom: 1px solid #939393;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -805,7 +808,7 @@ body {
   border: 1px solid #112742;
   width: 11rem;
   height: 11rem;
-  padding: 2%;
+  padding: 1.5%;
 }
 .content_set .img_organization .image img {
   width: 100%;
@@ -831,6 +834,9 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+.content_set .save {
+  border-top: 1px solid #939393;
 }
 .content_set .save button {
   width: 150px;
@@ -889,10 +895,6 @@ body {
 @media (min-width: 1163px) {
   .content_set > div {
     width: 45%;
-  }
-
-  .adress_organization {
-    width: 52%;
   }
 }
 @media (max-width: 1163px) {
@@ -981,7 +983,7 @@ body {
   }
 
   .cell input {
-    width: 66.5%;
+    width: 69%;
   }
 
   .img_buttons {

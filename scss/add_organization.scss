@@ -4,6 +4,7 @@
 
 body{ background: $fon_white; } 
 .content_wrap{
+    width: 100%;
     @extend %grid;
     text-align: center;
 
@@ -27,8 +28,7 @@ body{ background: $fon_white; }
         justify-content: space-between;  
         align-items: center; 
     }
-    .img_organization{ 
-        border-bottom: 1px solid $gray_border;   
+    .img_organization{            
         display: flex;
         align-items: center;     
         .img_buttons, .image{  @extend %flex_row; }
@@ -36,7 +36,7 @@ body{ background: $fon_white; }
             border: 1px solid $blue;
             width: 11rem;
             height: 11rem;   
-            padding: 2%;
+            padding: 1.5%;
 
             img{
                 width: 100%;
@@ -60,9 +60,12 @@ body{ background: $fon_white; }
         justify-content: flex-end;
         align-items: center;        
     }
-    .save button{
-        width: 150px;
-        height: 38px;
+    .save{
+        border-top: 1px solid $gray_border;
+        button{
+            width: 150px;
+            height: 38px;
+        }
     }
     .mobile_fields_address{ width: 100%; }
     .fields_address, .mobile_fields_address{
@@ -90,10 +93,8 @@ body{ background: $fon_white; }
 // ************* @MEDIA *************
 
 // ********** MEDIA MIN 1163PX *************
-@media (min-width: 1163px) {
-    
+@media (min-width: 1163px) {    
 .content_set > div{ width: 45%; }
-    .adress_organization{ width: 52%;}
 }
 
 // ********** MEDIA MAX 1163PX *************
@@ -141,7 +142,7 @@ body{ background: $fon_white; }
         flex-direction: column;
         align-items: center; 
     }
-    .cell input{ width: 66.5%;}
+    .cell input{ width: 69%;}
     .img_buttons{ 
         justify-content: space-around;    
         button{ padding: 7px 20px; }

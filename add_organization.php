@@ -39,8 +39,8 @@
                     <img class="logo" src="icon/logo.png" alt="logo">
                 </div>                
                 <div class="img_buttons">
-                    <input type="file" id="input_file">
-                    <label class="button_gray border font_16" for="download_file">Загрузить</label>
+                    <input type="file" accept="img/*" id="input_file">
+                    <label class="button_gray border font_16" for="input_file" id="download_file">Загрузить</label>
                     <button class="button_gray border font_16" id="delete_img">Удалить</button>
                 </div>
             </div>
