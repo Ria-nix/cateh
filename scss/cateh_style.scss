@@ -68,15 +68,13 @@ select{
     border: 1px solid $gray_border;
     background: $gray_full;
     box-shadow: 0px 4px 10px 0px rgba($but_shadow, 0.15);
-    text-align: center;
+    text-align-last: center;
     -moz-appearance: none;
     appearance: none;
     color: $blue;
     outline: none;
 }
-option{
-    text-align: center;
-}
+option{ text-align-last: center; }
 
 
 // TEXT STYLE

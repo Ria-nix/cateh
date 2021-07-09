@@ -1,6 +1,5 @@
 //Open the modal window
 let bool, summ_check, obj, json, arr_inputs, obj_keys;
-
 $('#add_button').click(function(){ 
     arr_inputs = document.querySelectorAll(".add_info");
     CheckInputs(arr_inputs);    
@@ -12,18 +11,17 @@ function CheckInputs(arr_inputs){
     arr_inputs.forEach(function(item){
         item.value == '' ? isRedAuto(item) : summ_check++;
         item.addEventListener('change', function(){
-            if(item.value == ''){ isRedAuto(item); }
-            else{ item.classList.remove('red_auto');
-                item.setAttribute('placeholder','');  
-            }
+            item.value == '' ? isRedAuto(item) : isNoneRedAuto(item);
         });
-    });  
-    summ_check == arr_inputs.length ? bool = true : bool = false;
+    });  summ_check == arr_inputs.length ? bool = true : bool = false;
 }
-
 function isRedAuto(item_info){
     item_info.classList.add('red_auto');
     item_info.setAttribute('placeholder','Заполните поле'); 
+}
+function isNoneRedAuto(item_info){
+    item_info.classList.remove('red_auto');
+    item_info.setAttribute('placeholder','');  
 }
 
 // Close the modal window
@@ -35,12 +33,17 @@ $('.close_button').click(function(){
 $('.add_button').click(function(){
     json = document.querySelectorAll(".add_info"); 
     obj = {};
-    obj_keys = ['name_organ', 'inn', 'addresses', 'img'];
-    for(var elem of obj_keys){}
+    // obj_keys = ["name_organ", "inn", "addresses", "img"];
+    obj_keys = ["name_organ", "inn", "addresses"];
+    
     json.forEach(function(item, index){  
-        console.log(item.value); 
-        obj[elem] = 
+        for(var elem of obj_keys){
+            obj[elem] = item;
+            console.log(obj)
+        }
+        
     })
+    console.log(obj); 
                
 });
 
