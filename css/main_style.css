@@ -99,7 +99,7 @@ option {
 }
 
 .font_18 {
-  font-size: 1.125rem;
+  font-size: 18px;
 }
 
 .font_20 {
@@ -246,7 +246,7 @@ option {
 }
 
 .font_18 {
-  font-size: 1.125rem;
+  font-size: 18px;
 }
 
 .font_20 {
@@ -495,7 +495,7 @@ nav .navigation .door img {
             justify-content: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    width: 95%;
+    width: 90%;
     background: whitesmoke;
     padding: 0 15px;
   }
@@ -569,8 +569,8 @@ nav .navigation .door img {
   margin: 2% 0;
 }
 .search .button {
-  padding: 8px 20px;
-  margin: 2% 0;
+  padding: 10px 25px;
+  margin: 3% 0;
 }
 
 .content_wrap > div {
@@ -678,6 +678,7 @@ nav .navigation .door img {
 
   .item_info {
     width: 100%;
+    padding: 1.5%;
   }
 
   .items {
@@ -706,6 +707,7 @@ nav .navigation .door img {
 
   .item_info {
     width: 100%;
+    padding: 2%;
   }
 }
 @media (max-width: 850px) {
@@ -726,6 +728,7 @@ nav .navigation .door img {
 
   .item_info {
     width: 50rem;
+    padding: 2%;
   }
 
   .head_name {
@@ -744,7 +747,6 @@ nav .navigation .door img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 3%;
   }
 
   .mobile_version {
@@ -767,7 +769,7 @@ nav .navigation .door img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding: 2% 2.5%;
+    padding: 3%;
   }
 
   .mobile_none {

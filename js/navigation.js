@@ -66,6 +66,5 @@ $('#input_file').on('change',function(ev){
     fr.readAsDataURL(f);
 
     console.log($('#input_file').val());
-    // $('.logo').attr('src') = $('#input_file').val();
     
 })

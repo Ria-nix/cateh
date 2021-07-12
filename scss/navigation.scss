@@ -133,12 +133,8 @@ nav{
 
         div{ display: none; }
     }
-    .toggle_menu_fon{
-        display: none;
-    }
-    .toggle_menu{
-        display: none;
-    }
+    .toggle_menu_fon{ display: none; }
+    .toggle_menu{ display: none; }
     .panel_buttons{ position: static; }
 }
 
@@ -191,7 +187,7 @@ nav{
             flex-direction: row;
             justify-content: center;
             flex-wrap: wrap;
-            width: 95%;
+            width: 90%;
             background: rgba($fon_white, 1);
             padding: 0 15px;
         }

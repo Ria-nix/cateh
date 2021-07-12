@@ -45,7 +45,7 @@
                 </div>
             </div>
             <div class="save">
-                <button class="button border font_16" id="add_button">Добавить</button>
+                <button class="button border font_16" id="check_button">Добавить</button>
             </div>
         </div>
     </div>

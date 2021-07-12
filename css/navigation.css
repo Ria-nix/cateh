@@ -86,7 +86,7 @@ option {
 }
 
 .font_18 {
-  font-size: 1.125rem;
+  font-size: 18px;
 }
 
 .font_20 {
@@ -335,7 +335,7 @@ nav .navigation .door img {
             justify-content: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    width: 95%;
+    width: 90%;
     background: whitesmoke;
     padding: 0 15px;
   }
