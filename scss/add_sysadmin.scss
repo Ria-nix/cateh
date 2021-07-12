@@ -22,13 +22,12 @@ body{ background: $fon_white; }
         align-items: center; 
     }
     .field_choice{ 
-        select{
+        .select{
             height: 40px;
             width: 65%;
             position: relative;
 
-            select:after{
-                position: absolute;
+            .select:after{
                 content: url('../icon/plus-solid.svg');                
             }
 

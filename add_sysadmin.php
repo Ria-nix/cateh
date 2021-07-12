@@ -47,10 +47,10 @@
             <div class="field_choice main_fields">
                 <label for="address" class="text_width">Добавьте компетенцию</label>
                <!-- <input type="text" id="address" class="text_address add_info"> -->
-                <select name="choose_competence" id="collect_provice" class="border">
-                    <option value="placeholder_select" selected disaibled hidden>Введите компетенцию</option>
-                    <option value="add_competence" id="add_competence">Добавить</option>
-                </select>
+                <input type="searh" class="select border" placeholder="Введите компетенцию">
+                <div class="options"></div>
+                <!-- <span value="add_competence" id="add_competence">Добавить</span> -->
+                    
             </div>
 
             <div class="list_competence border">
