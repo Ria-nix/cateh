@@ -16,7 +16,7 @@ body {
           align-items: center;
 }
 
-.content_set, .modal_window .window_wrap {
+.content_set .field_choice option, .content_set, .modal_window .window_wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -144,7 +144,7 @@ body {
           align-items: center;
 }
 
-.content_set, .modal_window .window_wrap {
+.content_set .field_choice option, .content_set, .modal_window .window_wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -526,7 +526,7 @@ body {
           align-items: center;
 }
 
-.content_set, .modal_window .window_wrap {
+.content_set .field_choice option, .content_set, .modal_window .window_wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -736,14 +736,30 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-.content_set .field_choice .select {
-  height: 40px;
-  width: 65%;
   position: relative;
 }
-.content_set .field_choice .select .select:after {
-  content: url("../icon/plus-solid.svg");
+.content_set .field_choice datalist {
+  height: 40px;
+  width: 65%;
+  background: #F4F4F4;
+  outline: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+.content_set .field_choice option {
+  width: 60%;
+  height: 100%;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  background: #F4F4F4;
+  -webkit-box-shadow: 0px 4px 10px 0px rgba(17, 39, 66, 0.15);
+          box-shadow: 0px 4px 10px 0px rgba(17, 39, 66, 0.15);
+  border: 1px solid #939393;
+  text-align: left;
+  outline: none;
+  padding: 2%;
 }
 .content_set .field_choice::-webkit-scrollbar {
   width: 20px;

@@ -47,9 +47,39 @@
             <div class="field_choice main_fields">
                 <label for="address" class="text_width">Добавьте компетенцию</label>
                <!-- <input type="text" id="address" class="text_address add_info"> -->
-                <input type="searh" class="select border" placeholder="Введите компетенцию">
-                <div class="options"></div>
-                <!-- <span value="add_competence" id="add_competence">Добавить</span> -->
+               <input type="text" class="select border spacing" list="competence" placeholder="Введите компетенцию">
+               <datalist name="select_name" id="competence">
+                   <option value="vanilla" selected disaibled hidden></option>
+                <!-- <span class="polygon">
+                    <img src="icon/Polygon.svg" alt="alt">
+                </span> -->
+                    <option class="item_options" value="new"></option>
+                    <option class="item_options" value="chocolate"></option>
+                    <option class="item_options" value="mint"></option>
+                    <option class="item_options" value="latte"></option>
+                    <option class="item_options" value="spain"></option>
+                    <option class="item_options" value="rock"></option>
+                    <option class="item_options" value="letter"></option>
+                    <option class="item_options" value="nroll"></option>
+                    <option value="Добавить" id="add_competence">
+                        <img src="icon/plus-solid.svg" alt="alt">
+                    </option>
+               </datalist>
+                
+                <!-- <div class="options border"> -->
+                    <!-- <option class="item_options">spain spain spain spain spain spain spain spain spain</option>
+                    <option class="item_options">spain</option>
+                    <option class="item_options">spain</option>
+                    <option class="item_options">spain</option>
+                    <option class="item_options">spain</option>
+                    <option class="item_options">spain</option>
+                    <option class="item_options">spain</option>
+                    <option class="item_options">spain</option>
+                    <option value="add_competence" id="add_competence">
+                        <img src="icon/plus-solid.svg" alt="alt">Добавить
+                    </option> -->
+                <!-- </div> -->
+                
                     
             </div>
 
