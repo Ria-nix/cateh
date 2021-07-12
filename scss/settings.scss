@@ -6,7 +6,7 @@ body{ background: $fon_white; }
     @extend %grid;
     text-align: center;
 
-    p{ padding: 2% 0%; }
+    p{ padding: 3.5% 0 2% 0; }
 }
 .content_set > div{ width: 45%; }
 .content_set{ @extend %flex_column;
@@ -45,7 +45,6 @@ body{ background: $fon_white; }
 // ********** MEDIA MAX 1163PX *************
 @media (max-width: 1163px) {
     .content_set > div{  width: 55%; } 
-    // input{ width: 150%; }   
 }
  
 // ********** MEDIA 850PX *************
