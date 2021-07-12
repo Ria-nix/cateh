@@ -7,7 +7,7 @@ body{ background: $fon_white; }
     @extend %grid;
     text-align: center;
 
-    p.font_24{ padding: 3.5% 0 2% 0; }
+    p.font_24{ padding: 3.5% 4% 2% 4%; }
 }
 .content_set{ @extend %flex_column;
     input{
@@ -21,10 +21,52 @@ body{ background: $fon_white; }
         justify-content: space-between;  
         align-items: center; 
     }
-    .field_choice select{
-        height: 40px;
-        width: 71%;
+    .field_choice{ 
+        select{
+            height: 40px;
+            width: 65%;
+            position: relative;
+
+            select:after{
+                position: absolute;
+                content: url('../icon/plus-solid.svg');                
+            }
+
+            // #add_competence:before{
+            //     position: absolute;
+            //     content: url('../icon/plus-solid.svg');
+            //     width: 10px;
+            //     height: 10px;
+            //     // display: block;
+            // }
+        }
     }
+
+    ////////////////////////////////////////**/
+    /* width */
+    .field_choice::-webkit-scrollbar {  width: 20px; }
+      
+    /* Track */
+    .field_choice::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+    }
+    
+    /* Handle */
+    .field_choice::-webkit-scrollbar-thumb {
+    background: red; 
+    border-radius: 10px;
+    }
+ //////////////////////////////////////////////****/
+    .list_competence{
+        min-height: 100px;
+        max-height: auto;
+        border: 1px solid $gray_border;
+        background: $list_competence;
+        padding: 1% 2%;
+        text-align: left;
+    }
+
     .img_organization{ 
         border-bottom: 1px solid $gray_border;   
         display: flex;
@@ -89,6 +131,7 @@ body{ background: $fon_white; }
 // ********** MEDIA MIN 541PX *************
 @media (min-width: 541px) {
     .content_set > div{ padding: 1.5% 0%; }
+    .field_choice .text_width{ width: 40%; padding: 0 2% 0 0;}
     .main_fields{ 
         display: flex;
         flex-direction: row; 
@@ -101,7 +144,7 @@ body{ background: $fon_white; }
             width: 75%;            
             margin: 0 0 0 5%;
         }
-    }
+    }    
     .image{ margin: 0 5% 5% 0; box-shadow: 0 4px 10px 0 $but_shadow}
     .save button{ margin: 0 0 0 70%; }
     .fields_address{  

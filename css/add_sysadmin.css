@@ -60,7 +60,7 @@ input {
   letter-spacing: 1px;
   color: #112742;
   outline: none;
-  /* delete focus around input*/
+  /* remove focus around input*/
 }
 
 select {
@@ -207,7 +207,7 @@ input {
   letter-spacing: 1px;
   color: #112742;
   outline: none;
-  /* delete focus around input*/
+  /* remove focus around input*/
 }
 
 select {
@@ -608,7 +608,7 @@ input {
   letter-spacing: 1px;
   color: #112742;
   outline: none;
-  /* delete focus around input*/
+  /* remove focus around input*/
 }
 
 select {
@@ -767,9 +767,14 @@ body {
   text-align: center;
 }
 .content_wrap p.font_24 {
-  padding: 3.5% 0 2% 0;
+  padding: 3.5% 4% 2% 4%;
 }
 
+.content_set {
+  /* width */
+  /* Track */
+  /* Handle */
+}
 .content_set input {
   height: 40px;
   text-align: center;
@@ -791,7 +796,32 @@ body {
 }
 .content_set .field_choice select {
   height: 40px;
-  width: 71%;
+  width: 65%;
+  position: relative;
+}
+.content_set .field_choice select select:after {
+  position: absolute;
+  content: url("../icon/plus-solid.svg");
+}
+.content_set .field_choice::-webkit-scrollbar {
+  width: 20px;
+}
+.content_set .field_choice::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 5px grey;
+          box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+.content_set .field_choice::-webkit-scrollbar-thumb {
+  background: red;
+  border-radius: 10px;
+}
+.content_set .list_competence {
+  min-height: 100px;
+  max-height: auto;
+  border: 1px solid #939393;
+  background: #F4F4F4;
+  padding: 1% 2%;
+  text-align: left;
 }
 .content_set .img_organization {
   border-bottom: 1px solid #939393;
@@ -886,6 +916,11 @@ body {
 @media (min-width: 541px) {
   .content_set > div {
     padding: 1.5% 0%;
+  }
+
+  .field_choice .text_width {
+    width: 40%;
+    padding: 0 2% 0 0;
   }
 
   .main_fields {
