@@ -16,7 +16,7 @@ body {
           align-items: center;
 }
 
-.content_set .field_choice option, .content_set, .modal_window .window_wrap {
+.content_set, .modal_window .window_wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -144,7 +144,7 @@ body {
           align-items: center;
 }
 
-.content_set .field_choice option, .content_set, .modal_window .window_wrap {
+.content_set, .modal_window .window_wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -526,7 +526,7 @@ body {
           align-items: center;
 }
 
-.content_set .field_choice option, .content_set, .modal_window .window_wrap {
+.content_set, .modal_window .window_wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -639,6 +639,7 @@ input {
 body {
   width: 100%;
   height: 100%;
+  position: relative;
 }
 
 .modal_window {
@@ -736,30 +737,64 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: relative;
 }
-.content_set .field_choice datalist {
-  height: 40px;
-  width: 65%;
-  background: #F4F4F4;
-  outline: none;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+.content_set .text_width {
+  margin: 1% 0 auto 0;
 }
-.content_set .field_choice option {
-  width: 60%;
-  height: 100%;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  background: #F4F4F4;
-  -webkit-box-shadow: 0px 4px 10px 0px rgba(17, 39, 66, 0.15);
-          box-shadow: 0px 4px 10px 0px rgba(17, 39, 66, 0.15);
+.content_set .field_choice .searchable {
+  width: 75%;
   border: 1px solid #939393;
-  text-align: left;
+}
+.content_set .field_choice .searchable .polygon {
+  position: absolute;
+}
+.content_set .field_choice .searchable input {
+  margin: 0;
+  width: 100%;
+  border-top: 0px;
+  border-bottom: 1px solid #939393;
+  border-left: 0px;
+  border-right: 0px;
+  -webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+}
+.content_set .field_choice .searchable input::-webkit-input-placeholder {
+  color: rgba(17, 39, 66, 0.7);
+}
+.content_set .field_choice .searchable input::-moz-placeholder {
+  color: rgba(17, 39, 66, 0.7);
+}
+.content_set .field_choice .searchable input:-ms-input-placeholder {
+  color: rgba(17, 39, 66, 0.7);
+}
+.content_set .field_choice .searchable input::-ms-input-placeholder {
+  color: rgba(17, 39, 66, 0.7);
+}
+.content_set .field_choice .searchable input::placeholder {
+  color: rgba(17, 39, 66, 0.7);
+}
+.content_set .field_choice .searchable ul {
+  max-width: 95%;
+  margin: 0 0 0 5%;
+  list-style-type: none;
+  background: #F1F1F1;
+  letter-spacing: 1px;
+  color: #112742;
   outline: none;
-  padding: 2%;
+  max-height: 100px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  text-align: left;
+}
+.content_set .field_choice .searchable ul li {
+  padding: 7px 9px;
+  cursor: pointer;
+}
+.content_set .field_choice .searchable ul li.selected {
+  background-color: #e8e8e8;
+  color: #333;
 }
 .content_set .field_choice::-webkit-scrollbar {
   width: 20px;

@@ -20,45 +20,55 @@ body{ background: $fon_white; }
     .main_fields{ 
         justify-content: space-between;  
         align-items: center; 
-        position:relative;
     }
+    .text_width{ margin: 1% 0 auto 0;}
     .field_choice{ 
-        datalist{
-            height: 40px;
-            width: 65%;
-            // position: relative;
-            background: $list_competence;
-            outline: none;
-            appearance: none;
-            // &::placeholder{ color: rgba($blue, 0.8); }
-        }
-        // .polygon{
-        //     position: absolute;
-        //     top: 0;
-        //     left: 150px;
-        // }
-        option{
-            // position: absolute;
-            width: 60%;
-            height: 100%;
-            // top: 61px;
-            // left: 300px;
-            // overflow-x: hidden;
-            // overflow-y: scroll;
-            @extend %flex_column;
-            align-items: flex-start;
-            background: $list_competence;
-            box-shadow: 0px 4px 10px 0px rgba($but_shadow, 0.15);
+        .searchable { 
+            width: 75%;
             border: 1px solid $gray_border;
-            text-align: left;
-            outline: none;
-            padding: 2%;
+            .polygon{
+                position: absolute;
+            }
+            input {
+                margin: 0;
+                width: 100%;
+                // border-radius: 0%;
+                border-top:0px;
+                border-bottom:1px solid $gray_border;
+                border-left:0px;
+                border-right:0px;
+                transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+                // background: url("../icon/Polygon.svg") no-repeat right 0px center/40px 13px;
 
-            // span{
-            //     padding: 0 0 2% 0;
-            // }
+                &::placeholder{color: rgba($blue, 0.7);}
+            }
+
+            ul {
+                max-width: 95%;
+                margin: 0 0 0 5%;
+                list-style-type: none;                
+                background: $gray_full;
+                letter-spacing: 1px;
+                color: $blue;
+                outline: none;
+                max-height: 100px;
+                overflow-y: scroll;
+                overflow-x: hidden;
+                text-align: left;
+
+                li {
+                    padding: 7px 9px;
+                    cursor: pointer;
+                }
+            }
+        }
+        
+        .searchable ul li.selected {
+            background-color: #e8e8e8;
+            color: #333;
         }
     }
+
 
     ////////////////////////////////////////**/
     /* width */
@@ -130,14 +140,15 @@ body{ background: $fon_white; }
 // ********** MEDIA MIN 1163PX *************
 @media (min-width: 1163px) {
     
-.content_set > div{ width: 45%; }
-.main_fields{ width: 52%;}
+    .content_set > div{ width: 45%; }
+    .main_fields{ width: 52%;}
 }
 
 // ********** MEDIA MAX 1163PX *************
 @media (max-width: 1163px) {
     .content_set > div{  width: 55%; } 
-    input{ width: 100%; }   
+    input{ width: 100%; } 
+
 }
  
 // ********** MEDIA MAX 850PX *************
