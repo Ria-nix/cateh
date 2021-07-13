@@ -17,7 +17,7 @@
     <div class="content_wrap">
         <p class="font_24 bold">Добавление системного администратора</p>
         <div class="content_set">
-            
+
             <div class="main_fields">
                 <label for="login">Логин</label>
                 <input type="text" id="login" class="add_info">
@@ -47,29 +47,21 @@
                 <label for="address" class="text_width">Добавьте компетенцию</label>
 
                 <div class="searchable border">
-                    <input type="text" class=" border font_18" id="list_competence" placeholder="Введите компетенцию">
-                    <span class="polygon">
-                        <img src="icon/Polygon.svg" alt="alt">
-                    </span>
-                    <ul class="border font_18 none" id="list">
-                        <li>Algeria</li>
-                        <li>Bulgaria</li>
-                        <li>Canada</li>
-                        <li>Egypt</li>
-                        <li>Fiji</li>
-                        <li>India</li>
-                        <li>Japan</li>
-                        <li>Iran (Islamic Republic of)</li>
-                        <li>Lao People's Democratic Republic</li>
-                        <li>Micronesia (Federated States of)</li>
-                        <li>Nicaragua</li>
-                        <li>Senegal</li>
-                        <li>Tajikistan</li>
-                        <li>Yemen</li>
+                    <input type="text" class=" border_none font_18" id="list_competence" placeholder="Введите компетенцию">
+                    <ul class="font_18 none" id="list">
+                        <li class="none" id="add_competence"><span><img src="icon/plus-solid.svg" alt="plus" width="15" height="15"></span> Добавить</li>               
                     </ul>
                 </div>
             </div>
-            <div class="list_competence border"></div>
+            <div class="list_competence border">
+                <span class="border cell">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis similique ex eos accusamus beatae, porro cupiditate sunt quo asperiores! Praesentium asperiores error eveniet mollitia sit nihil nam accusantium sint. Earum!
+                Ipsam itaque, soluta ullam enim quaerat suscipit minima culpa aspernatur velit deserunt. Saepe consequuntur veniam itaque soluta quas doloremque adipisci corporis deleniti nemo, nesciunt maxime labore nam, veritatis perferendis aspernatur! <img src="icon/close.svg" alt="close"></span>
+                <span class="border cell">Lorem ipsum dolor sit amet. <img src="icon/close.svg" alt="close"></span>
+                <span class="border cell">Lorem ipsum dolor sit amet. <img src="icon/close.svg" alt="close"></span>
+                <span class="border cell">Lorem ipsum dolor sit amet. <img src="icon/close.svg" alt="close"></span>
+                <span class="border cell">Lorem ipsum dolor sit amet. <img src="icon/close.svg" alt="close"></span>
+                <span class="border cell">Lorem ipsum dolor sit amet. <img src="icon/close.svg" alt="close"></span>
+            </div>
 
             <div class="img_organization">
                 <div class="image border">

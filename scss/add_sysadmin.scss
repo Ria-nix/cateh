@@ -23,38 +23,31 @@ body{ background: $fon_white; }
     }
     .text_width{ margin: 1% 0 auto 0;}
     .field_choice{ 
-        .searchable { 
-            width: 75%;
-            border: 1px solid $gray_border;
-            .polygon{
-                position: absolute;
-            }
+        .searchable { border: 1px solid $gray_border;            
             input {
+                padding: 0 8% 0 2%;
                 margin: 0;
+                border: none;
                 width: 100%;
-                // border-radius: 0%;
-                border-top:0px;
-                border-bottom:1px solid $gray_border;
-                border-left:0px;
-                border-right:0px;
                 transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-                // background: url("../icon/Polygon.svg") no-repeat right 0px center/40px 13px;
+                background: url("../icon/Polygon.svg") no-repeat right 0px center/40px 13px;
 
                 &::placeholder{color: rgba($blue, 0.7);}
             }
-
             ul {
-                max-width: 95%;
-                margin: 0 0 0 5%;
+                width: 100%;
                 list-style-type: none;                
                 background: $gray_full;
                 letter-spacing: 1px;
                 color: $blue;
                 outline: none;
-                max-height: 100px;
+                max-height: 150px;
                 overflow-y: scroll;
                 overflow-x: hidden;
                 text-align: left;
+                border-top: 1px solid $gray_border;
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
 
                 li {
                     padding: 7px 9px;
@@ -70,29 +63,35 @@ body{ background: $fon_white; }
     }
 
 
-    ////////////////////////////////////////**/
+ ////////////////////////////////////////**/
     /* width */
-    .field_choice::-webkit-scrollbar {  width: 20px; }
-      
-    /* Track */
-    .field_choice::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px grey; 
-    border-radius: 10px;
-    }
+    .searchable ul::-webkit-scrollbar { width: 8px; }
     
     /* Handle */
-    .field_choice::-webkit-scrollbar-thumb {
-    background: red; 
-    border-radius: 10px;
+    .searchable ul::-webkit-scrollbar-thumb {
+        background: rgba($blue, 0.65);
+        border-radius: 10px;
     }
  //////////////////////////////////////////////****/
     .list_competence{
         min-height: 100px;
-        max-height: auto;
         border: 1px solid $gray_border;
         background: $list_competence;
-        padding: 1% 2%;
         text-align: left;
+        @extend %flex_row;
+        flex-wrap: wrap;
+
+        span{
+            @extend %flex_row;
+            padding: 8px 10px;
+            background: $yellow;
+            margin: 1%;
+
+            img{
+                padding: 0 0 0 0.2%;
+                cursor: pointer;
+            }
+        }
     }
 
     .img_organization{ 
@@ -134,7 +133,6 @@ body{ background: $fon_white; }
 
 .red_auto{ border-color: rgba($red,0.7); }
 .red_auto::placeholder{ color: red; }
-
 // ************* @MEDIA *************
 
 // ********** MEDIA MIN 1163PX *************
@@ -187,15 +185,18 @@ body{ background: $fon_white; }
         button{ padding: 7px 20px; }
         #delete_img{ margin: 0 0 0 5%; }       
     }
+    .searchable { width: 85%;}
+    .list_competence{ padding: 1% 2%; }
+
 }
 
 // ********** MEDIA MAX 540PX *************
 @media (max-width: 540px) {
-    .content_set > div{ padding: 2% 0%; }
     .main_fields{   
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding: 2% 0;
 
         input{  width: 85%; text-align: center; }
         label{ padding: 2% 0; }
@@ -213,7 +214,9 @@ body{ background: $fon_white; }
             button, label{ padding: 8px 25px; }
         }        
     }
-    .image{margin: 0 0 5% 0;}    
+    .image{margin: 0 0 5% 0;}  
+    .searchable { width: 85%;}  
+    .list_competence{ padding: 2.5%; }
 }
 // ********** MEDIA MAX 390PX *************
 @media (max-width: 390px) {

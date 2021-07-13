@@ -1,10 +1,11 @@
 $(document).ready(function(){
-    let bool = false;
-    $('#list_competence').on('click', function(){
-        console.log('re')
+    let bool = false, arr, text;
+    arr = ['Ведение технической документации', 'Обновление работоспособности компьютерных систем после сбоев',
+            'Ремонт (несложный) технического оборудования предприятия', 'Модернизация и усовершенствование компьютерных систем предприятия, конфигурация рабочих мест'];
+    $('#list_competence').click(function(){
        if(!bool){ 
-           $('#list').removeClass('none')
-           bool == true;
+           $('#list').removeClass('none');
+           bool = true;      
         }
        else{
             $('#list').addClass('none');
@@ -12,57 +13,43 @@ $(document).ready(function(){
        } 
 
     })
-//     function filterFunction(that) {
-//         let container, input, filter, li, input_val;
-//         container = $(that).closest(".searchable");
-//         input_val = container.find("input").val().toUpperCase();
-    
-//         if (["ArrowDown", "ArrowUp", "Enter"].indexOf(event.key) != -1) {
-//             keyControl(event, container)
-//         } else {
-//             li = container.find("ul li");
-//             li.each(function (i, obj) {
-//                 if ($(this).text().toUpperCase().indexOf(input_val) > -1) {
-//                     $(this).show();
-//                 } else {
-//                     $(this).hide();
-//                 }
-//             });
-    
-//             container.find("ul li").removeClass("selected");
-//             setTimeout(function () {
-//                 container.find("ul li:visible").first().addClass("selected");
-//             }, 100)
-//         }
-//     }
-    
+
+    bool ? filterFunction() : console.log('nothing')
    
-//     function onSelect(val) {
-//         alert(val)
-//     }
-    
-//     $(".searchable input").focus(function () {
-//         $(this).closest(".searchable").find("ul").show();
-//         $(this).closest(".searchable").find("ul li").show();
-//     });
-//     $(".searchable input").blur(function () {
-//         let that = this;
-//         setTimeout(function () {
-//             $(that).closest(".searchable").find("ul").hide();
-//         }, 300);
-//     });
-    
-//     $(document).on('click', '.searchable ul li', function () {
-//         $(this).closest(".searchable").find("input").val($(this).text()).blur();
-//         onSelect($(this).text())
-//     });
-    
-//     $(".searchable ul li").hover(function () {
-//         $(this).closest(".searchable").find("ul li.selected").removeClass("selected");
-//         $(this).addClass("selected");
-//     });
+
+    function filterFunction() {
+        console.log('function');
+        arr.forEach(function(item){
+            console.log(item);
+            text = '<li>'+ item +'</li>';
+            $('#list').append(text);
+        })
+       
+      };
+
+       // remove the cell
+    (function isRemoveCell(){        
+        console.log('work')
+        for(var elem of $('.cell').children('img')){console.log(elem) }
+        elem.addEventListener('click', function(){ elem.parentElement.remove(); console.log('yup')})
+    }());
+   
 
 
+        // let input, filter,  li,  i;
+        // input = document.getElementById("list_competence");
+        // filter = input.value.toUpperCase();
+        // li = document.querySelectorAll("li");
+        // for (i = 0; i < li.length; i++) {
+        //   txtValue = li[i].textContent || li[i].innerText;
+        //   if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        //     li[i].style.display = "";
+        //     console.log('empty')
+        //   } else {
+        //     li[i].style.display = "none";
+        //     console.log('none')
+        //   }
+        // }
 
 });
 

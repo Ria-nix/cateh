@@ -3,7 +3,7 @@ body {
   color: #112742;
 }
 
-.content_set .img_organization .img_buttons, .content_set .img_organization .image, nav .navigation span, nav .navigation .panel_buttons, nav .navigation {
+.content_set .img_organization .img_buttons, .content_set .img_organization .image, .content_set .list_competence span, .content_set .list_competence, nav .navigation span, nav .navigation .panel_buttons, nav .navigation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -131,7 +131,7 @@ body {
   color: #112742;
 }
 
-.content_set .img_organization .img_buttons, .content_set .img_organization .image, nav .navigation span, nav .navigation .panel_buttons, nav .navigation {
+.content_set .img_organization .img_buttons, .content_set .img_organization .image, .content_set .list_competence span, .content_set .list_competence, nav .navigation span, nav .navigation .panel_buttons, nav .navigation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -513,7 +513,7 @@ body {
   color: #112742;
 }
 
-.content_set .img_organization .img_buttons, .content_set .img_organization .image, nav .navigation, nav .navigation .panel_buttons, nav .navigation span {
+.content_set .img_organization .img_buttons, .content_set .img_organization .image, .content_set .list_competence span, .content_set .list_competence, nav .navigation, nav .navigation .panel_buttons, nav .navigation span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -716,7 +716,6 @@ body {
 
 .content_set {
   /* width */
-  /* Track */
   /* Handle */
 }
 .content_set input {
@@ -742,23 +741,18 @@ body {
   margin: 1% 0 auto 0;
 }
 .content_set .field_choice .searchable {
-  width: 75%;
   border: 1px solid #939393;
 }
-.content_set .field_choice .searchable .polygon {
-  position: absolute;
-}
 .content_set .field_choice .searchable input {
+  padding: 0 8% 0 2%;
   margin: 0;
+  border: none;
   width: 100%;
-  border-top: 0px;
-  border-bottom: 1px solid #939393;
-  border-left: 0px;
-  border-right: 0px;
   -webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
   transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  background: url("../icon/Polygon.svg") no-repeat right 0px center/40px 13px;
 }
 .content_set .field_choice .searchable input::-webkit-input-placeholder {
   color: rgba(17, 39, 66, 0.7);
@@ -776,17 +770,19 @@ body {
   color: rgba(17, 39, 66, 0.7);
 }
 .content_set .field_choice .searchable ul {
-  max-width: 95%;
-  margin: 0 0 0 5%;
+  width: 100%;
   list-style-type: none;
   background: #F1F1F1;
   letter-spacing: 1px;
   color: #112742;
   outline: none;
-  max-height: 100px;
+  max-height: 150px;
   overflow-y: scroll;
   overflow-x: hidden;
   text-align: left;
+  border-top: 1px solid #939393;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 .content_set .field_choice .searchable ul li {
   padding: 7px 9px;
@@ -796,25 +792,29 @@ body {
   background-color: #e8e8e8;
   color: #333;
 }
-.content_set .field_choice::-webkit-scrollbar {
-  width: 20px;
+.content_set .searchable ul::-webkit-scrollbar {
+  width: 8px;
 }
-.content_set .field_choice::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 5px grey;
-          box-shadow: inset 0 0 5px grey;
-  border-radius: 10px;
-}
-.content_set .field_choice::-webkit-scrollbar-thumb {
-  background: red;
+.content_set .searchable ul::-webkit-scrollbar-thumb {
+  background: rgba(17, 39, 66, 0.65);
   border-radius: 10px;
 }
 .content_set .list_competence {
   min-height: 100px;
-  max-height: auto;
   border: 1px solid #939393;
   background: #F4F4F4;
-  padding: 1% 2%;
   text-align: left;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.content_set .list_competence span {
+  padding: 8px 10px;
+  background: #FFCC00;
+  margin: 1%;
+}
+.content_set .list_competence span img {
+  padding: 0 0 0 0.2%;
+  cursor: pointer;
 }
 .content_set .img_organization {
   border-bottom: 1px solid #939393;
@@ -971,12 +971,16 @@ body {
   .img_buttons #delete_img {
     margin: 0 0 0 5%;
   }
-}
-@media (max-width: 540px) {
-  .content_set > div {
-    padding: 2% 0%;
+
+  .searchable {
+    width: 85%;
   }
 
+  .list_competence {
+    padding: 1% 2%;
+  }
+}
+@media (max-width: 540px) {
   .main_fields {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -988,6 +992,7 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    padding: 2% 0;
   }
   .main_fields input {
     width: 85%;
@@ -1025,6 +1030,14 @@ body {
 
   .image {
     margin: 0 0 5% 0;
+  }
+
+  .searchable {
+    width: 85%;
+  }
+
+  .list_competence {
+    padding: 2.5%;
   }
 }
 @media (max-width: 390px) {
