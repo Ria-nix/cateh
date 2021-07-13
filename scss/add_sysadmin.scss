@@ -38,8 +38,6 @@ body{ background: $fon_white; }
                 width: 100%;
                 list-style-type: none;                
                 background: $gray_full;
-                letter-spacing: 1px;
-                color: $blue;
                 outline: none;
                 max-height: 150px;
                 overflow-y: scroll;
@@ -83,12 +81,14 @@ body{ background: $fon_white; }
 
         span{
             @extend %flex_row;
+            align-items: center;
+            justify-content: space-between;
             padding: 8px 10px;
             background: $yellow;
             margin: 1%;
 
             img{
-                padding: 0 0 0 0.2%;
+                padding: 0 0 0 10px;
                 cursor: pointer;
             }
         }
@@ -157,9 +157,9 @@ body{ background: $fon_white; }
 
 // ********** MEDIA MIN 541PX *************
 @media (min-width: 541px) {
-    .content_set > div{ padding: 1.5% 0%; }
     .field_choice .text_width{ width: 40%; padding: 0 2% 0 0;}
     .main_fields{ 
+        padding: 1.5% 0%;
         display: flex;
         flex-direction: row; 
 
@@ -186,7 +186,7 @@ body{ background: $fon_white; }
         #delete_img{ margin: 0 0 0 5%; }       
     }
     .searchable { width: 85%;}
-    .list_competence{ padding: 1% 2%; }
+    .list_competence{ padding: 0.5%; }
 
 }
 

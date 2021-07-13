@@ -48,19 +48,18 @@
 
                 <div class="searchable border">
                     <input type="text" class=" border_none font_18" id="list_competence" placeholder="Введите компетенцию">
-                    <ul class="font_18 none" id="list">
+                    <ul class="font_18 spacing none" id="list">
                         <li class="none" id="add_competence"><span><img src="icon/plus-solid.svg" alt="plus" width="15" height="15"></span> Добавить</li>               
                     </ul>
                 </div>
             </div>
             <div class="list_competence border">
-                <span class="border cell">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis similique ex eos accusamus beatae, porro cupiditate sunt quo asperiores! Praesentium asperiores error eveniet mollitia sit nihil nam accusantium sint. Earum!
-                Ipsam itaque, soluta ullam enim quaerat suscipit minima culpa aspernatur velit deserunt. Saepe consequuntur veniam itaque soluta quas doloremque adipisci corporis deleniti nemo, nesciunt maxime labore nam, veritatis perferendis aspernatur! <img src="icon/close.svg" alt="close"></span>
+                <span class="border cell">Lorem ipsuoloremque adipisci corporis deleniti nemo, nesciunt maxime labore nam, veritatis perferendis aspernatur! <img src="icon/close.svg" alt="close"></span>
                 <span class="border cell">Lorem ipsum dolor sit amet. <img src="icon/close.svg" alt="close"></span>
                 <span class="border cell">Lorem ipsum dolor sit amet. <img src="icon/close.svg" alt="close"></span>
                 <span class="border cell">Lorem ipsum dolor sit amet. <img src="icon/close.svg" alt="close"></span>
                 <span class="border cell">Lorem ipsum dolor sit amet. <img src="icon/close.svg" alt="close"></span>
-                <span class="border cell">Lorem ipsum dolor sit amet. <img src="icon/close.svg" alt="close"></span>
+                <span class="border cell">Ремонт (несложный) технического оборудования предприятия <img src="icon/close.svg" alt="close"></span>
             </div>
 
             <div class="img_organization">
