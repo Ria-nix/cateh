@@ -714,10 +714,6 @@ body {
   padding: 3.5% 4% 2% 4%;
 }
 
-.content_set {
-  /* width */
-  /* Handle */
-}
 .content_set input {
   height: 40px;
   text-align: center;
@@ -790,13 +786,6 @@ body {
   background-color: #e8e8e8;
   color: #333;
 }
-.content_set .searchable ul::-webkit-scrollbar {
-  width: 8px;
-}
-.content_set .searchable ul::-webkit-scrollbar-thumb {
-  background: rgba(17, 39, 66, 0.65);
-  border-radius: 10px;
-}
 .content_set .list_competence {
   min-height: 100px;
   border: 1px solid #939393;
@@ -857,6 +846,17 @@ body {
 .content_set .fields_address {
   height: auto;
   padding: 0;
+}
+
+/* width */
+.searchable ul::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Handle */
+.searchable ul::-webkit-scrollbar-thumb {
+  background: rgba(17, 39, 66, 0.65);
+  border-radius: 10px;
 }
 
 .red_auto {
