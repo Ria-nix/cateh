@@ -47,15 +47,20 @@
                 <label for="address" class="text_width">Добавьте компетенцию</label>
 
                 <div class="searchable border">
-                    <input type="text" class=" border_none font_18" id="list_competence" placeholder="Введите компетенцию">
+                    <input type="text" class=" border_none font_18" id="id_search" placeholder="Введите компетенцию">
                     <ul class="font_18 spacing none" id="list">
                         <li class="none" id="add_competence"><span><img src="icon/plus-solid.svg" alt="plus" width="15" height="15"></span> Добавить</li>               
-                    </ul>
+                    </ul>                    
                 </div>
             </div>
-            <div class="list_competence border">
-                <span class="border cell">Lorem ipsuoloremque adipisci corporis deleniti nemo, nesciunt maxime labore nam, veritatis perferendis aspernatur! <img src="icon/close.svg" alt="close"></span>
+            <div class="competences border">
+                <span class="border cell">Lorem  <img src="icon/close.svg" alt="close"></span>
                 <span class="border cell">Lorem ipsum dolor sit amet. <img src="icon/close.svg" alt="close"></span>
+                <span class="border cell">Lorem ipsum dolor sit amet. <img src="icon/close.svg" alt="close"></span>
+                <span class="border cell">Lorem ipsum dolor sit amet. <img src="icon/close.svg" alt="close"></span>
+                <span class="border cell">Lorem ipsum dolor sit amet. <img src="icon/close.svg" alt="close"></span>
+                <span class="border cell">Lorem  <img src="icon/close.svg" alt="close"></span>
+                <span class="border cell">Lorem ipsum dolor <img src="icon/close.svg" alt="close"></span>
                 <span class="border cell">Lorem ipsum dolor sit amet. <img src="icon/close.svg" alt="close"></span>
                 <span class="border cell">Lorem ipsum dolor sit amet. <img src="icon/close.svg" alt="close"></span>
                 <span class="border cell">Lorem ipsum dolor sit amet. <img src="icon/close.svg" alt="close"></span>

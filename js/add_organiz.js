@@ -30,4 +30,3 @@ function RedAuto(elem){
     elem.classList.add('red_auto');
     elem.setAttribute('placeholder', text); 
 }
-

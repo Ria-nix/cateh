@@ -3,7 +3,7 @@ body {
   color: #112742;
 }
 
-.content_set .img_organization .img_buttons, .content_set .img_organization .image, .content_set .list_competence span, .content_set .list_competence, nav .navigation span, nav .navigation .panel_buttons, nav .navigation {
+.content_set .img_organization .img_buttons, .content_set .img_organization .image, .content_set .competences span, .content_set .competences, nav .navigation span, nav .navigation .panel_buttons, nav .navigation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -131,7 +131,7 @@ body {
   color: #112742;
 }
 
-.content_set .img_organization .img_buttons, .content_set .img_organization .image, .content_set .list_competence span, .content_set .list_competence, nav .navigation span, nav .navigation .panel_buttons, nav .navigation {
+.content_set .img_organization .img_buttons, .content_set .img_organization .image, .content_set .competences span, .content_set .competences, nav .navigation span, nav .navigation .panel_buttons, nav .navigation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -513,7 +513,7 @@ body {
   color: #112742;
 }
 
-.content_set .img_organization .img_buttons, .content_set .img_organization .image, .content_set .list_competence span, .content_set .list_competence, nav .navigation, nav .navigation .panel_buttons, nav .navigation span {
+.content_set .img_organization .img_buttons, .content_set .img_organization .image, .content_set .competences span, .content_set .competences, nav .navigation, nav .navigation .panel_buttons, nav .navigation span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -740,6 +740,7 @@ body {
   border: 1px solid #939393;
 }
 .content_set .field_choice .searchable input {
+  position: relative;
   padding: 0 8% 0 2%;
   margin: 0;
   border: none;
@@ -786,7 +787,7 @@ body {
   background-color: #e8e8e8;
   color: #333;
 }
-.content_set .list_competence {
+.content_set .competences {
   min-height: 100px;
   border: 1px solid #939393;
   background: #F4F4F4;
@@ -794,7 +795,7 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-.content_set .list_competence span {
+.content_set .competences span {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -805,7 +806,7 @@ body {
   background: #FFCC00;
   margin: 1%;
 }
-.content_set .list_competence span img {
+.content_set .competences span img {
   padding: 0 0 0 10px;
   cursor: pointer;
 }
@@ -817,6 +818,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 1.5% 0;
 }
 .content_set .img_organization .image {
   width: 11rem;
@@ -942,7 +944,7 @@ body {
   }
 
   .save button {
-    margin: 0 0 0 70%;
+    margin: 0 0 2% 70%;
   }
 
   .fields_address {
@@ -977,7 +979,7 @@ body {
     width: 85%;
   }
 
-  .list_competence {
+  .competences {
     padding: 0.5%;
   }
 }
@@ -1037,7 +1039,7 @@ body {
     width: 85%;
   }
 
-  .list_competence {
+  .competences {
     padding: 2.5%;
   }
 }

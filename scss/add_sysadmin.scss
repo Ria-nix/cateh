@@ -24,6 +24,7 @@ body{ background: $fon_white; }
     .field_choice{ 
         .searchable { border: 1px solid $gray_border;            
             input {
+                position: relative;
                 padding: 0 8% 0 2%;
                 margin: 0;
                 border: none;
@@ -56,7 +57,7 @@ body{ background: $fon_white; }
         }
     }
     
-    .list_competence{
+    .competences{
         min-height: 100px;
         border: 1px solid $gray_border;
         background: $list_competence;
@@ -81,6 +82,7 @@ body{ background: $fon_white; }
         border-bottom: 1px solid $gray_border;   
         display: flex;
         align-items: center;     
+        margin: 1.5% 0;
         .img_buttons, .image{  @extend %flex_row; }
         .image{                    
             width: 11rem;
@@ -163,7 +165,7 @@ body{ background: $fon_white; }
         }
     }    
     .image{ margin: 0 5% 5% 0; box-shadow: 0 4px 10px 0 $but_shadow}
-    .save button{ margin: 0 0 0 70%; }
+    .save button{ margin: 0 0 2% 70%; }
     .fields_address{  
         display: flex;
         flex-direction: column;
@@ -175,7 +177,7 @@ body{ background: $fon_white; }
         #delete_img{ margin: 0 0 0 5%; }       
     }
     .searchable { width: 85%;}
-    .list_competence{ padding: 0.5%; }
+    .competences{ padding: 0.5%; }
 
 }
 
@@ -203,7 +205,7 @@ body{ background: $fon_white; }
     }
     .image{margin: 0 0 5% 0;}  
     .searchable { width: 85%;}  
-    .list_competence{ padding: 2.5%; }
+    .competences{ padding: 2.5%; }
 }
 // ********** MEDIA MAX 390PX *************
 @media (max-width: 390px) {
