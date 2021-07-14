@@ -22,16 +22,20 @@ body{ background: $fon_white; }
     }
     .text_width{ margin: 1% 0 auto 0;}
     .field_choice{ 
-        .searchable { border: 1px solid $gray_border;            
+        .searchable { border: 1px solid $gray_border;      position: relative;       
             input {
-                position: relative;
                 padding: 0 8% 0 2%;
                 margin: 0;
                 border: none;
                 width: 100%;
                 transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-                background: url("../icon/Polygon.svg") no-repeat right 0px center/40px 13px;
                 &::placeholder{color: rgba($blue, 0.7);}
+            }
+            #polygon{
+                position: absolute;
+                top: 13px;
+                right: 15px;
+                cursor: pointer;
             }
             ul {
                 width: 100%;
@@ -127,6 +131,9 @@ body{ background: $fon_white; }
 //******** THE OTHER SYLES *******
 .red_auto{ border-color: rgba($red,0.7); }
 .red_auto::placeholder{ color: red; }
+.rotate{ transform: translateY(-5px) rotate(180deg); }
+
+
 // ************* @MEDIA *************
 
 // ********** MEDIA MIN 1163PX *************

@@ -738,9 +738,9 @@ body {
 }
 .content_set .field_choice .searchable {
   border: 1px solid #939393;
+  position: relative;
 }
 .content_set .field_choice .searchable input {
-  position: relative;
   padding: 0 8% 0 2%;
   margin: 0;
   border: none;
@@ -749,7 +749,6 @@ body {
   transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
-  background: url("../icon/Polygon.svg") no-repeat right 0px center/40px 13px;
 }
 .content_set .field_choice .searchable input::-webkit-input-placeholder {
   color: rgba(17, 39, 66, 0.7);
@@ -765,6 +764,12 @@ body {
 }
 .content_set .field_choice .searchable input::placeholder {
   color: rgba(17, 39, 66, 0.7);
+}
+.content_set .field_choice .searchable #polygon {
+  position: absolute;
+  top: 13px;
+  right: 15px;
+  cursor: pointer;
 }
 .content_set .field_choice .searchable ul {
   width: 100%;
@@ -883,6 +888,11 @@ body {
 
 .red_auto::placeholder {
   color: red;
+}
+
+.rotate {
+  -webkit-transform: translateY(-5px) rotate(180deg);
+          transform: translateY(-5px) rotate(180deg);
 }
 
 @media (min-width: 1163px) {

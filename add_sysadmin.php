@@ -48,6 +48,9 @@
 
                 <div class="searchable border">
                     <input type="text" class=" border_none font_18" id="id_search" placeholder="Введите компетенцию">
+                    <span class="" id="polygon">
+                        <img src="icon/Polygon.svg" alt="polygon">
+                    </span>
                     <ul class="font_18 spacing none" id="list">
                         <li class="none" id="add_competence"><span><img src="icon/plus-solid.svg" alt="plus" width="15" height="15"></span> Добавить</li>               
                     </ul>                    

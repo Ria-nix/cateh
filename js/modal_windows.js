@@ -1,11 +1,13 @@
 $(document).ready(function(){
+    let polygon = document.querySelector('.searchable')
     
     //Open the modal window and check on all empty inputs
     let bool, summ_check, obj, json, arr_inputs, obj_keys;
-    $('#check_button').click(function(){ 
+    $('#check_button').click(function(){         
         arr_inputs = document.querySelectorAll(".add_info");
-        CheckInputs(arr_inputs);    
-        bool ? $('.modal_window').removeClass('none') : bool == false;     
+        CheckInputs(arr_inputs);
+        bool ? $('.modal_window').removeClass('none') : bool == false;  
+        polygon.style.position = 'none';   
     });
 
     function CheckInputs(arr_inputs){   
@@ -21,10 +23,12 @@ $(document).ready(function(){
     function isRedAuto(item_info){
         item_info.classList.add('red_auto');
         item_info.setAttribute('placeholder','Заполните поле'); 
+        
     }
     function isNoneRedAuto(item_info){
         item_info.classList.remove('red_auto');
         item_info.setAttribute('placeholder','');  
+        
     }
 
     // Modal Windows PHP files
@@ -32,6 +36,7 @@ $(document).ready(function(){
     // Close the modal window
     $('.close_button').click(function(){ 
         $('.modal_window').addClass('none');
+        polygon.style.position = 'relative';
     });
 
     // The output of data on the server to Lera or Artemy (ActionPickle.php)

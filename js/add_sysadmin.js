@@ -36,10 +36,10 @@ $(document).ready(function(){
     ];
 
     let list = document.querySelector('ul');
-    let li_list = document.querySelectorAll('.competence');
+    
     var names = [], i = 0;    
     (function isArray(){           
-        for(let elem of obj){
+        for(var elem of obj){
             for(var key in elem){}; 
             names[i] = elem.name; i++;
             let text = `<li class="competence" id="${elem.id}">${elem.name}</li>`;
@@ -48,53 +48,62 @@ $(document).ready(function(){
     }());
 
 
-    let bool = false;
-    $('#id_search').click(function(){        
-        if(!bool){ list.classList.remove('none');
+    let bool = false, polygon = document.querySelector('#polygon');
+    $('#polygon').click(function(){  
+        if(!bool){ 
+            list.classList.remove('none');
             bool = true;
+            polygon.classList.add('rotate');
         }
-        else{ list.classList.add('none');
+        else{ 
+            list.classList.add('none');
             bool = false;
+            polygon.classList.remove('rotate');
         }
     })
 
+    let search = document.querySelector('#id_search');
     // ************    ************
-    document.getElementById('id_search').addEventListener('input', (e)=>{
+    search.addEventListener('input', (e)=>{
+        let html;   
         let suggestArray = [];
-        if(e.target.value){
+        $('#add_competence').remove('none');
+        if(e.target.value.toLowerCase()){
             suggestArray = names.filter(item => item.toLowerCase().includes(e.target.value));
-            suggestArray = suggestArray.map(item => `<li>${item}</li>`);
+            suggestArray = suggestArray.map(item => `<li class="competence">${item}</li>`);
         }
-        let html;
         if(!suggestArray.length){
-            let add = $('#add_competence').remove('none');
-            html = add;
-        }
-        else if(suggestArray.length == 0){
-            suggestArray = names.filter(item => item.toLowerCase().includes(e.target.value));
-            suggestArray = suggestArray.map(item => `<li>${item}</li>`);
+            $('#add_competence').remove('none');
+            console.log(suggestArray + "2")
         }
         else{
             $('#add_competence').add('none');
             html = suggestArray.join('');
+            console.log(suggestArray + "4")
         }
+        list.classList.remove('none');
+        bool = true;
+        polygon.classList.add('rotate');
         // let html = !suggestArray.length ? $('#add_competence').remove('none') : suggestArray.join('');
 
         document.querySelector('ul').innerHTML = html;
     })
 
-    (function isChoiceOfCompetence(){
-        for(var li of li_list){ 
-            console.log(li)
-            li.addEventListener('click', function(){
-                $('#search_competence').val(li);
-                console.log('li up') //?
-            })
+    (function isChoice(){
+        let li_list = document.querySelectorAll('.competence');
+        consoke,k
+        for(let list of li_list){ 
+            console.log(list.innerHTML); 
         }
+        list.addEventListener('click', function(){
+            $('#id_search').val(list.innerHTML);
+            console.log('li up') 
+
+        })
+    }());
+    
         
        
-    }());
-
 
 
     // function ShowElements(suggestArray){
