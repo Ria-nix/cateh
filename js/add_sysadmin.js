@@ -32,6 +32,14 @@ $(document).ready(function(){
             "id": "8",
             "name": "Ведение технической  448884484 документации"
         },   
+        {
+            "id": "9",
+            "name": "delete документации"
+        },
+        {
+            "id": "10",
+            "name": "hellow friends технической  448884484 документации"
+        },  
 
     ];
 
@@ -66,41 +74,41 @@ $(document).ready(function(){
 
 
     // ************    ************
-    let add = document.querySelector('.add_competence');
+    let add = document.querySelector('.addcompetence');
     let search = document.querySelector('#id_search');
-    if(search){ search.addEventListener('input', (e)=>{
-        let html;   
-        let suggestArray = [];
-        if(e.target.value.toLowerCase()){
-            suggestArray = names.filter(item => item.toLowerCase().includes(e.target.value));
-            suggestArray = suggestArray.map(item => `<li class="competence">${item}</li>`);
-        }
-        
-        if(!suggestArray){
-            console.log('nopt')
-            // if(suggestArray != '' ){
-            //     // add.classList.remove('none');
-            //     console.log( "401: вывод всего списка")
-            // }
-            // else if(suggestArray == '' && suggestArray.length == 0){
-            //     console.log('404: вывод ДОБАВИТЬ ');
-            // }
-            // // add.classList.remove('none');
-            // console.log( "401: вывод всего списка")
-        }
-        else{
-            add.classList.add('none');
-            html = suggestArray.join('');
-            console.log("101")
-        } 
-        console.log(suggestArray.length);
-        
-        // let html = !suggestArray.length ? $('#add_competence').remove('none') : suggestArray.join('');
-        list.classList.remove('none');
-        bool = true;
-        polygon.classList.add('rotate');
-        document.querySelector('ul').innerHTML = html;
+    if(search){ 
+        let suggestArray = [], html;
+        search.addEventListener('input', (e)=>{
+            if(e.target.value.toLowerCase()){
+                console.log(e.target.value);
+                suggestArray = names.filter(item => item.toLowerCase().includes(e.target.value));
+                suggestArray = suggestArray.map(item => `<li class="competence">${item}</li>`);
+            }        
+
+            if(suggestArray.length == 0){
+
+                if(search.value != '' ){ 
+                    // console.log('add')
+                    add.classList.remove('none');
+                }
+                else{ 
+                    // console.log('output list')
+                    // document.querySelector('ul').innerHTML = html;
+                    add.classList.add('none');
+                }
+            }
+            else{
+                add.classList.add('none');
+                html = suggestArray.join('');
+            } 
+
+            list.classList.remove('none');
+            bool = true;
+            polygon.classList.add('rotate');
+            document.querySelector('ul').innerHTML = html;
         })
+
+        
     }
    
 
@@ -116,6 +124,7 @@ $(document).ready(function(){
     
         
        
+            // let html = !suggestArray.length ? $('#add_competence').remove('none') : suggestArray.join('');
 
 
     // function ShowElements(suggestArray){

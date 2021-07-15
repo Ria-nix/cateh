@@ -52,7 +52,7 @@
                         <img src="icon/Polygon.svg" alt="polygon">
                     </span>
                     <ul class="font_18 spacing none" id="list">
-                        <li class="none add_competence" ><span><img src="icon/plus-solid.svg" alt="plus" width="15" height="15"></span> Добавить</li>               
+                        <li class="none addcompetence" ><span><img src="icon/plus-solid.svg" alt="plus" width="15" height="15"></span> Добавить</li>               
                     </ul>                    
                 </div>
             </div>
@@ -62,7 +62,7 @@
                 <span class="border cell">Lorem ipsum dolor sit amet. <img src="icon/close.svg" alt="close"></span>
                 <span class="border cell">Lorem ipsum dolor sit amet. <img src="icon/close.svg" alt="close"></span>
                 <span class="border cell">Lorem ipsum dolor sit amet. <img src="icon/close.svg" alt="close"></span>
-                <span class="border cell">Lorem  <img src="icon/close.svg" alt="close"></span>
+                <span class="border cell">Lorem  Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio sapiente, libero eius eveniet tempore molestiae?    <img src="icon/close.svg" alt="close"></span>
                 <span class="border cell">Lorem ipsum dolor <img src="icon/close.svg" alt="close"></span>
                 <span class="border cell">Lorem ipsum dolor sit amet. <img src="icon/close.svg" alt="close"></span>
                 <span class="border cell">Lorem ipsum dolor sit amet. <img src="icon/close.svg" alt="close"></span>
