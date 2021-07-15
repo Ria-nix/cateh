@@ -38,15 +38,15 @@ $(document).ready(function(){
     let list = document.querySelector('ul');
     
     var names = [], i = 0;    
-    (function isArray(){           
+    function isArray(){           
         for(var elem of obj){
             for(var key in elem){}; 
             names[i] = elem.name; i++;
             let text = `<li class="competence" id="${elem.id}">${elem.name}</li>`;
             $('#list').append(text);
         }
-    }());
-
+    };
+    isArray()
 
     let bool = false, polygon = document.querySelector('#polygon');
     $('#polygon').click(function(){  
@@ -62,39 +62,51 @@ $(document).ready(function(){
         }
     })
 
-    let search = document.querySelector('#id_search');
+
+
+
     // ************    ************
-    search.addEventListener('input', (e)=>{
+    let add = document.querySelector('.add_competence');
+    let search = document.querySelector('#id_search');
+    if(search){ search.addEventListener('input', (e)=>{
         let html;   
         let suggestArray = [];
-        $('#add_competence').remove('none');
         if(e.target.value.toLowerCase()){
             suggestArray = names.filter(item => item.toLowerCase().includes(e.target.value));
             suggestArray = suggestArray.map(item => `<li class="competence">${item}</li>`);
         }
-        if(!suggestArray.length){
-            $('#add_competence').remove('none');
-            console.log(suggestArray + "2")
+        
+        if(!suggestArray){
+            console.log('nopt')
+            // if(suggestArray != '' ){
+            //     // add.classList.remove('none');
+            //     console.log( "401: вывод всего списка")
+            // }
+            // else if(suggestArray == '' && suggestArray.length == 0){
+            //     console.log('404: вывод ДОБАВИТЬ ');
+            // }
+            // // add.classList.remove('none');
+            // console.log( "401: вывод всего списка")
         }
         else{
-            $('#add_competence').add('none');
+            add.classList.add('none');
             html = suggestArray.join('');
-            console.log(suggestArray + "4")
-        }
+            console.log("101")
+        } 
+        console.log(suggestArray.length);
+        
+        // let html = !suggestArray.length ? $('#add_competence').remove('none') : suggestArray.join('');
         list.classList.remove('none');
         bool = true;
         polygon.classList.add('rotate');
-        // let html = !suggestArray.length ? $('#add_competence').remove('none') : suggestArray.join('');
-
         document.querySelector('ul').innerHTML = html;
-    })
+        })
+    }
+   
 
     (function isChoice(){
         let li_list = document.querySelectorAll('.competence');
-        consoke,k
-        for(let list of li_list){ 
-            console.log(list.innerHTML); 
-        }
+        for(let list of li_list){ }
         list.addEventListener('click', function(){
             $('#id_search').val(list.innerHTML);
             console.log('li up') 

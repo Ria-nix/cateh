@@ -52,7 +52,7 @@
                         <img src="icon/Polygon.svg" alt="polygon">
                     </span>
                     <ul class="font_18 spacing none" id="list">
-                        <li class="none" id="add_competence"><span><img src="icon/plus-solid.svg" alt="plus" width="15" height="15"></span> Добавить</li>               
+                        <li class="none add_competence" ><span><img src="icon/plus-solid.svg" alt="plus" width="15" height="15"></span> Добавить</li>               
                     </ul>                    
                 </div>
             </div>
