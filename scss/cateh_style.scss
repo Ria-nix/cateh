@@ -70,11 +70,9 @@ input{
     letter-spacing: 1px;
     color: $blue;
     outline: none; /* remove focus around input*/
+    &::placeholder{font-size: 16px; color:rgba(17, 39, 66, 0.65)}
+    &:focus{ border-color: $light_blue; }
 }
-input:focus{
-    border-color: $light_blue;
-}
-
 // TEXT STYLE
 .spacing{ letter-spacing: 0.5px;}
 .bold{ font-weight: bold;}
@@ -99,14 +97,7 @@ input:focus{
 .grid{ display: grid; }
 
 // ************* @MEDIA *************
-
-// ********** MEDIA MIN 510PX *************
-@media (min-width: 510px) {    
-    input:placeholder{ font-size: 18px; }
+// ********** MEDIA MIN 510px *************
+@media (max-width: 510px) {    
+    
 }
-
-// ********** MEDIA MAX 510px *************
-@media (max-width: 510px) {
-    input:placeholder{ font-size: 16px; }
-}
- 

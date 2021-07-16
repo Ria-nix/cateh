@@ -20,7 +20,7 @@
 
             <div class="main_fields">
                 <label for="login">Логин</label>
-                <input type="text" id="login" class="add_info" placeholder="MichaelSysAdmin">
+                <input type="text" id="login" class="add_info" placeholder="email@gmail.com">
             </div>
 
             <div class="main_fields">
