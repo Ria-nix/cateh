@@ -57,8 +57,7 @@ nav{
                 }
                 span::before{
                     transform: translateY(-11px);
-                }
-               
+                }               
             }  
             .toggle_but.close span{
                 background: transparent;
@@ -68,8 +67,7 @@ nav{
             }
             .toggle_but.close span::before{
                 transform: rotate(-45deg);
-            }      
-            
+            }                  
         }
 
         // PANEL BUTTONS
@@ -82,24 +80,19 @@ nav{
         span{         
             @extend %flex_row;  
             justify-content: space-around; 
-            &:hover{ 
-                border: 2px solid $light_blue;
-                box-shadow: none;
-            }
             img{ object-fit: contain; }
         }
 
         // SIZES FOR ALL BUTTONS
         .main{
             padding: 3px 8px;
-            margin: 0px 1% 0px 0px;
-            
+            margin: 0px 1% 0px 0px;            
 
             img{
                 width: 45px;
                 height: 38px;
             }
-            }
+        }
         .plus{
             padding: 10px 10px;
             margin: 0px 3.5% 0px 0px;
