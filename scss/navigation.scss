@@ -43,6 +43,7 @@ nav{
                     background: $blue;
                     position: absolute;
                     transform: translate(30%, 400%);
+                    &:hover{ border: 1px solid $light_blue;}
                 }
                 span::after, span::before{
                     content: "";
@@ -80,15 +81,19 @@ nav{
         }  
         span{         
             @extend %flex_row;  
-            justify-content: space-around;     
-
+            justify-content: space-around; 
+            &:hover{ 
+                border: 2px solid $light_blue;
+                box-shadow: none;
+            }
             img{ object-fit: contain; }
         }
 
         // SIZES FOR ALL BUTTONS
         .main{
-            padding: 5px 10px;
+            padding: 3px 8px;
             margin: 0px 1% 0px 0px;
+            
 
             img{
                 width: 45px;
