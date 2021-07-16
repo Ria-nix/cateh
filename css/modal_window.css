@@ -42,6 +42,10 @@ input {
   /* remove focus around input*/
 }
 
+input:focus {
+  border-color: #1AC1F5;
+}
+
 .spacing {
   letter-spacing: 0.5px;
 }
@@ -105,6 +109,16 @@ input {
   display: grid;
 }
 
+@media (min-width: 510px) {
+  input:placeholder {
+    font-size: 18px;
+  }
+}
+@media (max-width: 510px) {
+  input:placeholder {
+    font-size: 16px;
+  }
+}
 body {
   width: 100%;
   height: 100%;

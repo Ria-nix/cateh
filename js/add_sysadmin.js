@@ -74,7 +74,7 @@ $(document).ready(function(){
 
     // ******************************************************* */
     if(search){ 
-        var suggestArray = [], html, text_name;
+        var suggestArray = [], html, text;
         search.addEventListener('keyup', (e)=>{
                 suggestArray = names.filter(item => item.toLowerCase().includes(e.target.value));
                 suggestArray = suggestArray.map(item => `<li class="competence">${item}</li>`);
@@ -86,8 +86,8 @@ $(document).ready(function(){
                 }
                 else{ 
                     suggestArray.splice(0, suggestArray.length);
-                    text_name = '<li class="addcompetence" ><span><img src="icon/plus-solid.svg" alt="plus" width="15" height="15"> Добавить</span> </li>';
-                    suggestArray.unshift(text_name);       
+                    text = '<li class="addcompetence" ><span><img src="icon/plus-solid.svg" alt="plus" width="15" height="15"> Добавить</span> </li>';
+                    suggestArray.unshift(text);       
                     html = suggestArray.join(''); 
                 }
             }
@@ -97,51 +97,26 @@ $(document).ready(function(){
         })
     }
 
+    let competence_container = document.querySelector('.competences');
     (function isChoice(){
-        let li_list = document.querySelectorAll('.competence');
-        let list_of_li = [];
-        for(let li of li_list){ list_of_li.push(li) }
-        list_of_li.map(item => item.innerHTML);
-        for(var items of list_of_li){ console.log(items)}
-        console.log(list_of_li)
+        let full_list = document.querySelectorAll('.competence');
+        let arr_list_li = [];
+        for(let item_li of full_list){ arr_list_li.push(item_li) }
+        arr_list_li.map(item => item.innerHTML);
+        for(var items of arr_list_li){ console.log(items)}
+        console.log(arr_list_li)
         items.addEventListener('click', function(){
         
-            for(var li_item of list_of_li){ console.log(li_item)}
+            for(var li_item of arr_list_li){ console.log(li_item)}
             console.log('li up') 
             
-            search.value = items.innerHTML;
+            // search.value = items.innerHTML;
+            // let competence_item = `<span class="border cell">${items.innerHTML}<img src="icon/close.svg" alt="close"></span>`
+            // competence_container.children(competence_item);
         })
             
     }());
     
-
-
-    
-    // ************ Output assumptions on the first characters of assumptions *******
-    // let search_input = document.querySelector('#list_competence');
-    // let suggestionsPanel = document.querySelector('#list');
-    // let li_add = document.querySelector('#add_competence');
-
-    // search_input.addEventListener('keyup', function(){
-    //     input = search_input.value;
-    //     // suggestionsPanel.innerHTML = '';
-    //     $('#add_competence').remove('none');
-    //     suggestions = obj.filter(function(item_arr){
-    //         return item_arr.name.toLowerCase().startsWith(input);
-    //     })
-    //     isCreateElement(suggestions);
-    //     suggestions.forEach(function(item_seg){
-    //         text = document.createElement('li');
-    //         text.innerHTML = item_seg.name;
-    //         text.id = item_seg.id;
-    //         suggestionsPanel.append(text);
-    //     })
-    //     if(input === ''){
-    //         suggestionsPanel.innerHTML = ''; 
-    //         li_add.classList.remove('none');
-    //     }
-    // })
-
 
 
 

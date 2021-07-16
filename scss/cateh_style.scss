@@ -12,6 +12,7 @@ $fon_table: #EDEDED;
 $line: #B2B2B2;
 $cell_gray: #DBDBDB;
 $list_competence: #F4F4F4;
+$light_blue: #1AC1F5;
 
 // COLORS FOR RAITING
 $light_red: #FF8E9B;
@@ -65,6 +66,9 @@ input{
     color: $blue;
     outline: none; /* remove focus around input*/
 }
+input:focus{
+    border-color: $light_blue;
+}
 
 // TEXT STYLE
 .spacing{ letter-spacing: 0.5px;}
@@ -89,5 +93,15 @@ input{
 .opacity_none{ opacity: 0; }
 .grid{ display: grid; }
 
+// ************* @MEDIA *************
 
+// ********** MEDIA MIN 510PX *************
+@media (min-width: 510px) {    
+    input:placeholder{ font-size: 18px; }
+}
 
+// ********** MEDIA MAX 510px *************
+@media (max-width: 510px) {
+    input:placeholder{ font-size: 16px; }
+}
+ 

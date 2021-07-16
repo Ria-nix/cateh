@@ -20,27 +20,27 @@
 
             <div class="main_fields">
                 <label for="login">Логин</label>
-                <input type="text" id="login" class="add_info">
+                <input type="text" id="login" class="add_info" placeholder="MichaelSysAdmin">
             </div>
 
             <div class="main_fields">
                 <label for="password">Пароль</label>
-                <input type="text" id="password" class="add_info">
+                <input type="text" id="password" class="add_info" placeholder="123*****89">
             </div>
 
             <div class="main_fields">
                 <label for="name">Имя</label>
-                <input type="text" id="name" class="add_info">
+                <input type="text" id="name" class="add_info" placeholder="Михаил">
             </div>
 
             <div class="main_fields">
                 <label for="surname">Фамилия</label>
-                <input type="text" id="surname" class="add_info">
+                <input type="text" id="surname" class="add_info" placeholder="Куприн">
             </div>
 
             <div class="main_fields">
                 <label for="tel_number">Номер телефона</label>
-                <input type="text" id="tel_number" class="add_info">
+                <input type="text" id="tel_number" class="add_info" placeholder="+7(***)*** - ** - **">
             </div>
 
             <div class="field_choice main_fields">
@@ -51,9 +51,7 @@
                     <span class="" id="polygon">
                         <img src="icon/Polygon.svg" alt="polygon">
                     </span>
-                    <ul class="font_18 spacing none" id="list">
-                                       
-                    </ul>                    
+                    <ul class="font_18 spacing none" id="list"></ul>                    
                 </div>
             </div>
             <div class="competences border">
