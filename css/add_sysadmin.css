@@ -858,6 +858,7 @@ body {
 /* width */
 .searchable ul::-webkit-scrollbar {
   width: 8px;
+  margin: 0 0 15px 0;
 }
 
 /* Handle */

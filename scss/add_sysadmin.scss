@@ -120,7 +120,7 @@ body{ background: $fon_white; }
 }
 //******* SCROLL BAR *******
 /* width */
-.searchable ul::-webkit-scrollbar { width: 8px; }
+.searchable ul::-webkit-scrollbar { width: 8px; margin: 0 0 15px 0;}
     
 /* Handle */
 .searchable ul::-webkit-scrollbar-thumb {

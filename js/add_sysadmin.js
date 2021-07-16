@@ -46,101 +46,74 @@ $(document).ready(function(){
     let list = document.querySelector('ul');
     
     var names = [], i = 0;    
-    function isArray(){           
+    (function isArray(){           
         for(var elem of obj){
-            for(var key in elem){}; 
+            for(var key in elem){};  
             names[i] = elem.name; i++;
             let text = `<li class="competence" id="${elem.id}">${elem.name}</li>`;
             $('#list').append(text);
         }
-    };
-    isArray()
+    }());
 
     let bool = false, polygon = document.querySelector('#polygon');
-    $('#polygon').click(function(){  
-        if(!bool){ 
-            list.classList.remove('none');
-            bool = true;
-            polygon.classList.add('rotate');
-        }
-        else{ 
+    $('#polygon').click(function(){ !bool ? isOpenPolygon() : isClosePolygon() });
+
+    function isClosePolygon(){
             list.classList.add('none');
             bool = false;
             polygon.classList.remove('rotate');
-        }
-    })
-
-
-
+    }
+    function isOpenPolygon(){
+        list.classList.remove('none');
+        bool = true;
+        polygon.classList.add('rotate');
+    }
 
     // ************    ************
-    let add = document.querySelector('.addcompetence');
     let search = document.querySelector('#id_search');
+
+    // ******************************************************* */
     if(search){ 
-        let suggestArray = [], html;
-        search.addEventListener('input', (e)=>{
-            if(e.target.value.toLowerCase()){
-                console.log(e.target.value);
+        var suggestArray = [], html, text_name;
+        search.addEventListener('keyup', (e)=>{
                 suggestArray = names.filter(item => item.toLowerCase().includes(e.target.value));
                 suggestArray = suggestArray.map(item => `<li class="competence">${item}</li>`);
-            }        
 
-            if(suggestArray.length == 0){
-
-                if(search.value != '' ){ 
-                    // console.log('add')
-                    add.classList.remove('none');
+            if(!suggestArray.length){
+                if(!search.value){ 
+                    isClosePolygon();
+                    html = suggestArray;
                 }
                 else{ 
-                    // console.log('output list')
-                    // document.querySelector('ul').innerHTML = html;
-                    add.classList.add('none');
+                    suggestArray.splice(0, suggestArray.length);
+                    text_name = '<li class="addcompetence" ><span><img src="icon/plus-solid.svg" alt="plus" width="15" height="15"> Добавить</span> </li>';
+                    suggestArray.unshift(text_name);       
+                    html = suggestArray.join(''); 
                 }
             }
-            else{
-                add.classList.add('none');
-                html = suggestArray.join('');
-            } 
-
-            list.classList.remove('none');
-            bool = true;
-            polygon.classList.add('rotate');
-            document.querySelector('ul').innerHTML = html;
+            else{ html = suggestArray.join(''); } 
+            isOpenPolygon();
+            list.innerHTML = html;
         })
-
-        
     }
-   
 
     (function isChoice(){
         let li_list = document.querySelectorAll('.competence');
-        for(let list of li_list){ }
-        list.addEventListener('click', function(){
-            $('#id_search').val(list.innerHTML);
+        let list_of_li = [];
+        for(let li of li_list){ list_of_li.push(li) }
+        list_of_li.map(item => item.innerHTML);
+        for(var items of list_of_li){ console.log(items)}
+        console.log(list_of_li)
+        items.addEventListener('click', function(){
+        
+            for(var li_item of list_of_li){ console.log(li_item)}
             console.log('li up') 
-
+            
+            search.value = items.innerHTML;
         })
+            
     }());
     
-        
-       
-            // let html = !suggestArray.length ? $('#add_competence').remove('none') : suggestArray.join('');
-
-
-    // function ShowElements(suggestArray){
-
-       
-        // for(var elem in suggestArray){ }
-        // console.log(elem.length)
-      
-        // suggestArray.forEach(function(item_seg){
-            // text = document.createElement('li');
-            // text.innerHTML = suggestArray.elem;
-            // text.id = suggestArray.id;
-            // suggestionsPanel.append(text);
-        // })
-    // }
-
 
 
     
