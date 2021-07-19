@@ -84,8 +84,7 @@ $(document).ready(function(){
                 else{ 
                     suggestArray.splice(0, suggestArray.length);
                     text_search = '<li class="add_competence"><span class="add_competence"><img src="icon/plus-solid.svg" alt="plus" width="15" height="15"> Добавить</span> </li>';
-                    suggestArray.unshift(text_search);    
-                    addCompetence();   
+                    suggestArray.unshift(text_search);                   
                     html = suggestArray.join('');                    
                 }
             }
@@ -115,13 +114,13 @@ $(document).ready(function(){
                     search.value = item_click.innerHTML;         
                     text_competence = '<span class="border cell register" id="">' + search.value + '<img src="icon/close.svg" alt="close"></span>' ;
                     $(".competences").append(text_competence);
-                    console.log(container)
                 }               
             })
         }
     }
 
     let add_but = document.querySelectorAll('.add_competence');
+    
     function addCompetence(){
         for(var item_add of add_but){ console.log(item_add)}
         // item_add.addEventListener('click', function(){
