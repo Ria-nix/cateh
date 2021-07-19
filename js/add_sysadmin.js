@@ -74,8 +74,7 @@ $(document).ready(function(){
         var suggestArray = [], html, text_search;
         search.addEventListener('keyup', (e)=>{
                 suggestArray = names.filter(item_click => item_click.toLowerCase().includes(e.target.value.toLowerCase()));
-                suggestArray = suggestArray.map(item_click => `<li class="competence">${item_click}</li>`);
-                
+                suggestArray = suggestArray.map(item_click => `<li class="competence">${item_click}</li>`);                
             if(!suggestArray.length){
                 if(!search.value){ 
                     isClosePolygon();
@@ -85,9 +84,9 @@ $(document).ready(function(){
                 else{ 
                     suggestArray.splice(0, suggestArray.length);
                     text_search = '<li class="add_competence"><span class="add_competence"><img src="icon/plus-solid.svg" alt="plus" width="15" height="15"> Добавить</span> </li>';
-                    suggestArray.unshift(text_search);       
-                    html = suggestArray.join(''); 
-                    addCompetence();
+                    suggestArray.unshift(text_search);    
+                    addCompetence();   
+                    html = suggestArray.join('');                    
                 }
             }
             else{ html = suggestArray.join(''); }             
@@ -99,7 +98,7 @@ $(document).ready(function(){
 
     // ************ CHOICE OF COMPETENCE  ************
     let container = document.querySelector('.competences');
-    let add_but = document.querySelectorAll('.add_competence');
+    
 
     function isChoice(){
         let text_competence, sum = 0, j = 0, id = [];
@@ -109,7 +108,6 @@ $(document).ready(function(){
         //     for(let key in rem){};  
         //     id[i] = rem.id; j++;
         // } 
-
 
         for(let item_click of fall_list){ 
             item_click.addEventListener('click', function(){
@@ -123,19 +121,20 @@ $(document).ready(function(){
         }
     }
 
+    let add_but = document.querySelectorAll('.add_competence');
     function addCompetence(){
-        for(let item_add of add_but){}
-        item_add.addEventListener('click', function(){
+        for(var item_add of add_but){ console.log(item_add)}
+        // item_add.addEventListener('click', function(){
             console.log('click')
-            if(item_click){
-                search.value = item_click.innerHTML;         
-                text_competence = '<span class="border cell unregister">' + search.value + '<img src="icon/close.svg" alt="close"></span>' ;
-                $(".competences").append(text_competence);
-                console.log(container)
-            }               
-        })
+            // if(item_click){
+            //     search.value = item_click.innerHTML;         
+            //     text_competence = '<span class="border cell unregister">' + search.value + '<img src="icon/close.svg" alt="close"></span>' ;
+            //     $(".competences").append(text_competence);
+            //     console.log(container)
+            // }               
+        // })
     };
-
+    // addCompetence();
        // remove the cell
     // (function isRemoveCell(){        
     //     console.log('work')
