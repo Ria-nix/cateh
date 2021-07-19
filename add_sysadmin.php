@@ -54,10 +54,8 @@
                     <ul class="font_18 spacing none" id="list"></ul>                    
                 </div>
             </div>
-            <div class="competences border">
-                <span class="border cell">Lorem ipsum dolor sit, amet consectetur adipisicing elit  <img src="icon/close.svg" alt="close"></span>
-            </div>
-
+            <div class="competences border"></div>
+            <!-- <span class="border cell"><img src="icon/close.svg" alt="close"></span> -->
             <div class="img_organization">
                 <div class="image border">
                     <img class="logo border" src="icon/michael.jpg" alt="logo">

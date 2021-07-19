@@ -834,7 +834,7 @@ body {
   position: relative;
 }
 .content_set .field_choice .searchable input {
-  padding: 0 8% 0 2%;
+  padding: 0 11% 0 2%;
   margin: 0;
   border: none;
   width: 100%;
@@ -931,9 +931,6 @@ body {
 .content_set .fields_address {
   height: auto;
   padding: 0;
-}
-.content_set #id_search {
-  text-transform: lowercase;
 }
 
 /* width */

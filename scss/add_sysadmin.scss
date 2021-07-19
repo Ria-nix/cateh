@@ -24,7 +24,7 @@ body{ background: $fon_white; }
     .field_choice{ 
         .searchable { border: 1px solid $gray_border;      position: relative;       
             input {
-                padding: 0 8% 0 2%;
+                padding: 0 11% 0 2%;
                 margin: 0;
                 border: none;
                 width: 100%;
@@ -116,7 +116,6 @@ body{ background: $fon_white; }
         height: auto;
         padding: 0;          
     }
-    #id_search{ text-transform: lowercase;}
 }
 //******* SCROLL BAR *******
 /* width */
