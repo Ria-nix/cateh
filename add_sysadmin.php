@@ -12,6 +12,8 @@
 <body>
 <?php include_once('navigation.php');?></nav>
 <?php include_once('modal windows/question_window.php'); ?>
+<?php include_once('modal windows/error_window.php'); ?>
+<?php include_once('modal windows/success_window.php'); ?>
 
     <!-- CONTENT -->
     <div class="content_wrap">
@@ -45,7 +47,6 @@
 
             <div class="field_choice main_fields">
                 <label for="address" class="text_width">Добавьте компетенцию</label>
-
                 <div class="searchable border">
                     <input type="text" class=" border_none font_18" id="id_search" placeholder="Введите компетенцию">
                     <span class="" id="polygon">
@@ -55,7 +56,6 @@
                 </div>
             </div>
             <div class="competences border"></div>
-            <!-- <span class="border cell"><img src="icon/close.svg" alt="close"></span> -->
             <div class="img_organization">
                 <div class="image border">
                     <img class="logo border" src="icon/michael.jpg" alt="logo">

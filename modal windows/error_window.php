@@ -1,7 +1,7 @@
-<div class="modal_window">
+<div class="modal_window none">
     <div class="window_wrap border">
         <img src="icon/x-mark.svg" alt="question">
-        <p class="font_18">Вы точно хотите добавить нового системного администратора?</p>
+        <p class="font_18"><?php  $error; ?></p>
         <button class="button border font_18 close">Закрыть</button>
     </div>
 </div>
