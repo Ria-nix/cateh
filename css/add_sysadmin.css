@@ -932,6 +932,9 @@ body {
   height: auto;
   padding: 0;
 }
+.content_set #id_search {
+  text-transform: lowercase;
+}
 
 /* width */
 .searchable ul::-webkit-scrollbar {

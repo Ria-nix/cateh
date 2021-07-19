@@ -43,8 +43,7 @@ $(document).ready(function(){
 
     ];
 
-    let list = document.querySelector('ul');
-    
+    let list = document.querySelector('ul');    
     var names = [], i = 0;    
     (function isArray(){           
         for(var elem of obj){
@@ -52,8 +51,7 @@ $(document).ready(function(){
             names[i] = elem.name; i++;
             let text = `<li class="competence" id="${elem.id}">${elem.name}</li>`;
             $('#list').append(text);
-        }
-    }());
+    }}());
 
     let bool = false, polygon = document.querySelector('#polygon');
     $('#polygon').click(function(){ !bool ? isOpenPolygon() : isClosePolygon() });
@@ -71,51 +69,44 @@ $(document).ready(function(){
 
     // ************    ************
     let search = document.querySelector('#id_search');
-
-    // ******************************************************* */
     if(search){ 
-        var suggestArray = [], html, text;
+        var suggestArray = [], html, text, full_list;
         search.addEventListener('keyup', (e)=>{
-                suggestArray = names.filter(item => item.toLowerCase().includes(e.target.value));
+                console.log(e.target.value)
+                suggestArray = names.filter(item => item.toLowerCase().includes(e.target.value.toLowerCase()));
                 suggestArray = suggestArray.map(item => `<li class="competence">${item}</li>`);
 
             if(!suggestArray.length){
-                if(!search.value){ 
-                    isClosePolygon();
+                if(!search.value){ isClosePolygon();
                     html = suggestArray;
                 }
                 else{ 
                     suggestArray.splice(0, suggestArray.length);
-                    text = '<li class="addcompetence" ><span><img src="icon/plus-solid.svg" alt="plus" width="15" height="15"> Добавить</span> </li>';
+                    text = '<li class="addcompetence"><span><img src="icon/plus-solid.svg" alt="plus" width="15" height="15"> Добавить</span> </li>';
                     suggestArray.unshift(text);       
                     html = suggestArray.join(''); 
                 }
             }
             else{ html = suggestArray.join(''); } 
-            isOpenPolygon();
+            full_list = document.querySelectorAll('.competence');
+            isOpenPolygon(); 
             list.innerHTML = html;
+            isChoice(full_list);
         })
     }
 
-    let competence_container = document.querySelector('.competences');
-    (function isChoice(){
-        let full_list = document.querySelectorAll('.competence');
-        let arr_list_li = [];
-        for(let item_li of full_list){ arr_list_li.push(item_li) }
-        arr_list_li.map(item => item.innerHTML);
-        for(var items of arr_list_li){ console.log(items)}
-        console.log(arr_list_li)
-        items.addEventListener('click', function(){
+    function isChoice(full_list){
+        // console.log(full_list)
+        for(var item_click of full_list){ 
+            //  item_click.addEventListener('click', function(){
         
-            for(var li_item of arr_list_li){ console.log(li_item)}
-            console.log('li up') 
+                // console.log(full_list, item_click) 
+                
+            // })
+        }
+       
             
-            // search.value = items.innerHTML;
-            // let competence_item = `<span class="border cell">${items.innerHTML}<img src="icon/close.svg" alt="close"></span>`
-            // competence_container.children(competence_item);
-        })
-            
-    }());
+    };
     
 
 
