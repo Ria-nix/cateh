@@ -36,9 +36,16 @@ $(document).ready(function(){
     let input = document.querySelector('#input_file');
     input.addEventListener('change',function(){    
         let file = input.files[0];
-        console.log(file.name + '\n' + file.size);
+        let reader = new FileReader();
+        console.log(file.name + "\n" + file.size + "\n" + file.type)
+        reader.readAsText(file);
+        reader.onerror = function() {
+            console.log(reader.error);
+        };
     })
+    function readFile(){
 
+    }
     
 
 
