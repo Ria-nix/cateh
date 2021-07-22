@@ -19,15 +19,15 @@
         <div class="content_set">
             <div class="name_organization">
                 <label for="name">Название <br> организации</label>
-                <input type="text" id="name" class="add_info">
+                <input type="text" id="name" class="add_info json">
             </div>
             <div class="inn_organization">
                 <label for="inn">ИНН</label>
-                <input type="text" id="inn" class="add_info">
+                <input type="text" id="inn" class="add_info json">
             </div>
             <div class="adress_organization">
                 <label for="address">Адрес</label>
-                <input type="text" id="address" class="text_address add_info">
+                <input type="text" id="address" class="text_address add_info address">
                 <div class="mobile_fields_address"></div>
                 <span class="button border" id="add_address">
                     <img src="icon/plus-solid.svg" alt="plus_solid"> 
