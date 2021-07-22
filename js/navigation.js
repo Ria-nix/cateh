@@ -60,7 +60,7 @@ $('#input_file').on('change',function(ev){
     
     fr.onload = function(ev2) {
         console.log(ev2);
-        $('.logo').attr('src', ev2.target.result);
+        $('.logo_second').attr('src', ev2.target.result);
     };
     console.log(f + " " + fr);
     fr.readAsDataURL(f);
@@ -68,3 +68,5 @@ $('#input_file').on('change',function(ev){
     console.log($('#input_file').val());
     
 })
+
+

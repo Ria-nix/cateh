@@ -10,14 +10,17 @@
     <title><?php echo $settings ?></title>
 </head>
 <body>
-    <?php include('navigation.php');?>
-    </nav>
+    <?php include('navigation.php');?></nav>
+    <?php include_once('modal windows/question_window.php'); ?>
+    <?php include_once('modal windows/error_window.php'); ?>
+    <?php include_once('modal windows/success_window.php'); ?>
+
     <div class="content_wrap">
         <p class="font_24 bold">Настройки</p>
         <div class="content_set">
             <div class="name_organization">
                 <label for="name">Название <br> организации</label>
-                <input type="text" id="name" class="border">
+                <input type="text" id="name" class="border add_info">
             </div>
             <div class="img_organization">
                 <div class="image border">
@@ -29,11 +32,12 @@
                 </div>
             </div>
             <div class="save">
-                <button class="button border font_16">Сохранить</button>
+                <button class="button border font_16" id="check_button">Сохранить</button>
             </div>
         </div>
     </div>
     <script src="js/settings.js"></script>
+    <script src="js/modal_windows.js"></script>
     <script src="<?php  echo $navigation_panel ?>"></script> 
 </body>
 </html>

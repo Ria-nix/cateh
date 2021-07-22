@@ -1,4 +1,4 @@
-<div class="modal_window none">
+<div class="modal_window error none">
     <div class="window_wrap border">
         <img src="icon/x-mark.svg" alt="question">
         <p class="font_18"><?php  $error; ?></p>

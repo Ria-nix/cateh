@@ -6,8 +6,8 @@ $(document).ready(function(){
     $('#check_button').click(function(){         
         arr_inputs = document.querySelectorAll(".add_info");
         CheckInputs(arr_inputs);
-        bool ? $('.modal_window').removeClass('none') : bool == false;  
-        polygon.style.position = 'none';   
+        bool ? $('.question').removeClass('none') : bool == false;  
+        // polygon.style.position = 'none';   
     });
 
     function CheckInputs(arr_inputs){   
@@ -36,24 +36,37 @@ $(document).ready(function(){
     // Close the modal window
     $('.close_button').click(function(){ 
         $('.modal_window').addClass('none');
-        polygon.style.position = 'relative';
+        // polygon.style.position = 'relative';
     });
 
-    // The output of data on the server to Lera or Artemy (ActionPickle.php)
-    $('.add_button').click(function(){
+    // The output of data on the server to Artemy (ActionPickle.php)
+    // $('.add_button').click(function(){
         json = document.querySelectorAll(".add_info"); 
+        console.log(json)
         obj = {};
-        // obj_keys = ["name_organ", "inn", "addresses", "img"];
-        obj_keys = ["name_organ", "inn", "addresses"];
+        obj_keys = ["name_organ", "inn", "addresses", "img"];
         
-        json.forEach(function(item, index){  
+        json.forEach(function(item){  
             for(var elem of obj_keys){
-                obj[elem] = item;
+               
                 console.log(obj)
-            }            
+            }        
+            obj[elem] = item;    
         })
         console.log(obj); 
-    });
+
+        // $.ajax({
+        //     type: "POST",
+        //     data: { },
+        //     url: "http://ithelpdeskdemo.xyz/login",
+        //     success: (msg) => { console.log(msg)   },
+
+        //     //нет ответа от php файла
+        //     error: (msg) => {
+        //         console.log("error" + "/n"  + msg);
+        //     }
+        // });
+    // });
 
 })
 

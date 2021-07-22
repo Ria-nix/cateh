@@ -67,7 +67,6 @@ body{ background: $fon_white; }
         text-align: left;
         @extend %flex_row;
         flex-wrap: wrap;
-
         span{
             @extend %flex_row;
             align-items: center;
@@ -129,12 +128,11 @@ body{ background: $fon_white; }
 
 //******** THE OTHER SYLES *******
 .red_auto{ border-color: rgba($red,0.7); }
-.red_auto::placeholder{ color: red; }
+.red_auto::placeholder{ color: red; font-size: 14px;}
 .rotate{ transform: translateY(-5px) rotate(180deg); }
 
 
 // ************* @MEDIA *************
-
 // ********** MEDIA MIN 1163PX *************
 @media (min-width: 1163px) {    
     .content_set > div{ width: 45%; }
@@ -145,7 +143,6 @@ body{ background: $fon_white; }
 @media (max-width: 1163px) {
     .content_set > div{  width: 55%; } 
     input{ width: 100%; } 
-
 }
  
 // ********** MEDIA MAX 850PX *************
@@ -184,7 +181,6 @@ body{ background: $fon_white; }
     }
     .searchable { width: 85%;}
     .competences{ padding: 0.5%; }
-
 }
 
 // ********** MEDIA MAX 540PX *************

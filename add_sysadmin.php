@@ -42,7 +42,7 @@
 
             <div class="main_fields">
                 <label for="tel_number">Номер телефона</label>
-                <input type="text" id="tel_number" class="add_info" placeholder="+7(***)*** - ** - **">
+                <input type="text" id="tel_number" class="add_info" pattern="+7(^[0-9]+${3})-(^[0-9]+${3})-^[0-9]+${2}-^[0-9]+${2}" placeholder="+7(***)*** - ** - **">
             </div>
 
             <div class="field_choice main_fields">

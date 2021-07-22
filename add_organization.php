@@ -36,7 +36,7 @@
             <div class="fields_address"></div>
             <div class="img_organization">
                 <div class="image border">
-                    <img class="logo" src="icon/logo.png" alt="logo">
+                    <img class="logo_second" src="icon/logo.png" alt="logo">
                 </div>                
                 <div class="img_buttons">
                     <input type="file" accept="img/*" id="input_file">

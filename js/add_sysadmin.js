@@ -1,4 +1,9 @@
 $(document).ready(function(){
+    // Validation for password
+
+
+
+
     let obj = [
         {
             "id": "1",
@@ -134,7 +139,8 @@ $(document).ready(function(){
         // })
     };
     // addCompetence();
-       // remove the cell
+
+    // REMOVE THE CELL
     // (function isRemoveCell(){        
     //     console.log('work')
     //     for(var elem of $('.cell').children('img')){console.log(elem) }

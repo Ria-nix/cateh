@@ -62,6 +62,7 @@ input {
   color: #112742;
   outline: none;
   /* remove focus around input*/
+  font-size: 16px;
 }
 input::-webkit-input-placeholder {
   font-size: 16px;
@@ -221,6 +222,7 @@ input {
   color: #112742;
   outline: none;
   /* remove focus around input*/
+  font-size: 16px;
 }
 input::-webkit-input-placeholder {
   font-size: 16px;

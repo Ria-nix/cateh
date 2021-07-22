@@ -1,5 +1,6 @@
 @import 'cateh_style';
 @import 'navigation';
+@import 'modal_window';
 
 body{ background: $fon_white; }
 .content_wrap{
@@ -148,3 +149,8 @@ body{ background: $fon_white; }
         }        
     }
 }
+
+
+//******** THE OTHER SYLES *******
+.red_auto{ border-color: rgba($red,0.7); }
+.red_auto::placeholder{ color: red; font-size: 14px;}
