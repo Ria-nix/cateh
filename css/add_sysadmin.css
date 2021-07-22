@@ -956,27 +956,22 @@ body {
 
 .red_auto::-webkit-input-placeholder {
   color: red;
-  font-size: 14px;
 }
 
 .red_auto::-moz-placeholder {
   color: red;
-  font-size: 14px;
 }
 
 .red_auto:-ms-input-placeholder {
   color: red;
-  font-size: 14px;
 }
 
 .red_auto::-ms-input-placeholder {
   color: red;
-  font-size: 14px;
 }
 
 .red_auto::placeholder {
   color: red;
-  font-size: 14px;
 }
 
 .rotate {
@@ -985,7 +980,7 @@ body {
 }
 
 @media (min-width: 1163px) {
-  .content_set > div {
+  .content_set > div, form {
     width: 45%;
   }
 
@@ -994,7 +989,7 @@ body {
   }
 }
 @media (max-width: 1163px) {
-  .content_set > div {
+  .content_set > div, form {
     width: 55%;
   }
 
@@ -1003,7 +998,7 @@ body {
   }
 }
 @media (max-width: 850px) {
-  .content_set > div {
+  .content_set > div, form {
     width: 90%;
   }
 

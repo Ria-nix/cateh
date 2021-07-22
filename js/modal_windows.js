@@ -1,12 +1,12 @@
 $(document).ready(function(){    
     //Open the modal window and check on all empty inputs
     let bool, summ_check, arr_inputs, obj_keys;
-    $('#check_button').click(function(){         
-        arr_inputs = document.querySelectorAll(".add_info");
-        CheckInputs(arr_inputs);
-        bool ? $('.question').removeClass('none') : bool == false;  
-        // polygon.style.position = 'none';   
-    });
+    // $('#check_button').click(function(){         
+    //     arr_inputs = document.querySelectorAll(".add_info");
+    //     CheckInputs(arr_inputs);
+    //     bool ? $('.question').removeClass('none') : bool == false;  
+    //     // polygon.style.position = 'none';   
+    // });
     function CheckInputs(arr_inputs){   
         summ_check = 0; 
         arr_inputs.forEach(function(item){
@@ -32,18 +32,23 @@ $(document).ready(function(){
     });
 
 
+    // Edit images on all pages
+    let input = document.querySelector('#input_file');
+    input.addEventListener('change',function(){    
+        let file = input.files[0];
+        console.log(file.name + '\n' + file.size);
+    })
 
-
-
-
+    
 
 
     // The output of data on the server to Artemy (ActionPickle.php)
 
     $('.add_button').click(function(){
         // let inputs = document.querySelectorAll(".json"); 
-        let address = document.querySelectorAll('.address');
-        address.forEach((item) => arr_address.push(item.value));
+        // let address = document.querySelectorAll('.address');
+        // address.forEach((item) => arr_address.push(item.value));
+
         let arr = [], json = {}, arr_address = [];
         // obj_keys = ["name_organ", "inn", 'address'];
 
@@ -52,28 +57,29 @@ $(document).ready(function(){
 
         // json['address'] = arr_address;
         // json['image'] = $('.logo_second').attr('src');
-        let image = $('.logo_second').attr('files');
-        console.log(json); 
+        // let image = $('.logo_second');
+        // console.log(image); 
 
-        $.ajax({
-            type: "POST",
-            data: { 
-                DBname:"u1184374_hepdesk_2_0",
-                token: "12345artemy",
-                name: "",
-                inn: "",
-                address: arr_address,
-                file: image
-            },
-            contentType: 'multipart/form-data',
-            url: "http://ithelpdeskdemo.xyz/addOrganisation",
-            success: (msg) => { console.log(msg)   },
+        // $.ajax({
+        //     type: "POST",
+        //     data: { 
+        //         DBname:"u1184374_hepdesk_2_0",
+        //         token: "12345artemy",
+        //         name: "55555555",
+        //         inn: "555555555",
+        //         address: arr_address,
+        //         file: image
+        //     },
+        //     enctype: 'multipart/form-data',
+        //     // contentType: 'multipart/form-data',
+        //     url: "http://ithelpdeskdemo.xyz/addOrganisation",
+        //     success: (msg) => { console.log(msg)   },
 
-            //нет ответа от php файла
-            error: (msg) => {
-                console.log("error" + "/n"  + msg);
-            }
-        });
+        //     //нет ответа от php файла
+        //     error: (msg) => {
+        //         console.log("error" + "/n"  + msg);
+        //     }
+        // });
     });
 
 })
