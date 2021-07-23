@@ -116,18 +116,28 @@ $(document).ready(function(){
     function isChoice(){       
         let fall_list = document.querySelectorAll('.competence'), item_list, arr;
         arr = [];
+        // for(var lot of names){ arr.push(lot) }
+        // console.log(arr)
         for(var item_click of fall_list){            
             item_click.addEventListener('click', function(){
                 item_list = document.querySelectorAll('.competence_item');
-               
-                if($('.competences').is(":empty")){   isCreate(this)  }
+                for(var lot of arr){ arr.push(lot.innerText) }
+                console.log(arr)
+                if($('.competences').is(":empty")){ isCreate(this)  }
                 else{
-                    for(var lot of item_list){ }
-                    if(search.value == arr[i]){  console.log('equal'); } 
-                    else{ arr.push(lot.innerText);
-                         isCreate(this) }  
+                    // for(let i = 0; i < arr.length; i++){ 
+                    //     console.log(arr[i]);
+                        if(search.value == arr[i]){  
+                            console.log('equal'); 
+                        } 
+                        else{ 
+                            arr.push(lot.innerText);
+                            isCreate(this) 
+                        // }  
+                    }
+                   
                 }
-                   console.log(arr)
+                  
             })              
         }
        
