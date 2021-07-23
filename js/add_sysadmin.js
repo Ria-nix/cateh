@@ -1,9 +1,15 @@
 $(document).ready(function(){
+
+    //************ VALIDATION FORM FOR FEW INPUTS ************/
     // Validation for password
+    // $('#password').change(function(){
+        // if($('#password'))
+    // })
 
 
 
-
+     //************ COMPETENTIONS AND FOR ALL ************/
+    // SEND ON SERVER INFORMATION ABOUT NEW ORGANIZATION
     let obj = [
         {
             "id": "1",
@@ -47,7 +53,8 @@ $(document).ready(function(){
         },  
 
     ];
-
+     
+    // THE LIST OF COMPETENCE FROM DATA BASE
     let list = document.querySelector('ul');    
     var names = [], i = 0;    
     (function isArray(){           
@@ -58,7 +65,9 @@ $(document).ready(function(){
             $('#list').append(text_begin);
         }   isChoice()
     }());
-    
+
+
+    // THE FALL LIST WITH POLYGON ROTATION
     let bool = false, polygon = document.querySelector('#polygon');
     $('#polygon').click(function(){ !bool ? isOpenPolygon() : isClosePolygon() });
 
@@ -75,8 +84,9 @@ $(document).ready(function(){
 
     // ************ SEARCH  ************
     let search = document.querySelector('#id_search');
+    var text_search, html, text_competence;
     if(search){ 
-        var suggestArray = [], html, text_search;
+        var suggestArray = [];
         search.addEventListener('keyup', (e)=>{
                 suggestArray = names.filter(item_click => item_click.toLowerCase().includes(e.target.value.toLowerCase()));
                 suggestArray = suggestArray.map(item_click => `<li class="competence">${item_click}</li>`);                
@@ -86,83 +96,49 @@ $(document).ready(function(){
                     html = suggestArray;
                     isChoice();
                 }
-                else{ 
+                else{                     
                     suggestArray.splice(0, suggestArray.length);
-                    text_search = '<li class="add_competence"><span class="add_competence"><img src="icon/plus-solid.svg" alt="plus" width="15" height="15"> Добавить</span> </li>';
+                    text_search = '<li class="add_competence"><span><img src="icon/plus-solid.svg" alt="plus" width="15" height="15"> Добавить</span> </li>';
                     suggestArray.unshift(text_search);                   
-                    html = suggestArray.join('');                    
+                    html = suggestArray.join('');  
                 }
             }
             else{ html = suggestArray.join(''); }             
             isOpenPolygon(); 
             list.innerHTML = html;
-            isChoice()
+            addCompetence();
+            isChoice();
         })
     }
 
-    // ************ CHOICE OF COMPETENCE  ************
-    let container = document.querySelector('.competences');
-    
-
-    function isChoice(){
-        let text_competence, sum = 0, j = 0, id = [];
+    // ************ CHOICE OF THE COMPETENCE  ************
+    // CHOICE OF THE COMPETENCE FROM A LIST THAT USER HAS
+    function isChoice(){       
         let fall_list = document.querySelectorAll('.competence');
-
-        // for(var rem of obj){
-        //     for(let key in rem){};  
-        //     id[i] = rem.id; j++;
-        // } 
-
         for(let item_click of fall_list){ 
             item_click.addEventListener('click', function(){
-                if(item_click){
                     search.value = item_click.innerHTML;         
-                    text_competence = '<span class="border cell register" id="">' + search.value + '<img src="icon/close.svg" alt="close"></span>' ;
+                    text_competence = '<span class="border cell competence_item register">' + search.value + '<img src="icon/close.svg" alt="close"></span>' ;
                     $(".competences").append(text_competence);
-                }               
+                    isRemoveCell();
             })
         }
     }
-
-    let add_but = document.querySelectorAll('.add_competence');
     
+    // THE ADD NEW COMPETENCE
     function addCompetence(){
-        for(var item_add of add_but){ console.log(item_add)}
-        // item_add.addEventListener('click', function(){
-            console.log('click')
-            // if(item_click){
-            //     search.value = item_click.innerHTML;         
-            //     text_competence = '<span class="border cell unregister">' + search.value + '<img src="icon/close.svg" alt="close"></span>' ;
-            //     $(".competences").append(text_competence);
-            //     console.log(container)
-            // }               
-        // })
+        $('.add_competence').on('click', function(){
+            text_competence = '<span class="border cell competence_item unregister">' + search.value + '<img src="icon/close.svg" alt="close"></span>' ;
+            $(".competences").append(text_competence);
+            isRemoveCell()
+        })
     };
-    // addCompetence();
 
     // REMOVE THE CELL
-    // (function isRemoveCell(){        
-    //     console.log('work')
-    //     for(var elem of $('.cell').children('img')){console.log(elem) }
-    //     elem.addEventListener('click', function(){ 
-    //         console.log('yup')
-    //         elem.parentElement.remove();
-    //     })
-    //     for(let item_click of fall_list){ 
-    //         item_click.addEventListener('click', function(){
-    //             if(item_click){
-    //                 search.value = item_click.innerHTML;         
-    //                 text_competence = '<span class="border cell">' + search.value + '<img src="icon/close.svg" alt="close"></span>' ;
-    //                 $(".competences").append(text_competence);
-    //                 console.log(container)
-    //             }
-               
-    //         })
-    //     }
-    // }());
-   
-
-
-
+    function isRemoveCell(){      
+        for(var item of $('.competence_item').children('img')){ };
+        item.addEventListener('click', function(){ item.parentElement.remove();});
+    };
+    
 });
 

@@ -1,12 +1,14 @@
 $(document).ready(function(){    
+
     //Open the modal window and check on all empty inputs
     let bool, summ_check, arr_inputs, obj_keys;
-    // $('#check_button').click(function(){         
-    //     arr_inputs = document.querySelectorAll(".add_info");
-    //     CheckInputs(arr_inputs);
-    //     bool ? $('.question').removeClass('none') : bool == false;  
-    //     // polygon.style.position = 'none';   
-    // });
+    $('#check_button').click(function(){         
+        arr_inputs = document.querySelectorAll(".add_info");
+        CheckInputs(arr_inputs);
+        bool ? $('.question').removeClass('none') : bool == false;  
+        // polygon.style.position = 'none';   
+    });
+
     function CheckInputs(arr_inputs){   
         summ_check = 0; 
         arr_inputs.forEach(function(item){
@@ -37,7 +39,7 @@ $(document).ready(function(){
     input.addEventListener('change',function(){    
         let file = input.files[0];
         let reader = new FileReader();
-        console.log(file.name + "\n" + file.size + "\n" + file.type)
+        console.log("name: " + file.name + "\n size: " + file.size + "\n type: " + file.type)
         reader.readAsText(file);
         reader.onerror = function() {
             console.log(reader.error);
