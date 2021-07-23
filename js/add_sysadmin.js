@@ -83,7 +83,7 @@ $(document).ready(function(){
     }
 
     // ************ SEARCH  ************
-    let search = document.querySelector('#id_search');
+    var search = document.querySelector('#id_search');
     var text_search, html, text_competence;
     if(search){ 
         var suggestArray = [];
@@ -103,9 +103,9 @@ $(document).ready(function(){
                     html = suggestArray.join('');  
                 }
             }
-            else{ html = suggestArray.join(''); }             
+            else{ html = suggestArray.join(''); }      
+            list.innerHTML = html;       
             isOpenPolygon(); 
-            list.innerHTML = html;
             addCompetence();
             isChoice();
         })
@@ -114,23 +114,47 @@ $(document).ready(function(){
     // ************ CHOICE OF THE COMPETENCE  ************
     // CHOICE OF THE COMPETENCE FROM A LIST THAT USER HAS
     function isChoice(){       
-        let fall_list = document.querySelectorAll('.competence');
-        for(let item_click of fall_list){ 
+        let fall_list = document.querySelectorAll('.competence'), item_list, arr;
+        arr = [];
+        for(var item_click of fall_list){            
             item_click.addEventListener('click', function(){
-                    search.value = item_click.innerHTML;         
-                    text_competence = '<span class="border cell competence_item register">' + search.value + '<img src="icon/close.svg" alt="close"></span>' ;
-                    $(".competences").append(text_competence);
-                    isRemoveCell();
-            })
+                item_list = document.querySelectorAll('.competence_item');
+               
+                if($('.competences').is(":empty")){   isCreate(this)  }
+                else{
+                    for(var lot of item_list){ }
+                    if(search.value == arr[i]){  console.log('equal'); } 
+                    else{ arr.push(lot.innerText);
+                         isCreate(this) }  
+                }
+                   console.log(arr)
+            })              
         }
+       
     }
-    
+
+    function isCreate(item_click){
+        search.value = item_click.innerHTML;         
+        text_competence = '<span class="border cell competence_item register">' + search.value + '<img src="icon/close.svg" alt="close"></span>' ;
+        $(".competences").append(text_competence);
+    }
+
+     // search.value = item_click.innerHTML;         
+                // text_competence = '<span class="border cell competence_item register">' + search.value + '<img src="icon/close.svg" alt="close"></span>' ;
+                // $(".competences").append(text_competence);
+                // console.log('item_click');
+                // isAddCompetence();
+                // isRemoveCell();
+
+
+
     // THE ADD NEW COMPETENCE
     function addCompetence(){
         $('.add_competence').on('click', function(){
             text_competence = '<span class="border cell competence_item unregister">' + search.value + '<img src="icon/close.svg" alt="close"></span>' ;
             $(".competences").append(text_competence);
-            isRemoveCell()
+            isRemoveCell();
+            // isAddCompetence();
         })
     };
 
@@ -139,6 +163,36 @@ $(document).ready(function(){
         for(var item of $('.competence_item').children('img')){ };
         item.addEventListener('click', function(){ item.parentElement.remove();});
     };
-    
+
+     // ************ CHECK OF THE COMPETENCE  ************
+    function isAddCompetence(){
+        if($('.competences').empty()){
+            console.log('empty');
+            // search.value = item_click.innerHTML;         
+            // text_competence = '<span class="border cell competence_item register">' + search.value + '<img src="icon/close.svg" alt="close"></span>' ;
+            // $(".competences").append(text_competence);
+            // console.log('item_click');
+            
+            // text_competence = '<span class="border cell competence_item unregister">' + search.value + '<img src="icon/close.svg" alt="close"></span>' ;
+            // $(".competences").append(text_competence);
+            // console.log('add');
+            
+        }
+        else{
+            console.log('none empty');
+        }
+       
+    }
+
+    // for(var item_list of $('.competences').children('.competence_item')){ console.log(item_list) }
+    //         if(search.value == item_list.value){
+    //            console.log('no')
+    //         } 
+    //         else{
+    //             search.value = item_click.innerHTML;         
+    //             text_competence = '<span class="border cell competence_item register">' + search.value + '<img src="icon/close.svg" alt="close"></span>' ;
+    //             $(".competences").append(text_competence);
+    //         }
+   
 });
 
