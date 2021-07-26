@@ -66,10 +66,18 @@ input{
     letter-spacing: 1px;
     color: $blue;
     outline: none; /* remove focus around input*/
-    font-size: 16px;
-    &::placeholder{font-size: 16px; color:rgba(17, 39, 66, 0.65)}
+    font-size: 14px;
+    &::placeholder{font-size: 14px; color:rgba(17, 39, 66, 0.65)}
     &:focus{ border-color: $light_blue; }
+    &:focus::placeholder{ color: rgba($blue, 0.65) }
 }
+// For input [type = "number"] (arrows hidden)
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  appearance: none; 
+  margin: 0; 
+}
+
 // TEXT STYLE
 .spacing{ letter-spacing: 0.5px;}
 .bold{ font-weight: bold;}
@@ -79,6 +87,8 @@ input{
 .font_20{ font-size: 20px;}
 .font_24{ font-size: 24px;}
 .font_26{ font-size: 26px;}
+.red_auto{ border-color: rgba($red,0.7); }
+.red_auto::placeholder{ color: red; font-size: 14px;}
 
 // OTHER STYLES 
 *{

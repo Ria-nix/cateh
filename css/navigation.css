@@ -49,30 +49,52 @@ input {
   color: #112742;
   outline: none;
   /* remove focus around input*/
-  font-size: 16px;
+  font-size: 14px;
 }
 input::-webkit-input-placeholder {
-  font-size: 16px;
+  font-size: 14px;
   color: rgba(17, 39, 66, 0.65);
 }
 input::-moz-placeholder {
-  font-size: 16px;
+  font-size: 14px;
   color: rgba(17, 39, 66, 0.65);
 }
 input:-ms-input-placeholder {
-  font-size: 16px;
+  font-size: 14px;
   color: rgba(17, 39, 66, 0.65);
 }
 input::-ms-input-placeholder {
-  font-size: 16px;
+  font-size: 14px;
   color: rgba(17, 39, 66, 0.65);
 }
 input::placeholder {
-  font-size: 16px;
+  font-size: 14px;
   color: rgba(17, 39, 66, 0.65);
 }
 input:focus {
   border-color: #1AC1F5;
+}
+input:focus::-webkit-input-placeholder {
+  color: rgba(17, 39, 66, 0.65);
+}
+input:focus::-moz-placeholder {
+  color: rgba(17, 39, 66, 0.65);
+}
+input:focus:-ms-input-placeholder {
+  color: rgba(17, 39, 66, 0.65);
+}
+input:focus::-ms-input-placeholder {
+  color: rgba(17, 39, 66, 0.65);
+}
+input:focus::placeholder {
+  color: rgba(17, 39, 66, 0.65);
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+          appearance: none;
+  margin: 0;
 }
 
 .spacing {
@@ -105,6 +127,35 @@ input:focus {
 
 .font_26 {
   font-size: 26px;
+}
+
+.red_auto {
+  border-color: rgba(229, 40, 40, 0.7);
+}
+
+.red_auto::-webkit-input-placeholder {
+  color: red;
+  font-size: 14px;
+}
+
+.red_auto::-moz-placeholder {
+  color: red;
+  font-size: 14px;
+}
+
+.red_auto:-ms-input-placeholder {
+  color: red;
+  font-size: 14px;
+}
+
+.red_auto::-ms-input-placeholder {
+  color: red;
+  font-size: 14px;
+}
+
+.red_auto::placeholder {
+  color: red;
+  font-size: 14px;
 }
 
 * {

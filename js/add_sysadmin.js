@@ -2,9 +2,12 @@ $(document).ready(function(){
 
     //************ VALIDATION FORM FOR FEW INPUTS ************/
     // Validation for password
-    // $('#password').change(function(){
-        // if($('#password'))
-    // })
+    $('#password').change(function(){
+        if($('#password').value >= 5 && $('#password').value <= 20){
+            console.log('right')
+        }
+        else{ $('#password').add('red_auto')};
+    })
 
 
 
@@ -63,9 +66,8 @@ $(document).ready(function(){
             names[i] = elem.name; i++;
             let text_begin = `<li class="competence" id=${elem.id}>${elem.name}</li>`;
             $('#list').append(text_begin);
-        }   isChoice()
+        }   isChoice();
     }());
-
 
     // THE FALL LIST WITH POLYGON ROTATION
     let bool = false, polygon = document.querySelector('#polygon');
@@ -122,13 +124,15 @@ $(document).ready(function(){
                 text_competence = '<span class="border cell competence_item register">' + search.value + '<img src="icon/close.svg" alt="close"></span>';
                 textCompetence(text_competence);
             });
-        })                     
+        })           
     }
+        
 
     // THE ADD NEW COMPETENCE
     function addCompetence(){
         $('.add_competence').on('click', function(){
-            text_competence = '<span class="border cell competence_item unregister">' + search.value + '<img src="icon/close.svg" alt="close"></span>' ;
+            var show =  search.value.substr(0,1).toUpperCase() + search.value.substr(1).toLowerCase();
+            text_competence = '<span class="border cell competence_item unregister">' + show + '<img src="icon/close.svg" alt="close"></span>' ;
             textCompetence(text_competence);
         })
     };
@@ -141,21 +145,20 @@ $(document).ready(function(){
         }
         else{  
             for(var mele of array_test){
-                if(search.value.split(' ').join('') != mele.split(' ').join('')){ value = true; }
+                if(search.value.split(' ').join('').toLowerCase() != mele.split(' ').join('').toLowerCase()){ value = true; }
                 else{ return value = false;}
             }
             if(value){
-                array_test.push(search.value);
+                var show_second =  search.value.substr(0,1).toUpperCase() + search.value.substr(1).toLowerCase();
+                array_test.push(show_second);
                 $(".competences").append(text_competence); 
-            } else{ console.log('false') }
+            }
         }
         isRemoveCell();
     }
 
-
     // REMOVE THE CELL
-    function isRemoveCell(){     
-         
+    function isRemoveCell(){  
         for(var item of $('.competence_item').children('img')){ };
         item.addEventListener('click', function(){ 
             let index = array_test.indexOf(item.parentElement.innerText);
@@ -163,17 +166,6 @@ $(document).ready(function(){
             item.parentElement.remove();
         });
     };
-    
 
-    // for(var item_list of $('.competences').children('.competence_item')){ console.log(item_list) }
-    //         if(search.value == item_list.value){
-    //            console.log('no')
-    //         } 
-    //         else{
-    //             search.value = item_click.innerHTML;         
-    //             text_competence = '<span class="border cell competence_item register">' + search.value + '<img src="icon/close.svg" alt="close"></span>' ;
-    //             $(".competences").append(text_competence);
-    //         }
-   
 });
 

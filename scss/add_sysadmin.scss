@@ -128,8 +128,6 @@ body{ background: $fon_white; }
 }
 
 //******** THE OTHER SYLES *******
-.red_auto{ border-color: rgba($red,0.7); }
-.red_auto::placeholder{ color: red; }
 .rotate{ transform: translateY(-5px) rotate(180deg); }
 .click_none{ pointer-events: none; }
 

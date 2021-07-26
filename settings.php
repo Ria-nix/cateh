@@ -20,7 +20,7 @@
         <div class="content_set">
             <div class="name_organization">
                 <label for="name">Название <br> организации</label>
-                <input type="text" id="name" class="border add_info">
+                <input type="text" id="name" class="border add_info" placeholder='ООО"Название организации"'>
             </div>
             <div class="img_organization">
                 <div class="image border">
