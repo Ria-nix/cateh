@@ -2,11 +2,17 @@ $(document).ready(function(){
 
     //************ VALIDATION FORM FOR FEW INPUTS ************/
     // Validation for password
-    $('#password').change(function(){
-        if($('#password').value >= 5 && $('#password').value <= 20){
+    let password = document.querySelector('#password');
+    password.addEventListener('change',function(){
+        let pass = /[A-Za-z]\w{5,20}$/;
+        if(password.value.match(pass)){
             console.log('right')
+            password.classList.remove('red_auto');
         }
-        else{ $('#password').add('red_auto')};
+        else{ 
+            password.classList.add('red_auto');
+            console.log('no')
+        };
     })
 
 

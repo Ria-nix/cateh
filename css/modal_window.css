@@ -3,6 +3,17 @@ body {
   color: #112742;
 }
 
+/* width */
+body::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Handle */
+body::-webkit-scrollbar-thumb {
+  background: rgba(147, 147, 147, 0.65);
+  border-radius: 15px;
+}
+
 .modal_window .window_wrap {
   display: -webkit-box;
   display: -ms-flexbox;
