@@ -29,7 +29,7 @@ $(document).ready(function(){
         },
         {
             "id": "5",
-            "name": "Ведение технической  4654899948 документации"
+            "name": "Ведение технической 4654899948 документации"
         },
         {
             "id": "6",
@@ -41,7 +41,7 @@ $(document).ready(function(){
         },
         {
             "id": "8",
-            "name": "Ведение технической  448884484 документации"
+            "name": "Ведение технической 415 документации"
         },   
         {
             "id": "9",
@@ -49,7 +49,7 @@ $(document).ready(function(){
         },
         {
             "id": "10",
-            "name": "hellow friends технической  448884484 документации"
+            "name": "hello friends технической 448884484 документации"
         },  
 
     ];
@@ -113,86 +113,57 @@ $(document).ready(function(){
 
     // ************ CHOICE OF THE COMPETENCE  ************
     // CHOICE OF THE COMPETENCE FROM A LIST THAT USER HAS
+    var array_test = [], value;
     function isChoice(){       
-        let fall_list = document.querySelectorAll('.competence'), item_list, arr;
-        arr = [];
-        // for(var lot of names){ arr.push(lot) }
-        // console.log(arr)
-        for(var item_click of fall_list){            
-            item_click.addEventListener('click', function(){
-                item_list = document.querySelectorAll('.competence_item');
-                for(var lot of arr){ arr.push(lot.innerText) }
-                console.log(arr)
-                if($('.competences').is(":empty")){ isCreate(this)  }
-                else{
-                    // for(let i = 0; i < arr.length; i++){ 
-                    //     console.log(arr[i]);
-                        if(search.value == arr[i]){  
-                            console.log('equal'); 
-                        } 
-                        else{ 
-                            arr.push(lot.innerText);
-                            isCreate(this) 
-                        // }  
-                    }
-                   
-                }
-                  
-            })              
-        }
-       
+        let fall_list = document.querySelectorAll('.competence');
+        fall_list.forEach(function(item_click){
+             item_click.addEventListener('click', function(){ 
+                search.value = item_click.innerText;
+                text_competence = '<span class="border cell competence_item register">' + search.value + '<img src="icon/close.svg" alt="close"></span>';
+                textCompetence(text_competence);
+            });
+        })                     
     }
-
-    function isCreate(item_click){
-        search.value = item_click.innerHTML;         
-        text_competence = '<span class="border cell competence_item register">' + search.value + '<img src="icon/close.svg" alt="close"></span>' ;
-        $(".competences").append(text_competence);
-    }
-
-     // search.value = item_click.innerHTML;         
-                // text_competence = '<span class="border cell competence_item register">' + search.value + '<img src="icon/close.svg" alt="close"></span>' ;
-                // $(".competences").append(text_competence);
-                // console.log('item_click');
-                // isAddCompetence();
-                // isRemoveCell();
-
-
 
     // THE ADD NEW COMPETENCE
     function addCompetence(){
         $('.add_competence').on('click', function(){
             text_competence = '<span class="border cell competence_item unregister">' + search.value + '<img src="icon/close.svg" alt="close"></span>' ;
-            $(".competences").append(text_competence);
-            isRemoveCell();
-            // isAddCompetence();
+            textCompetence(text_competence);
         })
     };
 
-    // REMOVE THE CELL
-    function isRemoveCell(){      
-        for(var item of $('.competence_item').children('img')){ };
-        item.addEventListener('click', function(){ item.parentElement.remove();});
-    };
-
-     // ************ CHECK OF THE COMPETENCE  ************
-    function isAddCompetence(){
-        if($('.competences').empty()){
-            console.log('empty');
-            // search.value = item_click.innerHTML;         
-            // text_competence = '<span class="border cell competence_item register">' + search.value + '<img src="icon/close.svg" alt="close"></span>' ;
-            // $(".competences").append(text_competence);
-            // console.log('item_click');
-            
-            // text_competence = '<span class="border cell competence_item unregister">' + search.value + '<img src="icon/close.svg" alt="close"></span>' ;
-            // $(".competences").append(text_competence);
-            // console.log('add');
-            
+    // THE CONNECT BETWEEN addCompetence() AND isChoice()
+    function textCompetence(text_competence){
+        if(!array_test.length){ 
+            array_test.push(search.value);
+            $(".competences").append(text_competence);
         }
-        else{
-            console.log('none empty');
+        else{  
+            for(var mele of array_test){
+                if(search.value.split(' ').join('') != mele.split(' ').join('')){ value = true; }
+                else{ return value = false;}
+            }
+            if(value){
+                array_test.push(search.value);
+                $(".competences").append(text_competence); 
+            } else{ console.log('false') }
         }
-       
+        isRemoveCell();
     }
+
+
+    // REMOVE THE CELL
+    function isRemoveCell(){     
+         
+        for(var item of $('.competence_item').children('img')){ };
+        item.addEventListener('click', function(){ 
+            let index = array_test.indexOf(item.parentElement.innerText);
+            if(index !== -1){ array_test.splice(index, 1)}
+            item.parentElement.remove();
+        });
+    };
+    
 
     // for(var item_list of $('.competences').children('.competence_item')){ console.log(item_list) }
     //         if(search.value == item_list.value){
