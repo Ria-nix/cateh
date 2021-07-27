@@ -1,16 +1,17 @@
 $(document).ready(function(){
 
     //************ VALIDATION FORM FOR FEW INPUTS ************/
-    // Validation for password
+    // Validation for 
     let password = document.querySelector('#password');
     password.addEventListener('change',function(){
-        let pass = /[A-Za-z]\w{5,20}$/;
+        let pass = /[A-Za-z_,.]\w{5,20}$/;
         if(password.value.match(pass)){
             console.log('right')
             password.classList.remove('red_auto');
         }
         else{ 
             password.classList.add('red_auto');
+            // password.hasAttributes('Пароль может иметь содержать латинские буквы, цифры и символы: "_" "," "."');
             console.log('no')
         };
     })

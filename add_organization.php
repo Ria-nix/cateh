@@ -10,8 +10,11 @@
     <title><?php echo $add_organ ?></title>
 </head>
 <body>
-    <?php include_once('navigation.php');?></nav>
-    <?php include_once('modal windows/question_window.php'); ?>
+    <?php  include_once('navigation.php');?> </nav>
+    <?php  $question = 'Вы точно хотите добавить новую организацию?'; ?>
+    <?php  include_once('modal windows/question_window.php'); ?>
+    <?php  include_once('modal windows/success_window.php'); ?>
+    <?php  include_once('modal windows/error_window.php'); ?>
     
      <!-- CONTENT -->
     <div class="content_wrap">
@@ -19,15 +22,15 @@
         <div class="content_set">
             <div class="name_organization">
                 <label for="name">Название <br> организации</label>
-                <input type="text" id="name" class="add_info json" placeholder='ООО"Название компании"'>
+                <input type="text" id="name" class="add_info json" value='ООО Название компании'>
             </div>
             <div class="inn_organization">
                 <label for="inn">ИНН</label>
-                <input type="number" id="inn" class="add_info json" placeholder="390025125634">
+                <input type="number" id="inn" class="add_info json" value="390025125634">
             </div>
             <div class="adress_organization">
                 <label for="address">Адрес</label>
-                <input type="text" id="address" class="text_address add_info address" placeholder="ул.Маркаса д.9">
+                <input type="text" id="address" class="text_address add_info" value="ул.Маркаса д.9">
                 <div class="mobile_fields_address"></div>
                 <span class="button border" id="add_address">
                     <img src="icon/plus-solid.svg" alt="plus_solid"> 
@@ -36,11 +39,10 @@
             <div class="fields_address"></div>
             <div class="img_organization">
                 <div class="image border">
-                    <img class="logo_second" src="" accept="image/*" data-type='image' alt="logo">
+                    <img class="logo_second" src="" alt="logo">
                 </div>                
                 <div class="img_buttons">
-                    <input type="file" accept="image/*" id="input_file" >
-                    <input type="hidden" name="MAX_FILE_SIZE"/>
+                    <input name="file" type="file" id="input_file">
                     <label class="button_gray border font_16" for="input_file" id="download_file">Загрузить</label>
                     <button class="button_gray border font_16" id="delete_img">Удалить</button>
                 </div>

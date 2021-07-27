@@ -26,71 +26,46 @@ $(document).ready(function(){
     function isNoneRedAuto(item_info){
         item_info.classList.remove('red_auto');
         item_info.setAttribute('placeholder','');  
-        
     }
     // Close the modal window
     $('.close_button').click(function(){ 
         $('.modal_window').addClass('none');
     });
 
-
     // Edit images on all pages
     let input = document.querySelector('#input_file');
     input.addEventListener('change',function(){    
         let file = input.files[0];
         let reader = new FileReader();
-        console.log("name: " + file.name + "\n size: " + file.size + "\n type: " + file.type)
         reader.readAsText(file);
-        reader.onerror = function() {
-            console.log(reader.error);
-        };
     })
-    function readFile(){
-
-    }
-    
 
 
     // The output of data on the server to Artemy (ActionPickle.php)
+    $('.add_button').on('click', function(){        
+        let address = document.querySelectorAll('.text_address'), arr_address = [];
+        address.forEach((item) => arr_address.push(item.value));
+            
+        let formData = new FormData();
+        let name = document.querySelector('#name').value;
+        let inn = document.querySelector('#inn').value;
+        let file = document.querySelector('input[type=file]').files[0];
+        formData.append('file', file, 'NOT_NULL');
+        formData.append('MAX_FILE_SIZE', "6291456");
+        formData.append('DBname', 'u1184374_hepdesk_2_0');
+        formData.append("token", '12345artemy');
+        formData.append("name", name);
+        formData.append("inn", inn);
+        formData.append("address", JSON.stringify(arr_address));
 
-    $('.add_button').click(function(){
-        // let inputs = document.querySelectorAll(".json"); 
-        // let address = document.querySelectorAll('.address');
-        // address.forEach((item) => arr_address.push(item.value));
-
-        let arr = [], json = {}, arr_address = [];
-        // obj_keys = ["name_organ", "inn", 'address'];
-
-        // inputs.forEach(function(item){arr.push(item.value)});
-        // obj_keys.forEach((key, i) => json[key] = arr[i]);
-
-        // json['address'] = arr_address;
-        // json['image'] = $('.logo_second').attr('src');
-        // let image = $('.logo_second');
-        // console.log(image); 
-
-        // $.ajax({
-        //     type: "POST",
-        //     data: { 
-        //         DBname:"u1184374_hepdesk_2_0",
-        //         token: "12345artemy",
-        //         name: "55555555",
-        //         inn: "555555555",
-        //         address: arr_address,
-        //         file: image
-        //     },
-        //     enctype: 'multipart/form-data',
-        //     // contentType: 'multipart/form-data',
-        //     url: "http://ithelpdeskdemo.xyz/addOrganisation",
-        //     success: (msg) => { console.log(msg)   },
-
-        //     //нет ответа от php файла
-        //     error: (msg) => {
-        //         console.log("error" + "/n"  + msg);
-        //     }
-        // });
+        let request = new XMLHttpRequest();
+        request.open("POST", "https://ithelpdeskdemo.xyz/addOrganisation");
+        request.send(formData);
+        request.onload = function () {
+            console.log(request.responseText);
+        }
     });
-
+    
 })
 
 
