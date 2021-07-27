@@ -78,9 +78,14 @@ function isEmployees(){
 }
 isEmployees();
 
-//   *********** Verifieng on input where  ADD AUTHORIZATION ***********
+//   *********** Check on input where  ADD AUTHORIZATION ***********
 
-
+let divs = document.querySelectorAll('.item_info');
+      
+// sort by value
+$(divs).sort(function (a, b) {
+  return console.log( b);
+});
 
 
 
