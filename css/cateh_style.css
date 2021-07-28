@@ -179,6 +179,11 @@ input[type=number]::-webkit-outer-spin-button {
   display: grid;
 }
 
+.rotate {
+  -webkit-transform: translateY(-5px) rotate(180deg);
+          transform: translateY(-5px) rotate(180deg);
+}
+
 @media (min-width: 510px) {
   .button:hover, .button_gray:hover {
     border-color: #1AC1F5;

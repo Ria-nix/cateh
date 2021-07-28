@@ -11,7 +11,7 @@ body::-webkit-scrollbar {
 /* Handle */
 body::-webkit-scrollbar-thumb {
   background: rgba(147, 147, 147, 0.65);
-  border-radius: 15px;
+  border-radius: 10px;
 }
 
 .content_set .img_organization .img_buttons, .content_set .img_organization .image, .content_set .competences span, .content_set .competences, nav .navigation span, nav .navigation .panel_buttons, nav .navigation {
@@ -211,6 +211,11 @@ input[type=number]::-webkit-outer-spin-button {
 
 .grid {
   display: grid;
+}
+
+.rotate {
+  -webkit-transform: translateY(-5px) rotate(180deg);
+          transform: translateY(-5px) rotate(180deg);
 }
 
 @media (min-width: 510px) {
@@ -233,7 +238,7 @@ body::-webkit-scrollbar {
 /* Handle */
 body::-webkit-scrollbar-thumb {
   background: rgba(147, 147, 147, 0.65);
-  border-radius: 15px;
+  border-radius: 10px;
 }
 
 .content_set .img_organization .img_buttons, .content_set .img_organization .image, .content_set .competences span, .content_set .competences, nav .navigation span, nav .navigation .panel_buttons, nav .navigation {
@@ -433,6 +438,11 @@ input[type=number]::-webkit-outer-spin-button {
 
 .grid {
   display: grid;
+}
+
+.rotate {
+  -webkit-transform: translateY(-5px) rotate(180deg);
+          transform: translateY(-5px) rotate(180deg);
 }
 
 @media (min-width: 510px) {
@@ -711,7 +721,7 @@ body::-webkit-scrollbar {
 /* Handle */
 body::-webkit-scrollbar-thumb {
   background: rgba(147, 147, 147, 0.65);
-  border-radius: 15px;
+  border-radius: 10px;
 }
 
 .content_set .img_organization .img_buttons, .content_set .img_organization .image, .content_set .competences span, .content_set .competences, nav .navigation, nav .navigation .panel_buttons, nav .navigation span {
@@ -911,6 +921,11 @@ input[type=number]::-webkit-outer-spin-button {
 
 .grid {
   display: grid;
+}
+
+.rotate {
+  -webkit-transform: translateY(-5px) rotate(180deg);
+          transform: translateY(-5px) rotate(180deg);
 }
 
 @media (min-width: 510px) {
@@ -1134,11 +1149,6 @@ body {
 .searchable ul::-webkit-scrollbar-thumb {
   background: rgba(17, 39, 66, 0.65);
   border-radius: 10px;
-}
-
-.rotate {
-  -webkit-transform: translateY(-5px) rotate(180deg);
-          transform: translateY(-5px) rotate(180deg);
 }
 
 .click_none {

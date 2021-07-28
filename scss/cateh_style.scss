@@ -110,7 +110,7 @@ input[type=number]::-webkit-outer-spin-button {
 .border{ border-radius: 10px; }
 .opacity_none{ opacity: 0; }
 .grid{ display: grid; }
-
+.rotate{ transform: translateY(-5px) rotate(180deg); }
 // ************* @MEDIA *************
 // ********** MEDIA MIN 510px *************
 @media (min-width: 510px) {      
