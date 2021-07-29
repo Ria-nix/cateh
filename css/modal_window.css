@@ -130,28 +130,33 @@ input[type=number]::-webkit-outer-spin-button {
   border-color: rgba(229, 40, 40, 0.7);
 }
 
+.red {
+  color: #E52828;
+  font-size: 24px;
+}
+
 .red_auto::-webkit-input-placeholder {
-  color: red;
+  color: #E52828;
   font-size: 14px;
 }
 
 .red_auto::-moz-placeholder {
-  color: red;
+  color: #E52828;
   font-size: 14px;
 }
 
 .red_auto:-ms-input-placeholder {
-  color: red;
+  color: #E52828;
   font-size: 14px;
 }
 
 .red_auto::-ms-input-placeholder {
-  color: red;
+  color: #E52828;
   font-size: 14px;
 }
 
 .red_auto::placeholder {
-  color: red;
+  color: #E52828;
   font-size: 14px;
 }
 

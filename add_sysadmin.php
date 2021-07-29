@@ -21,28 +21,33 @@
         <div class="content_set">
 
             <div class="main_fields">
-                <label for="login">Логин</label>
+                <label for="login">Логин <span class='red'>*</span></label>
                 <input type="text" id="login" class="add_info" placeholder="email@gmail.com">
             </div>
 
             <div class="main_fields">
-                <label for="password">Пароль</label>
+                <label for="password">Пароль <span class='red'>*</span></label>
                 <input type="text" id="password" class="add_info" placeholder="123*****89">
             </div>
 
             <div class="main_fields">
-                <label for="name">Имя</label>
+                <label for="name">Имя <span class='red'>*</span></label>
                 <input type="text" id="name" class="add_info" placeholder="Михаил">
             </div>
 
             <div class="main_fields">
-                <label for="surname">Фамилия</label>
+                <label for="surname">Фамилия <span class='red'>*</span></label>
                 <input type="text" id="surname" class="add_info" placeholder="Куприн">
             </div>
 
             <div class="main_fields">
                 <label for="tel_number">Номер телефона</label>
-                <input type="number" id="tel_number" class="add_info" pattern="+7(^[0-9]+${3})-(^[0-9]+${3})-^[0-9]+${2}-^[0-9]+${2}" placeholder="+7(***)*** - ** - **">
+                <input type="number" id="tel_number" placeholder="+7(***)*** - ** - **">
+            </div>
+
+            <div class="main_fields">
+                <label for="state">Статус <span class='red'>*</span></label>
+                <input type="text" id="state" placeholder="Выберите статус">
             </div>
 
             <div class="field_choice main_fields">

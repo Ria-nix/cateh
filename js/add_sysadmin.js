@@ -20,61 +20,75 @@ $(document).ready(function(){
 
      //************ COMPETENTIONS AND FOR ALL ************/
     // SEND ON SERVER INFORMATION ABOUT NEW ORGANIZATION
-    let obj = [
-        {
-            "id": "1",
-            "name": "Ведение технической документации"
-        },
-        {
-            "id": "2",
-            "name": "Обновление работоспособности компьютерных систем после сбоев"
-        },
-        {
-            "id": "3",
-            "name": "Ремонт (несложный) технического оборудования предприятия"
-        },
-        {
-            "id": "4",
-            "name": "Модернизация и усовершенствование компьютерных систем предприятия, конфигурация рабочих мест"
-        },
-        {
-            "id": "5",
-            "name": "Ведение технической 4654899948 документации"
-        },
-        {
-            "id": "6",
-            "name": "Ведение технической 2551 документации"
-        },
-        {
-            "id": "7",
-            "name": "Ведение документации"
-        },
-        {
-            "id": "8",
-            "name": "Ведение технической 415 документации"
-        },   
-        {
-            "id": "9",
-            "name": "delete документации"
-        },
-        {
-            "id": "10",
-            "name": "hello friends технической 448884484 документации"
-        },  
+    // let obj = [
+    //     {
+    //         "id": "1",
+    //         "name": "Ведение технической документации"
+    //     },
+    //     {
+    //         "id": "2",
+    //         "name": "Обновление работоспособности компьютерных систем после сбоев"
+    //     },
+    //     {
+    //         "id": "3",
+    //         "name": "Ремонт (несложный) технического оборудования предприятия"
+    //     },
+    //     {
+    //         "id": "4",
+    //         "name": "Модернизация и усовершенствование компьютерных систем предприятия, конфигурация рабочих мест"
+    //     },
+    //     {
+    //         "id": "5",
+    //         "name": "Ведение технической 4654899948 документации"
+    //     },
+    //     {
+    //         "id": "6",
+    //         "name": "Ведение технической 2551 документации"
+    //     },
+    //     {
+    //         "id": "7",
+    //         "name": "Ведение документации"
+    //     },
+    //     {
+    //         "id": "8",
+    //         "name": "Ведение технической 415 документации"
+    //     },   
+    //     {
+    //         "id": "9",
+    //         "name": "delete документации"
+    //     },
+    //     {
+    //         "id": "10",
+    //         "name": "hello friends технической 448884484 документации"
+    //     },  
 
-    ];
+    // ];
+
+    let list = document.querySelector('ul');
+
+    $.ajax({
+        type:'POST',
+        data: '',
+        url: 'test/index.php',
+        success: (msg) => {
+            var names = [], i = 0;    
+            (function isArray(){       
+                for(var elem of msg){
+                    for(var key in elem){ };  
+                    names[i] = elem.name; i++;
+                    let text_begin = `<li class="competence" id=${elem.id}>${elem.name}</li>`;
+                    $('#list').append(text_begin);
+                }   isChoice();
+            }());
+            console.log("success" + "/n"  + msg)
+        },
+        error: (msg) => {
+            console.log("error" + "/n"  + msg);
+        }
+    })
      
     // THE LIST OF COMPETENCE FROM DATA BASE
-    let list = document.querySelector('ul');    
-    var names = [], i = 0;    
-    (function isArray(){           
-        for(var elem of obj){
-            for(var key in elem){};  
-            names[i] = elem.name; i++;
-            let text_begin = `<li class="competence" id=${elem.id}>${elem.name}</li>`;
-            $('#list').append(text_begin);
-        }   isChoice();
-    }());
+   
 
     // THE FALL LIST WITH POLYGON ROTATION
     let bool = false, polygon = document.querySelector('#polygon');
