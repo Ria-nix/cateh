@@ -218,9 +218,7 @@ body {
   top: 0;
 }
 .modal_window .window_wrap {
-  margin: 15% auto 0 auto;
   background: #F5F5F5;
-  padding: 1.5%;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
@@ -248,29 +246,53 @@ body {
   padding: 8px 25px;
 }
 
-@media (min-width: 1180px) {
+@media (min-width: 850px) {
   .window_wrap {
-    margin: 5% auto 0 auto;
-    width: 25rem;
+    margin: 17% auto 0 auto;
+    width: 40rem;
+    padding: 1%;
+  }
+
+  .items {
+    margin: 3% 3%;
   }
 }
 @media (max-width: 850px) {
   .window_wrap {
-    margin: 15% auto 0 auto;
-    width: 22rem;
+    margin: 20% auto 0 auto;
+    width: 30rem;
+    padding: 5% 2%;
   }
 
-  .key_password {
+  .items {
     margin: 3% 0;
   }
 }
 @media (max-width: 670px) {
   .window_wrap {
     margin: 25% auto 0 auto;
-    width: 75%;
+    width: 25rem;
+    padding: 3% 2%;
   }
 
-  .key_password {
+  .items {
     margin: 3% 3%;
+  }
+}
+@media (max-width: 530px) {
+  .window_wrap {
+    margin: 45% auto 0 auto;
+    width: 85%;
+    padding: 3% 2%;
+  }
+  .window_wrap img {
+    width: 40%;
+  }
+  .window_wrap button {
+    margin: 2.5%;
+  }
+
+  .items {
+    margin: 4% 3%;
   }
 }/*# sourceMappingURL=modal_window.css.map */

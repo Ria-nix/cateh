@@ -11,14 +11,16 @@
 </head>
 <body>
     <?php  include_once('navigation.php');?> </nav>
-    <?php  $question = 'Вы точно хотите добавить новую организацию?'; ?>
+    <?php  $question = 'Вы точно хотите добавить новую организацию?'; 
+           $error = 'Не получилось добавить нового пользователя';
+           $success = 'Успешно добавлен новый сис. администратор'; ?>
     <?php  include_once('modal windows/question_window.php'); ?>
     <?php  include_once('modal windows/success_window.php'); ?>
-    <?php  include_once('modal windows/password_window.php'); ?>
+    <?php  include_once('modal windows/error_window.php'); ?>
     
      <!-- CONTENT -->
     <div class="content_wrap">
-        <p class="font_24 bold">Добавление организации</p>
+        <p class="font_24 bold"><?php echo $add_organ ?></p>
         <div class="content_set">
             <div class="name_organization">
                 <label for="name">Название <br> организации</label>

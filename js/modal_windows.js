@@ -5,7 +5,7 @@ $(document).ready(function(){
     $('#check_button').click(function(){         
         arr_inputs = document.querySelectorAll(".add_info");
         CheckInputs(arr_inputs);
-        bool ? $('.password').removeClass('none') : bool == false;  
+        bool ? $('.error').removeClass('none') : bool == false;  
         // polygon.style.position = 'none';   
     });
 
@@ -23,6 +23,7 @@ $(document).ready(function(){
         item_info.setAttribute('placeholder','Заполните поле'); 
         
     }
+    
     function isNoneRedAuto(item_info){
         item_info.classList.remove('red_auto');
         item_info.setAttribute('placeholder','');  

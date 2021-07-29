@@ -25,11 +25,13 @@
     $css_index = 'css/index_style.css';
     $css_settings = 'css/settings.css';
     $css_add_organ = 'css/add_organization.css';
+    $css_edit_organ = 'css/edit_organisation.css';
     $css_sysadmin = 'css/main_style.css';
     $css_organizations = 'css/main_style.css';
     $css_add_sysadmin = 'css/add_sysadmin.css';
 
     //Script path of navigation panel
     $navigation_panel = 'js/navigation.js';
-
+    
+    //TODO:
     ?>
