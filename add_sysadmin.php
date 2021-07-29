@@ -1,6 +1,7 @@
-<?php  include('head_code.php'); ?>
+<?php include('head_code.php'); ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,11 +10,12 @@
     <?php echo $favicon, $jquery  ?>
     <title><?php echo $add_sysadmin ?></title>
 </head>
+
 <body>
-<?php include_once('navigation.php');?></nav>
-<?php include_once('modal windows/question_window.php'); ?>
-<?php include_once('modal windows/error_window.php'); ?>
-<?php include_once('modal windows/success_window.php'); ?>
+    <?php include_once('navigation.php'); ?></nav>
+    <?php include_once('modal windows/question_window.php'); ?>
+    <?php include_once('modal windows/error_window.php'); ?>
+    <?php include_once('modal windows/success_window.php'); ?>
 
     <!-- CONTENT -->
     <div class="content_wrap">
@@ -57,16 +59,16 @@
                     <span class="" id="polygon">
                         <img src="icon/Polygon.svg" alt="polygon">
                     </span>
-                    <ul class="font_18 spacing none" id="list"></ul>                    
+                    <ul class="font_18 spacing none" id="list"></ul>
                 </div>
             </div>
             <div class="competences border"></div>
             <div class="img_organization">
                 <div class="image border">
                     <img class="logo border" src="icon/michael.jpg" alt="logo">
-                </div>                
+                </div>
                 <div class="img_buttons">
-                <input type="file" accept="img/*" id="input_file">
+                    <input type="file" accept="img/*" id="input_file">
                     <label class="button_gray border font_16" for="input_file" id="download_file">Загрузить</label>
                     <button class="button_gray border font_16" id="delete_img">Удалить</button>
                 </div>
@@ -77,11 +79,9 @@
         </div>
     </div>
 
-    <script src="js/modal_windows.js"></script>    
+    <script src="js/modal_windows.js"></script>
     <script src="js/add_sysadmin.js"></script>
-    <script src="<?php  echo $navigation_panel ?>"></script>
+    <script src="<?php echo $navigation_panel ?>"></script>
 </body>
+
 </html>
-
-
-

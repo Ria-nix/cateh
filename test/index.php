@@ -1,4 +1,4 @@
-<?php 
+<?php
 include_once('cooler_helpers.php');
 include_once('MySQL.php');
 include_once('CategoriesInfo.php');
