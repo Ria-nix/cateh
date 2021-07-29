@@ -5,7 +5,7 @@ $(document).ready(function(){
     $('#check_button').click(function(){         
         arr_inputs = document.querySelectorAll(".add_info");
         CheckInputs(arr_inputs);
-        bool ? $('.question').removeClass('none') : bool == false;  
+        bool ? $('.password').removeClass('none') : bool == false;  
         // polygon.style.position = 'none';   
     });
 

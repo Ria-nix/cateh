@@ -159,8 +159,9 @@ body{ background: $fon_white; }
 
         input{  width: 85%; text-align: center; }
         label{ padding: 2% 0; }
+        br{ display: none; }
     }
-    br{ display: none; }
+   
 
     .content_set span{
         padding: 10px 10px;    

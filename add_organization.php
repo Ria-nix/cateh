@@ -14,7 +14,7 @@
     <?php  $question = 'Вы точно хотите добавить новую организацию?'; ?>
     <?php  include_once('modal windows/question_window.php'); ?>
     <?php  include_once('modal windows/success_window.php'); ?>
-    <?php  include_once('modal windows/error_window.php'); ?>
+    <?php  include_once('modal windows/password_window.php'); ?>
     
      <!-- CONTENT -->
     <div class="content_wrap">

@@ -950,13 +950,15 @@ body {
 }
 .modal_window .window_wrap {
   margin: 15% auto 0 auto;
-  height: 22rem;
   background: #F5F5F5;
-  padding: 0.5% 1.5%;
+  padding: 1.5%;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   text-align: center;
+}
+.modal_window .window_wrap .strong {
+  font-weight: bold;
 }
 .modal_window .window_wrap .buttons {
   width: 100%;
@@ -973,33 +975,40 @@ body {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
 }
-.modal_window .window_wrap .buttons button {
-  padding: 8px 16px;
-  margin: 3% 5%;
-}
 .modal_window .window_wrap button {
-  padding: 8px 16px;
-  margin: 3% 5%;
+  padding: 8px 25px;
 }
 
-@media (max-width: 1180px) {
+@media (min-width: 1180px) {
   .window_wrap {
-    width: 55%;
+    width: 45%;
   }
 }
 @media (min-width: 850px) {
   .window_wrap {
-    width: 36%;
+    width: 65%;
+  }
+
+  .key_password {
+    margin: 3% 0;
   }
 }
 @media (max-width: 670px) {
   .window_wrap {
     width: 75%;
   }
+
+  .key_password {
+    margin: 3% 3%;
+  }
 }
 @media (max-width: 530px) {
   .window_wrap {
     width: 85%;
+  }
+
+  .key_password {
+    margin: 3% 3%;
   }
 }
 body {
