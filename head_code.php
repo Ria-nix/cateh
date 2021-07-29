@@ -33,5 +33,4 @@
     //Script path of navigation panel
     $navigation_panel = 'js/navigation.js';
     
-    //TODO:
     ?>

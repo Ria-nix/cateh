@@ -24,10 +24,11 @@ body{ background: $fon_white; }
         border-radius: 10px;        
     }
     label, button{ letter-spacing: 1px; color: $blue;}               
-    .name_organization, .inn_organization{ 
+    .name_organisation, .password_organisation{ 
         justify-content: space-between;  
         align-items: center; 
     }
+    .pass{padding: 10px 20px; cursor: pointer;}
     .img_organization{            
         display: flex;
         align-items: center;     
@@ -56,7 +57,8 @@ body{ background: $fon_white; }
             cursor: pointer; 
         }
     }
-    .adress_organization{
+    
+    .adress_organisation{
         justify-content: flex-end;
         align-items: center;        
     }
@@ -88,7 +90,6 @@ body{ background: $fon_white; }
 }
 
 // ************* @MEDIA *************
-
 // ********** MEDIA MIN 1163PX *************
 @media (min-width: 1163px) {    
 .content_set > div{ width: 45%; }
@@ -103,18 +104,18 @@ body{ background: $fon_white; }
 // ********** MEDIA MAX 850PX *************
 @media (max-width: 850px) {  
     .content_set > div{ width: 90%;}
-    .adress_organization{ width: 100%;}
+    .adress_organisation{ width: 100%;}
 }
 
 // ********** MEDIA MIN 541PX *************
 @media (min-width: 541px) {
     .content_set > div{ padding: 1.5% 0%; }
-    .name_organization, .inn_organization,
-    .adress_organization{
+    .name_organisation, .password_organisation,
+    .adress_organisation{
         display: flex;
         flex-direction: row;
     }
-    .name_organization, .inn_organization{          
+    .name_organisation, .password_organisation{          
         label{ 
             text-align: left;
             width: 25%;
@@ -125,7 +126,7 @@ body{ background: $fon_white; }
     .image{ margin: 0 5% 5% 0; }
     .save button{ margin: 0 0 0 70%; }
 
-    .adress_organization{
+    .adress_organisation{
         label{ margin-right: auto; }
         input{ 
             width: 67.3%;
@@ -145,14 +146,14 @@ body{ background: $fon_white; }
         button{ padding: 7px 20px; }
         #delete_img{ margin: 0 0 0 5%; }       
     }
+    .pass{margin-right: auto;}
 }
-
 
 // ********** MEDIA MAX 540PX *************
 @media (max-width: 540px) {
     .content_set > div{ padding: 2% 0%; }
     .save button{ margin: 0; }
-    .name_organization, .inn_organization, .adress_organization{   
+    .name_organisation, .password_organisation, .adress_organisation{   
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -161,8 +162,6 @@ body{ background: $fon_white; }
         label{ padding: 2% 0; }
         br{ display: none; }
     }
-   
-
     .content_set span{
         padding: 10px 10px;    
         margin: 20px 0 0 0;   
@@ -173,8 +172,6 @@ body{ background: $fon_white; }
         flex-direction: column;
         align-items: center; 
     }
-    
-    
     .fields_address{ display: none; }
     .cell input{ width: 80%;}
     .save { margin: 5% 0; }
@@ -195,7 +192,7 @@ body{ background: $fon_white; }
 // ********** MEDIA MAX 390PX *************
 @media (max-width: 390px) {
     .save button{ margin: 0; }
-    .name_organization, .inn_organization, .adress_organization{   
+    .name_organisation, .password_organisation, .adress_organisation{   
         display: flex;
         flex-direction: column;
         align-items: center;

@@ -26,7 +26,7 @@
                 <p>ФИО <span class="ask_des_arrow"><img src="icon/up_arrow.svg" alt="arrow" id="arrow"></span></p>
                 <p>Выполнено за месяц</p>
                 <p>Текущих заказов </p>
-                <p>Роль</p>
+                <p>Статус</p>
             </div>
         </div>
          <!-- TABLE -->

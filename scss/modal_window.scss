@@ -31,7 +31,7 @@ body{
     
 }
  
-// ********** MEDIA MIN 1180px *************
+// ********** MEDIA MIN 850px *************
 @media (min-width: 850px) {  
     .window_wrap{ 
         margin: 17% auto 0 auto;
@@ -41,7 +41,7 @@ body{
     .items{ margin: 3% 3%; }
 }
 
-// ********** MEDIA MIN 850px *************
+// ********** MEDIA MAX 850px *************
 @media (max-width: 850px) {
     .window_wrap{ 
         margin: 20% auto 0 auto;

@@ -5,13 +5,7 @@ body {
 
 /* width */
 body::-webkit-scrollbar {
-  width: 15px;
-}
-
-/* Handle */
-body::-webkit-scrollbar-thumb {
-  background: rgba(147, 147, 147, 0.65);
-  border-radius: 10px;
+  width: 0;
 }
 
 .content_wrap .table_sysadmin .item_table, .content_wrap .head_table .head_name, nav .navigation span, nav .navigation .panel_buttons, nav .navigation {
@@ -232,13 +226,7 @@ body {
 
 /* width */
 body::-webkit-scrollbar {
-  width: 15px;
-}
-
-/* Handle */
-body::-webkit-scrollbar-thumb {
-  background: rgba(147, 147, 147, 0.65);
-  border-radius: 10px;
+  width: 0;
 }
 
 .content_wrap .table_sysadmin .item_table, .content_wrap .head_table .head_name, nav .navigation span, nav .navigation .panel_buttons, nav .navigation {

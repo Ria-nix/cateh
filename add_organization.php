@@ -24,15 +24,15 @@
         <div class="content_set">
             <div class="name_organization">
                 <label for="name">Название <br> организации</label>
-                <input type="text" id="name" class="add_info json" value='ООО Название компании'>
+                <input type="text" id="name" class="add_info json" placeholder='ООО"Название компании"'>
             </div>
             <div class="inn_organization">
                 <label for="inn">ИНН</label>
-                <input type="number" id="inn" class="add_info json" value="390025125634">
+                <input type="number" id="inn" class="add_info json" placeholder="390025125634">
             </div>
             <div class="adress_organization">
                 <label for="address">Адрес</label>
-                <input type="text" id="address" class="text_address add_info" value="ул.Маркаса д.9">
+                <input type="text" id="address" class="text_address add_info" placeholder="ул.Маркаса д.9">
                 <div class="mobile_fields_address"></div>
                 <span class="button border" id="add_address">
                     <img src="icon/plus-solid.svg" alt="plus_solid"> 

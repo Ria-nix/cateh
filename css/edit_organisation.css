@@ -5,13 +5,7 @@ body {
 
 /* width */
 body::-webkit-scrollbar {
-  width: 15px;
-}
-
-/* Handle */
-body::-webkit-scrollbar-thumb {
-  background: rgba(147, 147, 147, 0.65);
-  border-radius: 10px;
+  width: 0;
 }
 
 .content_set .img_organization .img_buttons, .content_set .img_organization .image, nav .navigation span, nav .navigation .panel_buttons, nav .navigation {
@@ -232,13 +226,7 @@ body {
 
 /* width */
 body::-webkit-scrollbar {
-  width: 15px;
-}
-
-/* Handle */
-body::-webkit-scrollbar-thumb {
-  background: rgba(147, 147, 147, 0.65);
-  border-radius: 10px;
+  width: 0;
 }
 
 .content_set .img_organization .img_buttons, .content_set .img_organization .image, nav .navigation span, nav .navigation .panel_buttons, nav .navigation {
@@ -715,13 +703,7 @@ body {
 
 /* width */
 body::-webkit-scrollbar {
-  width: 15px;
-}
-
-/* Handle */
-body::-webkit-scrollbar-thumb {
-  background: rgba(147, 147, 147, 0.65);
-  border-radius: 10px;
+  width: 0;
 }
 
 .content_set .img_organization .img_buttons, .content_set .img_organization .image, nav .navigation, nav .navigation .panel_buttons, nav .navigation span {
@@ -1062,13 +1044,17 @@ body {
   letter-spacing: 1px;
   color: #112742;
 }
-.content_set .name_organization, .content_set .inn_organization {
+.content_set .name_organisation, .content_set .password_organisation {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+.content_set .pass {
+  padding: 10px 20px;
+  cursor: pointer;
 }
 .content_set .img_organization {
   display: -webkit-box;
@@ -1101,7 +1087,7 @@ body {
   padding: 6px 20px;
   cursor: pointer;
 }
-.content_set .adress_organization {
+.content_set .adress_organisation {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
@@ -1161,7 +1147,7 @@ body {
     width: 90%;
   }
 
-  .adress_organization {
+  .adress_organisation {
     width: 100%;
   }
 }
@@ -1170,8 +1156,8 @@ body {
     padding: 1.5% 0%;
   }
 
-  .name_organization, .inn_organization,
-.adress_organization {
+  .name_organisation, .password_organisation,
+.adress_organisation {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1181,11 +1167,11 @@ body {
             flex-direction: row;
   }
 
-  .name_organization label, .inn_organization label {
+  .name_organisation label, .password_organisation label {
     text-align: left;
     width: 25%;
   }
-  .name_organization input, .inn_organization input {
+  .name_organisation input, .password_organisation input {
     width: 75%;
   }
 
@@ -1203,10 +1189,10 @@ body {
     margin: 0 0 0 70%;
   }
 
-  .adress_organization label {
+  .adress_organisation label {
     margin-right: auto;
   }
-  .adress_organization input {
+  .adress_organisation input {
     width: 67.3%;
     margin: 0 1.5% 0 0;
   }
@@ -1246,6 +1232,10 @@ body {
   .img_buttons #delete_img {
     margin: 0 0 0 5%;
   }
+
+  .pass {
+    margin-right: auto;
+  }
 }
 @media (max-width: 540px) {
   .content_set > div {
@@ -1256,7 +1246,7 @@ body {
     margin: 0;
   }
 
-  .name_organization, .inn_organization, .adress_organization {
+  .name_organisation, .password_organisation, .adress_organisation {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1268,14 +1258,14 @@ body {
         -ms-flex-align: center;
             align-items: center;
   }
-  .name_organization input, .inn_organization input, .adress_organization input {
+  .name_organisation input, .password_organisation input, .adress_organisation input {
     width: 85%;
     text-align: center;
   }
-  .name_organization label, .inn_organization label, .adress_organization label {
+  .name_organisation label, .password_organisation label, .adress_organisation label {
     padding: 2% 0;
   }
-  .name_organization br, .inn_organization br, .adress_organization br {
+  .name_organisation br, .password_organisation br, .adress_organisation br {
     display: none;
   }
 
@@ -1346,7 +1336,7 @@ body {
     margin: 0;
   }
 
-  .name_organization, .inn_organization, .adress_organization {
+  .name_organisation, .password_organisation, .adress_organisation {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1358,7 +1348,7 @@ body {
         -ms-flex-align: center;
             align-items: center;
   }
-  .name_organization label, .inn_organization label, .adress_organization label {
+  .name_organisation label, .password_organisation label, .adress_organisation label {
     padding: 3.2% 0;
   }
 }/*# sourceMappingURL=edit_organisation.css.map */
