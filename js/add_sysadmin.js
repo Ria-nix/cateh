@@ -2,99 +2,39 @@ $(document).ready(function () {
 
     //************ VALIDATION FORM FOR FEW INPUTS ************/
     // Validation for 
-    let password = document.querySelector('#password');
-    password.addEventListener('change', function () {
-        let pass = /[A-Za-z_,.]\w{5,20}$/;
-        if (password.value.match(pass)) {
-            console.log('right')
-            password.classList.remove('red_auto');
+    // let password = document.querySelector('#password');
+    // password.addEventListener('change', function () {
+    //     let pass = /[A-Za-z_,.]\w{5,20}$/;
+    //     if (password.value.match(pass)) {
+    //         console.log('right')
+    //         password.classList.remove('red_auto');
+    //     }
+    //     else {
+    //         password.classList.add('red_auto');
+    
+    ////password.hasAttributes('Пароль может иметь содержать латинские буквы, цифры и символы: "_" "," "."');
+    //         console.log('no')
+    //     };
+    // })
+
+let number = document.querySelector('#tel_number');
+    $('#tel_number').focus(function(){ number.value = '+7 ';})
+
+    $('#tel_number').change(function(){
+        let pass = /^[-+]?[0-9 ]{0,15}$/;
+        if (number.value.match(pass)) {
+            number.classList.remove('red_auto');
         }
-        else {
-            password.classList.add('red_auto');
-            // password.hasAttributes('Пароль может иметь содержать латинские буквы, цифры и символы: "_" "," "."');
-            console.log('no')
-        };
+        else{ 
+            number.value = '';
+            number.classList.add('red_auto');
+        }
     })
-
-
 
     //************ COMPETENTIONS AND FOR ALL ************/
     // SEND ON SERVER INFORMATION ABOUT NEW ORGANIZATION
-    // let obj = [
-    //     {
-    //         "id": "1",
-    //         "name": "Ведение технической документации"
-    //     },
-    //     {
-    //         "id": "2",
-    //         "name": "Обновление работоспособности компьютерных систем после сбоев"
-    //     },
-    //     {
-    //         "id": "3",
-    //         "name": "Ремонт (несложный) технического оборудования предприятия"
-    //     },
-    //     {
-    //         "id": "4",
-    //         "name": "Модернизация и усовершенствование компьютерных систем предприятия, конфигурация рабочих мест"
-    //     },
-    //     {
-    //         "id": "5",
-    //         "name": "Ведение технической 4654899948 документации"
-    //     },
-    //     {
-    //         "id": "6",
-    //         "name": "Ведение технической 2551 документации"
-    //     },
-    //     {
-    //         "id": "7",
-    //         "name": "Ведение документации"
-    //     },
-    //     {
-    //         "id": "8",
-    //         "name": "Ведение технической 415 документации"
-    //     },   
-    //     {
-    //         "id": "9",
-    //         "name": "delete документации"
-    //     },
-    //     {
-    //         "id": "10",
-    //         "name": "hello friends технической 448884484 документации"
-    //     },  
-
-    // ];
 
     let list = document.querySelector('ul');
-
-    // $.ajax({
-    //     type: 'POST',
-    //     data: '',
-    //     url: 'test/index.php',
-    //     success: (msg) => {
-
-
-
-            // var names = [], i = 0;
-            // (function isArray() {
-            //     for (var elem of msg) {
-            //         for (var key in elem) { };
-            //         names[i] = elem.name; i++;
-            //         let text_begin = `<li class="competence" id=${elem.id}>${elem.name}</li>`;
-            //         $('#list').append(text_begin);
-            //     } isChoice();
-            // }());
-
-
-
-    //         console.log("success" + "/n" + msg)
-    //     },
-    //     error: (msg) => {
-    //         console.log("error" + "/n" + msg);
-    //     }
-    // })
-
-    // THE LIST OF COMPETENCE FROM DATA BASE
-
 
     // THE FALL LIST WITH POLYGON ROTATION
     let bool = false, polygon = document.querySelector('#polygon');
@@ -113,13 +53,15 @@ $(document).ready(function () {
 
     // ************ SEARCH  ************
     var search = document.querySelector('#id_search');
-    let names
+    let names = [],fall_list = document.querySelectorAll('.competence');
+    for(let elem of fall_list){names.push(elem.innerText)};
+    isChoice();
     var text_search, html, text_competence;
     if (search) {
         var suggestArray = [];
         search.addEventListener('keyup', (e) => {
-            suggestArray = names.filter(item_click => item_click.toLowerCase().includes(e.target.value.toLowerCase()));
-            suggestArray = suggestArray.map(item_click => `<li class="competence">${item_click}</li>`);
+            suggestArray = names.filter(item => item.toLowerCase().includes(e.target.value.toLowerCase()));
+            suggestArray = suggestArray.map(item => `<li class="competence">${item}</li>`);
             if (!suggestArray.length) {
                 if (!search.value) {
                     isClosePolygon();
@@ -149,18 +91,17 @@ $(document).ready(function () {
         fall_list.forEach(function (item_click) {
             item_click.addEventListener('click', function () {
                 search.value = item_click.innerText;
-                text_competence = '<span class="border cell competence_item register">' + search.value + '<img src="icon/close.svg" alt="close"></span>';
+                let uppercase = search.value.substr(0, 1).toUpperCase() + search.value.substr(1).toLowerCase();
+                text_competence = '<span class="border cell competence_item register">' + uppercase + '<img src="icon/close.svg" alt="close"></span>';
                 textCompetence(text_competence);
             });
         })
     }
-
-
     // THE ADD NEW COMPETENCE
     function addCompetence() {
         $('.add_competence').on('click', function () {
-            var show = search.value.substr(0, 1).toUpperCase() + search.value.substr(1).toLowerCase();
-            text_competence = '<span class="border cell competence_item unregister">' + show + '<img src="icon/close.svg" alt="close"></span>';
+            let uppercase = search.value.substr(0, 1).toUpperCase() + search.value.substr(1).toLowerCase();
+            text_competence = '<span class="border cell competence_item unregister">' + uppercase + '<img src="icon/close.svg" alt="close"></span>';
             textCompetence(text_competence);
         })
     };
@@ -168,21 +109,20 @@ $(document).ready(function () {
     // THE CONNECT BETWEEN addCompetence() AND isChoice()
     function textCompetence(text_competence) {
         if (!array_test.length) {
-            array_test.push(search.value);
+            array_test.push(search.value)
             $(".competences").append(text_competence);
         }
         else {
             for (var mele of array_test) {
+                console.log(mele)
                 if (search.value.split(' ').join('').toLowerCase() != mele.split(' ').join('').toLowerCase()) { value = true; }
                 else { return value = false; }
             }
             if (value) {
-                var show_second = search.value.substr(0, 1).toUpperCase() + search.value.substr(1).toLowerCase();
-                array_test.push(show_second);
+                array_test.push(search.value);
                 $(".competences").append(text_competence);
             }
-        }
-        isRemoveCell();
+        }   isRemoveCell();
     }
 
     // REMOVE THE CELL
@@ -194,6 +134,5 @@ $(document).ready(function () {
             item.parentElement.remove();
         });
     };
-
 });
 

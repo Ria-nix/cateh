@@ -51,7 +51,7 @@ include('head_code.php'); ?>
 
             <div class="main_fields">
                 <label for="tel_number">Номер телефона</label>
-                <input type="number" id="tel_number" placeholder="+7(***)*** - ** - **">
+                <input type="text" id="tel_number" placeholder="+7 950 *** 22 01">
             </div>
 
             <div class="main_fields">

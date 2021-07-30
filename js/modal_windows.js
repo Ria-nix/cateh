@@ -76,20 +76,21 @@ $(document).ready(function(){
         let surname = document.querySelector('#surname').value;
         let tel_number = document.querySelector('#tel_number').value;
 
-
-
         let file = document.querySelector('input[type=file]').files[0];
-        console.log(file)
-        formData.append('image', file, 'NOT_NULL');
-        formData.append('MAX_FILE_SIZE', "6291456");
+        // console.log(file)
+        if(file !== undefined){
+            formData.append('image', file, 'NOT_NULL');
+            formData.append('MAX_FILE_SIZE', "6291456");
+        }
+        
         formData.append('DBname', 'u1184374_second_company_bd');
         formData.append("token", 'lera_token');
-        formData.append("email", 'login');
-        formData.append("password", 'password');
-        formData.append("name", 'name');
-        formData.append("surname", 'surname');
-        formData.append("email", 'nonono');
-        formData.append("phone_number", 'tel_number');
+        formData.append("password", password);
+        formData.append("role", 3);
+        formData.append("name", name);
+        formData.append("surname", surname);
+        formData.append("email", email);
+        formData.append("phone_number", tel_number);
         formData.append("set_categories_list", JSON.stringify([1]));
         formData.append("add_new_categories_list", JSON.stringify(["test"]));
 
