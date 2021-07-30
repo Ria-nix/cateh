@@ -66,26 +66,26 @@ $(document).ready(function () {
 
     let list = document.querySelector('ul');
 
-    $.ajax({
-        type: 'POST',
-        data: '',
-        url: 'test/index.php',
-        success: (msg) => {
-            var names = [], i = 0;
-            (function isArray() {
-                for (var elem of msg) {
-                    for (var key in elem) { };
-                    names[i] = elem.name; i++;
-                    let text_begin = `<li class="competence" id=${elem.id}>${elem.name}</li>`;
-                    $('#list').append(text_begin);
-                } isChoice();
-            }());
-            console.log("success" + "/n" + msg)
-        },
-        error: (msg) => {
-            console.log("error" + "/n" + msg);
-        }
-    })
+    // $.ajax({
+    //     type: 'POST',
+    //     data: '',
+    //     url: 'test/index.php',
+    //     success: (msg) => {
+    //         var names = [], i = 0;
+    //         (function isArray() {
+    //             for (var elem of msg) {
+    //                 for (var key in elem) { };
+    //                 names[i] = elem.name; i++;
+    //                 let text_begin = `<li class="competence" id=${elem.id}>${elem.name}</li>`;
+    //                 $('#list').append(text_begin);
+    //             } isChoice();
+    //         }());
+    //         console.log("success" + "/n" + msg)
+    //     },
+    //     error: (msg) => {
+    //         console.log("error" + "/n" + msg);
+    //     }
+    // })
 
     // THE LIST OF COMPETENCE FROM DATA BASE
 

@@ -108,17 +108,6 @@ input:focus::placeholder, select:focus::placeholder {
   color: rgba(17, 39, 66, 0.65);
 }
 
-select {
-  border: 1px solid #939393;
-  background: #F1F1F1;
-  letter-spacing: 1px;
-  color: #112742;
-  outline: none;
-  /* remove focus around input*/
-  font-size: 14px;
-  padding: 10px 20px;
-}
-
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
   -webkit-appearance: none;
@@ -343,17 +332,6 @@ input:focus::-ms-input-placeholder, select:focus::-ms-input-placeholder {
 }
 input:focus::placeholder, select:focus::placeholder {
   color: rgba(17, 39, 66, 0.65);
-}
-
-select {
-  border: 1px solid #939393;
-  background: #F1F1F1;
-  letter-spacing: 1px;
-  color: #112742;
-  outline: none;
-  /* remove focus around input*/
-  font-size: 14px;
-  padding: 10px 20px;
 }
 
 input[type=number]::-webkit-inner-spin-button,
@@ -836,17 +814,6 @@ input:focus::-ms-input-placeholder, select:focus::-ms-input-placeholder {
 }
 input:focus::placeholder, select:focus::placeholder {
   color: rgba(17, 39, 66, 0.65);
-}
-
-select {
-  border: 1px solid #939393;
-  background: #F1F1F1;
-  letter-spacing: 1px;
-  color: #112742;
-  outline: none;
-  /* remove focus around input*/
-  font-size: 14px;
-  padding: 10px 20px;
 }
 
 input[type=number]::-webkit-inner-spin-button,
@@ -1388,4 +1355,4 @@ body {
   .main_fields label {
     padding: 3.2% 0;
   }
-}/*# sourceMappingURL=add_sysadmin.css.map */
+}/*# sourceMappingURL=edit_sysadmin.css.map */

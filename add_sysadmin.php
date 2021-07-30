@@ -50,6 +50,11 @@
             <div class="main_fields">
                 <label for="state">Статус <span class='red'>*</span></label>
                 <input type="text" id="state" placeholder="Выберите статус">
+                <select name="state" id="state" class='none'>
+                    <option value="no_state" checked>Выберите статус</option>
+                    <option value="sys_admin">Системный администратор</option>
+                    <option value="admin">Админ</option>
+                </select>
             </div>
 
             <div class="field_choice main_fields">
@@ -62,20 +67,25 @@
                     <ul class="font_18 spacing none" id="list"></ul>
                 </div>
             </div>
+
             <div class="competences border"></div>
             <div class="img_organization">
                 <div class="image border">
                     <img class="logo border" src="icon/michael.jpg" alt="logo">
                 </div>
+
                 <div class="img_buttons">
                     <input type="file" accept="img/*" id="input_file">
                     <label class="button_gray border font_16" for="input_file" id="download_file">Загрузить</label>
                     <button class="button_gray border font_16" id="delete_img">Удалить</button>
                 </div>
+
             </div>
+
             <div class="save">
                 <button class="button border font_16" id="check_button">Добавить</button>
             </div>
+            
         </div>
     </div>
 

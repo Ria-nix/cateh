@@ -39,7 +39,7 @@ body::-webkit-scrollbar {
           box-shadow: 0px 4px 10px 0px rgba(17, 39, 66, 0.15);
 }
 
-input {
+input, select {
   border: 1px solid #939393;
   background: #F1F1F1;
   letter-spacing: 1px;
@@ -48,43 +48,54 @@ input {
   /* remove focus around input*/
   font-size: 14px;
 }
-input::-webkit-input-placeholder {
+input::-webkit-input-placeholder, select::-webkit-input-placeholder {
   font-size: 14px;
   color: rgba(17, 39, 66, 0.65);
 }
-input::-moz-placeholder {
+input::-moz-placeholder, select::-moz-placeholder {
   font-size: 14px;
   color: rgba(17, 39, 66, 0.65);
 }
-input:-ms-input-placeholder {
+input:-ms-input-placeholder, select:-ms-input-placeholder {
   font-size: 14px;
   color: rgba(17, 39, 66, 0.65);
 }
-input::-ms-input-placeholder {
+input::-ms-input-placeholder, select::-ms-input-placeholder {
   font-size: 14px;
   color: rgba(17, 39, 66, 0.65);
 }
-input::placeholder {
+input::placeholder, select::placeholder {
   font-size: 14px;
   color: rgba(17, 39, 66, 0.65);
 }
-input:focus {
+input:focus, select:focus {
   border-color: #1AC1F5;
 }
-input:focus::-webkit-input-placeholder {
+input:focus::-webkit-input-placeholder, select:focus::-webkit-input-placeholder {
   color: rgba(17, 39, 66, 0.65);
 }
-input:focus::-moz-placeholder {
+input:focus::-moz-placeholder, select:focus::-moz-placeholder {
   color: rgba(17, 39, 66, 0.65);
 }
-input:focus:-ms-input-placeholder {
+input:focus:-ms-input-placeholder, select:focus:-ms-input-placeholder {
   color: rgba(17, 39, 66, 0.65);
 }
-input:focus::-ms-input-placeholder {
+input:focus::-ms-input-placeholder, select:focus::-ms-input-placeholder {
   color: rgba(17, 39, 66, 0.65);
 }
-input:focus::placeholder {
+input:focus::placeholder, select:focus::placeholder {
   color: rgba(17, 39, 66, 0.65);
+}
+
+select {
+  border: 1px solid #939393;
+  background: #F1F1F1;
+  letter-spacing: 1px;
+  color: #112742;
+  outline: none;
+  /* remove focus around input*/
+  font-size: 14px;
+  padding: 10px 20px;
 }
 
 input[type=number]::-webkit-inner-spin-button,

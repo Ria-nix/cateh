@@ -1,6 +1,4 @@
 <?php
-
-
 namespace artemy;
 
 include_once "cooler_helpers.php";

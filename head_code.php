@@ -27,6 +27,7 @@
     $css_add_organ = 'css/add_organization.css';
     $css_edit_organ = 'css/edit_organisation.css';
     $css_sysadmin = 'css/main_style.css';
+    $css_edit_sysadmin = 'css/edit_sysadmin.css';
     $css_organizations = 'css/main_style.css';
     $css_add_sysadmin = 'css/add_sysadmin.css';
 
