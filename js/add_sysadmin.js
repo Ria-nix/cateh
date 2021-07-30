@@ -71,15 +71,21 @@ $(document).ready(function () {
     //     data: '',
     //     url: 'test/index.php',
     //     success: (msg) => {
-    //         var names = [], i = 0;
-    //         (function isArray() {
-    //             for (var elem of msg) {
-    //                 for (var key in elem) { };
-    //                 names[i] = elem.name; i++;
-    //                 let text_begin = `<li class="competence" id=${elem.id}>${elem.name}</li>`;
-    //                 $('#list').append(text_begin);
-    //             } isChoice();
-    //         }());
+
+
+
+            // var names = [], i = 0;
+            // (function isArray() {
+            //     for (var elem of msg) {
+            //         for (var key in elem) { };
+            //         names[i] = elem.name; i++;
+            //         let text_begin = `<li class="competence" id=${elem.id}>${elem.name}</li>`;
+            //         $('#list').append(text_begin);
+            //     } isChoice();
+            // }());
+
+
+
     //         console.log("success" + "/n" + msg)
     //     },
     //     error: (msg) => {
@@ -107,6 +113,7 @@ $(document).ready(function () {
 
     // ************ SEARCH  ************
     var search = document.querySelector('#id_search');
+    let names
     var text_search, html, text_competence;
     if (search) {
         var suggestArray = [];

@@ -87,17 +87,6 @@ input:focus::placeholder, select:focus::placeholder {
   color: rgba(17, 39, 66, 0.65);
 }
 
-select {
-  border: 1px solid #939393;
-  background: #F1F1F1;
-  letter-spacing: 1px;
-  color: #112742;
-  outline: none;
-  /* remove focus around input*/
-  font-size: 14px;
-  padding: 10px 20px;
-}
-
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
   -webkit-appearance: none;
