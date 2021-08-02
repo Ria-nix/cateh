@@ -11,7 +11,7 @@
 </head>
 <body>
     <?php  include_once('navigation.php');?> </nav>
-    <?php  $question = 'Вы точно хотите добавить новую организацию?'; 
+    <?php  $question = 'Вы точно хотите изменить данную организацию?'; 
            $error = 'Не получилось добавить нового пользователя';
            $success = 'Успешно добавлен новый сис. администратор'; ?>
     <?php  include_once('modal windows/question_window.php'); ?>

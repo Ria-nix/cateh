@@ -21,49 +21,48 @@ body{ background: $fon_white; }
         align-items: center; 
     }
     .text_width{ margin: 1% 0 auto 0;}
-    .field_choice{ 
-        .searchable { border: 1px solid $gray_border;      position: relative;       
-            input {
-                padding: 0 11% 0 2%;
-                margin: 0;
-                border: none;
-                width: 100%;
-                transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-            }
-            #polygon{
-                position: absolute;
-                top: 13px;
-                right: 15px;
+    .searchable { 
+        border: 1px solid $gray_border;      
+        position: relative;       
+
+        input {
+            padding: 0 11% 0 2%;
+            margin: 0;
+            border: none;
+            width: 100%;
+            transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+        }            
+        #polygon, #polygon_state{
+            position: absolute;
+            top: 13px;
+            right: 15px;
+            cursor: pointer;
+        }
+        ul {
+            width: 100%;
+            list-style-type: none;                
+            background: $gray_full;
+            outline: none;
+            max-height: 150px;
+            overflow-y: scroll;
+            overflow-x: hidden;
+            text-align: left;
+            border-top: 1px solid $gray_border;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            li {
+                padding: 7px 9px;
                 cursor: pointer;
             }
-            ul {
-                width: 100%;
-                list-style-type: none;                
-                background: $gray_full;
-                outline: none;
-                max-height: 150px;
-                overflow-y: scroll;
-                overflow-x: hidden;
-                text-align: left;
-                border-top: 1px solid $gray_border;
-                border-bottom-left-radius: 10px;
-                border-bottom-right-radius: 10px;
-                li {
-                    padding: 7px 9px;
-                    cursor: pointer;
-                }
-            }
-        }        
-        .searchable ul li.selected {
-            background-color: #e8e8e8;
-            color: #333;
         }
+    }        
+    .searchable ul li.selected {
+        background-color: #e8e8e8;
+        color: #333;
     }
     
     .competences{
         min-height: 100px;
-        border: 1px solid $gray_border;
-        background: $list_competence;
         text-align: left;
         @extend %flex_row;
         flex-wrap: wrap;
@@ -179,8 +178,12 @@ body{ background: $fon_white; }
         button{ padding: 7px 20px; }
         #delete_img{ margin: 0 0 0 5%; }       
     }
-    .searchable { width: 85%;}
-    .competences{ padding: 0.5%; }
+    .searchable { width: 71%;}
+    .competences{ 
+        border: 1px solid $gray_border;
+        background: $list_competence;
+        padding: 0.5%; 
+    }
 
 }
 

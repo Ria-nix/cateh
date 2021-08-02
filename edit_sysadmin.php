@@ -13,6 +13,9 @@
 
 <body>
     <?php include_once('navigation.php'); ?></nav>
+    <?php  $question = 'Вы точно хотите изменить данного администратора?'; 
+           $error = 'Не получилось добавить нового пользователя';
+           $success = 'Успешно добавлен новый сис. администратор'; ?>
     <?php include_once('modal windows/question_window.php'); ?>
     <?php include_once('modal windows/error_window.php'); ?>
     <?php include_once('modal windows/success_window.php'); ?>
@@ -48,12 +51,17 @@
             </div>
 
             <div class="main_fields">
-                <label for="state">Статус<span class='red'>*</span></label>
-                <input type="text" id="state" placeholder="Выберите статус">
-                <span id="polygon">
-                    <img src="icon/Polygon.svg" alt="polygon">
-                </span>
-                <ul class="font_18 spacing none" id="list_state"></ul>
+                <label for="state" class="text_width">Статус <span class='red'>*</span></label>
+                <div class="searchable border">
+                    <input type="text" class="border_none font_18 state_value" placeholder="Выберите статус">
+                    <span id="polygon_state">
+                        <img src="icon/Polygon.svg" alt="polygon">
+                    </span>
+                    <ul class="font_18 spacing none" id="list_state">
+                        <li class="states">Системный администратор</li>
+                        <li class="states">Администратор</li>
+                    </ul>                    
+                </div>
             </div>
 
             <div class="field_choice main_fields">
@@ -63,26 +71,26 @@
                     <span id="polygon">
                         <img src="icon/Polygon.svg" alt="polygon">
                     </span>
-                    <ul class="font_18 spacing none" id="list"></ul>
+                    <ul class="font_18 spacing none" id="list">
+                        <?php
+                            // include_once('test/cooler_helpers.php');
+                            // include_once('test/MySQL.php');
+                            // include_once('test/CategoriesInfo.php');
+
+                            // $link = getLink("u1184374_second_company_bd");
+
+                            // $categories = new CategoriesInfo($link);
+                            // $all_categories = $categories->fetch();
+                            
+                            // foreach($all_categories as $category) {
+                            //     echo "<li class=\"competence\" id={$category['id']}>{$category['name']}</li>";
+                            // }
+                        ?> 
+                    </ul>
                 </div>
             </div>
 
-            <div class="competences border">
-                <?php
-                    // include_once('test/cooler_helpers.php');
-                    // include_once('test/MySQL.php');
-                    // include_once('test/CategoriesInfo.php');
-
-                    // $link = getLink("u1184374_second_company_bd");
-
-                    // $categories = new CategoriesInfo($link);
-                    // $all_categories = $categories->fetch();
-
-                    // foreach($all_categories as $category) {
-                    //     echo "<span class=\"border cell competence_item\" id={$category['id']}>{$category['name']}</span>";
-                    // }
-                ?>
-            </div>
+            <div class="competences border"></div>
 
             <div class="img_organization">
                 <div class="image border">
@@ -98,7 +106,7 @@
             <div class="save">
                 <button class="button border font_16" id="check_button">Добавить</button>
             </div>
-            
+
         </div>
     </div>
 

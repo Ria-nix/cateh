@@ -53,7 +53,6 @@ let number = document.querySelector('#tel_number');
 
     let state_input = document.querySelector('.state_value');
     for(let item_state of $('.states')){
-        console.log(item_state)
         item_state.addEventListener('click', function(){ 
             state_input.value = item_state.innerText;            
         })

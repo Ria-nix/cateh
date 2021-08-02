@@ -57,11 +57,11 @@ include('head_code.php'); ?>
             <div class="main_fields">
                 <label for="state" class="text_width">Статус <span class='red'>*</span></label>
                 <div class="searchable border">
-                    <input type="text" class="border_none font_18 state_value" placeholder="Выберите статус">
+                    <input type="text" class="border_none state_value" placeholder="Выберите статус">
                     <span id="polygon_state">
                         <img src="icon/Polygon.svg" alt="polygon">
                     </span>
-                    <ul class="font_18 spacing none" id="list_state">
+                    <ul class="spacing none" id="list_state">
                         <li class="states">Системный администратор</li>
                         <li class="states">Администратор</li>
                     </ul>                    
@@ -71,11 +71,11 @@ include('head_code.php'); ?>
             <div class="field_choice main_fields">
                 <label for="address" class="text_width">Добавьте компетенцию</label>
                 <div class="searchable border">
-                    <input type="text" class=" border_none font_18" id="id_search" placeholder="Введите компетенцию">
+                    <input type="text" class=" border_none" id="id_search" placeholder="Введите компетенцию">
                     <span id="polygon">
                         <img src="icon/Polygon.svg" alt="polygon">
                     </span>
-                    <ul class="font_18 spacing none" id="list">
+                    <ul class="spacing none" id="list">
                         <?php
                             include_once('test/cooler_helpers.php');
                             include_once('test/MySQL.php');
@@ -103,14 +103,14 @@ include('head_code.php'); ?>
 
                 <div class="img_buttons">
                     <input type="file" id="input_file">
-                    <label class="button_gray border font_16" for="input_file" id="download_file">Загрузить</label>
-                    <button class="button_gray border font_16" id="delete_img">Удалить</button>
+                    <label class="button_gray border " for="input_file" id="download_file">Загрузить</label>
+                    <button class="button_gray border " id="delete_img">Удалить</button>
                 </div>
 
             </div>
 
             <div class="save">
-                <button class="button border font_16" id="check_button">Добавить</button>
+                <button class="button border " id="check_button">Добавить</button>
             </div>
 
         </div>

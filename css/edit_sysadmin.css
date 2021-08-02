@@ -1057,11 +1057,11 @@ body {
 .content_set .text_width {
   margin: 1% 0 auto 0;
 }
-.content_set .field_choice .searchable {
+.content_set .searchable {
   border: 1px solid #939393;
   position: relative;
 }
-.content_set .field_choice .searchable input {
+.content_set .searchable input {
   padding: 0 11% 0 2%;
   margin: 0;
   border: none;
@@ -1071,13 +1071,13 @@ body {
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
 }
-.content_set .field_choice .searchable #polygon {
+.content_set .searchable #polygon, .content_set .searchable #polygon_state {
   position: absolute;
   top: 13px;
   right: 15px;
   cursor: pointer;
 }
-.content_set .field_choice .searchable ul {
+.content_set .searchable ul {
   width: 100%;
   list-style-type: none;
   background: #F1F1F1;
@@ -1090,18 +1090,16 @@ body {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
-.content_set .field_choice .searchable ul li {
+.content_set .searchable ul li {
   padding: 7px 9px;
   cursor: pointer;
 }
-.content_set .field_choice .searchable ul li.selected {
+.content_set .searchable ul li.selected {
   background-color: #e8e8e8;
   color: #333;
 }
 .content_set .competences {
   min-height: 100px;
-  border: 1px solid #939393;
-  background: #F4F4F4;
   text-align: left;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -1268,10 +1266,12 @@ body {
   }
 
   .searchable {
-    width: 85%;
+    width: 71%;
   }
 
   .competences {
+    border: 1px solid #939393;
+    background: #F4F4F4;
     padding: 0.5%;
   }
 }
