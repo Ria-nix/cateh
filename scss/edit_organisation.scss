@@ -28,7 +28,7 @@ body{ background: $fon_white; }
         justify-content: space-between;  
         align-items: center; 
     }
-    .pass{padding: 10px 20px; cursor: pointer;}
+    .pass{padding: 10px 10px; cursor: pointer;}
     .img_organization{            
         display: flex;
         align-items: center;     
@@ -87,7 +87,20 @@ body{ background: $fon_white; }
             height: 20px;
         }
     }
+
+    section{
+        .success_item{
+            margin-right:1rem;
+            color: $green;
+        }
+        .error_item{
+            margin-left: 0.5rem;
+            color: $red;
+        }
+    }
+    
 }
+
 
 // ************* @MEDIA *************
 // ********** MEDIA MIN 1163PX *************
@@ -100,7 +113,7 @@ body{ background: $fon_white; }
     .content_set > div{  width: 55%; } 
     input{ width: 100%; }   
 }
- 
+
 // ********** MEDIA MAX 850PX *************
 @media (max-width: 850px) {  
     .content_set > div{ width: 90%;}

@@ -34,12 +34,34 @@ let number = document.querySelector('#tel_number');
     //************ COMPETENTIONS AND FOR ALL ************/
     // SEND ON SERVER INFORMATION ABOUT NEW ORGANIZATION
 
-    let list = document.querySelector('ul');
+    let list = document.querySelector('#list');
+    let list_state = document.querySelector('#list_state');
 
-    // THE FALL LIST WITH POLYGON ROTATION
+    // ********** THE FALL LIST WITH POLYGON FOR STATE ****************
+    let state = false, state_polygon = document.querySelector('#polygon_state');
+    $('#polygon_state').click(function () { !state ? isOpenState() : isCloseState() });
+    function isCloseState() {
+        list_state.classList.add('none');
+        state = false;
+        state_polygon.classList.remove('rotate');
+    }
+    function isOpenState() {
+        list_state.classList.remove('none');
+        state = true;
+        state_polygon.classList.add('rotate');
+    }
+
+    let state_input = document.querySelector('.state_value');
+    for(let item_state of $('.states')){
+        console.log(item_state)
+        item_state.addEventListener('click', function(){ 
+            state_input.value = item_state.innerText;            
+        })
+    }
+    
+    // ********** THE FALL LIST WITH POLYGON FOR COMPETENSES ****************
     let bool = false, polygon = document.querySelector('#polygon');
     $('#polygon').click(function () { !bool ? isOpenPolygon() : isClosePolygon() });
-
     function isClosePolygon() {
         list.classList.add('none');
         bool = false;

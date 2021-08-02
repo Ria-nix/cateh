@@ -55,29 +55,24 @@ include('head_code.php'); ?>
             </div>
 
             <div class="main_fields">
-                <label for="state">Статус <span class='red'>*</span></label>
-                <!-- <div class="searchable border"> -->
-                    <input type="text" class=" border_none font_18" placeholder="Введите компетенцию">
-                    <!-- <ul class="font_18 spacing none" id="list">
-                        <li>Системный администратор</li>
-                        <li>Админ</li>
-                    </ul> -->
-                    <!-- <span class="" id="polygon">
+                <label for="state" class="text_width">Статус <span class='red'>*</span></label>
+                <div class="searchable border">
+                    <input type="text" class="border_none font_18 state_value" placeholder="Выберите статус">
+                    <span id="polygon_state">
                         <img src="icon/Polygon.svg" alt="polygon">
-                    </span> -->
-                <!-- </div> -->
-                <!-- <div ></div> -->
-                <select name="state" id="state" class='none'>
-                    <option value="sys_admin" >Системный администратор</option>
-                    <option value="admin">Админ</option>
-                </select>
+                    </span>
+                    <ul class="font_18 spacing none" id="list_state">
+                        <li class="states">Системный администратор</li>
+                        <li class="states">Администратор</li>
+                    </ul>                    
+                </div>
             </div>
 
             <div class="field_choice main_fields">
                 <label for="address" class="text_width">Добавьте компетенцию</label>
                 <div class="searchable border">
                     <input type="text" class=" border_none font_18" id="id_search" placeholder="Введите компетенцию">
-                    <span class="" id="polygon">
+                    <span id="polygon">
                         <img src="icon/Polygon.svg" alt="polygon">
                     </span>
                     <ul class="font_18 spacing none" id="list">
@@ -90,7 +85,7 @@ include('head_code.php'); ?>
 
                             $categories = new CategoriesInfo($link);
                             $all_categories = $categories->fetch();
-
+                            
                             foreach($all_categories as $category) {
                                 echo "<li class=\"competence\" id={$category['id']}>{$category['name']}</li>";
                             }

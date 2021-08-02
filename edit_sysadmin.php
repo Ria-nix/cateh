@@ -67,7 +67,22 @@
                 </div>
             </div>
 
-            <div class="competences border"></div>
+            <div class="competences border">
+                <?php
+                    // include_once('test/cooler_helpers.php');
+                    // include_once('test/MySQL.php');
+                    // include_once('test/CategoriesInfo.php');
+
+                    // $link = getLink("u1184374_second_company_bd");
+
+                    // $categories = new CategoriesInfo($link);
+                    // $all_categories = $categories->fetch();
+
+                    // foreach($all_categories as $category) {
+                    //     echo "<span class=\"border cell competence_item\" id={$category['id']}>{$category['name']}</span>";
+                    // }
+                ?>
+            </div>
 
             <div class="img_organization">
                 <div class="image border">
@@ -79,9 +94,11 @@
                     <button class="button_gray border font_16" id="delete_img">Удалить</button>
                 </div>
             </div>
+
             <div class="save">
                 <button class="button border font_16" id="check_button">Добавить</button>
             </div>
+            
         </div>
     </div>
 

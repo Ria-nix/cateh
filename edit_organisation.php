@@ -30,8 +30,10 @@
                 <label for="password">Пароль</label>
                 <button class="button_gray border font_16 pass">Сгенерировать новый пароль</button>
             </div>
-            <p class=" success_item">Пароль успешно сгенерирован</p>
-            <p class="none error_item">Не удалось сгенерировать пароль</p>
+            <section class="text_password">
+                <p class=" success_item spacing">Пароль успешно сгенерирован</p>
+                <p class="none error_item spacing">Не удалось сгенерировать пароль</p>
+            </section>            
             <div class="adress_organisation">
                 <label for="address">Адрес</label>
                 <input type="text" id="address" class="text_address add_info" value="ул.Маркаса д.9">

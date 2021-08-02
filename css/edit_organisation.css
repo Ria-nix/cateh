@@ -1068,7 +1068,7 @@ body {
           align-items: center;
 }
 .content_set .pass {
-  padding: 10px 20px;
+  padding: 10px 10px;
   cursor: pointer;
 }
 .content_set .img_organization {
@@ -1141,6 +1141,14 @@ body {
   cursor: pointer;
   width: 20px;
   height: 20px;
+}
+.content_set section .success_item {
+  margin-right: 1rem;
+  color: #159B12;
+}
+.content_set section .error_item {
+  margin-left: 0.5rem;
+  color: #E52828;
 }
 
 @media (min-width: 1163px) {
