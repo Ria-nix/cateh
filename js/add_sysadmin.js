@@ -113,6 +113,7 @@ let number = document.querySelector('#tel_number');
             $(".competences").append(text_competence);
         }
         else {
+            console.log(array_test)
             for (var mele of array_test) {
                 console.log(mele)
                 if (search.value.split(' ').join('').toLowerCase() != mele.split(' ').join('').toLowerCase()) { value = true; }
@@ -129,10 +130,55 @@ let number = document.querySelector('#tel_number');
     function isRemoveCell() {
         for (var item of $('.competence_item').children('img')) { };
         item.addEventListener('click', function () {
-            let index = array_test.indexOf(item.parentElement.innerText);
+            let index = array_test.indexOf(item.parentElement.innerText.toLowerCase());
             if (index !== -1) { array_test.splice(index, 1) }
             item.parentElement.remove();
         });
     };
+
+    // ************** Connect with server ******************
+    //! Check how the send on the server the data
+    if($('.second')){ $('.second').addClass('add_sysadmin');}
+    $('.add_sysadmin').on('click', function(){     
+        let formData = new FormData();
+        let email = document.querySelector('#email').value;
+        let password = document.querySelector('#password').value;
+        let name = document.querySelector('#name').value;
+        let surname = document.querySelector('#surname').value;
+        let tel_number = document.querySelector('#tel_number').value;
+        let unregister_arr = [], register_arr = [];
+        for(let item_unregister of $('.unregister')){ unregister_arr.push(item_unregister)}
+        for(let item_register of $('.register')){ register_arr.push(item_register)}
+        console.log(unregister_arr)
+        console.log(register_arr)
+
+        let file = document.querySelector('input[type=file]').files[0];
+        if(file !== undefined){
+            formData.append('image', file, 'NOT_NULL');
+            formData.append('MAX_FILE_SIZE', "6291456");
+        }
+        
+        formData.append('DBname', 'u1184374_second_company_bd');
+        formData.append("token", 'lera_token');
+        formData.append("password", password);
+        formData.append("role", 3);
+        formData.append("name", name);
+        formData.append("surname", surname);
+        formData.append("email", email);
+        formData.append("phone_number", tel_number);
+        formData.append("set_categories_list", JSON.stringify(register_arr));
+        formData.append("add_new_categories_list", JSON.stringify(unregister_arr));
+    
+        let request = new XMLHttpRequest();
+        request.open("POST", "https://ithelpdeskdemo.xyz/addSysadmin");
+        request.send(formData);
+        request.onload = function () { console.log(request.responseText); }
+    });
+
+
+    const ACCESS_LEVEL_SYS_ADMIN = 3;
+    const ACCESS_LEVEL_ADMIN = 4;
+
+
 });
 

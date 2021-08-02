@@ -17,9 +17,9 @@ include('head_code.php'); ?>
 
 <body>
     <?php include_once('navigation.php'); ?></nav>
-    <?php  $question = 'Вы точно хотите добавить новую организацию?'; 
-           $error = 'Не получилось добавить нового пользователя';
-           $success = 'Успешно добавлен новый сис. администратор'; ?>
+    <?php   $question = 'Вы точно хотите добавить новую организацию?'; 
+            $error = 'Не получилось добавить нового пользователя';
+            $success = 'Успешно добавлен новый сис. администратор'; ?>
     <?php include_once('modal windows/question_window.php'); ?>
     <?php include_once('modal windows/error_window.php'); ?>
     <?php include_once('modal windows/success_window.php'); ?>
@@ -56,7 +56,17 @@ include('head_code.php'); ?>
 
             <div class="main_fields">
                 <label for="state">Статус <span class='red'>*</span></label>
-                <input type="text" id="state" placeholder="Выберите статус">
+                <!-- <div class="searchable border"> -->
+                    <input type="text" class=" border_none font_18" placeholder="Введите компетенцию">
+                    <!-- <ul class="font_18 spacing none" id="list">
+                        <li>Системный администратор</li>
+                        <li>Админ</li>
+                    </ul> -->
+                    <!-- <span class="" id="polygon">
+                        <img src="icon/Polygon.svg" alt="polygon">
+                    </span> -->
+                <!-- </div> -->
+                <!-- <div ></div> -->
                 <select name="state" id="state" class='none'>
                     <option value="sys_admin" >Системный администратор</option>
                     <option value="admin">Админ</option>

@@ -60,5 +60,32 @@ $(document).ready(function(){
     }
 
 
-   
+    // ************** Connect with server ******************
+    //! Check how the send on the server the data
+    
+    if($('.second')){ $('.second').addClass('add_organis');}
+    $('.add_organis').on('click', function(){    
+        let address = document.querySelectorAll('.text_address'), arr_address = [];
+        address.forEach((item) => arr_address.push(item.value));
+            
+        let formData = new FormData();
+        let name = document.querySelector('#name').value;
+        let inn = document.querySelector('#inn').value;
+        let file = document.querySelector('input[type=file]').files[0];
+        formData.append('file', file, 'NOT_NULL');
+        formData.append('MAX_FILE_SIZE', "6291456");
+        formData.append('DBname', 'u1184374_hepdesk_2_0');
+        formData.append("token", '12345artemy');
+        formData.append("name", name);
+        formData.append("inn", inn);
+        formData.append("address", JSON.stringify(arr_address));
+
+        let request = new XMLHttpRequest();
+        request.open("POST", "https://ithelpdeskdemo.xyz/addOrganisation");
+        request.send(formData);
+        request.onload = function () {
+            console.log(request.responseText);
+        }
+
+    });
 })

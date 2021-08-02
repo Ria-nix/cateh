@@ -1100,8 +1100,6 @@ body {
 }
 .content_set .competences {
   min-height: 100px;
-  border: 1px solid #939393;
-  background: #F4F4F4;
   text-align: left;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -1272,6 +1270,8 @@ body {
   }
 
   .competences {
+    border: 1px solid #939393;
+    background: #F4F4F4;
     padding: 0.5%;
   }
 }

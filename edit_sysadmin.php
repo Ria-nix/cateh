@@ -23,32 +23,32 @@
         <div class="content_set">
 
             <div class="main_fields">
-                <label for="login">Логин</label>
-                <input type="text" id="login" class="add_info" value="email@gmail.com">
+                <label for="email">Email <span class='red'>*</span></label>
+                <input type="text" id="email" class="add_info" value="email@gmail.com">
             </div>
 
             <div class="main_fields">
-                <label for="password">Пароль</label>
+                <label for="password">Пароль <span class='red'>*</span></label>
                 <input type="text" id="password" class="add_info" value="123*****89">
             </div>
 
             <div class="main_fields">
-                <label for="name">Имя</label>
+                <label for="name">Имя <span class='red'>*</span></label>
                 <input type="text" id="name" class="add_info" value="Михаил">
             </div>
 
             <div class="main_fields">
-                <label for="surname">Фамилия</label>
+                <label for="surname">Фамилия <span class='red'>*</span></label>
                 <input type="text" id="surname" class="add_info" value="Куприн">
             </div>
 
             <div class="main_fields">
                 <label for="tel_number">Номер телефона</label>
-                <input type="number" id="tel_number" placeholder="+7(***)*** - ** - **">
+                <input type="text" id="tel_number" placeholder="+7 950 *** 22 01">
             </div>
 
             <div class="main_fields">
-                <label for="state">Статус</label>
+                <label for="state">Статус<span class='red'>*</span></label>
                 <input type="text" id="state" placeholder="Выберите статус">
                 <span id="polygon">
                     <img src="icon/Polygon.svg" alt="polygon">
@@ -66,7 +66,9 @@
                     <ul class="font_18 spacing none" id="list"></ul>
                 </div>
             </div>
+
             <div class="competences border"></div>
+
             <div class="img_organization">
                 <div class="image border">
                     <img class="logo border" src="icon/michael.jpg" alt="logo">

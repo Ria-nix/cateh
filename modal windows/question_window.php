@@ -4,7 +4,7 @@
         <p class="font_18 items"><?php echo $question; ?></p>
         <div class="buttons items">
             <button class="button border font_18 close_button">Отменить</button>
-            <button class="button border font_18 add_button second">Добавить</button>
+            <button class="button border font_18 second">Добавить</button>
         </div>
     </div>
 </div>
