@@ -10,6 +10,7 @@ body{
     background: $modalwindow_full;
     position: fixed;
     top: 0;
+    z-index: 100;
 
     .window_wrap{
         background: $fon_white;
@@ -26,11 +27,8 @@ body{
             justify-content: space-evenly;
         }
         button{ padding: 8px 25px; }
-       
     }
-    
 }
- 
 // ********** MEDIA MIN 850px *************
 @media (min-width: 850px) {  
     .window_wrap{ 

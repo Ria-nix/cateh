@@ -64,6 +64,7 @@ body{ background: $fon_white; }
     }
     .save{
         border-top: 1px solid $gray_border;
+        margin: 0 0 2rem 0;
         button{
             width: 150px;
             height: 38px;
@@ -86,21 +87,8 @@ body{ background: $fon_white; }
             width: 20px; 
             height: 20px;
         }
-    }
-
-    section{
-        .success_item{
-            margin-right:1rem;
-            color: $green;
-        }
-        .error_item{
-            margin-left: 0.5rem;
-            color: $red;
-        }
-    }
-    
+    }    
 }
-
 
 // ************* @MEDIA *************
 // ********** MEDIA MIN 1163PX *************

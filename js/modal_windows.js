@@ -1,12 +1,12 @@
 $(document).ready(function(){    
 
     //Open the modal window and check on all empty inputs
-    let bool, summ_check, arr_inputs, obj_keys;
+    let bool, summ_check, arr_inputs;
     $('#check_button').click(function(){         
         arr_inputs = document.querySelectorAll(".add_info");
         CheckInputs(arr_inputs);
         bool ? $('.question').removeClass('none') : bool == false;  
-        // polygon.style.position = 'none';   
+        
     });
 
     function CheckInputs(arr_inputs){   
@@ -21,7 +21,6 @@ $(document).ready(function(){
     function isRedAuto(item_info){
         item_info.classList.add('red_auto');
         item_info.setAttribute('placeholder','Заполните поле'); 
-        
     }
     
     function isNoneRedAuto(item_info){

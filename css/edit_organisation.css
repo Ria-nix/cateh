@@ -51,6 +51,7 @@ body::-webkit-scrollbar {
   color: #112742;
   cursor: pointer;
   border: 2px solid transparent;
+  font-size: 16px;
 }
 
 .button_gray {
@@ -58,6 +59,7 @@ body::-webkit-scrollbar {
   border: 1px solid #939393;
   -webkit-box-shadow: 0px 4px 10px 0px rgba(17, 39, 66, 0.15);
           box-shadow: 0px 4px 10px 0px rgba(17, 39, 66, 0.15);
+  font-size: 16px;
 }
 
 input, select {
@@ -123,28 +125,8 @@ input[type=number]::-webkit-outer-spin-button {
   font-weight: bold;
 }
 
-.font_14 {
-  font-size: 14px;
-}
-
-.font_16 {
-  font-size: 16px;
-}
-
-.font_18 {
-  font-size: 18px;
-}
-
-.font_20 {
-  font-size: 20px;
-}
-
 .font_24 {
   font-size: 24px;
-}
-
-.font_26 {
-  font-size: 26px;
 }
 
 .red_auto {
@@ -277,6 +259,7 @@ body::-webkit-scrollbar {
   color: #112742;
   cursor: pointer;
   border: 2px solid transparent;
+  font-size: 16px;
 }
 
 .button_gray {
@@ -284,6 +267,7 @@ body::-webkit-scrollbar {
   border: 1px solid #939393;
   -webkit-box-shadow: 0px 4px 10px 0px rgba(17, 39, 66, 0.15);
           box-shadow: 0px 4px 10px 0px rgba(17, 39, 66, 0.15);
+  font-size: 16px;
 }
 
 input, select {
@@ -349,28 +333,8 @@ input[type=number]::-webkit-outer-spin-button {
   font-weight: bold;
 }
 
-.font_14 {
-  font-size: 14px;
-}
-
-.font_16 {
-  font-size: 16px;
-}
-
-.font_18 {
-  font-size: 18px;
-}
-
-.font_20 {
-  font-size: 20px;
-}
-
 .font_24 {
   font-size: 24px;
-}
-
-.font_26 {
-  font-size: 26px;
 }
 
 .red_auto {
@@ -759,6 +723,7 @@ body::-webkit-scrollbar {
   color: #112742;
   cursor: pointer;
   border: 2px solid transparent;
+  font-size: 16px;
 }
 
 .button_gray {
@@ -766,6 +731,7 @@ body::-webkit-scrollbar {
   border: 1px solid #939393;
   -webkit-box-shadow: 0px 4px 10px 0px rgba(17, 39, 66, 0.15);
           box-shadow: 0px 4px 10px 0px rgba(17, 39, 66, 0.15);
+  font-size: 16px;
 }
 
 input, select {
@@ -831,28 +797,8 @@ input[type=number]::-webkit-outer-spin-button {
   font-weight: bold;
 }
 
-.font_14 {
-  font-size: 14px;
-}
-
-.font_16 {
-  font-size: 16px;
-}
-
-.font_18 {
-  font-size: 18px;
-}
-
-.font_20 {
-  font-size: 20px;
-}
-
 .font_24 {
   font-size: 24px;
-}
-
-.font_26 {
-  font-size: 26px;
 }
 
 .red_auto {
@@ -944,6 +890,7 @@ body {
   background: rgba(17, 39, 66, 0.45);
   position: fixed;
   top: 0;
+  z-index: 100;
 }
 .modal_window .window_wrap {
   background: #F5F5F5;
@@ -1112,6 +1059,7 @@ body {
 }
 .content_set .save {
   border-top: 1px solid #939393;
+  margin: 0 0 2rem 0;
 }
 .content_set .save button {
   width: 150px;
@@ -1141,14 +1089,6 @@ body {
   cursor: pointer;
   width: 20px;
   height: 20px;
-}
-.content_set section .success_item {
-  margin-right: 1rem;
-  color: #159B12;
-}
-.content_set section .error_item {
-  margin-left: 0.5rem;
-  color: #E52828;
 }
 
 @media (min-width: 1163px) {

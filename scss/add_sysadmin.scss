@@ -6,6 +6,7 @@ body{ background: $fon_white; }
 .content_wrap{
     @extend %grid;
     text-align: center;
+    z-index: 1;
     p.font_24{ padding: 3.5% 4% 2% 4%; }
 }
 .content_set{ @extend %flex_column;
@@ -21,10 +22,9 @@ body{ background: $fon_white; }
         align-items: center; 
     }
     .text_width{ margin: 1% 0 auto 0;}
-    .searchable { 
-        border: 1px solid $gray_border;      
-        position: relative;       
-
+    .searchable {  
+        border: 1px solid $gray_border;
+        position: relative;  
         input {
             padding: 0 11% 0 2%;
             margin: 0;
@@ -107,15 +107,27 @@ body{ background: $fon_white; }
             cursor: pointer; 
         }
     }
-    .save button{
-        width: 150px;
-        height: 38px;
+    .save{ margin: 0 0 2rem 0;
+        button{
+            width: 150px;
+            height: 38px;
+        }
     }
+    
     .fields_address{
         height: auto;
         padding: 0;          
     }
 }
+
+// ******* FOR .searchable CLASS 
+// .polygon_image{ position: relative; }
+
+// .polygon_image_none{
+//     position: none;
+//     background: url('../icon/Polygon.svg') no-repeat 10px 20px;
+// }
+
 //******* SCROLL BAR *******
 /* width */
 .searchable ul::-webkit-scrollbar { width: 8px; margin: 0 0 15px 0;}
@@ -142,8 +154,7 @@ body{ background: $fon_white; }
     .content_set > div, form{  width: 55%; } 
     input{ width: 100%; } 
 
-}
- 
+} 
 // ********** MEDIA MAX 850PX *************
 @media (max-width: 850px) {  
     .content_set > div, form{ width: 90%;}

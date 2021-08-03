@@ -170,8 +170,6 @@ let number = document.querySelector('#tel_number');
         let unregister_arr = [], register_arr = [];
         for(let item_unregister of $('.unregister')){ unregister_arr.push(item_unregister)}
         for(let item_register of $('.register')){ register_arr.push(item_register)}
-        console.log(unregister_arr)
-        console.log(register_arr)
 
         let file = document.querySelector('input[type=file]').files[0];
         if(file !== undefined){
