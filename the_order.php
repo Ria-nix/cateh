@@ -21,20 +21,43 @@
     <!-- CONTENT -->
     <div class="content_wrap">
         <div class="head_order">
-            <div class="back_button">kjdjfasdjf;asf</div>
-            <div class="text">kjdjfasdjf;asf</div>
-            <div class="empty">kjdjfasdjf;asf</div>
+            <div class="back_button">
+                <button class="button border"><span><img src="icon/restore.svg" alt="restore"></span>Назад</button>
+            </div>
+            <div class="text">
+                <p class="bold font_24">Заказ №102544589</p>
+            </div>
+            <div class="empty"></div>
         </div>
         <div class="content_set">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+            <div class="border main_fields button_gray">
+                <div class="fist_block"></div>
+                <div class="second_block"></div>
+            </div>
+            <div class="border main_fields button_gray">
+                <p>Описание проблемы:</p><br>
+                <div class="textarea_full border"></div>
+            </div>
+            <div class="border main_fields button_gray">
+                <p>Комментарий к заказу:</p><br>
+                <div class="textarea border"></div>
+            </div>
+            <div class="border main_fields button_gray">
+                <p>Заключение:</p><br>
+                <div class="textarea_full border"></div>
+                <div class="date_end">
+                    <p>Создание<br>комментария</p>
+                    <p class="date">25.05.2021</p>
+                </div>
+            </div>
+            <article class="save">
+                <button class="button border"><span><img src="icon/edit.svg" alt="edit"></span>Редактировать</button>
+                <button class="button border"><span><img src="icon/trash 1.svg" alt="trash"></span>Удалить</button>
+            </article>
         </div>
     </div>
     <script src="js/modal_windows.js"></script>    
-    <script src="js/order.js"></script>
+    <!-- <script src="js/order.js"></script> -->
     <script src="<?php  echo $navigation_panel ?>"></script>
         
 </body>
