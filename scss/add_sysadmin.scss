@@ -59,14 +59,11 @@ body{ background: $fon_white; }
     .searchable ul li.selected {
         background-color: #e8e8e8;
         color: #333;
-    }
-    
+    }    
     .competences{
-        min-height: 100px;
         text-align: left;
         @extend %flex_row;
         flex-wrap: wrap;
-
         span{
             @extend %flex_row;
             align-items: center;
@@ -84,7 +81,7 @@ body{ background: $fon_white; }
         border-bottom: 1px solid $gray_border;   
         display: flex;
         align-items: center;     
-        margin: 1.5% 0;
+        margin: 1rem 0 0 0;
         .img_buttons, .image{  @extend %flex_row; }
         .image{                    
             width: 11rem;
@@ -107,26 +104,15 @@ body{ background: $fon_white; }
             cursor: pointer; 
         }
     }
-    .save{ margin: 0 0 2rem 0;
-        button{
-            width: 150px;
-            height: 38px;
-        }
-    }
-    
+    .save button{
+        width: 150px;
+        height: 38px;
+    }    
     .fields_address{
         height: auto;
         padding: 0;          
     }
 }
-
-// ******* FOR .searchable CLASS 
-// .polygon_image{ position: relative; }
-
-// .polygon_image_none{
-//     position: none;
-//     background: url('../icon/Polygon.svg') no-repeat 10px 20px;
-// }
 
 //******* SCROLL BAR *******
 /* width */
@@ -137,31 +123,30 @@ body{ background: $fon_white; }
     background: rgba($blue, 0.65);
     border-radius: 10px;
 }
-
 //******** THE OTHER SYLES *******
 .click_none{ pointer-events: none; }
 
-// ************* @MEDIA *************
 
-// ********** MEDIA MIN 1163PX *************
+//! ************* @MEDIA ************* !
+// ********** MEDIA MIN 1163PX ********
 @media (min-width: 1163px) {    
-    .content_set > div, form{ width: 45%; }
+    .content_set > div{ width: 45%; }
     .main_fields{ width: 52%;}
 }
 
-// ********** MEDIA MAX 1163PX *************
+// ********** MEDIA MAX 1163PX ********
 @media (max-width: 1163px) {
-    .content_set > div, form{  width: 55%; } 
+    .content_set > div{  width: 55%; } 
     input{ width: 100%; } 
 
 } 
-// ********** MEDIA MAX 850PX *************
+// ********** MEDIA MAX 850PX ********
 @media (max-width: 850px) {  
-    .content_set > div, form{ width: 90%;}
+    .content_set > div{ width: 90%;}
     .main_fields{ width: 100%;}
 }
 
-// ********** MEDIA MIN 541PX *************
+// ********** MEDIA MIN 541PX ********
 @media (min-width: 541px) {
     .field_choice .text_width{ width: 40%; padding: 0 2% 0 0;}
     .main_fields{ 
@@ -177,8 +162,10 @@ body{ background: $fon_white; }
             margin: 0 0 0 5%;
         }
     }    
-    .image{ margin: 0 5% 5% 0; box-shadow: 0 4px 10px 0 $but_shadow}
-    .save button{ margin: 0 0 2% 70%; }
+    .image{ 
+        margin: 0 5% 5% 0; 
+        box-shadow: 0 4px 10px 0 $but_shadow
+    }
     .fields_address{  
         display: flex;
         flex-direction: column;
@@ -194,11 +181,14 @@ body{ background: $fon_white; }
         border: 1px solid $gray_border;
         background: $list_competence;
         padding: 0.5%; 
+        min-height: 100px;
     }
-
+    .save{ margin: 0 0 1rem 0;
+        button{ margin: 0 0 2% 70%; }
+    }
 }
 
-// ********** MEDIA MAX 540PX *************
+// ********** MEDIA MAX 540PX *********
 @media (max-width: 540px) {
     .main_fields{   
         display: flex;
@@ -208,25 +198,26 @@ body{ background: $fon_white; }
         input{  width: 85%; text-align: center; }
         label{ padding: 2% 0; }
     }
-    .save { margin: 5% 0;  }
     .img_organization{         
         flex-direction: column;
         align-items: center;
-
         .img_buttons{ 
             justify-content: center; 
-            margin: 1% 0 2% 0;
+            margin: 0.5rem 0 1.5rem 0;
             #delete_img{ margin: 0 0 0 5%; }
             button, label{ padding: 8px 25px; }
         }        
     }
     .image{margin: 0 0 5% 0;}  
     .searchable { width: 85%;}  
-    .competences{ padding: 2.5%; }
+    .competences{ 
+        padding: 2.5%;
+        min-height: 0px;
+    }
+    .save{ margin: 1rem 0 2rem 0;}
 }
-// ********** MEDIA MAX 390PX *************
+// ********** MEDIA MAX 390PX *********
 @media (max-width: 390px) {
-    .save button{ margin: 0; }
     .main_fields{   
         display: flex;
         flex-direction: column;
@@ -234,7 +225,3 @@ body{ background: $fon_white; }
         label{ padding: 3.2% 0; }
     } 
 }
-
-
-
-

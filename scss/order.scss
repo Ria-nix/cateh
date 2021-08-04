@@ -1,0 +1,81 @@
+@import 'cateh_style';
+@import 'navigation';
+@import 'modal_window';
+
+.content_wrap{
+    border: 1px solid red;
+    display: grid;
+    grid-template-columns: repeat(1, minmax(320px, 1500px));
+    justify-content: center;
+    align-items: center;
+    // text-align: center;
+    .head_order{
+        @extend %flex_row;
+        height: 100px;
+        border: 1px solid blue;
+        
+        div{
+            border: 1px solid saddlebrown;
+            flex:1 1 10%;
+            height: 100px;
+        }
+    }
+    .content_set{
+        @extend %flex_column;
+        border: 1px solid yellow;
+        div{
+            border: 1px solid green;
+            width: 100%;
+            height: 10px;
+        }
+    }
+    // p.font_24{ padding: 3.5% 4% 2% 4%; }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ************* @MEDIA *************
+
+// ********** MEDIA MIN 1163PX *************
+@media (min-width: 1163px) {    
+    .content_set > div{ width: 45%; }
+}
+
+// ********** MEDIA MAX 1163PX *************
+@media (max-width: 1163px) {
+    .content_set > div{  width: 55%; } 
+
+}
+// ********** MEDIA MAX 850PX *************
+@media (max-width: 850px) {  
+    .content_set > div{ width: 90%;}
+}
+
+// ********** MEDIA MIN 541PX *************
+@media (min-width: 541px) {
+    
+}
+
+// ********** MEDIA MAX 540PX *************
+@media (max-width: 540px) {
+   
+}
+// ********** MEDIA MAX 390PX *************
+@media (max-width: 390px) {
+  
+}

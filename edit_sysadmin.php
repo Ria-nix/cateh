@@ -53,7 +53,7 @@
             <div class="main_fields">
                 <label for="state" class="text_width">Статус <span class='red'>*</span></label>
                 <div class="searchable border">
-                    <input type="text" class="border_none font_18 state_value" placeholder="Выберите статус">
+                    <input type="text" class="border_none font_18 state_value" value="Системный администратор">
                     <span id="polygon_state">
                         <img src="icon/Polygon.svg" alt="polygon">
                     </span>
@@ -77,7 +77,7 @@
                             include_once('test/MySQL.php');
                             include_once('test/CategoriesInfo.php');
 
-                            $link = getLink("u1184374_second_company_bd");
+                            $link = artemy_helper\getLink("u1184374_second_company_bd");
 
                             $categories = new CategoriesInfo($link);
                             $all_categories = $categories->fetch();
@@ -94,7 +94,7 @@
 
             <div class="img_organization">
                 <div class="image border">
-                    <img class="logo border" src="icon/michael.jpg" alt="logo">
+                    <img class="logo_second border" src="icon/michael.jpg" alt="logo">
                 </div>
                 <div class="img_buttons">
                     <input type="file" accept="img/*" id="input_file">

@@ -18,7 +18,7 @@
     <?php  include_once('modal windows/success_window.php'); ?>
     <?php  include_once('modal windows/error_window.php'); ?>
     
-     <!-- CONTENT -->
+    <!-- CONTENT -->
     <div class="content_wrap">
         <p class="font_24 bold"><?php echo $add_organ ?></p>
         <div class="content_set">

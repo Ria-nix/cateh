@@ -134,9 +134,7 @@ let number = document.querySelector('#tel_number');
             $(".competences").append(text_competence);
         }
         else {
-            console.log(array_test)
             for (var mele of array_test) {
-                console.log(mele)
                 if (search.value.split(' ').join('').toLowerCase() != mele.split(' ').join('').toLowerCase()) { value = true; }
                 else { return value = false; }
             }

@@ -1048,7 +1048,6 @@ body {
   color: #333;
 }
 .content_set .competences {
-  min-height: 100px;
   text-align: left;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -1076,7 +1075,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 1.5% 0;
+  margin: 1rem 0 0 0;
 }
 .content_set .img_organization .image {
   width: 11rem;
@@ -1098,9 +1097,6 @@ body {
 .content_set .img_organization .button_gray {
   padding: 6px 20px;
   cursor: pointer;
-}
-.content_set .save {
-  margin: 0 0 2rem 0;
 }
 .content_set .save button {
   width: 150px;
@@ -1128,7 +1124,7 @@ body {
 }
 
 @media (min-width: 1163px) {
-  .content_set > div, form {
+  .content_set > div {
     width: 45%;
   }
 
@@ -1137,7 +1133,7 @@ body {
   }
 }
 @media (max-width: 1163px) {
-  .content_set > div, form {
+  .content_set > div {
     width: 55%;
   }
 
@@ -1146,7 +1142,7 @@ body {
   }
 }
 @media (max-width: 850px) {
-  .content_set > div, form {
+  .content_set > div {
     width: 90%;
   }
 
@@ -1185,10 +1181,6 @@ body {
             box-shadow: 0 4px 10px 0 rgba(17, 39, 66, 0.3);
   }
 
-  .save button {
-    margin: 0 0 2% 70%;
-  }
-
   .fields_address {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1225,6 +1217,14 @@ body {
     border: 1px solid #939393;
     background: #F4F4F4;
     padding: 0.5%;
+    min-height: 100px;
+  }
+
+  .save {
+    margin: 0 0 1rem 0;
+  }
+  .save button {
+    margin: 0 0 2% 70%;
   }
 }
 @media (max-width: 540px) {
@@ -1249,10 +1249,6 @@ body {
     padding: 2% 0;
   }
 
-  .save {
-    margin: 5% 0;
-  }
-
   .img_organization {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1266,7 +1262,7 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin: 1% 0 2% 0;
+    margin: 0.5rem 0 1.5rem 0;
   }
   .img_organization .img_buttons #delete_img {
     margin: 0 0 0 5%;
@@ -1285,13 +1281,14 @@ body {
 
   .competences {
     padding: 2.5%;
+    min-height: 0px;
+  }
+
+  .save {
+    margin: 1rem 0 2rem 0;
   }
 }
 @media (max-width: 390px) {
-  .save button {
-    margin: 0;
-  }
-
   .main_fields {
     display: -webkit-box;
     display: -ms-flexbox;

@@ -1,7 +1,4 @@
 <?php
-
-use function artemy_helper\getLink;
-
 include('head_code.php'); ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -57,7 +54,7 @@ include('head_code.php'); ?>
             <div class="main_fields">
                 <label for="state" class="text_width">Статус <span class='red'>*</span></label>
                 <div class="searchable border">
-                    <input type="text" class="border_none state_value" placeholder="Выберите статус">
+                    <input type="text" class="border_none state_value" value="Системный администратор">
                     <span id="polygon_state">
                         <img src="icon/Polygon.svg" alt="polygon">
                     </span>
@@ -81,7 +78,7 @@ include('head_code.php'); ?>
                             include_once('test/MySQL.php');
                             include_once('test/CategoriesInfo.php');
 
-                            $link = getLink("u1184374_second_company_bd");
+                            $link = artemy_helper\getLink("u1184374_second_company_bd");
 
                             $categories = new CategoriesInfo($link);
                             $all_categories = $categories->fetch();

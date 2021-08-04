@@ -1,4 +1,12 @@
 <?php
+
+namespace one;
+const RERE = 1;
+
+namespace two;
+const RERE = 1;
+
+
 namespace artemy_helper;
 include_once "MySQL.php";
 

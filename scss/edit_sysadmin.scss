@@ -62,7 +62,6 @@ body{ background: $fon_white; }
     }
     
     .competences{
-        min-height: 100px;
         text-align: left;
         @extend %flex_row;
         flex-wrap: wrap;
@@ -133,20 +132,19 @@ body{ background: $fon_white; }
 
 // ********** MEDIA MIN 1163PX *************
 @media (min-width: 1163px) {    
-    .content_set > div, form{ width: 45%; }
+    .content_set > div{ width: 45%; }
     .main_fields{ width: 52%;}
 }
 
 // ********** MEDIA MAX 1163PX *************
 @media (max-width: 1163px) {
-    .content_set > div, form{  width: 55%; } 
+    .content_set > div{  width: 55%; } 
     input{ width: 100%; } 
 
 }
- 
 // ********** MEDIA MAX 850PX *************
 @media (max-width: 850px) {  
-    .content_set > div, form{ width: 90%;}
+    .content_set > div{ width: 90%;}
     .main_fields{ width: 100%;}
 }
 
@@ -166,8 +164,10 @@ body{ background: $fon_white; }
             margin: 0 0 0 5%;
         }
     }    
-    .image{ margin: 0 5% 5% 0; box-shadow: 0 4px 10px 0 $but_shadow}
-    .save button{ margin: 0 0 2% 70%; }
+    .image{ 
+        margin: 0 5% 5% 0; 
+        box-shadow: 0 4px 10px 0 $but_shadow
+    }
     .fields_address{  
         display: flex;
         flex-direction: column;
@@ -183,8 +183,11 @@ body{ background: $fon_white; }
         border: 1px solid $gray_border;
         background: $list_competence;
         padding: 0.5%; 
+        min-height: 100px;
     }
-
+    .save{ margin: 0 0 1rem 0;
+        button{ margin: 0 0 2% 70%; }
+    }
 }
 
 // ********** MEDIA MAX 540PX *************
@@ -197,25 +200,27 @@ body{ background: $fon_white; }
         input{  width: 85%; text-align: center; }
         label{ padding: 2% 0; }
     }
-    .save { margin: 5% 0;  }
     .img_organization{         
         flex-direction: column;
         align-items: center;
 
         .img_buttons{ 
             justify-content: center; 
-            margin: 1% 0 2% 0;
+            margin: 0.5rem 0 1.5rem 0;
             #delete_img{ margin: 0 0 0 5%; }
             button, label{ padding: 8px 25px; }
         }        
     }
     .image{margin: 0 0 5% 0;}  
     .searchable { width: 85%;}  
-    .competences{ padding: 2.5%; }
+    .competences{ 
+        padding: 2.5%;
+        min-height: 0px;
+    }
+    .save{ margin: 0.5rem 0 2rem 0;}
 }
 // ********** MEDIA MAX 390PX *************
 @media (max-width: 390px) {
-    .save button{ margin: 0; }
     .main_fields{   
         display: flex;
         flex-direction: column;

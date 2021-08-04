@@ -8,7 +8,7 @@ body::-webkit-scrollbar {
   width: 0;
 }
 
-.content_set .img_organization .img_buttons, .content_set .img_organization .image, nav .navigation span, nav .navigation .panel_buttons, nav .navigation {
+.content_wrap .head_order, nav .navigation span, nav .navigation .panel_buttons, nav .navigation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -21,7 +21,7 @@ body::-webkit-scrollbar {
           align-items: center;
 }
 
-.content_set, .modal_window .window_wrap {
+.content_wrap .content_set, .modal_window .window_wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -34,7 +34,7 @@ body::-webkit-scrollbar {
           align-items: center;
 }
 
-.content_wrap, nav {
+nav {
   display: grid;
   grid-template-columns: repeat(1, minmax(320px, 1500px));
   -webkit-box-pack: center;
@@ -216,7 +216,7 @@ body::-webkit-scrollbar {
   width: 0;
 }
 
-.content_set .img_organization .img_buttons, .content_set .img_organization .image, nav .navigation span, nav .navigation .panel_buttons, nav .navigation {
+.content_wrap .head_order, nav .navigation span, nav .navigation .panel_buttons, nav .navigation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -229,7 +229,7 @@ body::-webkit-scrollbar {
           align-items: center;
 }
 
-.content_set, .modal_window .window_wrap {
+.content_wrap .content_set, .modal_window .window_wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -242,7 +242,7 @@ body::-webkit-scrollbar {
           align-items: center;
 }
 
-.content_wrap, nav {
+nav {
   display: grid;
   grid-template-columns: repeat(1, minmax(320px, 1500px));
   -webkit-box-pack: center;
@@ -681,7 +681,7 @@ body::-webkit-scrollbar {
   width: 0;
 }
 
-.content_set .img_organization .img_buttons, .content_set .img_organization .image, nav .navigation, nav .navigation .panel_buttons, nav .navigation span {
+.content_wrap .head_order, nav .navigation, nav .navigation .panel_buttons, nav .navigation span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -694,7 +694,7 @@ body::-webkit-scrollbar {
           align-items: center;
 }
 
-.content_set, .modal_window .window_wrap {
+.content_wrap .content_set, .modal_window .window_wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -707,7 +707,7 @@ body::-webkit-scrollbar {
           align-items: center;
 }
 
-.content_wrap, nav {
+nav {
   display: grid;
   grid-template-columns: repeat(1, minmax(320px, 1500px));
   -webkit-box-pack: center;
@@ -972,121 +972,35 @@ body {
     margin: 4% 3%;
   }
 }
-body {
-  background: #F5F5F5;
-}
-
 .content_wrap {
-  width: 100%;
-  text-align: center;
-}
-.content_wrap p.font_24 {
-  padding: 3.5% 4% 2% 4%;
-}
-
-.content_set span {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  border: 1px solid red;
+  display: grid;
+  grid-template-columns: repeat(1, minmax(320px, 1500px));
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  cursor: pointer;
 }
-.content_set input {
-  height: 40px;
-  text-align: center;
-  -webkit-box-shadow: 0px 4px 10px 0px rgba(17, 39, 66, 0.15);
-          box-shadow: 0px 4px 10px 0px rgba(17, 39, 66, 0.15);
-  border-radius: 10px;
+.content_wrap .head_order {
+  height: 100px;
+  border: 1px solid blue;
 }
-.content_set label, .content_set button {
-  letter-spacing: 1px;
-  color: #112742;
+.content_wrap .head_order div {
+  border: 1px solid saddlebrown;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 10%;
+          flex: 1 1 10%;
+  height: 100px;
 }
-.content_set .name_organisation, .content_set .password_organisation {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.content_wrap .content_set {
+  border: 1px solid yellow;
 }
-.content_set .pass {
-  padding: 10px 10px;
-  cursor: pointer;
-}
-.content_set .img_organization {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border-bottom: 1px solid #939393;
-}
-.content_set .img_organization .image {
-  border: 1px solid #112742;
-  width: 11rem;
-  height: 11rem;
-  padding: 1.5%;
-}
-.content_set .img_organization .image img {
+.content_wrap .content_set div {
+  border: 1px solid green;
   width: 100%;
-  height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-.content_set .img_organization #input_file {
-  overflow: hidden;
-  position: absolute;
-  opacity: 0;
-  width: 10px;
   height: 10px;
-}
-.content_set .img_organization .button_gray {
-  padding: 6px 20px;
-  cursor: pointer;
-}
-.content_set .adress_organisation {
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.content_set .save button {
-  width: 150px;
-  height: 38px;
-}
-.content_set .mobile_fields_address {
-  width: 100%;
-}
-.content_set .fields_address, .content_set .mobile_fields_address {
-  height: auto;
-  padding: 0;
-}
-.content_set .cell {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 0 2% 0 0;
-}
-.content_set .cell input {
-  margin: 13px 2%;
-}
-.content_set .cell img {
-  cursor: pointer;
-  width: 20px;
-  height: 20px;
 }
 
 @media (min-width: 1163px) {
@@ -1098,214 +1012,9 @@ body {
   .content_set > div {
     width: 55%;
   }
-
-  input {
-    width: 100%;
-  }
 }
 @media (max-width: 850px) {
   .content_set > div {
     width: 90%;
   }
-
-  .adress_organisation {
-    width: 100%;
-  }
-}
-@media (min-width: 541px) {
-  .content_set > div {
-    padding: 1.5% 0%;
-  }
-
-  .name_organisation, .password_organisation,
-.adress_organisation {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
-
-  .name_organisation label, .password_organisation label {
-    text-align: left;
-    width: 25%;
-  }
-  .name_organisation input, .password_organisation input {
-    width: 75%;
-  }
-
-  .cell {
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-  }
-
-  .image {
-    margin: 0 5% 5% 0;
-  }
-
-  .save button {
-    margin: 0 0 0 70%;
-  }
-
-  .adress_organisation label {
-    margin-right: auto;
-  }
-  .adress_organisation input {
-    width: 67.3%;
-    margin: 0 1.5% 0 0;
-  }
-
-  .content_set span {
-    padding: 1.2%;
-  }
-
-  .mobile_fields_address {
-    display: none;
-  }
-
-  .fields_address {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-
-  .cell input {
-    width: 69%;
-  }
-
-  .img_buttons {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-  }
-  .img_buttons button {
-    padding: 7px 20px;
-  }
-  .img_buttons #delete_img {
-    margin: 0 0 0 5%;
-  }
-
-  .pass {
-    margin-right: auto;
-  }
-}
-@media (max-width: 540px) {
-  .content_set > div {
-    padding: 2% 0%;
-  }
-
-  .name_organisation, .password_organisation, .adress_organisation {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .name_organisation input, .password_organisation input, .adress_organisation input {
-    width: 85%;
-    text-align: center;
-  }
-  .name_organisation label, .password_organisation label, .adress_organisation label {
-    padding: 2% 0;
-  }
-  .name_organisation br, .password_organisation br, .adress_organisation br {
-    display: none;
-  }
-
-  .content_set span {
-    padding: 10px 10px;
-    margin: 20px 0 0 0;
-  }
-
-  .cell {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-
-  .mobile_fields_address {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-
-  .fields_address {
-    display: none;
-  }
-
-  .cell input {
-    width: 80%;
-  }
-
-  .save {
-    margin: 5% 0;
-  }
-
-  .img_organization {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .img_organization .img_buttons {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin: 0.5rem 0 1rem 0;
-  }
-  .img_organization .img_buttons #delete_img {
-    margin: 0 0 0 5%;
-  }
-  .img_organization .img_buttons button, .img_organization .img_buttons label {
-    padding: 8px 25px;
-  }
-
-  .image {
-    margin: 0 0 5% 0;
-  }
-
-  .save {
-    margin: 0.5rem 0 2rem 0;
-  }
-}
-@media (max-width: 390px) {
-  .name_organisation, .password_organisation, .adress_organisation {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .name_organisation label, .password_organisation label, .adress_organisation label {
-    padding: 3.2% 0;
-  }
-}/*# sourceMappingURL=edit_organisation.css.map */
+}/*# sourceMappingURL=order.css.map */
