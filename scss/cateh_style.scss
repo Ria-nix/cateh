@@ -80,8 +80,8 @@ input, select{
 // For input [type = "number"] (arrows hidden)
 input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button { 
-  appearance: none; 
-  margin: 0; 
+    appearance: none; 
+    margin: 0; 
 }
 
 // TEXT STYLE
@@ -100,7 +100,7 @@ input[type=number]::-webkit-outer-spin-button {
     padding: 0;
     box-sizing: border-box;
 }
-.scroll_none{  overflow: hidden; }
+.scroll_none{ overflow: hidden; }
 .none{ display: none; }
 .non_acitve{ color: $gray_blue; }
 .border{ border-radius: 10px; }

@@ -18,6 +18,7 @@ nav{
         // TOGGLE BUTTON AND MENU
         .toggle_menu_fon{
             position: fixed;
+            z-index: 100;
 
             .toggle_menu{
                 display: flex;

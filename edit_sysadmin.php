@@ -73,18 +73,18 @@
                     </span>
                     <ul class="font_18 spacing none" id="list">
                         <?php
-                            // include_once('test/cooler_helpers.php');
-                            // include_once('test/MySQL.php');
-                            // include_once('test/CategoriesInfo.php');
+                            include_once('test/cooler_helpers.php');
+                            include_once('test/MySQL.php');
+                            include_once('test/CategoriesInfo.php');
 
-                            // $link = getLink("u1184374_second_company_bd");
+                            $link = getLink("u1184374_second_company_bd");
 
-                            // $categories = new CategoriesInfo($link);
-                            // $all_categories = $categories->fetch();
+                            $categories = new CategoriesInfo($link);
+                            $all_categories = $categories->fetch();
                             
-                            // foreach($all_categories as $category) {
-                            //     echo "<li class=\"competence\" id={$category['id']}>{$category['name']}</li>";
-                            // }
+                            foreach($all_categories as $category) {
+                                echo "<li class=\"competence\" id={$category['id']}>{$category['name']}</li>";
+                            }
                         ?> 
                     </ul>
                 </div>
