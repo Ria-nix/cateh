@@ -36,19 +36,20 @@
             </div>
             <div class="border main_fields button_gray">
                 <p>Описание проблемы:</p><br>
-                <div class="textarea_full border"></div>
+                <textarea class="textarea_full border" cols="93"></textarea>
             </div>
             <div class="border main_fields button_gray">
-                <p>Комментарий к заказу:</p><br>
-                <div class="textarea border"></div>
-            </div>
-            <div class="border main_fields button_gray">
-                <p>Заключение:</p><br>
-                <div class="textarea_full border"></div>
+                <p>Комментарий к заказу:</p><br>                
                 <div class="date_end">
+                    <textarea class="textarea border" cols="70"></textarea>
                     <p>Создание<br>комментария</p>
                     <p class="date">25.05.2021</p>
                 </div>
+            </div>
+            <div class="border main_fields button_gray">
+                <p>Заключение:</p><br>
+                <textarea class="textarea_full border" cols="93"></textarea>
+                
             </div>
             <article class="save">
                 <button class="button border"><span><img src="icon/edit.svg" alt="edit"></span>Редактировать</button>

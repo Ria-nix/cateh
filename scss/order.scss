@@ -28,9 +28,8 @@ body{ background: $fon_white; }
     }
     .content_set{ @extend %flex_column;
         .textarea_full{
-            width: auto;
-            min-height: 100px;
-            background: $list_competence;
+            min-height: 150px;
+            background: #fcf8f8;
             border: 0.5px solid $gray_border;
         }
         .save{
@@ -74,19 +73,18 @@ body{ background: $fon_white; }
 // ********** MEDIA MAX 1163PX *************
 @media (max-width: 1163px) {
     .content_set > div{  width: 55%; } 
-    input{ width: 100%; } 
 
 }
 // ********** MEDIA MAX 850PX *************
 @media (max-width: 850px) {  
     .content_set > div{ width: 90%;}
     .main_fields{ width: 100%;}
-    .back_button button{ display: none;}
+    // .back_button button{ display: none;}
 }
 
 // ********** MEDIA MIN 541PX *************
 @media (min-width: 541px) {
-    
+
 }
 
 // ********** MEDIA MAX 540PX *************
