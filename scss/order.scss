@@ -19,17 +19,9 @@ body{ background: $fon_white; }
             span{ margin: 0 0.5rem 0 0;}
         }
     }
-    .main_info{
-        @extend %flex_row;
-        
-        justify-content: space-around;
-        
-    }
     .fist_block, .second_block{
-        align-items: flex-start;
         @extend %flex_column;
-        text-align: left;
-        span{ margin: 0.8rem 0 0 0;}
+        // span{ margin: 0.8rem 0 0 0;}
         .opacity{ padding: 0.3rem 0 0 1.5rem;}
     }
 
@@ -43,7 +35,7 @@ body{ background: $fon_white; }
     .content_set{ @extend %flex_column;
         .textarea_full, .textarea{
             min-height: 100px;
-            background: #fcf8f8;
+            background: #f6f6f6;ii
             border: 0.5px solid $gray_border;
         }
         .textarea_full{ width: 100%; }
@@ -68,7 +60,7 @@ body{ background: $fon_white; }
     
 }
 
-
+.opacity{ color: $gray_blue;}
 
 
 
@@ -87,17 +79,18 @@ body{ background: $fon_white; }
 
 // ************* @MEDIA *************
 
-// ********** MEDIA MIN 1163PX *************
-@media (min-width: 1163px) {    
+// ********** MEDIA MIN 1165PX *************
+@media (min-width: 1165px) {    
     .content_set > div{ width: 55%; }
     // .main_fields{ width: 55%;}
 }
 
-// ********** MEDIA MAX 1163PX *************
-@media (max-width: 1163px) {
+// ********** MEDIA MAX 1165PX *************
+@media (max-width: 1165px) {
     .content_set > div{  width: 55%; } 
 
 }
+
 // ********** MEDIA MAX 850PX *************
 @media (max-width: 850px) {  
     .content_set > div{ width: 90%;}
@@ -106,12 +99,30 @@ body{ background: $fon_white; }
 
 // ********** MEDIA MIN 541PX *************
 @media (min-width: 541px) {
-
+    .main_info{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .fist_block, .second_block{
+        align-items: flex-start;
+        text-align: center;
+    }
 }
 
 // ********** MEDIA MAX 540PX *************
 @media (max-width: 540px) {
-    
+    .main_info{ 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .fist_block, .second_block{
+        // align-items: center;
+        text-align: center;
+    }
+
 }
 // ********** MEDIA MAX 390PX *************
 @media (max-width: 390px) {
