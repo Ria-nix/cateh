@@ -20,9 +20,12 @@ body{ background: $fon_white; }
         }
     }
     .fist_block, .second_block{
-        @extend %flex_column;
-        span{ margin: 0.5rem 0; }
-        .opacity{ padding: 0.3rem 0 0 1.5rem;}
+        display: flex;
+        flex-direction: column;
+        .item_info{ 
+            margin: 0.5rem 0;
+            font-size: 16px;
+        }
     }
 
 
@@ -43,8 +46,7 @@ body{ background: $fon_white; }
             background: #f6f6f6;
             border: 0.5px solid $gray_border;
         }
-        .textarea_full{ width: 100%; }
-        .textarea{ width: 80%; }
+        .textarea_full{ width: 100%; }       
         .date_end{
             display: flex;
             align-items: center;
@@ -80,48 +82,52 @@ body{ background: $fon_white; }
 }
 
 // ********** MEDIA MAX 621px *************
-@media (max-width: 621px) {  
+@media (min-width: 621px) {  
     .date_end{
         flex-direction: row;
         justify-content: space-around;
-        flex-wrap: wrap;
-    
-        span{ text-align: left;}
+        span{ 
+            margin: 0.5rem 0 0 0;
+            text-align: center;
+        }
     }
+    .textarea{ width: 80%; }
 }
 // ********** MEDIA MIN 620px *************
-@media (min-width: 620px) {  
-    .date_end{
-        flex-direction: column;
-        span{ text-align: center;}
+@media (max-width: 620px) {  
+    .date_end{ flex-direction: column;
+        span{ 
+            margin: 0.5rem 0 0 0;
+            text-align: center;
+        }
     }
+    .textarea{ width: 100%; }
 }
 
-
-// ********** MEDIA MIN 541PX *************
-@media (min-width: 541px) {
+// ********** MEDIA MIN 551PX *************
+@media (min-width: 551px) {
     .main_info{
         display: flex;
         flex-direction: row;
-        align-items: flex-start;
         justify-content: space-around;
     }
     .fist_block, .second_block{
         align-items: flex-start;
         text-align: left;
+        .opacity{ padding: 0.3rem 0 0 1.5rem;}
     }
 }
 
-// ********** MEDIA MAX 540PX *************
-@media (max-width: 540px) {
+// ********** MEDIA MAX 550PX *************
+@media (max-width: 550px) {
     .main_info{ 
         display: flex;
         flex-direction: column;
-        align-items: center;
     }
     .fist_block, .second_block{
         align-items: center;
         text-align: center;
+        .opacity{ padding: 0.3rem 0 0 0;}
     }
 
 }
