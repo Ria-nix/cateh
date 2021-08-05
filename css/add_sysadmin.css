@@ -125,6 +125,10 @@ input[type=number]::-webkit-outer-spin-button {
   font-weight: bold;
 }
 
+.font_16 {
+  font-size: 16px;
+}
+
 .font_24 {
   font-size: 24px;
 }
@@ -331,6 +335,10 @@ input[type=number]::-webkit-outer-spin-button {
 
 .bold {
   font-weight: bold;
+}
+
+.font_16 {
+  font-size: 16px;
 }
 
 .font_24 {
@@ -798,6 +806,10 @@ input[type=number]::-webkit-outer-spin-button {
   font-weight: bold;
 }
 
+.font_16 {
+  font-size: 16px;
+}
+
 .font_24 {
   font-size: 24px;
 }
@@ -1110,7 +1122,6 @@ body {
 /* width */
 .searchable ul::-webkit-scrollbar {
   width: 8px;
-  margin: 0 0 15px 0;
 }
 
 /* Handle */
@@ -1221,7 +1232,7 @@ body {
   }
 
   .save {
-    margin: 0 0 1rem 0;
+    margin: 1rem 0 2rem 0;
   }
   .save button {
     margin: 0 0 2% 70%;

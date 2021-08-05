@@ -116,7 +116,7 @@ body{ background: $fon_white; }
 
 //******* SCROLL BAR *******
 /* width */
-.searchable ul::-webkit-scrollbar { width: 8px; margin: 0 0 15px 0;}
+.searchable ul::-webkit-scrollbar { width: 8px;}
     
 /* Handle */
 .searchable ul::-webkit-scrollbar-thumb {
@@ -183,7 +183,7 @@ body{ background: $fon_white; }
         padding: 0.5%; 
         min-height: 100px;
     }
-    .save{ margin: 0 0 1rem 0;
+    .save{ margin: 1rem 0 2rem 0;
         button{ margin: 0 0 2% 70%; }
     }
 }
