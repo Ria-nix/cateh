@@ -3,7 +3,7 @@
 @import 'modal_window';
 
 body{ background: $fon_white; }
-.content_wrap > div{ margin: 0 2%; }
+.content_wrap > div{ margin: 0 2%; opacity: 0.5;} //! OPACITY FOR a non-active page order
 .content_wrap{ @extend %grid;    
     .head_order{ @extend %flex_row;     
         div{ flex: 1 1 5%; }

@@ -104,6 +104,7 @@
             <div class="save">
                 <button class="button border"><span><img src="icon/edit.svg" alt="edit"></span>Редактировать</button>
                 <button class="button border"><span><img src="icon/trash 1.svg" alt="trash"></span>Удалить</button>
+                <!-- <button class="none button border"><span><img src="icon/trash 1.svg" alt="restore"></span>Восстановить</button> -->
             </div>
         </div>
     </div>

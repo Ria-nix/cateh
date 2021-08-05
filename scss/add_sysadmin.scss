@@ -117,7 +117,7 @@ body{ background: $fon_white; }
 //******* SCROLL BAR *******
 /* width */
 .searchable ul::-webkit-scrollbar { width: 8px;}
-    
+.searchable ul::-webkit-scrollbar-track { margin: 2.5px; }
 /* Handle */
 .searchable ul::-webkit-scrollbar-thumb {
     background: rgba($blue, 0.65);

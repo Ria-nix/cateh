@@ -990,6 +990,7 @@ body {
 
 .content_wrap > div {
   margin: 0 2%;
+  opacity: 0.5;
 }
 
 .content_wrap .head_order div {

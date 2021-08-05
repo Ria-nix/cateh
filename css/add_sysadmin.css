@@ -1124,6 +1124,10 @@ body {
   width: 8px;
 }
 
+.searchable ul::-webkit-scrollbar-track {
+  margin: 2.5px;
+}
+
 /* Handle */
 .searchable ul::-webkit-scrollbar-thumb {
   background: rgba(17, 39, 66, 0.65);
