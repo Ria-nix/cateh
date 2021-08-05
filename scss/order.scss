@@ -3,34 +3,57 @@
 @import 'modal_window';
 
 body{ background: $fon_white; }
-.content_wrap > div{ margin: 0 2% 0 2%; }
-.content_wrap{ @extend %grid;
-    .text { 
-        text-align: center; 
-        padding: 3.5% 4% 2% 4%; 
-    }
+.content_wrap > div{ margin: 0 2%; }
+.content_wrap{ @extend %grid;    
     .head_order{ @extend %flex_row;     
-        div{ 
-            min-width: 5rem; 
-            flex: 1 1 5%; 
+        div{ flex: 1 1 5%; }
+
+        .text { 
+            text-align: center; 
+            padding: 3.5% 4% 2% 4%; 
+        }
+        .back_button button{
+            margin: 0 0 0 30px;
+            padding: 6px 15px;
+            @extend %flex_row;        
+            span{ margin: 0 0.5rem 0 0;}
         }
     }
-    .back_button button{
-        margin: 0 0 0 30px;
-        padding: 6px 15px;
-        @extend %flex_row;        
-        span{ margin: 0 0.5rem 0 0;}
+    .main_info{
+        @extend %flex_row;
+        
+        justify-content: space-around;
+        
     }
+    .fist_block, .second_block{
+        align-items: flex-start;
+        @extend %flex_column;
+        text-align: left;
+        span{ margin: 0.8rem 0 0 0;}
+        .opacity{ padding: 0.3rem 0 0 1.5rem;}
+    }
+
+
+
     .content_set > div{ 
-        margin: 1.5% 0;
-        padding: 1.5% 1.5%;
+        margin: 0.5rem 0;
+        padding: 1rem;
         background: $gray_full;
     }
     .content_set{ @extend %flex_column;
-        .textarea_full{
-            min-height: 150px;
+        .textarea_full, .textarea{
+            min-height: 100px;
             background: #fcf8f8;
             border: 0.5px solid $gray_border;
+        }
+        .textarea_full{ width: 100%; }
+        .textarea{ width: 80%; }
+        .date_end{
+            @extend %flex_row;
+            justify-content: space-around;
+            flex-wrap: wrap;
+
+            span{ text-align: center}
         }
         .save{
             @extend %flex_row;
@@ -66,8 +89,8 @@ body{ background: $fon_white; }
 
 // ********** MEDIA MIN 1163PX *************
 @media (min-width: 1163px) {    
-    .content_set > div{ width: 45%; }
-    .main_fields{ width: 52%;}
+    .content_set > div{ width: 55%; }
+    // .main_fields{ width: 55%;}
 }
 
 // ********** MEDIA MAX 1163PX *************
@@ -78,8 +101,7 @@ body{ background: $fon_white; }
 // ********** MEDIA MAX 850PX *************
 @media (max-width: 850px) {  
     .content_set > div{ width: 90%;}
-    .main_fields{ width: 100%;}
-    // .back_button button{ display: none;}
+    .back_button, .empty{ display: none;}
 }
 
 // ********** MEDIA MIN 541PX *************

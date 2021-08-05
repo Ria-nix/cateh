@@ -30,25 +30,62 @@
             <div class="empty"></div>
         </div>
         <div class="content_set">
-            <div class="border main_fields button_gray">
-                <div class="fist_block"></div>
-                <div class="second_block"></div>
+            <div class="border main_fields button_gray main_info">
+                <div class="fist_block">
+                    <span class="item_info">
+                        <p class="main_text">ФИО клиента:</p>
+                        <p class="opacity">43 кабинет</p>
+                    </span>
+                    <span class="item_info">
+                        <p class="main_text">Организация:</p>
+                        <p class="opacity">ООО”Креатив Текнолоджис”</p>
+                    </span>
+                    <span class="item_info">
+                        <p class="main_text">Номер телефона:</p>
+                        <p class="opacity">+7(***)*** - 00 - 00</p>
+                    </span>
+                    <span class="item_info">
+                        <p class="main_text">Адрес:</p>
+                        <p class="opacity">ул. Портовая</p>
+                    </span>
+                </div>
+
+                <div class="second_block">
+                <span class="item_info">
+                        <p class="main_text">Сис. администратор:</p>
+                        <p class="opacity">Михаил Reghby</p>
+                    </span>
+                    <span class="item_info">
+                        <p class="main_text">Статус:</p>
+                        <p class="opacity">Завершено</p>
+                    </span>
+                    <span class="item_info">
+                        <p class="main_text">Дата принятия заказа:</p>
+                        <p class="opacity">25.05.2021</p>
+                    </span>
+                    <span class="item_info">
+                        <p class="main_text">Дата завершения заказа:</p>
+                        <p class="opacity">25.05.2021</p>
+                    </span>
+                </div>
             </div>
             <div class="border main_fields button_gray">
                 <p>Описание проблемы:</p><br>
-                <textarea class="textarea_full border" cols="93"></textarea>
+                <input class="textarea_full border"></input>
             </div>
             <div class="border main_fields button_gray">
                 <p>Комментарий к заказу:</p><br>                
                 <div class="date_end">
-                    <textarea class="textarea border" cols="70"></textarea>
-                    <p>Создание<br>комментария</p>
-                    <p class="date">25.05.2021</p>
+                    <input class="textarea border"></input>
+                    <span>
+                        <p>Создание<br>комментария</p>
+                        <p class="date">-- -- ----</p>
+                    </span>
                 </div>
             </div>
             <div class="border main_fields button_gray">
                 <p>Заключение:</p><br>
-                <textarea class="textarea_full border" cols="93"></textarea>
+                <input class="textarea_full border"></input>
                 
             </div>
             <article class="save">
@@ -58,7 +95,7 @@
         </div>
     </div>
     <script src="js/modal_windows.js"></script>    
-    <!-- <script src="js/order.js"></script> -->
+    <script src="js/order.js"></script>
     <script src="<?php  echo $navigation_panel ?>"></script>
         
 </body>

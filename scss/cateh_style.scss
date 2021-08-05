@@ -1,6 +1,7 @@
 // BASIC COLORS
 $yellow: #FFCC00;
 $blue: #112742;
+$light_blue: #1AC1F5;
 $red: #E52828;
 $green: #159B12;
 $fon_white: #F5F5F5;
@@ -13,7 +14,7 @@ $fon_table: #EDEDED;
 $line: #B2B2B2;
 $cell_gray: #DBDBDB;
 $list_competence: #F4F4F4;
-$light_blue: #1AC1F5;
+
 
 // COLORS FOR RAITING
 $light_red: #FF8E9B;
@@ -87,8 +88,6 @@ input[type=number]::-webkit-outer-spin-button {
 // TEXT STYLE
 .spacing{ letter-spacing: 0.5px;}
 .bold{ font-weight: bold;}
-// .font_14{ font-size: 14px;}
-// .font_18{ font-size: 18px;}
 .font_24{ font-size: 24px;}
 .red_auto{ border-color: rgba($red,0.7); }
 .red{color:$red; font-size: 24px;}
