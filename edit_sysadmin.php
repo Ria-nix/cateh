@@ -27,22 +27,22 @@
 
             <div class="main_fields">
                 <label for="email">Email <span class='red'>*</span></label>
-                <input type="text" id="email" class="add_info" value="email@gmail.com">
+                <input type="text" id="email" class="add_info" placeholder="email@gmail.com">
             </div>
 
             <div class="main_fields">
                 <label for="password">Пароль <span class='red'>*</span></label>
-                <input type="text" id="password" class="add_info" value="123*****89">
+                <input type="text" id="password" class="add_info" placeholder="123*****89">
             </div>
 
             <div class="main_fields">
                 <label for="name">Имя <span class='red'>*</span></label>
-                <input type="text" id="name" class="add_info" value="Михаил">
+                <input type="text" id="name" class="add_info" placeholder="Михаил">
             </div>
 
             <div class="main_fields">
                 <label for="surname">Фамилия <span class='red'>*</span></label>
-                <input type="text" id="surname" class="add_info" value="Куприн">
+                <input type="text" id="surname" class="add_info" placeholder="Куприн">
             </div>
 
             <div class="main_fields">

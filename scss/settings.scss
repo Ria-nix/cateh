@@ -47,7 +47,7 @@ body{ background: $fon_white; }
 @media (max-width: 1163px) {
     .content_set > div{  width: 55%; } 
 }
- 
+
 // ********** MEDIA 850PX *************
 @media (max-width: 850px) {  
     .content_set > div{ width: 80%;}
@@ -59,7 +59,7 @@ body{ background: $fon_white; }
         display: flex;
         flex-direction: row;
         align-items: center;
- 
+
         .image{ 
             width: 9.5rem;
             height: 9.5rem;

@@ -30,7 +30,7 @@
             <div class="empty"></div>
         </div>
         <div class="content_set">
-            <div class="border main_fields button_gray main_info">
+            <div class="border main_fields main_info">
                 <div class="fist_block">
                     <span class="item_info">
                         <p class="main_text">ФИО клиента:</p>
@@ -51,7 +51,7 @@
                 </div>
 
                 <div class="second_block">
-                <span class="item_info">
+                    <span class="item_info">
                         <p class="main_text">Сис. администратор:</p>
                         <p class="opacity">Михаил Reghby</p>
                     </span>
@@ -69,11 +69,11 @@
                     </span>
                 </div>
             </div>
-            <div class="border main_fields button_gray">
+            <div class="border main_fields">
                 <p>Описание проблемы:</p><br>
                 <input class="textarea_full border"></input>
             </div>
-            <div class="border main_fields button_gray">
+            <div class="border main_fields">
                 <p>Комментарий к заказу:</p><br>                
                 <div class="date_end">
                     <input class="textarea border"></input>
@@ -83,7 +83,7 @@
                     </span>
                 </div>
             </div>
-            <div class="border main_fields button_gray">
+            <div class="border main_fields">
                 <p>Заключение:</p><br>
                 <input class="textarea_full border"></input>
                 

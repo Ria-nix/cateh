@@ -21,7 +21,7 @@ body{ background: $fon_white; }
     }
     .fist_block, .second_block{
         @extend %flex_column;
-        // span{ margin: 0.8rem 0 0 0;}
+        span{ margin: 0.5rem 0; }
         .opacity{ padding: 0.3rem 0 0 1.5rem;}
     }
 
@@ -32,20 +32,22 @@ body{ background: $fon_white; }
         padding: 1rem;
         background: $gray_full;
     }
-    .content_set{ @extend %flex_column;
+    .content_set{ @extend %flex_column;        
+        .main_fields{
+            background: transparent;
+            border: 1px solid $gray_border;
+            box-shadow: 0px 4px 10px 0px rgba($but_shadow, 0.15);
+        }
         .textarea_full, .textarea{
             min-height: 100px;
-            background: #f6f6f6;ii
+            background: #f6f6f6;
             border: 0.5px solid $gray_border;
         }
         .textarea_full{ width: 100%; }
         .textarea{ width: 80%; }
         .date_end{
-            @extend %flex_row;
-            justify-content: space-around;
-            flex-wrap: wrap;
-
-            span{ text-align: center}
+            display: flex;
+            align-items: center;
         }
         .save{
             @extend %flex_row;
@@ -57,38 +59,18 @@ body{ background: $fon_white; }
             }
         } 
     }
-    
 }
-
 .opacity{ color: $gray_blue;}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // ************* @MEDIA *************
-
 // ********** MEDIA MIN 1165PX *************
 @media (min-width: 1165px) {    
-    .content_set > div{ width: 55%; }
-    // .main_fields{ width: 55%;}
+    .content_set > div{ width: 60%; }
 }
 
 // ********** MEDIA MAX 1165PX *************
 @media (max-width: 1165px) {
-    .content_set > div{  width: 55%; } 
-
+    .content_set > div{ width: 70%; } 
 }
 
 // ********** MEDIA MAX 850PX *************
@@ -97,17 +79,36 @@ body{ background: $fon_white; }
     .back_button, .empty{ display: none;}
 }
 
+// ********** MEDIA MAX 621px *************
+@media (max-width: 621px) {  
+    .date_end{
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    
+        span{ text-align: left;}
+    }
+}
+// ********** MEDIA MIN 620px *************
+@media (min-width: 620px) {  
+    .date_end{
+        flex-direction: column;
+        span{ text-align: center;}
+    }
+}
+
+
 // ********** MEDIA MIN 541PX *************
 @media (min-width: 541px) {
     .main_info{
         display: flex;
         flex-direction: row;
-        align-items: center;
+        align-items: flex-start;
         justify-content: space-around;
     }
     .fist_block, .second_block{
         align-items: flex-start;
-        text-align: center;
+        text-align: left;
     }
 }
 
@@ -119,7 +120,7 @@ body{ background: $fon_white; }
         align-items: center;
     }
     .fist_block, .second_block{
-        // align-items: center;
+        align-items: center;
         text-align: center;
     }
 

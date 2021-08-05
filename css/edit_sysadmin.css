@@ -1126,10 +1126,6 @@ body {
   .content_set > div {
     width: 45%;
   }
-
-  .main_fields {
-    width: 52%;
-  }
 }
 @media (max-width: 1163px) {
   .content_set > div {
@@ -1143,10 +1139,6 @@ body {
 @media (max-width: 850px) {
   .content_set > div {
     width: 90%;
-  }
-
-  .main_fields {
-    width: 100%;
   }
 }
 @media (min-width: 541px) {

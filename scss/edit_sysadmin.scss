@@ -133,21 +133,16 @@ body{ background: $fon_white; }
 // ********** MEDIA MIN 1163PX *************
 @media (min-width: 1163px) {    
     .content_set > div{ width: 45%; }
-    .main_fields{ width: 52%;}
 }
-
 // ********** MEDIA MAX 1163PX *************
 @media (max-width: 1163px) {
     .content_set > div{  width: 55%; } 
     input{ width: 100%; } 
-
 }
 // ********** MEDIA MAX 850PX *************
 @media (max-width: 850px) {  
     .content_set > div{ width: 90%;}
-    .main_fields{ width: 100%;}
 }
-
 // ********** MEDIA MIN 541PX *************
 @media (min-width: 541px) {
     .field_choice .text_width{ width: 40%; padding: 0 2% 0 0;}
@@ -178,6 +173,7 @@ body{ background: $fon_white; }
         button{ padding: 7px 20px; }
         #delete_img{ margin: 0 0 0 5%; }       
     }
+
     .searchable { width: 71%;}
     .competences{ 
         border: 1px solid $gray_border;
