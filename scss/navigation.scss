@@ -1,11 +1,17 @@
 @import "cateh_style";
 
+
+.header{
+    width: 100%;
+    position: fixed;
+    height: auto;
+    background: $fon_white;
+}
 nav{
     width: 100%;
     @extend %grid;
     background: $fon_white;
     nav > div{ border: 1px solid red; }
-   
     .navigation{
         @extend %flex_row;
         height: 130px;
@@ -51,7 +57,7 @@ nav{
                     position: absolute;
                 }
                 span::after{
-                   transform: translateY(11px);
+                    transform: translateY(11px);
                 }
                 span::before{
                     transform: translateY(-11px);
@@ -149,7 +155,7 @@ nav{
     } 
     
 }
- 
+
 // ********** MEDIA 850PX *************
 @media (max-width: 850px) {    
     .toggle_menu_fon{
@@ -167,7 +173,7 @@ nav{
     .toggle_but:hover{ border-color: $light_blue; }
     .toggle_menu_fon{ 
         background: rgba($blue, 0.9);   
-        left: -10px;
+        left: 0;;
         top: 129px;
         
         .toggle_menu{

@@ -11,13 +11,14 @@
 </head>
 <body>
     <?php include_once('navigation.php');?> 
-    <!-- THE END OF NAVIGATION PANEL -->        
-        <div class="search">            
-            <p class="font_18 bold">Системные администраторы</p>
-            <input class="border" type="text" placeholder="Введите имя или фамилию">
-            <button class="button border font_16">Найти</button>
-        </div>
-    </nav>
+        <!-- THE END OF NAVIGATION PANEL -->        
+            <div class="search">            
+                <p class="font_18 bold">Системные администраторы</p>
+                <input class="border" type="text" placeholder="Введите имя или фамилию">
+                <button class="button border font_16">Найти</button>
+            </div>
+        </nav>
+    <header>
     <!-- CONTENT -->
     <div class="content_wrap">
         <!-- HEAD TABLE -->
@@ -29,7 +30,7 @@
                 <p>Статус</p>
             </div>
         </div>
-         <!-- TABLE -->
+        <!-- TABLE -->
         <div class="table_sysadmin" id="table"></div>  
     </div>
     <script src="js/sysadmin.js"></script>

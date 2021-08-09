@@ -1,9 +1,31 @@
-@use 'cateh_style' as *;
+@use '../scss/cateh_style' as *;
+@import '../scss/navigation';
+
 
 .header, .content{
     @extend %grid;    
-    height: 20px;
-    border: 1px solid red;
 }
-div{
+.header{
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    height: 200px;
+    // background: $fon_white;
+    background: blue;
+}
+.content{
+    padding-top: 199px;
+    border: 1px solid red;
+    .section1{
+        text-align: center;
+        width: 100%;
+        position: fixed;
+        height: 100px;
+        background: green;
+    }
+    .section2{
+        padding-top: 100px;
+        min-height: 300px;
+        border: 1px solid yellow;
+    }
 }

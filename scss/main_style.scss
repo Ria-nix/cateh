@@ -45,7 +45,7 @@ body{
             }
         }
     }
-  
+
     // TABLE WITH INFO
     .table_sysadmin{
         padding: 0 10px 0 10px;
@@ -116,13 +116,13 @@ body{
     .item_table button{margin-left: 40px; }
     .item_info{ width: 100%; padding: 2%;}
 }
- 
+
 // ********** MEDIA 850PX *************
 @media (max-width: 850px) {  
     .head_table{
         font-size: 14px;
         justify-content: center;
-     }  
+    }  
     .item_table button{ display: none; }
     .item_table{ width: 100%;  }
     .item_info{  width: 50rem; padding: 2%;}

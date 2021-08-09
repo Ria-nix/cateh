@@ -1,4 +1,4 @@
-@import 'cateh_style';
+@use '../scss/cateh_style' as *;
 @import 'navigation';
 @import 'modal_window';
 

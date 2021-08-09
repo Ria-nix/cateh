@@ -8,7 +8,7 @@ body::-webkit-scrollbar {
   width: 0;
 }
 
-.content_wrap .head_order .back_button button, .content_wrap .head_order, nav .navigation span, nav .navigation .panel_buttons, nav .navigation {
+nav .navigation, nav .navigation .panel_buttons, nav .navigation span, .content_wrap .head_order, .content_wrap .head_order .back_button button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -21,7 +21,7 @@ body::-webkit-scrollbar {
           align-items: center;
 }
 
-.content_wrap .content_set, .modal_window .window_wrap {
+.modal_window .window_wrap, .content_wrap .content_set {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -34,7 +34,7 @@ body::-webkit-scrollbar {
           align-items: center;
 }
 
-.content_wrap, nav {
+nav, .content_wrap {
   display: grid;
   grid-template-columns: repeat(1, minmax(320px, 1500px));
   -webkit-box-pack: center;
@@ -422,6 +422,13 @@ input[type=number]::-webkit-outer-spin-button {
             box-shadow: none;
   }
 }
+.header {
+  width: 100%;
+  position: fixed;
+  height: auto;
+  background: #F5F5F5;
+}
+
 nav {
   width: 100%;
   background: #F5F5F5;
