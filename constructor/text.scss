@@ -1,0 +1,9 @@
+@use 'cateh_style' as *;
+
+.header, .content{
+    @extend %grid;    
+    height: 20px;
+    border: 1px solid red;
+}
+div{
+}
