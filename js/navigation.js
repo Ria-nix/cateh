@@ -28,7 +28,7 @@ $(document).ready(function(){
         
         for(let elem of $('.exit')){
             elem.addEventListener('click',function(){
-            window.location.href = 'the_order.php'; });
+            window.location.href = 'order.php'; });
         }
     }());
     

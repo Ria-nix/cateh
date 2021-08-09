@@ -23,6 +23,7 @@
     $edit_organ = 'Редактирование организации';
     $edit_sysadmin = 'Редактирование системного администратора';
     $order = 'Заказ №12569589';
+    $edit_order = 'Редактирование заказа';
 
     // CSS connection (path)
     $css_index = 'css/index_style.css';
@@ -34,6 +35,7 @@
     $css_organizations = 'css/main_style.css';
     $css_add_sysadmin = 'css/add_sysadmin.css';
     $css_order = 'css/order.css';
+    $css_edit_order = 'css/edit_order.css';
     //Script path of navigation panel
     $navigation_panel = 'js/navigation.js';
     

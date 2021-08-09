@@ -21,7 +21,7 @@
     <!-- CONTENT -->
     <div class="content_wrap">
         <div class="head_order">
-            <div class="back_button">
+            <div class="back_button back_arrow">
                 <button class="button border"><span><img src="icon/restore.svg" alt="restore"></span>Назад</button>
             </div>
             <div class="text all_opacity">
@@ -30,7 +30,7 @@
             <div class="empty"></div>
         </div>
         <div class="content_set">
-            <div class="border main_fields main_info">
+            <div class="border main_fields main_info all_opacity">
                 <div class="fist_block">
                     <span class="item_info">
                         <p class="main_text">ФИО клиента:</p>
@@ -69,7 +69,7 @@
                     </span>
                 </div>
             </div>
-            <div class="border main_fields">
+            <div class="border main_fields all_opacity">
                 <p>Описание проблемы:</p><br>
                 <textarea class="textarea_full border font_16" disabled>
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam perferendis deleniti qui doloremque, reiciendis maxime culpa iusto modi odio, dignissimos nihil provident ad molestiae. Eveniet autem accusamus neque dicta vel.
@@ -79,7 +79,7 @@
                     Recusandae nisi delectus est labore enim corporis at totam, vitae accusantium incidunt animi ullam dicta cumque! Sed exercitationem aperiam et, dolore, quam, veniam magnam nostrum cumque deserunt tenetur ipsam animi?
                 </textarea>
             </div>
-            <div class="border main_fields">
+            <div class="border main_fields all_opacity">
                 <p>Комментарий к заказу:</p><br>                
                 <div class="date_end">
                     <textarea class="comments border font_16" disabled>
@@ -88,11 +88,11 @@
                     </textarea>
                     <span>
                         <p>Создание<br>комментария</p>
-                        <p class="date opacity">25.3.2021</p>
+                        <p class="date opacity">25.03.2021</p>
                     </span>
                 </div>
             </div>
-            <div class="border main_fields">
+            <div class="border main_fields all_opacity">
                 <p>Заключение:</p><br>
                 <textarea class="textarea_full border font_16" disabled>
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo cupiditate nostrum, veritatis tenetur dolorem deleniti vitae reprehenderit rerum esse nam, voluptatibus labore? Dicta enim eos incidunt magnam ipsum dignissimos unde?
@@ -102,14 +102,12 @@
                 
             </div>
             <div class="save">
-                <!-- <button class="button border"><span><img src="icon/edit.svg" alt="edit"></span>Редактировать</button>
-                <button class="button border"><span><img src="icon/trash 1.svg" alt="trash"></span>Удалить</button> -->
                 <button class="none button border"><span><img src="icon/trash 1.svg" alt="restore"></span>Восстановить</button>
             </div>
         </div>
     </div>
     <script src="js/modal_windows.js"></script>    
-    <script src="js/order.js"></script>
+    <script src="js/order_non_active.js"></script>
     <script src="<?php  echo $navigation_panel ?>"></script>
         
 </body>

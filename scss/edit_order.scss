@@ -39,19 +39,14 @@ body{ background: $fon_white; }
             border: 1px solid $gray_border;
             box-shadow: 0px 4px 10px 0px rgba($but_shadow, 0.15);
         }
-        .textarea_full, .comments{
+        .textarea_full{
+            width: 100%;
             min-height: 200px;
             resize: none;
             background: #f6f6f6;
             border: 0.5px solid $gray_border;
             padding: 0.5rem;
-        }
-        .textarea_full{ width: 100%; }       
-        .date_end{
-            display: flex;
-            align-items: center;
-            .opacity{ margin-top: 0.3rem;}
-        }
+        }    
         .save, .save button{ 
             display: flex;
             align-items: center;
@@ -91,30 +86,6 @@ textarea::-webkit-scrollbar-track {
     .back_button, .empty{ display: none;}
 }
 
-// ********** MEDIA MAX 621px *************
-@media (min-width: 621px) {  
-    .date_end{ flex-direction: row;
-        span{ 
-            margin: 0.5rem 0 0 0;
-            text-align: center;
-        }
-    }
-    .comments{ 
-        width: 85%; 
-        margin: 0 10px 0 0;
-    }
-}
-// ********** MEDIA MIN 620px *************
-@media (max-width: 620px) {  
-    .date_end{ flex-direction: column;
-        span{ 
-            margin: 1rem 0 0.3rem 0;
-            text-align: center;
-        }
-    }
-    .comments{ width: 100%; }
-}
-
 // ********** MEDIA MIN 551PX *************
 @media (min-width: 551px) {
     .main_info{
@@ -125,7 +96,6 @@ textarea::-webkit-scrollbar-track {
     .fist_block, .second_block{
         align-items: flex-start;
         text-align: left;
-        .opacity{ padding: 0.5rem 0 0 1.5rem;}
     }
     .save{
         background: none;
