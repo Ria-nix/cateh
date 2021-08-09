@@ -10,14 +10,16 @@
     <title><?php echo $organizations ?></title>
 </head>
 <body>
-    <?php include_once('navigation.php');?> 
-    <!-- THE END OF NAVIGATION PANEL -->        
-        <div class="search">            
-            <p class="font_18 bold">Организации</p>
-            <input class="border" type="text" placeholder="Введите название организации">
-            <button class="button border font_16">Найти</button>
-        </div>
-    </nav>
+    <div class="header">
+        <?php include_once('navigation.php');?> 
+        <!-- THE END OF NAVIGATION PANEL -->        
+            <div class="search">            
+                <p class="font_18 bold">Организации</p>
+                <input class="border" type="text" placeholder="Введите название организации">
+                <button class="button border font_16">Найти</button>
+            </div>
+        </nav>
+    </div>
     <!-- CONTENT -->
     <div class="content_wrap">
         <!-- HEAD TABLE -->
@@ -28,8 +30,8 @@
                 <p>Текущих заказов </p>
             </div>
         </div>
-         <!-- TABLE -->
-         <div class="table_sysadmin" id="table"></div>  
+        <!-- TABLE -->
+        <div class="table_sysadmin" id="table"></div>  
     </div>
     <script src="js/organization.js"></script>
     <script src="<?php  echo $navigation_panel ?>"></script>

@@ -1,11 +1,18 @@
 @import "cateh_style";
 
+
+.header{
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    height: 130px;
+    background: $fon_white;
+}
 nav{
     width: 100%;
     @extend %grid;
     background: $fon_white;
     nav > div{ border: 1px solid red; }
-   
     .navigation{
         @extend %flex_row;
         height: 130px;

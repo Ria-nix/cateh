@@ -422,6 +422,14 @@ input[type=number]::-webkit-outer-spin-button {
             box-shadow: none;
   }
 }
+.header {
+  width: 100%;
+  text-align: center;
+  position: fixed;
+  height: 130px;
+  background: #F5F5F5;
+}
+
 nav {
   width: 100%;
   background: #F5F5F5;
@@ -679,14 +687,6 @@ nav .navigation .door img {
     display: block;
   }
 }
-body {
-  overflow-y: hidden;
-  overflow-x: hidden;
-}
-body::-webkit-scrollbar {
-  display: none;
-}
-
 .spacing_special {
   letter-spacing: 1px;
 }
@@ -719,10 +719,13 @@ body::-webkit-scrollbar {
 }
 
 .content_wrap {
+  padding-top: 150px;
   width: 100%;
   border-top: 0.5px solid #B2B2B2;
 }
 .content_wrap .head_table {
+  width: 100%;
+  position: fixed;
   height: 5rem;
   border-bottom: 1px solid #112742;
 }
@@ -734,6 +737,7 @@ body::-webkit-scrollbar {
       -ms-flex: 1;
           flex: 1;
   text-align: center;
+  line-height: 150px;
 }
 .content_wrap .head_table .head_name span > img {
   -webkit-transform: translateY(3px);
@@ -742,7 +746,7 @@ body::-webkit-scrollbar {
      object-fit: contain;
 }
 .content_wrap .table_sysadmin {
-  padding: 0 10px 0 10px;
+  padding: 5rem 10px 0 10px;
 }
 .content_wrap .table_sysadmin .item_table {
   width: 100%;
@@ -774,9 +778,6 @@ body::-webkit-scrollbar {
 .content_wrap .table_sysadmin .item_table:last-child {
   margin: 20px 0;
 }
-.content_wrap .table_sysadmin::-webkit-scrollbar {
-  width: 0;
-}
 
 .ask_des_arrow {
   cursor: pointer;
@@ -787,19 +788,6 @@ body::-webkit-scrollbar {
     font-size: 18px;
   }
 
-  .head_table {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-
   .item_table button {
     display: block;
     margin-left: 2rem;
@@ -807,12 +795,6 @@ body::-webkit-scrollbar {
 
   .item_info {
     width: 100%;
-  }
-
-  .table_sysadmin {
-    height: 46rem;
-    overflow-y: scroll;
-    overflow-x: hidden;
   }
 
   .head_name {
@@ -837,12 +819,6 @@ body::-webkit-scrollbar {
 
   .items {
     width: 65%;
-  }
-
-  .table_sysadmin {
-    height: 47rem;
-    overflow-y: scroll;
-    overflow-x: hidden;
   }
 
   .item_table button {
@@ -970,10 +946,6 @@ body::-webkit-scrollbar {
     font-weight: bold;
     padding: 2% 0 0 0;
     font-size: 16px;
-  }
-
-  .table_sysadmin {
-    height: 100%;
   }
 
   .head_table {

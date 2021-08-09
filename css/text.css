@@ -21,7 +21,7 @@ nav .navigation, nav .navigation .panel_buttons, nav .navigation span {
           align-items: center;
 }
 
-nav, .header, .content {
+nav, .content {
   display: grid;
   grid-template-columns: repeat(1, minmax(320px, 1500px));
   -webkit-box-pack: center;
@@ -220,7 +220,7 @@ nav .navigation span, nav .navigation .panel_buttons, nav .navigation {
           align-items: center;
 }
 
-.header, .content, nav {
+.content, nav {
   display: grid;
   grid-template-columns: repeat(1, minmax(320px, 1500px));
   -webkit-box-pack: center;
@@ -396,6 +396,14 @@ input[type=number]::-webkit-outer-spin-button {
             box-shadow: none;
   }
 }
+.header {
+  width: 100%;
+  text-align: center;
+  position: fixed;
+  height: 130px;
+  background: #F5F5F5;
+}
+
 nav {
   width: 100%;
   background: #F5F5F5;
@@ -658,7 +666,7 @@ nav .navigation .door img {
   text-align: center;
   position: fixed;
   height: 200px;
-  background: blue;
+  background: #F5F5F5;
 }
 
 .content {
@@ -670,7 +678,6 @@ nav .navigation .door img {
   width: 100%;
   position: fixed;
   height: 100px;
-  background: green;
 }
 .content .section2 {
   padding-top: 100px;

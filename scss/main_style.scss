@@ -1,11 +1,6 @@
 @import 'cateh_style';
 @import 'navigation';
 
-body{
-    overflow-y: hidden;
-    overflow-x: hidden;
-    &::-webkit-scrollbar { display: none;}
-}
 .spacing_special{ letter-spacing: 1px; }
 .search{
     @extend %flex_column;
@@ -29,26 +24,35 @@ body{
 // *********** CONTENT ****************
 .content_wrap > div{ margin: 0 2% 0 2%;}
 .content_wrap{
+    padding-top: 150px;
     width: 100%;
     @extend %grid;
     border-top: 0.5px solid $line;
+
     //HEAD TABLE
     .head_table{ 
+        width: 100%;
+        position: fixed;
         height: 5rem;
         border-bottom: 1px solid $blue;
         .head_name{          
             height: 100%;
             @extend %flex_row;       
-            p{ flex:1; text-align: center; }
-            span > img{ transform: translateY(3px);
+            p{ 
+                flex:1; 
+                text-align: center; 
+                line-height: 2rem;
+            }
+            span > img{ 
+                transform: translateY(3px);
                 object-fit: contain;
             }
         }
     }
-  
+
     // TABLE WITH INFO
     .table_sysadmin{
-        padding: 0 10px 0 10px;
+        padding: 5rem 10px 0 10px;
         @extend %flex_column;
         .item_table{
             width: 100%;
@@ -72,7 +76,6 @@ body{
         }
         .item_table:last-child{ margin: 20px 0; }        
     }
-    .table_sysadmin::-webkit-scrollbar{ width: 0; }
 }
 .ask_des_arrow{ cursor: pointer; }
 // ************* @MEDIA *************
@@ -80,19 +83,8 @@ body{
 // ********** MEDIA MIN 1163PX *************
 @media (min-width: 1163px) {
     .item_table, .head_name{ font-size: 18px; }
-    .head_table{        
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
     .item_table button{ display: block; margin-left: 2rem; }
     .item_info{ width: 100%; }
-
-    .table_sysadmin{   
-        height: 46rem;    
-        overflow-y: scroll;
-        overflow-x: hidden;
-    }
     .head_name{ 
         width: 88%;
         padding:0 2%;
@@ -108,21 +100,16 @@ body{
         padding: 0 3%;
     }
     .items{  width: 65%; }
-    .table_sysadmin{
-        height: 47rem;        
-        overflow-y: scroll;
-        overflow-x: hidden;
-    }
     .item_table button{margin-left: 40px; }
     .item_info{ width: 100%; padding: 2%;}
 }
- 
+
 // ********** MEDIA 850PX *************
 @media (max-width: 850px) {  
     .head_table{
         font-size: 14px;
         justify-content: center;
-     }  
+    }  
     .item_table button{ display: none; }
     .item_table{ width: 100%;  }
     .item_info{  width: 50rem; padding: 2%;}
@@ -178,7 +165,6 @@ body{
         padding: 2% 0 0 0;
         font-size: 16px;
     }
-    .table_sysadmin{ height: 100%; }
     .head_table{ display: none; }
 }
 

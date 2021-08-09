@@ -2,7 +2,7 @@
 @import '../scss/navigation';
 
 
-.header, .content{
+.content{
     @extend %grid;    
 }
 .header{
@@ -10,8 +10,8 @@
     text-align: center;
     position: fixed;
     height: 200px;
-    // background: $fon_white;
-    background: blue;
+    background: $fon_white;
+    // background: blue;
 }
 .content{
     padding-top: 199px;
@@ -21,7 +21,7 @@
         width: 100%;
         position: fixed;
         height: 100px;
-        background: green;
+        // background: green;
     }
     .section2{
         padding-top: 100px;
