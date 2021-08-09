@@ -17,8 +17,6 @@
                 <input class="border" type="text" placeholder="Введите имя или фамилию">
                 <button class="button border font_16">Найти</button>
             </div>
-        </nav>
-    <header>
     <!-- CONTENT -->
     <div class="content_wrap">
         <!-- HEAD TABLE -->
@@ -31,7 +29,9 @@
             </div>
         </div>
         <!-- TABLE -->
-        <div class="table_sysadmin" id="table"></div>  
+        <div class="table_sysadmin" id="table">
+            
+        </div>  
     </div>
     <script src="js/sysadmin.js"></script>
     <script src="<?php  echo $navigation_panel ?>"></script>
