@@ -8,7 +8,6 @@ body{ background: $fon_white; }
 .content_wrap{ @extend %grid;    
     .head_order{ @extend %flex_row;     
         div{ flex: 1 1 5%; }
-
         .text { 
             text-align: center; 
             padding: 3.5% 4% 2% 4%; 
@@ -16,19 +15,25 @@ body{ background: $fon_white; }
         .back_button button{
             margin: 0 0 0 30px;
             padding: 6px 15px;
-            @extend %flex_row;        
+            @extend %flex_row;    
             span{ margin: 0 0.5rem 0 0;}
         }
     }
     .fist_block, .second_block{
         display: flex;
         flex-direction: column;
+        align-items: center;
         .item_info{ 
             margin: 0.5rem 0;
             font-size: 16px;
+            width: 100%;
+            input{ 
+                text-align: center;
+                height: 40px;
+                margin: 5px 0 0 0;
+            }
         }
     }
-
     .content_set .main_fields{ 
         margin: 0.5rem 0;
         padding: 1rem;
@@ -52,22 +57,19 @@ body{ background: $fon_white; }
             align-items: center;
         }
         .save button{
-            padding: 8px 15px;
+            padding: 8px 30px;
             flex-direction: row;
             span{ margin: 0 5px 0 0;}
         } 
     }
 }
-textarea::-webkit-scrollbar { width: 5px;}
-    
+textarea::-webkit-scrollbar { width: 5px;}    
 /* Handle */
 textarea::-webkit-scrollbar-thumb {
     background: rgba($blue, 0.65);
     border-radius: 10px;
 }
-textarea::-webkit-scrollbar-track {
-    margin: 8px;
-}
+textarea::-webkit-scrollbar-track { margin: 8px; }
 
 // ************* @MEDIA *************
 // ********** MEDIA MIN 1165PX *************
@@ -80,23 +82,32 @@ textarea::-webkit-scrollbar-track {
     .content_set > div{ width: 70%; } 
 }
 
+// ********** MEDIA MIN 850PX *************
+@media (min-width: 850px) {  
+    // .fist_block{margin: 0 0 0 50px;}
+    input{width: 85%;}
+}
+
 // ********** MEDIA MAX 850PX *************
 @media (max-width: 850px) {  
     .content_set > div{ width: 90%;}
     .back_button, .empty{ display: none;}
 }
 
-// ********** MEDIA MIN 551PX *************
-@media (min-width: 551px) {
+// ********** MEDIA MIN 651PX *************
+@media (min-width: 651px) {
     .main_info{
         display: flex;
         flex-direction: row;
         justify-content: space-around;
     }
+    .fist_block{margin: 0 0 0 1.5rem;}
     .fist_block, .second_block{
-        align-items: flex-start;
         text-align: left;
+        justify-content: center;
+        width: 100%;
     }
+    input{width: 90%;}
     .save{
         background: none;
         flex-direction: row;
@@ -105,17 +116,16 @@ textarea::-webkit-scrollbar-track {
     } 
 }
 
-// ********** MEDIA MAX 550PX *************
-@media (max-width: 550px) {
+// ********** MEDIA MAX 650PX *************
+@media (max-width: 650px) {
     .main_info{ 
         display: flex;
         flex-direction: column;
     }
     .fist_block, .second_block{
-        align-items: center;
         text-align: center;
-        .opacity{ padding: 0.3rem 0 0 0;}
     }
+    .item_info input{ width: 85%;}
     .save{
         background: none;
         flex-direction: column;

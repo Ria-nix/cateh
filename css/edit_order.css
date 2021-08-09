@@ -1020,10 +1020,19 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .content_wrap .fist_block .item_info, .content_wrap .second_block .item_info {
   margin: 0.5rem 0;
   font-size: 16px;
+  width: 100%;
+}
+.content_wrap .fist_block .item_info input, .content_wrap .second_block .item_info input {
+  text-align: center;
+  height: 40px;
+  margin: 5px 0 0 0;
 }
 .content_wrap .content_set .main_fields {
   margin: 0.5rem 0;
@@ -1052,7 +1061,7 @@ body {
           align-items: center;
 }
 .content_wrap .content_set .save button {
-  padding: 8px 15px;
+  padding: 8px 30px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -1086,6 +1095,11 @@ textarea::-webkit-scrollbar-track {
     width: 70%;
   }
 }
+@media (min-width: 850px) {
+  input {
+    width: 85%;
+  }
+}
 @media (max-width: 850px) {
   .content_set > div {
     width: 90%;
@@ -1095,7 +1109,7 @@ textarea::-webkit-scrollbar-track {
     display: none;
   }
 }
-@media (min-width: 551px) {
+@media (min-width: 651px) {
   .main_info {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1108,11 +1122,20 @@ textarea::-webkit-scrollbar-track {
         justify-content: space-around;
   }
 
+  .fist_block {
+    margin: 0 0 0 1.5rem;
+  }
+
   .fist_block, .second_block {
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
     text-align: left;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+  }
+
+  input {
+    width: 90%;
   }
 
   .save {
@@ -1129,7 +1152,7 @@ textarea::-webkit-scrollbar-track {
     margin: 1rem 1rem 2rem 1rem;
   }
 }
-@media (max-width: 550px) {
+@media (max-width: 650px) {
   .main_info {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1141,13 +1164,11 @@ textarea::-webkit-scrollbar-track {
   }
 
   .fist_block, .second_block {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     text-align: center;
   }
-  .fist_block .opacity, .second_block .opacity {
-    padding: 0.3rem 0 0 0;
+
+  .item_info input {
+    width: 85%;
   }
 
   .save {

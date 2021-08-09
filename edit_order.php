@@ -41,7 +41,6 @@
                         <input class=" border button_gray opacity" placeholder = '+7(***)*** - 00 - 00'>
                     </span>
                 </div>
-
                 <div class="second_block">
                     <span class="item_info">
                         <p class="main_text">Адрес:</p>
