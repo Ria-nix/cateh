@@ -11,7 +11,7 @@
 </head>
 <body>
     <?php  include_once('navigation.php');?> </nav>
-    <?php  $question = 'Вы точно хотите добавить новую организацию?'; 
+    <?php  $question = 'Вы точно хотите jnhtlfrnbhjdfnm новую организацию?'; 
            $error = 'Не получилось добавить нового пользователя';
            $success = 'Успешно добавлен новый сис. администратор'; ?>
     <?php  include_once('modal windows/question_window.php'); ?>
@@ -82,7 +82,7 @@
             <div class="border main_fields">
                 <p>Комментарий к заказу:</p><br>                
                 <div class="date_end">
-                    <textarea class="comments border font_16">
+                    <textarea class="comments border font_16" >
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo maxime aperiam ipsam veritatis eaque exercitationem aliquid earum! Est officia molestias cumque accusamus magnam aliquid unde rerum illum impedit, voluptatem amet.
                         Dolores repellat laborum iste, magnam temporibus, culpa, delectus ad natus maiores quos error unde id deleniti nihil ipsa. Ipsum alias repellendus quod laboriosam, eligendi dolore corporis beatae fuga expedita neque!
                     </textarea>

@@ -990,6 +990,13 @@ body {
 
 .content_wrap > div {
   margin: 0 2%;
+}
+
+.all_opacity {
+  opacity: 0.5;
+}
+
+.main_fields {
   opacity: 0.5;
 }
 
@@ -1021,9 +1028,6 @@ body {
 .content_wrap .fist_block .item_info, .content_wrap .second_block .item_info {
   margin: 0.5rem 0;
   font-size: 16px;
-}
-.content_wrap .opacity {
-  color: #159B12;
 }
 .content_wrap .content_set .main_fields {
   margin: 0.5rem 0;

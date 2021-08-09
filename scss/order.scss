@@ -3,7 +3,9 @@
 @import 'modal_window';
 
 body{ background: $fon_white; }
-.content_wrap > div{ margin: 0 2%; opacity: 0.5;} //! OPACITY FOR a non-active page order
+.content_wrap > div{ margin: 0 2%;}
+.all_opacity{ opacity: 0.5;}
+.main_fields{opacity: 0.5;}
 .content_wrap{ @extend %grid;    
     .head_order{ @extend %flex_row;     
         div{ flex: 1 1 5%; }
@@ -27,7 +29,6 @@ body{ background: $fon_white; }
             font-size: 16px;
         }
     }
-    .opacity{ color: $green;}
 
     .content_set .main_fields{ 
         margin: 0.5rem 0;
