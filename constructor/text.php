@@ -14,7 +14,7 @@
         <div class="profile">
             <div class="item1"> 1</div>
             <div class="item2"> 2</div>
-            <div class="item3"> 3</div>
+            <div class="item3"> </div>
         </div>
         <div class="links">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro praesentium, suscipit nostrum unde fugit, ut consequuntur laboriosam maxime quas distinctio recusandae, commodi sint asperiores? Nam possimus obcaecati laborum voluptatem repellendus?

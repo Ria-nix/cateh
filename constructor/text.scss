@@ -32,6 +32,7 @@ body{ background: $fon_table;}
 }
 
 .profile, .links{
+    margin: 2rem 0;
     height: auto;
     border: 1px solid orange;
     display: grid;    
@@ -45,7 +46,6 @@ body{ background: $fon_table;}
 
 @media (min-width: 501px){
     .profile{ 
-        // grid-template-columns: repeat(3, minmax(320px, 500px));
         grid-template-areas: 'item1 item2 item3';
     }
 }

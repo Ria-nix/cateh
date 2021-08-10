@@ -1,6 +1,29 @@
 @import 'cateh_style';
 @import 'navigation';
 
+.content_wrap{
+    border: 1px solid red;
+    width: 100%;
+    @extend %grid;
+    // border-top: 0.5px solid $line;
+
+    .profile {
+        padding: 0 2%;
+        padding-top: 130px;
+        border: 1px solid orange;
+        display: grid;    
+        grid-gap: 10px;
+        background: $fon_white;
+
+        div{ border:1px solid violet;}
+        
+    }
+    
+    .image{ grid-area: 'item1';}
+    .text{ grid-area: 'item2';}
+    .buttons{ grid-area: 'item3';}
+    
+}
 
 // *********** CONTENT ****************
 
@@ -23,17 +46,20 @@
 
 // ********** MEDIA MIN 580PX *************
 @media (min-width: 580px) {
-
+    .profile{ 
+        grid-template-areas: 'item1 item2 item3';
+    }
 }
 
 // ********** MEDIA MAX 580PX *************
 @media (max-width: 580px) {
-    
+    .profile{
+        grid-template-areas: 'item1' 'item3' 'item2';
+    }
 }
 
 // ********** MEDIA MAX 410PX *************
 @media (max-width: 410px) {
 
 }
-
 

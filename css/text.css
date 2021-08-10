@@ -695,6 +695,7 @@ body {
 }
 
 .profile, .links {
+  margin: 2rem 0;
   height: auto;
   border: 1px solid orange;
   display: grid;
