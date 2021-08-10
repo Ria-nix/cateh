@@ -1,7 +1,7 @@
 @use '../scss/cateh_style' as *;
 @import '../scss/navigation';
 
-
+body{ background: $fon_table;}
 .content{
     @extend %grid;    
 }
@@ -10,22 +10,48 @@
     text-align: center;
     position: fixed;
     height: 200px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(1, minmax(320px, 1500px));
     background: $fon_white;
-    // background: blue;
 }
 .content{
-    padding-top: 199px;
+    padding-top: 400px;
     border: 1px solid red;
     .section1{
         text-align: center;
         width: 100%;
         position: fixed;
         height: 100px;
-        // background: green;
     }
     .section2{
-        padding-top: 100px;
+        padding-top: 300px;
         min-height: 300px;
         border: 1px solid yellow;
+    }
+}
+
+.profile, .links{
+    height: auto;
+    border: 1px solid orange;
+    display: grid;    
+    grid-gap: 10px;
+    div{ border:1px solid violet;}
+}
+
+.item1{ grid-area: 'item1';}
+.item2{ grid-area: 'item2';}
+.item3{ grid-area: 'item3';}
+
+@media (min-width: 501px){
+    .profile{ 
+        // grid-template-columns: repeat(3, minmax(320px, 500px));
+        grid-template-areas: 'item1 item2 item3';
+    }
+}
+
+@media (max-width: 500px){
+    .profile{
+        grid-template-areas: 'item1' 'item3' 'item2';
     }
 }

@@ -1,38 +1,38 @@
-<?php  include('head_code.php'); ?>
+<?php
+include('head_code.php'); ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="<?php echo $css_sysadmin ?>">
+    <link rel="stylesheet" href="<?php echo $css_add_sysadmin ?>">
     <?php echo $favicon, $jquery  ?>
-    <title><?php echo $profile_organization ?></title>
+    <title><?php echo $add_sysadmin ?></title>
 </head>
+
 <body>
-    <?php include_once('navigation.php');?> 
-    <!-- THE END OF NAVIGATION PANEL -->        
-        <div class="search">            
-            <p class="font_18 bold"><?php echo $profile_organization ?></p>
-            <input class="border" type="text" placeholder="Введите имя или фамилию">
-            <button class="button border font_16">Найти</button>
-        </div>
-    </nav>
+    <?php include_once('navigation.php'); ?></nav>
+    <?php   $question = 'Вы точно хотите добавить новую организацию?'; 
+            $error = 'Не получилось добавить нового пользователя';
+            $success = 'Успешно добавлен новый сис. администратор'; ?>
+    <?php include_once('modal windows/question_window.php'); ?>
+    <?php include_once('modal windows/error_window.php'); ?>
+    <?php include_once('modal windows/success_window.php'); ?>
+
     <!-- CONTENT -->
     <div class="content_wrap">
-        <!-- HEAD TABLE -->
-        <div class="head_table">
-            <div class="head_name spacing_special">
-                <p>ФИО <span class="ask_des_arrow"><img src="icon/up_arrow.svg" alt="arrow" id="arrow"></span></p>
-                <p>Выполнено за месяц</p>
-                <p>Текущих заказов </p>
-                <p>Статус</p>
-            </div>
-        </div>
-         <!-- TABLE -->
-        <div class="table_sysadmin" id="table"></div>  
+        <p class="font_24 bold">Добавление системного администратора</p>
+        <div class="content_set"> </div>
+
     </div>
-    <script src="js/sysadmin.js"></script>
-    <script src="<?php  echo $navigation_panel ?>"></script>
+
+    <script src="js/modal_windows.js"></script>
+    <script src="js/add_sysadmin.js"></script>
+    <script src="<?php echo $navigation_panel ?>"></script>
 </body>
+
 </html>
+
+
