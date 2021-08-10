@@ -201,7 +201,6 @@ input[type=number]::-webkit-outer-spin-button {
   width: 100%;
   text-align: center;
   position: fixed;
-  height: 130px;
   background: #F5F5F5;
 }
 
@@ -212,7 +211,8 @@ nav nav > div {
   border: 1px solid red;
 }
 nav .navigation {
-  height: 130px;
+  background: #F5F5F5;
+  height: 150px;
   margin: 0 2% 0 2%;
   border-bottom: 1px solid #939393;
 }

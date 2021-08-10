@@ -5,7 +5,6 @@
     width: 100%;
     text-align: center;
     position: fixed;
-    height: 130px;
     background: $fon_white;
 }
 nav{
@@ -13,8 +12,9 @@ nav{
     @extend %grid;
     nav > div{ border: 1px solid red; }
     .navigation{
+        background: $fon_white;
         @extend %flex_row;
-        height: 130px;
+        height: 150px;
         margin: 0 2% 0 2%;
         border-bottom: 1px solid $gray_border;
 

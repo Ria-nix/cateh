@@ -17,9 +17,7 @@ include('head_code.php'); ?>
         <?php include_once('navigation.php'); ?></nav>
         <?php   $question = 'Вы точно хотите добавить новую организацию?'; ?>
         <?php include_once('modal windows/question_window.php'); ?>
-    </div>
-    <!-- CONTENT -->
-    <div class="content_wrap">
+
         <div class="profile">
             <div class="image"> 
                 <div class="logo_organization">
@@ -49,6 +47,10 @@ include('head_code.php'); ?>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro praesentium, suscipit nostrum unde fugit, ut consequuntur laboriosam maxime quas distinctio recusandae, commodi sint asperiores? Nam possimus obcaecati laborum voluptatem repellendus?
             Saepe deleniti, ad necessitatibus nisi porro aliquid in enim esse doloremque quia illo nobis accusantium. Dolorem quibusdam vero temporibus consequatur perspiciatis culpa dolore. Aspernatur libero magnam magni, culpa saepe quam.
         </div>
+    </div>
+    <!-- CONTENT -->
+    <div class="content_wrap">
+       
 
     </div>
 

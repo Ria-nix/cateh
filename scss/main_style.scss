@@ -6,6 +6,7 @@
     @extend %flex_column;
     justify-content: space-evenly;
     margin: 1% 0 1% 0;
+    background: $fon_white;
 
     *{ display: none; }
     p{ margin: 2% 0; }
@@ -24,10 +25,10 @@
 // *********** CONTENT ****************
 .table_sysadmin{ margin: 0 2% 0 2%;}
 .content_wrap{
-    padding-top: 143px;
+    border-top: 1px solid $gray_border;
+    padding-top: 180px;
     width: 100%;
     @extend %grid;
-    border-top: 0.5px solid $line;
 
     //HEAD TABLE
     .head_table{ 
