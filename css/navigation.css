@@ -21,7 +21,7 @@ nav .navigation span, nav .navigation .panel_buttons, nav .navigation {
           align-items: center;
 }
 
-nav {
+nav, .header {
   display: grid;
   grid-template-columns: repeat(1, minmax(320px, 1500px));
   -webkit-box-pack: center;

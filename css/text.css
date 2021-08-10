@@ -21,7 +21,7 @@ nav .navigation, nav .navigation .panel_buttons, nav .navigation span {
           align-items: center;
 }
 
-nav, .content {
+.header, nav, .content {
   display: grid;
   grid-template-columns: repeat(1, minmax(320px, 1500px));
   -webkit-box-pack: center;
@@ -220,7 +220,7 @@ nav .navigation span, nav .navigation .panel_buttons, nav .navigation {
           align-items: center;
 }
 
-.content, nav {
+.content, nav, .header {
   display: grid;
   grid-template-columns: repeat(1, minmax(320px, 1500px));
   -webkit-box-pack: center;

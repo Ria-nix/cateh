@@ -34,7 +34,7 @@ body::-webkit-scrollbar {
           align-items: center;
 }
 
-.content_wrap, nav {
+.content_wrap, nav, .header {
   display: grid;
   grid-template-columns: repeat(1, minmax(320px, 1500px));
   -webkit-box-pack: center;
@@ -246,7 +246,7 @@ body::-webkit-scrollbar {
           align-items: center;
 }
 
-.content_wrap, nav {
+.content_wrap, nav, .header {
   display: grid;
   grid-template-columns: repeat(1, minmax(320px, 1500px));
   -webkit-box-pack: center;
@@ -715,7 +715,7 @@ nav .navigation .door img {
 }
 
 .table_sysadmin {
-  margin: 0 2% 0 2%;
+  margin: 0 2%;
 }
 
 .content_wrap {

@@ -6,6 +6,7 @@
     text-align: center;
     position: fixed;
     background: $fon_white;
+    @extend %grid;
 }
 nav{
     width: 100%;

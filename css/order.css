@@ -34,7 +34,7 @@ nav .navigation, nav .navigation .panel_buttons, nav .navigation span, .content_
           align-items: center;
 }
 
-nav, .content_wrap {
+.header, nav, .content_wrap {
   display: grid;
   grid-template-columns: repeat(1, minmax(320px, 1500px));
   -webkit-box-pack: center;
@@ -246,7 +246,7 @@ body::-webkit-scrollbar {
           align-items: center;
 }
 
-.content_wrap, nav {
+.content_wrap, nav, .header {
   display: grid;
   grid-template-columns: repeat(1, minmax(320px, 1500px));
   -webkit-box-pack: center;
@@ -722,7 +722,7 @@ body::-webkit-scrollbar {
           align-items: center;
 }
 
-.content_wrap, nav {
+.content_wrap, .header, nav {
   display: grid;
   grid-template-columns: repeat(1, minmax(320px, 1500px));
   -webkit-box-pack: center;

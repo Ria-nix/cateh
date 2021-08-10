@@ -20,13 +20,13 @@ include('head_code.php'); ?>
 
         <div class="profile">
             <div class="image"> 
-                <div class="logo_organization">
+                <div class="logo_organization border">
                     <img src="icon/logo_server.svg" alt="main logo">
                 </div>
             </div>
             <div class="text"> 
                 <span class="item_info name_organ">
-                    <p>Название: </p>
+                    <p>Название:</p>
                     <p class="opacity">ООО “КРЕАТИВ ТЕКНОЛОДЖИС” </p>
                 </span>
                 <span class="item_info">
@@ -44,13 +44,12 @@ include('head_code.php'); ?>
             </div>
         </div>
         <div class="tabs">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro praesentium, suscipit nostrum unde fugit, ut consequuntur laboriosam maxime quas distinctio recusandae, commodi sint asperiores? Nam possimus obcaecati laborum voluptatem repellendus?
-            Saepe deleniti, ad necessitatibus nisi porro aliquid in enim esse doloremque quia illo nobis accusantium. Dolorem quibusdam vero temporibus consequatur perspiciatis culpa dolore. Aspernatur libero magnam magni, culpa saepe quam.
+            
         </div>
     </div>
     <!-- CONTENT -->
     <div class="content_wrap">
-       
+
 
     </div>
 

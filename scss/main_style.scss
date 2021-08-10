@@ -23,7 +23,7 @@
 }
 
 // *********** CONTENT ****************
-.table_sysadmin{ margin: 0 2% 0 2%;}
+.table_sysadmin{ margin: 0 2%;}
 .content_wrap{
     border-top: 1px solid $gray_border;
     padding-top: 180px;
@@ -37,7 +37,7 @@
         position: fixed;
         height: 5rem;
         border-bottom: 1px solid $blue;
-        .head_name{          
+        .head_name{     
             height: 100%;
             @extend %flex_row;       
             p{ 

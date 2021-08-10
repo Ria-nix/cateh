@@ -13,17 +13,44 @@
         
     }
     
-    .image{ grid-area: 'item1';
+    .image{ 
+        grid-area: 'item1';
+        width:auto;
         .logo_organization{
             border: 1px solid $blue;
-            width: 20%;
-            height: 20%;
+            width: 11rem;
+            height:11rem; 
+            padding: 2%; 
 
-            img{  }
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
         }
     }
-    .text{ grid-area: 'item2';}
-    .buttons{ grid-area: 'item3';}
+    .text{ grid-area: 'item2';
+        @extend %flex_column;
+        align-items: flex-start;
+        justify-content: space-evenly;
+
+        span{ @extend %flex_row;
+            .opacity{ 
+                padding: 0 0 0 2rem;
+                font-size: bold;
+            }
+        }
+    }
+    .buttons{ grid-area: 'item3';
+        @extend %flex_column;
+        align-items: flex-end;
+        justify-content: space-around;
+        button{ 
+            @extend %flex_row;
+            padding: 6px 15px;
+            span{margin: 0 5px 0 0;}
+        }
+    }
 }
 
 
@@ -54,13 +81,17 @@
 
 // ********** MEDIA 850PX *************
 @media (max-width: 850px) {  
-
+    .profile{ 
+        // grid-template-columns: 14rem 63% 20%;
+        // grid-template-columns: repeat(3, minmax(320px, 1500px));
+    }
 }
 
 // ********** MEDIA MIN 580PX *************
 @media (min-width: 580px) {
     .profile{ 
-        grid-template-areas: 'item1 item2 item3';
+        // grid-template-columns: 14rem 63% 20%;
+        grid-template-columns: repeat(3, minmax(320px, 900px));
     }
 }
 
