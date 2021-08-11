@@ -26,15 +26,15 @@ include('head_code.php'); ?>
             </div>
             <div class="text"> 
                 <span class="item_info name_organ">
-                    <p>Название:</p>
+                    <p class="bold hidden">Название:</p>
                     <p class="opacity">ООО “КРЕАТИВ ТЕКНОЛОДЖИС” </p>
                 </span>
                 <span class="item_info">
-                    <p>Выполнено за месяц:</p>
+                    <p class="bold">Выполнено за месяц:</p>
                     <p class="opacity">50</p>
                 </span>
                 <span class="item_info">
-                    <p>Выполнено за все время:</p>
+                    <p class="bold">Выполнено за все время:</p>
                     <p class="opacity">50</p>
                 </span>
             </div>
@@ -44,7 +44,9 @@ include('head_code.php'); ?>
             </div>
         </div>
         <div class="tabs">
-            
+            <label for="orders">Заказы<input type="radio" id="orders" name="radiobox" checked></label>
+            <label for="addresses">Адреса<input type="radio" id="addresses" name="radiobox"></label>
+            <label for="clients">Клиенты<input type="radio" id="clients" name="radiobox"></label>
         </div>
     </div>
     <!-- CONTENT -->

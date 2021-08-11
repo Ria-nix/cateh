@@ -5,18 +5,23 @@
     .profile {
         padding: 3% 1.5% 2% 1.5%;
         border: 1px solid orange;
-        display: flex;    
+        display: grid;    
         background: $fon_white;
         justify-content: flex-start;
 
         div{ 
             border:1px solid violet; 
             flex-basis: 300px 500px 1rem;
-            margin:0.5%;
         }
+    }
+    .tabs{
+        padding: 3% 1.5% 2% 1.5%;
+        border: 1px solid red;
+        background: $fon_white;
     }
     
     .image{ 
+        grid-area: 'item1';
         .logo_organization{
             border: 1px solid $blue;
             padding: 2%; 
@@ -31,6 +36,7 @@
         }
     }
     .text{
+        grid-area: 'item2';
         @extend %flex_column;
         align-items: flex-start;
         justify-content: space-evenly;
@@ -38,15 +44,12 @@
         span{ @extend %flex_row;
             .opacity{ 
                 padding: 0 0 0 2rem;
-                font-weight: bold;
             }
         }
     }
     .buttons{ 
-        justify-self: flex-end;
+        grid-area: 'item3';
         @extend %flex_column;
-        align-items: flex-end;
-        justify-content: space-around;
         button{ 
             @extend %flex_row;
             padding: 6px 15px;
@@ -84,8 +87,15 @@
 // ********** MEDIA 850PX *************
 @media (min-width: 850px) {  
     .profile{ 
-        flex-direction: row;
+        // flex-direction: row;
+        grid-template-areas: 'item1 item3 item2'; 
     }
+    .buttons{  
+        margin-left: auto;
+        align-items: flex-end;
+        justify-content: space-around;
+    }
+    .text{ margin: 0.5rem 2rem; }
     
 }
 
@@ -94,7 +104,12 @@
     .profile{ 
         justify-content: center;
         align-items: center;
-        flex-direction: column;
+        // flex-direction: column;
+        // grid-template-areas: 'item1' 'item3' 'item2'; 
+    }
+    .hidden{ display: none;}
+    .buttons button{  
+        margin: 1rem;
     }
 }
 

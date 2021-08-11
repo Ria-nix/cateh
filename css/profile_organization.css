@@ -689,9 +689,7 @@ nav .navigation .door img {
 .header .profile {
   padding: 3% 1.5% 2% 1.5%;
   border: 1px solid orange;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: grid;
   background: #F5F5F5;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
@@ -701,7 +699,14 @@ nav .navigation .door img {
   border: 1px solid violet;
   -ms-flex-preferred-size: 300px 500px 1rem;
       flex-basis: 300px 500px 1rem;
-  margin: 0.5%;
+}
+.header .tabs {
+  padding: 3% 1.5% 2% 1.5%;
+  border: 1px solid red;
+  background: #F5F5F5;
+}
+.header .image {
+  grid-area: "item1";
 }
 .header .image .logo_organization {
   border: 1px solid #112742;
@@ -716,6 +721,7 @@ nav .navigation .door img {
      object-fit: contain;
 }
 .header .text {
+  grid-area: "item2";
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -725,15 +731,9 @@ nav .navigation .door img {
 }
 .header .text span .opacity {
   padding: 0 0 0 2rem;
-  font-weight: bold;
 }
 .header .buttons {
-  justify-self: flex-end;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  grid-area: "item3";
 }
 .header .buttons button {
   padding: 6px 15px;
@@ -749,10 +749,20 @@ nav .navigation .door img {
 
 @media (min-width: 850px) {
   .profile {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    grid-template-areas: "item1 item3 item2";
+  }
+
+  .buttons {
+    margin-left: auto;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+
+  .text {
+    margin: 0.5rem 2rem;
   }
 }
 @media (max-width: 850px) {
@@ -763,9 +773,13 @@ nav .navigation .door img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .buttons button {
+    margin: 1rem;
   }
 }/*# sourceMappingURL=profile_organization.css.map */

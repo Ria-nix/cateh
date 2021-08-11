@@ -99,7 +99,7 @@ body{ background: $fon_white; }
     .content_set > div{  width: 55%; } 
     input{ width: 100%; }   
 }
- 
+
 // ********** MEDIA MAX 850PX *************
 @media (max-width: 850px) {  
     .content_set > div{ width: 90%;}
@@ -161,7 +161,6 @@ body{ background: $fon_white; }
         label{ padding: 2% 0; }
         br{ display: none; }
     }
-   
 
     .content_set span{
         padding: 10px 10px;    
