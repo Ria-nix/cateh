@@ -54,11 +54,11 @@ $(document).ready(function(){
     
     // Edit images on all pages
     $('#input_file').on('change',function(ev){    
-        if($('.logo_second').attr('src').empty()){
+        // if($('.logo_second').attr('src').empty()){
             $('.logo_second').attr('src', 'icon/')
-        }else{
+        // }else{
 
-        }
+        // }
         var f = ev.target.files[0];
         var fr = new FileReader();    
         fr.onload = function(ev2) { $('.logo_second').attr('src', ev2.target.result); };

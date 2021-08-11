@@ -19,7 +19,7 @@ $(document).ready(function () {
                     email_OR_inn: log.val(),
                     password: pass.val()
                 },
-                url: "http://ithelpdeskdemo.xyz/login",
+                url: "http://ithelpdeskdemo.xyz/api/login",
                 success: (msg) => {
                     console.log(msg)
                     let json = JSON.parse(msg);

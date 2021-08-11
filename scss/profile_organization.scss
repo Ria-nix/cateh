@@ -7,11 +7,9 @@
         border: 1px solid orange;
         display: grid;    
         background: $fon_white;
-        justify-content: flex-start;
 
         div{ 
             border:1px solid violet; 
-            flex-basis: 300px 500px 1rem;
         }
     }
     .tabs{
@@ -21,10 +19,11 @@
     }
     
     .image{ 
-        grid-area: 'item1';
+        display: flex;
+        grid-area: item1;
         .logo_organization{
             border: 1px solid $blue;
-            padding: 2%; 
+            padding: 3%; 
             width: 11rem;
             height:11rem; 
 
@@ -36,31 +35,24 @@
         }
     }
     .text{
-        grid-area: 'item2';
-        @extend %flex_column;
-        align-items: flex-start;
-        justify-content: space-evenly;
-
-        span{ @extend %flex_row;
-            .opacity{ 
-                padding: 0 0 0 2rem;
-            }
+        grid-area: item2;
+        display: flex;
+        flex-direction: column;
+        .opacity{ 
+            padding: 0 0 0 2rem;
+            grid-area: text;
         }
     }
     .buttons{ 
-        grid-area: 'item3';
-        @extend %flex_column;
-        button{ 
-            @extend %flex_row;
-            padding: 6px 15px;
-            span{margin: 0 5px 0 0;}
-        }
+        grid-area: item3;
+        display: flex;
+        button{ @extend %flex_row; }
     }
 }
 
 
 
-
+// *********** CONTENT ****************
 .content_wrap{
     width: 100%;
     @extend %grid;
@@ -69,8 +61,6 @@
     
     
 }
-
-// *********** CONTENT ****************
 
 // ************* @MEDIA *************
 
@@ -84,32 +74,67 @@
     
 }
 
-// ********** MEDIA 850PX *************
-@media (min-width: 850px) {  
+// ********** MEDIA 825px *************
+@media (min-width: 825px) {  
     .profile{ 
         // flex-direction: row;
-        grid-template-areas: 'item1 item3 item2'; 
+        grid-template-columns: 11rem;
+        grid-template-areas: 'item1 item2 item3'; 
     }
     .buttons{  
-        margin-left: auto;
         align-items: flex-end;
         justify-content: space-around;
+        flex-direction: column;
+        button{ padding: 6px 15px;
+            span{margin: 0 5px 0 0;}
+        }  
     }
-    .text{ margin: 0.5rem 2rem; }
+    .text{         
+        align-items: flex-start;
+        justify-content: space-evenly;
+        margin: 0.5rem 2rem; 
+        .item_info{ 
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+        }
+    }
     
 }
 
-// ********** MEDIA 850PX *************
-@media (max-width: 850px) {  
+// ********** MEDIA 825px *************
+@media (max-width: 825px) {  
     .profile{ 
-        justify-content: center;
-        align-items: center;
-        // flex-direction: column;
-        // grid-template-areas: 'item1' 'item3' 'item2'; 
+        grid-template-areas: 'item1' 'item3' 'item2'; 
     }
     .hidden{ display: none;}
-    .buttons button{  
-        margin: 1rem;
+    .buttons{ flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        button{  
+            padding: 6px 10px;
+            margin: 1rem;
+        }
+    }
+    .text{
+        align-items: center;
+        .item_info{ padding: 0.5rem 0;}
+        .count{
+            display: grid;
+            grid-template-areas: 'number text';
+            justify-content: space-between;
+            align-items: center;
+            // p{ padding: 2rem 0;}
+        }
+    }
+    .image{
+        align-items: center;
+        justify-content: center;
+    }
+
+    .bold{ width: 120px;
+        grid-area: text;
     }
 }
 

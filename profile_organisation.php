@@ -25,22 +25,22 @@ include('head_code.php'); ?>
                 </div>
             </div>
             <div class="text"> 
-                <span class="item_info name_organ">
-                    <p class="bold hidden">Название:</p>
-                    <p class="opacity">ООО “КРЕАТИВ ТЕКНОЛОДЖИС” </p>
-                </span>
                 <span class="item_info">
+                    <p class="bold hidden">Название:</p>
+                    <p class="opacity">ООО "КРЕАТИВ ТЕКНОЛОДЖИС" </p>
+                </span>
+                <span class="item_info count">
                     <p class="bold">Выполнено за месяц:</p>
                     <p class="opacity">50</p>
                 </span>
-                <span class="item_info">
+                <span class="item_info count">
                     <p class="bold">Выполнено за все время:</p>
                     <p class="opacity">50</p>
                 </span>
             </div>
             <div class="buttons">
-                <button class="button border"><span class="edit"><img src="icon/edit.svg" alt=""></span> Редактировать</button>
-                <button class="button border"><span class="delete"><img src="icon//trash 1.svg" alt=""></span> Удалить</button>
+                <button class="button border"><span class="edit"><img src="icon/edit.svg" alt=""></span><p class="hidden">Редактировать</p></button>
+                <button class="button border"><span class="delete"><img src="icon//trash 1.svg" alt=""></span><p class="hidden">Удалить</p></button>
             </div>
         </div>
         <div class="tabs">

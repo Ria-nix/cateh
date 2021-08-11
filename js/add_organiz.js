@@ -81,7 +81,7 @@ $(document).ready(function(){
         formData.append("address", JSON.stringify(arr_address));
 
         let request = new XMLHttpRequest();
-        request.open("POST", "https://ithelpdeskdemo.xyz/addOrganisation");
+        request.open("POST", "https://ithelpdeskdemo.xyz/api/organisation/add");
         request.send(formData);
         request.onload = function () {
             console.log(request.responseText);
