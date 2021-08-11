@@ -3,24 +3,25 @@
 
 .header{
     .profile {
-        padding: 3.5% 2% 2% 2%;
+        padding: 3% 1.5% 2% 1.5%;
         border: 1px solid orange;
-        display: grid;    
-        grid-gap: 10px;
+        display: flex;    
         background: $fon_white;
+        justify-content: flex-start;
 
-        div{ border:1px solid violet;}
-        
+        div{ 
+            border:1px solid violet; 
+            flex-basis: 300px 500px 1rem;
+            margin:0.5%;
+        }
     }
     
     .image{ 
-        grid-area: 'item1';
-        width:auto;
         .logo_organization{
             border: 1px solid $blue;
+            padding: 2%; 
             width: 11rem;
             height:11rem; 
-            padding: 2%; 
 
             img{
                 width: 100%;
@@ -29,7 +30,7 @@
             }
         }
     }
-    .text{ grid-area: 'item2';
+    .text{
         @extend %flex_column;
         align-items: flex-start;
         justify-content: space-evenly;
@@ -37,11 +38,12 @@
         span{ @extend %flex_row;
             .opacity{ 
                 padding: 0 0 0 2rem;
-                font-size: bold;
+                font-weight: bold;
             }
         }
     }
-    .buttons{ grid-area: 'item3';
+    .buttons{ 
+        justify-self: flex-end;
         @extend %flex_column;
         align-items: flex-end;
         justify-content: space-around;
@@ -80,27 +82,31 @@
 }
 
 // ********** MEDIA 850PX *************
+@media (min-width: 850px) {  
+    .profile{ 
+        flex-direction: row;
+    }
+    
+}
+
+// ********** MEDIA 850PX *************
 @media (max-width: 850px) {  
     .profile{ 
-        // grid-template-columns: 14rem 63% 20%;
-        // grid-template-columns: repeat(3, minmax(320px, 1500px));
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
 }
 
-// ********** MEDIA MIN 580PX *************
-@media (min-width: 580px) {
-    .profile{ 
-        // grid-template-columns: 14rem 63% 20%;
-        grid-template-columns: repeat(3, minmax(320px, 900px));
-    }
-}
+// // ********** MEDIA MIN 580PX *************
+// @media (min-width: 580px) {
+    
+// }
 
-// ********** MEDIA MAX 580PX *************
-@media (max-width: 580px) {
-    .profile{
-        grid-template-areas: 'item1' 'item3' 'item2';
-    }
-}
+// // ********** MEDIA MAX 580PX *************
+// @media (max-width: 580px) {
+    
+// }
 
 // ********** MEDIA MAX 410PX *************
 @media (max-width: 410px) {

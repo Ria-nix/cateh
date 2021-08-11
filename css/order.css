@@ -1035,12 +1035,6 @@ body {
 .content_wrap .content_set .main_fields {
   margin: 0.5rem 0;
   padding: 1rem;
-  background: #F1F1F1;
-}
-.content_wrap .content_set .main_fields {
-  border: 1px solid #939393;
-  -webkit-box-shadow: 0px 4px 10px 0px rgba(17, 39, 66, 0.15);
-          box-shadow: 0px 4px 10px 0px rgba(17, 39, 66, 0.15);
 }
 .content_wrap .content_set .textarea_full, .content_wrap .content_set .comments {
   min-height: 200px;
@@ -1184,8 +1178,20 @@ textarea::-webkit-scrollbar-track {
   .save button {
     margin: 1rem 1rem 2rem 1rem;
   }
+
+  .main_fields {
+    border: 1px solid #939393;
+    background: #F1F1F1;
+    -webkit-box-shadow: 0px 4px 10px 0px rgba(17, 39, 66, 0.15);
+            box-shadow: 0px 4px 10px 0px rgba(17, 39, 66, 0.15);
+  }
 }
 @media (max-width: 550px) {
+  .main_fields {
+    border-radius: 0%;
+    border-bottom: 1px solid #939393;
+  }
+
   .main_info {
     display: -webkit-box;
     display: -ms-flexbox;

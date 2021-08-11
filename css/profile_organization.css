@@ -687,24 +687,27 @@ nav .navigation .door img {
   }
 }
 .header .profile {
-  padding: 3.5% 2% 2% 2%;
+  padding: 3% 1.5% 2% 1.5%;
   border: 1px solid orange;
-  display: grid;
-  grid-gap: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   background: #F5F5F5;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 .header .profile div {
   border: 1px solid violet;
-}
-.header .image {
-  grid-area: "item1";
-  width: auto;
+  -ms-flex-preferred-size: 300px 500px 1rem;
+      flex-basis: 300px 500px 1rem;
+  margin: 0.5%;
 }
 .header .image .logo_organization {
   border: 1px solid #112742;
+  padding: 2%;
   width: 11rem;
   height: 11rem;
-  padding: 2%;
 }
 .header .image .logo_organization img {
   width: 100%;
@@ -713,7 +716,6 @@ nav .navigation .door img {
      object-fit: contain;
 }
 .header .text {
-  grid-area: "item2";
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -723,10 +725,10 @@ nav .navigation .door img {
 }
 .header .text span .opacity {
   padding: 0 0 0 2rem;
-  font-size: bold;
+  font-weight: bold;
 }
 .header .buttons {
-  grid-area: "item3";
+  justify-self: flex-end;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
@@ -745,13 +747,25 @@ nav .navigation .door img {
   border-bottom: 0.5px solid #B2B2B2;
 }
 
-@media (min-width: 580px) {
+@media (min-width: 850px) {
   .profile {
-    grid-template-columns: repeat(3, minmax(320px, 900px));
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
-@media (max-width: 580px) {
+@media (max-width: 850px) {
   .profile {
-    grid-template-areas: "item1" "item3" "item2";
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }/*# sourceMappingURL=profile_organization.css.map */
