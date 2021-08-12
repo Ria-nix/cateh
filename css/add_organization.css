@@ -1046,7 +1046,7 @@ body {
           align-items: center;
 }
 .content_set .img_organization .image {
-  border: 1px solid #112742;
+  border: 0.5px solid #112742;
   width: 11rem;
   height: 11rem;
   padding: 0.5rem;
@@ -1210,7 +1210,7 @@ body {
   .img_buttons button {
     padding: 7px 20px;
   }
-  .img_buttons #delete_img {
+  .img_buttons #delete_organ {
     margin: 0 0 0 5%;
   }
 }

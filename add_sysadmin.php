@@ -95,13 +95,13 @@ include('head_code.php'); ?>
 
             <div class="img_organization">
                 <div class="image border">
-                    <img class="logo_second border" src="icon/michael.jpg" alt="logo">
+                    <img class="logo_second border" src="icon/anonym_user.svg" alt="logo">
                 </div>
 
                 <div class="img_buttons">
                     <input type="file" id="input_file">
                     <label class="button_gray border " for="input_file" id="download_file">Загрузить</label>
-                    <button class="button_gray border" id="delete_img">Удалить</button>
+                    <button class="button_gray border" id="delete_admin">Удалить</button>
                 </div>
             </div>
             <div class="save">

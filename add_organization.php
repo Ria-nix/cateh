@@ -23,7 +23,7 @@
         <p class="font_24 bold"><?php echo $add_organ ?></p>
         <div class="content_set">
             <div class="name_organization">
-                <label for="name">Название <br> организации<i class='red'>*</i></label>
+                <label for="name">Название <i class='red'>*</i> <br> организации</label>
                 <input type="text" id="name" class="add_info json" placeholder='ООО"Название компании"'>
             </div>
             <div class="inn_organization">
@@ -46,7 +46,7 @@
                 <div class="img_buttons">
                     <input name="file" type="file" id="input_file">
                     <label class="button_gray border font_16" for="input_file" id="download_file">Загрузить</label>
-                    <button class="button_gray border font_16" id="delete_img">Удалить</button>
+                    <button class="button_gray border font_16" id="delete_organ">Удалить</button>
                 </div>
             </div>
             <div class="save">
