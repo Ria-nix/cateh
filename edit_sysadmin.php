@@ -26,22 +26,22 @@
         <div class="content_set">
 
             <div class="main_fields">
-                <label for="email">Email <span class='red'>*</span></label>
+                <label for="email">Email <i class='red'>*</i></label>
                 <input type="text" id="email" class="add_info" placeholder="email@gmail.com">
             </div>
 
             <div class="main_fields">
-                <label for="password">Пароль <span class='red'>*</span></label>
+                <label for="password">Пароль <i class='red'>*</i></label>
                 <input type="text" id="password" class="add_info" placeholder="123*****89">
             </div>
 
             <div class="main_fields">
-                <label for="name">Имя <span class='red'>*</span></label>
+                <label for="name">Имя <i class='red'>*</i></label>
                 <input type="text" id="name" class="add_info" placeholder="Михаил">
             </div>
 
             <div class="main_fields">
-                <label for="surname">Фамилия <span class='red'>*</span></label>
+                <label for="surname">Фамилия <i class='red'>*</i></label>
                 <input type="text" id="surname" class="add_info" placeholder="Куприн">
             </div>
 
@@ -51,7 +51,7 @@
             </div>
 
             <div class="main_fields">
-                <label for="state" class="text_width">Статус <span class='red'>*</span></label>
+                <label for="state" class="text_width">Статус <i class='red'>*</i></label>
                 <div class="searchable border">
                     <input type="text" class="border_none font_18 state_value" value="Системный администратор">
                     <span id="polygon_state">

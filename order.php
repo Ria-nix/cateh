@@ -64,34 +64,47 @@
             </div>
             <div class="border main_fields">
                 <p>Описание проблемы:</p><br>
-                <textarea class="textarea_full border font_16" disabled>
+                <div class="textarea_full border font_16">
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam perferendis deleniti qui doloremque, reiciendis maxime culpa iusto modi odio, dignissimos nihil provident ad molestiae. Eveniet autem accusamus neque dicta vel.
                     Aspernatur qui deserunt minus debitis earum fuga eius sed vel deleniti facere iste illo et consequuntur, totam excepturi optio distinctio, quod voluptates beatae delectus sit exercitationem odit animi. Nostrum, saepe!
                     Cumque iste odit aspernatur nemo neque soluta. Est nisi sapiente pariatur magni eligendi non repellendus, corrupti ad dicta doloremque nulla fugiat minima, minus facere id sunt eaque voluptates iusto consectetur?
                     Maiores repellat illo numquam enim animi eum accusamus rerum? Facilis nobis iste reprehenderit rem dolorem blanditiis exercitationem expedita vitae consectetur labore, similique aperiam suscipit commodi sequi in, architecto asperiores distinctio.
                     Recusandae nisi delectus est labore enim corporis at totam, vitae accusantium incidunt animi ullam dicta cumque! Sed exercitationem aperiam et, dolore, quam, veniam magnam nostrum cumque deserunt tenetur ipsam animi?
-                </textarea>
-            </div>
-            <div class="border main_fields">
-                <p>Комментарий к заказу:</p><br>                
-                <div class="date_end">
-                    <textarea class="comments border font_16" disabled>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo maxime aperiam ipsam veritatis eaque exercitationem aliquid earum! Est officia molestias cumque accusamus magnam aliquid unde rerum illum impedit, voluptatem amet.
-                        Dolores repellat laborum iste, magnam temporibus, culpa, delectus ad natus maiores quos error unde id deleniti nihil ipsa. Ipsum alias repellendus quod laboriosam, eligendi dolore corporis beatae fuga expedita neque!
-                    </textarea>
-                    <span>
-                        <p>Создание<br>комментария</p>
-                        <p class="date opacity">25.03.2021</p>
-                    </span>
                 </div>
             </div>
             <div class="border main_fields">
+                <p>Комментарий к заказу:</p><br>  
+                <div class="wrap_comments">
+                    <div class="comments">
+                        <div class="item_comment border font_16">
+                            tus maiores quos error unde id deleniti nihil ipsa. Ipsum alias repellendus quod laboriosam, eligendi dolore corporis beatae fuga expedita neque!
+                        </div>
+                        <div class="item_comment border font_16">
+                            expedita neque!
+                        </div>
+                        <div class="item_comment border font_16">
+                            nihil ipsa. Ipsum alias repellendus quod laboriosam, eligendi dolore corporis beatae fuga expedita neque!
+                        </div>
+                        <div class="item_comment border font_16">
+                            s ad natus maiores quos error unde id deleniti nihil ipsa. Ipsum alias repellendus quod laboriosam, eligendi dolore corporis beatae fuga expedita neque!
+                        </div>
+                        <div class="item_comment border font_16">
+                            di dolore corporis beatae fuga expedita neque!
+                        </div>
+                    </div>
+                    <div class="date_end">
+                        <p>Создание<br>комментария</p>
+                        <p class="date opacity">25.03.2021</p>
+                    </div>
+                </div>        
+            </div>
+            <div class="border main_fields">
                 <p>Заключение:</p><br>
-                <textarea class="textarea_full border font_16" disabled>
+                <div class="textarea_full border font_16">
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo cupiditate nostrum, veritatis tenetur dolorem deleniti vitae reprehenderit rerum esse nam, voluptatibus labore? Dicta enim eos incidunt magnam ipsum dignissimos unde?
                     Aspernatur, dolorum quas voluptatem facilis ad assumenda eveniet laborum magni placeat quam error nam iusto neque laudantium, non quaerat quo animi velit fugiat omnis saepe cumque voluptatum tempore? Odio, inventore?
                     Numquam temporibus, rem dolorum sint veritatis ad labore obcaecati libero odit quod maiores nemo quae quibusdam praesentium molestias quaerat velit sed dolores eius voluptate eveniet quasi blanditiis commodi natus? Pariatur?
-                </textarea>
+                </div>
                 
             </div>
             <div class="save">

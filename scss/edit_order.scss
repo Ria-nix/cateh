@@ -44,14 +44,26 @@ body{ background: $fon_white; }
             border: 1px solid $gray_border;
             box-shadow: 0px 4px 10px 0px rgba($but_shadow, 0.15);
         }
-        .textarea_full{
-            width: 100%;
-            min-height: 200px;
-            resize: none;
+        .wrap_comments{
+            display: flex;
+            align-items: center;
+        }
+        .textarea_full, .item_comment{
+            max-height: 150px;
             background: #f6f6f6;
             border: 0.5px solid $gray_border;
             padding: 0.5rem;
-        }    
+            margin:0 0 0.8rem 0; 
+            width: 100%;
+        }
+        .textarea_full{
+            min-height:250px;
+        }
+        .date_end{
+            @extend %flex_column;
+            text-align: center;
+            .opacity{ margin-top: 0.3rem;}
+        }
         .save, .save button{ 
             display: flex;
             align-items: center;
@@ -114,6 +126,10 @@ textarea::-webkit-scrollbar-track { margin: 8px; }
         justify-content: flex-end;
         button{ margin: 1rem 1rem 2rem 1rem; }
     } 
+    .wrap_comments{ flex-direction: row; 
+        .comments{ width: 73%;}
+        .date_end{ width: 27%;}
+    }
 }
 
 // ********** MEDIA MAX 650PX *************
@@ -133,4 +149,7 @@ textarea::-webkit-scrollbar-track { margin: 8px; }
         align-items: flex-end;
         button{ margin: 1rem 0; }
     } 
+    .wrap_comments{ flex-direction: column; 
+        .comments, .date_end{ width: 100%;}
+    }
 }

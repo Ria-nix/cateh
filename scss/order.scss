@@ -5,7 +5,7 @@
 body{ background: $fon_white; }
 .content_wrap > div{ margin: 0 2%;}
 .all_opacity{ opacity: 0.7;}
-.content_wrap{ @extend %grid;    
+.content_wrap{ @extend %grid; 
     .head_order{ @extend %flex_row;     
         div{ flex: 1 1 5%; }
 
@@ -33,17 +33,21 @@ body{ background: $fon_white; }
         padding: 1rem;
     }
     .content_set{ @extend %flex_column;   
-        .textarea_full, .comments{
-            min-height: 200px;
-            resize: none;
+        .wrap_comments{
+            display: flex;
+            align-items: center;
+        }
+        .textarea_full, .item_comment{
+            min-height: 20px;
             background: #f6f6f6;
             border: 0.5px solid $gray_border;
             padding: 0.5rem;
+            margin:0 0 0.8rem 0; 
+            width: 100%;
         }
-        .textarea_full{ width: 100%; }       
         .date_end{
-            display: flex;
-            align-items: center;
+            @extend %flex_column;
+            text-align: center;
             .opacity{ margin-top: 0.3rem;}
         }
         .save, .save button{ 
@@ -87,28 +91,11 @@ textarea::-webkit-scrollbar-track {
 
 // ********** MEDIA MAX 621px *************
 @media (min-width: 621px) {  
-    .date_end{ flex-direction: row;
-        span{ 
-            margin: 0.5rem 0 0 0;
-            text-align: center;
-        }
-    }
-    .comments{ 
-        width: 85%; 
-        margin: 0 10px 0 0;
+    .date_end{
+        margin: 0.5rem 0 0 0;
+        text-align: center;
     }
 }
-// ********** MEDIA MIN 620px *************
-@media (max-width: 620px) {  
-    .date_end{ flex-direction: column;
-        span{ 
-            margin: 1rem 0 0.3rem 0;
-            text-align: center;
-        }
-    }
-    .comments{ width: 100%; }
-}
-
 // ********** MEDIA MIN 551PX *************
 @media (min-width: 551px) {
     .main_info{
@@ -132,6 +119,10 @@ textarea::-webkit-scrollbar-track {
         background: $gray_full;
         box-shadow: 0px 4px 10px 0px rgba($but_shadow, 0.15);
     }
+    .wrap_comments{ flex-direction: row; 
+        .comments{ width: 73%;}
+        .date_end{ width: 27%;}
+    }
 }
 
 // ********** MEDIA MAX 550PX *************
@@ -148,7 +139,7 @@ textarea::-webkit-scrollbar-track {
         align-items: center;
         text-align: center;
         .opacity{ padding: 0.3rem 0 0 0;}
-    }
+    }z
     .save{
         background: none;
         flex-direction: column;
@@ -156,4 +147,7 @@ textarea::-webkit-scrollbar-track {
         align-items: flex-end;
         button{ margin: 1rem 0; }
     } 
+    .wrap_comments{ flex-direction: column; 
+        .comments, .date_end{ width: 100%;}
+    }
 }
