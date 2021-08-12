@@ -52,13 +52,16 @@ $(document).ready(function(){
         });
     }());
     
+    let logo_organ = document.querySelector('#logo_second');
+
     // Edit images on all pages
     $('#input_file').on('change',function(ev){    
-        // if($('.logo_second').attr('src').empty()){
+        if($('.logo_second').attr('src').empty()){
+            logo_organ.hasAttribute('src', 'icon/')
             $('.logo_second').attr('src', 'icon/')
-        // }else{
+        }else{
 
-        // }
+        }
         var f = ev.target.files[0];
         var fr = new FileReader();    
         fr.onload = function(ev2) { $('.logo_second').attr('src', ev2.target.result); };

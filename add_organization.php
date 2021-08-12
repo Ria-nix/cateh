@@ -41,7 +41,7 @@
             <div class="fields_address"></div>
             <div class="img_organization">
                 <div class="image border">
-                    <img class="logo_second" src="" alt="logo">
+                    <img class="logo_second" src="icon/anonym_organization.svg" alt="logo">
                 </div>                
                 <div class="img_buttons">
                     <input name="file" type="file" id="input_file">

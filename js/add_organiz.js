@@ -72,7 +72,7 @@ $(document).ready(function(){
         let name = document.querySelector('#name').value;
         let inn = document.querySelector('#inn').value;
         let file = document.querySelector('input[type=file]').files[0];
-        formData.append('file', file, 'NOT_NULL');
+        formData.append('image', file, 'NOT_NULL');
         formData.append('MAX_FILE_SIZE', "6291456");
         formData.append('DBname', 'u1184374_hepdesk_2_0');
         formData.append("token", '12345artemy');
