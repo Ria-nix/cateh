@@ -447,6 +447,13 @@ nav .navigation {
 nav .navigation .logo {
   height: 50%;
 }
+nav .navigation #input_file {
+  overflow: hidden;
+  position: absolute;
+  opacity: 0;
+  width: 10px;
+  height: 10px;
+}
 nav .navigation .toggle_menu_fon {
   position: fixed;
   z-index: 100;
@@ -1037,7 +1044,15 @@ body {
   -o-object-fit: contain;
      object-fit: contain;
 }
+.content_set .img_organization #input_file {
+  overflow: hidden;
+  position: absolute;
+  opacity: 0;
+  width: 10px;
+  height: 10px;
+}
 .content_set .img_organization .button_gray {
+  padding: 6px 20px;
   letter-spacing: 1px;
   color: #112742;
   cursor: pointer;
@@ -1088,6 +1103,10 @@ body {
     width: 150px;
     height: 40px;
   }
+
+  #delete_settings {
+    margin: 0 0 0 5%;
+  }
 }
 @media (max-width: 560px) {
   .img_organization {
@@ -1126,6 +1145,10 @@ body {
   .save button {
     width: 160px;
     height: 45px;
+  }
+
+  #delete_settings {
+    margin: 0 0 0 5%;
   }
 }
 @media (min-width: 620px) {

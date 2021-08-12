@@ -220,6 +220,13 @@ nav .navigation {
 nav .navigation .logo {
   height: 50%;
 }
+nav .navigation #input_file {
+  overflow: hidden;
+  position: absolute;
+  opacity: 0;
+  width: 10px;
+  height: 10px;
+}
 nav .navigation .toggle_menu_fon {
   position: fixed;
   z-index: 100;

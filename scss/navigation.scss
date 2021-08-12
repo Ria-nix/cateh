@@ -21,6 +21,13 @@ nav{
 
         // LOGO
         .logo{ height: 50%; }
+        #input_file{
+            overflow: hidden;
+            position: absolute;
+            opacity: 0;
+            width: 10px;
+            height: 10px;
+        }
 
         // TOGGLE BUTTON AND MENU
         .toggle_menu_fon{

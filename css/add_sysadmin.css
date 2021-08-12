@@ -447,6 +447,13 @@ nav .navigation {
 nav .navigation .logo {
   height: 50%;
 }
+nav .navigation #input_file {
+  overflow: hidden;
+  position: absolute;
+  opacity: 0;
+  width: 10px;
+  height: 10px;
+}
 nav .navigation .toggle_menu_fon {
   position: fixed;
   z-index: 100;
@@ -1291,7 +1298,7 @@ body {
             justify-content: center;
     margin: 0.5rem 0 1.5rem 0;
   }
-  .img_organization .img_buttons #delete_img {
+  .img_organization .img_buttons #delete_admin {
     margin: 0 0 0 5%;
   }
   .img_organization .img_buttons button, .img_organization .img_buttons label {

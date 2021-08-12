@@ -24,11 +24,12 @@
             </div>
             <div class="img_organization">
                 <div class="image border">
-                    <img src="icon/logo.png" alt="logo">
+                    <img src="icon/logo_server.svg" class='logo_second' alt="logo">
                 </div>                
                 <div class="img_buttons">
-                    <button class="button_gray border font_16" id="download_img">Загрузить</button>
-                    <button class="button_gray border font_16" id="delete_img">Удалить</button>
+                <input type="file" id="input_file">
+                    <label class="button_gray border " for="input_file" id="download_file">Загрузить</label>
+                    <button class="button_gray border font_16" id="delete_settings">Удалить</button>
                 </div>
             </div>
             <div class="save">

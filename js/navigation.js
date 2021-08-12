@@ -69,5 +69,9 @@ $(document).ready(function(){
     $('#delete_organ').click(function(){
         logo_organ.src = 'icon/anonym_organization.svg';
     })
+    $('#delete_settings').click(function(){
+        logo_organ.src = 'icon/logo_server.svg';
+    })
+    
     
 })
