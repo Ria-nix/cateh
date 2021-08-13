@@ -103,6 +103,10 @@ input[type=number]::-webkit-outer-spin-button {
   font-size: 16px;
 }
 
+.font_18 {
+  font-size: 18px;
+}
+
 .font_24 {
   font-size: 24px;
 }
@@ -285,6 +289,10 @@ input[type=number]::-webkit-outer-spin-button {
 
 .font_16 {
   font-size: 16px;
+}
+
+.font_18 {
+  font-size: 18px;
 }
 
 .font_24 {
@@ -641,16 +649,7 @@ nav .navigation .door img {
 }
 .header .profile {
   padding: 3% 1.5% 2% 1.5%;
-  border: 1px solid orange;
   display: grid;
-  background: #F5F5F5;
-}
-.header .profile div {
-  border: 1px solid violet;
-}
-.header .tabs {
-  padding: 3% 1.5% 2% 1.5%;
-  border: 1px solid red;
   background: #F5F5F5;
 }
 .header .image {
@@ -661,7 +660,7 @@ nav .navigation .door img {
 }
 .header .image .logo_organization {
   border: 1px solid #112742;
-  padding: 3%;
+  padding: 0.5rem;
   width: 11rem;
   height: 11rem;
 }
@@ -681,9 +680,8 @@ nav .navigation .door img {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.header .text .opacity {
-  padding: 0 0 0 2rem;
-  grid-area: text;
+.header .bold {
+  letter-spacing: 0.5px;
 }
 .header .buttons {
   grid-area: item3;
@@ -691,14 +689,30 @@ nav .navigation .door img {
   display: -ms-flexbox;
   display: flex;
 }
+.header .tabs {
+  padding: 3rem 0 0.4rem 0;
+  margin-right: auto;
+  background: #F5F5F5;
+}
+.header .tabs label {
+  padding: 6px 15px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+.header .tabs input[type=radio] {
+  overflow: hidden;
+  opacity: 0;
+  position: absolute;
+}
+
 .content_wrap {
   width: 100%;
   border-bottom: 0.5px solid #B2B2B2;
 }
 
-@media (min-width: 825px) {
+@media (min-width: 801px) {
   .profile {
-    grid-template-columns: 11rem;
+    grid-template-columns: 11rem auto 11rem;
     grid-template-areas: "item1 item2 item3";
   }
 
@@ -729,6 +743,10 @@ nav .navigation .door img {
             justify-content: space-evenly;
     margin: 0.5rem 2rem;
   }
+  .text .opacity {
+    padding: 0 0 0 2rem;
+    grid-area: text;
+  }
   .text .item_info {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -741,9 +759,19 @@ nav .navigation .door img {
         -ms-flex-align: center;
             align-items: center;
   }
+
+  .mobile_count {
+    display: none;
+  }
+
+  label {
+    border: 1px solid rgba(17, 39, 66, 0.5);
+    background-color: #e2e2e2;
+  }
 }
-@media (max-width: 825px) {
+@media (max-width: 800px) {
   .profile {
+    margin: 1rem 0;
     grid-template-areas: "item1" "item3" "item2";
   }
 
@@ -764,8 +792,22 @@ nav .navigation .door img {
             align-items: center;
   }
   .buttons button {
-    padding: 6px 10px;
+    width: 50px;
+    height: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin: 1rem;
+  }
+  .buttons button img {
+    width: 1.8rem;
+    height: 1.8rem;
   }
 
   .text {
@@ -777,14 +819,7 @@ nav .navigation .door img {
     padding: 0.5rem 0;
   }
   .text .count {
-    display: grid;
-    grid-template-areas: "number text";
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    display: none;
   }
 
   .image {
@@ -799,5 +834,36 @@ nav .navigation .door img {
   .bold {
     width: 120px;
     grid-area: text;
+  }
+
+  .mobile_count {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 0.5rem 0;
+  }
+  .mobile_count .item_info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 0.5rem;
+  }
+
+  label {
+    border: 1px solid #112742;
   }
 }/*# sourceMappingURL=profile_organization.css.map */

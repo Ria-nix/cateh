@@ -25,38 +25,47 @@ $(document).ready(function(){
     // }
 
     // Check the inputs with address that they're full
-    var summ_address = 1, inputs;
+    var summ_address = 0, inputs;
+    let change = document.querySelector(".field_address");
     $('#add_address').click(function(){
-        let adresses = document.querySelectorAll(".text_address");
-        for(var elem of adresses){
-            if(elem.value == ''){RedAuto(elem)}
+        if(change.value == ''){ RedAuto(change) }
+        else{
+            if(summ_address < 3){ addInput(); }
+            checkAddresses();    
+            change.value = '';       
         }
-        elem.addEventListener('change', function(){
-            if(elem.value == ''){ RedAuto(elem); }
-            else{
-                // if(validationAddress(elem)){
-                    elem.classList.remove('red_auto');             
-                    elem.setAttribute('placeholder',''); 
-                // }    
-            }
-        })
-        if(elem.value != ''){ summ_address >= 23 ? inputs = '' : addInput();  }    
     });
 
-    function addInput(){ 
-        inputs = '<div class="cell"><input type="text" class="text_address add_info "><img src="icon/close.svg" alt="close"></div>';
+    let address = document.querySelectorAll(".text_address");
+    for(let ele of address){
+        ele.addEventListener('change', function(){
+            if(ele.value == ''){ RedAuto(ele); }
+            else{
+                ele.classList.remove('red_auto');             
+                ele.setAttribute('placeholder',''); 
+            }
+        })
+    }
+
+    function checkAddresses(){
+        let adresses = document.querySelectorAll(".text_address");
+        for(var elem of adresses){ if(elem.value == ''){RedAuto(elem)} }       
+    }
+
+    function addInput(){       
+        inputs = `<div class="cell"><input type="text" class="text_address add_info" value="${change.value}"><img src="icon/close.svg" alt="close"></div>`;
         document.documentElement.scrollWidth <= 620 ? $('.mobile_fields_address').append(inputs) : $('.fields_address').append(inputs);      
-        summ_address++;
+        summ_address++;    
 
         // remove the cell
         for(var item_new of $('.cell').children('img')){ }
         item_new.addEventListener('click', function(){ item_new.parentElement.remove();  summ_address--});    
     }
 
-    function RedAuto(elem){
-        let text = elem.classList.contains('text_address') ? 'Введите адрес' : 'Заполните или удалите поле' ; 
-        elem.classList.add('red_auto');
-        elem.setAttribute('placeholder', text); 
+    function RedAuto(item){
+        if(summ_address > 3){ change.placeholder = "Вы не можете добавить больше 23 адресов"; }
+        item.classList.add('red_auto');
+        item.setAttribute('placeholder', 'Введите адрес');        
     }
 
 
@@ -71,8 +80,14 @@ $(document).ready(function(){
         let formData = new FormData();
         let name = document.querySelector('#name').value;
         let inn = document.querySelector('#inn').value;
-        let file = document.querySelector('input[type=file]').files[0];
-        formData.append('image', file, 'NOT_NULL');
+        $('.download_file').on('click', function(){
+            let file = document.querySelector('input[type=file]').files[0];
+            formData.append('image', file, 'NOT_NULL');
+        })
+        let anonym = document.querySelector('.download_file').files[0];
+        console.log(anonym);
+
+        formData.append('image', anonym, 'NOT_NULL');
         formData.append('MAX_FILE_SIZE', "6291456");
         formData.append('DBname', 'u1184374_hepdesk_2_0');
         formData.append("token", '12345artemy');

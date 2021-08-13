@@ -27,7 +27,7 @@ include('head_code.php'); ?>
             <div class="text"> 
                 <span class="item_info">
                     <p class="bold hidden">Название:</p>
-                    <p class="opacity">ООО "КРЕАТИВ ТЕКНОЛОДЖИС" </p>
+                    <p class="opacity spacing">ООО "КРЕАТИВ ТЕКНОЛОДЖИС" </p>
                 </span>
                 <span class="item_info count">
                     <p class="bold">Выполнено за месяц:</p>
@@ -37,6 +37,16 @@ include('head_code.php'); ?>
                     <p class="bold">Выполнено за все время:</p>
                     <p class="opacity">50</p>
                 </span>
+                <div class="mobile_count">
+                    <span class="item_info mobile_item">
+                        <p class="opacity font_18">50</p>
+                        <p class="bold">Выполнено за месяц:</p>
+                    </span>
+                    <span class="item_info mobile_item">
+                        <p class="opacity font_18">50</p>
+                        <p class="bold">Выполнено за все время:</p>
+                    </span>
+                </div>
             </div>
             <div class="buttons">
                 <button class="button border"><span class="edit"><img src="icon/edit.svg" alt=""></span><p class="hidden">Редактировать</p></button>

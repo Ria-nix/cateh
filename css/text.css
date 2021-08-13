@@ -103,6 +103,10 @@ input[type=number]::-webkit-outer-spin-button {
   font-size: 16px;
 }
 
+.font_18 {
+  font-size: 18px;
+}
+
 .font_24 {
   font-size: 24px;
 }
@@ -285,6 +289,10 @@ input[type=number]::-webkit-outer-spin-button {
 
 .font_16 {
   font-size: 16px;
+}
+
+.font_18 {
+  font-size: 18px;
 }
 
 .font_24 {

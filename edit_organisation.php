@@ -32,23 +32,23 @@
                 <button class="button_gray border font_16 pass">Сгенерировать новый пароль</button>
                 <div class="none"><img src="" alt="mark about generatio a new password"></div>
             </div>         
-            <div class="adress_organisation">
-                <label for="address">Адрес <i class='red'>*</i></label>
-                <input type="text" id="address" class="text_address add_info" placeholder="ул.Маркаса д.9">
-                <span class="button border none" id="add_address">
-                    <img src="icon/plus-solid.svg" alt="plus_solid"> 
-                </span>
-            </div>
             <div class="mobile_fields_address"></div>
             <div class="fields_address">
                 <!-- <div class="cell">
-                    <input type="text" class="text_address add_info ">
+                    <input type="text" class="text_address add_info " value="new something">
                     <img src="icon/close.svg" alt="close">
                 </div>
                 <div class="cell">
-                    <input type="text" class="text_address add_info ">
+                    <input type="text" class="text_address add_info " value="new something">
                     <img src="icon/close.svg" alt="close">
                 </div> -->
+            </div>
+            <div class="adress_organisation">
+                <label for="address">Адрес <i class='red'>*</i></label>
+                <input type="text" id="address" class="field_address" placeholder="ул.Маркаса д.9">
+                <span class="button border none" id="add_address">
+                    <img src="icon/plus-solid.svg" alt="plus_solid"> 
+                </span>
             </div>
             <div class="img_organization">
                 <div class="image border">

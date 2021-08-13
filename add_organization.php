@@ -32,7 +32,7 @@
             </div>
             <div class="adress_organization">
                 <label for="address">Адрес<i class='red'>*</i></label>
-                <input type="text" id="address" class="text_address add_info" placeholder="ул.Маркаса д.9">
+                <input type="text" id="address" class="field_address" placeholder="ул.Маркаса д.9" value="">
                 <div class="mobile_fields_address"></div>
                 <span class="button border" id="add_address">
                     <img src="icon/plus-solid.svg" alt="plus_solid"> 

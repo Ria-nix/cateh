@@ -7,6 +7,7 @@ $red: #E52828;
 $green: #159B12;
 $fon_white: #F5F5F5;
 $gray_border: #939393;
+$tabs_background: #e2e2e2;
 $gray_full: #F1F1F1;
 $gray_blue: #33465D;
 $but_shadow: rgba(17, 39, 66, 0.3);
@@ -90,6 +91,7 @@ input[type=number]::-webkit-outer-spin-button {
 .spacing{ letter-spacing: 0.5px;}
 .bold{ font-weight: bold;}
 .font_16{ font-size: 16px;}
+.font_18{ font-size: 18px;}
 .font_24{ font-size: 24px;}
 .red_auto{ border-color: rgba($red,0.7); }
 .red{color:$red; font-size: 24px;}
