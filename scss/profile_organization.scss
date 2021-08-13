@@ -1,86 +1,147 @@
 @import 'cateh_style';
 @import 'navigation';
 
-.header{
-    .profile {
-        padding: 3% 1.5% 2% 1.5%;
-        display: grid;    
-        background: $fon_white;
-    }
-    .image{ 
-        display: flex;
-        grid-area: item1;
-        .logo_organization{
-            border: 1px solid $blue;
-            padding: 0.5rem; 
-            width: 11rem;
-            height:11rem; 
+.profile_buttons{
+    @extend %grid;
+    background: $fon_white;
+}
+.profile {
+    padding: 3% 1.5% 2% 1.5%;
+    display: grid;    
 
-            img{
-                width: 100%;
-                height: 100%;
-                object-fit: contain;
-            }
+    // border: 1px solid orange;
+    background: $fon_white;
+}
+.image{ 
+    display: flex;
+    grid-area: item1;
+    .logo_organization{
+        border: 1px solid $blue;
+        padding: 0.5rem; 
+        width: 11rem;
+        height:11rem; 
+
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
         }
     }
-    .text{
-        grid-area: item2;
-        display: flex;
-        flex-direction: column;        
-    }
-    .bold{ letter-spacing: 0.5px; }
-    .buttons{ 
-        grid-area: item3;
-        display: flex;
-        button{ @extend %flex_row; }
-    }
+}
+.text{
+    grid-area: item2;
+    display: flex;
+    flex-direction: column;        
+}
+.bold{ letter-spacing: 0.5px; }
+.buttons{ 
+    grid-area: item3;
+    display: flex;
+    button{ @extend %flex_row; }
+}
 
-    // ***************** NAME OF TABLE (buttons) *****************
-    .tabs{
-        padding: 3rem 0 0.4rem 0;
-        margin-right: auto;
-        // border: 1px solid red;
-        background: $fon_white;
-
-        label{
-            padding: 6px 15px;
-            border-top-right-radius: 10px;
-            border-top-left-radius: 10px;
-        }
-        input[type = radio]{ 
-            overflow: hidden;
-            opacity: 0;
-            position: absolute;
-        }
+// ***************** NAME OF TABLE (buttons) *****************
+.tabs{
+    padding: 3rem 0 0.4rem 0;
+    background: $fon_white;
+    label{
+        padding: 6px 15px;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+    }
+    input[type = radio]{ 
+        overflow: hidden;
+        opacity: 0;
+        position: absolute;
     }
 }
 
 
-
 // *********** CONTENT ****************
+.table_sysadmin{ margin: 0 2%;}
+.table_sysadmin{ margin: 0 2%;}
 .content_wrap{
+    border-top: 1px solid rgba($blue, 0.5);
     width: 100%;
     @extend %grid;
-    border-bottom: 0.5px solid $line;
 
+    //HEAD TABLE
+    .head_table{ 
+        background: $fon_table;
+        width: 100%;
+        height: 5rem;
+        border-bottom: 1px solid $blue;
+        .head_name{     
+            height: 100%;
+            @extend %flex_row;       
+            p{ 
+                flex:1; 
+                text-align: center; 
+            }
+            span > img{ 
+                transform: translateY(3px);
+                object-fit: contain;
+            }
+        }
+    }
+
+    // TABLE WITH INFO
+    .table_sysadmin{
+        @extend %flex_column;
+        .item_table{
+            width: 100%;
+            height: auto;
+            @extend %flex_row;
+            margin: 20px 0 0 0;   
+            .item_info > * {
+                flex:1;
+                text-align: center;
+            }
+            .item_info{ box-shadow: 0px 4px 10px 0px rgba($but_shadow, 0.15);
+                .main_fio{ text-align: center;}               
+            }
+            .click{ 
+                padding:18px 12px;
+                font-weight: initial;  
+                color: rgba($blue, 0.7);
+                letter-spacing: 0.5px;
+            }
+            .click:hover{ color: $blue; }
+        }
+        .item_table:last-child{ margin: 20px 0; }        
+    }
 }
 
 // ************* @MEDIA *************
 
 // ********** MEDIA MIN 1163PX *************
 @media (min-width: 1163px) {
-    
+    .item_table, .head_name{ font-size: 18px; }
+    .item_table button{ display: block; margin-left: 2rem; }
+    .item_info{ width: 100%; }
+    .head_name{ 
+        width: 88%;
+        padding:0 10% 0 0;
+    }
+    .item_info{ width: 100%; padding: 1.2rem;}
+    .items{ padding: 2% 0; }
 }
 
 // ********** MEDIA MAX 1163PX *************
 @media (max-width: 1163px) {
-    
+    .head_name{ 
+        width: 84%;
+        padding: 0 3%;
+    }
+    .items{ width: 65%; }
+    .item_table button{margin-left: 40px; }
+    .item_info{ width: 100%; }
+    .item_info{ width: 100%; padding: 1.2rem;}
 }
 
-// ********** MEDIA 801px *************
+// ********** MEDIA MIN 801px *************
 @media (min-width: 801px) {  
     .profile{ 
-        // gap: 10px;
         grid-template-columns: 11rem auto 11rem;
         grid-template-areas: 'item1 item2 item3'; 
     }
@@ -107,19 +168,11 @@
         }
     }
     .mobile_count{ display: none;}
-    
-     // ************ NAMES OF TABLE (buttons) ************
-    label{
-        border:1px solid rgba($blue, 0.5);
-        background-color: $tabs_background;
-        // border-bottom: none;
-    }
 }
 
-// ********** MEDIA 800px *************
+// ********** MEDIA MAX 800px *************
 @media (max-width: 800px) {  
     .profile{ 
-        margin: 1rem 0;
         grid-template-areas: 'item1' 'item3' 'item2'; 
     }
     .hidden{ display: none;}
@@ -167,24 +220,79 @@
         }
     }
 
-    // ************ NAMES OF TABLE (buttons) ************
-    label{
-        border:1px solid $blue;
-    }
+    .head_table{
+        font-size: 14px;
+        justify-content: center;
+    }  
+    .item_table button{ display: none; }
+    .item_table{ width: 100%;  }
+    .item_info{  width: 50rem; padding: 1rem;}
+    .head_name{  width: 100%;  }
 }
 
-// // ********** MEDIA MIN 580PX *************
-// @media (min-width: 580px) {
-    
-// }
+// ********** MEDIA MIN 580PX *************
+@media (min-width: 580px) {
+     // ************ NAMES OF TABLE (buttons) ************
+    label{
+        border:1px solid rgba($blue, 0.5);
+        background-color: $tabs_background;
+    }
+    .item_info{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .head_table{
+        // display: grid;
+        // grid-template-columns: repeat(1, minmax(320px, 1500px));
+        // justify-content: center;
+        .head_name{ padding: 0 50px; }
+    }    
+    // .table_sysadmin{ padding: 5rem 10px 0 10px; }
+    .mobile_version{ display: none; }
+}
 
-// // ********** MEDIA MAX 580PX *************
-// @media (max-width: 580px) {
-    
-// }
+// ********** MEDIA MAX 580PX *************
+@media (max-width: 580px) {
+     // ************ NAMES OF TABLE (buttons) ************
+    label{
+        border:1px solid $fon_white;
+        background: $blue;
+        color: $fon_white;
+    }
+    // .item_info{
+    //     display: flex;
+    //     flex-direction: column;
+    //     justify-content: center;
+    // }
+    // .mobile_none{ display: none; }
+    // .mobile_version{
+    //     display: flex;
+    //     flex-direction: row;  
+    //     justify-content: space-around;  
+
+    //     .mobile_title{
+    //         text-align: left;
+    //         color: rgba($blue, 0.85);
+    //         flex-basis: 60%;
+    //         p{ padding: 4% 0 0 3%;}            
+    //     }
+    //     .mobile_info{ 
+    //         flex-basis: 40%;
+    //         .complete_order, .current_order{ margin: 5% 0 3% 30%; }
+    //     }
+    // }
+    // .mobile_version > div{
+    //     display: flex;
+    //     flex-direction: column;
+    //     justify-content: flex-start;
+    //     align-items: flex-start;
+    //     padding: 2% 0;
+    //     font-size: 15px;
+    // }
+}
 
 // ********** MEDIA MAX 410PX *************
 @media (max-width: 410px) {
-
+    .table_sysadmin{ padding: 40% 10px 0 10px; }
 }
-

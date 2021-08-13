@@ -77,7 +77,6 @@ input, textarea{
     font-size: 14px;
     &::placeholder{font-size: 14px; color:rgba(17, 39, 66, 0.65)}
     &:focus{ border-color: $light_blue; }
-    // &:focus::placeholder{ color: rgba($blue, 0.65) }
 }
 
 // For input [type = "number"] (arrows hidden)
