@@ -66,7 +66,7 @@ include('head_code.php'); ?>
     <!-- CONTENT -->
     <div class="content_wrap">
         <!-- HEAD TABLE -->
-        <div class="orders">
+        <div class="orders_item">
             <div class="head_table">
                 <div class="head_name spacing_special">
                     <p>ФИО <span class="ask_des_arrow"><img src="icon/up_arrow.svg" alt="arrow" id="arrow"></span></p>
@@ -83,14 +83,17 @@ include('head_code.php'); ?>
             </div> 
         </div>
 
-        <div class="address"></div>
+        <div class="addresses_item none "></div>
 
-        <div class="clients"></div>
+        <div class="clients_item none ">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet modi voluptatum ex, labore ipsam iste ab sapiente eum vitae dolorem veritatis qui assumenda ratione ullam eaque voluptates itaque a minus?
+            oluptatum deserunt sapiente temporibus doloribus repellendus, fugiat deleniti quaerat soluta id nobis numquam tempore aliquid. Fugiat atque quae pariatur tenetur praesentium inventore!
+        </div>
 
     </div>
 
     <script src="js/modal_windows.js"></script>
-    <!-- <script src="js/add_sysadmin.js"></script> -->
+    <script src="js/profile_organization.js"></script>
     <script src="<?php echo $navigation_panel ?>"></script>
 </body>
 

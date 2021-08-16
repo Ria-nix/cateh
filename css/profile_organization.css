@@ -734,10 +734,21 @@ nav .navigation .door img {
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
 }
-.tabs input[type=radio] {
-  overflow: hidden;
-  opacity: 0;
+.orders_item, .addresses_item, .clients_item {
   position: absolute;
+  width: 100%;
+}
+
+.orders_item {
+  border: 1px solid red;
+}
+
+.addresses_item {
+  border: 1px solid blue;
+}
+
+.clients_item {
+  border: 1px solid violet;
 }
 
 .table_sysadmin {

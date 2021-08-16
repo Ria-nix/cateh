@@ -51,12 +51,25 @@
         border-top-left-radius: 10px;
     }
     input[type = radio]{ 
-        overflow: hidden;
-        opacity: 0;
-        position: absolute;
+        // overflow: hidden;
+        // opacity: 0;
+        // position: absolute;
     }
 }
 
+.orders_item, .addresses_item, .clients_item{
+    position: absolute;
+    width: 100%;
+}
+.orders_item{
+    border: 1px solid red;
+}
+.addresses_item{
+    border: 1px solid blue;
+}
+.clients_item{
+    border: 1px solid violet;
+}
 
 // *********** CONTENT ****************
 .table_sysadmin{ margin: 0 2%;}
