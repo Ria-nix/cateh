@@ -3,32 +3,32 @@ $(document).ready(function(){
     (function transitionMenu(){
         for(let elem of $('.admin')){
             elem.addEventListener('click',function(){
-            window.location.href = 'sysadmin.php';});
+            window.location.href = 'site/pages/sysadmin/index.php';});
         }
         
         for(let elem of $('.admin_plus')){
             elem.addEventListener('click',function(){
-            window.location.href = 'add_sysadmin.php'; });
+            window.location.href = 'site/pages/sysadmin/add/index.php'; });
         }
         
         for(let elem of $('.organization')){
             elem.addEventListener('click',function(){
-            window.location.href = 'organization.php'; });
+            window.location.href = 'site/pages/organisation/index.php'; });
         }
         
         for(let elem of $('.organization_plus')){
             elem.addEventListener('click',function(){
-            window.location.href = 'add_organization.php'; });
+            window.location.href = 'site/pages/organisation/add/index.php'; });
         }
         
         for(let elem of $('.settings')){
             elem.addEventListener('click',function(){
-            window.location.href = 'settings.php'; });
+            window.location.href = 'site/pages/settings/index.php'; });
         }
         
         for(let elem of $('.exit')){
             elem.addEventListener('click',function(){
-            window.location.href = 'order.php'; });
+            window.location.href = 'site/pages/order/index.php'; });
         }
     }());
     
@@ -64,13 +64,13 @@ $(document).ready(function(){
 
     let logo_organ = document.querySelector('.logo_second');
     $('#delete_admin').click(function(){
-        logo_organ.src = 'icon/anonym_user.svg';
+        logo_organ.src = 'site/pages/web_ithelpdesk/icon/anonym_user.svg';
     })
     $('#delete_organ').click(function(){
-        logo_organ.src = 'icon/anonym_organization.svg';
+        logo_organ.src = 'site/pages/web_ithelpdesk/icon/anonym_organization.svg';
     })
     $('#delete_settings').click(function(){
-        logo_organ.src = 'icon/logo_server.svg';
+        logo_organ.src = 'site/pages/web_ithelpdesk/icon/logo_server.svg';
     })
     
     

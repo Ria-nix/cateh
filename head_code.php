@@ -8,8 +8,9 @@
     $jquery = '<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="crossorigin="anonymous"></script>';
 
     // Favicon for all pages (image)
-    $favicon = '<link rel="shortcut icon" href="icon/favicon-16x16.png" type="image/x-icon">';
+    $favicon = '<link rel="shortcut icon" href="site/pages/web_ithelpdesk/icon/favicon-16x16.png" type="image/x-icon">';
 
+    $main_path = 'site/pages/web_ithelpdesk/';
     // Titles of pages
     $index = 'Авторизация';    
     $sysadmin = 'Главная: Системные администраторы';
@@ -42,6 +43,6 @@
     $css_profile_sysadmin = 'css/profile_sysadmin.css';
     
     //Script path of navigation panel
-    $navigation_panel = 'js/navigation.js';
+    $navigation_panel = 'site/pages/web_ithelpdesk/js/navigation.js';
     
     ?>
