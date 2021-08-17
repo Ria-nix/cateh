@@ -8,8 +8,6 @@
 .profile {
     padding: 3% 1.5% 2% 1.5%;
     display: grid;    
-
-    // border: 1px solid orange;
     background: $fon_white;
 }
 .image{ 
@@ -41,50 +39,34 @@
 }
 
 // ***************** NAME OF TABLE (buttons) *****************
-.tabs{
-    padding: 3rem 0 0.4rem 0;
-    background: $fon_white;
-    margin: 0 2%;
+.tabs{    
+    margin: 1rem 0 0 2%;
+    display: flex;
+    align-items: flex-end;
     label{
+        border: 1px solid rgba($blue, 0.5);
         padding: 6px 15px;
         border-top-right-radius: 10px;
         border-top-left-radius: 10px;
     }
-    input[type = radio]{ 
-        // overflow: hidden;
-        // opacity: 0;
-        // position: absolute;
-    }
 }
 
-.orders_item, .addresses_item, .clients_item{
-    position: absolute;
-    width: 100%;
-}
-.orders_item{
-    border: 1px solid red;
-}
-.addresses_item{
-    border: 1px solid blue;
-}
-.clients_item{
-    border: 1px solid violet;
+
+.none_label{
+    display: none;
+    border-bottom:1px solid $fon_table;
 }
 
 // *********** CONTENT ****************
-.table_sysadmin{ margin: 0 2%;}
 .content_wrap{
     border-top: 1px solid rgba($blue, 0.5);
-    width: 100%;
     @extend %grid;
 
     //HEAD TABLE
     .head_table{ 
-        margin: 0 2%;
         background: $fon_table;
         width: 100%;
         height: 5rem;
-        border-bottom: 1px solid $blue;
         .head_name{     
             height: 100%;
             @extend %flex_row;       
@@ -101,6 +83,8 @@
 
     // TABLE WITH INFO
     .table_sysadmin{
+        margin: 0 2%;
+        border-top: 1px solid $blue;
         @extend %flex_column;
         .item_table{
             width: 100%;
@@ -132,7 +116,6 @@
 @media (min-width: 1163px) {
     .item_table, .head_name{ font-size: 18px; }
     .item_table button{ display: block; margin-left: 2rem; }
-    .item_info{ width: 100%; }
     .head_name{ 
         width: 88%;
         padding:0 10% 0 0;
@@ -149,7 +132,6 @@
     }
     .items{ width: 65%; }
     .item_table button{margin-left: 40px; }
-    .item_info{ width: 100%; }
     .item_info{ width: 100%; padding: 1.2rem;}
 }
 
@@ -158,35 +140,37 @@
     .profile{ 
         grid-template-columns: 11rem auto 11rem;
         grid-template-areas: 'item1 item2 item3'; 
-    }
-    .buttons{  
-        align-items: flex-end;
-        justify-content: space-around;
-        flex-direction: column;
-        button{ padding: 6px 15px;
-            span{margin: 0 5px 0 0;}
-        }  
-    }
-    .text{         
-        align-items: flex-start;
-        justify-content: space-evenly;
-        margin: 0.5rem 2rem; 
-        .opacity{ 
-            padding: 0 0 0 2rem;
-            grid-area: text;
+
+        .buttons{  
+            align-items: flex-end;
+            justify-content: space-around;
+            flex-direction: column;
+            button{ padding: 6px 15px;
+                span{margin: 0 5px 0 0;}
+            }  
         }
-        .item_info{ 
-            display: flex;
-            flex-direction: row;
-            align-items: center;
+        .text{         
+            align-items: flex-start;
+            justify-content: space-evenly;
+            margin: 0.5rem 2rem; 
+            .opacity{ 
+                padding: 0 0 0 2rem;
+                grid-area: text;
+            }
+            .text_info{ 
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+            }
         }
-    }
-    .mobile_count{ display: none;}
+        .mobile_count{ display: none;}
+    }   
 }
 
 // ********** MEDIA MAX 800px *************
 @media (max-width: 800px) {  
     .profile{ 
+        grid-template-columns: repeat(1, minmax(320px, 1500px));
         grid-template-areas: 'item1' 'item3' 'item2'; 
     }
     .hidden{ display: none;}
@@ -208,7 +192,7 @@
     }
     .text{
         align-items: center;
-        .item_info{ padding: 0.5rem 0;}
+        .text_info{ padding: 0.5rem 0;}
         .count{ display: none; }
     }
     .image{
@@ -226,44 +210,42 @@
         flex-direction: row;
         margin: 0.5rem 0;
 
-        .item_info{
+        .text_info{
             display: flex;
-            flex-direction: column ;
+            flex-direction: column;
             align-items: center;
-            margin: 0 0.5rem;
+            width: 50%;
+            padding: 0.5rem;
+            text-align: center;
         }
     }
-
     .head_table{
         font-size: 14px;
         justify-content: center;
     }  
     .item_table button{ display: none; }
     .item_table{ width: 100%;  }
-    .item_info{  width: 50rem; padding: 1rem;}
     .head_name{  width: 100%;  }
 }
 
 // ********** MEDIA MIN 580PX *************
 @media (min-width: 580px) {
      // ************ NAMES OF TABLE (buttons) ************
-    label{
-        border:1px solid rgba($blue, 0.5);
-        background-color: $tabs_background;
+    label{ 
+        border:1px solid rgba($blue, 0.5); 
+        background: $fon_table;
     }
+    .head_table{
+        display: grid;
+        grid-template-columns: repeat(1, minmax(320px, 1500px));
+        .head_name{ padding: 0 50px; }
+    }    
+    .mobile_version{ display: none; }
     .item_info{
         display: flex;
         flex-direction: row;
         align-items: center;
     }
-    .head_table{
-        // display: grid;
-        // grid-template-columns: repeat(1, minmax(320px, 1500px));
-        // justify-content: center;
-        .head_name{ padding: 0 50px; }
-    }    
-    // .table_sysadmin{ padding: 5rem 10px 0 10px; }
-    .mobile_version{ display: none; }
 }
 
 // ********** MEDIA MAX 580PX *************
@@ -274,36 +256,35 @@
         background: $blue;
         color: $fon_white;
     }
-    // .item_info{
-    //     display: flex;
-    //     flex-direction: column;
-    //     justify-content: center;
-    // }
-    // .mobile_none{ display: none; }
-    // .mobile_version{
-    //     display: flex;
-    //     flex-direction: row;  
-    //     justify-content: space-around;  
+    .head_table{display: none;}
+    .table_sysadmin{
+        border: none;
+    }
+    .mobile_none{ display: none; }
+    .mobile_version{
+        display: flex;
+        flex-direction: row;  
+        justify-content: space-around;  
 
-    //     .mobile_title{
-    //         text-align: left;
-    //         color: rgba($blue, 0.85);
-    //         flex-basis: 60%;
-    //         p{ padding: 4% 0 0 3%;}            
-    //     }
-    //     .mobile_info{ 
-    //         flex-basis: 40%;
-    //         .complete_order, .current_order{ margin: 5% 0 3% 30%; }
-    //     }
-    // }
-    // .mobile_version > div{
-    //     display: flex;
-    //     flex-direction: column;
-    //     justify-content: flex-start;
-    //     align-items: flex-start;
-    //     padding: 2% 0;
-    //     font-size: 15px;
-    // }
+        .mobile_title{
+            text-align: left;
+            color: rgba($blue, 0.85);
+            flex-basis: 60%;
+            p{ padding: 4% 0 0 3%;}            
+        }
+        .mobile_info{ 
+            flex-basis: 40%;
+            .complete_order, .current_order{ margin: 5% 0 3% 30%; }
+        }
+    }
+    .mobile_version > div{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 2% 0;
+        font-size: 15px;
+    }
 }
 
 // ********** MEDIA MAX 410PX *************

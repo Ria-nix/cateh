@@ -1,26 +1,26 @@
-// $(document).ready(function(){
-//     if($('.orders').isChecked()){
+$(document).ready(function(){
 
-//     }
-// })
+    $('#orders').click(function(){
+        $('.orders_item').removeClass('none_label');
+        $('.addresses_item').addClass('none_label');
+        $('.clients_item').addClass('none_label');
+        console.log('item1')
+    })
+    
+    $('#addresses').click(function(){
+        $('.orders_item').addClass('none_label');
+        $('.addresses_item').removeClass('none_label');
+        $('.clients_item').addClass('none_label');
+        console.log('item2')
+    })
+    
+    $('#clients').click(function(){
+        $('.orders_item').addClass('none_label');
+        $('.addresses_item').addClass('none_label');
+        $('.clients_item').removeClass('none_label');
+        console.log('item3')
+    })
 
-$('#orders').click(function(){
-    $('.orders_item').removeClass('none');
-    $('.addresses_item').addClass('none');
-    $('.clients_item').addClass('none');
-    console.log('orders')
+
 })
 
-$('#addresses').click(function(){
-    $('.orders_item').addClass('none');
-    $('.addresses_item').removeClass('none');
-    $('.clients_item').addClass('none');
-    console.log('addresses')
-})
-
-$('#clients').click(function(){
-    $('.orders_item').addClass('none');
-    $('.addresses_item').addClass('none');
-    $('.clients_item').removeClass('none');
-    console.log('clients')
-})

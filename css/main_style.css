@@ -715,8 +715,7 @@ nav .navigation .door img {
   background: #EDEDED;
   width: 100%;
   position: fixed;
-  height: 5rem;
-  border-bottom: 1px solid #112742;
+  height: 4rem;
 }
 .content_wrap .head_table .head_name {
   height: 100%;
@@ -778,10 +777,6 @@ nav .navigation .door img {
     margin-left: 2rem;
   }
 
-  .item_info {
-    width: 100%;
-  }
-
   .head_name {
     width: 88%;
     padding: 0 10% 0 0;
@@ -808,10 +803,6 @@ nav .navigation .door img {
 
   .item_table button {
     margin-left: 40px;
-  }
-
-  .item_info {
-    width: 100%;
   }
 
   .item_info {

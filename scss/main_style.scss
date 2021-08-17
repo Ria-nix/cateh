@@ -35,8 +35,8 @@
         background: $fon_table;
         width: 100%;
         position: fixed;
-        height: 5rem;
-        border-bottom: 1px solid $blue;
+        height: 4rem;
+        
         .head_name{     
             height: 100%;
             @extend %flex_row;       
@@ -54,6 +54,7 @@
     // TABLE WITH INFO
     .table_sysadmin{
         @extend %flex_column;
+        
         .item_table{
             width: 100%;
             height: auto;
@@ -84,7 +85,6 @@
 @media (min-width: 1163px) {
     .item_table, .head_name{ font-size: 18px; }
     .item_table button{ display: block; margin-left: 2rem; }
-    .item_info{ width: 100%; }
     .head_name{ 
         width: 88%;
         padding:0 10% 0 0;
@@ -101,7 +101,6 @@
     }
     .items{ width: 65%; }
     .item_table button{margin-left: 40px; }
-    .item_info{ width: 100%; }
     .item_info{ width: 100%; padding: 1.2rem;}
 }
 
