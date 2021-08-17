@@ -25,8 +25,6 @@
 // *********** CONTENT ****************
 .table_sysadmin{ margin: 0 2%;}
 .content_wrap{
-    border-top: 5px solid rgba($blue, 0.5);
-    padding-top: 180px;
     width: 100%;
     @extend %grid;
 
@@ -35,7 +33,8 @@
         background: $fon_table;
         width: 100%;
         position: fixed;
-        height: 4rem;
+        border-bottom: 1px solid rgba($blue, 0.5);
+        height: 4.5rem;
         
         .head_name{     
             height: 100%;
@@ -59,7 +58,9 @@
             width: 100%;
             height: auto;
             @extend %flex_row;
-            margin: 20px 0 0 0;   
+            margin: 20px 0 0 0; 
+            background: $fon_table;
+            border-radius: 10px;  
             .item_info > * {
                 flex:1;
                 text-align: center;
@@ -79,10 +80,12 @@
     }
 }
 .ask_des_arrow{ cursor: pointer; }
+
 // ************* @MEDIA *************
 
 // ********** MEDIA MIN 1163PX *************
 @media (min-width: 1163px) {
+    .content_wrap{ padding-top: 120px;}
     .item_table, .head_name{ font-size: 18px; }
     .item_table button{ display: block; margin-left: 2rem; }
     .head_name{ 
@@ -95,10 +98,8 @@
 
 // ********** MEDIA MAX 1163PX *************
 @media (max-width: 1163px) {
-    .head_name{ 
-        width: 84%;
-        padding: 0 3%;
-    }
+    .content_wrap{ padding-top: 110px;}
+    .head_name{ width: 84%; }
     .items{ width: 65%; }
     .item_table button{margin-left: 40px; }
     .item_info{ width: 100%; padding: 1.2rem;}
@@ -172,13 +173,13 @@
         padding: 2% 0 0 0;
         font-size: 16px;
     }
-    .table_sysadmin{ padding: 20% 10px 0 10px; }
+    .table_sysadmin{ padding: 36% 10px 0 10px; }
     .head_table{ display: none; }
 }
 
 // ********** MEDIA MAX 410PX *************
 @media (max-width: 410px) {
-    .table_sysadmin{ padding: 20% 10px 0 10px; }
+    .table_sysadmin{ padding: 43% 10px 0 10px; }
 }
 
 

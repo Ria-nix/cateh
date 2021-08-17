@@ -9,10 +9,7 @@ body{ background: $fon_white; }
     .head_order{ @extend %flex_row;     
         div{ flex: 1 1 5%; }
 
-        .text { 
-            text-align: center; 
-            padding: 3.5% 4% 2% 4%; 
-        }
+        .text { text-align: center; }
         .back_button button{
             margin: 0 0 0 30px;
             padding: 6px 15px;
@@ -28,10 +25,7 @@ body{ background: $fon_white; }
             font-size: 16px;
         }
     }
-    .content_set .main_fields{ 
-        margin: 0.5rem 0;
-        padding: 1rem;
-    }
+    .content_set .main_fields{ padding: 1rem; }
     .content_set{ @extend %flex_column;   
         .wrap_comments{
             display: flex;
@@ -98,6 +92,8 @@ textarea::-webkit-scrollbar-track {
 }
 // ********** MEDIA MIN 551PX *************
 @media (min-width: 551px) {
+    .text{  padding: 2rem 4% 1.5% 4%; }
+    .content_set .main_fields{ margin: 0.5rem 0; }
     .main_info{
         display: flex;
         flex-direction: row;
@@ -127,6 +123,7 @@ textarea::-webkit-scrollbar-track {
 
 // ********** MEDIA MAX 550PX *************
 @media (max-width: 550px) {
+    .text{  padding: 1rem 4% 0 4%; }
     .main_fields{
         border-radius: 0%;
         border-bottom: 1px solid $gray_border;
@@ -139,7 +136,7 @@ textarea::-webkit-scrollbar-track {
         align-items: center;
         text-align: center;
         .opacity{ padding: 0.3rem 0 0 0;}
-    }z
+    }
     .save{
         background: none;
         flex-direction: column;

@@ -650,14 +650,14 @@ nav .navigation .door img {
     background: #F5F5F5;
     width: 100%;
     height: 100%;
-    top: 135px;
+    top: 100px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     grid-template-columns: repeat(1, minmax(320px, 580px));
   }
   .toggle_menu_fon .toggle_menu {
-    padding: 1% 0 4% 0;
+    padding: 1rem 0 4% 0;
     height: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -991,7 +991,6 @@ body {
 }
 .content_wrap .head_order .text {
   text-align: center;
-  padding: 3.5% 4% 2% 4%;
 }
 .content_wrap .head_order .back_button button {
   margin: 0 0 0 30px;
@@ -1014,7 +1013,6 @@ body {
   font-size: 16px;
 }
 .content_wrap .content_set .main_fields {
-  margin: 0.5rem 0;
   padding: 1rem;
 }
 .content_wrap .content_set .wrap_comments {
@@ -1098,6 +1096,14 @@ textarea::-webkit-scrollbar-track {
   }
 }
 @media (min-width: 551px) {
+  .text {
+    padding: 2rem 4% 1.5% 4%;
+  }
+
+  .content_set .main_fields {
+    margin: 0.5rem 0;
+  }
+
   .main_info {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1155,6 +1161,10 @@ textarea::-webkit-scrollbar-track {
   }
 }
 @media (max-width: 550px) {
+  .text {
+    padding: 1rem 4% 0 4%;
+  }
+
   .main_fields {
     border-radius: 0%;
     border-bottom: 1px solid #939393;
@@ -1180,7 +1190,7 @@ textarea::-webkit-scrollbar-track {
     padding: 0.3rem 0 0 0;
   }
 
-  z .save {
+  .save {
     background: none;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1193,7 +1203,7 @@ textarea::-webkit-scrollbar-track {
         -ms-flex-align: end;
             align-items: flex-end;
   }
-  z .save button {
+  .save button {
     margin: 1rem 0;
   }
 

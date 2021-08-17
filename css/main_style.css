@@ -649,7 +649,7 @@ nav .navigation .door img {
     background: #F5F5F5;
     width: 100%;
     height: 100%;
-    top: 135px;
+    top: 100px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -710,15 +710,14 @@ nav .navigation .door img {
 }
 
 .content_wrap {
-  border-top: 5px solid rgba(17, 39, 66, 0.5);
-  padding-top: 180px;
   width: 100%;
 }
 .content_wrap .head_table {
   background: #EDEDED;
   width: 100%;
   position: fixed;
-  height: 4rem;
+  border-bottom: 1px solid rgba(17, 39, 66, 0.5);
+  height: 4.5rem;
 }
 .content_wrap .head_table .head_name {
   height: 100%;
@@ -739,6 +738,8 @@ nav .navigation .door img {
   width: 100%;
   height: auto;
   margin: 20px 0 0 0;
+  background: #EDEDED;
+  border-radius: 10px;
 }
 .content_wrap .table_sysadmin .item_table .item_info > * {
   -webkit-box-flex: 1;
@@ -771,6 +772,10 @@ nav .navigation .door img {
 }
 
 @media (min-width: 1163px) {
+  .content_wrap {
+    padding-top: 120px;
+  }
+
   .item_table, .head_name {
     font-size: 18px;
   }
@@ -795,9 +800,12 @@ nav .navigation .door img {
   }
 }
 @media (max-width: 1163px) {
+  .content_wrap {
+    padding-top: 110px;
+  }
+
   .head_name {
     width: 84%;
-    padding: 0 3%;
   }
 
   .items {
@@ -947,7 +955,7 @@ nav .navigation .door img {
   }
 
   .table_sysadmin {
-    padding: 20% 10px 0 10px;
+    padding: 36% 10px 0 10px;
   }
 
   .head_table {
@@ -956,6 +964,6 @@ nav .navigation .door img {
 }
 @media (max-width: 410px) {
   .table_sysadmin {
-    padding: 20% 10px 0 10px;
+    padding: 43% 10px 0 10px;
   }
 }/*# sourceMappingURL=main_style.css.map */

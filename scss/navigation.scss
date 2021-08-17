@@ -210,12 +210,12 @@ nav{
         background: $fon_white;
         width: 100%;
         height: 100%;    
-        top: 135px; 
+        top: 100px; 
         justify-content: center;        
         grid-template-columns: repeat(1, minmax(320px, 580px));  
 
         .toggle_menu{
-            padding: 1% 0 4% 0; 
+            padding: 1rem 0 4% 0; 
             height: 100%;
             flex-direction: column;
             width: 100%;
