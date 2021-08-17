@@ -16,8 +16,7 @@ nav{
     .navigation{
         background: $fon_white;
         @extend %flex_row;
-        height: 150px;
-        margin: 0 2% 0 2%;
+        height: 5.5rem;
         border-bottom: 1px solid $gray_border;
 
         // LOGO
@@ -164,7 +163,7 @@ nav{
     } 
     
 }
- 
+
 // ********** MEDIA 850PX *************
 @media (max-width: 850px) {    
     .toggle_menu_fon{
@@ -178,6 +177,7 @@ nav{
 
 // ********** MEDIA MIN 580PX *************
 @media (min-width: 580px) {
+    .navigation{ margin: 0 2%;  }
     body{ background: $fon_table; }
     .toggle_but:hover{ border-color: $light_blue; }
     .toggle_menu_fon{ 
@@ -202,9 +202,9 @@ nav{
 
 // ********** MEDIA MAX 580PX *************
 @media (max-width: 580px) {
-    .navigation{ height: 50px; }
+    .navigation{ margin: 0 5%; }
     body{ background: $blue; }
-  
+
     .search p, .search input, .search button{ display: block; }    
     .toggle_menu_fon{
         left: 0;

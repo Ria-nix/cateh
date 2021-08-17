@@ -419,8 +419,7 @@ nav nav > div {
 }
 nav .navigation {
   background: #F5F5F5;
-  height: 150px;
-  margin: 0 2% 0 2%;
+  height: 5.5rem;
   border-bottom: 1px solid #939393;
 }
 nav .navigation .logo {
@@ -598,6 +597,10 @@ nav .navigation .door img {
   }
 }
 @media (min-width: 580px) {
+  .navigation {
+    margin: 0 2%;
+  }
+
   body {
     background: #EDEDED;
   }
@@ -631,7 +634,7 @@ nav .navigation .door img {
 }
 @media (max-width: 580px) {
   .navigation {
-    height: 50px;
+    margin: 0 5%;
   }
 
   body {
