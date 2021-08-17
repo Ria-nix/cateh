@@ -23,7 +23,7 @@
         <p class="font_24 bold"><?php echo $add_organ ?></p>
         <div class="content_set">
             <div class="name_organization">
-                <label for="name">Название <i class='red'>*</i> <br> организации</label>
+                <label for="name">Название <br> организации <i class='red'>*</i></label>
                 <input type="text" id="name" class="add_info json" placeholder='ООО"Название компании"'>
             </div>
             <div class="inn_organization">

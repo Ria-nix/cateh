@@ -13,7 +13,7 @@ body{ background: $fon_white; }
 .content_set{ @extend %flex_column;
 
     .name_organization{ justify-content: space-between;
-        label{ text-align: left;  padding: 0 0 0 5%;}
+        label{ text-align: left; }
         input{      
             width: 100%;     
             height: 40px;
@@ -27,7 +27,8 @@ body{ background: $fon_white; }
         border-bottom: 1px solid $gray_border;
 
         .image{                    
-            border: 1px solid $blue;                      
+            border: 1px solid $blue;   
+            padding: 0.5rem;                   
 
             img{
                 width: 100%;
@@ -54,12 +55,16 @@ body{ background: $fon_white; }
 // ************* @MEDIA *************
 // ********** MEDIA MAX 1163PX *************
 @media (max-width: 1163px) {
-    .content_set > div{  width: 55%; } 
+    .content_set > div{  
+        width: 55%;
+        padding: 2% 0%; 
+    } 
 }
 
 // ********** MEDIA 850PX *************
 @media (max-width: 850px) {  
-    .content_set > div{ width: 80%;}
+    .content_set > div{ width: 80%; padding: 2% 0%; }
+    .save{ padding: 1rem 0;}
 }
 
 // ********** MEDIA MIN 560PX *************
@@ -73,7 +78,7 @@ body{ background: $fon_white; }
             width: 9.5rem;
             height: 9.5rem;
             margin: 0 5% 0 5%;
-            padding: 1.5%;
+            padding: 1.5rem;
         }
     }
     .img_buttons{ 
@@ -86,6 +91,7 @@ body{ background: $fon_white; }
         height: 40px;
     }
     #delete_settings{ margin: 0 0 0 5%; }   
+    label{ padding: 0 0 0 5%;}
 }
 
 // ********** MEDIA MAX 560PX *************
@@ -109,8 +115,8 @@ body{ background: $fon_white; }
         button{ padding: 8px 25px; }
     }
     .save button{
-        width: 160px;
-        height: 45px;
+        width: 150px;
+        height: 40px;
     }
     #delete_settings{ margin: 0 0 0 5%; }
 }
@@ -118,7 +124,7 @@ body{ background: $fon_white; }
 
 // ********** MEDIA MIN 620PX *************
 @media (min-width: 620px) {
-    .content_set > div{ padding: 1.5% 0%; }
+    .content_set > div{ padding: 1.5% 0%; padding: 2% 0%; }
     .name_organization{   
         display: flex;
         flex-direction: row;
@@ -147,7 +153,7 @@ body{ background: $fon_white; }
 
 // ********** MEDIA MAX 390PX *************
 @media (max-width: 390px) {
-    .content_set > div{ padding: 5% 0%;}
+    .content_set > div{ padding: 5% 0%; }
     .save button{ margin: 0; }
     .name_organization{   
         display: flex;

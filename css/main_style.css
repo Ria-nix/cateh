@@ -656,7 +656,7 @@ nav .navigation .door img {
     grid-template-columns: repeat(1, minmax(320px, 580px));
   }
   .toggle_menu_fon .toggle_menu {
-    padding: 1% 0 4% 0;
+    padding: 1rem 0 4% 0;
     height: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
