@@ -1,9 +1,12 @@
 @use '../scss/cateh_style' as *;
 @import '../scss/navigation';
 
-body{ background: $fon_table;}
-.content{
-    @extend %grid;    
+body{ background: $fon_table;
+    overflow: none;
+}
+body::-webkit-scrollbar { width: 0;}
+
+.content{  @extend %grid;    
 }
 .header{
     width: 100%;
@@ -16,28 +19,37 @@ body{ background: $fon_table;}
     background: $fon_white;
 }
 .content{
-    padding-top: 400px;
-    border: 1px solid red;
+    padding-top: 200px;
     .section1{
         text-align: center;
         width: 100%;
         position: fixed;
+        background:red;
         height: 100px;
     }
     .section2{
-        padding-top: 300px;
-        min-height: 300px;
-        border: 1px solid yellow;
+        margin-top: 100px;
+        min-height: 10vh;
+        background:violet;
+        overflow-y: scroll;
     }
+}
+
+.section2::-webkit-scrollbar-thumb{
+    width: 20px;
+    // background: green;
+}
+.section2::-webkit-scrollbar-thumb{
+    // width: 20px;
+    background: yellow;
 }
 
 .profile, .links{
     margin: 2rem 0;
     height: auto;
-    border: 1px solid orange;
+    background:orange;
     display: grid;    
     grid-gap: 10px;
-    div{ border:1px solid violet;}
 }
 
 .item1{ grid-area: 'item1';}

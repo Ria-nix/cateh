@@ -392,11 +392,11 @@ nav nav > div {
 }
 nav .navigation {
   background: #F5F5F5;
-  height: 5.5rem;
+  height: 6.2rem;
   border-bottom: 1px solid #939393;
 }
 nav .navigation .logo {
-  height: 50%;
+  height: 80%;
 }
 nav .navigation #input_file {
   overflow: hidden;
@@ -465,7 +465,7 @@ nav .navigation .toggle_bar .toggle_but.close span::before {
 }
 nav .navigation .panel_buttons {
   width: 100%;
-  height: 90px;
+  height: 100%;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
@@ -653,6 +653,11 @@ nav .navigation .door img {
 }
 body {
   background: #EDEDED;
+  overflow: none;
+}
+
+body::-webkit-scrollbar {
+  width: 0;
 }
 
 .header {
@@ -669,30 +674,36 @@ body {
 }
 
 .content {
-  padding-top: 400px;
-  border: 1px solid red;
+  padding-top: 200px;
 }
 .content .section1 {
   text-align: center;
   width: 100%;
   position: fixed;
+  background: red;
   height: 100px;
 }
 .content .section2 {
-  padding-top: 300px;
-  min-height: 300px;
-  border: 1px solid yellow;
+  margin-top: 100px;
+  min-height: 10vh;
+  background: violet;
+  overflow-y: scroll;
+}
+
+.section2::-webkit-scrollbar-thumb {
+  width: 20px;
+}
+
+.section2::-webkit-scrollbar-thumb {
+  background: yellow;
 }
 
 .profile, .links {
   margin: 2rem 0;
   height: auto;
-  border: 1px solid orange;
+  background: orange;
   display: grid;
   grid-gap: 10px;
-}
-.profile div, .links div {
-  border: 1px solid violet;
 }
 
 .item1 {

@@ -1,6 +1,5 @@
 @import "cateh_style";
 
-
 .header{
     width: 100%;
     text-align: center;
@@ -16,11 +15,11 @@ nav{
     .navigation{
         background: $fon_white;
         @extend %flex_row;
-        height: 5.5rem;
+        height: 6.2rem;
         border-bottom: 1px solid $gray_border;
 
         // LOGO
-        .logo{ height: 50%; }
+        .logo{ height: 80%; }
         #input_file{
             overflow: hidden;
             position: absolute;
@@ -85,7 +84,7 @@ nav{
         // PANEL BUTTONS
         .panel_buttons{
             width: 100%;
-            height: 90px;
+            height: 100%;
             @extend %flex_row;
             justify-content:flex-end;
         }  

@@ -31,11 +31,11 @@ include('head_code.php'); ?>
                 </span>
                 <span class="text_info count">
                     <p class="bold">Выполнено за месяц:</p>
-                    <p class="opacity">50</p>
+                    <p class="opacity font_18">50</p>
                 </span>
                 <span class="text_info count">
                     <p class="bold">Выполнено за все время:</p>
-                    <p class="opacity">50</p>
+                    <p class="opacity font_18">50</p>
                 </span>
                 <div class="mobile_count">
                     <span class="text_info mobile_item">
