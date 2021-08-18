@@ -138,37 +138,36 @@
 
 // ************* @MEDIA *************
 
-// ********** MEDIA MIN 1163PX *************
-@media (min-width: 1163px) {
-    .item_table, .head_name{ font-size: 18px; }
-    .item_table button{ display: block; margin-left: 2rem; }
-    .head_name{ 
-        width: 88%;
-        padding:0 10% 0 0;
-    }
-    .item_info{ width: 100%; padding: 1.2rem;}
-    .items{ padding: 2% 0; }
-}
+// // ********** MEDIA MIN 1163PX *************
+// @media (min-width: 1163px) {
+//     .item_table, .head_name{ font-size: 18px; }
+//     .item_table button{ display: block; margin-left: 2rem; }
+//     .head_name{ 
+//         width: 88%;
+//         padding:0 10% 0 0;
+//     }
+//     .item_info{ width: 100%; padding: 1.2rem;}
+//     .items{ padding: 2% 0; }
+// }
 
-// ********** MEDIA MAX 1163PX *************
-@media (max-width: 1163px) {
-    .head_name{ 
-        width: 84%;
-        padding: 0 3%;
-    }
-    .items{ width: 65%; }
-    .item_table button{margin-left: 40px; }
-    .item_info{ 
-        width: 100%; 
-        padding: 1.2rem;        
-        background: $fon_table;
-    }
-}
+// // ********** MEDIA MAX 1163PX *************
+// @media (max-width: 1163px) {
+//     .head_name{ 
+//         width: 84%;
+//         padding: 0 3%;
+//     }
+//     .items{ width: 65%; }
+//     .item_table button{margin-left: 40px; }
+//     .item_info{ 
+//         width: 100%; 
+//         padding: 1.2rem;        
+//         background: $fon_table;
+//     }
+// }
 
 // ********** MEDIA MIN 801px *************
 @media (min-width: 801px) {  
     .profile{ 
-        grid-template-columns: 11rem auto 11rem;
         grid-template-areas: 'item1 item1 item1 item1 item1 item1',
                             'item2 item4 item4 item5 item5 item5',
                             'item2 item4 item4 item6 item6 item3'; 
@@ -202,8 +201,8 @@
 // ********** MEDIA MAX 800px *************
 @media (max-width: 800px) {  
     .profile{ 
-        grid-template-columns: repeat(1, minmax(320px, 1500px));
-        grid-template-areas: 'item1' 'item3' 'item2'; 
+        // grid-template-columns: repeat(1, minmax(320px, 1500px));
+        // grid-template-areas: 'item1' 'item3' 'item2'; 
     }
     .hidden{ display: none;}
     .buttons{ flex-direction: row;
