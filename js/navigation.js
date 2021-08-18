@@ -30,10 +30,13 @@ $(document).ready(function(){
             elem.addEventListener('click',function(){
             window.location.href = 'order.php'; });
         }
+
+        $('#main_logo_navigation').on('click',function(){
+            window.location.href = 'sysadmin.php';
+        })
     }());
-    $('#main_logo_navigation').click(function(){
-        window.location.href = 'sysadmin.php';
-    })
+
+    
     
     (function toggleButton(){
         let button = false;

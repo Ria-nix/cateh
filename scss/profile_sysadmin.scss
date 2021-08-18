@@ -1,29 +1,37 @@
 @import 'cateh_style';
 @import 'navigation';
 
+#red{ background: $light_red;}
+#orange{ background: $light_orange;}
+#yellow{ background: $light_yellow;}
+#light_green{ background: $light_green;}
+#dark_green{ background: $dark_green;}
+
 .profile_buttons{
     @extend %grid;
     background: $fon_white;
-    // align-items: center;
-    // text-align: center;
-    // justify-content: center;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
 }
+.profile
 .profile {
-    padding: 2rem 1.5% 2.5% 1.5%;
+    padding: 2rem 0 2.5% 0;
     margin: 0 2%;
     display: grid;    
     background: $fon_white;
 }
 .role{ 
-    grid-area: item1; 
-    width: 100px;
-    height: 100px;
-    border: 1px solid palegoldenrod;
+    grid-area: role; 
+    padding: 0 0 1rem 0; 
+    border: 1px solid blueviolet;
 }
+
 .image{ 
     display: flex;
-    grid-area: item2;
-    border: 1px solid pink;
+    grid-area: image;
+    width: 11rem;
+    border: 1px solid palegoldenrod;
     .logo_organization{
         width: 11rem;
         height:11rem; 
@@ -37,51 +45,34 @@
     }
 }
 .number{ 
-    grid-area: item6;
-    width: 100px;
-    height: 100px;
+    grid-area: number_tel;
     border: 1px solid red;
+    @extend %flex_row;
+    align-items: center;
+    line-height:2rem;
+    margin-left: auto;
 }
+.item_rating{ border-radius: 5px; }
 .rating{
-    grid-area: item5;
-    width: 100px;
-    height: 100px;
-    border: 1px solid blueviolet;
+    grid-area: rating;
+    display: flex;
+    border: 1px solid palegreen;
 }
 .text{
-    grid-area: item4;
-    width: 100px;
-    height: 100px;
-    border: 1px solid blue;
+    grid-area: col_text;
     display: flex;
+    border: 1px solid paleturquoise;
     flex-direction: column;        
 }
 .bold{ letter-spacing: 0.5px; }
 .buttons{ 
-    grid-area: item5;
-    width: 100px;
-    height: 100px;
-    border: 1px solid green;
+    grid-area: buttons;
+    border: 1px solid peachpuff;
     display: flex;
     button{ @extend %flex_row; }
 }
 
 // ***************** NAME OF TABLE (buttons) *****************
-.tabs{    
-    margin: 1.2rem 0 0 2%;
-    display: flex;
-    align-items: flex-end;
-    label{
-        padding: 10px 20px;
-        letter-spacing: 0.8px;
-        border-top-right-radius: 10px;
-        border-top-left-radius: 10px;
-    }
-} 
-.none_label{
-    display: none;
-    border-bottom:none;
-}
 
 // *********** CONTENT ****************
 .content_wrap{
@@ -138,52 +129,135 @@
 
 // ************* @MEDIA *************
 
-// // ********** MEDIA MIN 1163PX *************
-// @media (min-width: 1163px) {
-//     .item_table, .head_name{ font-size: 18px; }
-//     .item_table button{ display: block; margin-left: 2rem; }
-//     .head_name{ 
-//         width: 88%;
-//         padding:0 10% 0 0;
-//     }
-//     .item_info{ width: 100%; padding: 1.2rem;}
-//     .items{ padding: 2% 0; }
-// }
+// ********** MEDIA MIN 1163PX *************
+@media (min-width: 1163px) {
+    .item_table, .head_name{ font-size: 18px; }
+    .item_table button{ display: block; margin-left: 2rem; }
+    .head_name{ 
+        width: 88%;
+        padding:0 10% 0 0;
+    }
+    .item_info{ width: 100%; padding: 1.2rem;}
+    .items{ padding: 2% 0; }
+}
 
-// // ********** MEDIA MAX 1163PX *************
-// @media (max-width: 1163px) {
-//     .head_name{ 
-//         width: 84%;
-//         padding: 0 3%;
-//     }
-//     .items{ width: 65%; }
-//     .item_table button{margin-left: 40px; }
-//     .item_info{ 
-//         width: 100%; 
-//         padding: 1.2rem;        
-//         background: $fon_table;
-//     }
-// }
+// ********** MEDIA MAX 1163PX *************
+@media (max-width: 1163px) {
+    .head_name{ 
+        width: 84%;
+        padding: 0 3%;
+    }
+    .items{ width: 65%; }
+    .item_table button{margin-left: 40px; }
+    .item_info{ 
+        width: 100%; 
+        padding: 1.2rem;        
+        background: $fon_table;
+    }
+}
+
+// ********** MEDIA MIN 1000px *************
+@media (min-width: 1000px) {  
+    .profile{ 
+        grid-template-areas: 'role role role role role role'
+                            'image col_text col_text rating rating rating'
+                            'image col_text col_text number_tel buttons buttons'; 
+    }
+}
+// ********** MEDIA MAX 1000px *************
+@media (max-width: 1000px) {  
+    // .profile{ 
+    //     grid-template-areas: 'role role role role role role'
+    //                         'image col_text col_text rating rating rating'
+    //                         '... ... ... number_tel buttons buttons'; 
+    // }
+    // .rating{ 
+    //     align-items: flex-end;
+    //     flex-direction: column; 
+    //     .item_rating{ padding: 0.5rem 0;}
+    // }
+}
 
 // ********** MEDIA MIN 801px *************
 @media (min-width: 801px) {  
-    .profile{ 
-        grid-template-areas: 'item1 item1 item1 item1 item1 item1',
-                            'item2 item4 item4 item5 item5 item5',
-                            'item2 item4 item4 item6 item6 item3'; 
+        // b{ margin: 2rem 0;}
+        // .rating{ 
+        //     justify-content: flex-end;
+        //     .item_rating{
+        //         width: 80px;
+        //         height: 30px;
+        //         margin: 0 0 0 1rem;
+        //     }
+        // }
+    
+        // .buttons{  
+        //     align-items: flex-end;
+        //     flex-direction: column;
+        //     button{ padding: 6px 15px;
+        //             margin: 1.5rem 0 0 0;
+        //         span{margin: 0 5px 0 0;}
+        //     }  
+        // }
+        // .text{         
+        //     align-items: flex-start;
+        //     justify-content: space-evenly;
+        //     margin: 0 0 0 2rem; 
+        //     .opacity{ 
+        //         padding: 0 0 0 2rem;
+        //         grid-area: text;
+        //     }
+        //     .text_info{ 
+        //         display: flex;
+        //         flex-direction: row;
+        //         align-items: center;
+        //     }
+        // }
+        // .mobile_count{ display: none;}
+}
 
+// ********** MEDIA MAX 800px *************
+@media (max-width: 800px) {  
+    
+    .head_table{
+        font-size: 14px;
+        justify-content: center;
+    }  
+    .item_table button{ display: none; }
+    .item_table{ width: 100%;  }
+    .head_name{  width: 100%;  }
+}
+
+// ********** MEDIA MIN 580PX *************
+@media (min-width: 580px) {
+    .profile{ 
+        grid-template-columns: repeat(1, minmax(320px, 1500px));
+        grid-template-areas: 'role role role role role role'
+                            'image col_text col_text rating rating rating'
+                            '... ... ... number_tel buttons buttons'; 
+
+                            b{ margin: 2rem 0;}
+        .rating{ 
+            justify-content: flex-end;
+            flex-direction: column;
+            .item_rating{
+                width: 80px;
+                height: 30px;
+                margin: 0 0 0 1rem;
+            }
+        }
+    
         .buttons{  
             align-items: flex-end;
-            justify-content: space-around;
             flex-direction: column;
             button{ padding: 6px 15px;
+                    margin: 1.5rem 0 0 0;
                 span{margin: 0 5px 0 0;}
             }  
         }
         .text{         
             align-items: flex-start;
             justify-content: space-evenly;
-            margin: 0.5rem 2rem; 
+            margin: 0 0 0 2rem; 
             .opacity{ 
                 padding: 0 0 0 2rem;
                 grid-area: text;
@@ -195,16 +269,43 @@
             }
         }
         .mobile_count{ display: none;}
-    }   
+    }
+    // .rating{ 
+    //     align-items: flex-end;
+    //     flex-direction: column; 
+    //     .item_rating{ padding: 0.5rem 0;}
+    // }
+     // ************ NAMES OF TABLE (buttons) ************
+    .head_table{
+        display: grid;
+        grid-template-columns: repeat(1, minmax(320px, 1500px));
+        .head_name{ padding: 0 50px; }
+    }    
+    .mobile_version{ display: none; }
+    .item_info{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
 }
 
-// ********** MEDIA MAX 800px *************
-@media (max-width: 800px) {  
+// ********** MEDIA MAX 580PX *************
+@media (max-width: 580px) {
     .profile{ 
-        // grid-template-columns: repeat(1, minmax(320px, 1500px));
-        // grid-template-areas: 'item1' 'item3' 'item2'; 
+        grid-template-columns: repeat(1, minmax(320px, 1500px));
+        grid-template-areas: 'role' 'image' 'buttons' 'col_text' 'rating' 'number_tel'; 
     }
-    .hidden{ display: none;}
+    .rating{ 
+        justify-content: space-between;
+        flex-direction: row; 
+        .item_rating{
+            width: 15%;
+            height: 20px;
+            // margin: 0 1rem 0 0;
+        }
+    }
+    
+    .hidden, br{ display: none;}
     .buttons{ flex-direction: row;
         justify-content: center;
         align-items: center;
@@ -239,54 +340,18 @@
         display: flex;
         justify-content: center;
         flex-direction: row;
-        margin: 0.5rem 0;
+        // margin: 0.5rem 0;
 
         .text_info{
             display: flex;
             flex-direction: column;
             align-items: center;
-            width: 50%;
-            padding: 0.5rem;
+            margin: 0.5rem;
             text-align: center;
         }
-    }
-    .head_table{
-        font-size: 14px;
-        justify-content: center;
-    }  
-    .item_table button{ display: none; }
-    .item_table{ width: 100%;  }
-    .head_name{  width: 100%;  }
-}
+    } 
 
-// ********** MEDIA MIN 580PX *************
-@media (min-width: 580px) {
      // ************ NAMES OF TABLE (buttons) ************
-    label{ 
-        border:1px solid rgba($blue, 0.5); 
-        background: $fon_table;
-    }
-    .head_table{
-        display: grid;
-        grid-template-columns: repeat(1, minmax(320px, 1500px));
-        .head_name{ padding: 0 50px; }
-    }    
-    .mobile_version{ display: none; }
-    .item_info{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
-}
-
-// ********** MEDIA MAX 580PX *************
-@media (max-width: 580px) {
-     // ************ NAMES OF TABLE (buttons) ************
-    label{
-        border:1px solid $fon_white;
-        background: $blue;
-        color: $fon_white;
-    }
     .head_table{display: none;}
     .table_sysadmin{
         border: none;

@@ -7,7 +7,7 @@ include('head_code.php'); ?>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="<?php echo $css_profile_organization ?>">
+    <link rel="stylesheet" href="<?php echo $css_profile_sysadmin ?>">
     <?php echo $favicon, $jquery  ?>
     <title><?php echo $profile_sysadmin ?></title>
 </head>
@@ -19,18 +19,15 @@ include('head_code.php'); ?>
 
     <div class="profile_buttons">
         <div class="profile">          
-        <p class="font_18 role">Администратор</p> 
+        <p class="role ">Администратор</p> 
             <div class="image"> 
-                <!-- <div class="logo_organization">
+                <div class="logo_organization">
                     <img src="icon/michael.jpg" alt="main logo">
-                </div> -->
-                jsfjsafkjslkdf
+                </div>
             </div>
             <div class="text"> 
-                jsdfljsdkjf
-                <!-- <span class="text_info">
-                    <p class="bold hidden">Название:</p>
-                    <p class="opacity spacing">ООО "КРЕАТИВ ТЕКНОЛОДЖИС" </p>
+                <span class="text_info">
+                    <p class="spacing font_22">Михаил Куприн</p>
                 </span>
                 <span class="text_info count">
                     <p class="bold">Выполнено за месяц:</p>
@@ -41,11 +38,11 @@ include('head_code.php'); ?>
                     <p class="opacity font_18">50</p>
                 </span>
                 <span class="text_info count">
-                    <p class="bold">Текущие заказы</p>
+                    <p class="bold">Текущие заказы:</p>
                     <p class="opacity font_18">50</p>
-                </span> -->
+                </span>
 
-                <!-- <div class="mobile_count">
+                <div class="mobile_count">
 
                     <span class="text_info mobile_item">
                         <p class="opacityf font_18">50</p>
@@ -60,19 +57,23 @@ include('head_code.php'); ?>
                         <p class="bold">Текущие заказы</p>
                     </span>
 
-                </div> -->
+                </div>
 
             </div>
-            <div class="buttons">kjsfksjfd
-                <!-- <button class="button border"><span class="edit"><img src="icon/edit.svg" alt=""></span><p class="hidden">Редактировать</p></button>
-                <button class="button border"><span class="delete"><img src="icon//trash 1.svg" alt=""></span><p class="hidden">Удалить</p></button> -->
+            <div class="buttons">
+                <button class="button border"><span class="edit"><img src="icon/edit.svg" alt=""></span><p class="hidden">Редактировать</p></button>
+                <button class="button border"><span class="delete"><img src="icon//trash 1.svg" alt=""></span><p class="hidden">Удалить</p></button>
             </div>
 
             <div class="number">
-                <p class="number spacing">Номер телефона: <br><b>+7(***)*** - 00 - 00</b> </p> 
+                <p class="spacing">Номер телефона: <br><b> +7(***)*** - 00 - 00</b> </p> 
             </div>
             <div class="rating">
-                kfslkf;lsdfk;al
+                <div class="item_rating" id="red"></div>
+                <div class="item_rating" id="orange"></div>
+                <div class="item_rating" id="yellow"></div>
+                <div class="item_rating" id="light_green"></div>
+                <div class="item_rating" id="dark_green"></div>
             </div>
         </div>
 
@@ -119,8 +120,8 @@ include('head_code.php'); ?>
 
     </div>
 
-    <script src="js/modal_windows.js"></script>
-    <script src="js/profile_sysadmin.js"></script>
+    <!-- <script src="js/modal_windows.js"></script> -->
+    <!-- <script src="js/profile_sysadmin.js"></script> -->
     <script src="<?php echo $navigation_panel ?>"></script>
 </body>
 
