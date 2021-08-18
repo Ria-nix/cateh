@@ -687,12 +687,15 @@ nav .navigation .door img {
 
 .profile {
   padding: 2rem 1.5% 2.5% 1.5%;
+  margin: 0 2%;
   display: grid;
   background: #F5F5F5;
 }
 
 .role {
   grid-area: item1;
+  width: 100px;
+  height: 100px;
   border: 1px solid palegoldenrod;
 }
 
@@ -717,16 +720,22 @@ nav .navigation .door img {
 
 .number {
   grid-area: item6;
+  width: 100px;
+  height: 100px;
   border: 1px solid red;
 }
 
 .rating {
   grid-area: item5;
+  width: 100px;
+  height: 100px;
   border: 1px solid blueviolet;
 }
 
 .text {
   grid-area: item4;
+  width: 100px;
+  height: 100px;
   border: 1px solid blue;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -743,6 +752,8 @@ nav .navigation .door img {
 
 .buttons {
   grid-area: item5;
+  width: 100px;
+  height: 100px;
   border: 1px solid green;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -874,7 +885,7 @@ nav .navigation .door img {
 @media (min-width: 801px) {
   .profile {
     grid-template-columns: 11rem auto 11rem;
-    grid-template-areas: "item1 item1 item1 item1 item1 item1", "item2 item2 item4 item4 item5 item5", "item2 item2 item4 item4 item6 item3";
+    grid-template-areas: "item1 item1 item1 item1 item1 item1", "item2 item4 item4 item5 item5 item5", "item2 item4 item4 item6 item6 item3";
   }
   .profile .buttons {
     -webkit-box-align: end;
