@@ -85,7 +85,8 @@ body{ background: $fon_white; }
         align-items: center;     
         margin: 1.5% 0;
         .img_buttons, .image{  @extend %flex_row; }
-        .image{                    
+        .image{                
+            border: 0.5px solid $blue;                
             width: 11rem;
             height: 11rem;  
             img{

@@ -74,9 +74,9 @@ include('head_code.php'); ?>
             </div>
             <!-- TABLE -->
             <div class="table_sysadmin" id="table">
-                <div class="item_table"><div class="item_info border"><p class="main_fio">milaninn</p><div class="mobile_version"><div class="mobile_title"><p>Выполнено за месяц</p><p>Текущих заказов </p><p class="role">Роль</p></div><div class="mobile_info"><p class="complete_order">reorewkjlkfs</p><p class="current_order">sdkjflskjfkksjkd</p><p class="role">newksjfksdf</p></div></div><p class="mobile_none complete_order">kjkjsdfjfjkkljdsfk</p><p class="mobile_none current_order">jdslfjsdkjfskd</p><p class="mobile_none role"><skdf;lskdfksdfksdlfkls/p></div><button class="click button border font_16">Просмотреть</button></div>
-                <div class="item_table"><div class="item_info border"><p class="main_fio">milaninn</p><div class="mobile_version"><div class="mobile_title"><p>Выполнено за месяц</p><p>Текущих заказов </p><p class="role">Роль</p></div><div class="mobile_info"><p class="complete_order">reorewkjlkfs</p><p class="current_order">sdkjflskjfkksjkd</p><p class="role">newksjfksdf</p></div></div><p class="mobile_none complete_order">kjkjsdfjfjkkljdsfk</p><p class="mobile_none current_order">jdslfjsdkjfskd</p><p class="mobile_none role">skdf;lskdfksdfksdlfkls</p></div><button class="click button border font_16">Просмотреть</button></div>
-                <div class="item_table"><div class="item_info border"><p class="main_fio">milaninn</p><div class="mobile_version"><div class="mobile_title"><p>Выполнено за месяц</p><p>Текущих заказов </p><p class="role">Роль</p></div><div class="mobile_info"><p class="complete_order">reorewkjlkfs</p><p class="current_order">sdkjflskjfkksjkd</p><p class="role">newksjfksdf</p></div></div><p class="mobile_none complete_order">kjkjsdfjfjkkljdsfk</p><p class="mobile_none current_order">jdslfjsdkjfskd</p><p class="mobile_none role"><skdf;lskdfksdfksdlfkls/p></div><button class="click button border font_16">Просмотреть</button></div>
+                <div class="item_table"><div class="item_info border"><p class="main_fio">заказа</p><div class="mobile_version"><div class="mobile_title"><p>Выполнено за месяц</p><p>Текущих заказов </p><p class="role">Роль</p></div><div class="mobile_info"><p class="complete_order">reorewkjlkfs</p><p class="current_order">sdkjflskjfkksjkd</p><p class="role">newksjfksdf</p></div></div><p class="mobile_none complete_order">kjkjsdfjfjkkljdsfk</p><p class="mobile_none current_order">jdslfjsdkjfskd</p><p class="mobile_none role"><skdf;lskdfksdfksdlfkls/p></div><button class="click button border font_16">Просмотреть</button></div>
+                <div class="item_table"><div class="item_info border"><p class="main_fio">заказа</p><div class="mobile_version"><div class="mobile_title"><p>Выполнено за месяц</p><p>Текущих заказов </p><p class="role">Роль</p></div><div class="mobile_info"><p class="complete_order">reorewkjlkfs</p><p class="current_order">sdkjflskjfkksjkd</p><p class="role">newksjfksdf</p></div></div><p class="mobile_none complete_order">kjkjsdfjfjkkljdsfk</p><p class="mobile_none current_order">jdslfjsdkjfskd</p><p class="mobile_none role">skdf;lskdfksdfksdlfkls</p></div><button class="click button border font_16">Просмотреть</button></div>
+                <div class="item_table"><div class="item_info border"><p class="main_fio">заказа</p><div class="mobile_version"><div class="mobile_title"><p>Выполнено за месяц</p><p>Текущих заказов </p><p class="role">Роль</p></div><div class="mobile_info"><p class="complete_order">reorewkjlkfs</p><p class="current_order">sdkjflskjfkksjkd</p><p class="role">newksjfksdf</p></div></div><p class="mobile_none complete_order">kjkjsdfjfjkkljdsfk</p><p class="mobile_none current_order">jdslfjsdkjfskd</p><p class="mobile_none role"><skdf;lskdfksdfksdlfkls/p></div><button class="click button border font_16">Просмотреть</button></div>
                 
             </div> 
         </div>
@@ -93,13 +93,13 @@ include('head_code.php'); ?>
             <div class="table_sysadmin" id="table">
                 <div class="item_table">
                     <div class="item_info border">
-                        <p class="main_fio">milaninn</p><div class="mobile_version"><div class="mobile_title"><p>Выполнено за месяц</p><p>Текущих заказов </p><p class="role">Роль</p></div><div class="mobile_info"><p class="complete_order">reorewkjlkfs</p><p class="current_order">sdkjflskjfkksjkd</p><p class="role">newksjfksdf</p></div></div><p class="mobile_none complete_order">kjkjsdfjfjkkljdsfk</p><p class="mobile_none current_order">jdslfjsdkjfskd</p><p class="mobile_none role"><skdf;lskdfksdfksdlfkls/p></div></div>
+                        <p class="main_fio">Адрес</p><div class="mobile_version"><div class="mobile_title"><p>Выполнено за месяц</p><p>Текущих заказов </p><p class="role">Роль</p></div><div class="mobile_info"><p class="complete_order">reorewkjlkfs</p><p class="current_order">sdkjflskjfkksjkd</p><p class="role">newksjfksdf</p></div></div><p class="mobile_none complete_order">kjkjsdfjfjkkljdsfk</p><p class="mobile_none current_order">jdslfjsdkjfskd</p><p class="mobile_none role"><skdf;lskdfksdfksdlfkls/p></div></div>
                 <div class="item_table">
                     <div class="item_info border">
-                        <p class="main_fio">milaninn</p><div class="mobile_version"><div class="mobile_title"><p>Выполнено за месяц</p><p>Текущих заказов </p><p class="role">Роль</p></div><div class="mobile_info"><p class="complete_order">reorewkjlkfs</p><p class="current_order">sdkjflskjfkksjkd</p><p class="role">newksjfksdf</p></div></div><p class="mobile_none complete_order">kjkjsdfjfjkkljdsfk</p><p class="mobile_none current_order">jdslfjsdkjfskd</p><p class="mobile_none role">skdf;lskdfksdfksdlfkls</p></div></div>
+                        <p class="main_fio">Адрес</p><div class="mobile_version"><div class="mobile_title"><p>Выполнено за месяц</p><p>Текущих заказов </p><p class="role">Роль</p></div><div class="mobile_info"><p class="complete_order">reorewkjlkfs</p><p class="current_order">sdkjflskjfkksjkd</p><p class="role">newksjfksdf</p></div></div><p class="mobile_none complete_order">kjkjsdfjfjkkljdsfk</p><p class="mobile_none current_order">jdslfjsdkjfskd</p><p class="mobile_none role">skdf;lskdfksdfksdlfkls</p></div></div>
                 <div class="item_table">
                     <div class="item_info border">
-                        <p class="main_fio">milaninn</p><div class="mobile_version"><div class="mobile_title"><p>Выполнено за месяц</p><p>Текущих заказов </p><p class="role">Роль</p></div><div class="mobile_info"><p class="complete_order">reorewkjlkfs</p><p class="current_order">sdkjflskjfkksjkd</p><p class="role">newksjfksdf</p></div></div><p class="mobile_none complete_order">kjkjsdfjfjkkljdsfk</p><p class="mobile_none current_order">jdslfjsdkjfskd</p><p class="mobile_none role"><skdf;lskdfksdfksdlfkls/p></div></div>
+                        <p class="main_fio">Адрес</p><div class="mobile_version"><div class="mobile_title"><p>Выполнено за месяц</p><p>Текущих заказов </p><p class="role">Роль</p></div><div class="mobile_info"><p class="complete_order">reorewkjlkfs</p><p class="current_order">sdkjflskjfkksjkd</p><p class="role">newksjfksdf</p></div></div><p class="mobile_none complete_order">kjkjsdfjfjkkljdsfk</p><p class="mobile_none current_order">jdslfjsdkjfskd</p><p class="mobile_none role"><skdf;lskdfksdfksdlfkls/p></div></div>
             </div> 
         </div>
 
@@ -113,10 +113,78 @@ include('head_code.php'); ?>
                 </div>
             </div>
             <!-- TABLE -->
+
+            <!-- //******************************************* */ -->
             <div class="table_sysadmin" id="table">
-                <div class="item_table"><div class="item_info border"><p class="main_fio">milaninn</p><div class="mobile_version"><div class="mobile_title"><p>Выполнено за месяц</p><p>Текущих заказов </p><p class="role">Роль</p></div><div class="mobile_info"><p class="complete_order">reorewkjlkfs</p><p class="current_order">sdkjflskjfkksjkd</p><p class="role">newksjfksdf</p></div></div><p class="mobile_none complete_order">kjkjsdfjfjkkljdsfk</p><p class="mobile_none current_order">jdslfjsdkjfskd</p><p class="mobile_none role"><skdf;lskdfksdfksdlfkls/p></div><button class="click button border font_16">Просмотреть</button></div>
-                <div class="item_table"><div class="item_info border"><p class="main_fio">milaninn</p><div class="mobile_version"><div class="mobile_title"><p>Выполнено за месяц</p><p>Текущих заказов </p><p class="role">Роль</p></div><div class="mobile_info"><p class="complete_order">reorewkjlkfs</p><p class="current_order">sdkjflskjfkksjkd</p><p class="role">newksjfksdf</p></div></div><p class="mobile_none complete_order">kjkjsdfjfjkkljdsfk</p><p class="mobile_none current_order">jdslfjsdkjfskd</p><p class="mobile_none role">skdf;lskdfksdfksdlfkls</p></div><button class="click button border font_16">Просмотреть</button></div>
-                <div class="item_table"><div class="item_info border"><p class="main_fio">milaninn</p><div class="mobile_version"><div class="mobile_title"><p>Выполнено за месяц</p><p>Текущих заказов </p><p class="role">Роль</p></div><div class="mobile_info"><p class="complete_order">reorewkjlkfs</p><p class="current_order">sdkjflskjfkksjkd</p><p class="role">newksjfksdf</p></div></div><p class="mobile_none complete_order">kjkjsdfjfjkkljdsfk</p><p class="mobile_none current_order">jdslfjsdkjfskd</p><p class="mobile_none role"><skdf;lskdfksdfksdlfkls/p></div><button class="click button border font_16">Просмотреть</button></div>
+                <div class="item_table">
+                    <div class="item_info border">
+                        <p class="main_fio">Клиент</p>
+                        <div class="mobile_version">
+                            <div class="mobile_title">
+                                <p>Клиент</p>
+                                <p>Номер телефона</p>
+                                <p>Адрес</p>
+                                <p class="role">Роль</p>
+                            </div>
+                            <div class="mobile_info">
+                                <p class="complete_order">something new client</p>
+                                <p class="current_order">something new client</p>
+                                <p class="role">something new client</p>
+                            </div>
+                        </div>
+                        <p class="mobile_none complete_order">something new client</p>
+                        <p class="mobile_none current_order">something new client</p>
+                        <p class="mobile_none role">skdf;something new client</p>
+                    </div>
+                    <button class="click button border font_16">Просмотреть</button>
+                </div>
+                <!-- //******************************************* */ -->
+                <div class="item_table">
+                    <div class="item_info border">
+                        <p class="main_fio">Клиент</p>
+                        <div class="mobile_version">
+                            <div class="mobile_title">
+                                <p>Клиент</p>
+                                <p>Номер телефона</p>
+                                <p>Адрес</p>
+                                <p>Роль</p>
+                            </div>
+                            <div class="mobile_info">
+                                <p class="complete_order">something new client</p>
+                                <p class="current_order">something new client</p>
+                                <p class="role">something new client</p>
+                            </div>
+                        </div>
+                        <p class="mobile_none complete_order">something new client</p>
+                        <p class="mobile_none current_order">something new client</p>
+                        <p class="mobile_none role">kdf;something new client</p>
+                    </div>
+                    <button class="click button border font_16">Просмотреть</button>
+                </div>
+                <!-- //******************************************* */ -->
+                <div class="item_table">
+                    <div class="item_info border">
+                        <p class="main_fio">Клиент</p>
+                        <div class="mobile_version">
+                            <div class="mobile_title">
+                                <p>Клиент</p>
+                                <p>Номер телефона</p>
+                                <p>Адрес</p>
+                                <p>Роль</p>
+                            </div>
+                            <div class="mobile_info">
+                                <p class="complete_order">something new client</p>
+                                <p class="current_order">something new client</p>
+                                <p class="role">something new client</p>
+                            </div>
+                        </div>
+                        <p class="mobile_none complete_order">something new client</p>
+                        <p class="mobile_none current_order">something new client</p>
+                        <p class="mobile_none role">skdf;something new client</p>
+                    </div>
+                    <button class="click button border font_16">Просмотреть</button>
+                </div>
+                <!-- //******************************************* */ -->
             </div> 
         </div>
 

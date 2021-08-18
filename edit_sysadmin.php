@@ -53,11 +53,11 @@
             <div class="main_fields">
                 <label for="state" class="text_width">Статус <i class='red'>*</i></label>
                 <div class="searchable border">
-                    <input type="text" class="border_none font_18 state_value" value="Системный администратор">
+                    <input type="text" class="border_none font_16 state_value" value="Системный администратор">
                     <span id="polygon_state">
                         <img src="icon/Polygon.svg" alt="polygon">
                     </span>
-                    <ul class="font_18 spacing none" id="list_state">
+                    <ul class="font_16 spacing none" id="list_state">
                         <li class="states">Системный администратор</li>
                         <li class="states">Администратор</li>
                     </ul>                    

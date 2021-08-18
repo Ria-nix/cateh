@@ -31,6 +31,9 @@ $(document).ready(function(){
             window.location.href = 'order.php'; });
         }
     }());
+    $('#main_logo_navigation').click(function(){
+        window.location.href = 'sysadmin.php';
+    })
     
     (function toggleButton(){
         let button = false;

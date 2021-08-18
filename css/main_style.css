@@ -537,6 +537,10 @@ nav .navigation .door img {
   height: 23px;
 }
 
+#main_logo_navigation:hover {
+  cursor: pointer;
+}
+
 @media (min-width: 1163px) {
   .toggle_bar {
     display: none;

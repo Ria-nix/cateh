@@ -44,7 +44,6 @@
     display: flex;
     align-items: flex-end;
     label{
-        border: 1px solid rgba($blue, 0.5);
         padding: 10px 20px;
         letter-spacing: 0.8px;
         border-top-right-radius: 10px;
@@ -53,7 +52,7 @@
 } 
 .none_label{
     display: none;
-    border-bottom:1px solid $fon_table;
+    border-bottom:none;
 }
 
 // *********** CONTENT ****************
@@ -131,7 +130,11 @@
     }
     .items{ width: 65%; }
     .item_table button{margin-left: 40px; }
-    .item_info{ width: 100%; padding: 1.2rem;}
+    .item_info{ 
+        width: 100%; 
+        padding: 1.2rem;        
+        background: $fon_table;
+    }
 }
 
 // ********** MEDIA MIN 801px *************
@@ -286,7 +289,3 @@
     }
 }
 
-// ********** MEDIA MAX 410PX *************
-@media (max-width: 410px) {
-    .table_sysadmin{ padding: 40% 10px 0 10px; }
-}

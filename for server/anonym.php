@@ -1,18 +1,17 @@
-<?php  include(getRootPath() . "site/includes/dasha/v1/helper.php"); ?>
+<?php  include('head_code.php'); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <base href="/">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="site/pages/organisations/style.css">
+    <link rel="stylesheet" href="<?php echo $css_sysadmin ?>">
     <?php echo $favicon, $jquery  ?>
     <title><?php echo $organizations ?></title>
 </head>
 <body>
     <div class="header">
-        <?php  include_once(getRootPath() . "site/includes/dasha/v1/navigation/navigation.php");?>
+        <?php include_once('navigation.php');?> 
         <!-- THE END OF NAVIGATION PANEL -->        
             <div class="search">            
                 <p class="font_18 bold">Организации</p>
@@ -26,7 +25,7 @@
         <!-- HEAD TABLE -->
         <div class="head_table">
             <div class="head_name spacing_special">
-                <p>Название <span class="ask_des_arrow"><img src="site/includes/dasha/icons/up_arrow.svg" alt="arrow" id="arrow"></span></p>
+                <p>Название <span class="ask_des_arrow"><img src="icon/up_arrow.svg" alt="arrow" id="arrow"></span></p>
                 <p>Выполнено за месяц</p>
                 <p>Текущих заказов </p>
             </div>
@@ -34,7 +33,7 @@
         <!-- TABLE -->
         <div class="table_sysadmin" id="table"></div>  
     </div>
-    <script src="site/pages/organisations/script.js"></script>
+    <script src="scropt.js"></script>
     <script src="<?php  echo $navigation_panel ?>"></script>
 </body>
 </html>

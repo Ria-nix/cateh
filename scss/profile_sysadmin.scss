@@ -1,0 +1,290 @@
+@import 'cateh_style';
+@import 'navigation';
+
+.profile_buttons{
+    @extend %grid;
+    background: $fon_white;
+}
+.profile {
+    padding: 2rem 1.5% 2.5% 1.5%;
+    display: grid;    
+    background: $fon_white;
+}
+.image{ 
+    display: flex;
+    grid-area: item1;
+    .logo_organization{
+        width: 11rem;
+        height:11rem; 
+
+        img{
+            border-radius: 10px;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+}
+.text{
+    grid-area: item2;
+    display: flex;
+    flex-direction: column;        
+}
+.bold{ letter-spacing: 0.5px; }
+.buttons{ 
+    grid-area: item3;
+    display: flex;
+    button{ @extend %flex_row; }
+}
+
+// ***************** NAME OF TABLE (buttons) *****************
+.tabs{    
+    margin: 1.2rem 0 0 2%;
+    display: flex;
+    align-items: flex-end;
+    label{
+        padding: 10px 20px;
+        letter-spacing: 0.8px;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+    }
+} 
+.none_label{
+    display: none;
+    border-bottom:none;
+}
+
+// *********** CONTENT ****************
+.content_wrap{
+    border-top: 1px solid rgba($blue, 0.5);
+    @extend %grid;
+
+    //HEAD TABLE
+    .head_table{ 
+        background: $fon_table;
+        width: 100%;
+        height: 5rem;
+        .head_name{     
+            height: 100%;
+            @extend %flex_row;       
+            p{ 
+                flex:1; 
+                text-align: center; 
+            }
+            span > img{ 
+                transform: translateY(3px);
+                object-fit: contain;
+            }
+        }
+    }
+
+    // TABLE WITH INFO
+    .table_sysadmin{
+        margin: 0 2%;
+        border-top: 1px solid $blue;
+        @extend %flex_column;
+        .item_table{
+            width: 100%;
+            height: auto;
+            @extend %flex_row;
+            margin: 20px 0 0 0;   
+            .item_info > * {
+                flex:1;
+                text-align: center;
+            }
+            .item_info{ box-shadow: 0px 4px 10px 0px rgba($but_shadow, 0.15);
+                .main_fio{ text-align: center;}               
+            }
+            .click{ 
+                padding:18px 12px;
+                font-weight: initial;  
+                color: rgba($blue, 0.7);
+                letter-spacing: 0.5px;
+            }
+            .click:hover{ color: $blue; }
+        }
+        .item_table:last-child{ margin: 20px 0; }        
+    }
+}
+
+// ************* @MEDIA *************
+
+// ********** MEDIA MIN 1163PX *************
+@media (min-width: 1163px) {
+    .item_table, .head_name{ font-size: 18px; }
+    .item_table button{ display: block; margin-left: 2rem; }
+    .head_name{ 
+        width: 88%;
+        padding:0 10% 0 0;
+    }
+    .item_info{ width: 100%; padding: 1.2rem;}
+    .items{ padding: 2% 0; }
+}
+
+// ********** MEDIA MAX 1163PX *************
+@media (max-width: 1163px) {
+    .head_name{ 
+        width: 84%;
+        padding: 0 3%;
+    }
+    .items{ width: 65%; }
+    .item_table button{margin-left: 40px; }
+    .item_info{ 
+        width: 100%; 
+        padding: 1.2rem;        
+        background: $fon_table;
+    }
+}
+
+// ********** MEDIA MIN 801px *************
+@media (min-width: 801px) {  
+    .profile{ 
+        grid-template-columns: 11rem auto 11rem;
+        grid-template-areas: 'item1 item2 item3'; 
+
+        .buttons{  
+            align-items: flex-end;
+            justify-content: space-around;
+            flex-direction: column;
+            button{ padding: 6px 15px;
+                span{margin: 0 5px 0 0;}
+            }  
+        }
+        .text{         
+            align-items: flex-start;
+            justify-content: space-evenly;
+            margin: 0.5rem 2rem; 
+            .opacity{ 
+                padding: 0 0 0 2rem;
+                grid-area: text;
+            }
+            .text_info{ 
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+            }
+        }
+        .mobile_count{ display: none;}
+    }   
+}
+
+// ********** MEDIA MAX 800px *************
+@media (max-width: 800px) {  
+    .profile{ 
+        grid-template-columns: repeat(1, minmax(320px, 1500px));
+        grid-template-areas: 'item1' 'item3' 'item2'; 
+    }
+    .hidden{ display: none;}
+    .buttons{ flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        button{  
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 1rem;
+            img{
+                width: 1.8rem;
+                height: 1.8rem;
+            }
+        }
+    }
+    .text{
+        align-items: center;
+        .text_info{ padding: 0.5rem 0;}
+        .count{ display: none; }
+    }
+    .image{
+        align-items: center;
+        justify-content: center;
+    }
+
+    .bold{ 
+        width: 120px;
+        grid-area: text;
+    }
+    .mobile_count{ 
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        margin: 0.5rem 0;
+
+        .text_info{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 50%;
+            padding: 0.5rem;
+            text-align: center;
+        }
+    }
+    .head_table{
+        font-size: 14px;
+        justify-content: center;
+    }  
+    .item_table button{ display: none; }
+    .item_table{ width: 100%;  }
+    .head_name{  width: 100%;  }
+}
+
+// ********** MEDIA MIN 580PX *************
+@media (min-width: 580px) {
+     // ************ NAMES OF TABLE (buttons) ************
+    label{ 
+        border:1px solid rgba($blue, 0.5); 
+        background: $fon_table;
+    }
+    .head_table{
+        display: grid;
+        grid-template-columns: repeat(1, minmax(320px, 1500px));
+        .head_name{ padding: 0 50px; }
+    }    
+    .mobile_version{ display: none; }
+    .item_info{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+// ********** MEDIA MAX 580PX *************
+@media (max-width: 580px) {
+     // ************ NAMES OF TABLE (buttons) ************
+    label{
+        border:1px solid $fon_white;
+        background: $blue;
+        color: $fon_white;
+    }
+    .head_table{display: none;}
+    .table_sysadmin{
+        border: none;
+    }
+    .mobile_none{ display: none; }
+    .mobile_version{
+        display: flex;
+        flex-direction: row;  
+        justify-content: space-around;  
+
+        .mobile_title{
+            text-align: left;
+            color: rgba($blue, 0.85);
+            flex-basis: 60%;
+            p{ padding: 4% 0 0 3%;}            
+        }
+        .mobile_info{ 
+            flex-basis: 40%;
+            .complete_order, .current_order{ margin: 5% 0 3% 30%; }
+        }
+    }
+    .mobile_version > div{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 2% 0;
+        font-size: 15px;
+    }
+}
+

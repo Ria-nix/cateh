@@ -4,14 +4,13 @@
 body{ background: $fon_table;
     overflow: none;
 }
-body::-webkit-scrollbar { width: 0;}
+// body::-webkit-scrollbar { overflow: none;}
 
-.content{  @extend %grid;    
-}
+.content{  @extend %grid; }
 .header{
     width: 100%;
     text-align: center;
-    position: fixed;
+    // position: fixed;
     height: 200px;
     display: grid;
     justify-content: center;
@@ -23,13 +22,12 @@ body::-webkit-scrollbar { width: 0;}
     .section1{
         text-align: center;
         width: 100%;
-        position: fixed;
+        // position: fixed;
         background:red;
         height: 100px;
     }
     .section2{
-        margin-top: 100px;
-        min-height: 10vh;
+        height: 95vh;
         background:violet;
         overflow-y: scroll;
     }
@@ -37,10 +35,10 @@ body::-webkit-scrollbar { width: 0;}
 
 .section2::-webkit-scrollbar-thumb{
     width: 20px;
-    // background: green;
+    background: green;
 }
 .section2::-webkit-scrollbar-thumb{
-    // width: 20px;
+    width: 10px;
     background: yellow;
 }
 
@@ -52,18 +50,3 @@ body::-webkit-scrollbar { width: 0;}
     grid-gap: 10px;
 }
 
-.item1{ grid-area: 'item1';}
-.item2{ grid-area: 'item2';}
-.item3{ grid-area: 'item3';}
-
-@media (min-width: 501px){
-    .profile{ 
-        grid-template-areas: 'item1 item2 item3';
-    }
-}
-
-@media (max-width: 500px){
-    .profile{
-        grid-template-areas: 'item1' 'item3' 'item2';
-    }
-}

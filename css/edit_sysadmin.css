@@ -538,6 +538,10 @@ nav .navigation .door img {
   height: 23px;
 }
 
+#main_logo_navigation:hover {
+  cursor: pointer;
+}
+
 @media (min-width: 1163px) {
   .toggle_bar {
     display: none;
@@ -1077,6 +1081,7 @@ body {
   margin: 1.5% 0;
 }
 .content_set .img_organization .image {
+  border: 0.5px solid #112742;
   width: 11rem;
   height: 11rem;
 }

@@ -4,7 +4,7 @@
 
 <!-- NAVIGATION PANEL      -->
 <div class="navigation">            
-    <img src="icon/logo_server.svg" class="logo" alt="logo">
+    <img src="icon/logo_server.svg" class="logo" alt="logo" id="main_logo_navigation">
 
     <!-- TOOGLE BUTTON -->
     <div class="toggle_bar">

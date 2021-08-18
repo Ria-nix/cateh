@@ -537,6 +537,10 @@ nav .navigation .door img {
   height: 23px;
 }
 
+#main_logo_navigation:hover {
+  cursor: pointer;
+}
+
 @media (min-width: 1163px) {
   .toggle_bar {
     display: none;
@@ -737,7 +741,6 @@ nav .navigation .door img {
           align-items: flex-end;
 }
 .tabs label {
-  border: 1px solid rgba(17, 39, 66, 0.5);
   padding: 10px 20px;
   letter-spacing: 0.8px;
   border-top-right-radius: 10px;
@@ -746,7 +749,7 @@ nav .navigation .door img {
 
 .none_label {
   display: none;
-  border-bottom: 1px solid #EDEDED;
+  border-bottom: none;
 }
 
 .content_wrap {
@@ -848,6 +851,7 @@ nav .navigation .door img {
   .item_info {
     width: 100%;
     padding: 1.2rem;
+    background: #EDEDED;
   }
 }
 @media (min-width: 801px) {
@@ -1110,10 +1114,5 @@ nav .navigation .door img {
             align-items: flex-start;
     padding: 2% 0;
     font-size: 15px;
-  }
-}
-@media (max-width: 410px) {
-  .table_sysadmin {
-    padding: 40% 10px 0 10px;
   }
 }/*# sourceMappingURL=profile_organization.css.map */
