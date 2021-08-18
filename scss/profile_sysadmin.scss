@@ -4,15 +4,23 @@
 .profile_buttons{
     @extend %grid;
     background: $fon_white;
+    // align-items: center;
+    // text-align: center;
+    // justify-content: center;
 }
 .profile {
     padding: 2rem 1.5% 2.5% 1.5%;
     display: grid;    
     background: $fon_white;
 }
+.role{ 
+    grid-area: item1; 
+    border: 1px solid palegoldenrod;
+}
 .image{ 
     display: flex;
-    grid-area: item1;
+    grid-area: item2;
+    border: 1px solid pink;
     .logo_organization{
         width: 11rem;
         height:11rem; 
@@ -25,14 +33,24 @@
         }
     }
 }
+.number{ 
+    grid-area: item6;
+    border: 1px solid red;
+}
+.rating{
+    grid-area: item5;
+    border: 1px solid blueviolet;
+}
 .text{
-    grid-area: item2;
+    grid-area: item4;
+    border: 1px solid blue;
     display: flex;
     flex-direction: column;        
 }
 .bold{ letter-spacing: 0.5px; }
 .buttons{ 
-    grid-area: item3;
+    grid-area: item5;
+    border: 1px solid green;
     display: flex;
     button{ @extend %flex_row; }
 }
@@ -140,7 +158,9 @@
 @media (min-width: 801px) {  
     .profile{ 
         grid-template-columns: 11rem auto 11rem;
-        grid-template-areas: 'item1 item2 item3'; 
+        grid-template-areas: 'item1 item1 item1 item1 item1 item1',
+                            'item2 item2 item4 item4 item5 item5',
+                            'item2 item2 item4 item4 item6 item3'; 
 
         .buttons{  
             align-items: flex-end;

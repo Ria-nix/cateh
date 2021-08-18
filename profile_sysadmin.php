@@ -18,13 +18,16 @@ include('head_code.php'); ?>
     <?php include_once('modal windows/question_window.php'); ?>
 
     <div class="profile_buttons">
-        <div class="profile">
+        <div class="profile">          
+        <p class="font_18 role">Администратор</p> 
             <div class="image"> 
-                <div class="logo_organization">
+                <!-- <div class="logo_organization">
                     <img src="icon/michael.jpg" alt="main logo">
-                </div>
+                </div> -->
+                jsfjsafkjslkdf
             </div>
             <div class="text"> 
+                jsdfljsdkjf
                 <!-- <span class="text_info">
                     <p class="bold hidden">Название:</p>
                     <p class="opacity spacing">ООО "КРЕАТИВ ТЕКНОЛОДЖИС" </p>
@@ -42,9 +45,9 @@ include('head_code.php'); ?>
                     <p class="opacity font_18">50</p>
                 </span> -->
 
-                <div class="mobile_count">
+                <!-- <div class="mobile_count">
 
-                    <!-- <span class="text_info mobile_item">
+                    <span class="text_info mobile_item">
                         <p class="opacityf font_18">50</p>
                         <p class="bold">Выполнено за месяц</p>
                     </span>
@@ -55,15 +58,21 @@ include('head_code.php'); ?>
                     <span class="text_info count">
                         <p class="opacity font_18">50</p>
                         <p class="bold">Текущие заказы</p>
-                    </span> -->
+                    </span>
 
-                </div>
+                </div> -->
 
             </div>
+            <div class="buttons">kjsfksjfd
+                <!-- <button class="button border"><span class="edit"><img src="icon/edit.svg" alt=""></span><p class="hidden">Редактировать</p></button>
+                <button class="button border"><span class="delete"><img src="icon//trash 1.svg" alt=""></span><p class="hidden">Удалить</p></button> -->
+            </div>
 
-            <div class="buttons">
-                <button class="button border"><span class="edit"><img src="icon/edit.svg" alt=""></span><p class="hidden">Редактировать</p></button>
-                <button class="button border"><span class="delete"><img src="icon//trash 1.svg" alt=""></span><p class="hidden">Удалить</p></button>
+            <div class="number">
+                <p class="number spacing">Номер телефона: <br><b>+7(***)*** - 00 - 00</b> </p> 
+            </div>
+            <div class="rating">
+                kfslkf;lsdfk;al
             </div>
         </div>
 

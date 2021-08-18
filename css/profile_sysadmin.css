@@ -691,11 +691,17 @@ nav .navigation .door img {
   background: #F5F5F5;
 }
 
+.role {
+  grid-area: item1;
+  border: 1px solid palegoldenrod;
+}
+
 .image {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  grid-area: item1;
+  grid-area: item2;
+  border: 1px solid pink;
 }
 .image .logo_organization {
   width: 11rem;
@@ -709,8 +715,19 @@ nav .navigation .door img {
      object-fit: contain;
 }
 
+.number {
+  grid-area: item6;
+  border: 1px solid red;
+}
+
+.rating {
+  grid-area: item5;
+  border: 1px solid blueviolet;
+}
+
 .text {
-  grid-area: item2;
+  grid-area: item4;
+  border: 1px solid blue;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -725,7 +742,8 @@ nav .navigation .door img {
 }
 
 .buttons {
-  grid-area: item3;
+  grid-area: item5;
+  border: 1px solid green;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -856,7 +874,7 @@ nav .navigation .door img {
 @media (min-width: 801px) {
   .profile {
     grid-template-columns: 11rem auto 11rem;
-    grid-template-areas: "item1 item2 item3";
+    grid-template-areas: "item1 item1 item1 item1 item1 item1", "item2 item2 item4 item4 item5 item5", "item2 item2 item4 item4 item6 item3";
   }
   .profile .buttons {
     -webkit-box-align: end;
