@@ -29,18 +29,18 @@ $profile_organ = 'Профиль организации';
 $profile_sysadmin = 'Профиль сис. админа';
 
 // CSS connection (path)
-$css_index = 'css/style.css';
-$css_settings = 'css/style.css';
-$css_add_organ = 'css/style.css';
-$css_edit_organ = 'css/style.css';
-$css_sysadmin = 'css/style.css';
-$css_edit_sysadmin = 'css/style.css';
-$css_organizations = 'css/style.css';
-$css_add_sysadmin = 'css/style.css';
-$css_order = 'css/order.css';
-$css_edit_order = 'css/style.css';
-$css_profile_organization = 'css/style.css';
-$css_profile_sysadmin = 'css/style.css';
+$css_index = 'style.css';
+$css_settings = 'style.css';
+$css_add_organ = 'style.css';
+$css_edit_organ = 'style.css';
+$css_sysadmin = 'style.css';
+$css_edit_sysadmin = 'style.css';
+$css_organizations = 'style.css';
+$css_add_sysadmin = 'style.css';
+$css_order = 'order.css';
+$css_edit_order = 'style.css';
+$css_profile_organization = 'style.css';
+$css_profile_sysadmin = 'style.css';
 
 //Script path of navigation panel
 $navigation_panel = "site/includes/dasha/v1/navigation/navigation.js";

@@ -820,14 +820,14 @@ nav .navigation .door img {
           box-shadow: 0px 4px 10px 0px rgba(17, 39, 66, 0.15);
 }
 .competence_list .competences span {
-  max-width: 50rem;
+  max-width: 80rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 10px 12px;
+  padding: 10px 10px;
   background: #FFCC00;
   margin: 1%;
 }

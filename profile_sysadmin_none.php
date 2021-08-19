@@ -140,7 +140,7 @@ include('head_code.php'); ?>
 
     </div>
 
-    <!-- <script src="js/modal_windows.js"></script> -->
+    <script src="js/modal_windows.js"></script>
     <!-- <script src="js/profile_sysadmin.js"></script> -->
     <script src="<?php echo $navigation_panel ?>"></script>
 </body>

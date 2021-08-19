@@ -13,9 +13,10 @@ include('head_code.php'); ?>
 </head>
 
 <body>
-    <?php include_once('navigation.php'); ?></nav>
-    <?php   $question = 'Вы точно хотите добавить новую организацию?'; ?>
-    <?php include_once('modal windows/question_window.php'); ?>
+    <?php  include_once(getRootPath() . "site/includes/dasha/v1/navigation/navigation.php");?> </nav>
+    <?php   $question = 'Вы точно хотите удалить организацию?'; ?>
+    <?php  include_once(getRootPath() . 'site/includes/dasha/v1/modal_windows/types/question_window.php'); ?>
+    
 
     <div class="profile_buttons">
         <div class="profile">          
@@ -80,24 +81,24 @@ include('head_code.php'); ?>
         <div class="competence_list">
             <p class="name">Компетенция:</p>
             <div class=" border competences">
-            <span class="border cell competence_item register">something  something something something something something something something something something something something something something something something something somethingsomething something</span>
-            <span class="border cell competence_item register">something new</span>
-            <span class="border cell competence_item register">something new</span>
-            <span class="border cell competence_item register">something new</span>
-            <span class="border cell competence_item register">something new</span>
-            <span class="border cell competence_item register">something new</span>
-            <span class="border cell competence_item register">something new</span>
-            <span class="border cell competence_item register">something new</span>
-            <span class="border cell competence_item register">something new</span>
-            <span class="border cell competence_item register">something new</span>
-            <span class="border cell competence_item register">something new</span>
-            <span class="border cell competence_item register">something new</span>
-            <span class="border cell competence_item register">something new</span>
-            <span class="border cell competence_item register">something new</span>
-            <span class="border cell competence_item register">something new</span>
-            <span class="border cell competence_item register">something new</span>
-            <span class="border cell competence_item register">something new</span>
-            <span class="border cell competence_item register">something new</span>
+            <span class="border cell competence_item register">something  something something something something something something something something something something something something something something something something somethingsomething something<img src="icon/close.svg" alt="close"></span>
+            <span class="border cell competence_item register">something new<img src="icon/close.svg" alt="close"></span>
+            <span class="border cell competence_item register">something new<img src="icon/close.svg" alt="close"></span>
+            <span class="border cell competence_item register">something new<img src="icon/close.svg" alt="close"></span>
+            <span class="border cell competence_item register">something new<img src="icon/close.svg" alt="close"></span>
+            <span class="border cell competence_item register">something new<img src="icon/close.svg" alt="close"></span>
+            <span class="border cell competence_item register">something new<img src="icon/close.svg" alt="close"></span>
+            <span class="border cell competence_item register">something new<img src="icon/close.svg" alt="close"></span>
+            <span class="border cell competence_item register">something new<img src="icon/close.svg" alt="close"></span>
+            <span class="border cell competence_item register">something new<img src="icon/close.svg" alt="close"></span>
+            <span class="border cell competence_item register">something new<img src="icon/close.svg" alt="close"></span>
+            <span class="border cell competence_item register">something new<img src="icon/close.svg" alt="close"></span>
+            <span class="border cell competence_item register">something new<img src="icon/close.svg" alt="close"></span>
+            <span class="border cell competence_item register">something new<img src="icon/close.svg" alt="close"></span>
+            <span class="border cell competence_item register">something new<img src="icon/close.svg" alt="close"></span>
+            <span class="border cell competence_item register">something new<img src="icon/close.svg" alt="close"></span>
+            <span class="border cell competence_item register">something new<img src="icon/close.svg" alt="close"></span>
+            <span class="border cell competence_item register">something new<img src="icon/close.svg" alt="close"></span>
 
             </div>
         </div>
@@ -140,7 +141,7 @@ include('head_code.php'); ?>
 
     </div>
 
-    <script src="js/modal_windows.js"></script>
+    <!-- <script src="js/modal_windows.js"></script> -->
     <!-- <script src="js/profile_sysadmin.js"></script> -->
     <script src="<?php echo $navigation_panel ?>"></script>
 </body>

@@ -13,11 +13,11 @@
     <div class="wrap border">
         <div class="text">
             <div class="logo_wrap" onselectstart="return false" onmousedown="return false">
-                <img src="icon/logo.png" alt="logo_new">
+                <img src="icon/logo_server.svg" alt="logo_new">
             </div>
             <p class="none"></p>
-            <input type="text" id='text' class="spacing font_14 border" placeholder="Введите логин" value="artemy@dewfill.com">
-            <input type="password" id='pass' class=" password spacing font_14 border" placeholder="Введите  пароль" value="123">
+            <input type="text" id='text' class="spacing font_14 border" placeholder="Введите логин">
+            <input type="password" id='pass' class=" password spacing font_14 border" placeholder="Введите  пароль">
             <button class="button border font_18" onmousedown="return false">Войти</button>
         </div>
     </div>

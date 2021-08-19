@@ -9,7 +9,8 @@ $(document).ready(function () {
             $('.spacing').addClass('red_auto');
             $('p').removeClass('none');
             $('p').text('! Введите логин и пароль');
-        } else {
+        } 
+        else {
             $('.spacing').removeClass('red_auto');
             $('p').addClass('none');
 
