@@ -23,26 +23,26 @@ include('head_code.php'); ?>
 
     <!-- CONTENT -->
     <div class="content_wrap">
-        <p class="font_24 bold">Добавление системного администратора</p>
+        <p class="font_24 bold"><?php echo $add_sysadmin ?></p>
         <div class="content_set">
 
             <div class="main_fields">
-                <label for="email">Email <i class='red'>*</i></label>
+                <label for="email">Email<i class='red'>*</i></label>
                 <input type="text" id="email" class="add_info" placeholder="email@gmail.com">
             </div>
 
             <div class="main_fields">
-                <label for="password">Пароль <i class='red'>*</i></label>
+                <label for="password">Пароль<i class='red'>*</i></label>
                 <input type="text" id="password" class="add_info" placeholder="123*****89">
             </div>
 
             <div class="main_fields">
-                <label for="name">Имя <i class='red'>*</i></label>
+                <label for="name">Имя<i class='red'>*</i></label>
                 <input type="text" id="name" class="add_info" placeholder="Михаил">
             </div>
 
             <div class="main_fields">
-                <label for="surname">Фамилия <i class='red'>*</i></label>
+                <label for="surname">Фамилия<i class='red'>*</i></label>
                 <input type="text" id="surname" class="add_info" placeholder="Куприн">
             </div>
 
@@ -52,7 +52,7 @@ include('head_code.php'); ?>
             </div>
 
             <div class="main_fields">
-                <label for="state" class="text_width">Статус <i class='red'>*</i></label>
+                <label for="state" class="text_width">Статус</label>
                 <div class="searchable border">
                     <input type="text" class="border_none state_value" value="Системный администратор">
                     <span id="polygon_state">
@@ -100,7 +100,7 @@ include('head_code.php'); ?>
 
                 <div class="img_buttons">
                     <input type="file" id="input_file">
-                    <label class="button_gray border " for="input_file" id="download_file">Загрузить</label>
+                    <label class="button_gray border " for="input_file" id="download_file">Выбрать</label>
                     <button class="button_gray border" id="delete_admin">Удалить</button>
                 </div>
             </div>

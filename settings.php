@@ -28,7 +28,7 @@
                 </div>                
                 <div class="img_buttons">
                 <input type="file" id="input_file">
-                    <label class="button_gray border " for="input_file" id="download_file">Загрузить</label>
+                    <label class="button_gray border " for="input_file" id="download_file">Выбрать</label>
                     <button class="button_gray border font_16" id="delete_settings">Удалить</button>
                 </div>
             </div>

@@ -11,20 +11,22 @@ $jquery = '<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha2
 // Favicon for all pages (image)
 $favicon = '<link rel="shortcut icons" href="/site/includes/dasha/icons/favicon-16x16.png" type="image/x-icons">';
 
-// Titles of pages
-$index = 'Авторизация';
+ // Titles of pages
+$index = 'Авторизация';    
 $sysadmin = 'Главная: Системные администраторы';
-$add_sysadmin = 'Добавление системного администратора';
+$add_sysadmin = 'Добавить системного администратора';
 $organizations = 'Главная: Организации';
-$add_organ = 'Добавление организации';
-$settings = 'Настройки';
+$add_organ = 'Добавить организацию';   
+$settings = 'Настройки';    
 
-$profile_organization = 'Профиль организации';
-$edit_organ = 'Редактирование организации';
-$edit_sysadmin = 'Редактирование системного администратора';
-$order = 'Заказ №12569589'; // output from the server on the main page (TITLE)
-$edit_order = 'Редактирование заказа';
-$profile_sysadmin = 'Профиль системного администратора';
+$profile_organization = 'Профиль Организации';
+$profile_sysadmin = 'Профиль Сотрудника';
+$edit_organ = 'Добавить организацию';
+$edit_sysadmin = 'Добавить системного администратора';
+$order = 'Заказ №12569589';
+$edit_order = 'Добавить заказ';
+$profile_organ = 'Профиль организации';
+$profile_sysadmin = 'Профиль сис. админа';
 
 // CSS connection (path)
 $css_index = 'css/style.css';
