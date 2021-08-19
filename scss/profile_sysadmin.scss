@@ -10,9 +10,6 @@
 .profile_buttons{
     @extend %grid;
     background: $fon_white;
-    // align-items: center;
-    // text-align: center;
-    // justify-content: center;
 }
 .profile {
     padding: 2rem 0 2.5% 0;
@@ -25,19 +22,15 @@
     grid-area: role; 
     text-align: center;
     padding: 0 0 1rem 0; 
-    // border: 1px solid blueviolet;
+    font-weight: bold;
 }
 
 .image{ 
     display: flex;
     grid-area: image;
-    
-    // border: 1px solid palegoldenrod;
     .logo_organization{
         width: 11rem;
         height:11rem; 
-        // box-shadow: 0px 4px 10px 0px rgba($but_shadow, 0.15);
-
         img{
             box-shadow: 0px 4px 10px 0px rgba($but_shadow, 0.3);
             border-radius: 10px;
@@ -49,8 +42,8 @@
 }
 .number{ 
     grid-area: number_tel;
-    border: 1px solid red;
-    @extend %flex_row;
+    display: flex;
+    flex-direction: row;
     align-items: center;
     line-height:2rem;
 }
@@ -58,21 +51,65 @@
 .rating{
     grid-area: rating;
     display: flex;
-    border: 1px solid palegreen;
 }
 .text{
     grid-area: col_text;
     display: flex;
-    border: 1px solid paleturquoise;
     flex-direction: column;        
+    .text_info{ 
+        display: flex;
+        align-items: center;
+    }
 }
 .bold{ letter-spacing: 0.5px; }
 .buttons{ 
     grid-area: buttons;
-    border: 1px solid peachpuff;
     display: flex;
     button{ @extend %flex_row; }
 }
+
+
+.competence_list{
+    @extend %grid;
+    margin: 0 2%;
+
+    .competences{
+        width: 100%;
+        height: 150px;
+        margin: 1rem 0;
+        overflow-y: scroll;
+        text-align: left;
+        @extend %flex_row;
+        flex-wrap: wrap;
+        background: transparent;
+    border: 1px solid $gray_border;
+    box-shadow: 0px 4px 10px 0px rgba($but_shadow, 0.15);
+
+        span{
+            max-width: 50rem;
+            @extend %flex_row;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 12px;
+            background: $yellow;
+            margin: 1%;
+            img{
+                padding: 0 0 0 10px;
+                cursor: pointer;
+            }
+        }
+    }
+    
+}
+.competences::-webkit-scrollbar { width: 8px; margin: 0 0 15px 0;}
+    
+/* Handle */
+.competences::-webkit-scrollbar-thumb {
+    background: rgba($blue, 0.65);
+    border-radius: 10px;
+}
+
+.table_sysadmin::-webkit-scrollbar { width: 0;}
 
 // ***************** NAME OF TABLE (buttons) *****************
 
@@ -102,9 +139,14 @@
 
     // TABLE WITH INFO
     .table_sysadmin{
+        border: 1px solid red;
         margin: 0 2%;
         border-top: 1px solid $blue;
+        max-height: 520px;
         @extend %flex_column;
+        // @extend %grid;
+        overflow-y: scroll;
+        // grid-template-rows: repeat(1, minmax(320px, 500px));
         .item_table{
             width: 100%;
             height: auto;
@@ -158,10 +200,10 @@
     }
 }
 
-// ********** MEDIA MIN 801px *************
-@media (min-width: 1001px) {  
+// ********** MEDIA MIN 961px *************
+@media (min-width: 961px) {  
     .profile{ 
-        grid-template-columns: 11rem 15rem 5rem auto;
+        grid-template-columns: 11rem 16rem 2rem auto;
         grid-template-areas: 'role role role role role role'
                             'image col_text col_text rating rating rating'
                             'image col_text col_text number_tel buttons buttons'; 
@@ -184,27 +226,23 @@
                 span{margin: 0 5px 0 0;}
             }  
         }
-        .number{ margin-right: auto; }
+        .number{ margin: 0 0 0 0.5rem; 
+            justify-content: center;}
         .text{         
             align-items: flex-start;
             justify-content: space-evenly;
-            // width: 17rem;
             margin: 0 0 0 2rem; 
             .opacity{ 
                 padding: 0 0 0 2rem;
                 grid-area: text;
             }
-            .text_info{ 
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-            }
+            .text_info{ flex-direction: row;}
         }
         .mobile_count{ display: none;}
 }
 
-// ********** MEDIA MAX 1000px *************
-@media (max-width: 1000px) {  
+// ********** MEDIA MAX 960px *************
+@media (max-width: 960px) {  
     .profile{ 
         grid-template-columns: 11rem 15rem;
         grid-template-areas: 'role role role role role role'
@@ -212,30 +250,27 @@
                             '... number_tel ... ...  buttons buttons'; 
     }
     .rating{ 
-        align-items: center;
-        flex-direction: row;
-        flex-wrap: wrap;
+        align-items: flex-end;
+        justify-content: space-around;
+        flex-direction: column-reverse;
         .item_rating{
-            width: 50px;
-            height: 20px;
-            margin: 0 0 0 0.5rem;
+            width: 90%;
+            height: 23px;
         }
     }
-    .number{ margin: 0 0 0 2rem;  }
+    .number{ margin: 0 0 0 2rem;  
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
     .text{
         align-items: flex-start;
         justify-content: space-evenly;
         margin: 0 0 0 2rem; 
-        // width: 17rem;
         .opacity{ 
             padding: 0 0 0 2rem;
             grid-area: text;
         }
-        .text_info{ 
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-        }
+        .text_info{ flex-direction: row; }
     }
     .buttons{  
         align-items: flex-end;
@@ -254,38 +289,12 @@
     .head_name{  width: 100%;  }
 }
 
-// ********** MEDIA MIN 580PX *************
-@media (min-width: 580px) {
+// ********** MEDIA MIN 686px *************
+@media (min-width: 686px) {
         b{ margin: 2rem 0;}
-        .role{ 
-            font-size: 20px;
-            font-weight: bold;
-        }
-        
-        // .image{ width: 11rem;}
-    
-        
-        // .text{         
-        //     align-items: flex-start;
-        //     justify-content: space-evenly;
-        //     margin: 0 0 0 2rem; 
-        //     .opacity{ 
-        //         padding: 0 0 0 2rem;
-        //         grid-area: text;
-        //     }
-        //     .text_info{ 
-        //         display: flex;
-        //         flex-direction: row;
-        //         align-items: center;
-        //     }
-        // }
+        .role{ font-size: 20px; }    
         .mobile_count{ display: none;}
-        // .rating{ 
-        //     align-items: flex-end;
-        //     flex-direction: column; 
-        //     .item_rating{ padding: 0.5rem 0;}
-        // }
-    
+
         // ************ NAMES OF TABLE (buttons) ************
     .head_table{
         display: grid;
@@ -302,20 +311,21 @@
     
 
 
-// ********** MEDIA MAX 580PX *************
-@media (max-width: 580px) {
+// ********** MEDIA MAX 685px *************
+@media (max-width: 685px) {
     .profile{ grid-template-columns: repeat(1, minmax(320px, 1500px));
         grid-template-areas: 'role' 'image' 'buttons' 'col_text' 'rating' 'number_tel'; 
         justify-content: center;
         align-items: center;
     }
+    .role{ font-size: 18px; }
     .rating{ 
-        justify-content: space-between;
+        justify-content: space-around;
         flex-direction: row; 
         .item_rating{
             width: 15%;
-            height: 20px;
-            margin: 1rem 0;
+            height: 25px;
+            margin: 0 0 1rem 0;
         }
     }
     
@@ -330,6 +340,7 @@
             justify-content: center;
             margin: 1rem;
             img{
+                margin: 0 0 0 5px;
                 width: 2rem;
                 height: 2rem;
             }
@@ -339,36 +350,30 @@
         align-items: center;      
         margin: 0;
         .text_info{ 
-            padding: 0.5rem 0;
-            display: flex;
+            padding: 0.8rem 0;
             justify-content: center;
-
         }
         .count{ display: none; }
     }
     .number{ 
-        margin: 0;
-        text-align: center;
+        margin: 0 0 2rem 0;
+        justify-content: center;
+        .b{padding: 0 0 0 1rem;}
     }
     .image{
         align-items: center;
         justify-content: center;
     }
 
-    .bold{ 
-        width: 100px;
-        // grid-area: text;
-    }
+    .bold{ height: 50%; }
     .mobile_count{ 
         display: flex;
         justify-content: center;
         flex-direction: row;
-        // margin: 0.5rem 0;
 
         .text_info{
             display: flex;
             flex-direction: column;
-            align-items: center;
             margin: 0.5rem;
             text-align: center;
         }

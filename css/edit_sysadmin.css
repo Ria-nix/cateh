@@ -1202,10 +1202,6 @@ body {
             align-items: center;
   }
 
-  .cell input {
-    width: 66.5%;
-  }
-
   .img_buttons {
     -ms-flex-pack: distribute;
         justify-content: space-around;
