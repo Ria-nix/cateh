@@ -41,6 +41,7 @@ $css_order = 'order.css';
 $css_edit_order = 'style.css';
 $css_profile_organization = 'style.css';
 $css_profile_sysadmin = 'style.css';
+$css_error_page = 'style.css';
 
 //Script path of navigation panel
 $navigation_panel = "site/includes/dasha/v1/navigation/navigation.js";

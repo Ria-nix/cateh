@@ -5,6 +5,7 @@ $(document).ready(function () {
     $('.button').click(function () {
 
         //проверка на пустоту полей   
+        
         if (log.val() == '' || pass.val() == '') {
             $('.spacing').addClass('red_auto');
             $('p').removeClass('none');

@@ -237,8 +237,8 @@ body {
 }
 
 .red_auto {
-  -webkit-box-shadow: 0px 4px 10px 0px rgba(229, 40, 40, 0.5);
-          box-shadow: 0px 4px 10px 0px rgba(229, 40, 40, 0.5);
+  -webkit-box-shadow: 0px 5px 6px 0px rgba(229, 40, 40, 0.5);
+          box-shadow: 0px 5px 6px 0px rgba(229, 40, 40, 0.5);
   border-color: rgba(229, 40, 40, 0.7);
 }
 
