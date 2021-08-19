@@ -19,7 +19,7 @@ include('head_code.php'); ?>
 
     <div class="profile_buttons">
         <div class="profile">          
-        <p class="role ">Администратор</p> 
+        <p class="role spacing">Администратор</p> 
             <div class="image"> 
                 <div class="logo_organization">
                     <img src="icon/michael.jpg" alt="main logo">
@@ -66,7 +66,7 @@ include('head_code.php'); ?>
             </div>
 
             <div class="number">
-                <p class="spacing">Номер телефона: <br><b> +7(***)*** - 00 - 00</b> </p> 
+                <p class="spacing">Номер телефона:<br><b> +7(***)*** - 00 - 00</b> </p> 
             </div>
             <div class="rating">
                 <div class="item_rating" id="red"></div>

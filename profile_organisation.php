@@ -39,11 +39,11 @@ include('head_code.php'); ?>
                 </span>
                 <div class="mobile_count">
                     <span class="text_info mobile_item">
-                        <p class="opacityf font_18">50</p>
+                        <p class="font_18">50</p>
                         <p class="bold">Выполнено за месяц</p>
                     </span>
                     <span class="text_info mobile_item">
-                        <p class="opacity font_18">50</p>
+                        <p class="font_18">50</p>
                         <p class="bold">Выполнено за все время</p>
                     </span>
                 </div>
