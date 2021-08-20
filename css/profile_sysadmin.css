@@ -835,7 +835,7 @@ nav .navigation .door img {
           justify-content: space-between;
   padding: 10px 10px;
   background: #FFCC00;
-  margin: 1%;
+  margin: 0.5rem;
 }
 .competence_list .competences span img {
   padding: 0 0 0 10px;
@@ -1033,11 +1033,10 @@ nav .navigation .door img {
 @media (max-width: 970px) {
   .profile {
     grid-template-columns: 11rem 15rem;
-    grid-template-areas: "role role role role role role" "image rating rating number_tel number_tel number_tel" "image col_text col_text number_tel number_tel number_tel" "image col_text col_text ...  buttons buttons";
+    grid-template-areas: "role role role role role role" "image rating rating rating ... ..." "image col_text col_text number_tel number_tel buttons" "image col_text col_text number_tel number_tel buttons" "image col_text col_text number_tel  number_tel buttons";
   }
 
   .rating {
-    margin: 1.5rem 2rem 0 0;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -1048,7 +1047,6 @@ nav .navigation .door img {
   }
 
   .number {
-    padding: 0 0 0 1rem;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
