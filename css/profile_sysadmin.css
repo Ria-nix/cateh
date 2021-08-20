@@ -726,7 +726,7 @@ nav .navigation .door img {
   text-align: center;
   padding: 0 0 1rem 0;
   font-weight: bold;
-  border: 1px solid red;
+  font-size: 20px;
 }
 
 .image {
@@ -734,7 +734,6 @@ nav .navigation .door img {
   display: -ms-flexbox;
   display: flex;
   grid-area: image;
-  border: 1px solid violet;
 }
 .image .logo_organization {
   width: 11rem;
@@ -763,7 +762,6 @@ nav .navigation .door img {
       -ms-flex-align: center;
           align-items: center;
   line-height: 2rem;
-  border: 1px solid palevioletred;
 }
 
 .item_rating {
@@ -775,7 +773,6 @@ nav .navigation .door img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border: 1px solid paleturquoise;
 }
 
 .text {
@@ -787,7 +784,6 @@ nav .navigation .door img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  border: 1px solid palegreen;
 }
 .text .text_info {
   display: -webkit-box;
@@ -807,7 +803,6 @@ nav .navigation .door img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border: 1px solid palegoldenrod;
 }
 .competence_list {
   margin: 0 2%;
@@ -1033,10 +1028,11 @@ nav .navigation .door img {
 @media (max-width: 970px) {
   .profile {
     grid-template-columns: 11rem 15rem;
-    grid-template-areas: "role role role role role role" "image rating rating rating ... ..." "image col_text col_text number_tel number_tel buttons" "image col_text col_text number_tel number_tel buttons" "image col_text col_text number_tel  number_tel buttons";
+    grid-template-areas: "role role role role role role" "image rating rating rating rating rating" "image col_text col_text number_tel number_tel number_tel" "image col_text col_text buttons buttons buttons";
   }
 
   .rating {
+    margin: 0 0 0 2rem;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -1047,6 +1043,7 @@ nav .navigation .door img {
   }
 
   .number {
+    padding: 1.5rem 0 0 1rem;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
@@ -1116,10 +1113,6 @@ nav .navigation .door img {
     margin: 2rem 0;
   }
 
-  .role_sysadmin {
-    font-size: 20px;
-  }
-
   .mobile_count {
     display: none;
   }
@@ -1161,11 +1154,8 @@ nav .navigation .door img {
             align-items: center;
   }
 
-  .role_sysadmin {
-    font-size: 18px;
-  }
-
   .rating {
+    margin: 0;
     -ms-flex-pack: distribute;
         justify-content: space-around;
     -webkit-box-orient: horizontal;
@@ -1176,7 +1166,7 @@ nav .navigation .door img {
   .rating .item_rating {
     width: 15%;
     height: 25px;
-    margin: 0 0 1rem 0;
+    margin: 1rem 0;
   }
 
   .hidden, br {
@@ -1226,13 +1216,13 @@ nav .navigation .door img {
   }
 
   .number {
-    margin: 0 0 2rem 0;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    padding: 0.5rem;
   }
   .number .b {
-    padding: 0 0 0 1rem;
+    padding: 0 0 0 0.5rem;
   }
 
   .image {
@@ -1269,6 +1259,10 @@ nav .navigation .door img {
         -ms-flex-direction: column;
             flex-direction: column;
     margin: 0.5rem;
+    text-align: center;
+  }
+
+  .competence_list {
     text-align: center;
   }
 

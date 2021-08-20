@@ -23,13 +23,12 @@
     text-align: center;
     padding: 0 0 1rem 0; 
     font-weight: bold;
-    border: 1px solid red;
+    font-size: 20px;
 }
 
 .image{ 
     display: flex;
     grid-area: image;
-    border: 1px solid violet;
     .logo_organization{
         width: 11rem;
         height:11rem; 
@@ -48,19 +47,16 @@
     flex-direction: row;
     align-items: center;
     line-height:2rem;
-    border: 1px solid palevioletred;
 }
 .item_rating{ border-radius: 5px; }
 .rating{
     grid-area: rating;
     display: flex;
-    border: 1px solid paleturquoise;
 }
 .text{
     grid-area: col_text;
     display: flex;
-    flex-direction: column;    
-    border: 1px solid palegreen;    
+    flex-direction: column;       
     .text_info{ 
         display: flex;
         align-items: center;
@@ -70,7 +66,6 @@
 .buttons{ 
     grid-area: buttons;
     display: flex;
-    border: 1px solid palegoldenrod;
     button{ @extend %flex_row; }
 }
 
@@ -246,33 +241,15 @@
 
 // ********** MEDIA MAX 970px *************
 @media (max-width: 970px) {  
-    // .profile{ 
-    //     grid-template-columns: 11rem 15rem;
-    //     grid-template-areas: 'role role role role role role'
-    //                         'image col_text col_text rating rating rating'
-    //                         'image col_text col_text number_tel number_tel buttons'
-    //                         'image col_text col_text number_tel  number_tel buttons'; 
-    // }
     .profile{ 
         grid-template-columns: 11rem 15rem;
         grid-template-areas: 'role role role role role role'
-                            'image rating rating rating ... ...'
-                            'image col_text col_text number_tel number_tel buttons'
-                            'image col_text col_text number_tel number_tel buttons'
-                            'image col_text col_text number_tel  number_tel buttons'; 
+                            'image rating rating rating rating rating'
+                            'image col_text col_text number_tel number_tel number_tel'
+                            'image col_text col_text buttons buttons buttons';
     }
-    // .rating{ 
-    //     align-items: flex-end;
-    //     justify-content: space-around;
-    //     flex-direction: column-reverse;
-    //     .item_rating{
-    //         width: 90%;
-    //         height: 23px;
-    //     }
-    // }
-
     .rating{ 
-        // margin: 0 0 0 2rem;  
+        margin: 0 0 0 2rem;  
         justify-content: space-between;
         .item_rating{
             width: 18%;
@@ -281,7 +258,7 @@
     }
 
     .number{        
-        // padding: 0 0 0 1rem;
+        padding: 1.5rem 0 0 1rem;
         justify-content: flex-start;
         align-items: center;
     }
@@ -315,7 +292,6 @@
 // ********** MEDIA MIN 686px *************
 @media (min-width: 686px) {
         b{ margin: 2rem 0;}
-        .role_sysadmin{ font-size: 20px; }    
         .mobile_count{ display: none;}
 
         // ************ NAMES OF TABLE (buttons) ************
@@ -341,14 +317,14 @@
         justify-content: center;
         align-items: center;
     }
-    .role_sysadmin{ font-size: 18px; }
     .rating{ 
+        margin: 0;
         justify-content: space-around;
         flex-direction: row; 
         .item_rating{
             width: 15%;
             height: 25px;
-            margin: 0 0 1rem 0;
+            margin: 1rem 0;
         }
     }
     
@@ -379,9 +355,9 @@
         .count{ display: none; }
     }
     .number{ 
-        margin: 0 0 2rem 0;
         justify-content: center;
-        .b{padding: 0 0 0 1rem;}
+        padding: 0.5rem;
+        .b{padding: 0 0 0 0.5rem;}
     }
     .image{
         align-items: center;
@@ -401,6 +377,8 @@
             text-align: center;
         }
     } 
+
+    .competence_list{text-align: center;}
 
      // ************ NAMES OF TABLE (buttons) ************
     .head_table{display: none;}
