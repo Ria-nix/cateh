@@ -1150,8 +1150,7 @@ body {
 }
 @media (min-width: 620px) {
   .content_set > div {
-    padding: 1.5% 0%;
-    padding: 2% 0%;
+    padding: 1rem 0%;
   }
 
   .name_organization {

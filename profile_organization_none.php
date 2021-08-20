@@ -14,7 +14,7 @@ include('head_code.php'); ?>
 
 <body>
     <?php include_once('navigation.php'); ?></nav>
-    <?php   $question = 'Вы точно хотите добавить новую организацию?'; ?>
+    <?php   $question = 'Вы точно хотите удалить оганизацию? Данное действие приведет к деактивации, где нельзя будет провести какую-либо операцию с данной организацией и ее сотрудники деактивируются'; ?>
     <?php include_once('modal windows/question_window.php'); ?>
 
     <div class="profile_buttons">
@@ -49,8 +49,7 @@ include('head_code.php'); ?>
                 </div>
             </div>
             <div class="buttons">
-                <button class="button border"><span class="edit"><img src="icon/edit.svg" alt=""></span><p class="hidden">Редактировать</p></button>
-                <button class="button border"><span class="delete"><img src="icon//trash 1.svg" alt=""></span><p class="hidden">Удалить</p></button>
+                <button class="button border"><span class="restore"><img src="icon/alive_sign.svg" alt=""></span><p>Восстановить</p></button>
             </div>
         </div>
 

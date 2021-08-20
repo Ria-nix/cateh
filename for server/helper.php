@@ -9,7 +9,7 @@ $meta_description = '<meta name="description" content="Cateh">';
 $jquery = '<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="crossorigin="anonymous"></script>';
 
 // Favicon for all pages (image)
-$favicon = '<link rel="shortcut icons" href="/site/includes/dasha/icons/favicon-16x16.png" type="image/x-icons">';
+$favicon = '<link rel="shortcut icons" href="site/includes/dasha/icons/favicon-16x16.png" type="image/x-icons">';
 
  // Titles of pages
 $index = 'Авторизация';    
@@ -21,27 +21,26 @@ $settings = 'Настройки';
 
 $profile_organization = 'Профиль Организации';
 $profile_sysadmin = 'Профиль Сотрудника';
-$edit_organ = 'Добавить организацию';
-$edit_sysadmin = 'Добавить системного администратора';
+$edit_organ = 'Редактировать организацию';
+$edit_sysadmin = 'Редактировать системного администратора';
 $order = 'Заказ №12569589';
 $edit_order = 'Добавить заказ';
 $profile_organ = 'Профиль организации';
 $profile_sysadmin = 'Профиль сис. админа';
 
 // CSS connection (path)
-$css_index = 'style.css';
-$css_settings = 'style.css';
-$css_add_organ = 'style.css';
-$css_edit_organ = 'style.css';
-$css_sysadmin = 'style.css';
-$css_edit_sysadmin = 'style.css';
-$css_organizations = 'style.css';
-$css_add_sysadmin = 'style.css';
-$css_order = 'order.css';
-$css_edit_order = 'style.css';
-$css_profile_organization = 'style.css';
-$css_profile_sysadmin = 'style.css';
-$css_error_page = 'style.css';
+$css_index = 'site/pages/login/style.css';
+$css_settings = 'site/pages/settings/style.css';
+$css_add_organ = 'site/pages/organisations/add/style.css';
+$css_edit_organ = 'site/pages/organisations/edit/style.css';
+$css_sysadmin = 'site/pages/sysadmins/style.css';
+$css_edit_sysadmin = 'site/pages/sysadmins/edit/style.css';
+$css_organizations = 'site/pages/organisations/style.css';
+$css_add_sysadmin = 'site/pages/sysadmins/add/style.css';
+$css_order = 'site/pages/order/order.css';
+$css_edit_order = 'site/pages/order/edit/style.css';
+$css_profile_organization = 'site/pages/organisations/profile/style.css';
+$css_profile_sysadmin = 'site/pages/sysadmins/profile/style.css';
 
 //Script path of navigation panel
 $navigation_panel = "site/includes/dasha/v1/navigation/navigation.js";
