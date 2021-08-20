@@ -783,9 +783,15 @@ nav .navigation .door img {
   -o-object-fit: contain;
      object-fit: contain;
 }
+.content_wrap .table_sysadmin::-webkit-scrollbar {
+  width: 0;
+}
 .content_wrap .table_sysadmin {
   margin: 0 2%;
   border-top: 1px solid #112742;
+  max-height: 400px;
+  min-height: 450px;
+  overflow-y: scroll;
 }
 .content_wrap .table_sysadmin .item_table {
   width: 100%;

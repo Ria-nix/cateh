@@ -19,7 +19,7 @@ include('head_code.php'); ?>
 
     <div class="profile_buttons">
         <div class="profile">          
-        <p class="role spacing">Администратор</p> 
+        <p class="role_sysadmin spacing">Администратор</p> 
             <div class="image"> 
                 <div class="logo_organization">
                     <img src="icon/michael.jpg" alt="main logo">

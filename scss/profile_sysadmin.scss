@@ -18,16 +18,18 @@
     grid-template-columns: repeat(1, minmax(320px, 1500px)); 
     background: $fon_white;
 }
-.role{ 
+.role_sysadmin{ 
     grid-area: role; 
     text-align: center;
     padding: 0 0 1rem 0; 
     font-weight: bold;
+    border: 1px solid red;
 }
 
 .image{ 
     display: flex;
     grid-area: image;
+    border: 1px solid violet;
     .logo_organization{
         width: 11rem;
         height:11rem; 
@@ -46,16 +48,19 @@
     flex-direction: row;
     align-items: center;
     line-height:2rem;
+    border: 1px solid palevioletred;
 }
 .item_rating{ border-radius: 5px; }
 .rating{
     grid-area: rating;
     display: flex;
+    border: 1px solid paleturquoise;
 }
 .text{
     grid-area: col_text;
     display: flex;
-    flex-direction: column;        
+    flex-direction: column;    
+    border: 1px solid palegreen;    
     .text_info{ 
         display: flex;
         align-items: center;
@@ -65,6 +70,7 @@
 .buttons{ 
     grid-area: buttons;
     display: flex;
+    border: 1px solid palegoldenrod;
     button{ @extend %flex_row; }
 }
 
@@ -139,14 +145,11 @@
 
     // TABLE WITH INFO
     .table_sysadmin{
-        border: 1px solid red;
         margin: 0 2%;
         border-top: 1px solid $blue;
         max-height: 520px;
         @extend %flex_column;
-        // @extend %grid;
         overflow-y: scroll;
-        // grid-template-rows: repeat(1, minmax(320px, 500px));
         .item_table{
             width: 100%;
             height: auto;
@@ -200,8 +203,8 @@
     }
 }
 
-// ********** MEDIA MIN 961px *************
-@media (min-width: 961px) {  
+// ********** MEDIA MIN 971px *************
+@media (min-width: 971px) {  
     .profile{ 
         grid-template-columns: 11rem 16rem 2rem auto;
         grid-template-areas: 'role role role role role role'
@@ -241,26 +244,38 @@
         .mobile_count{ display: none;}
 }
 
-// ********** MEDIA MAX 960px *************
-@media (max-width: 960px) {  
+// ********** MEDIA MAX 970px *************
+@media (max-width: 970px) {  
     .profile{ 
         grid-template-columns: 11rem 15rem;
         grid-template-areas: 'role role role role role role'
-                            'image col_text col_text rating rating rating'
-                            '... number_tel ... ...  buttons buttons'; 
+                            'image rating rating number_tel number_tel number_tel'
+                            'image col_text col_text number_tel number_tel number_tel'
+                            'image col_text col_text ...  buttons buttons'; 
     }
+    // .rating{ 
+    //     align-items: flex-end;
+    //     justify-content: space-around;
+    //     flex-direction: column-reverse;
+    //     .item_rating{
+    //         width: 90%;
+    //         height: 23px;
+    //     }
+    // }
+
     .rating{ 
-        align-items: flex-end;
-        justify-content: space-around;
-        flex-direction: column-reverse;
+        margin: 1.5rem 2rem 0 0;  
+        justify-content: space-between;
         .item_rating{
-            width: 90%;
-            height: 23px;
+            width: 18%;
+            height: 30px;
         }
     }
-    .number{ margin: 0 0 0 2rem;  
+
+    .number{        
+        padding: 0 0 0 1rem;
         justify-content: flex-start;
-        align-items: flex-start;
+        align-items: center;
     }
     .text{
         align-items: flex-start;
@@ -292,7 +307,7 @@
 // ********** MEDIA MIN 686px *************
 @media (min-width: 686px) {
         b{ margin: 2rem 0;}
-        .role{ font-size: 20px; }    
+        .role_sysadmin{ font-size: 20px; }    
         .mobile_count{ display: none;}
 
         // ************ NAMES OF TABLE (buttons) ************
@@ -318,7 +333,7 @@
         justify-content: center;
         align-items: center;
     }
-    .role{ font-size: 18px; }
+    .role_sysadmin{ font-size: 18px; }
     .rating{ 
         justify-content: space-around;
         flex-direction: row; 

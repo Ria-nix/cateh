@@ -721,11 +721,12 @@ nav .navigation .door img {
   background: #F5F5F5;
 }
 
-.role {
+.role_sysadmin {
   grid-area: role;
   text-align: center;
   padding: 0 0 1rem 0;
   font-weight: bold;
+  border: 1px solid red;
 }
 
 .image {
@@ -733,6 +734,7 @@ nav .navigation .door img {
   display: -ms-flexbox;
   display: flex;
   grid-area: image;
+  border: 1px solid violet;
 }
 .image .logo_organization {
   width: 11rem;
@@ -761,6 +763,7 @@ nav .navigation .door img {
       -ms-flex-align: center;
           align-items: center;
   line-height: 2rem;
+  border: 1px solid palevioletred;
 }
 
 .item_rating {
@@ -772,6 +775,7 @@ nav .navigation .door img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  border: 1px solid paleturquoise;
 }
 
 .text {
@@ -783,6 +787,7 @@ nav .navigation .door img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  border: 1px solid palegreen;
 }
 .text .text_info {
   display: -webkit-box;
@@ -802,6 +807,7 @@ nav .navigation .door img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  border: 1px solid palegoldenrod;
 }
 .competence_list {
   margin: 0 2%;
@@ -875,7 +881,6 @@ nav .navigation .door img {
      object-fit: contain;
 }
 .content_wrap .table_sysadmin {
-  border: 1px solid red;
   margin: 0 2%;
   border-top: 1px solid #112742;
   max-height: 520px;
@@ -956,7 +961,7 @@ nav .navigation .door img {
     background: #EDEDED;
   }
 }
-@media (min-width: 961px) {
+@media (min-width: 971px) {
   .profile {
     grid-template-columns: 11rem 16rem 2rem auto;
     grid-template-areas: "role role role role role role" "image col_text col_text rating rating rating" "image col_text col_text number_tel buttons buttons";
@@ -1025,36 +1030,31 @@ nav .navigation .door img {
     display: none;
   }
 }
-@media (max-width: 960px) {
+@media (max-width: 970px) {
   .profile {
     grid-template-columns: 11rem 15rem;
-    grid-template-areas: "role role role role role role" "image col_text col_text rating rating rating" "... number_tel ... ...  buttons buttons";
+    grid-template-areas: "role role role role role role" "image rating rating number_tel number_tel number_tel" "image col_text col_text number_tel number_tel number_tel" "image col_text col_text ...  buttons buttons";
   }
 
   .rating {
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    margin: 1.5rem 2rem 0 0;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .rating .item_rating {
-    width: 90%;
-    height: 23px;
+    width: 18%;
+    height: 30px;
   }
 
   .number {
-    margin: 0 0 0 2rem;
+    padding: 0 0 0 1rem;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 
   .text {
@@ -1118,7 +1118,7 @@ nav .navigation .door img {
     margin: 2rem 0;
   }
 
-  .role {
+  .role_sysadmin {
     font-size: 20px;
   }
 
@@ -1163,7 +1163,7 @@ nav .navigation .door img {
             align-items: center;
   }
 
-  .role {
+  .role_sysadmin {
     font-size: 18px;
   }
 
