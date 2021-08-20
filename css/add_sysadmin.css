@@ -1077,7 +1077,7 @@ body {
           justify-content: space-between;
   padding: 10px 12px;
   background: #FFCC00;
-  margin: 0.5rem;
+  margin: 0.5rem 0 0.3rem 0.5rem;
 }
 .content_set .competences span img {
   padding: 0 0 0 10px;
