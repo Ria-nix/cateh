@@ -19,7 +19,8 @@
     $settings = 'Настройки';    
     
     $profile_organization = 'Профиль Организации';
-    $profile_sysadmin = 'Профиль Сотрудника';
+    $profile_sysadmin = 'Профиль системного администратора';
+    $profile_non_active = 'Профиль Организации';
     $edit_organ = 'Редактировать организацию';
     $edit_sysadmin = 'Редактировать системного администратора';
     $order = 'Заказ №12569589';
@@ -40,6 +41,8 @@
     $css_edit_order = 'css/edit_order.css';
     $css_profile_organization = 'css/profile_organization.css';
     $css_profile_sysadmin = 'css/profile_sysadmin.css';
+    $css_profile_organization_none = 'css/profile_organization_none.css'; 
+    $css_profile_sysadmin_none = 'css/profile_sysadmin_none.css'; 
     
     //Script path of navigation panel
     $navigation_panel = 'js/navigation.js';

@@ -4,7 +4,6 @@
 
 body{ background: $fon_white; }
 .content_wrap > div{ margin: 0 2%;}
-.all_opacity{ opacity: 0.7;}
 .content_wrap{ @extend %grid; 
     .head_order{ @extend %flex_row;     
         div{ flex: 1 1 5%; }
@@ -23,7 +22,7 @@ body{ background: $fon_white; }
         .item_info{ 
             margin: 1rem 0;
             font-size: 16px;
-            .main_text{  letter-spacing: 0px; }
+            .main_text{  letter-spacing: 0px; font-weight: bold;}
         }
     }
     .content_set .main_fields{ padding: 1rem; }
@@ -40,7 +39,7 @@ body{ background: $fon_white; }
             width: 100%;
             line-height: 1.5rem;
         }
-        .item_comment{ margin:  }
+        .item_comment{margin: 0 0 1rem 0;} 
         .date_end{
             @extend %flex_column;
             text-align: center;
@@ -118,8 +117,8 @@ textarea::-webkit-scrollbar-track {
         box-shadow: 0px 4px 10px 0px rgba($but_shadow, 0.15);
     }
     .wrap_comments{ flex-direction: row; 
-        .comments{ width: 73%;}
-        .date_end{ width: 27%;}
+        .comments{ width: 73%; }
+        .date_end{ width: 27%; }
     }
 }
 

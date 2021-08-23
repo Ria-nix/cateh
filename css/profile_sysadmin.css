@@ -10,7 +10,7 @@ body::-webkit-scrollbar {
   width: 0;
 }
 
-.content_wrap .table_sysadmin .item_table, .content_wrap .head_table .head_name, .competence_list .competences span, .competence_list .competences, .buttons button, nav .navigation span, nav .navigation .panel_buttons, nav .navigation {
+.content_wrap .table_sysadmin .item_table, .content_wrap .head_table .head_name, .competence_list .competences span, .competence_list .competences, .buttons button, .role_sysadmin, nav .navigation span, nav .navigation .panel_buttons, nav .navigation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -160,6 +160,10 @@ input[type=number]::-webkit-outer-spin-button {
 .red_auto::placeholder {
   color: #E52828;
   font-size: 14px;
+}
+
+.all_opacity {
+  opacity: 0.7;
 }
 
 * {
@@ -215,7 +219,7 @@ body::-webkit-scrollbar {
   width: 0;
 }
 
-.content_wrap .table_sysadmin .item_table, .content_wrap .head_table .head_name, .competence_list .competences span, .competence_list .competences, .buttons button, nav .navigation span, nav .navigation .panel_buttons, nav .navigation {
+.content_wrap .table_sysadmin .item_table, .content_wrap .head_table .head_name, .competence_list .competences span, .competence_list .competences, .buttons button, .role_sysadmin, nav .navigation span, nav .navigation .panel_buttons, nav .navigation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -365,6 +369,10 @@ input[type=number]::-webkit-outer-spin-button {
 .red_auto::placeholder {
   color: #E52828;
   font-size: 14px;
+}
+
+.all_opacity {
+  opacity: 0.7;
 }
 
 * {
@@ -723,7 +731,9 @@ nav .navigation .door img {
 
 .role_sysadmin {
   grid-area: role;
-  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 0 0 1rem 0;
   font-weight: bold;
   font-size: 20px;
@@ -1183,7 +1193,7 @@ nav .navigation .door img {
             justify-content: center;
   }
   .buttons button {
-    width: 50px;
+    min-width: 50px;
     height: 50px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1194,7 +1204,6 @@ nav .navigation .door img {
     margin: 1rem;
   }
   .buttons button img {
-    margin: 0 0 0 5px;
     width: 2rem;
     height: 2rem;
   }

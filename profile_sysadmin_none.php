@@ -7,9 +7,9 @@ include('head_code.php'); ?>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="<?php echo $css_profile_sysadmin ?>">
+    <link rel="stylesheet" href="<?php echo $css_profile_sysadmin_none ?>">
     <?php echo $favicon, $jquery  ?>
-    <title><?php echo $profile_sysadmin ?></title>
+    <title><?php echo $profile_non_active ?></title>
 </head>
 
 <body>
@@ -19,13 +19,13 @@ include('head_code.php'); ?>
 
     <div class="profile_buttons">
         <div class="profile">          
-        <p class="role spacing">Администратор</p> 
-            <div class="image"> 
+        <p class="role_sysadmin spacing">Администратор</p> 
+            <div class="image all_opacity"> 
                 <div class="logo_organization">
                     <img src="icon/michael.jpg" alt="main logo">
                 </div>
             </div>
-            <div class="text"> 
+            <div class="text all_opacity"> 
                 <span class="text_info">
                     <p class="spacing font_22">Михаил Куприн</p>
                 </span>
@@ -43,7 +43,6 @@ include('head_code.php'); ?>
                 </span>
 
                 <div class="mobile_count">
-
                     <span class="text_info mobile_item">
                         <p class="opacityf font_18">50</p>
                         <p class="bold">Выполнено за месяц</p>
@@ -61,11 +60,10 @@ include('head_code.php'); ?>
 
             </div>
             <div class="buttons">
-                <button class="button border"><span class="edit"><img src="icon/edit.svg" alt=""></span><p class="hidden">Редактировать</p></button>
-                <button class="button border"><span class="delete"><img src="icon//trash 1.svg" alt=""></span><p class="hidden">Удалить</p></button>
+            <button class="button border"><span class="restore"><img src="icon/alive_sign.svg" alt=""></span><p>Восстановить</p></button>
             </div>
 
-            <div class="number">
+            <div class="number all_opacity">
                 <p class="spacing">Номер телефона:<br><span class="b"> +7(***)*** - 00 - 00</span> </p> 
             </div>
             <div class="rating">
@@ -77,7 +75,7 @@ include('head_code.php'); ?>
             </div>
         </div>
 
-        <div class="competence_list">
+        <div class="competence_list all_opacity">
             <p class="name">Компетенция:</p>
             <div class=" border competences">
             <span class="border cell competence_item register">something  something something something something something something something something something something something something something something something something somethingsomething something<img src="icon/close.svg" alt="close"></span>

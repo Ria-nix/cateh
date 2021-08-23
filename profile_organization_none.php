@@ -7,9 +7,9 @@ include('head_code.php'); ?>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="<?php echo $css_profile_organization ?>">
+    <link rel="stylesheet" href="<?php echo $css_profile_organization_none ?>">
     <?php echo $favicon, $jquery  ?>
-    <title><?php echo $profile_organ ?></title>
+    <title><?php echo $profile_non_active ?></title>
 </head>
 
 <body>
@@ -19,12 +19,12 @@ include('head_code.php'); ?>
 
     <div class="profile_buttons">
         <div class="profile">
-            <div class="image"> 
+            <div class="image all_opacity"> 
                 <div class="logo_organization border">
                     <img src="icon/logo_server.svg" alt="main logo">
                 </div>
             </div>
-            <div class="text"> 
+            <div class="text all_opacity"> 
                 <span class="text_info">
                     <p class="bold hidden">Название:</p>
                     <p class="opacity spacing">ООО "КРЕАТИВ ТЕКНОЛОДЖИС" </p>
