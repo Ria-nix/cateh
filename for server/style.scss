@@ -1,0 +1,206 @@
+@import '../../new/scss/cateh_style';
+@import '../../includes/dasha/v1/navigation/navigation';
+@import '../../includes/dasha/v1/modal_windows/modal_window';
+
+body{ background: $fon_white; } 
+.content_wrap{
+    width: 100%;
+    @extend %grid;
+    text-align: center;
+
+    p.font_24{ padding: 3.5% 4% 2% 4%; }
+}
+.content_set{ @extend %flex_column;
+    span{        
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+        cursor: pointer;      
+    }
+    input{
+        height: 40px;
+        text-align: center;
+        box-shadow: 0px 4px 10px 0px rgba($but_shadow, 0.15);
+        border-radius: 10px;        
+    }
+    label, button{ letter-spacing: 1px; color: $blue;}               
+    .name_organization, .inn_organization{ 
+        justify-content: space-between;  
+        align-items: center; 
+    }
+    .img_organization{            
+        display: flex;
+        align-items: center;     
+        .img_buttons, .image{  @extend %flex_row; }
+        .image{                    
+            border: 0.5px solid $blue;
+            width: 11rem;
+            height: 11rem;   
+            padding: 0.5rem;
+
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+        #input_file{
+            overflow: hidden;
+            position: absolute;
+            opacity: 0;
+            width: 10px;
+            height: 10px;
+        }
+        .button_gray{ 
+            padding: 6px 20px; 
+            cursor: pointer; 
+        }
+    }
+    .adress_organization{
+        justify-content: flex-end;
+        align-items: center;        
+    }
+    .save{
+        border-top: 1px solid $gray_border;
+        button{
+            width: 150px;
+            height: 38px;
+        }
+    }
+    .mobile_fields_address{ width: 100%; }
+    .fields_address, .mobile_fields_address{
+        height: auto;
+        padding: 0;          
+    }
+    .cell{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding: 0 2% 0 0;
+
+        input{ margin: 13px 2%;}
+        img{ 
+            cursor: pointer; 
+            width: 20px; 
+            height: 20px;
+        }
+    }
+}
+
+// ************* @MEDIA *************
+
+// ********** MEDIA MIN 1163PX *************
+@media (min-width: 1163px) {    
+.content_set > div{ width: 45%; }
+}
+
+// ********** MEDIA MAX 1163PX *************
+@media (max-width: 1163px) {
+    .content_set > div{  width: 55%; } 
+    input{ width: 100%; }   
+}
+
+// ********** MEDIA MAX 850PX *************
+@media (max-width: 850px) {  
+    .content_set > div{ width: 90%;}
+    .adress_organization{ width: 100%;}
+}
+
+// ********** MEDIA MIN 541PX *************
+@media (min-width: 541px) {
+    .content_set > div{ padding: 1.5% 0%; }
+    .name_organization, .inn_organization,
+    .adress_organization{
+        display: flex;
+        flex-direction: row;
+    }
+    .name_organization, .inn_organization{          
+        label{ 
+            text-align: left;
+            width: 25%;
+        }
+        input{ width: 75%; }
+    }
+    .cell{ justify-content: flex-end; }
+    .image{ margin: 0 5% 5% 0; }
+    .save button{ margin: 0 0 0 70%; }
+
+    .adress_organization{
+        label{ margin-right: auto; }
+        input{ 
+            width: 67.3%;
+            margin: 0 1.5% 0 0;
+        }
+    }
+    #add_address{ padding:1.2%; }
+    .mobile_fields_address{ display: none; }
+    .fields_address{  
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+    .cell input{ width: 69%;}
+    .img_buttons{ 
+        justify-content: space-around;    
+        button{ padding: 7px 20px; }
+        #delete_organ{ margin: 0 0 0 5%; }       
+    }
+}
+
+
+// ********** MEDIA MAX 540PX *************
+@media (max-width: 540px) {
+    .content_set > div{ padding: 2% 0%; }
+    .save button{ margin: 0; }
+    .name_organization, .inn_organization, .adress_organization{   
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        input{  width: 85%; text-align: center; }
+        label{ padding: 2% 0; }
+        br{ display: none; }
+    }
+
+    .content_set span{
+        padding: 10px 10px;    
+        margin: 20px 0 0 0;   
+    } 
+    .cell{ justify-content: center; }
+    .mobile_fields_address{    
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+    
+    .fields_address{ display: none; }
+    .cell input{ width: 80%;}
+    .save { margin: 5% 0; }
+    .img_organization{         
+        flex-direction: column;
+        align-items: center;
+
+        .img_buttons{ 
+            justify-content: center; 
+            margin: 1% 0 2% 0;
+
+            #delete_organ{ margin: 0 0 0 5%; }
+            button, label{ padding: 8px 25px; }
+        }        
+    }
+    .image{margin: 0 0 5% 0;}    
+}
+// ********** MEDIA MAX 390PX *************
+@media (max-width: 390px) {
+    .save button{ margin: 0; }
+    .name_organization, .inn_organization, .adress_organization{   
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        label{ padding: 3.2% 0; }
+    } 
+}
+
+
+
+

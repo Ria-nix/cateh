@@ -1,38 +1,74 @@
 $(document).ready(function(){
     
+    // (function transitionMenu(){
+    //     for(let elem of $('.admin')){
+    //         elem.addEventListener('click',function(){
+    //         window.location.href = 'site/pages/sysadmins/index.php';});
+    //     }
+        
+    //     for(let elem of $('.admin_plus')){
+    //         elem.addEventListener('click',function(){
+    //         window.location.href = 'site/pages/sysadmins/add/index.php'; });
+    //     }
+        
+    //     for(let elem of $('.organization')){
+    //         elem.addEventListener('click',function(){
+    //         window.location.href = 'site/pages/organisations/index.php'; });
+    //     }
+        
+    //     for(let elem of $('.organization_plus')){
+    //         elem.addEventListener('click',function(){
+    //         window.location.href = 'site/pages/organisations/add/index.php'; });
+    //     }
+        
+    //     for(let elem of $('.settings')){
+    //         elem.addEventListener('click',function(){
+    //         window.location.href = 'site/pages/settings/index.php'; });
+    //     }
+        
+    //     for(let elem of $('.exit')){
+    //         elem.addEventListener('click',function(){
+    //         window.location.href = 'site/pages/order/index.php'; });
+    //     }
+
+    //     $('#main_logo_navigation').on('click',function(){
+    //         window.location.href = 'site/pages/sysadmins/index.php';
+    //     })
+    // }());
+
     (function transitionMenu(){
         for(let elem of $('.admin')){
             elem.addEventListener('click',function(){
-            window.location.href = 'sysadmin.php';});
+            window.location.href = '/sysadmins';});
         }
         
         for(let elem of $('.admin_plus')){
             elem.addEventListener('click',function(){
-            window.location.href = 'add_sysadmin.php'; });
+            window.location.href = '/sysadmins/add'; });
         }
         
         for(let elem of $('.organization')){
             elem.addEventListener('click',function(){
-            window.location.href = 'organization.php'; });
+            window.location.href = '/organisations'; });
         }
         
         for(let elem of $('.organization_plus')){
             elem.addEventListener('click',function(){
-            window.location.href = 'add_organization.php'; });
+            window.location.href = '/organisations/add'; });
         }
         
         for(let elem of $('.settings')){
             elem.addEventListener('click',function(){
-            window.location.href = 'settings.php'; });
+            window.location.href = '/settings'; });
         }
         
         for(let elem of $('.exit')){
             elem.addEventListener('click',function(){
-            window.location.href = 'order.php'; });
+            window.location.href = '/login'; });
         }
 
         $('#main_logo_navigation').on('click',function(){
-            window.location.href = 'sysadmin.php';
+            window.location.href = 'sysadmins';
         })
     }());
 

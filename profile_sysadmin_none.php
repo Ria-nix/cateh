@@ -60,7 +60,7 @@ include('head_code.php'); ?>
 
             </div>
             <div class="buttons">
-            <button class="button border"><span class="restore"><img src="icon/alive_sign.svg" alt=""></span><p>Восстановить</p></button>
+                <button class="button border"><span class="restore"><img src="icon/alive_sign.svg" alt=""></span><p>Восстановить</p></button>
             </div>
 
             <div class="number all_opacity">
@@ -78,28 +78,18 @@ include('head_code.php'); ?>
         <div class="competence_list all_opacity">
             <p class="name">Компетенция:</p>
             <div class=" border competences">
-            <span class="border cell competence_item register">something  something something something something something something something something something something something something something something something something somethingsomething something<img src="icon/close.svg" alt="close"></span>
-            <span class="border cell competence_item register">something new<img src="icon/close.svg" alt="close"></span>
-            <span class="border cell competence_item register">something new<img src="icon/close.svg" alt="close"></span>
-            <span class="border cell competence_item register">something new<img src="icon/close.svg" alt="close"></span>
-            <span class="border cell competence_item register">something new<img src="icon/close.svg" alt="close"></span>
-            <span class="border cell competence_item register">something new<img src="icon/close.svg" alt="close"></span>
-            <span class="border cell competence_item register">something new<img src="icon/close.svg" alt="close"></span>
-            <span class="border cell competence_item register">something new<img src="icon/close.svg" alt="close"></span>
-            <span class="border cell competence_item register">something new<img src="icon/close.svg" alt="close"></span>
-            <span class="border cell competence_item register">something new<img src="icon/close.svg" alt="close"></span>
-            <span class="border cell competence_item register">something new<img src="icon/close.svg" alt="close"></span>
-            <span class="border cell competence_item register">something new<img src="icon/close.svg" alt="close"></span>
-            <span class="border cell competence_item register">something new<img src="icon/close.svg" alt="close"></span>
-            <span class="border cell competence_item register">something new<img src="icon/close.svg" alt="close"></span>
-            <span class="border cell competence_item register">something new<img src="icon/close.svg" alt="close"></span>
-            <span class="border cell competence_item register">something new<img src="icon/close.svg" alt="close"></span>
-            <span class="border cell competence_item register">something new<img src="icon/close.svg" alt="close"></span>
-            <span class="border cell competence_item register">something new<img src="icon/close.svg" alt="close"></span>
-
+                <span class="border cell competence_item register">something  something something something something something something something something something something something something something something something something somethingsomething something<img src="icon/close.svg" alt="close"></span>
+                <span class="border cell competence_item register">something new<img src="icon/close.svg" alt="close"></span>
+                <span class="border cell competence_item register">something new<img src="icon/close.svg" alt="close"></span>
+                <span class="border cell competence_item register">something new<img src="icon/close.svg" alt="close"></span>
+                <span class="border cell competence_item register">something new<img src="icon/close.svg" alt="close"></span>
             </div>
         </div>
+        <div class="mobile_buttons">
+            <button class="button border"><span class="restore"><img src="icon/alive_sign.svg" alt=""></span><p>Восстановить</p></button>
+        </div>
     </div>
+    
     <!-- CONTENT -->
     <div class="content_wrap font_16">
         <!-- HEAD TABLE -->
