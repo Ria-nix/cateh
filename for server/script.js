@@ -1,8 +1,11 @@
 $(document).ready(function () {
 
     let log = $('#text'), pass = $("#pass");
+
     $('.button').click(function () {
-        //проверка на пустоту полей           
+
+        //проверка на пустоту полей   
+        
         if (log.val() == '' || pass.val() == '') {
             $('.spacing').addClass('red_auto');
             $('p').removeClass('none');
