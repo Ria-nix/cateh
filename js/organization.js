@@ -89,7 +89,7 @@ $(document).ready(function(){
             $('#table').text(html);
         })
 
-    
+        
         for(elem of obj){
             for(key in elem){ }
 
