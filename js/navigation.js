@@ -46,7 +46,7 @@ $(document).ready(function(){
                 $('.toggle_but').addClass('close');
                 $('body').addClass('scroll_none');
                 $('#arrow').addClass('opacity_none');
-                $('.head_table').addClass('none');
+                $('.head_table').addClass('opacity_none');
                 button = true;
             }
             else{
@@ -54,7 +54,7 @@ $(document).ready(function(){
                 $('.toggle_but').removeClass('close');
                 $('body').removeClass('scroll_none');
                 $('#arrow').removeClass('opacity_none');
-                $('.head_table').removeClass('none');
+                $('.head_table').removeClass('opacity_none');
                 button = false;
             }    
         });
