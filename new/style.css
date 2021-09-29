@@ -1101,6 +1101,9 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
+.content_set .cell input {
+  margin: 13px 2%;
+}
 .content_set .cell img {
   cursor: pointer;
   width: 20px;
@@ -1282,7 +1285,6 @@ body {
 
   .cell input {
     width: 80%;
-    margin: 13px 2%;
   }
 
   .img_organization {
@@ -1326,10 +1328,5 @@ body {
   }
   .name_organization label, .inn_organization label, .adress_organization label {
     padding: 3.2% 0;
-  }
-
-  .cell input {
-    width: 90%;
-    margin: 0 3rem 0 0;
   }
 }/*# sourceMappingURL=add_organization.css.map */

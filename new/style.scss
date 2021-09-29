@@ -1,3 +1,5 @@
+
+
 @import 'cateh_style';
 @import 'navigation';
 @import 'modal_window';
@@ -8,7 +10,7 @@ body{ background: $fon_white; }
     @extend %grid;
     text-align: center;
 
-    p.font_24{ padding: 3.5% 4% 2% 4%; }
+    p.font_22{ padding: 1rem 4% 0.5rem 4%; }
 }
 .content_set{ @extend %flex_column;
     span{        
@@ -25,10 +27,22 @@ body{ background: $fon_white; }
     }
     label, button{ letter-spacing: 1px; color: $blue;}               
     .name_organization, .inn_organization{ 
+        display: flex;
         justify-content: space-between;  
         align-items: center; 
     }
-    .img_organization{            
+    .adress_organization, .item_address{
+        display: flex;       
+        justify-content: flex-end;
+        align-items: center; 
+        input{ 
+            // width: 90%;
+            margin: 0 0.7rem 0 0;
+        }
+    }
+    #add_address{ padding:0.4rem; }
+    .img_organization{ 
+        border-bottom: 1px solid $gray_border;           
         display: flex;
         align-items: center;     
         .img_buttons, .image{  @extend %flex_row; }
@@ -56,16 +70,9 @@ body{ background: $fon_white; }
             cursor: pointer; 
         }
     }
-    .adress_organization{
-        justify-content: flex-end;
-        align-items: center;        
-    }
-    .save{
-        border-top: 1px solid $gray_border;
-        button{
-            width: 150px;
-            height: 38px;
-        }
+    .save button{
+        width: 150px;
+        height: 38px;
     }
     .mobile_fields_address{ width: 100%; }
     .fields_address, .mobile_fields_address{
@@ -76,7 +83,6 @@ body{ background: $fon_white; }
         width: 100%;
         display: flex;
         align-items: center;
-        padding: 0 2% 0 0;
 
         input{ margin: 13px 2%;}
         img{ 
@@ -103,18 +109,20 @@ body{ background: $fon_white; }
 // ********** MEDIA MAX 850PX *************
 @media (max-width: 850px) {  
     .content_set > div{ width: 90%;}
-    .adress_organization{ width: 100%;}
 }
 
 // ********** MEDIA MIN 541PX *************
 @media (min-width: 541px) {
     .content_set > div{ padding: 1.5% 0%; }
-    .name_organization, .inn_organization,
-    .adress_organization{
+    .name_organization, .inn_organization {
         display: flex;
         flex-direction: row;
     }
-    .name_organization, .inn_organization{          
+    .item_address{ width: 75%;
+        input{width: 100%;}
+    }
+    .adress_organization label{text-align: left; width: 25%;}
+    .name_organization, .inn_organization{ flex-direction: row;      
         label{ 
             text-align: left;
             width: 25%;
@@ -125,14 +133,6 @@ body{ background: $fon_white; }
     .image{ margin: 0 5% 5% 0; }
     .save button{ margin: 0 0 0 70%; }
 
-    .adress_organization{
-        label{ margin-right: auto; }
-        input{ 
-            width: 67.3%;
-            margin: 0 1.5% 0 0;
-        }
-    }
-    #add_address{ padding:1.2%; }
     .mobile_fields_address{ display: none; }
     .fields_address{  
         display: flex;
@@ -147,27 +147,25 @@ body{ background: $fon_white; }
     }
 }
 
-// ********** MEDIA MAX 540PX *************
-@media (max-width: 540px) {
+// ********** MEDIA MAX 541PX *************
+@media (max-width: 541px) {
     .content_set > div{ padding: 2% 0%; }
-    .save{ padding: 5rem 0;
+    .save{ 
+        margin: 1rem 0 2rem 0;
         button{ margin: 0; }
     }
-    .name_organization, .inn_organization, .adress_organization{   
-        display: flex;
+    .item_address{ width: 95%;}
+    .name_organization, .inn_organization, .adress_organization{  
+        display: flex; 
         flex-direction: column;
         align-items: center;
 
-        input{ width: 85%; text-align: center; }
+        input{ width: 95%; text-align: center; }
         label{ padding: 2% 0; }
         br{ display: none; }
     }
-
-    .content_set span{
-        padding: 10px 10px;    
-        margin: 20px 0 0 0;   
-    } 
-    .cell{ justify-content: center; }
+    .content_set span{ padding: 10px 10px; } 
+    .cell{ justify-content: center;  padding: 0 2rem 0 0;}
     .mobile_fields_address{    
         display: flex;
         flex-direction: column;
@@ -182,7 +180,7 @@ body{ background: $fon_white; }
 
         .img_buttons{ 
             justify-content: center; 
-            margin: 1% 0 2% 0;
+            margin: 0.5rem 0 1rem 0;
 
             #delete_organ{ margin: 0 0 0 5%; }
             button, label{ padding: 8px 25px; }
@@ -191,9 +189,8 @@ body{ background: $fon_white; }
     .image{margin: 0 0 5% 0;}    
 }
 
-// ********** MEDIA MAX 390PX *************
-@media (max-width: 390px) {
-    .save button{ margin: 0; }
+// ********** MEDIA MAX 540PX *************
+@media (max-width: 540px) {
     .name_organization, .inn_organization, .adress_organization{   
         display: flex;
         flex-direction: column;
@@ -201,6 +198,7 @@ body{ background: $fon_white; }
         label{ padding: 3.2% 0; }
     } 
 }
+
 
 
 

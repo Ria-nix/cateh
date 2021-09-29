@@ -209,7 +209,7 @@ body{ background: $fon_white; }
     @extend %grid;
     text-align: center;
 
-    p.font_24{ padding: 3.5% 4% 2% 4%; }
+    p.font_22{ padding: 1rem 4% 0.5rem 4%; }
 }
 .content_set{ @extend %flex_column;
     span{        
@@ -231,16 +231,15 @@ body{ background: $fon_white; }
         align-items: center; 
     }
     .adress_organization, .item_address{
-        display: flex;
-        flex-direction: row;
+        display: flex;       
         justify-content: flex-end;
         align-items: center; 
         input{ 
-            width: 90%;
+            // width: 90%;
             margin: 0 0.7rem 0 0;
         }
     }
-    .item_address{ width: 75%;}
+    #add_address{ padding:0.4rem; }
     .img_organization{ 
         border-bottom: 1px solid $gray_border;           
         display: flex;
@@ -283,9 +282,7 @@ body{ background: $fon_white; }
         width: 100%;
         display: flex;
         align-items: center;
-        padding: 0 2% 0 0;
 
-        input{ margin: 13px 2%;}
         img{ 
             cursor: pointer; 
             width: 20px; 
@@ -319,7 +316,11 @@ body{ background: $fon_white; }
         display: flex;
         flex-direction: row;
     }
-    .name_organization, .inn_organization, .adress_organization{          
+    .item_address{ width: 75%;
+        input{width: 100%;}
+    }
+    .adress_organization label{text-align: left; width: 25%;}
+    .name_organization, .inn_organization{ flex-direction: row;      
         label{ 
             text-align: left;
             width: 25%;
@@ -330,7 +331,6 @@ body{ background: $fon_white; }
     .image{ margin: 0 5% 5% 0; }
     .save button{ margin: 0 0 0 70%; }
 
-    #add_address{ padding:0.4rem; }
     .mobile_fields_address{ display: none; }
     .fields_address{  
         display: flex;
@@ -352,8 +352,9 @@ body{ background: $fon_white; }
         margin: 1rem 0 2rem 0;
         button{ margin: 0; }
     }
-    .name_organization, .inn_organization, .adress_organization{   
-        display: flex;
+    .item_address{ width: 95%;}
+    .name_organization, .inn_organization, .adress_organization{  
+        display: flex; 
         flex-direction: column;
         align-items: center;
 
@@ -361,12 +362,8 @@ body{ background: $fon_white; }
         label{ padding: 2% 0; }
         br{ display: none; }
     }
-
-    .content_set span{
-        padding: 10px 10px;    
-        margin: 20px 0 0 0;   
-    } 
-    .cell{ justify-content: center; }
+    .content_set span{ padding: 10px 10px; } 
+    .cell{ justify-content: center;  padding: 0 2rem 0 0;}
     .mobile_fields_address{    
         display: flex;
         flex-direction: column;
@@ -374,7 +371,10 @@ body{ background: $fon_white; }
     }
     
     .fields_address{ display: none; }
-    .cell input{ width: 80%;}
+    .cell input{ 
+        width: 80%;
+        margin: 13px 2%;
+    }
     .img_organization{         
         flex-direction: column;
         align-items: center;
@@ -398,6 +398,10 @@ body{ background: $fon_white; }
         align-items: center;
         label{ padding: 3.2% 0; }
     } 
+    .cell input{
+        width: 90%;
+        margin: 0 3rem 0 0;
+    }
 }
 
 

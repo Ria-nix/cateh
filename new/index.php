@@ -21,7 +21,7 @@ $success = 'Успешно добавлен новый сис. админист�
 
 <!-- CONTENT -->
 <div class="content_wrap">
-    <p class="font_24 bold"><?php echo $add_organ ?></p>
+    <p class="font_22 bold"><?php echo $add_organ ?></p>
     <div class="content_set">
         <div class="name_organization">
             <label for="name">Название организации<i class='red'>*</i></label>
@@ -33,11 +33,13 @@ $success = 'Успешно добавлен новый сис. админист�
         </div>
         <div class="adress_organization">
             <label for="address">Адрес<i class='red'>*</i></label>
-            <input type="text" id="address" class="field_address" placeholder="ул.Маркаса д.9" value="">
-            <div class="mobile_fields_address"></div>
-            <span class="button border" id="add_address">
-                    <img src="site/includes/dasha/icons/plus-solid.svg" alt="plus_solid">
+            <div class="item_address">
+                <input type="text" id="address" class="field_address" placeholder="ул.Маркаса д.9" value="">
+                <span class="button border" id="add_address">
+                    <img src="site/includes/dasha/icons/plus-solid.svg" alt="plus_solid"> 
                 </span>
+            </div>  
+            <div class="mobile_fields_address"></div>              
         </div>
         <div class="fields_address"></div>
         <div class="img_organization">
