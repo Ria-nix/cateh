@@ -1,36 +1,5 @@
 $(document).ready(function () {
 
-    //************ VALIDATION FORM FOR FEW INPUTS ************/
-    // Validation for 
-    // let password = document.querySelector('#password');
-    // password.addEventListener('change', function () {
-    //     let pass = /[A-Za-z_,.]\w{5,20}$/;
-    //     if (password.value.match(pass)) {
-    //         console.log('right')
-    //         password.classList.remove('red_auto');
-    //     }
-    //     else {
-    //         password.classList.add('red_auto');
-    
-    ////password.hasAttributes('Пароль может иметь содержать латинские буквы, цифры и символы: "_" "," "."');
-    //         console.log('no')
-    //     };
-    // })
-
-let number = document.querySelector('#tel_number');
-    $('#tel_number').focus(function(){ number.value = '+7 ';})
-
-    $('#tel_number').change(function(){
-        let pass = /^[-+]?[0-9 ]{0,15}$/;
-        if (number.value.match(pass)) {
-            number.classList.remove('red_auto');
-        }
-        else{ 
-            number.value = '';
-            number.classList.add('red_auto');
-        }
-    })
-
     //************ COMPETENTIONS AND FOR ALL ************/
     // SEND ON SERVER INFORMATION ABOUT NEW ORGANIZATION
 
@@ -91,7 +60,7 @@ let number = document.querySelector('#tel_number');
                 }
                 else {
                     suggestArray.splice(0, suggestArray.length);
-                    text_search = '<li class="add_competence"><span><img src="icon/plus-solid.svg" alt="plus" width="15" height="15"> Добавить</span> </li>';
+                    text_search = '<li class="add_competence"><span><img src="site/includes/dasha/icons/plus-solid.svg" alt="plus" width="15" height="15"> Добавить</span> </li>';
                     suggestArray.unshift(text_search);
                     html = suggestArray.join('');
                 }
@@ -112,7 +81,7 @@ let number = document.querySelector('#tel_number');
         fall_list.forEach(function (item_click) {
             item_click.addEventListener('click', function () {
                 search.value = item_click.innerText;
-                text_competence = '<span class="border cell competence_item register">' + search.value + '<img src="icon/close.svg" alt="close"></span>';
+                text_competence = '<span class="border cell competence_item register">' + search.value + '<img src="site/includes/dasha/icons/close.svg" alt="close"></span>';
                 textCompetence(text_competence);
             });
         })
@@ -120,7 +89,7 @@ let number = document.querySelector('#tel_number');
     // THE ADD NEW COMPETENCE
     function addCompetence() {
         $('.add_competence').on('click', function () {
-            text_competence = '<span class="border cell competence_item unregister">' + search.value + '<img src="icon/close.svg" alt="close"></span>';
+            text_competence = '<span class="border cell competence_item unregister">' + search.value + '<img src="site/includes/dasha/icons/close.svg" alt="close"></span>';
             textCompetence(text_competence);
         })
     };
@@ -133,15 +102,14 @@ let number = document.querySelector('#tel_number');
         }
         else {
             for (var mele of array_test) {
-                if (search.value.split(' ').join('') != mele.split(' ').join('')) { value = true; }
+                if (search.value.split(' ').join('') !== mele.split(' ').join('')) { value = true; }
                 else { return value = false; }
             }
             if (value) {
                 array_test.push(search.value);
                 $(".competences").append(text_competence);
             }
-
-        }   
+        } 
         console.log(array_test)
         isRemoveCell();
     }
@@ -151,7 +119,7 @@ let number = document.querySelector('#tel_number');
         for (var item of $('.competence_item').children('img')) { };
         item.addEventListener('click', function () {
             let index = array_test.indexOf(item.parentElement.innerText);
-            if (index !== -1) { array_test.splice(index, 1) }
+            if (index !== -1) { array_test.splice(index, 1) }            
             item.parentElement.remove();
         });
     };
@@ -159,7 +127,7 @@ let number = document.querySelector('#tel_number');
     // ************** Connect with server ******************
     //! Check how the send on the server the data
     if($('.second')){ $('.second').addClass('add_sysadmin');}
-    $('.add_sysadmin').on('click', function(){     
+    $('.add_sysadmin').on('click', function() {
         let formData = new FormData();
         let email = document.querySelector('#email').value;
         let password = document.querySelector('#password').value;
@@ -167,17 +135,17 @@ let number = document.querySelector('#tel_number');
         let surname = document.querySelector('#surname').value;
         let tel_number = document.querySelector('#tel_number').value;
         let unregister_arr = [], register_arr = [];
-        for(let item_unregister of $('.unregister')){ unregister_arr.push(item_unregister)}
-        for(let item_register of $('.register')){ register_arr.push(item_register)}
+        for (let item_unregister of $('.unregister')) { unregister_arr.push(item_unregister); }
+        for (let item_register of $('.register')) { register_arr.push(item_register); }
 
         let file = document.querySelector('input[type=file]').files[0];
-        if(file !== undefined){
+        if (file !== undefined) {
             formData.append('image', file, 'NOT_NULL');
             formData.append('MAX_FILE_SIZE', "6291456");
         }
-        
-        formData.append('DBname', 'u1184374_second_company_bd');
-        formData.append("token", 'lera_token');
+
+        formData.append('DBname', getCookie("DBname"));
+        formData.append("token", getCookie("token"));
         formData.append("password", password);
         formData.append("role", 3);
         formData.append("name", name);
@@ -186,17 +154,27 @@ let number = document.querySelector('#tel_number');
         formData.append("phone_number", tel_number);
         formData.append("set_categories_list", JSON.stringify(register_arr));
         formData.append("add_new_categories_list", JSON.stringify(unregister_arr));
-    
-        let request = new XMLHttpRequest();
-        request.open("POST", "https://ithelpdeskdemo.xyz/addSysadmin");
-        request.send(formData);
-        request.onload = function () { console.log(request.responseText); }
-    });
 
+        let request = new XMLHttpRequest();
+        request.open("POST", "https://ithelpdeskdemo.xyz/api/user/sysadmin/add");
+        request.send(formData);
+        request.onload = function () {
+            console.log(request.responseText);
+        }
+    });
 
     const ACCESS_LEVEL_SYS_ADMIN = 3;
     const ACCESS_LEVEL_ADMIN = 4;
-
-
 });
+
+function getCookie(name) {
+    const value = `; ${document.cookie}`;
+    const parts = value.split(`; ${name}=`);
+    if (parts.length === 2) return parts.pop().split(';').shift();
+}
+
+function deleteCookie(name) {
+    document.cookie = name + '=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+}
+
 

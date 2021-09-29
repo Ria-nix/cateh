@@ -1,4 +1,3 @@
-@import "cateh_style";
 
 .header{
     width: 100%;
@@ -165,7 +164,7 @@ nav{
 
 // ********** MEDIA 850PX *************
 @media (max-width: 850px) {    
-    .toggle_menu_fon{
+    .toggle_menu_fon{ 
         justify-content: flex-end;        
         grid-template-columns: repeat(1, minmax(570px, 850px));   
         .toggle_menu{ display: flex;  } 
@@ -211,7 +210,7 @@ nav{
         left: 0;   
         top: 6.5rem; 
         justify-content: center;        
-        grid-template-columns: repeat(1, minmax(320px, 580px));  
+        grid-template-columns: repeat(1, minmax(320px, 580px)); 
 
         .toggle_menu{
             padding: 1rem 0 4% 0; 

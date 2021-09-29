@@ -594,7 +594,6 @@ nav .navigation .door img {
   }
 
   .toggle_menu_fon {
-    height: 150%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -603,8 +602,6 @@ nav .navigation .door img {
 }
 @media (max-width: 850px) {
   .toggle_menu_fon {
-    width: 104%;
-    height: 97%;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
@@ -631,8 +628,9 @@ nav .navigation .door img {
 
   .toggle_menu_fon {
     background: rgba(17, 39, 66, 0.9);
-    left: -10px;
-    top: 129px;
+    left: 0;
+    top: 100px;
+    height: 100rem;
   }
   .toggle_menu_fon .toggle_menu {
     margin: 30px auto;
@@ -666,11 +664,11 @@ nav .navigation .door img {
   }
 
   .toggle_menu_fon {
-    left: 0;
     background: #F5F5F5;
     width: 100%;
-    height: 100%;
-    top: 100px;
+    height: 100rem;
+    left: 0;
+    top: 6.5rem;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -1036,6 +1034,9 @@ body {
   color: #112742;
 }
 .content_set .name_organization, .content_set .inn_organization {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -1043,7 +1044,30 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
+.content_set .adress_organization, .content_set .item_address {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.content_set .adress_organization input, .content_set .item_address input {
+  width: 90%;
+  margin: 0 0.7rem 0 0;
+}
+.content_set .item_address {
+  width: 75%;
+}
 .content_set .img_organization {
+  border-bottom: 1px solid #939393;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1073,17 +1097,6 @@ body {
 .content_set .img_organization .button_gray {
   padding: 6px 20px;
   cursor: pointer;
-}
-.content_set .adress_organization {
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.content_set .save {
-  border-top: 1px solid #939393;
 }
 .content_set .save button {
   width: 150px;
@@ -1133,18 +1146,13 @@ body {
   .content_set > div {
     width: 90%;
   }
-
-  .adress_organization {
-    width: 100%;
-  }
 }
 @media (min-width: 541px) {
   .content_set > div {
     padding: 1.5% 0%;
   }
 
-  .name_organization, .inn_organization,
-.adress_organization {
+  .name_organization, .inn_organization {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1154,11 +1162,11 @@ body {
             flex-direction: row;
   }
 
-  .name_organization label, .inn_organization label {
+  .name_organization label, .inn_organization label, .adress_organization label {
     text-align: left;
     width: 25%;
   }
-  .name_organization input, .inn_organization input {
+  .name_organization input, .inn_organization input, .adress_organization input {
     width: 75%;
   }
 
@@ -1176,16 +1184,8 @@ body {
     margin: 0 0 0 70%;
   }
 
-  .adress_organization label {
-    margin-right: auto;
-  }
-  .adress_organization input {
-    width: 67.3%;
-    margin: 0 1.5% 0 0;
-  }
-
   #add_address {
-    padding: 1.2%;
+    padding: 0.4rem;
   }
 
   .mobile_fields_address {
@@ -1220,13 +1220,13 @@ body {
     margin: 0 0 0 5%;
   }
 }
-@media (max-width: 540px) {
+@media (max-width: 541px) {
   .content_set > div {
     padding: 2% 0%;
   }
 
   .save {
-    padding: 5rem 0;
+    margin: 1rem 0 2rem 0;
   }
   .save button {
     margin: 0;
@@ -1245,7 +1245,7 @@ body {
             align-items: center;
   }
   .name_organization input, .inn_organization input, .adress_organization input {
-    width: 85%;
+    width: 95%;
     text-align: center;
   }
   .name_organization label, .inn_organization label, .adress_organization label {
@@ -1300,7 +1300,7 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin: 1% 0 2% 0;
+    margin: 0.5rem 0 1rem 0;
   }
   .img_organization .img_buttons #delete_organ {
     margin: 0 0 0 5%;
@@ -1313,11 +1313,7 @@ body {
     margin: 0 0 5% 0;
   }
 }
-@media (max-width: 390px) {
-  .save button {
-    margin: 0;
-  }
-
+@media (max-width: 540px) {
   .name_organization, .inn_organization, .adress_organization {
     display: -webkit-box;
     display: -ms-flexbox;

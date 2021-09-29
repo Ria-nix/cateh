@@ -21,11 +21,6 @@ $(document).ready(function(){
             window.location.href = 'add_organization.php'; });
         }
         
-        for(let elem of $('.settings')){
-            elem.addEventListener('click',function(){
-            window.location.href = 'settings.php'; });
-        }
-        
         for(let elem of $('.exit')){
             elem.addEventListener('click',function(){
             window.location.href = 'order.php'; });

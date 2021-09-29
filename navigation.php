@@ -32,10 +32,6 @@
                 <img src="icon/plus-solid.svg" alt="alt">
                 <p class="font_18 icon_none none">Добавить новую организацию</p>
             </span>
-            <span class="button border settings">
-                <img src="icon/settings.svg" alt="alt">
-                <p class="font_18 icon_none none">Настройки</p>
-            </span>
             <span class="button border door exit">                    
                 <p class="font_18">Выйти</p>
                 <img src="icon/exitdoor_87195.svg" alt="alt">
@@ -58,10 +54,6 @@
         </span>
         <span class="button border plus organization_plus">
             <img src="icon/plus-solid.svg" alt="alt">
-        </span>
-        <span class="button border settings">
-            <img src="icon/settings.svg" alt="alt">
-            <p class="font_18"></p>
         </span>
         <span class="button border door exit">                    
             <p class="font_18">Выйти</p>

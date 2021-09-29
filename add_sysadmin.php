@@ -48,13 +48,13 @@ include('head_code.php'); ?>
 
             <div class="main_fields">
                 <label for="tel_number">Номер телефона</label>
-                <input type="text" id="tel_number" placeholder="+7 950 *** 22 01">
+                <input type="tel" id="tel_number" placeholder="+7 950 *** 22 01">
             </div>
 
             <div class="main_fields">
                 <label for="state" class="text_width">Статус</label>
                 <div class="searchable border">
-                    <input type="text" class="border_none state_value" value="Системный администратор">
+                    <input type="text" class="border_none state_value" value="Системный администратор" readonly>
                     <span id="polygon_state">
                         <img src="icon/Polygon.svg" alt="polygon">
                     </span>

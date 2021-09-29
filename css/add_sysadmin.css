@@ -594,7 +594,6 @@ nav .navigation .door img {
   }
 
   .toggle_menu_fon {
-    height: 150%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -603,8 +602,6 @@ nav .navigation .door img {
 }
 @media (max-width: 850px) {
   .toggle_menu_fon {
-    width: 104%;
-    height: 97%;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
@@ -631,8 +628,9 @@ nav .navigation .door img {
 
   .toggle_menu_fon {
     background: rgba(17, 39, 66, 0.9);
-    left: -10px;
-    top: 129px;
+    left: 0;
+    top: 100px;
+    height: 100rem;
   }
   .toggle_menu_fon .toggle_menu {
     margin: 30px auto;
@@ -666,11 +664,11 @@ nav .navigation .door img {
   }
 
   .toggle_menu_fon {
-    left: 0;
     background: #F5F5F5;
     width: 100%;
-    height: 100%;
-    top: 100px;
+    height: 100rem;
+    left: 0;
+    top: 6.5rem;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
