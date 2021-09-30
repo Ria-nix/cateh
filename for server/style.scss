@@ -1,229 +1,402 @@
+
 @import 'cateh_style';
 @import 'navigation';
-@import 'modal_window';
 
-body{ background: $fon_white; } 
-.content_wrap{
+#red{ background: $light_red;}
+#orange{ background: $light_orange;}
+#yellow{ background: $light_yellow;}
+#light_green{ background: $light_green;}
+#dark_green{ background: $dark_green;}
+
+.profile_buttons{
     @extend %grid;
-    text-align: center;
-    z-index: 1;
-    p.font_24{ padding: 3.5% 4% 2% 4%; }
+    background: $fon_white;
 }
-.content_set{ @extend %flex_column;
-    input{
-        height: 40px;
-        text-align: center;
-        box-shadow: 0px 4px 10px 0px rgba($but_shadow, 0.15);
-        border-radius: 10px;        
-    }
-    label, button{ letter-spacing: 1px; color: $blue;}               
-    .main_fields{ 
-        justify-content: space-between;  
-        align-items: center; 
-    }
-    .text_width{ margin: 1% 0 auto 0;}
-    .searchable {  
-        border: 1px solid $gray_border;
-        position: relative;  
-        input {
-            padding: 0 11% 0 2%;
-            margin: 0;
-            border: none;
+.profile {
+    padding: 1rem 0 2.5% 0;
+    margin: 0 2%;
+    display: grid;   
+    grid-template-columns: repeat(1, minmax(320px, 1500px)); 
+    background: $fon_white;
+}
+.role_sysadmin{ 
+    grid-area: role; 
+    @extend %flex_row;
+    justify-content: center;
+    padding: 0 0 0.5rem 0; 
+}
+
+.image{ 
+    display: flex;
+    grid-area: image;
+    .logo_organization{
+        width: 11rem;
+        height:11rem; 
+        img{
+            box-shadow: 0px 4px 10px 0px rgba($but_shadow, 0.3);
+            border-radius: 10px;
             width: 100%;
-            transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-        }            
-        #polygon, #polygon_state{
-            position: absolute;
-            top: 13px;
-            right: 15px;
-            cursor: pointer;
+            height: 100%;
+            object-fit: contain;
         }
-        ul {
-            width: 100%;
-            list-style-type: none;                
-            background: $gray_full;
-            outline: none;
-            max-height: 150px;
-            overflow-y: scroll;
-            overflow-x: hidden;
-            text-align: left;
-            border-top: 1px solid $gray_border;
-            border-bottom-left-radius: 10px;
-            border-bottom-right-radius: 10px;
-            li {
-                padding: 7px 9px;
-                cursor: pointer;
-            }
-        }
-    }        
-    .searchable ul li.selected {
-        background-color: #e8e8e8;
-        color: #333;
-    }    
+    }
+}
+.number{ 
+    grid-area: number_tel;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    line-height:2rem;
+}
+.item_rating{ border-radius: 5px; }
+.rating{
+    grid-area: rating;
+    display: flex;
+}
+.text{
+    grid-area: col_text;
+    display: flex;
+    flex-direction: column;       
+    .text_info{ 
+        display: flex;
+        align-items: center;
+    }
+}
+.bold{ letter-spacing: 0.5px; }
+.buttons{ 
+    grid-area: buttons;
+    display: flex;
+    button{ @extend %flex_row; }
+}
+
+
+.competence_list{
+    @extend %grid;
+    margin: 0 2%;
+
     .competences{
+        width: 100%;
+        min-height: 3rem;
+        padding: 1rem 1rem 1rem 0;
         text-align: left;
         @extend %flex_row;
         flex-wrap: wrap;
+        background: transparent;
+        border: 1px solid $gray_border;
+        box-shadow: 0px 4px 10px 0px rgba($but_shadow, 0.15);
+
         span{
+            max-width: 80rem;
             @extend %flex_row;
+            margin: 0 0 0.5rem 0.5rem;
             align-items: center;
             justify-content: space-between;
-            padding: 10px 12px;
+            padding: 10px 10px;
             background: $yellow;
-            margin: 0.5rem 0 0.3rem 0.5rem;
             img{
                 padding: 0 0 0 10px;
                 cursor: pointer;
             }
         }
     }
-    .img_organization{ 
-        border-bottom: 1px solid $gray_border;   
-        display: flex;
-        align-items: center;     
-        margin: 1rem 0 0 0;
-        .img_buttons, .image{  @extend %flex_row; }
-        .image{       
-            border: 0.5px solid $blue;  
-            padding: 0.5rem;           
-            width: 11rem;
-            height: 11rem;  
-            img{
-                width: 100%;
-                height: 100%;
+    
+}
+.table_sysadmin::-webkit-scrollbar { width: 0;}
+
+// ***************** NAME OF TABLE (buttons) *****************
+
+// *********** CONTENT ****************
+.content_wrap{
+    border-top: 1px solid rgba($blue, 0.5);
+    @extend %grid;
+
+    //HEAD TABLE
+    .head_table{ 
+        background: $fon_table;
+        width: 100%;
+        height: 5rem;
+        .head_name{     
+            height: 100%;
+            @extend %flex_row;       
+            p{ 
+                flex:1; 
+                text-align: center; 
+            }
+            span > img{ 
+                transform: translateY(3px);
                 object-fit: contain;
             }
         }
-        #input_file{
-            overflow: hidden;
-            position: absolute;
-            opacity: 0;
-            width: 10px;
-            height: 10px;
-        }
-        .button_gray{ 
-            padding: 6px 20px; 
-            cursor: pointer; 
-        }
     }
-    .save button{
-        width: 150px;
-        height: 38px;
-    }    
-    .fields_address{
-        height: auto;
-        padding: 0;          
+
+    // TABLE WITH INFO
+    .table_sysadmin{
+        margin: 0 2%;
+        border-top: 1px solid $blue;
+        max-height: 520px;
+        @extend %flex_column;
+        overflow-y: scroll;
+        .item_table{
+            width: 100%;
+            height: auto;
+            @extend %flex_row;
+            margin: 20px 0 0 0;   
+            .item_info > * {
+                flex:1;
+                text-align: center;
+            }
+            .item_info{ box-shadow: 0px 4px 10px 0px rgba($but_shadow, 0.15);
+                .main_fio{ text-align: center;}               
+            }
+            .click{ 
+                padding:18px 12px;
+                font-weight: initial;  
+                color: rgba($blue, 0.7);
+                letter-spacing: 0.5px;
+            }
+            .click:hover{ color: $blue; }
+        }
+        .item_table:last-child{ margin: 20px 0; }        
     }
 }
 
-//******* SCROLL BAR *******
-/* width */
-.searchable ul::-webkit-scrollbar { width: 8px;}
-.searchable ul::-webkit-scrollbar-track { margin: 2.5px; }
-/* Handle */
-.searchable ul::-webkit-scrollbar-thumb {
-    background: rgba($blue, 0.65);
-    border-radius: 10px;
-}
-//******** THE OTHER SYLES *******
-.click_none{ pointer-events: none; }
+// ************* @MEDIA *************
 
-
-//! ************* @MEDIA ************* !
-// ********** MEDIA MIN 1163PX ********
-@media (min-width: 1163px) {    
-    .content_set > div{ width: 45%; }
-    .main_fields{ width: 52%;}
+// ********** MEDIA MIN 1163PX *************
+@media (min-width: 1163px) {
+    .item_table, .head_name{ font-size: 18px; }
+    .item_table button{ display: block; margin-left: 2rem; }
+    .head_name{ 
+        width: 88%;
+        padding:0 10% 0 0;
+    }
+    .item_info{ width: 100%; padding: 1.2rem;}
+    .items{ padding: 2% 0; }
 }
 
-// ********** MEDIA MAX 1163PX ********
+// ********** MEDIA MAX 1163PX *************
 @media (max-width: 1163px) {
-    .content_set > div{  width: 55%; } 
-    input{ width: 100%; } 
-
-} 
-// ********** MEDIA MAX 850PX ********
-@media (max-width: 850px) {  
-    .content_set > div{ width: 90%;}
-    .main_fields{ width: 100%;}
+    .head_name{ 
+        width: 84%;
+        padding: 0 3%;
+    }
+    .items{ width: 65%; }
+    .item_table button{margin-left: 40px; }
+    .item_info{ 
+        width: 100%; 
+        padding: 1.2rem;        
+        background: $fon_table;
+    }
 }
 
-// ********** MEDIA MIN 541PX ********
-@media (min-width: 541px) {
-    .field_choice .text_width{ width: 40%; padding: 0 2% 0 0;}
-    .main_fields{ 
-        padding: 1.5% 0%;
-        display: flex;
-        flex-direction: row; 
-        label{
-            text-align: left;
-            width: 25%;
+// ********** MEDIA MIN 971px *************
+@media (min-width: 971px) {  
+    .profile{ 
+        grid-template-columns: 11rem 16rem 2rem auto;
+        grid-template-areas: 'role role role role role role'
+                            'image col_text col_text rating rating rating'
+                            'image col_text col_text number_tel buttons buttons'; 
+    }
+        b{ margin: 2rem 0;}
+        .rating{ 
+            justify-content: flex-end;
+            .item_rating{
+                width: 80px;
+                height: 30px;
+                margin: 0 0 0 1rem;
+            }
         }
-        input{
-            width: 75%;            
-            margin: 0 0 0 5%;
+    
+        .buttons{  
+            align-items: flex-end;
+            flex-direction: column;
+            button{ padding: 6px 15px;
+                    margin: 1.5rem 0 0 0;
+                span{margin: 0 5px 0 0;}
+            }  
         }
+        .number{ margin: 0 0 0 0.5rem; 
+            justify-content: center;}
+        .text{         
+            align-items: flex-start;
+            justify-content: space-evenly;
+            margin: 0 0 0 2rem; 
+            .opacity{ 
+                padding: 0 0 0 2rem;
+                grid-area: text;
+            }
+            .text_info{ flex-direction: row;}
+        }
+        .mobile_count{ display: none;}
+}
+
+// ********** MEDIA MAX 970px *************
+@media (max-width: 970px) {  
+    .profile{ 
+        grid-template-columns: 11rem 15rem;
+        grid-template-areas: 'role role role role role role'
+                            'image rating rating rating rating rating'
+                            'image col_text col_text number_tel number_tel number_tel'
+                            'image col_text col_text buttons buttons buttons';
+    }
+    .rating{ 
+        margin: 0 0 0 2rem;  
+        justify-content: space-between;
+        .item_rating{
+            width: 18%;
+            height: 30px;
+        }
+    }
+
+    .number{        
+        padding: 1.5rem 0 0 1rem;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .text{
+        align-items: flex-start;
+        justify-content: space-evenly;
+        margin: 0 0 0 2rem; 
+        .opacity{ 
+            padding: 0 0 0 2rem;
+            grid-area: text;
+        }
+        .text_info{ flex-direction: row; }
+    }
+    .buttons{  
+        align-items: flex-end;
+        flex-direction: column;
+        button{ 
+            padding: 6px 10px;
+            margin: 1.5rem 0 0 0;
+        }  
+    }
+    .head_table{
+        font-size: 14px;
+        justify-content: center;
+    }  
+    .item_table button{ display: none; }
+    .item_table{ width: 100%;  }
+    .head_name{  width: 100%;  }
+}
+
+// ********** MEDIA MIN 686px *************
+@media (min-width: 686px) {
+    b{ margin: 2rem 0;}
+    .mobile_count{ display: none;}
+    .buttons span{margin: 0 5px 0 0;}
+
+    // ************ NAMES OF TABLE (buttons) ************
+    .head_table{
+        display: grid;
+        grid-template-columns: repeat(1, minmax(320px, 1500px));
+        .head_name{ padding: 0 50px; }
     }    
-    .image{ 
-        margin: 0 5% 5% 0; 
-        box-shadow: 0 4px 10px 0 $but_shadow
+    .mobile_version{ display: none; }
+    .item_info{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
     }
-    .fields_address{  
+    .competences{ margin: 1rem 0; }
+}
+
+// ********** MEDIA MAX 685px *************
+@media (max-width: 685px) {
+    .competences{ margin: 1rem 0.5rem; }
+    .profile{ grid-template-columns: repeat(1, minmax(320px, 1500px));
+        grid-template-areas: 'role' 'image' 'buttons' 'col_text' 'rating' 'number_tel'; 
+        justify-content: center;
+        align-items: center;
+    }
+    .rating{ 
+        margin: 0;
+        justify-content: space-around;
+        flex-direction: row; 
+        .item_rating{
+            width: 15%;
+            height: 25px;
+            margin: 1rem 0;
+        }
+    }
+    
+    .hidden, br{ display: none;}
+    .buttons{ 
+        flex-direction: row;
+        justify-content: center;
+        button{  
+            display: flex;
+            justify-content: center;
+            margin: 1rem;
+            img{
+                width: 2rem;
+                height: 2rem;
+            }
+        }
+    }
+    .text{
+        align-items: center;      
+        margin: 0;
+        .text_info{ 
+            padding: 0.8rem 0;
+            justify-content: center;
+        }
+        .count{ display: none; }
+    }
+    .number{ 
+        justify-content: center;
+        padding: 0.5rem;
+        .b{padding: 0 0 0 0.5rem;}
+    }
+    .image{
+        align-items: center;
+        justify-content: center;
+    }
+
+    .mobile_count{ 
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+
+        .text_info{
+            display: flex;
+            flex-direction: column;
+            margin: 0.5rem;
+            text-align: center;
+        }
+    } 
+
+    .competence_list{text-align: center;}
+
+     // ************ NAMES OF TABLE (buttons) ************
+    .head_table{display: none;}
+    .table_sysadmin{
+        border: none;
+    }
+    .mobile_none{ display: none; }
+    .mobile_version{
+        display: flex;
+        flex-direction: row;  
+        justify-content: space-around;  
+
+        .mobile_title{
+            text-align: left;
+            color: rgba($blue, 0.85);
+            flex-basis: 60%;
+            p{ padding: 4% 0 0 3%;}            
+        }
+        .mobile_info{ 
+            flex-basis: 40%;
+            .complete_order, .current_order{ margin: 5% 0 3% 30%; }
+        }
+    }
+    .mobile_version > div{
         display: flex;
         flex-direction: column;
-        align-items: center; 
-    }
-    .cell input{ width: 66.5%;}
-    .img_buttons{ justify-content: space-around;    
-        button{ padding: 7px 20px; }
-        #delete_admin{ margin: 0 0 0 5%; }       
-    }
-    .searchable { width: 71%;}
-    .competences{ 
-        border: 1px solid $gray_border;
-        background: $list_competence;
-        padding: 0.5%; 
-        min-height: 100px;
-    }
-    .save{ margin: 1rem 0 2rem 0;
-        button{ margin: 0 0 2% 70%; }
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 2% 0;
+        font-size: 15px;
     }
 }
 
-// ********** MEDIA MAX 540PX *********
-@media (max-width: 540px) {
-    .main_fields{   
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 2% 0;
-        input{  width: 85%; text-align: center; }
-        label{ padding: 2% 0; }
-    }
-    .img_organization{         
-        flex-direction: column;
-        align-items: center;
-        .img_buttons{ 
-            justify-content: center; 
-            margin: 0.5rem 0 1.5rem 0;
-            #delete_admin{ margin: 0 0 0 5%; }
-            button, label{ padding: 8px 25px; }
-        }        
-    }
-    .image{margin: 0 0 5% 0;}  
-    .searchable { width: 85%;}  
-    .competences{ 
-        padding: 2.5%;
-        min-height: 0px;
-    }
-    .save{ margin: 1rem 0 2rem 0;}
-}
-// ********** MEDIA MAX 390PX *********
-@media (max-width: 390px) {
-    .main_fields{   
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        label{ padding: 3.2% 0; }
-    } 
-}

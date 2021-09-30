@@ -120,12 +120,12 @@ input[type=number]::-webkit-outer-spin-button {
   font-size: 18px;
 }
 
-.font_22 {
-  font-size: 22px;
+.font_20 {
+  font-size: 20px;
 }
 
-.font_24 {
-  font-size: 24px;
+.font_22 {
+  font-size: 22px;
 }
 
 .red_auto {
@@ -329,12 +329,12 @@ input[type=number]::-webkit-outer-spin-button {
   font-size: 18px;
 }
 
-.font_22 {
-  font-size: 22px;
+.font_20 {
+  font-size: 20px;
 }
 
-.font_24 {
-  font-size: 24px;
+.font_22 {
+  font-size: 22px;
 }
 
 .red_auto {
@@ -720,7 +720,7 @@ nav .navigation .door img {
 }
 
 .profile {
-  padding: 2rem 0 2.5% 0;
+  padding: 1rem 0 2.5% 0;
   margin: 0 2%;
   display: grid;
   grid-template-columns: repeat(1, minmax(320px, 1500px));
@@ -733,8 +733,6 @@ nav .navigation .door img {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 0 0 1rem 0;
-  font-weight: bold;
-  font-size: 20px;
 }
 
 .image {
@@ -817,8 +815,8 @@ nav .navigation .door img {
 }
 .competence_list .competences {
   width: 100%;
-  min-height: 150px;
-  margin: 1rem 0;
+  min-height: 3rem;
+  padding: 1rem 1rem 1rem 0;
   text-align: left;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -829,6 +827,7 @@ nav .navigation .door img {
 }
 .competence_list .competences span {
   max-width: 80rem;
+  margin: 0 0 0.5rem 0.5rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -837,7 +836,6 @@ nav .navigation .door img {
           justify-content: space-between;
   padding: 10px 10px;
   background: #FFCC00;
-  margin: 0.5rem 0 0.3rem 0.5rem;
 }
 .competence_list .competences span img {
   padding: 0 0 0 10px;
@@ -1078,11 +1076,8 @@ nav .navigation .door img {
             flex-direction: column;
   }
   .buttons button {
-    padding: 6px 15px;
+    padding: 6px 10px;
     margin: 1.5rem 0 0 0;
-  }
-  .buttons button span {
-    margin: 0 5px 0 0;
   }
 
   .head_table {
@@ -1113,6 +1108,10 @@ nav .navigation .door img {
     display: none;
   }
 
+  .buttons span {
+    margin: 0 5px 0 0;
+  }
+
   .head_table {
     display: grid;
     grid-template-columns: repeat(1, minmax(320px, 1500px));
@@ -1137,8 +1136,16 @@ nav .navigation .door img {
         -ms-flex-align: center;
             align-items: center;
   }
+
+  .competences {
+    margin: 1rem 0;
+  }
 }
 @media (max-width: 685px) {
+  .competences {
+    margin: 1rem 0.5rem;
+  }
+
   .profile {
     grid-template-columns: repeat(1, minmax(320px, 1500px));
     grid-template-areas: "role" "image" "buttons" "col_text" "rating" "number_tel";
@@ -1179,8 +1186,6 @@ nav .navigation .door img {
             justify-content: center;
   }
   .buttons button {
-    min-width: 50px;
-    height: 50px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1227,10 +1232,6 @@ nav .navigation .door img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-  }
-
-  .bold {
-    height: 50%;
   }
 
   .mobile_count {

@@ -35,10 +35,7 @@ body{ background: $fon_white; }
         display: flex;       
         justify-content: flex-end;
         align-items: center; 
-        input{ 
-            // width: 90%;
-            margin: 0 0.7rem 0 0;
-        }
+        input{ margin: 0 0.7rem 0 0;  }
     }
     #add_address{ padding:0.4rem; }
     .img_organization{ 
@@ -84,7 +81,6 @@ body{ background: $fon_white; }
         display: flex;
         align-items: center;
 
-        input{ margin: 13px 2%;}
         img{ 
             cursor: pointer; 
             width: 20px; 
@@ -130,7 +126,7 @@ body{ background: $fon_white; }
         input{ width: 75%; }
     }
     .cell{ justify-content: flex-end; }
-    .image{ margin: 0 5% 5% 0; }
+    .image{ margin: 0 5% 0 0; }
     .save button{ margin: 0 0 0 70%; }
 
     .mobile_fields_address{ display: none; }
@@ -154,6 +150,7 @@ body{ background: $fon_white; }
         margin: 1rem 0 2rem 0;
         button{ margin: 0; }
     }
+    .image{ margin: 0 0 5% 0; }
     .item_address{ width: 95%;}
     .name_organization, .inn_organization, .adress_organization{  
         display: flex; 
@@ -165,7 +162,7 @@ body{ background: $fon_white; }
         br{ display: none; }
     }
     .content_set span{ padding: 10px 10px; } 
-    .cell{ justify-content: center;  padding: 0 2rem 0 0;}
+    .cell{ justify-content: center;  padding: 1rem 1rem 0 0;}
     .mobile_fields_address{    
         display: flex;
         flex-direction: column;
@@ -173,7 +170,10 @@ body{ background: $fon_white; }
     }
     
     .fields_address{ display: none; }
-    .cell input{ width: 80%;}
+    .cell input{ 
+        width: 80%;
+        margin: 13px 2%;
+    }
     .img_organization{         
         flex-direction: column;
         align-items: center;
@@ -197,9 +197,8 @@ body{ background: $fon_white; }
         align-items: center;
         label{ padding: 3.2% 0; }
     } 
+    .cell input{
+        width: 85%;
+        margin: 0 3rem 0 0;
+    }
 }
-
-
-
-
-

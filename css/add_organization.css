@@ -121,6 +121,10 @@ input[type=number]::-webkit-outer-spin-button {
   font-size: 18px;
 }
 
+.font_20 {
+  font-size: 20px;
+}
+
 .font_22 {
   font-size: 22px;
 }
@@ -324,6 +328,10 @@ input[type=number]::-webkit-outer-spin-button {
 
 .font_18 {
   font-size: 18px;
+}
+
+.font_20 {
+  font-size: 20px;
 }
 
 .font_22 {
@@ -808,6 +816,10 @@ input[type=number]::-webkit-outer-spin-button {
   font-size: 18px;
 }
 
+.font_20 {
+  font-size: 20px;
+}
+
 .font_22 {
   font-size: 22px;
 }
@@ -1174,7 +1186,7 @@ body {
   }
 
   .image {
-    margin: 0 5% 5% 0;
+    margin: 0 5% 0 0;
   }
 
   .save button {
@@ -1225,6 +1237,10 @@ body {
     margin: 0;
   }
 
+  .image {
+    margin: 0 0 5% 0;
+  }
+
   .item_address {
     width: 95%;
   }
@@ -1260,7 +1276,7 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding: 0 2rem 0 0;
+    padding: 1rem 1rem 0 0;
   }
 
   .mobile_fields_address {
@@ -1329,7 +1345,7 @@ body {
   }
 
   .cell input {
-    width: 90%;
+    width: 85%;
     margin: 0 3rem 0 0;
   }
 }/*# sourceMappingURL=add_organization.css.map */
