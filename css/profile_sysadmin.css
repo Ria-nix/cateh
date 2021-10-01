@@ -715,6 +715,10 @@ nav .navigation .door img {
   background: #B2E0AE;
 }
 
+#gray {
+  background: #dcdcdc;
+}
+
 .profile_buttons {
   background: #F5F5F5;
 }
@@ -814,7 +818,6 @@ nav .navigation .door img {
   margin: 0 2%;
 }
 .competence_list .competences {
-  width: 100%;
   min-height: 3rem;
   padding: 1rem 1rem 1rem 0;
   text-align: left;
@@ -1139,11 +1142,17 @@ nav .navigation .door img {
 
   .competences {
     margin: 1rem 0;
+    width: 100%;
   }
 }
 @media (max-width: 685px) {
+  body {
+    background: #112742;
+  }
+
   .competences {
     margin: 1rem 0.5rem;
+    width: 95%;
   }
 
   .profile {

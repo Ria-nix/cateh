@@ -410,6 +410,7 @@
 #yellow{ background: $light_yellow;}
 #light_green{ background: $light_green;}
 #dark_green{ background: $dark_green;}
+#gray{ background: $gray;}
 
 .profile_buttons{
     @extend %grid;
@@ -478,7 +479,6 @@
     margin: 0 2%;
 
     .competences{
-        width: 100%;
         min-height: 3rem;
         padding: 1rem 1rem 1rem 0;
         text-align: left;
@@ -600,37 +600,38 @@
                             'image col_text col_text rating rating rating'
                             'image col_text col_text number_tel buttons buttons'; 
     }
-        b{ margin: 2rem 0;}
-        .rating{ 
-            justify-content: flex-end;
-            .item_rating{
-                width: 80px;
-                height: 30px;
-                margin: 0 0 0 1rem;
-            }
+    b{ margin: 2rem 0;}
+    .rating{ 
+        justify-content: flex-end;
+        .item_rating{
+            width: 80px;
+            height: 30px;
+            margin: 0 0 0 1rem;
         }
-    
-        .buttons{  
-            align-items: flex-end;
-            flex-direction: column;
-            button{ padding: 6px 15px;
-                    margin: 1.5rem 0 0 0;
-                span{margin: 0 5px 0 0;}
-            }  
+    }
+
+    .buttons{  
+        align-items: flex-end;
+        flex-direction: column;
+        button{ padding: 6px 15px;
+                margin: 1.5rem 0 0 0;
+            span{margin: 0 5px 0 0;}
+        }  
+    }
+    .number{ 
+        margin: 0 0 0 0.5rem; 
+        justify-content: center;}
+    .text{         
+        align-items: flex-start;
+        justify-content: space-evenly;
+        margin: 0 0 0 2rem; 
+        .opacity{ 
+            padding: 0 0 0 2rem;
+            grid-area: text;
         }
-        .number{ margin: 0 0 0 0.5rem; 
-            justify-content: center;}
-        .text{         
-            align-items: flex-start;
-            justify-content: space-evenly;
-            margin: 0 0 0 2rem; 
-            .opacity{ 
-                padding: 0 0 0 2rem;
-                grid-area: text;
-            }
-            .text_info{ flex-direction: row;}
-        }
-        .mobile_count{ display: none;}
+        .text_info{ flex-direction: row;}
+    }
+    .mobile_count{ display: none;}
 }
 
 // ********** MEDIA MAX 970px *************
@@ -701,12 +702,19 @@
         flex-direction: row;
         align-items: center;
     }
-    .competences{ margin: 1rem 0; }
+    .competences{ 
+        margin: 1rem 0;
+        width: 100%;
+    }
 }
 
 // ********** MEDIA MAX 685px *************
 @media (max-width: 685px) {
-    .competences{ margin: 1rem 0.5rem; }
+    body{background: $blue}
+    .competences{ 
+        margin: 1rem 0.5rem;
+        width: 95%;
+    }
     .profile{ grid-template-columns: repeat(1, minmax(320px, 1500px));
         grid-template-areas: 'role' 'image' 'buttons' 'col_text' 'rating' 'number_tel'; 
         justify-content: center;

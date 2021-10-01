@@ -1006,8 +1006,8 @@ body {
   text-align: center;
   z-index: 1;
 }
-.content_wrap p.font_24 {
-  padding: 3.5% 4% 2% 4%;
+.content_wrap p.font_22 {
+  padding: 1rem 4% 0.5rem 4%;
 }
 
 .content_set input {
@@ -1273,11 +1273,11 @@ body {
     padding: 2% 0;
   }
   .main_fields input {
-    width: 85%;
+    width: 95%;
     text-align: center;
   }
   .main_fields label {
-    padding: 2% 0;
+    padding: 0 0 0.5rem 0;
   }
 
   .img_organization {
@@ -1307,11 +1307,11 @@ body {
   }
 
   .searchable {
-    width: 85%;
+    width: 95%;
   }
 
   .competences {
-    padding: 2.5%;
+    padding: 0.5rem;
     min-height: 0px;
   }
 

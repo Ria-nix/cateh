@@ -43,7 +43,6 @@ include('head_code.php'); ?>
                 </span>
 
                 <div class="mobile_count">
-
                     <span class="text_info mobile_item">
                         <p class="opacityf font_18">50</p>
                         <p class="bold">Выполнено за месяц</p>
@@ -56,7 +55,6 @@ include('head_code.php'); ?>
                         <p class="font_18">50</p>
                         <p class="bold">Текущие заказы</p>
                     </span>
-
                 </div>
 
             </div>
@@ -96,7 +94,10 @@ include('head_code.php'); ?>
         </div>
         <!-- TABLE -->
         <div class="table_sysadmin" id="table">
-            <div class="item_table"><div class="item_info border"><p class="main_fio">milaninn</p><div class="mobile_version"><div class="mobile_title"><p>Выполнено за месяц</p><p>Текущих заказов </p></div><div class="mobile_info"><p class="complete_order">reorewkjlkfs</p><p class="current_order">sdkjflskjfkksjkd</p></div></div><p class="mobile_none complete_order">kjkjsdfjfjkkljdsfk</p><p class="mobile_none current_order">jdslfjsdkjfskd</p></div><button class="click button border font_16">Просмотреть</button></div>
+            <div class="item_table"><div class="item_info border"><p class="main_fio">milaninn</p><div class="mobile_version"><div class="mobile_title"><p>Выполнено за месяц</p><p>Текущих заказов </p></div><div class="mobile_info"><p class="complete_order">88</p><p class="current_order">65</p></div></div><p class="mobile_none complete_order">50</p><p class="mobile_none current_order">55</p></div><button class="click button border font_16">Просмотреть</button></div>
+            <div class="item_table"><div class="item_info border"><p class="main_fio">milaninn</p><div class="mobile_version"><div class="mobile_title"><p>Выполнено за месяц</p><p>Текущих заказов </p></div><div class="mobile_info"><p class="complete_order">88</p><p class="current_order">65</p></div></div><p class="mobile_none complete_order">50</p><p class="mobile_none current_order">55</p></div><button class="click button border font_16">Просмотреть</button></div>
+            <div class="item_table"><div class="item_info border"><p class="main_fio">milaninn</p><div class="mobile_version"><div class="mobile_title"><p>Выполнено за месяц</p><p>Текущих заказов </p></div><div class="mobile_info"><p class="complete_order">88</p><p class="current_order">65</p></div></div><p class="mobile_none complete_order">50</p><p class="mobile_none current_order">55</p></div><button class="click button border font_16">Просмотреть</button></div>
+            <div class="item_table"><div class="item_info border"><p class="main_fio">milaninn</p><div class="mobile_version"><div class="mobile_title"><p>Выполнено за месяц</p><p>Текущих заказов </p></div><div class="mobile_info"><p class="complete_order">88</p><p class="current_order">65</p></div></div><p class="mobile_none complete_order">50</p><p class="mobile_none current_order">55</p></div><button class="click button border font_16">Просмотреть</button></div>
         </div>  
 
     </div>
