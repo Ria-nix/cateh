@@ -18,7 +18,7 @@
                 <button class="button border"><span><img src="icon/restore.svg" alt="restore"></span>Назад</button>
             </div>
             <div class="text">
-                <p class="bold font_24">Заказ №102544589</p>
+                <p class="bold font_22">Заказ №102544589</p>
             </div>
             <div class="empty"></div>
         </div>

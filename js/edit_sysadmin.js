@@ -124,4 +124,8 @@ $(document).ready(function(){
         });
     };
 
+
+    $("#delete_img").click(function(){
+        $('.logo_second').attr('src', 'icon/michael.jpg');
+    })
 })

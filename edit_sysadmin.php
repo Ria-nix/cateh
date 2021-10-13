@@ -22,7 +22,7 @@
 
     <!-- CONTENT -->
     <div class="content_wrap">
-        <p class="font_24 bold"><?php echo $edit_sysadmin ?></p>
+        <p class="font_22 bold"><?php echo $edit_sysadmin ?></p>
         <div class="content_set">
 
             <div class="main_fields">

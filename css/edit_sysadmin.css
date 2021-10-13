@@ -1005,8 +1005,8 @@ body {
 .content_wrap {
   text-align: center;
 }
-.content_wrap p.font_24 {
-  padding: 3.5% 4% 2% 4%;
+.content_wrap p.font_22 {
+  padding: 1rem 4% 1.2rem 4%;
 }
 
 .content_set input {
@@ -1235,7 +1235,7 @@ body {
   }
 
   .save {
-    margin: 0 0 1rem 0;
+    margin: 0 0 2rem 0;
   }
   .save button {
     margin: 0 0 2% 70%;
