@@ -1,0 +1,16 @@
+$height_foot: 50px; 
+.wrap_foot{
+    position: fixed;
+    bottom: 0;    
+    width: 100%;
+    margin-top: auto;
+    background: #EDEDED;
+    border-top: 1px solid#B3B3B3;
+    text-align: center;
+    height: $height_foot;
+    color: #7F8A98;   
+    p{ line-height: $height_foot;}
+}
+@media (max-width: 850px){
+    .wrap_foot{ display: none;}
+}

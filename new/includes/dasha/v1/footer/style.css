@@ -1,0 +1,20 @@
+.wrap_foot {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  margin-top: auto;
+  background: #EDEDED;
+  border-top: 1px solid #B3B3B3;
+  text-align: center;
+  height: 50px;
+  color: #7F8A98;
+}
+.wrap_foot p {
+  line-height: 50px;
+}
+
+@media (max-width: 850px) {
+  .wrap_foot {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */

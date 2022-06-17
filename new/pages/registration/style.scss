@@ -1,0 +1,76 @@
+@use '../additional_styles/Colors' as *;
+@use '../additional_styles/Objects' as *;
+
+// ----------------- Variables ----------------- //
+$form_width_min: 65rem;
+$form_width_max: 100rem;
+// -------------------------------------------- //
+
+// ----------------- Main code ----------------- //
+.wrap_content{
+    @include flex(column, normal, normal);
+    margin: 0 10px;
+    form{
+        .first_blockFields, .second_blockFields{
+            @include flex(column, normal, normal); //Objects
+
+            &>div{
+                @include flex(column, center, left); //Objects
+                padding-bottom: 20px;
+            }
+        }
+        .signUp_errorMessage .log_in input[type=submit]{
+            margin-top: 15px;
+            @include Buttons($blue_color, 100%);
+        }     
+        .error_message{
+            text-align: justify;
+            color: $red_color;
+            font-size: 16px;
+            p{padding: 2%}
+        }    
+        
+    }
+}
+// ------------------------------------------- //
+
+// ----------------- @MEDIA MIN 771PX ----------------- //
+@media (min-width:771px) { 
+    form{
+        @include flex(column, center, left); //Objects
+        max-width: $form_width_min;
+
+        .main_blockFields{
+            @include flex(row, normal, left); //Objects
+            & > div{width: 45%;}
+            &>div:first-child{
+                margin-right: 10%;
+            }
+        }  
+        .signUp_errorMessage{
+            @include flex(row, space-between, normal); //Objects
+            & > div{width: 45%;}
+        }     
+    }   
+}
+// -------------------------------------------------- //
+
+// ----------------- @MEDIA MAX 770PX ----------------- //
+@media (max-width:770px) {  
+    form{
+        @include flex(column, center, center);
+        max-width: $form_width_max;
+
+        .signUp_errorMessage, .main_blockFields{
+            width: 95%;
+            & > div{width: 100%;}
+        }
+        .main_blockFields{
+            @include flex(column, normal, center); //Objects
+        }       
+        .signUp_errorMessage{
+            @include flex(column-reverse, normal, center); //Objects
+        } 
+    }    
+}
+// -------------------------------------------------- //

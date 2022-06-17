@@ -1,0 +1,281 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.none_visible {
+  display: none;
+}
+
+.for_adaptive {
+  color: transparent;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.grid_wrap {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(320px, 1180px));
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 40px 0;
+}
+
+.h1 {
+  font-size: 32px;
+  padding-bottom: 40px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 770px) {
+  .h1 {
+    display: none;
+  }
+}
+label {
+  padding-bottom: 5px;
+}
+
+@media (min-width: 771px) {
+  label {
+    font-size: 21px;
+  }
+}
+@media (max-width: 770px) {
+  label {
+    font-size: 18px;
+  }
+}
+input:not([type=submit]) {
+  border: 1px solid #777777;
+  border-radius: 3px;
+  padding-left: 10px;
+  height: 42px;
+  font-size: 16px;
+  outline: none;
+}
+input:not([type=submit])::-webkit-input-placeholder {
+  color: #777777;
+}
+input:not([type=submit])::-moz-placeholder {
+  color: #777777;
+}
+input:not([type=submit]):-ms-input-placeholder {
+  color: #777777;
+}
+input:not([type=submit])::-ms-input-placeholder {
+  color: #777777;
+}
+input:not([type=submit])::placeholder {
+  color: #777777;
+}
+
+.red_text {
+  color: #D61A1A;
+}
+
+.red_border {
+  border: 1px solid #D61A1A !important;
+}
+
+.link {
+  color: #0089D7;
+  text-decoration: underline;
+}
+
+.sign_in, .sign_up, .link_forgot_pass {
+  font-size: 18px;
+}
+
+.sign_in {
+  padding: 15px 0 0 0;
+}
+
+.wrap_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: normal;
+      -ms-flex-pack: normal;
+          justify-content: normal;
+  -webkit-box-align: normal;
+      -ms-flex-align: normal;
+          align-items: normal;
+  margin: 0 10px;
+}
+.wrap_content form .first_blockFields, .wrap_content form .second_blockFields {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: normal;
+      -ms-flex-pack: normal;
+          justify-content: normal;
+  -webkit-box-align: normal;
+      -ms-flex-align: normal;
+          align-items: normal;
+}
+.wrap_content form .first_blockFields > div, .wrap_content form .second_blockFields > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  padding-bottom: 20px;
+}
+.wrap_content form .signUp_errorMessage .log_in input[type=submit] {
+  margin-top: 15px;
+  border: 1px solid #0089D7;
+  width: 100%;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  border-radius: 3px;
+  background: transparent;
+  height: 42px;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+.wrap_content form .signUp_errorMessage .log_in input[type=submit]:hover {
+  background: #0089D7;
+  color: white;
+}
+.wrap_content form .error_message {
+  text-align: justify;
+  color: #D61A1A;
+  font-size: 16px;
+}
+.wrap_content form .error_message p {
+  padding: 2%;
+}
+
+@media (min-width: 771px) {
+  form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: left;
+        -ms-flex-align: left;
+            align-items: left;
+    max-width: 65rem;
+  }
+  form .main_blockFields {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: normal;
+        -ms-flex-pack: normal;
+            justify-content: normal;
+    -webkit-box-align: left;
+        -ms-flex-align: left;
+            align-items: left;
+  }
+  form .main_blockFields > div {
+    width: 45%;
+  }
+  form .main_blockFields > div:first-child {
+    margin-right: 10%;
+  }
+  form .signUp_errorMessage {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: normal;
+        -ms-flex-align: normal;
+            align-items: normal;
+  }
+  form .signUp_errorMessage > div {
+    width: 45%;
+  }
+}
+@media (max-width: 770px) {
+  form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    max-width: 100rem;
+  }
+  form .signUp_errorMessage, form .main_blockFields {
+    width: 95%;
+  }
+  form .signUp_errorMessage > div, form .main_blockFields > div {
+    width: 100%;
+  }
+  form .main_blockFields {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: normal;
+        -ms-flex-pack: normal;
+            justify-content: normal;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  form .signUp_errorMessage {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: normal;
+        -ms-flex-pack: normal;
+            justify-content: normal;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}/*# sourceMappingURL=style.css.map */

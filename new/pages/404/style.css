@@ -1,0 +1,41 @@
+* {
+    overflow: hidden;
+    user-select: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    flex-flow: column wrap;
+    text-align: center;
+}
+
+#header {
+    font-size: 5em;
+    color: #112742;
+}
+
+#description {
+    font-size: 3em;
+    color: #112742;
+}
+
+@media only screen and (max-width: 600px) {
+    #header {
+        font-size: 3em;
+    }
+
+    #description {
+        font-size: 1em;
+    }
+
+    body {
+        height: 70vh;
+    }
+}

@@ -1,0 +1,173 @@
+@import 'cateh_style';
+@import 'navigation';
+@import 'modal_window';
+
+body{ background: $fon_white; }
+.content_wrap{
+    @extend %grid;
+    text-align: center;
+
+    p{ padding: 3.5% 0 2% 0; }
+}
+.content_set > div{ width: 45%; }
+.content_set{ @extend %flex_column;
+
+    .name_organization{ justify-content: space-between;
+        label{ text-align: left; }
+        input{      
+            width: 100%;     
+            height: 40px;
+            text-align: center;
+            padding: 0 2%;
+            box-shadow: 0px 4px 10px 0px rgba($but_shadow, 0.15);
+        }        
+    }
+    .img_organization >div{ @extend %flex_row;}
+    .img_organization{ 
+        border-bottom: 1px solid $gray_border;
+
+        .image{                    
+            border: 1px solid $blue;   
+            padding: 0.5rem;                   
+
+            img{
+                width: 100%;
+                object-fit: contain;
+            }
+        }   
+        #input_file{
+            overflow: hidden;
+            position: absolute;
+            opacity: 0;
+            width: 10px;
+            height: 10px;
+        }
+        .button_gray{      
+            padding: 6px 20px;       
+            letter-spacing: 1px; 
+            color: $blue;
+            cursor: pointer;
+        }     
+    }
+}
+
+
+// ************* @MEDIA *************
+// ********** MEDIA MAX 1163PX *************
+@media (max-width: 1163px) {
+    .content_set > div{  
+        width: 55%;
+        padding: 2% 0%; 
+    } 
+}
+
+// ********** MEDIA 850PX *************
+@media (max-width: 850px) {  
+    .content_set > div{ width: 80%; padding: 2% 0%; }
+    .save{ padding: 1rem 0;}
+}
+
+// ********** MEDIA MIN 560PX *************
+@media (min-width: 560px) {
+    .img_organization{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        .image{ 
+            width: 9.5rem;
+            height: 9.5rem;
+            margin: 0 5% 0 5%;
+            padding: 1.5rem;
+        }
+    }
+    .img_buttons{ 
+        justify-content: space-around;    
+        button{ padding: 7px 20px; }
+        #delete_img{ margin: 0 0 0 5%; }       
+    }
+    .save button{
+        width: 150px;
+        height: 40px;
+    }
+    #delete_settings{ margin: 0 0 0 5%; }   
+    label{ padding: 0 0 0 5%;}
+}
+
+// ********** MEDIA MAX 560PX *************
+@media (max-width: 560px) {    
+    .img_organization{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .image{      
+        height: 8rem;
+        margin: 0 0 5% 0;
+        width: 200px;
+        height: 11rem;
+        padding: 2%;
+    }
+    .img_buttons{ 
+        justify-content: center; 
+
+        #delete_img{ margin: 0 0 0 5% ; }
+        button{ padding: 8px 25px; }
+    }
+    .save button{
+        width: 150px;
+        height: 40px;
+    }
+    #delete_settings{ margin: 0 0 0 5%; }
+}
+
+
+// ********** MEDIA MIN 620PX *************
+@media (min-width: 620px) {
+    .content_set > div{ padding: 1.5% 0%; padding: 2% 0%; }
+    .name_organization{   
+        display: flex;
+        flex-direction: row;
+
+        input{ margin: 0 5%; }
+    }
+    .image{
+        height: 10rem;
+        margin: 0 5% 0 16%;
+    }
+    .save button{ margin: 0 0 0 70%; }
+}
+
+// ********** MEDIA MAX 620PX *************
+@media (max-width: 620px) {
+    .content_set label{ padding: 2% 0 5% 0; }
+    .content_set > div{ padding: 2% 0%; }
+    .save button{ margin: 0; }
+    .name_organization{   
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    br{ display: none; } 
+}
+
+// ********** MEDIA MAX 390PX *************
+@media (max-width: 390px) {
+    .content_set > div{ padding: 5% 0%; }
+    .save button{ margin: 0; }
+    .name_organization{   
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        input{
+            width: 100%;
+            margin: 0;
+        }        
+    }
+}
+
+
+//******** THE OTHER SYLES *******
+.red_auto{ border-color: rgba($red,0.7); }
+.red_auto::placeholder{ color: red; font-size: 14px;}

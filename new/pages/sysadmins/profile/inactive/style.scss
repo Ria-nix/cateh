@@ -1,0 +1,404 @@
+@import 'cateh_style';
+@import 'navigation';
+
+#red{ background: $light_red;}
+#orange{ background: $light_orange;}
+#yellow{ background: $light_yellow;}
+#light_green{ background: $light_green;}
+#dark_green{ background: $dark_green;}
+
+.profile_buttons{
+    @extend %grid;
+    background: $fon_white;
+}
+.profile {
+    padding: 2rem 0 2.5% 0;
+    margin: 0 2%;
+    display: grid;   
+    grid-template-columns: repeat(1, minmax(320px, 1500px)); 
+    background: $fon_white;
+}
+.role_sysadmin{ 
+    grid-area: role; 
+    @extend %flex_row;
+    justify-content: center;
+    padding: 0 0 1rem 0; 
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.image{ 
+    display: flex;
+    grid-area: image;
+    .logo_organization{
+        width: 11rem;
+        height:11rem; 
+        img{
+            box-shadow: 0px 4px 10px 0px rgba($but_shadow, 0.3);
+            border-radius: 10px;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+}
+.number{ 
+    grid-area: number_tel;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    line-height:2rem;
+}
+.item_rating{ border-radius: 5px; }
+.rating{
+    grid-area: rating;
+    display: flex;
+}
+.text{
+    grid-area: col_text;
+    display: flex;
+    flex-direction: column;       
+    .text_info{ 
+        display: flex;
+        align-items: center;
+    }
+}
+.bold{ letter-spacing: 0.5px; }
+.buttons{ 
+    grid-area: buttons;
+    display: flex;
+    button{ @extend %flex_row; }
+}
+
+
+.competence_list{
+    @extend %grid;
+    margin: 0 2%;
+
+    .competences{
+        width: 100%;
+        min-height: 150px;
+        margin: 1rem 0;
+        text-align: left;
+        @extend %flex_row;
+        flex-wrap: wrap;
+        background: transparent;
+        border: 1px solid $gray_border;
+        box-shadow: 0px 4px 10px 0px rgba($but_shadow, 0.15);
+
+        span{
+            max-width: 80rem;
+            @extend %flex_row;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 10px;
+            background: $yellow;
+            margin: 0.5rem 0 0.3rem 0.5rem;
+            img{
+                padding: 0 0 0 10px;
+                cursor: pointer;
+            }
+        }
+    }
+    
+}
+
+.table_sysadmin::-webkit-scrollbar { width: 0;}
+
+// ***************** NAME OF TABLE (buttons) *****************
+
+// *********** CONTENT ****************
+.content_wrap{
+    border-top: 1px solid rgba($blue, 0.5);
+    @extend %grid;
+
+    //HEAD TABLE
+    .head_table{ 
+        background: $fon_table;
+        width: 100%;
+        height: 5rem;
+        .head_name{     
+            height: 100%;
+            @extend %flex_row;       
+            p{ 
+                flex:1; 
+                text-align: center; 
+            }
+            span > img{ 
+                transform: translateY(3px);
+                object-fit: contain;
+            }
+        }
+    }
+
+    // TABLE WITH INFO
+    .table_sysadmin{
+        margin: 0 2%;
+        border-top: 1px solid $blue;
+        max-height: 520px;
+        @extend %flex_column;
+        overflow-y: scroll;
+        .item_table{
+            width: 100%;
+            height: auto;
+            @extend %flex_row;
+            margin: 20px 0 0 0;   
+            .item_info > * {
+                flex:1;
+                text-align: center;
+            }
+            .item_info{ box-shadow: 0px 4px 10px 0px rgba($but_shadow, 0.15);
+                .main_fio{ text-align: center;}               
+            }
+            .click{ 
+                padding:18px 12px;
+                font-weight: initial;  
+                color: rgba($blue, 0.7);
+                letter-spacing: 0.5px;
+            }
+            .click:hover{ color: $blue; }
+        }
+        .item_table:last-child{ margin: 20px 0; }        
+    }
+}
+
+// ************* @MEDIA *************
+
+// ********** MEDIA MIN 1163PX *************
+@media (min-width: 1163px) {
+    .item_table, .head_name{ font-size: 18px; }
+    .item_table button{ display: block; margin-left: 2rem; }
+    .head_name{ 
+        width: 88%;
+        padding:0 10% 0 0;
+    }
+    .item_info{ width: 100%; padding: 1.2rem;}
+    .items{ padding: 2% 0; }
+}
+
+// ********** MEDIA MAX 1163PX *************
+@media (max-width: 1163px) {
+    .head_name{ 
+        width: 84%;
+        padding: 0 3%;
+    }
+    .items{ width: 65%; }
+    .item_table button{margin-left: 40px; }
+    .item_info{ 
+        width: 100%; 
+        padding: 1.2rem;        
+        background: $fon_table;
+    }
+}
+
+// ********** MEDIA MIN 971px *************
+@media (min-width: 971px) {  
+    .profile{ 
+        grid-template-columns: 11rem 16rem 2rem auto;
+        grid-template-areas: 'role role role role role role'
+                            'image col_text col_text rating rating rating'
+                            'image col_text col_text number_tel buttons buttons'; 
+    }
+        b{ margin: 2rem 0;}
+        .rating{ 
+            justify-content: flex-end;
+            .item_rating{
+                width: 80px;
+                height: 30px;
+                margin: 0 0 0 1rem;
+            }
+        }
+    
+        .buttons{  
+            align-items: flex-end;
+            flex-direction: column;
+            button{ padding: 6px 15px;
+                    margin: 1.5rem 0 0 0;
+                span{margin: 0 5px 0 0;}
+            }  
+        }
+        .number{ margin: 0 0 0 0.5rem; 
+            justify-content: center;}
+        .text{         
+            align-items: flex-start;
+            justify-content: space-evenly;
+            margin: 0 0 0 2rem; 
+            .opacity{ 
+                padding: 0 0 0 2rem;
+                grid-area: text;
+            }
+            .text_info{ flex-direction: row;}
+        }
+        .mobile_count{ display: none;}
+}
+
+// ********** MEDIA MAX 970px *************
+@media (max-width: 970px) {  
+    .profile{ 
+        grid-template-columns: 11rem 15rem;
+        grid-template-areas: 'role role role role role role'
+                            'image rating rating rating rating rating'
+                            'image col_text col_text number_tel number_tel number_tel'
+                            'image col_text col_text buttons buttons buttons';
+    }
+    .rating{ 
+        margin: 0 0 0 2rem;  
+        justify-content: space-between;
+        .item_rating{
+            width: 18%;
+            height: 30px;
+        }
+    }
+
+    .number{        
+        padding: 1.5rem 0 0 1rem;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .text{
+        align-items: flex-start;
+        justify-content: space-evenly;
+        margin: 0 0 0 2rem; 
+        .opacity{ 
+            padding: 0 0 0 2rem;
+            grid-area: text;
+        }
+        .text_info{ flex-direction: row; }
+    }
+    .buttons{  
+        align-items: flex-end;
+        flex-direction: column;
+        button{ padding: 6px 15px;
+                margin: 1.5rem 0 0 0;
+            span{margin: 0 5px 0 0;}
+        }  
+    }
+    .head_table{
+        font-size: 14px;
+        justify-content: center;
+    }  
+    .item_table button{ display: none; }
+    .item_table{ width: 100%;  }
+    .head_name{  width: 100%;  }
+}
+
+// ********** MEDIA MIN 686px *************
+@media (min-width: 686px) {
+        b{ margin: 2rem 0;}
+        .mobile_count{ display: none;}
+
+        // ************ NAMES OF TABLE (buttons) ************
+    .head_table{
+        display: grid;
+        grid-template-columns: repeat(1, minmax(320px, 1500px));
+        .head_name{ padding: 0 50px; }
+    }    
+    .mobile_version{ display: none; }
+    .item_info{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .mobile_buttons{ display: none;}
+}
+
+// ********** MEDIA MAX 685px *************
+@media (max-width: 685px) {
+    .buttons{display: none;}
+    .profile{ grid-template-columns: repeat(1, minmax(320px, 1500px));
+        grid-template-areas: 'role' 'image' 'col_text' 'rating' 'number_tel'; 
+        justify-content: center;
+        align-items: center;
+    }
+    .rating{ 
+        margin: 0;
+        justify-content: space-around;
+        flex-direction: row; 
+        .item_rating{
+            width: 15%;
+            height: 25px;
+            margin: 1rem 0;
+        }
+    }
+    
+    .hidden, br{ display: none;}
+    .mobile_buttons{ 
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        button{  
+            padding: 6px 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0.5rem 0 2.5rem 0;
+            img{ margin: 0.1rem 0.5rem 0 0;}
+        }
+    }
+    .text{
+        align-items: center;      
+        margin: 0;
+        .text_info{ 
+            padding: 0.8rem 0;
+            justify-content: center;
+        }
+        .count{ display: none; }
+    }
+    .number{ 
+        justify-content: center;
+        padding: 0.5rem;
+        .b{padding: 0 0 0 0.5rem;}
+    }
+    .image{
+        align-items: center;
+        justify-content: center;
+    }
+
+    .bold{ height: 50%; }
+    .mobile_count{ 
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+
+        .text_info{
+            display: flex;
+            flex-direction: column;
+            margin: 0 0.5rem;
+            text-align: center;
+        }
+    } 
+
+    .competence_list{text-align: center;}
+
+     // ************ NAMES OF TABLE (buttons) ************
+    .head_table{display: none;}
+    .table_sysadmin{
+        border: none;
+    }
+    .mobile_none{ display: none; }
+    .mobile_version{
+        display: flex;
+        flex-direction: row;  
+        justify-content: space-around;  
+
+        .mobile_title{
+            text-align: left;
+            color: rgba($blue, 0.85);
+            flex-basis: 60%;
+            p{ padding: 4% 0 0 3%;}            
+        }
+        .mobile_info{ 
+            flex-basis: 40%;
+            .complete_order, .current_order{ margin: 5% 0 3% 30%; }
+        }
+    }
+    .mobile_version > div{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 2% 0;
+        font-size: 15px;
+    }
+}
+

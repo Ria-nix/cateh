@@ -1,0 +1,237 @@
+@use "../../../../includes/dasha/v1/additional_styles/cateh_style.scss" as *;
+
+.header{
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    background: $fon_white;
+    @extend %grid;
+}
+nav{
+    width: 100%;
+    background: $fon_white;
+    @extend %grid;
+    nav > div{ border: 1px solid red; }
+    .navigation{
+        background: $fon_white;
+        @extend %flex_row;
+        height: 6.2rem;
+        border-bottom: 1px solid $gray_border;
+
+        // LOGO
+        .logo{ height: 80%; }
+        #input_file{
+            overflow: hidden;
+            position: absolute;
+            opacity: 0;
+            width: 10px;
+            height: 10px;
+        }
+
+        // TOGGLE BUTTON AND MENU
+        .toggle_menu_fon{
+            position: fixed;
+            z-index: 100;
+
+            .toggle_menu{
+                display: flex;
+                align-items: center;
+            }
+        }
+
+        // TOGGLE BUTTON
+        .toggle_bar{         
+            justify-content: flex-end;
+            margin-left: auto;
+
+            .toggle_but{
+                width: 50px;
+                height: 50px;
+                position: relative;
+                text-align: center;     
+                span{
+                    width: 30px;
+                    height: 5px;
+                    background: $blue;
+                    position: absolute;
+                    transform: translate(30%, 400%);                    
+                }
+                span::after, span::before{
+                    content: "";
+                    width: 30px;
+                    height: 5px;
+                    background: $blue;
+                    position: absolute;
+                }
+                span::after{
+                transform: translateY(11px);
+                }
+                span::before{
+                    transform: translateY(-11px);
+                }               
+            }  
+            .toggle_but.close span{
+                background: transparent;
+            }   
+            .toggle_but.close span::after{
+                transform: rotate(45deg);
+            }
+            .toggle_but.close span::before{
+                transform: rotate(-45deg);
+            }                  
+        }
+
+        // PANEL BUTTONS
+        .panel_buttons{
+            width: 100%;
+            height: 100%;
+            @extend %flex_row;
+            justify-content:flex-end;
+        }  
+        span{         
+            @extend %flex_row;  
+            justify-content: space-around; 
+            img{ object-fit: contain; }
+        }
+
+        // SIZES FOR ALL BUTTONS
+        .main{
+            padding: 3px 8px;
+            margin: 0px 1% 0px 0px; 
+            img{
+                width: 45px;
+                height: 38px;
+            }
+        }
+        .plus{
+            padding: 10px 10px;
+            margin: 0px 3.5% 0px 0px;
+            img{
+                width: 25px;
+                height: 25px;
+            }
+        }
+        .settings{
+            padding: 5px 5px;
+            margin: 0px 1% 0px 0px;
+            img{
+                width: 36px;
+                height: 36px;
+            }
+        }
+        .door{
+            width: 110px;
+            padding: 12px 10px;
+            img{
+                width: 23px;
+                height: 23px;
+            }
+        }
+                
+    }    
+}  
+#main_logo_navigation:hover{ cursor: pointer; }
+
+// ************* @MEDIA *************
+
+// ********** MEDIA MIN 1163PX *************
+@media (min-width: 1163px) {
+    .toggle_bar{ display: none;
+        div{ display: none; }
+    }
+    .toggle_menu_fon{ display: none; }
+    .toggle_menu{ display: none; }
+    .panel_buttons{ position: static; }
+}
+
+
+// ********** MEDIA MAX 1163PX *************
+@media (max-width: 1163px) {
+    .panel_buttons{
+        display: none;
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+    .toggle_bar{ display: block;
+        div{ display: block; }
+    }
+    .toggle_menu_fon{        // GRID  show buttons    
+        height: 150%;        
+        justify-content: center;     
+        grid-template-columns: repeat(1, minmax(830px, 1163px));
+    } 
+    
+}
+
+// ********** MEDIA 850PX *************
+@media (max-width: 850px) {    
+    .toggle_menu_fon{
+        width: 104%;
+        height: 97%;   
+        justify-content: flex-end;        
+        grid-template-columns: repeat(1, minmax(570px, 850px));   
+        .toggle_menu{ display: flex;  } 
+    }
+}
+
+// ********** MEDIA MIN 580PX *************
+@media (min-width: 580px) {
+    .navigation{ margin: 0 2%;  }
+    body{ background: $fon_table; }
+    .toggle_but:hover{ border-color: $light_blue; }
+    .toggle_menu_fon{ 
+        background: rgba($blue, 0.9);   
+        left: -10px;
+        top: 100px;
+        height: 100rem;
+        
+        .toggle_menu{
+            margin: 30px auto;
+            min-height: 60px;
+            max-height: 150px;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+            width: 90%;
+            background: rgba($fon_white, 1);
+            padding: 0 15px;
+        }
+        
+    }
+}
+
+// ********** MEDIA MAX 580PX *************
+@media (max-width: 580px) {
+    .navigation{ margin: 0 5%; }
+    body{ background: $blue; }
+
+    .search p, .search input, .search button{ display: block; }    
+    .toggle_menu_fon{
+        left: 0;
+        background: $fon_white;
+        width: 100%;
+        height: 100%;    
+        top: 100px; 
+        justify-content: center;        
+        grid-template-columns: repeat(1, minmax(320px, 580px));  
+
+        .toggle_menu{
+            padding: 1rem 0 4% 0; 
+            height: 100%;
+            flex-direction: column;
+            width: 100%;
+            background: $fon_white;
+
+            span{
+                min-width: 290px;
+                height: 45px;
+                margin: 6.5% 0 0 2%;
+
+                img{  display: none;  }
+                .icon_none{ display: block; }
+            }
+            
+        }  
+    }
+}

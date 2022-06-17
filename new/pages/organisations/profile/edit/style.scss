@@ -1,0 +1,203 @@
+@use '../../../../includes/dasha/v1/modal_windows/modal_window.scss' as *;
+@use "../../../../includes/dasha/v1/additional_styles/cateh_style.scss" as *;
+@use '../../../../includes/dasha/v1/navigation/navigation.scss' as *;
+
+body{ background: $fon_white; } 
+.content_wrap{
+    width: 100%;
+    @extend %grid;
+    text-align: center;
+
+    p.font_22{ padding: 3.5% 4% 2% 4%; }
+}
+.content_set{ @extend %flex_column;
+    span{        
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+        cursor: pointer;      
+    }
+    input{
+        height: 40px;
+        text-align: center;
+        box-shadow: 0px 4px 10px 0px rgba($but_shadow, 0.15);
+        border-radius: 10px;        
+    }
+    label, button{ letter-spacing: 1px; color: $blue;}               
+    .name_organisation, .password_organisation{ 
+        justify-content: space-between;  
+        align-items: center; 
+    }
+    .pass{padding: 10px 10px; cursor: pointer;}
+    .img_organization{            
+        display: flex;
+        align-items: center;     
+        border-bottom: 1px solid $gray_border;
+        .img_buttons, .image{  @extend %flex_row; }
+        .image{                    
+            border: 1px solid $blue;
+            width: 11rem;
+            height: 11rem;   
+            padding: 1.5%;
+
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+        #input_file{
+            overflow: hidden;
+            position: absolute;
+            opacity: 0;
+            width: 10px;
+            height: 10px;
+        }
+        .button_gray{ 
+            padding: 6px 20px; 
+            cursor: pointer; 
+        }
+    }
+    
+    .adress_organisation{
+        justify-content: flex-end;
+        align-items: center;        
+    }
+    .save{
+        button{
+            width: 150px;
+            height: 38px;
+        }
+    }
+    .mobile_fields_address{ width: 100%; }
+    .fields_address, .mobile_fields_address{
+        height: auto;
+        padding: 0;          
+    }
+    .cell{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding: 0 2% 0 0;
+
+        input{ margin: 13px 2%;}
+        img{ 
+            cursor: pointer; 
+            width: 20px; 
+            height: 20px;
+        }
+    }    
+}
+
+// ************* @MEDIA *************
+// ********** MEDIA MIN 1163PX *************
+@media (min-width: 1163px) {    
+.content_set > div{ width: 45%; }
+}
+
+// ********** MEDIA MAX 1163PX *************
+@media (max-width: 1163px) {
+    .content_set > div{  width: 55%; } 
+    input{ width: 100%; }   
+}
+
+// ********** MEDIA MAX 850PX *************
+@media (max-width: 850px) {  
+    .content_set > div{ width: 90%;}
+    .adress_organisation{ width: 100%;}
+}
+
+// ********** MEDIA MIN 541PX *************
+@media (min-width: 541px) {
+    .content_set > div{ padding: 1.5% 0%; }
+    .name_organisation, .password_organisation,
+    .adress_organisation{
+        display: flex;
+        flex-direction: row;
+    }
+    .name_organisation, .password_organisation{          
+        label{ 
+            text-align: left;
+            width: 25%;
+        }
+        input{ width: 75%; }
+    }
+    .cell{ justify-content: flex-end; }
+    .image{ margin: 0 5% 5% 0; }
+    .save button{ margin: 0 0 0 70%; }
+
+    .adress_organisation{
+        label{ margin-right: auto; }
+        input{ 
+            width: 67.3%;
+            margin: 0 1.5% 0 0;
+        }
+    }
+    .content_set span{ padding:1.2%; }
+    .mobile_fields_address{ display: none; }
+    .fields_address{  
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+    .cell input{ width: 69%;}
+    .img_buttons{ 
+        justify-content: space-around;    
+        button{ padding: 7px 20px; }
+        #delete_organ{ margin: 0 0 0 5%; }       
+    }
+    .pass{margin-right: auto;}
+}
+
+// ********** MEDIA MAX 540PX *************
+@media (max-width: 540px) {
+    .content_set > div{ padding: 2% 0%; }
+    .name_organisation, .password_organisation, .adress_organisation{   
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        input{  width: 85%; text-align: center; }
+        label{ padding: 2% 0; }
+        br{ display: none; }
+    }
+    .content_set span{
+        padding: 10px 10px;    
+        margin: 20px 0 0 0;   
+    } 
+    .cell{ justify-content: center; }
+    .mobile_fields_address{    
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+    .fields_address{ display: none; }
+    .cell input{ width: 80%;}
+    .save { margin: 5% 0; }
+    .img_organization{         
+        flex-direction: column;
+        align-items: center;
+
+        .img_buttons{ 
+            justify-content: center; 
+            margin: 0.5rem 0 1rem 0;
+            #delete_organ{ margin: 0 0 0 5%; }
+            button, label{ padding: 8px 25px; }
+        }        
+    }
+    .image{margin: 0 0 5% 0;}    
+    .save{ margin: 0.5rem 0 2rem 0;}
+}
+// ********** MEDIA MAX 390PX *************
+@media (max-width: 390px) {
+    .name_organisation, .password_organisation, .adress_organisation{   
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        label{ padding: 3.2% 0; }
+    } 
+}
+
+
+
+

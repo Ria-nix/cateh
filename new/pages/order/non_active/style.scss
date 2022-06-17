@@ -1,0 +1,151 @@
+@use '../scss/cateh_style' as *;
+@import 'navigation';
+@import 'modal_window';
+
+body{ background: $fon_white; }
+.content_wrap > div{ margin: 0 2%;}
+.content_wrap{ @extend %grid; 
+    .head_order{ @extend %flex_row;     
+        div{ flex: 1 1 5%; }
+
+        .text { text-align: center; }
+        .back_button button{
+            margin: 0 0 0 30px;
+            padding: 6px 15px;
+            @extend %flex_row;        
+            span{ margin: 0 0.5rem 0 0;}
+        }
+    }
+    .fist_block, .second_block{
+        display: flex;
+        flex-direction: column;
+        .item_info{ 
+            margin: 1rem 0;
+            font-size: 16px;
+            .main_text{  letter-spacing: 0px; font-weight: bold;}
+        }
+    }
+    .content_set .main_fields{ padding: 1rem; }
+    .content_set{ @extend %flex_column;   
+        .wrap_comments{
+            display: flex;
+            align-items: center;
+        }
+        .textarea_full, .item_comment{
+            min-height: 20px;
+            background: #f6f6f6;
+            border: 0.5px solid $gray_border;
+            padding: 0.5rem;
+            width: 100%;
+            line-height: 1.5rem;
+        }
+        .item_comment{margin: 0 0 1rem 0;} 
+        .date_end{
+            @extend %flex_column;
+            text-align: center;
+            .opacity{ margin-top: 0.3rem;}
+        }
+        .save, .save button{ 
+            display: flex;
+            align-items: center;
+        }
+        .save button{
+            padding: 8px 15px;
+            flex-direction: row;
+            span{ margin: 0 5px 0 0;}
+        } 
+    }
+}
+textarea::-webkit-scrollbar { width: 5px;}
+    
+/* Handle */
+textarea::-webkit-scrollbar-thumb {
+    background: rgba($blue, 0.65);
+    border-radius: 10px;
+}
+textarea::-webkit-scrollbar-track {
+    margin: 8px;
+}
+
+// ************* @MEDIA *************
+// ********** MEDIA MIN 1165PX *************
+@media (min-width: 1165px) {    
+    .content_set > div{ width: 60%; }
+}
+
+// ********** MEDIA MAX 1165PX *************
+@media (max-width: 1165px) {
+    .content_set > div{ width: 70%; } 
+}
+
+// ********** MEDIA MAX 850PX *************
+@media (max-width: 850px) {  
+    .content_set > div{ width: 90%;}
+    .back_button, .empty{ display: none;}
+}
+
+// ********** MEDIA MAX 621px *************
+@media (min-width: 621px) {  
+    .date_end{
+        margin: 0.5rem 0 0 0;
+        text-align: center;
+    }
+}
+// ********** MEDIA MIN 551PX *************
+@media (min-width: 551px) {
+    .text{  padding: 2rem 4% 1.5% 4%; }
+    .content_set .main_fields{ margin: 0.5rem 0; }
+    .main_info{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .fist_block, .second_block{
+        align-items: flex-start;
+        text-align: left;
+        .opacity{ padding: 0.5rem 0 0 1.5rem;}
+    }
+    .save{
+        background: none;
+        flex-direction: row;
+        justify-content: flex-end;
+        button{ margin: 1rem 1rem 2rem 1rem; }
+    } 
+    .main_fields{
+        border: 1px solid $gray_border;
+        background: $gray_full;
+        box-shadow: 0px 4px 10px 0px rgba($but_shadow, 0.15);
+    }
+    .wrap_comments{ flex-direction: row; 
+        .comments{ width: 73%; }
+        .date_end{ width: 27%; }
+    }
+}
+
+// ********** MEDIA MAX 550PX *************
+@media (max-width: 550px) {
+    .text{  padding: 1rem 4% 0 4%; }
+    .main_fields{
+        border-radius: 0%;
+        border-bottom: 1px solid $gray_border;
+    }
+    .main_info{ 
+        display: flex;
+        flex-direction: column;
+    }
+    .fist_block, .second_block{
+        align-items: center;
+        text-align: center;
+        .opacity{ padding: 0.3rem 0 0 0;}
+    }
+    .save{
+        background: none;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+        button{ margin: 1rem 0; }
+    } 
+    .wrap_comments{ flex-direction: column; 
+        .comments, .date_end{ width: 100%;}
+    }
+}

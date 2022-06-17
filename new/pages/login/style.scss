@@ -1,0 +1,70 @@
+@use "../../includes/dasha/v1/additional_styles/cateh_style" as *;
+@use "../../includes/dasha/v1/footer/style" as *;
+
+body{  background: #f5f5f5;}
+.wrap_auth{   
+    display: grid;
+    grid-template-columns: repeat(1, minmax(320px, auto));
+    grid-template-rows: 90vh;
+    justify-content: center;
+    align-items: center;
+
+    .content_auth{
+        padding: 50px 25px;
+        margin: 0 15px;
+        background: $fon_white;
+        border-radius: 12px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 0 30px 1.5px lightgray;
+        h2{
+            width: 300px;
+            text-align: center;
+            padding-bottom: 2rem;
+        }
+        p{
+            color: $red;
+            transform: translate( 5px, -10px);
+            font-size: 16px;
+            text-align: center;
+        }
+        .logo_wrap{ 
+            height: 150px;    
+            margin: 0 0 1.5rem 0;
+            img{
+                width: 100%;
+                height: 100%;   
+                object-fit: contain;                         
+            }
+        }
+        input{
+            margin: 0px 0px 30px 0px; 
+            text-align: center;
+            height: 40px;       
+            border-radius: 5px;   
+        }
+        .button{ 
+            padding: 8px 4rem;
+            letter-spacing: 1px;
+            border-radius: 5px;   
+        }
+    }
+}
+
+.red_auto{ border-color: rgba($red,0.7); }
+.red{color:$red;}
+.red_auto::placeholder{ color: $red;}
+
+// ------------------------------------------- // 
+//* ------------ @ MEDIA QUERIES ------------ *// 
+// ------------------------------------------- // 
+
+@media (min-width: 450px){
+    input{ width: 20rem; }
+}
+
+@media (max-width: 450px){
+    input{ min-width: 99%; }
+}

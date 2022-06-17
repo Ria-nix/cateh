@@ -1,0 +1,15 @@
+.sort-arrow {
+    cursor: pointer;
+}
+
+.sort-arrow-up {
+    transform: translateY(3px);
+}
+
+.sort-arrow-down {
+    transform: rotate(180deg) translateY(-3px);
+}
+
+body {
+    overflow: hidden;
+}
